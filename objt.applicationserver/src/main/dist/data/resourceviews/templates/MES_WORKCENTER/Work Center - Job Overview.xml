@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<template type="MES_WORKCENTER" description="" resourceclass="dce.pd.sfc.bo.resourcemgt.WorkCenter">
+  <resourceviewelement actionclick="1" actionclickparam="" actiondblclick="2" actiondblclickparam="" attributepath="" attributetitle="" background="-1908255" border="NONE" category="" font="Segoe UI-PLAIN-12" foreground="-16777216" height="775" iconname="" iconscaled="false" name="PACK3" opaque="true" resourceclassname="dce.pd.sfc.bo.resourcemgt.WorkCenter" resourceoid="328237" selectedborder="NONE" selectionid="false" width="1255" x="0" y="0" z="0">
+    <panelviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" background="-4144960" border="LOWERED_ETCH" height="337" iconname="" iconscaled="false" opaque="false" width="1250" x="5" y="438" z="0">
+      <widgetviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" alignment="0" attributepath="" background="-1973791" border="NONE" category="" font="Segoe UI-PLAIN-12" foreground="-16777216" height="45" iconname="" iconscaled="false" name="" objectpath=" " objectpathparam="" opaque="true" widgetclass="dce.pd.frame.resourceview.ui.widget.ExplorerActionWidget" width="45" x="52" y="23" z="0">
+        <param name="TEXT_VISIBLE" value="false"/>
+        <param name="TEXT_ALIGNMENT" value="4"/>
+        <param name="ID" value="objt.mes.resourceview.workcenter.machineoperation.reschedule_machineoperation"/>
+        <param name="ACTION_NAME" value="objt.mes.resourceview.workcenter.machineoperation.reschedule_machineoperation"/>
+        <param name="UIMETA_INVOKER_ACTION" value=" "/>
+        <param name="actionIdKey" value="MES"/>
+        <param name="PANEL_ID" value="Job_Queue"/>
+      </widgetviewelement>
+      <widgetviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" alignment="0" attributepath="" background="-1973791" border="NONE" category="" font="Segoe UI-PLAIN-12" foreground="-16777216" height="45" iconname="" iconscaled="false" name="" objectpath=" " objectpathparam="" opaque="true" widgetclass="dce.pd.frame.resourceview.ui.widget.ExplorerActionWidget" width="45" x="5" y="23" z="1">
+        <param name="TEXT_VISIBLE" value="false"/>
+        <param name="TEXT_ALIGNMENT" value="4"/>
+        <param name="ID" value="objt.mes.resourceview.workcenter.start_direct_manoperation"/>
+        <param name="ACTION_NAME" value="objt.mes.resourceview.workcenter.start_direct_manoperation"/>
+        <param name="UIMETA_INVOKER_ACTION" value=" "/>
+        <param name="actionIdKey" value="MES"/>
+        <param name="PANEL_ID" value="Job_Queue"/>
+      </widgetviewelement>
+      <textviewelement alignment="2" background="-8355712" border="NONE" font="Segoe UI-BOLD-12" foreground="-1" height="17" opaque="true" text="Job Queue" width="1245" x="0" y="1" z="2"/>
+      <widgetviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" alignment="0" attributepath="" background="-1973791" border="NONE" category="" font="Segoe UI-PLAIN-12" foreground="-16777216" height="257" iconname="" iconscaled="false" name="" objectpath=" " objectpathparam="" opaque="false" widgetclass="dce.pd.frame.resourceview.ui.widget.TableTabPanelWidget" width="1230" x="5" y="70" z="3">
+        <param name="ID" value="objt.mes.resourceview.machineoperations.scheduled.list"/>
+        <param name="UIMETA_INVOKER_ACTION0" value=" "/>
+        <param name="SHOW_CONFIRMATION0" value="true"/>
+        <param name="NAVIGATION_KEYS" value="UP,DOWN"/>
+        <param name="actionIdKey" value="MES"/>
+        <param name="tabPanelIdKey" value="MES"/>
+        <param name="PANEL_ID" value="Job_Queue"/>
+      </widgetviewelement>
+    </panelviewelement>
+    <panelviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" background="-4144960" border="LOWERED_ETCH" height="227" iconname="" iconscaled="false" opaque="false" width="1250" x="5" y="206" z="1">
+      <widgetviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" alignment="0" attributepath="" background="-1973791" border="NONE" category="" font="Segoe UI-PLAIN-12" foreground="-16777216" height="45" iconname="" iconscaled="false" name="" objectpath=" " objectpathparam="" opaque="true" widgetclass="dce.pd.frame.resourceview.ui.widget.ExplorerActionWidget" width="45" x="201" y="23" z="0">
+        <param name="TEXT_VISIBLE" value="false"/>
+        <param name="TEXT_ALIGNMENT" value="4"/>
+        <param name="ID" value="objt.mes.resourceview.workcenter.direct_manoperation.add_qtyrework"/>
+        <param name="ACTION_NAME" value="objt.mes.resourceview.workcenter.direct_manoperation.add_qtyrework"/>
+        <param name="UIMETA_INVOKER_ACTION" value=" "/>
+        <param name="actionIdKey" value="MES"/>
+        <param name="PANEL_ID" value="Current_Machine_Activities"/>
+      </widgetviewelement>
+      <widgetviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" alignment="0" attributepath="" background="-1973791" border="NONE" category="" font="Segoe UI-PLAIN-12" foreground="-16777216" height="45" iconname="" iconscaled="false" name="" objectpath=" " objectpathparam="" opaque="true" widgetclass="dce.pd.frame.resourceview.ui.widget.ExplorerActionWidget" width="45" x="154" y="23" z="1">
+        <param name="TEXT_VISIBLE" value="false"/>
+        <param name="TEXT_ALIGNMENT" value="4"/>
+        <param name="ID" value="objt.mes.resourceview.workcenter.direct_manoperation.add_qtyscrap"/>
+        <param name="ACTION_NAME" value="objt.mes.resourceview.workcenter.direct_manoperation.add_qtyscrap"/>
+        <param name="UIMETA_INVOKER_ACTION" value=" "/>
+        <param name="actionIdKey" value="MES"/>
+        <param name="PANEL_ID" value="Current_Machine_Activities"/>
+      </widgetviewelement>
+      <widgetviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" alignment="0" attributepath="" background="-1973791" border="NONE" category="" font="Segoe UI-PLAIN-12" foreground="-16777216" height="45" iconname="" iconscaled="false" name="" objectpath=" " objectpathparam="" opaque="true" widgetclass="dce.pd.frame.resourceview.ui.widget.ExplorerActionWidget" width="45" x="107" y="23" z="2">
+        <param name="TEXT_VISIBLE" value="false"/>
+        <param name="TEXT_ALIGNMENT" value="4"/>
+        <param name="ID" value="objt.mes.resourceview.workcenter.direct_manoperation.add_qtyproduced"/>
+        <param name="ACTION_NAME" value="objt.mes.resourceview.workcenter.direct_manoperation.add_qtyproduced"/>
+        <param name="UIMETA_INVOKER_ACTION" value=" "/>
+        <param name="actionIdKey" value="MES"/>
+        <param name="PANEL_ID" value="Current_Machine_Activities"/>
+      </widgetviewelement>
+      <widgetviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" alignment="0" attributepath="" background="-1973791" border="NONE" category="" font="Segoe UI-PLAIN-12" foreground="-16777216" height="45" iconname="" iconscaled="false" name="" objectpath=" " objectpathparam="" opaque="true" widgetclass="dce.pd.frame.resourceview.ui.widget.ExplorerActionWidget" width="45" x="52" y="23" z="3">
+        <param name="TEXT_VISIBLE" value="false"/>
+        <param name="TEXT_ALIGNMENT" value="4"/>
+        <param name="ID" value="objt.mes.resourceview.workcenter.direct_manoperation.stop_direct_manoperation"/>
+        <param name="ACTION_NAME" value="objt.mes.resourceview.workcenter.direct_manoperation.stop_direct_manoperation"/>
+        <param name="UIMETA_INVOKER_ACTION" value=" "/>
+        <param name="actionIdKey" value="MES"/>
+        <param name="PANEL_ID" value="Current_Machine_Activities"/>
+      </widgetviewelement>
+      <widgetviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" alignment="0" attributepath="" background="-1973791" border="NONE" category="" font="Segoe UI-PLAIN-12" foreground="-16777216" height="45" iconname="" iconscaled="false" name="" objectpath=" " objectpathparam="" opaque="true" widgetclass="dce.pd.frame.resourceview.ui.widget.ExplorerActionWidget" width="45" x="5" y="23" z="4">
+        <param name="TEXT_VISIBLE" value="false"/>
+        <param name="TEXT_ALIGNMENT" value="4"/>
+        <param name="ID" value="objt.mes.resourceview.workcenter.start_direct_manoperation"/>
+        <param name="ACTION_NAME" value="objt.mes.resourceview.workcenter.start_direct_manoperation"/>
+        <param name="UIMETA_INVOKER_ACTION" value=" "/>
+        <param name="actionIdKey" value="MES"/>
+        <param name="PANEL_ID" value="Current_Machine_Activities"/>
+      </widgetviewelement>
+      <widgetviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" alignment="0" attributepath="" background="-1973791" border="NONE" category="" font="Segoe UI-PLAIN-12" foreground="-16777216" height="147" iconname="" iconscaled="false" name="" objectpath=" " objectpathparam="" opaque="false" widgetclass="dce.pd.frame.resourceview.ui.widget.TableTabPanelWidget" width="1230" x="5" y="70" z="5">
+        <param name="ID" value="objt.mes.resourceview.manoperations.machine.active.list"/>
+        <param name="UIMETA_INVOKER_ACTION0" value=" "/>
+        <param name="SHOW_CONFIRMATION0" value="true"/>
+        <param name="NAVIGATION_KEYS" value="UP,DOWN"/>
+        <param name="actionIdKey" value="MES"/>
+        <param name="tabPanelIdKey" value="MES"/>
+        <param name="PANEL_ID" value="Current_Machine_Activities"/>
+      </widgetviewelement>
+      <textviewelement alignment="2" background="-8355712" border="NONE" font="Segoe UI-BOLD-12" foreground="-1" height="17" opaque="true" text="Current Activities" width="1245" x="0" y="1" z="6"/>
+    </panelviewelement>
+    <panelviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" background="-4144960" border="LOWERED_ETCH" height="196" iconname="" iconscaled="false" opaque="false" width="1250" x="5" y="5" z="2">
+      <widgetviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" alignment="0" attributepath="" background="-1973791" border="NONE" category="" font="Segoe UI-PLAIN-12" foreground="-16777216" height="45" iconname="" iconscaled="false" name="" objectpath=" " objectpathparam="" opaque="true" widgetclass="dce.pd.frame.resourceview.ui.widget.ExplorerActionWidget" width="45" x="256" y="23" z="0">
+        <param name="TEXT_VISIBLE" value="false"/>
+        <param name="TEXT_ALIGNMENT" value="4"/>
+        <param name="ID" value="objt.mes.resourceview.workcenter.machineoperation.add_qtyrework"/>
+        <param name="ACTION_NAME" value="objt.mes.resourceview.workcenter.machineoperation.add_qtyrework"/>
+        <param name="UIMETA_INVOKER_ACTION" value=" "/>
+        <param name="actionIdKey" value="MES"/>
+        <param name="PANEL_ID" value="Current_Jobs"/>
+      </widgetviewelement>
+      <widgetviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" alignment="0" attributepath="" background="-1973791" border="NONE" category="" font="Segoe UI-PLAIN-12" foreground="-16777216" height="45" iconname="" iconscaled="false" name="" objectpath=" " objectpathparam="" opaque="true" widgetclass="dce.pd.frame.resourceview.ui.widget.ExplorerActionWidget" width="45" x="209" y="23" z="1">
+        <param name="TEXT_VISIBLE" value="false"/>
+        <param name="TEXT_ALIGNMENT" value="4"/>
+        <param name="ID" value="objt.mes.resourceview.workcenter.machineoperation.add_qtyscrap"/>
+        <param name="ACTION_NAME" value="objt.mes.resourceview.workcenter.machineoperation.add_qtyscrap"/>
+        <param name="UIMETA_INVOKER_ACTION" value=" "/>
+        <param name="actionIdKey" value="MES"/>
+        <param name="PANEL_ID" value="Current_Jobs"/>
+      </widgetviewelement>
+      <widgetviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" alignment="0" attributepath="" background="-1973791" border="NONE" category="" font="Segoe UI-PLAIN-12" foreground="-16777216" height="45" iconname="" iconscaled="false" name="" objectpath=" " objectpathparam="" opaque="true" widgetclass="dce.pd.frame.resourceview.ui.widget.ExplorerActionWidget" width="45" x="154" y="23" z="3">
+        <param name="TEXT_VISIBLE" value="false"/>
+        <param name="TEXT_ALIGNMENT" value="4"/>
+        <param name="ID" value="objt.mes.resourceview.workcenter.interruptoperation.edit_interruptoperation"/>
+        <param name="ACTION_NAME" value="objt.mes.resourceview.workcenter.interruptoperation.edit_interruptoperation"/>
+        <param name="UIMETA_INVOKER_ACTION" value=" "/>
+        <param name="actionIdKey" value="MES"/>
+        <param name="PANEL_ID" value="Current_Jobs"/>
+      </widgetviewelement>
+      <widgetviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" alignment="0" attributepath="" background="-1973791" border="NONE" category="" font="Segoe UI-PLAIN-12" foreground="-16777216" height="45" iconname="" iconscaled="false" name="" objectpath=" " objectpathparam="" opaque="true" widgetclass="dce.pd.frame.resourceview.ui.widget.ExplorerActionWidget" width="45" x="99" y="23" z="5">
+        <param name="TEXT_VISIBLE" value="false"/>
+        <param name="TEXT_ALIGNMENT" value="4"/>
+        <param name="ID" value="objt.mes.resourceview.workcenter.machineoperation.stop_machineoperation"/>
+        <param name="ACTION_NAME" value="objt.mes.resourceview.workcenter.machineoperation.stop_machineoperation"/>
+        <param name="UIMETA_INVOKER_ACTION" value=" "/>
+        <param name="actionIdKey" value="MES"/>
+        <param name="PANEL_ID" value="Current_Jobs"/>
+      </widgetviewelement>
+      <widgetviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" alignment="0" attributepath="" background="-1973791" border="NONE" category="" font="Segoe UI-PLAIN-12" foreground="-16777216" height="45" iconname="" iconscaled="false" name="" objectpath=" " objectpathparam="" opaque="true" widgetclass="dce.pd.frame.resourceview.ui.widget.ExplorerActionWidget" width="45" x="52" y="23" z="6">
+        <param name="TEXT_VISIBLE" value="false"/>
+        <param name="TEXT_ALIGNMENT" value="4"/>
+        <param name="ID" value="objt.mes.resourceview.workcenter.machineoperation.start_segment"/>
+        <param name="ACTION_NAME" value="objt.mes.resourceview.workcenter.machineoperation.start_segment"/>
+        <param name="UIMETA_INVOKER_ACTION" value=" "/>
+        <param name="actionIdKey" value="MES"/>
+        <param name="PANEL_ID" value="Current_Jobs"/>
+      </widgetviewelement>
+      <textviewelement alignment="2" background="-8355712" border="NONE" font="Segoe UI-BOLD-12" foreground="-1" height="17" opaque="true" text="Current Jobs" width="1245" x="0" y="1" z="7"/>
+      <widgetviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" alignment="0" attributepath="" background="-1973791" border="NONE" category="" font="Segoe UI-PLAIN-12" foreground="-16777216" height="45" iconname="" iconscaled="false" name="" objectpath=" " objectpathparam="" opaque="true" widgetclass="dce.pd.frame.resourceview.ui.widget.ExplorerActionWidget" width="45" x="5" y="23" z="8">
+        <param name="TEXT_VISIBLE" value="false"/>
+        <param name="TEXT_ALIGNMENT" value="4"/>
+        <param name="ID" value="objt.mes.resourceview.workcenter.machineoperation.start_direct_manoperation"/>
+        <param name="ACTION_NAME" value="objt.mes.resourceview.workcenter.machineoperation.start_direct_manoperation"/>
+        <param name="UIMETA_INVOKER_ACTION" value=" "/>
+        <param name="actionIdKey" value="MES"/>
+        <param name="PANEL_ID" value="Current_Jobs"/>
+      </widgetviewelement>
+      <widgetviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" alignment="0" attributepath="" background="-1973791" border="NONE" category="" font="Segoe UI-PLAIN-12" foreground="-16777216" height="116" iconname="" iconscaled="false" name="" objectpath=" " objectpathparam="" opaque="false" widgetclass="dce.pd.frame.resourceview.ui.widget.TableTabPanelWidget" width="1230" x="5" y="70" z="9">
+        <param name="ID" value="objt.mes.resourceview.machineoperations.active.list"/>
+        <param name="UIMETA_INVOKER_ACTION0" value=" "/>
+        <param name="SHOW_CONFIRMATION0" value="true"/>
+        <param name="NAVIGATION_KEYS" value="UP,DOWN"/>
+        <param name="actionIdKey" value="MES"/>
+        <param name="tabPanelIdKey" value="MES"/>
+        <param name="PANEL_ID" value="Current_Jobs"/>
+      </widgetviewelement>
+    </panelviewelement>
+  </resourceviewelement>
+</template>

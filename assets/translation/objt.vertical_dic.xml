@@ -1,0 +1,731 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<dictionary includeSources="false" useRelativePaths="true">
+  <targets>
+    <target html="T" java="F" jrxml="T" path="..\..\resources\objt\vertical" recursive="T" srt="T" xml="T"/>
+    <target html="F" java="T" jrxml="F" path="..\..\java\objt\vertical" recursive="T" srt="F" xml="F"/>
+  </targets>
+  <languages>
+    <language id="en" native="English"/>
+    <language id="nl" native="Dutch"/>
+    <language id="fr" native="French"/>
+  </languages>
+  <includes>
+    <include path="dce_dic.xml"/>
+    <include path="objt.common_dic.xml"/>
+    <include path="objt.wms_dic.xml"/>
+    <include path="objt.mes_dic.xml"/>
+    <include path="objt.wfm_dic.xml"/>
+    <include path="objt.crp_dic.xml"/>
+    <include path="objt.discrete_dic.xml"/>
+    <include path="objt.process_dic.xml"/>
+  </includes>
+  <entries>
+    <entry nativestring=" ProductionOrder '%1' is not IDLE. Operations can not be deleted.">
+      <translation language="en" translatedstring="ProductionOrder '%1' is not IDLE. Operations can not be deleted."/>
+      <translation language="nl" translatedstring="Productieorder '%1' is niet IDLE. Bewerkingen kunnen niet worden verwijderd."/>
+      <translation language="fr" translatedstring="Ordre de fabrication '%1' n’est pas INACTIF. Les opérations ne peuvent pas être supprimées."/>
+    </entry>
+    <entry nativestring="AUTO REMOVE OLD PRODUCED STOCK">
+      <translation language="en" translatedstring="AUTO REMOVE OLD PRODUCED INVENTORY"/>
+      <translation language="nl" translatedstring="AUTOMATISCH VERWIJDEREN OUD GEPRODUCEERDE VOORRAAD"/>
+      <translation language="fr" translatedstring="AUTO REMOVE DES ANCIENS STOCKS PRODUITS"/>
+    </entry>
+    <entry nativestring="AUTOREMOVEOLDPRODUCEDINVENTORYMODULE.REMOVE_OLD_PRODUCED_INVENTORY">
+      <translation language="en" translatedstring="Remove old produced inventory"/>
+      <translation language="nl" translatedstring="Verwijder oude geproduceerde voorraad"/>
+      <translation language="fr" translatedstring="Supprimer des anciens stocks produits"/>
+    </entry>
+    <entry nativestring="Active Phase Handler Attribute">
+      <translation language="en" translatedstring="Active Phase Handler Attribute"/>
+      <translation language="nl" translatedstring="Active Fasemanager Attribuut"/>
+      <translation language="fr" translatedstring="Attribut du Gestionnaire de Phase Active"/>
+    </entry>
+    <entry nativestring="Alarms History">
+      <translation language="en" translatedstring="Alarms History"/>
+      <translation language="nl" translatedstring="Alarmen Historiek"/>
+      <translation language="fr" translatedstring="Historique Alarmes"/>
+    </entry>
+    <entry nativestring="Arc Dial ( *** OLD *** )">
+      <translation language="en" translatedstring="Arc Dial ( *** OLD *** )"/>
+      <translation language="nl" translatedstring="Arc Dial ( *** OLD *** )"/>
+      <translation language="fr" translatedstring="Arc Dial ( *** OLD *** )"/>
+    </entry>
+    <entry nativestring="Attribute Widget">
+      <translation language="en" translatedstring="Attribute Widget"/>
+      <translation language="nl" translatedstring="Attribuut Widget"/>
+      <translation language="fr" translatedstring="Widget d'Attribut"/>
+    </entry>
+    <entry nativestring="Auto remove old produced stock">
+      <translation language="en" translatedstring="Auto remove old produced inventory"/>
+      <translation language="nl" translatedstring="Automatisch verwijderen oud geproduceerde voorraad"/>
+      <translation language="fr" translatedstring="Auto remove des anciens stocks produits"/>
+    </entry>
+    <entry nativestring="BALANCED">
+      <translation language="en" translatedstring="BALANCED"/>
+      <translation language="nl" translatedstring="GEBALANCEERD"/>
+      <translation language="fr" translatedstring="BALANCÉ"/>
+    </entry>
+    <entry nativestring="BATCH">
+      <translation language="en" translatedstring="BATCH"/>
+      <translation language="nl" translatedstring="BATCH"/>
+      <translation language="fr" translatedstring="LOT"/>
+    </entry>
+    <entry nativestring="Balanced Operation '%1' doesn't have any resourcetrains.">
+      <translation language="en" translatedstring="Balanced operation '%1' doesn't have any resource groups."/>
+      <translation language="nl" translatedstring="Gebalanceerde operatie '%1' heeft geen resource groepen. "/>
+      <translation language="fr" translatedstring="Opération équilibrée '%1' n’a pas de groupes de ressources."/>
+    </entry>
+    <entry nativestring="Balancing Schema">
+      <translation language="en" translatedstring="Balancing Schema"/>
+      <translation language="nl" translatedstring="Balanceringsschema"/>
+      <translation language="fr" translatedstring="Schéma d'Équilibrage"/>
+    </entry>
+    <entry nativestring="COUNTER.CATEGORY.PRODUCTION_CHECK">
+      <translation language="en" translatedstring="Production Check Counter"/>
+      <translation language="nl" translatedstring="Productie Controle Teller"/>
+      <translation language="fr" translatedstring="Compteur de contrôle de production"/>
+    </entry>
+    <entry nativestring="COUNTER.CATEGORY.PRODUCTION_CHECK_AUTO_SCRAP">
+      <translation language="en" translatedstring="Production Check Auto Scrap Counter"/>
+      <translation language="nl" translatedstring="Productie Controle Auto Uitval Teller"/>
+      <translation language="fr" translatedstring="Compteur automatique de rejets de contrôle de production"/>
+    </entry>
+    <entry nativestring="COUNTER.CATEGORY.PRODUCTION_DELTA">
+      <translation language="en" translatedstring="Production Delta Counter"/>
+      <translation language="nl" translatedstring="Productie Delta Teller"/>
+      <translation language="fr" translatedstring="Compteur Delta de production"/>
+    </entry>
+    <entry nativestring="Current Phase Operation">
+      <translation language="en" translatedstring="Current Phase"/>
+      <translation language="nl" translatedstring="Actuele Fase"/>
+      <translation language="fr" translatedstring="Phase Actuelle"/>
+    </entry>
+    <entry nativestring="Current Phase Parameter By Category">
+      <translation language="en" translatedstring="Current Phase Parameter By Category"/>
+      <translation language="nl" translatedstring="Huidige Faseparameter Per Categorie"/>
+      <translation language="fr" translatedstring="Paramètre de Phase Actuel Par Catégorie"/>
+    </entry>
+    <entry nativestring="Current Phase Parameter By Name">
+      <translation language="en" translatedstring="Current Phase Parameter By Name"/>
+      <translation language="nl" translatedstring="Huidige Faseparameter Per Naam"/>
+      <translation language="fr" translatedstring="Paramètre de Phase Actuel Par Nom"/>
+    </entry>
+    <entry nativestring="DOCUMENTTEMPLATE.CATEGORY.SERIAL">
+      <translation language="en" translatedstring="Serial"/>
+      <translation language="nl" translatedstring="Serienummer"/>
+      <translation language="fr" translatedstring="Numéro de serie"/>
+    </entry>
+    <entry nativestring="DOCUMENTTEMPLATE.ID.GS1_LPN_VARIABLE_WEIGHT">
+      <translation language="en" translatedstring="VARIABLE WEIGHT"/>
+      <translation language="nl" translatedstring="VARIABEL GEWICHT"/>
+      <translation language="fr" translatedstring="POIDS VARIABLE"/>
+    </entry>
+    <entry nativestring="DOCUMENTTEMPLATE.ID.SERIAL_MOLD">
+      <translation language="en" translatedstring="Mold"/>
+      <translation language="nl" translatedstring="Matrijs"/>
+      <translation language="fr" translatedstring="Moule"/>
+    </entry>
+    <entry nativestring="Default Balancing Schema">
+      <translation language="en" translatedstring="Default Balancing Schema"/>
+      <translation language="nl" translatedstring="Standaard Balanceringsschema"/>
+      <translation language="fr" translatedstring="Schéma d’Équilibrage par Défaut"/>
+    </entry>
+    <entry nativestring="Duplicate input for item %1 and inventorycodes %2">
+      <translation language="en" translatedstring="Duplicate input for item %1 and inventorycodes %2"/>
+      <translation language="nl" translatedstring="Dubbele input voor artikel %1 en voorraadkenmerken %2"/>
+      <translation language="fr" translatedstring="Double entrée pour l’article %1 et les codes d’inventaire %2"/>
+    </entry>
+    <entry nativestring="Duplicate output for item %1 and inventorycodes %2">
+      <translation language="en" translatedstring="Duplicate output for item %1 and inventorycodes %2"/>
+      <translation language="nl" translatedstring="Dubbele output voor artikel %1 en voorraadkenmerken %2"/>
+      <translation language="fr" translatedstring="Double sortie pour l’article %1 et codes d’inventaire %2"/>
+    </entry>
+    <entry nativestring="Extended Table (With widget linking)">
+      <translation language="en" translatedstring="Extended Table (With widget linking)"/>
+      <translation language="nl" translatedstring="Geavanceerde Tabel (Met widget koppeling)"/>
+      <translation language="fr" translatedstring="Table Avancé (Avec liaison widget)"/>
+    </entry>
+    <entry nativestring="HOT WIRED LPN QTY ADJUSTED">
+      <translation language="en" translatedstring="HOT WIRED LPN QTY ADJUSTED"/>
+      <translation language="nl" translatedstring="AANPASSING HOEVEELHEID HOT WIRED LPN "/>
+      <translation language="fr" translatedstring="HOT WIRED LPN QTÉ AJUSTÉ"/>
+    </entry>
+    <entry nativestring="Hot Wired Lpn Qty Adjusted">
+      <translation language="en" translatedstring="Hot Wired LPN Qty Adjusted"/>
+      <translation language="nl" translatedstring="Aanpassing hoeveelheid hot wired LPN."/>
+      <translation language="fr" translatedstring="Hot Wired LPN qté adjusté"/>
+    </entry>
+    <entry nativestring="INVENTORY ADJUSTED WITH WEIGHING DEVICE">
+      <translation language="en" translatedstring="INVENTORY ADJUSTED WITH WEIGHING DEVICE"/>
+      <translation language="nl" translatedstring="VOORRAAD AANGEPAST MET WEEGAPPARAAT"/>
+      <translation language="fr" translatedstring="INVENTAIRE AJUSTÉ AVEC APPAREIL DE PESAGE"/>
+    </entry>
+    <entry nativestring="Instruction Sheet History">
+      <translation language="en" translatedstring="Instruction Sheet History"/>
+      <translation language="nl" translatedstring="Instructielijst Historiek"/>
+      <translation language="fr" translatedstring="Historique de Fiche d'Instructions"/>
+    </entry>
+    <entry nativestring="Interrupts History">
+      <translation language="en" translatedstring="Interrupts History"/>
+      <translation language="nl" translatedstring="Verstoringen Historiek"/>
+      <translation language="fr" translatedstring="Historique Interruptions"/>
+    </entry>
+    <entry nativestring="Invalid template recipe %1: No operations">
+      <translation language="en" translatedstring="Invalid template recipe %1: No operations"/>
+      <translation language="nl" translatedstring="Ongeldig templaterecept %1: Geen bewerkingen"/>
+      <translation language="fr" translatedstring="Recette de modèle invalide %1: Pas d’opérations"/>
+    </entry>
+    <entry nativestring="Invalid template recipe operation %1: No primary output">
+      <translation language="en" translatedstring="Invalid template recipe operation %1: No primary output"/>
+      <translation language="nl" translatedstring="Ongeldige bewerking in template recept %1: geen primair output artikel"/>
+      <translation language="fr" translatedstring="Operation invalide de la recette de modèle %1 : Pas de sortie primaire"/>
+    </entry>
+    <entry nativestring="Inventory Adjusted With Weighing Device">
+      <translation language="en" translatedstring="Inventory Adjusted With Weighing Device"/>
+      <translation language="nl" translatedstring="Voorraad Aangepast Met Weegapparaat"/>
+      <translation language="fr" translatedstring="Inventaire Ajusté Avec Appareil de Pesage"/>
+    </entry>
+    <entry nativestring="It is not allowed to mix specific values with &lt;Not Specified&gt; for item '%1' and inventory code '%2'">
+      <translation language="en" translatedstring="It is not allowed to mix specific values with &lt;Not Specified&gt; for item '%1' and inventory code '%2'"/>
+      <translation language="nl" translatedstring="Het is niet toegestaan om specifieke waarden met &lt;Niet gespecificeerd&gt; te combineren voor artikel '%1' en voorraadkenmerk '%2'"/>
+      <translation language="fr" translatedstring="Il est interdit de mélanger des valeurs spécifiques avec &lt;Non Spécifié&gt; pour l'article '%1' et attribut de stock '%2'."/>
+    </entry>
+    <entry nativestring="LOTAGINGTRANSACTION.SCHEDULE.COMMAND.CHECK_PRODUCTIONDATE">
+      <translation language="en" translatedstring="QC CHANGE BASED ON PRODUCTIONDATE"/>
+      <translation language="nl" translatedstring="QC AANPASSING GEBASEERD OP PRODUCTIEDATUM"/>
+      <translation language="fr" translatedstring="CHANGEMENT DE QC BASÉ SUR LA DATE DE PRODUCTION"/>
+    </entry>
+    <entry nativestring="LOTAGINGTRANSACTION.SCHEDULE.COMMAND.CHECK_THT">
+      <translation language="en" translatedstring="QC CHANGE BASED ON BESTBEFORE DATE"/>
+      <translation language="nl" translatedstring="QC AANPASSING GEBASEERD OP THT DATUM"/>
+      <translation language="fr" translatedstring="CHANGEMENT DE QC BASÉ SUR LA DATE DE PÉREMPTION"/>
+    </entry>
+    <entry nativestring="Linear Gauge Weighingstation">
+      <translation language="en" translatedstring="Linear Gauge Weighingstation"/>
+      <translation language="nl" translatedstring="Lineaire Meter Weegstation"/>
+      <translation language="fr" translatedstring="Jauge Linéaire Station de Pesage"/>
+    </entry>
+    <entry nativestring="Linked Widget">
+      <translation language="en" translatedstring="Linked Widget"/>
+      <translation language="nl" translatedstring="Gekoppelde Widget"/>
+      <translation language="fr" translatedstring="Widget Lié"/>
+    </entry>
+    <entry nativestring="MACHINEOPERATION.STATUS.CONSOLIDATED">
+      <translation language="en" translatedstring="CONSOLIDATED"/>
+      <translation language="nl" translatedstring="GECONSOLIDEERD"/>
+      <translation language="fr" translatedstring="CONSOLIDÉ"/>
+    </entry>
+    <entry nativestring="MANUFACTURINGOPERATION.CONTEXT.DISCRETE">
+      <translation language="en" translatedstring="DISCRETE"/>
+      <translation language="nl" translatedstring="DISCREET"/>
+      <translation language="fr" translatedstring="DISCRET"/>
+    </entry>
+    <entry nativestring="MANUFACTURINGOPERATION.CONTEXT.PROCESS">
+      <translation language="en" translatedstring="PROCESS"/>
+      <translation language="nl" translatedstring="PROCES"/>
+      <translation language="fr" translatedstring="PROCESSUS"/>
+    </entry>
+    <entry nativestring="MASSBALANCETRANSACTION.CALCULATE_MASSBALANCE">
+      <translation language="en" translatedstring="CALCULATE MASS BALANCE"/>
+      <translation language="nl" translatedstring="MASSABALANS BEREKENEN"/>
+      <translation language="fr" translatedstring="CALCULER BILAN DE MASSE"/>
+    </entry>
+    <entry nativestring="MOLD">
+      <translation language="en" translatedstring="MOLD"/>
+      <translation language="nl" translatedstring="MATRIJS"/>
+      <translation language="fr" translatedstring="MOULE"/>
+    </entry>
+    <entry nativestring="MOLD COMPONENT">
+      <translation language="en" translatedstring="MOLD COMPONENT"/>
+      <translation language="nl" translatedstring="MATRIJS COMPONENT"/>
+      <translation language="fr" translatedstring="COMPOSANT DU MOULE"/>
+    </entry>
+    <entry nativestring="Main Production Operation (Batching)">
+      <translation language="en" translatedstring="Main Production Operation (Batching)"/>
+      <translation language="nl" translatedstring="Hoofdbewerking (Batching)"/>
+      <translation language="fr" translatedstring="Production opération principale (Batching)"/>
+    </entry>
+    <entry nativestring="No operation found for job '%1'">
+      <translation language="en" translatedstring="No operation found for job '%1'."/>
+      <translation language="nl" translatedstring="Geen operatie gevonden voor job '%1'."/>
+      <translation language="fr" translatedstring="Pas d'opération trouvée pour job '%1'."/>
+    </entry>
+    <entry nativestring="OEE Overview Widget">
+      <translation language="en" translatedstring="OEE Overview Widget"/>
+      <translation language="nl" translatedstring="OEE Overzicht Widget"/>
+      <translation language="fr" translatedstring="Widget Resumé OEE"/>
+    </entry>
+    <entry nativestring="One or more operations in this order are balanced. The entire order will be planned instead. Do you want to continue?">
+      <translation language="en" translatedstring="One or more operations in this order are balanced. The entire order will be planned instead. \nDo you want to continue?"/>
+      <translation language="nl" translatedstring="Één of meer operaties in dit order zijn gebalanceerd. Het volledige order zal worden gepland. \nBent u zeker dat u wenst door te gaan?"/>
+      <translation language="fr" translatedstring="Une ou plusieurs opérations dans cet ordre sont équilibrées. L'ordre entier sera prévu à la place. \nVoulez-vous continuer ?"/>
+    </entry>
+    <entry nativestring="Operation '%1' is balanced but no balancing configuration is found. ">
+      <translation language="en" translatedstring="Operation '%1' is balanced but no balancing configuration is found. "/>
+      <translation language="nl" translatedstring="Operatie '%1' is gebalanceerd maar er werd geen balanceringsconfiguratie gevonden. "/>
+      <translation language="fr" translatedstring="Opération '%1' est équilibrée mais aucune configuration d’équilibrage n’est trouvée. "/>
+    </entry>
+    <entry nativestring="Operation Step Instructions">
+      <translation language="en" translatedstring="Operation Step Instructions"/>
+      <translation language="nl" translatedstring="Bewerkinsstap instructies"/>
+      <translation language="fr" translatedstring="Instructions Étape d'Opération"/>
+    </entry>
+    <entry nativestring="Operation removal only allowed once.">
+      <translation language="en" translatedstring="Operation removal only allowed once."/>
+      <translation language="nl" translatedstring="Verwijdering van een bewerking slechts één keer toegestaan."/>
+      <translation language="fr" translatedstring="Retrait de l’opération autorisé une seule fois."/>
+    </entry>
+    <entry nativestring="Output with packaging selection is not supported.">
+      <translation language="en" translatedstring="Output with packaging selection is not supported."/>
+      <translation language="nl" translatedstring="Output met specifieke verpakkingsconfiguratie is niet toegestaan"/>
+      <translation language="fr" translatedstring="La sortie avec sélection d’emballage n’est pas prise en charge."/>
+    </entry>
+    <entry nativestring="Outputs can not be cleared">
+      <translation language="en" translatedstring="Outputs can not be cleared"/>
+      <translation language="nl" translatedstring="Outputs kunnen niet worden verwijderd"/>
+      <translation language="fr" translatedstring="Les sorties ne peuvent pas être effacées"/>
+    </entry>
+    <entry nativestring="PRODUCTIONOPERATION.CONTEXT.DISCRETE">
+      <translation language="en" translatedstring="DISCRETE"/>
+      <translation language="nl" translatedstring="DISCREET"/>
+      <translation language="fr" translatedstring="DISCRET"/>
+    </entry>
+    <entry nativestring="PRODUCTIONOPERATION.CONTEXT.PROCESS">
+      <translation language="en" translatedstring="PROCESS"/>
+      <translation language="nl" translatedstring="PROCES"/>
+      <translation language="fr" translatedstring="PROCESSUS"/>
+    </entry>
+    <entry nativestring="PRODUCTIONOPERATION.STATUS.CONSOLIDATED">
+      <translation language="en" translatedstring="CONSOLIDATED"/>
+      <translation language="nl" translatedstring="GECONSOLIDEERD"/>
+      <translation language="fr" translatedstring="CONSOLIDÉ"/>
+    </entry>
+    <entry nativestring="PRODUCTIONORDER.CATEGORY.CONSOLIDATION">
+      <translation language="en" translatedstring="CONSOLIDATION"/>
+      <translation language="nl" translatedstring="CONSOLIDATIE"/>
+      <translation language="fr" translatedstring="CONSOLIDATION"/>
+    </entry>
+    <entry nativestring="PRODUCTIONORDER.STATUS.CONSOLIDATED">
+      <translation language="en" translatedstring="CONSOLIDATED"/>
+      <translation language="nl" translatedstring="GECONSOLIDEERD"/>
+      <translation language="fr" translatedstring="CONSOLIDÉ"/>
+    </entry>
+    <entry nativestring="Parent Production Operation (Multilevel BOM)">
+      <translation language="en" translatedstring="Parent Production Operation (Multilevel BOM)"/>
+      <translation language="nl" translatedstring="Bovenliggende Productie Bewerking (Multilevel BOM)"/>
+      <translation language="fr" translatedstring="Ordre de Fabrication Parent (Multilevel BOM)"/>
+    </entry>
+    <entry nativestring="Phantom items are not supported.">
+      <translation language="en" translatedstring="Phantom items are not supported."/>
+      <translation language="nl" translatedstring="Phantom items zijn niet ondersteund."/>
+      <translation language="fr" translatedstring="Les éléments fantômes ne sont pas pris en charge."/>
+    </entry>
+    <entry nativestring="Phantom output '%1' not defined as primary output">
+      <translation language="en" translatedstring="Phantom output '%1' not defined as primary output"/>
+      <translation language="nl" translatedstring="Fantoom output '%1' niet gedefinieerd als primaire output"/>
+      <translation language="fr" translatedstring="Sortie fantôme '%1' non définie comme sortie primaire"/>
+    </entry>
+    <entry nativestring="Please specify the reject reason group.">
+      <translation language="en" translatedstring="Please specify the reject reason group."/>
+      <translation language="nl" translatedstring="Gelieve de uitvalredengroep te selecteren."/>
+      <translation language="fr" translatedstring="Veuillez spécifier le groupe de raisons de rejet."/>
+    </entry>
+    <entry nativestring="Primary output '%1' must not be fixed">
+      <translation language="en" translatedstring="Primary output '%1' must not be fixed"/>
+      <translation language="nl" translatedstring="Primaire output  '%1' mag niet 'vast' zijn"/>
+      <translation language="fr" translatedstring="La sortie primaire '%1' ne doit pas être fixée"/>
+    </entry>
+    <entry nativestring="Production Check Auto Scrap Counter Settings">
+      <translation language="en" translatedstring="Production Check Auto Scrap Counter Settings"/>
+      <translation language="nl" translatedstring="Eigenschappen Productie Controle Auto Uitval Teller"/>
+      <translation language="fr" translatedstring="Paramètres du Compteur de Contrôle de Production de Rejet Automatique"/>
+    </entry>
+    <entry nativestring="Production Check Counter Settings">
+      <translation language="en" translatedstring="Production Check Counter Settings"/>
+      <translation language="nl" translatedstring="Eigenschappen productie controle teller"/>
+      <translation language="fr" translatedstring="Paramètres du Compteur de Contrôle de Production"/>
+    </entry>
+    <entry nativestring="Production Delta Counter Settings">
+      <translation language="en" translatedstring="Production Delta Counter Settings"/>
+      <translation language="nl" translatedstring="Eigenschappen Productie Delta Teller"/>
+      <translation language="fr" translatedstring="Paramètres du Compteur Delta de Production"/>
+    </entry>
+    <entry nativestring="Production Order Option">
+      <translation language="en" translatedstring="Production Order Option"/>
+      <translation language="nl" translatedstring="Productie Order Optie"/>
+      <translation language="fr" translatedstring="Option d'Ordre de Production"/>
+    </entry>
+    <entry nativestring="Production order '%1' is not IDLE. Option '%2' can not be added.">
+      <translation language="en" translatedstring="Production order '%1' is not IDLE. Option '%2' can not be added."/>
+      <translation language="nl" translatedstring="Productieorder '%1' is niet IDLE. Optie '%2' kan niet worden toegevoegd."/>
+      <translation language="fr" translatedstring="L’ordre de fabrication '%1' n’est pas INACTIF. L’option '%2' ne peut pas être ajoutée."/>
+    </entry>
+    <entry nativestring="Production order '%1' is not IDLE. Option '%2' can not be changed.">
+      <translation language="en" translatedstring="Production order '%1' is not IDLE. Option '%2' can not be changed."/>
+      <translation language="nl" translatedstring="Productieorder '%1' is niet IDLE. Optie '%2' kan niet worden gewijzigd."/>
+      <translation language="fr" translatedstring="L’ordre de fabrication '%1' n’est pas INACTIF. L’option '%2' ne peut pas être modifiée."/>
+    </entry>
+    <entry nativestring="Production order '%1' is not IDLE. Options can not be deleted.">
+      <translation language="en" translatedstring="Production order '%1' is not IDLE. Options can not be deleted."/>
+      <translation language="nl" translatedstring="Productieorder '%1' is niet IDLE. Opties kunnen niet worden verwijderd."/>
+      <translation language="fr" translatedstring="L’ordre de fabrication '%1' n’est pas INACTIF. Les options ne peuvent pas être supprimées."/>
+    </entry>
+    <entry nativestring="Production order '%1': Not allowed to remove all operations.">
+      <translation language="en" translatedstring="Production order '%1': Not allowed to remove all operations."/>
+      <translation language="nl" translatedstring="Productieorder '%1': niet toegestaan om alle bewerkingen te verwijderen."/>
+      <translation language="fr" translatedstring="Ordre de fabrication '%1': Non autorisé à supprimer toutes les opérations."/>
+    </entry>
+    <entry nativestring="Radial Dial ( *** OLD *** )">
+      <translation language="en" translatedstring="Radial Dial ( *** OLD *** )"/>
+      <translation language="nl" translatedstring="Radial Dial ( *** OLD *** )"/>
+      <translation language="fr" translatedstring="Radial Dial ( *** OLD *** )"/>
+    </entry>
+    <entry nativestring="Recipe %1 is not a template recipe">
+      <translation language="en" translatedstring="Recipe %1 is not a template recipe"/>
+      <translation language="nl" translatedstring="Recept %1 is geen template recept"/>
+      <translation language="fr" translatedstring="Recette %1 n’est pas une recette de modèle"/>
+    </entry>
+    <entry nativestring="Recipe Variant Version has invalid status '%1'">
+      <translation language="en" translatedstring="Recipe Variant Version has invalid status '%1'"/>
+      <translation language="nl" translatedstring="Recept variant versie heeft ongeldige status '%1'"/>
+      <translation language="fr" translatedstring="La version variante de recette a le statut invalide '%1'"/>
+    </entry>
+    <entry nativestring="SIGNALTAG.ID.EMPTY_REPORT">
+      <translation language="en" translatedstring="EMPTY REPORT"/>
+      <translation language="nl" translatedstring="LEEGMELDING"/>
+      <translation language="fr" translatedstring="RAPPORT VIDE"/>
+    </entry>
+    <entry nativestring="SILO EMPTY REPORT">
+      <translation language="en" translatedstring="SILO EMPTY REPORT"/>
+      <translation language="nl" translatedstring="SILO LEEGMELDING"/>
+      <translation language="fr" translatedstring="SILO RAPPORT VIDE"/>
+    </entry>
+    <entry nativestring="Silo Empty Report">
+      <translation language="en" translatedstring="Silo Empty Report"/>
+      <translation language="nl" translatedstring="Silo Leegmelding"/>
+      <translation language="fr" translatedstring="Silo Rapport de Vide"/>
+    </entry>
+    <entry nativestring="Table (With widget linking)">
+      <translation language="en" translatedstring="Extended Table (With widget linking)"/>
+      <translation language="nl" translatedstring="Tabel (Met widget koppeling)"/>
+      <translation language="fr" translatedstring="Table (Avec liaison widget)"/>
+    </entry>
+    <entry nativestring="The following %1 are used in a balancing schema.">
+      <translation language="en" translatedstring="The following %1 are used in a balancing schema."/>
+      <translation language="nl" translatedstring="De volgende %1 worden gebruikt in een balanceringsschema."/>
+      <translation language="fr" translatedstring="Les %1 suivants sont utilisés dans un schéma d’équilibrage."/>
+    </entry>
+    <entry nativestring="The following manufacturing operations are used in a balancing schema.">
+      <translation language="en" translatedstring="The following operations are used in a balancing schema."/>
+      <translation language="nl" translatedstring="De volgende bewerkingen worden gebruikt in een balanceringsschema. "/>
+      <translation language="fr" translatedstring="Les opérations suivantes sont utilisées dans un schéma d’équilibrage."/>
+    </entry>
+    <entry nativestring="The following orders contain balanced operations. The entire order will be unplanned instead. Do you want to continue?">
+      <translation language="en" translatedstring="The following orders contain balanced operations. The entire order will be unplanned instead. \nDo you want to continue?"/>
+      <translation language="nl" translatedstring="De volgende orders bevatten gebalanceerde operaties. De volledige orders zullen uit de planning gehaald worden. \nBent u zeker dat u wenst door te gaan?"/>
+      <translation language="fr" translatedstring="Les ordres suivants contiennent des opérations équilibrées. L'ordre sera entièrement non planifiée à la place. \nVoulez-vous continuer ?"/>
+    </entry>
+    <entry nativestring="There are still open non conformities.">
+      <translation language="en" translatedstring="There are still open non conformities."/>
+      <translation language="nl" translatedstring="Er zijn nog steeds open nonconformiteiten."/>
+      <translation language="fr" translatedstring="Il y a encore des non-conformités ouvertes."/>
+    </entry>
+    <entry nativestring="These %1 cannot be removed.">
+      <translation language="en" translatedstring="These %1 cannot be removed."/>
+      <translation language="nl" translatedstring="Deze %1 kunnen niet verwijderd worden."/>
+      <translation language="fr" translatedstring="Ces %1 ne peuvent pas être supprimer."/>
+    </entry>
+    <entry nativestring="These manufacturing operations cannot be removed.">
+      <translation language="en" translatedstring="These operations cannot be removed."/>
+      <translation language="nl" translatedstring="Deze bewerkingen kunnen niet verwijderd worden. "/>
+      <translation language="fr" translatedstring="Ces opérations ne peuvent pas être supprimer."/>
+    </entry>
+    <entry nativestring="Top Interrupt Widget">
+      <translation language="en" translatedstring="Top Interrupt Widget"/>
+      <translation language="nl" translatedstring="Topverstoring Widget"/>
+      <translation language="fr" translatedstring="Widget Interruption Haut"/>
+    </entry>
+    <entry nativestring="UOM NOT FOUND">
+      <translation language="en" translatedstring="UOM NOT FOUND"/>
+      <translation language="nl" translatedstring="UOM NIET GEVONDEN"/>
+      <translation language="fr" translatedstring="UNITÉ INTROUVABLE"/>
+    </entry>
+    <entry nativestring="WEIGHING STATION">
+      <translation language="en" translatedstring="WEIGHING STATION"/>
+      <translation language="nl" translatedstring="WEEGSTATION"/>
+      <translation language="fr" translatedstring="STATION DE PESAGE"/>
+    </entry>
+    <entry nativestring="WIP INPUT PREPARATION">
+      <translation language="en" translatedstring="WIP INPUT PREPARATION"/>
+      <translation language="nl" translatedstring="WIP INPUT VOORBEREIDING"/>
+      <translation language="fr" translatedstring="TRAVAUX EN COURS DE PRÉPARATION D’ENTRÉE"/>
+    </entry>
+    <entry nativestring="WIP Line Entry">
+      <translation language="en" translatedstring="WIP Line Entry"/>
+      <translation language="nl" translatedstring="WIP Lijningang"/>
+      <translation language="fr" translatedstring="WIP Entrée de Ligne"/>
+    </entry>
+    <entry nativestring="You should specify a resource group applicable for all production operations">
+      <translation language="en" translatedstring="Please specify a resource group applicable for all operations. "/>
+      <translation language="nl" translatedstring="Gelieve een resource group voor alle operaties te specificeren."/>
+      <translation language="fr" translatedstring="Veuillez spécifier une groupe de ressources pour toutes les opérations."/>
+    </entry>
+    <entry nativestring="consolidated.productionitemqty">
+      <translation language="en" translatedstring="Consolidated Output"/>
+      <translation language="nl" translatedstring="Geconsolideerde Output"/>
+      <translation language="fr" translatedstring="Sortie Consolidé"/>
+    </entry>
+    <entry nativestring="consolidated.productionoperation">
+      <translation language="en" translatedstring="Consolidated Operation"/>
+      <translation language="nl" translatedstring="Geconsolideerde Bewerking"/>
+      <translation language="fr" translatedstring="Opération Consolidée"/>
+    </entry>
+    <entry nativestring="currentStrokeCount">
+      <translation language="en" translatedstring="Stroke Count"/>
+      <translation language="nl" translatedstring="Aantal Slagen"/>
+      <translation language="fr" translatedstring="Nombre de traits"/>
+    </entry>
+    <entry nativestring="interruptreason.abortsconflictingindirectmanoperation">
+      <translation language="en" translatedstring="Aborts Conflicting Excl. Activities"/>
+      <translation language="nl" translatedstring="Beëindigt Conflicterende Excl. Indirecte Activiteit"/>
+      <translation language="fr" translatedstring="Annule Activités Excl. Contradictoires"/>
+    </entry>
+    <entry nativestring="interruptreason.abortsdirectoperation">
+      <translation language="en" translatedstring="Aborts Direct Activities"/>
+      <translation language="nl" translatedstring="Beëindigt Directe Activiteiten"/>
+      <translation language="fr" translatedstring="Annule Activités Directes"/>
+    </entry>
+    <entry nativestring="interruptreason.indirectmanualoperation">
+      <translation language="en" translatedstring="Indirect Activity"/>
+      <translation language="nl" translatedstring="Indirecte Activiteit"/>
+      <translation language="fr" translatedstring="Activité Indirecte"/>
+    </entry>
+    <entry nativestring="item.remove.tooltip">
+      <translation language="en" translatedstring="Remove items"/>
+      <translation language="nl" translatedstring="Items verwijderen"/>
+      <translation language="fr" translatedstring="Supprimer articles"/>
+    </entry>
+    <entry nativestring="manufacturingitemqty.autoplan">
+      <translation language="en" translatedstring="Auto plan"/>
+      <translation language="nl" translatedstring="Auto plan"/>
+    </entry>
+    <entry nativestring="manufacturingitemqty.autostartstop">
+      <translation language="en" translatedstring="Auto start/stop"/>
+      <translation language="nl" translatedstring="Auto start/stop"/>
+    </entry>
+    <entry nativestring="manufacturingitemqty.lockedrelation">
+      <translation language="en" translatedstring="Locked relation"/>
+      <translation language="nl" translatedstring="Gelockte relatie"/>
+    </entry>
+    <entry nativestring="manufacturingitemqty.maxdelay">
+      <translation language="en" translatedstring="Max delay"/>
+      <translation language="nl" translatedstring="Maximale vertraging"/>
+    </entry>
+    <entry nativestring="manufacturingitemqty.mindelay">
+      <translation language="en" translatedstring="Min delay"/>
+      <translation language="nl" translatedstring="Minimale vertraging"/>
+    </entry>
+    <entry nativestring="manufacturingitemqty.ordercreation">
+      <translation language="en" translatedstring="Multi level BOM order creation"/>
+      <translation language="nl" translatedstring="Multi level BOM order creatie"/>
+    </entry>
+    <entry nativestring="manufacturingitemqty.relationtype">
+      <translation language="en" translatedstring="Relation type"/>
+      <translation language="nl" translatedstring="Relatie type"/>
+    </entry>
+    <entry nativestring="manufacturingoperation.context.discrete.settings">
+      <translation language="en" translatedstring="Discrete Context Settings"/>
+      <translation language="nl" translatedstring="Discrete Contextinstellingen"/>
+      <translation language="fr" translatedstring="Paramètres de Contexte Discret"/>
+    </entry>
+    <entry nativestring="manufacturingoperation.isloadbalanced">
+      <translation language="en" translatedstring="Balanced"/>
+      <translation language="nl" translatedstring="Gebalanceerd"/>
+      <translation language="fr" translatedstring="Balancée"/>
+    </entry>
+    <entry nativestring="manufacturingoperation.isrepair">
+      <translation language="en" translatedstring="Is Repair"/>
+      <translation language="nl" translatedstring="Is Herstel"/>
+      <translation language="fr" translatedstring="Réparation"/>
+    </entry>
+    <entry nativestring="manufacturingoperation.isrepair.tooltip">
+      <translation language="en" translatedstring="The operation is a repair operation, only added in the context of an (open) non conformity."/>
+      <translation language="nl" translatedstring="De bewerking is een herstel bewerking, die enkel zal toegevoegd worden voor een (open) nonconformiteit."/>
+      <translation language="fr" translatedstring="L’opération est une opération de réparation, seulement ajoutée dans le cadre d’une non-conformité (ouverte)."/>
+    </entry>
+    <entry nativestring="massbalance">
+      <translation language="en" translatedstring="Mass Balance"/>
+      <translation language="nl" translatedstring="Massabalans"/>
+      <translation language="fr" translatedstring="Bilan de Masse"/>
+    </entry>
+    <entry nativestring="objt.discrete.mes.operationsteps.productionoperation.list">
+      <translation language="en" translatedstring="Production Operation &gt; Operation Steps"/>
+      <translation language="nl" translatedstring="Productie Operatie &gt; Operatie Stappen"/>
+      <translation language="fr" translatedstring="Operation &gt; Étape de l’Opération Production"/>
+    </entry>
+    <entry nativestring="objt.discrete.mes.resourceview.nonconformities">
+      <translation language="en" translatedstring="Non Conformities"/>
+      <translation language="nl" translatedstring="Nonconformiteiten"/>
+      <translation language="fr" translatedstring="Non-Conformités"/>
+    </entry>
+    <entry nativestring="objt.discrete.mes.resourceview.productionorder.productionoptions">
+      <translation language="en" translatedstring="Production Order Options"/>
+      <translation language="nl" translatedstring="Productieorder Opties"/>
+      <translation language="fr" translatedstring="Options d'Ordre de Fabrication"/>
+    </entry>
+    <entry nativestring="objt.mes.resourceview.machine.consolidation_create">
+      <translation language="en" translatedstring="Machine &gt; Create Consolidation"/>
+      <translation language="nl" translatedstring="Machine &gt; Creëer Consolidatie"/>
+      <translation language="fr" translatedstring="Machine &gt; Créer Consolidation"/>
+    </entry>
+    <entry nativestring="objt.mes.resourceview.machine.machineoperation.itemqty.in.add">
+      <translation language="en" translatedstring="Machine &gt; Add Input Item"/>
+      <translation language="nl" translatedstring="Machine &gt; Voeg Input Artikel Toe"/>
+      <translation language="fr" translatedstring="Machine &gt; Ajouter Article d'entrée"/>
+    </entry>
+    <entry nativestring="objt.mes.resourceview.machine.machineoperation.itemqty.in.edit">
+      <translation language="en" translatedstring="Machine &gt; Edit Input Item"/>
+      <translation language="nl" translatedstring="Machine &gt; Bewerk Input Artikel"/>
+      <translation language="fr" translatedstring="Machine &gt; Modifier Article d'entrée"/>
+    </entry>
+    <entry nativestring="objt.mes.resourceview.machine.machineoperation.itemqty.in.remove">
+      <translation language="en" translatedstring="Machine &gt; Remove Input Item"/>
+      <translation language="nl" translatedstring="Machine &gt; Verwijder Input Artikel"/>
+      <translation language="fr" translatedstring="Machine &gt; Supprimer Article d'entrée"/>
+    </entry>
+    <entry nativestring="objt.mes.resourceview.machine.machineoperation.itemqty.in.replace">
+      <translation language="en" translatedstring="Machine &gt; Replace Input Item"/>
+      <translation language="nl" translatedstring="Machine &gt; Vervang Input Artikel"/>
+      <translation language="fr" translatedstring="Machine &gt; Remplace Article d'entrée"/>
+    </entry>
+    <entry nativestring="objt.mes.resourceview.nonconformity.complete">
+      <translation language="en" translatedstring="Complete Non Conformity"/>
+      <translation language="nl" translatedstring="Non-Conformiteit Beëindigen"/>
+      <translation language="fr" translatedstring="Compléter Non-Conformité"/>
+    </entry>
+    <entry nativestring="objt.mes.resourceview.nonconformity.create">
+      <translation language="en" translatedstring="Create Non Conformity"/>
+      <translation language="nl" translatedstring="Non-Conformiteit Aanmaken"/>
+      <translation language="fr" translatedstring="Créer Non-Conformité"/>
+    </entry>
+    <entry nativestring="objt.mes.resourceview.workcenter.consolidation_create">
+      <translation language="en" translatedstring="Workcenter &gt; Create Consolidation"/>
+      <translation language="nl" translatedstring="Werkcentrum &gt; Creëer Consolidatie"/>
+      <translation language="fr" translatedstring="Centre de travail &gt; Créer Consolidation"/>
+    </entry>
+    <entry nativestring="objt.mes.resourceview.workcenter.machineoperation.itemqty.in.add">
+      <translation language="en" translatedstring="Workcenter &gt; Add Input Item"/>
+      <translation language="nl" translatedstring="Werkcentrum &gt; Voeg Input Artikel Toe"/>
+      <translation language="fr" translatedstring="Centre de Travail &gt; Ajouter Article d'entrée"/>
+    </entry>
+    <entry nativestring="objt.mes.resourceview.workcenter.machineoperation.itemqty.in.edit">
+      <translation language="en" translatedstring="Workcenter &gt; Edit Input Item"/>
+      <translation language="nl" translatedstring="Werkcentrum &gt; Bewerk Input Artikel"/>
+      <translation language="fr" translatedstring="Centre de Travail &gt; Modifier Article d'entrée"/>
+    </entry>
+    <entry nativestring="objt.mes.resourceview.workcenter.machineoperation.itemqty.in.remove">
+      <translation language="en" translatedstring="Workcenter &gt; Remove Input Item"/>
+      <translation language="nl" translatedstring="Werkcentrum &gt; Verwijder Input Artikel"/>
+      <translation language="fr" translatedstring="Centre de Travail &gt; Supprimer Article d'entrée"/>
+    </entry>
+    <entry nativestring="objt.mes.resourceview.workcenter.machineoperation.itemqty.in.replace">
+      <translation language="en" translatedstring="Workcenter &gt; Replace Input Item"/>
+      <translation language="nl" translatedstring="Werkcentrum &gt; Vervang Input Artikel"/>
+      <translation language="fr" translatedstring="Centre de Travail &gt; Remplace Article d'entrée"/>
+    </entry>
+    <entry nativestring="objt.process.item.extension">
+      <translation language="en" translatedstring="Item Parameters"/>
+      <translation language="nl" translatedstring="Artikel Parameters"/>
+      <translation language="fr" translatedstring="Paramètres de l’élément"/>
+    </entry>
+    <entry nativestring="objt.process.lot.extension">
+      <translation language="en" translatedstring="Lot Parameters"/>
+      <translation language="nl" translatedstring="Lot Parameters"/>
+      <translation language="fr" translatedstring="Paramètres de Lot"/>
+    </entry>
+    <entry nativestring="objt.process.mes.moldmanagement.component.serials.in.assembly">
+      <translation language="en" translatedstring="Item &gt; Serial in assembly"/>
+      <translation language="nl" translatedstring="Artikel &gt; Geassembleerd serienummers"/>
+      <translation language="fr" translatedstring="Article &gt; Numéro de série assemblé"/>
+    </entry>
+    <entry nativestring="objt.process.mes.moldmanagement.serials">
+      <translation language="en" translatedstring="Input (Inventory) &gt; Serials"/>
+      <translation language="nl" translatedstring="Input (Voorraad) &gt; Serienummers"/>
+      <translation language="fr" translatedstring="Entrée (Inventaire) &gt; Serials"/>
+    </entry>
+    <entry nativestring="objt.process.mes.moldmanagement.targetinputoperations.overview">
+      <translation language="en" translatedstring="Mold Input (Inventory)"/>
+      <translation language="nl" translatedstring="Matrijs Input (Voorraad)"/>
+      <translation language="fr" translatedstring="Entrée Moule (Inventaire)"/>
+    </entry>
+    <entry nativestring="objt.process.mes.phases.runtimephaseoperation.start">
+      <translation language="en" translatedstring="Start Phase"/>
+      <translation language="nl" translatedstring="Start fase"/>
+      <translation language="fr" translatedstring="Démarrer la Phase"/>
+    </entry>
+    <entry nativestring="objt.process.mes.resourceview.productionordercomments.edit">
+      <translation language="en" translatedstring="Productionorder &gt; Edit Comments"/>
+      <translation language="nl" translatedstring="Productieorder &gt; Opmerkingen Editeren"/>
+      <translation language="fr" translatedstring="Ordre de Production &gt; Modifier les Commentaires"/>
+    </entry>
+    <entry nativestring="photoinstruction.value.edit">
+      <translation language="en" translatedstring="Take Photo"/>
+      <translation language="nl" translatedstring="Foto Nemen"/>
+      <translation language="fr" translatedstring="Prenez Photo"/>
+    </entry>
+    <entry nativestring="production.operationstep">
+      <translation language="en" translatedstring="Production Operation Step"/>
+      <translation language="nl" translatedstring="Productie Bewerkingsstap"/>
+      <translation language="fr" translatedstring="Étape d’Opération de Production"/>
+    </entry>
+    <entry nativestring="productionitemqty.autoplan">
+      <translation language="en" translatedstring="Auto plan"/>
+      <translation language="nl" translatedstring="Auto plan"/>
+    </entry>
+    <entry nativestring="productionitemqty.autostartstop">
+      <translation language="en" translatedstring="Auto start/stop"/>
+      <translation language="nl" translatedstring="Auto start/stop"/>
+    </entry>
+    <entry nativestring="productionitemqty.lockedrelation">
+      <translation language="en" translatedstring="Locked relation"/>
+      <translation language="nl" translatedstring="Gelockte relatie"/>
+    </entry>
+    <entry nativestring="productionitemqty.maxdelay">
+      <translation language="en" translatedstring="Max delay"/>
+      <translation language="nl" translatedstring="Maximale vertraging"/>
+    </entry>
+    <entry nativestring="productionitemqty.mindelay">
+      <translation language="en" translatedstring="Min delay"/>
+      <translation language="nl" translatedstring="Minimale vertraging"/>
+    </entry>
+    <entry nativestring="productionitemqty.ordercreation">
+      <translation language="en" translatedstring="Multi level BOM order creation"/>
+      <translation language="nl" translatedstring="Multi level BOM order creatie"/>
+    </entry>
+    <entry nativestring="productionitemqty.relationtype">
+      <translation language="en" translatedstring="Relation type"/>
+      <translation language="nl" translatedstring="Relatie type"/>
+    </entry>
+    <entry nativestring="productionorder.category">
+      <translation language="en" translatedstring="Category"/>
+      <translation language="nl" translatedstring="Categorie"/>
+      <translation language="fr" translatedstring="Catégorie"/>
+    </entry>
+    <entry nativestring="qty.consolidated">
+      <translation language="en" translatedstring="Consolidated"/>
+      <translation language="nl" translatedstring="Geconsolideerd"/>
+      <translation language="fr" translatedstring="Consoldé"/>
+    </entry>
+    <entry nativestring="recipeVariant">
+      <translation language="en" translatedstring="Recipe Variant"/>
+      <translation language="nl" translatedstring="Recept Variant"/>
+      <translation language="fr" translatedstring="Recette Variante"/>
+    </entry>
+    <entry nativestring="totalStrokeCount">
+      <translation language="en" translatedstring="Total Stroke Count"/>
+      <translation language="nl" translatedstring="Totaal Aantal Slagen"/>
+      <translation language="fr" translatedstring="Total Nombre de Traits"/>
+    </entry>
+  </entries>
+  <xmlparserconfig path="objt.vertical_config.xml"/>
+</dictionary>

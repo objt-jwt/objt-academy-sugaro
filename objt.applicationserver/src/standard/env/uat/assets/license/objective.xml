@@ -1,0 +1,34 @@
+<license info="[evaluation license]" >
+
+  <!-- functional license section -->
+  <licenseid type="MODULE" id="OBJT.MES" />
+  <licenseid type="MODULE" id="OBJT.MES.MM" />
+  <licenseid type="MODULE" id="OBJT.MES.QM" />
+  <licenseid type="MODULE" id="OBJT.MES.APS" />
+
+  <licenseid type="MODULE" id="OBJT.WMS" />
+  <licenseid type="MODULE" id="OBJT.WMS.VALKIT" />
+  <licenseid type="MODULE" id="OBJT.WMS.QC" />
+  <licenseid type="MODULE" id="OBJT.WMS.REPACK"  />
+  <licenseid type="MODULE" id="OBJT.WMS.PLE"  />
+
+  <licenseid type="MODULE" id="OBJT.TA.ATTENDANCE" />
+  <licenseid type="MODULE" id="OBJT.TA.COSTCENTER" />
+  <licenseid type="MODULE" id="OBJT.TA.ACCESS" />
+  <licenseid type="MODULE" id="OBJT.TA.VISITOR" />
+  <licenseid type="MODULE" id="OBJT.TA.CRP" />
+  <licenseid type="MODULE" id="OBJT.TA.WEB" />
+
+  <!-- client license section -->
+  <licenseid type="APPLICATION" id="objt.server" maxinstances="1" />
+  <licenseid type="APPLICATION" id="objt.deviceserver" maxinstances="0" />
+  <licenseid type="APPLICATION" id="objt.printserver" maxinstances="0" />
+  <licenseid type="APPLICATION" id="objt.webserver" maxinstances="0" />
+  <licenseid type="APPLICATION" id="objt.configurator" maxinstances="0" />
+  <licenseid type="APPLICATION" id="objt.supervisor" maxinstances="1" />
+  <licenseid type="APPLICATION" id="objt.supervisor.readonly" maxinstances="1" />
+  <licenseid type="APPLICATION" id="objt.mes.operatorclient" maxinstances="1" hostbased="YES" />
+  <licenseid type="APPLICATION" id="objt.wms.operatorclient" maxinstances="1" hostbased="YES" />
+  <licenseid type="APPLICATION" id="objt.wms.rfclient" maxinstances="1" />
+  <licenseid type="APPLICATION" id="objt.gateway" maxinstances="1" />
+</license>

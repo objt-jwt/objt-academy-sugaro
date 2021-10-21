@@ -1,0 +1,38 @@
+<!--PreparedHTML.PlaceHolder:INCLUDE:/template.html -->
+
+<div class='row'>
+	<img class="img-responsive center-block" src="../images/Objective.png">
+</div>
+<p class="text-center"><!--PreparedHTML.PlaceHolder:INSTALLATION--></p>
+<br>
+
+<p class="text-center">
+	<script language="JavaScript">
+var myDate = new Date();
+
+/* hour is before noon */
+if ( myDate.getHours() < 12 )
+{
+    document.write("<!--TRANSLATE(Good Morning)--> <!--PreparedHTML.PlaceHolder:EMPLOYEE-->");
+}
+else  /* Hour is from noon to 5pm (actually to 5:59 pm) */
+if ( myDate.getHours() >= 12 && myDate.getHours() <= 17 )
+{
+    document.write("<!--TRANSLATE(Good Afternoon)--> <!--PreparedHTML.PlaceHolder:EMPLOYEE-->");
+}
+else  /* the hour is after 5pm, so it is between 6pm and midnight */
+if ( myDate.getHours() > 17 && myDate.getHours() <= 24 )
+{
+    document.write("<!--TRANSLATE(Good Evening)--> <!--PreparedHTML.PlaceHolder:EMPLOYEE-->");
+}
+</script>
+</p>
+<br>
+<div class="btn-group btn-group-justified" role="group">
+	<a href="#" class="btn btn-sq-lg btn-primary" onclick="showPage('operator', 'attendanceRegistration.form');">
+		<h1><i class="glyphicon glyphicon-time"></i></h1><br>
+		<!--TRANSLATE(Registration)--><br><br>
+	</a>
+</div>
+<!-- close template -->
+</div></body></html>

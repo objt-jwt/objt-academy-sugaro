@@ -1,0 +1,176 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title"><!--TRANSLATE(Manage attendances)--></h3>
+  </div>
+  <div class="panel-body">
+		<div class="form-group">
+			<label for="datepicker"><!--TRANSLATE(Date)--></label>
+			<div class='input-group date' id='datepicker'>
+				<input type="text" class='form-control' id='datepickerTxt' onkeydown="if (event.keyCode == 13) buildAttendanceEventList()">
+				<div class="input-group-addon">
+					<span class="glyphicon glyphicon-calendar"></span>
+				</div>
+			</div>
+		</div>
+
+		<div class="form-group">
+			<label for="hour"><!--TRANSLATE(Time)--></label>
+      <div class='input-group date' id='hour'>
+ 			  <input type="text" class='form-control' id="hourTxt">
+        <div class="input-group-addon">
+          <span class="glyphicon glyphicon-time"></span>
+				</div>
+			</div>
+		</div>
+
+		<div id="registrationButtons">
+		</div>
+		<div class="form-group">
+			<div class="input-group">
+				<div class="input-group-addon">
+					<label for="workInfo">Work @</label>
+				</div>
+				<input type="text" class='form-control' id="workInfo" onkeydown="if (event.keyCode == 13) registerWork()"/>
+			</div>
+		</div>
+<!--		<div class="form-group">-->
+<!--			<div class="input-group">-->
+<!--				<div class="input-group-addon">-->
+<!--					<label for="workInfo">Travel to</label>-->
+<!--				</div>-->
+<!--				<input type="text" class='form-control' id="travelInfo" onkeydown="if (event.keyCode == 13) registerTravel()"/>-->
+<!--			</div>-->
+<!--		</div>-->
+		<div class="btn-group btn-group-justified"> 
+				<a class="btn btn-danger" role="button" onclick="registerAttendance('STOP','');">STOP</a>
+		</div>
+	</div>
+
+	<div id="event" class="panelContainer">
+	</div>
+</div>
+<div class='row'>
+	<div id="attendance" class="table-responsive"></div>
+</div>
+
+<script language="javascript" type="text/javascript">
+
+function registerWork()
+{
+  info = $('#workInfo').val();
+	if (info == '')
+  {
+		$('#workInfo').closest('.form-group').addClass('has-error');
+	}
+	else
+	{
+    registerAttendance("WORK", info, '#workInfo');
+	}
+}
+
+<!--function registerTravel()-->
+<!--{-->
+<!--  info = $('#travelInfo').val();-->
+<!--	if (info == '')-->
+<!--  {-->
+<!--		$('#travelInfo').closest('.form-group').addClass('has-error');-->
+<!--	}-->
+<!--	else-->
+<!--	{-->
+<!--		registerAttendance("TRAVEL", info, '#travelInfo');-->
+<!--	}-->
+<!--}-->
+
+
+function registerAttendance(pType, pInfo, pInputField)
+{
+  /* if (!confirm("Bevestig : " + pType + " @ " + pInfo )) return; */
+
+	// clear errors
+	$('#workInfo').closest('.form-group').removeClass('has-error');
+	$('#travelInfo').closest('.form-group').removeClass('has-error');
+
+  $.ajax
+  ({
+      url: ajaxurl,
+      data: { 'action':'event.addAction',
+			        'dts': document.getElementById('datepickerTxt').value,
+							'hour': document.getElementById('hourTxt').value,
+			        'type': pType,
+							'info' : pInfo
+            },
+    type: 'post',
+		success: function(data)
+		{
+			$(pInputField).val('');
+		  buildAttendanceEventList();
+		}
+  });	
+}
+
+
+function buildAttendanceEventList()
+{
+  $.ajax
+  ({
+      url: ajaxurl,
+      data: { 'action':'buildAttendanceEventList',
+			        'dts':document.getElementById('datepickerTxt').value},
+      type: 'post',
+			success: function(data)
+        {
+					$("#attendance").html(data);
+        }
+  });
+}
+
+function buildLastRegistrationButtons()
+{
+  $.ajax
+  ({
+      url: ajaxurl,
+      data: { 'action':'buildLastRegistrationButtons'},
+      type: 'post',
+			success: function(data)
+        {
+					$("#registrationButtons").html(data);
+        }
+  });
+}
+
+$("#datepicker").datetimepicker({
+  defaultDate: new Date(),
+	format: 'DD/MM/YYYY',
+	focusOnShow: false,
+	locale: language
+});
+
+$("#datepicker").on("dp.change", function(e) {
+  buildAttendanceEventList();
+});
+
+$("#hour").datetimepicker({
+  defaultDate: new Date(),
+	format: 'HH:mm',
+	focusOnShow: false,
+	locale: language
+});
+
+$( "#workInfo" ).autocomplete({
+	source: ajaxurl + "?action=buildRegistrationAutoComplete&type=WORK"
+});
+
+$( "#travelInfo" ).autocomplete({
+	source: ajaxurl + "?action=buildRegistrationAutoComplete&type=TRAVEL"
+});
+
+// Show Last Registrations
+buildLastRegistrationButtons();
+
+buildAttendanceEventList();
+</script>
+
+
+
+
+

@@ -1,0 +1,130 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html;charset=ISO-8859-1">
+<title>Objective Scheduling Server Pages</title>
+<link rel="stylesheet" href="/scripts/ServerPages.CSS">
+<link rel="stylesheet" type="text/css" href="/scripts/menu.css" />
+<script type="text/javascript" src="/scripts/menu.js"></script>
+</head>
+
+<script src="/scripts/prototype.js" type="text/javascript"></script>
+<script language="javascript" type="text/javascript">
+function setDynamicText(destination)
+{
+  var myAjax = new Ajax.Updater(destination, '/DynamicText',
+                                 {method: 'get', parameters: 'cmd=' + destination});
+}
+</script>
+
+<body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" onLoad="setDynamicText('logon_logoff')">
+<table class="table_header" width="100%" height="36" border="0" cellpadding="0" cellspacing="0" >
+  <tr>
+    <td width="210" bgcolor="#FFFFFF" ><img src="/webimages/objective.small.png" border="0"></td>
+    <td><font color="#000000" size="6" face="Arial, Helvetica, sans-serif"><div id="installation" style="float: left;"></div><spacer>&nbsp;Scheduling Server Pages</font></td>
+  </tr>
+</table>
+<table class="table_header" width="100%" height="24" border="0" cellpadding="0" cellspacing="0" >
+  <tr bgcolor="#f50035">
+    <td height="24" valign="bottom">
+      <!-- menu -->
+      <div class="horizontalcssmenu">
+        <ul id="cssmenu1">
+          <li id="n1"><a href="/index.html">Home</a></li>
+          <li id="n2"><a href="/admin/admin.html"><img src="/webimages/menu_arrow.gif" width="11" height="11" border="0">Administration</a>
+            <ul>
+              <li><a href="#"><strong>Diagnostics</strong></a></li>
+              <li><a href="/admin/diagnostics.html">Overview</a></li>
+              <li><a href="/servlet/EventLog">EventLog Viewer</a></li>
+              <li><a href="/servlet/EventLogProfiler">EventLog Profiler</a></li>
+              <li><a href="/servlet/EventLogDownload">EventLog Download</a></li>
+              <li><a href="/servlet/ServerDiagnostics?cmd=status">Status</a></li>
+              <li><a href="/servlet/ServerDiagnostics?cmd=memory">Memory Usage</a></li>
+              <li><a href="/servlet/ServerDiagnostics?cmd=alarms">Schedules</a></li>
+              <li><a href="/servlet/ServerDiagnostics?cmd=properties">Properties</a></li>
+              <li><a href="/servlet/ServerDiagnostics?cmd=threads">Threads</a></li>
+              <li><a href="/servlet/ServerDiagnostics?cmd=build">Version Info</a></li>
+              <li><a href="#"><strong>Modules</strong></a></li>
+              <li><a href="/servlet/ServerModuleInfo">Server Modules</a></li>
+              <li><a href="#"><strong>Commands</strong></a></li>
+              <li><a href="/admin/commands.html">Overview</a></li>
+            </ul>
+        </ul>
+      </div>
+    </td>
+  </tr>
+</table>
+
+<script language="javascript" type="text/javascript">
+<!--
+	setDynamicText('installation');	
+//-->
+</script>
+
+<!-- InstanceBeginEditable name="contents" -->
+<script src="/scripts/prototype.js" type="text/javascript"></script>
+<SCRIPT LANGUAGE="JavaScript">
+<!--  Begin
+
+/**
+ * Set the eventlog level for a module
+ **/
+function triggerEventLogCommand()
+{
+  var level = $F('eventlog.level');
+  var module = $F('eventlog.module');
+  if (module == '')
+  {
+   $('eventlog.result').innerHTML= '<span style="color:#FF0000">Please specify a module</span>';
+   return;
+  }
+  var myAjax = new Ajax.Updater('eventlog.result', '/servlet/ServerCommand',
+                                 {method: 'get', parameters: 'cmd=eventlog&arg1=' + module + '&arg2=' + level});
+}
+
+// End -->
+
+function getServerDiagnostics(cmd, destination)
+{
+  var myAjax = new Ajax.Updater(destination, '/servlet/ServerDiagnostics',
+                                 {method: 'get', parameters: 'cmd=' + cmd});
+}
+</SCRIPT>
+
+			<h1>Diagnostics Overview</h1>
+      <hr>
+      <p>The server diagnostic commands listed below provide information about 
+        the current status of the server. You can use them at any time and they 
+        will not affect the server in any way.</p>
+      <table width="100%" >
+	    <th width="20%">Command</th><th>Description</th>
+		    <tr><td><a href="/servlet/EventLog">EventLog Viewer</a></td>
+		    <td>Analyze the event logging files</td>
+		    </tr> 
+ 		    <tr><td><a href="/servlet/EventLogProfiler">EventLog Profiler</a></td>
+		    <td>Profile the event logging files</td>
+		    </tr> 
+        <tr><td><a href="/servlet/EventLogDownload">EventLog Download</a></td>
+        <td>Download a set of the server event logging files</td>
+        </tr> 
+        <tr><td><a href="#" onClick="getServerDiagnostics('status','status')">Status</a></td>
+        <td><div id="status">Show how long the server is up and running</div></td>
+        </tr> 
+        <tr><td><a href="#" onClick="getServerDiagnostics('memory','memory')">Memory Usage</a></td>
+        <td><div id="memory">Show current memory usage information</div></td>
+        </tr>
+        <tr><td><a href="/servlet/ServerDiagnostics?cmd=alarms">Schedules</a></td>
+        <td>Show active server timebased schedules</td>
+        </tr>  
+        <tr><td><a href="/servlet/ServerDiagnostics?cmd=properties">Properties</a></td>
+        <td>Show the system properties the server is running with</td>
+        </tr>  
+        <tr><td><a href="/servlet/ServerDiagnostics?cmd=threads">Threads</a></td>
+        <td>Show the active threads in the server</td>
+        </tr>
+        <tr><td><a href="/servlet/ServerDiagnostics?cmd=build">Version Info</a></td>
+        <td>Show library version build info.</td>
+        </tr>  
+      </table>
+<!-- InstanceEndEditable -->
+</body>
+<!-- InstanceEnd --></html>

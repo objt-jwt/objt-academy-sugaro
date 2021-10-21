@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="delegatedBuild" value="false" />
+        <option name="testRunner" value="PLATFORM" />
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/objt-platform" />
+            <option value="$PROJECT_DIR$/objt.accessserver" />
+            <option value="$PROJECT_DIR$/objt.applicationserver" />
+            <option value="$PROJECT_DIR$/objt.applicationserver-tools" />
+            <option value="$PROJECT_DIR$/objt.configurator" />
+            <option value="$PROJECT_DIR$/objt.custom" />
+            <option value="$PROJECT_DIR$/objt.datawarehouseserver" />
+            <option value="$PROJECT_DIR$/objt.datawarehouseserver-tools" />
+            <option value="$PROJECT_DIR$/objt.dbbackuprestore" />
+            <option value="$PROJECT_DIR$/objt.deviceserver" />
+            <option value="$PROJECT_DIR$/objt.mes.operatorclient" />
+            <option value="$PROJECT_DIR$/objt.meta.model" />
+            <option value="$PROJECT_DIR$/objt.printserver" />
+            <option value="$PROJECT_DIR$/objt.schedulingserver" />
+            <option value="$PROJECT_DIR$/objt.settings" />
+            <option value="$PROJECT_DIR$/objt.supervisor" />
+            <option value="$PROJECT_DIR$/objt.swingclient" />
+            <option value="$PROJECT_DIR$/objt.tagexplorer" />
+            <option value="$PROJECT_DIR$/objt.thinclient" />
+            <option value="$PROJECT_DIR$/objt.translations" />
+            <option value="$PROJECT_DIR$/objt.updater" />
+            <option value="$PROJECT_DIR$/objt.wms.operatorclient" />
+          </set>
+        </option>
+        <option name="useQualifiedModuleNames" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

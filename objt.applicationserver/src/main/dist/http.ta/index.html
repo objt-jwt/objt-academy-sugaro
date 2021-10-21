@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Objective WebClient</title>
+
+	<link rel="stylesheet" type="text/css" href="../style/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../style/bootstrap-theme.min.css">
+
+  <script type="text/javascript" charset="utf-8" src="../scripts/jquery-1.12.4.min.js"></script>
+  <script type="text/javascript" charset="utf-8" src="../scripts/bootstrap.min.js"></script>
+
+<script>
+
+setDynamicText('installation');
+
+function setDynamicText(destination)
+{
+  $.ajax
+  ({
+      url: '/DynamicText',
+      data: {'cmd': destination},
+      success: function(data) <!-- when the AJAX-call is successful -->
+      {
+          document.getElementById(destination).innerHTML = "Objective WFM "+data;
+      },
+      type: 'get'
+  });
+}
+
+</script>
+</head>
+
+<body>
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a id='installation' class="navbar-brand" href="#">Objective WFM&nbsp;</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container" role="main">
+
+		<div class='row'>
+  		<img class="img-responsive center-block" src="../images/Objective.png">
+    </div>
+
+		<div class='row'>
+			<p id='installation' class="text-center"><!--PreparedHTML.PlaceHolder:INSTALLATION--></p>
+    </div>
+	  <br>
+		<div class="btn-group btn-group-justified" role="group">
+			<div class="btn-group" role="group">
+				<button type="button" class="btn btn-default" onClick="location.href='/ta.nl'">Nederlands</button>
+			</div>
+			<div class="btn-group" role="group">
+				<button type="button" class="btn btn-default" onClick="location.href='/ta.fr'">Fran&ccedil;ais</button>
+			</div>
+			<div class="btn-group" role="group">
+				<button type="button" class="btn btn-default" onClick="location.href='/ta.en'">English</button>
+			</div>
+		</div>		
+   </div>
+</body></html>

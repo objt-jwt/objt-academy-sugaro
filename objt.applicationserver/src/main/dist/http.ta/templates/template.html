@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Objective WebClient</title>
+
+	<link rel="stylesheet" type="text/css" href="../style/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../style/bootstrap-theme.min.css">
+	<link rel="stylesheet" type="text/css" href="../style/bootstrap-datetimepicker.min.css">
+
+  <link rel="stylesheet" type="text/css" href="../style/jquery-ui.css">
+  <link rel="stylesheet" type="text/css" href="../style/keyboard.css">
+  <link rel="stylesheet" type="text/css" href="../style/Objective-min.css">
+
+  <script type="text/javascript" charset="utf-8" src="../scripts/jquery-1.12.4.min.js"></script>
+  <script type="text/javascript" charset="utf-8" src="../scripts/jquery-ui.min.js"></script>
+  <script type="text/javascript" charset="utf-8" src="../scripts/jquery.tablesorter.min.js"></script>
+  <script type="text/javascript" charset="utf-8" src="../scripts/jquery.tablesorter.widgets.min.js"></script>
+  <script type="text/javascript" charset="utf-8" src="../scripts/jquery.livequery.min.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../scripts/moment-with-locales.min.js"></script>
+  <script type="text/javascript" charset="utf-8" src="../scripts/bootstrap-datetimepicker.min.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../scripts/date.js"></script>
+  <script type="text/javascript" charset="utf-8" src="../scripts/jquery.keyboard.js"></script>
+  <script type="text/javascript" charset="utf-8" src="../scripts/keyboards.js"></script>
+  <script type="text/javascript" charset="utf-8" src="../scripts/webclient-common.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../scripts/bootstrap.min.js"></script>
+  <script type="text/javascript" charset="utf-8" src="../scripts/jquery.bootstrap.min.js"></script>
+	
+	<script>
+	
+	// global vars
+	var ajaxurl = '<!--PreparedHTML.PlaceHolder:AJAXURL-->';
+  var logonpage = '<!--PreparedHTML.PlaceHolder:LOGONPAGE-->';
+	var language = '<!--PreparedHTML.PlaceHolder:LANGUAGE-->';
+	
+	var employee = "<!--PreparedHTML.PlaceHolder:EMPLOYEE-->";
+	var report_employee = "<!--PreparedHTML.PlaceHolder:REPORT_EMPLOYEE-->";
+	
+  // catch general ajax errors
+  jQuery( document ).ajaxError(function(event, jqXHR, ajaxSettings, thrownError)
+  {
+    if (jqXHR.status == 403)
+    {
+      // Forbidden, auth required
+      alert("session expired...");
+      document.location.href = logonpage;
+    }
+    else
+    {
+      if ((event.responseText != '') && (event.responseText != undefined) && (event.responseText != null)) alert(event.responseText);
+    }
+  });
+
+	
+	<!-- Custom Navbar Collapse Script Solution -->
+  $(document).on('click', '.navbar-collapse.collapse.in a:not(.dropdown-toggle)', function()
+	{
+    $(this).closest(".navbar-collapse").collapse('hide');
+  });
+  $(document).on('click', '.navbar-collapse.collapse.in button:not(.navbar-toggle)', function()
+	{
+    $(this).closest(".navbar-collapse").collapse('hide');
+  });	
+  </script>
+</head>
+
+<body>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Objective WFM&nbsp;<!--PreparedHTML.PlaceHolder:INSTALLATION--></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+						<!--PreparedHTML.PlaceHolder:MENU-->
+          </ul>
+        </div><!--/.nav-collapse -->
+        <div id="navbar-foot" class="navbar-footer">
+						<label class='navbar-text'><!--PreparedHTML.PlaceHolder:REPORT_EMPLOYEE--></label>
+        </div>
+      </div>
+    </nav>
+
+	<script>
+	if (employee == report_employee)
+	{
+		$('#navbar-foot').hide();
+	}
+	else
+	{
+		$('#navbar-foot').show();
+	}
+	</script>
+
+  <div class="container" role="main" id="content">
+
+<!-- template is closed in code -->

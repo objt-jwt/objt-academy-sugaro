@@ -1,0 +1,74 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><!-- InstanceBegin template="/Templates/MainTemplate.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<!-- InstanceBeginEditable name="javascript" -->
+<script src="/scripts/prototype.js" type="text/javascript"></script>
+<SCRIPT LANGUAGE="JavaScript">
+function triggerResetLocationCommand()
+{
+  var location = $F('inventoryhandler.location');
+  if (location == '')
+  {
+   $('inventoryhandler.result').innerHTML= '<span style="color:#FF0000">Please specify the full name of a valid location</span>';
+   return;
+  }
+  var myAjax = new Ajax.Updater('inventoryhandler.result', '/servlet/ServerCommand',
+                                 {method: 'get', parameters: 'cmd=INVENTORYHANDLER.RESET_LOCATION&arg1=' + location});
+}
+
+function triggerResetContainerCommand()
+{
+  var container = $F('inventoryhandler.container');
+  if (container == '')
+  {
+   $('inventoryhandler.result').innerHTML= '<span style="color:#FF0000">Please specify the name of a valid container</span>';
+   return;
+  }
+  var myAjax = new Ajax.Updater('inventoryhandler.result', '/servlet/ServerCommand',
+                                 {method: 'get', parameters: 'cmd=INVENTORYHANDLER.RESET_CONTAINER&arg1=' + container});
+}
+</SCRIPT>
+
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Objective - De Clercq Engineering - InventoryHandler</title>
+<!-- InstanceEndEditable -->
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+</head>
+
+<body bgcolor="#FFFFFF">
+
+<table width="100%" border="3" cellspacing="1">
+	    <th bgcolor="#C0C0C0" align="left" width="20%">Command</th>
+      <th bgcolor="#C0C0C0" align="left">Description</th>
+
+        <tr>
+          <td valign="top">Reset Location</td>
+           <td>Fill in the full name of a location and click reset to renew records.
+            <p>
+              <form ACTION="WebTail" METHOD=GET>
+		            Location Name<input type="text" id="inventoryhandler.location">
+		            <input type = "submit" name = "reset" value = "RESET" onclick = "triggerResetLocationCommand(); return false">
+		          </form>
+		        </p>
+		        <div id="inventoryhandler.result"></div>
+	        </td>
+        </tr>
+
+        <tr>
+          <td valign="top">Reset Container</td>
+           <td>Fill in the name of a container and click reset to renew records.
+            <p>
+              <form ACTION="WebTail" METHOD=GET>
+		            Container Name <input type="text" id="inventoryhandler.container">
+		            <input type = "submit" name = "reset" value = "RESET" onclick = "triggerResetContainerCommand(); return false">
+		          </form>
+		        </p>
+		        <div id="inventoryhandler.result"></div>
+	        </td>
+        </tr>
+      </table>
+ </body>
+</html>

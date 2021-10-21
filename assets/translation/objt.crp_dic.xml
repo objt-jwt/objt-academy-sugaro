@@ -1,0 +1,1995 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<dictionary includeSources="false" useRelativePaths="true">
+  <targets>
+    <target html="F" java="F" jrxml="T" path="../../resources/objt/crp" recursive="T" srt="F" xml="T"/>
+    <target html="F" java="T" jrxml="F" path="../../java/objt/crp" recursive="T" srt="F" xml="F"/>
+  </targets>
+  <languages>
+    <language id="nl" native="Dutch"/>
+    <language id="en" native="English"/>
+    <language id="fr" native="French"/>
+  </languages>
+  <includes>
+    <include path="dce_dic.xml"/>
+    <include path="objt.common_dic.xml"/>
+    <include path="objt.wfm_dic.xml"/>
+  </includes>
+  <entries>
+    <entry nativestring="% is over-assigned.">
+      <translation language="nl" translatedstring="% teveel is toegekend."/>
+      <translation language="en" translatedstring="% is over-assigned."/>
+      <translation language="fr" translatedstring="% est plus assigné."/>
+    </entry>
+    <entry nativestring="% of the actual availability.">
+      <translation language="nl" translatedstring="% van de resterende beschikbaarheid."/>
+      <translation language="en" translatedstring="% of the remaining availability."/>
+      <translation language="fr" translatedstring="% de disponibilité restante."/>
+    </entry>
+    <entry nativestring="% of the initial availability.">
+      <translation language="nl" translatedstring="% van de totale beschikbaarheid."/>
+      <translation language="en" translatedstring="% of the total availability."/>
+      <translation language="fr" translatedstring="% de disponibilité totale."/>
+    </entry>
+    <entry nativestring="'%1' has insufficient availability.">
+      <translation language="nl" translatedstring="'%1' heeft onvoldoende beschikbaarheid."/>
+      <translation language="en" translatedstring="'%1' has insufficient availability."/>
+      <translation language="fr" translatedstring="'%1' a une disponibilité insuffisante."/>
+    </entry>
+    <entry nativestring="&lt;mixed&gt;">
+      <translation language="nl" translatedstring="&lt;gemengd&gt;"/>
+      <translation language="en" translatedstring="&lt;mixed&gt;"/>
+      <translation language="fr" translatedstring="&lt;mixte&gt;"/>
+    </entry>
+    <entry nativestring="ANOMALYREASON.TYPE.INFO">
+      <translation language="nl" translatedstring="Info"/>
+      <translation language="en" translatedstring="Info"/>
+      <translation language="fr" translatedstring="Info"/>
+    </entry>
+    <entry nativestring="Absence Settings">
+      <translation language="nl" translatedstring="Afwezigheid Instellingen"/>
+      <translation language="en" translatedstring="Absence Settings"/>
+      <translation language="fr" translatedstring="Paramètres d'Absence"/>
+    </entry>
+    <entry nativestring="Absences">
+      <translation language="nl" translatedstring="Afwezigheden"/>
+      <translation language="en" translatedstring="Absences"/>
+      <translation language="fr" translatedstring="Absences"/>
+    </entry>
+    <entry nativestring="Add/remove assignments">
+      <translation language="nl" translatedstring="Manuele toekenningen toevoegen/verwijderen"/>
+      <translation language="en" translatedstring="Add/remove assignments"/>
+      <translation language="fr" translatedstring="Ajouter/supprimer des assignations manuelles"/>
+    </entry>
+    <entry nativestring="Add/remove manual anomalies">
+      <translation language="nl" translatedstring="Manuele anomalieën toevoegen/verwijderen"/>
+      <translation language="en" translatedstring="Add/remove manual anomalies"/>
+      <translation language="fr" translatedstring="Ajouter/supprimer des anomalies manuelles"/>
+    </entry>
+    <entry nativestring="Add/remove manual requirements">
+      <translation language="nl" translatedstring="Manuele behoeften toevoegen/verwijderen"/>
+      <translation language="en" translatedstring="Add/remove manual requirements"/>
+      <translation language="fr" translatedstring="Ajouter/supprimer des demandes manuelles"/>
+    </entry>
+    <entry nativestring="Allocated">
+      <translation language="nl" translatedstring="Toegekend"/>
+      <translation language="en" translatedstring="Assigned"/>
+      <translation language="fr" translatedstring="Assigné"/>
+    </entry>
+    <entry nativestring="Allocation Options">
+      <translation language="nl" translatedstring="Toekenning Opties"/>
+      <translation language="en" translatedstring="Assignment Options"/>
+      <translation language="fr" translatedstring="Options d'Assignation"/>
+    </entry>
+    <entry nativestring="Allow to assign more than available.">
+      <translation language="nl" translatedstring="Toestaan om meer toe te kennen dan beschikbaar."/>
+      <translation language="en" translatedstring="Allow to assign more than available."/>
+      <translation language="fr" translatedstring="Permettez d'assigner plus que disponible."/>
+    </entry>
+    <entry nativestring="Allow to assign more than required.">
+      <translation language="nl" translatedstring="Toestaan om meer toe te kennen dan gevraagd."/>
+      <translation language="en" translatedstring="Allow to assign more than required."/>
+      <translation language="fr" translatedstring="Permettez d'assigner plus que demandé."/>
+    </entry>
+    <entry nativestring="Always show the following skills">
+      <translation language="nl" translatedstring="Altijd de volgende vaardigheden tonen"/>
+      <translation language="en" translatedstring="Always show the following skills"/>
+      <translation language="fr" translatedstring="Montrez toujours les compétences suivantes"/>
+    </entry>
+    <entry nativestring="Are you sure you want to load the availabilities?">
+      <translation language="nl" translatedstring="Bent u zeker dat u de beschikbaarheden wenst te laden?"/>
+      <translation language="en" translatedstring="Are you sure you want to load the availabilities?"/>
+      <translation language="fr" translatedstring="Voulez-vous vraiment charger les disponibilités?"/>
+    </entry>
+    <entry nativestring="Are you sure you want to remove '%1'?\nWarning: Future assignments for this employee and planning cell will be removed!">
+      <translation language="nl" translatedstring="Bent u zeker dat u '%1' wilt verwijderen?\nOpgelet: Toekomstige toekenningen voor deze werknemer en planningscel zullen verwijderd worden!"/>
+      <translation language="en" translatedstring="Are you sure you want to remove '%1'?\nWarning: Future assignments for this employee and planning cell will be removed!"/>
+      <translation language="fr" translatedstring="Voulez-vous vraiment supprimer '%1'?\nAttention: Les assignations dans la future pour cet employé et la cellule de planification seront supprimées!"/>
+    </entry>
+    <entry nativestring="Are you sure you want to remove all the manual anomalies from the selection?">
+      <translation language="nl" translatedstring="Bent u zeker dat u alle manuele anomalieën van de selectie wenst te verwijderen?"/>
+      <translation language="en" translatedstring="Are you sure you want to remove all the manual anomalies from the selection?"/>
+      <translation language="fr" translatedstring="Voulez-vous vraiment supprimer toutes les anomalies manuelles de la sélection?"/>
+    </entry>
+    <entry nativestring="Are you sure you want to remove code '%1'?">
+      <translation language="nl" translatedstring="Bent u zeker dat u code '%1' wilt verwijderen?"/>
+      <translation language="en" translatedstring="Are you sure you want to remove code '%1'?"/>
+      <translation language="fr" translatedstring="Voulez-vous vraiment supprimer code '%1'?"/>
+    </entry>
+    <entry nativestring="Are you sure you want to remove the allocations for the selected employee capacities?">
+      <translation language="nl" translatedstring="Bent u zeker dat u de toekenningen voor de geselecteerde capaciteiten wenst te verwijderen?"/>
+      <translation language="en" translatedstring="Are you sure you want to remove the assignments for the selected capacities?"/>
+      <translation language="fr" translatedstring="Voulez-vous vraiment supprimer les assignations pour les capacités sélectionnées?"/>
+    </entry>
+    <entry nativestring="Are you sure you want to remove the allocations for the selected skill requirements?">
+      <translation language="nl" translatedstring="Bent u zeker dat u de toekenningen voor de geselecteerde behoeften wenst te verwijderen?"/>
+      <translation language="en" translatedstring="Are you sure you want to remove the assignments for the selected skill requirements?"/>
+      <translation language="fr" translatedstring="Voulez-vous vraiment supprimer les assignations pour les demandes de compétence sélectionnées?"/>
+    </entry>
+    <entry nativestring="Are you sure you want to remove the selected Rule Block ?">
+      <translation language="nl" translatedstring="Bent u zeker dat u de geselecteerde regelblok wenst te verwijderen?"/>
+      <translation language="en" translatedstring="Are you sure you want to remove the selected rule block?"/>
+      <translation language="fr" translatedstring="Voulez-vous vraiment supprimer le bloc de règle sélectionné?"/>
+    </entry>
+    <entry nativestring="Are you sure you want to remove the selected allocation?">
+      <translation language="nl" translatedstring="Bent u zeker dat u de geselecteerde toekenning wenst te verwijderen?"/>
+      <translation language="en" translatedstring="Are you sure you want to remove the selected assignment?"/>
+      <translation language="fr" translatedstring="Voulez-vous vraiment supprimer l'assignation sélectionnée?"/>
+    </entry>
+    <entry nativestring="Are you sure you want to remove the selected allocations?">
+      <translation language="nl" translatedstring="Bent u zeker dat u de geselecteerde toekenningen wenst te verwijderen?"/>
+      <translation language="en" translatedstring="Are you sure you want to remove the selected assignments?"/>
+      <translation language="fr" translatedstring="Voulez-vous vraiment supprimer les assignations sélectionnées?"/>
+    </entry>
+    <entry nativestring="Are you sure you want to remove the selected anomalies?">
+      <translation language="nl" translatedstring="Bent u zeker dat u de geselecteerde anomalieën wenst te verwijderen?"/>
+      <translation language="en" translatedstring="Are you sure you want to remove the selected anomalies?"/>
+      <translation language="fr" translatedstring="Voulez-vous vraiment supprimer les anomalies sélectionnées?"/>
+    </entry>
+    <entry nativestring="Are you sure you want to remove the selected anomaly?">
+      <translation language="nl" translatedstring="Bent u zeker dat u de geselecteerde anomalie wenst te verwijderen?"/>
+      <translation language="en" translatedstring="Are you sure you want to remove the selected anomaly?"/>
+      <translation language="fr" translatedstring="Voulez-vous vraiment supprimer l'anomalie sélectionnée?"/>
+    </entry>
+    <entry nativestring="Are you sure you want to remove the selected codes?">
+      <translation language="nl" translatedstring="Bent u zeker dat u de geselecteerde codes wilt verwijderen?"/>
+      <translation language="en" translatedstring="Are you sure you want to remove the selected codes?"/>
+      <translation language="fr" translatedstring="Voulez-vous vraiment supprimer les codes sélectionnés?"/>
+    </entry>
+    <entry nativestring="Are you sure you want to remove the selected employees?\nWarning: Future assignments for these employees and this planningcell will be removed!">
+      <translation language="nl" translatedstring="Wilt u echt de geselecteerde werknemers verwijderen?\nOpgelet: Toekomstige toekenningen voor deze werknemers en deze planningscel zullen verwijderd worden!"/>
+      <translation language="en" translatedstring="Are you sure you want to remove the selected employees?\nWarning: Future assignments for these employees and this planning cell will be removed!"/>
+      <translation language="fr" translatedstring="Voulez-vous vraiment supprimer les employés sélectionnés?\nAttention: Les assignations dans la future de ces employés et de cette cellule de planification seront supprimées!"/>
+    </entry>
+    <entry nativestring="Are you sure you want to remove the selected requirement?">
+      <translation language="nl" translatedstring="Bent u zeker dat u de geselecteerde behoefte wenst te verwijderen?"/>
+      <translation language="en" translatedstring="Are you sure you want to remove the selected requirement?"/>
+      <translation language="fr" translatedstring="Voulez-vous vraiment supprimer la demande sélectionnée?"/>
+    </entry>
+    <entry nativestring="Are you sure you want to remove the selected requirements?">
+      <translation language="nl" translatedstring="Bent u zeker dat u de geselecteerde behoeften wenst te verwijderen?"/>
+      <translation language="en" translatedstring="Are you sure you want to remove the selected requirements?"/>
+      <translation language="fr" translatedstring="Voulez-vous vraiment supprimer les demandes sélectionnées?"/>
+    </entry>
+    <entry nativestring="Are you sure you want to remove the selected skill requirement?">
+      <translation language="nl" translatedstring="Bent u zeker dat u de geselecteerde behoefte wenst te verwijderen?"/>
+      <translation language="en" translatedstring="Are you sure you want to remove the selected skill requirement?"/>
+      <translation language="fr" translatedstring="Voulez-vous vraiment supprimer la demande de compétence sélectionnée?"/>
+    </entry>
+    <entry nativestring="Are you sure you want to remove the selected skill requirements?">
+      <translation language="nl" translatedstring="Bent u zeker dat u de geselecteerde behoeften wenst te verwijderen?"/>
+      <translation language="en" translatedstring="Are you sure you want to remove the selected skill requirements?"/>
+      <translation language="fr" translatedstring="Voulez-vous vraiment supprimer les demandes de compétence sélectionnées?"/>
+    </entry>
+    <entry nativestring="Are you sure you want to restore the original planning for the selected days?">
+      <translation language="nl" translatedstring="Bent u zeker dat u de originele planning voor de geselecteerde dagen wenst te herstellen?"/>
+      <translation language="en" translatedstring="Are you sure you want to restore the original planning for the selected days?"/>
+      <translation language="fr" translatedstring="Voulez-vous vraiment restaurer la planification initiale pour les jours sélectionnés?"/>
+    </entry>
+    <entry nativestring="Assign">
+      <translation language="nl" translatedstring="Ken"/>
+      <translation language="en" translatedstring="Assign"/>
+      <translation language="fr" translatedstring="Assigner"/>
+    </entry>
+    <entry nativestring="Assigned">
+      <translation language="nl" translatedstring="Toegekend"/>
+      <translation language="en" translatedstring="Assigned"/>
+      <translation language="fr" translatedstring="Assigné"/>
+    </entry>
+    <entry nativestring="Assignment Rule">
+      <translation language="nl" translatedstring="Toekenning Regel"/>
+      <translation language="en" translatedstring="Assignment Rule"/>
+      <translation language="fr" translatedstring="Règle d'Assignation"/>
+    </entry>
+    <entry nativestring="Assignments">
+      <translation language="nl" translatedstring="Toekenningen"/>
+      <translation language="en" translatedstring="Assignments"/>
+      <translation language="fr" translatedstring="Assignations"/>
+    </entry>
+    <entry nativestring="Automatically replace the employee's current assignments.">
+      <translation language="nl" translatedstring="Vervang automatisch de huidige toewijzingen van de werknemer."/>
+      <translation language="en" translatedstring="Automatically replace the employee's current assignments."/>
+      <translation language="fr" translatedstring="Remplacer automatiquement les assignations actuelles de l'employé."/>
+    </entry>
+    <entry nativestring="Availability Rule">
+      <translation language="nl" translatedstring="Beschikbaarheidsregel"/>
+      <translation language="en" translatedstring="Availability Rule"/>
+      <translation language="fr" translatedstring="Règle de Disponibilité"/>
+    </entry>
+    <entry nativestring="CAPACITYANOMALY.CATEGORY.CAPACITYALLOCATION">
+      <translation language="nl" translatedstring="Toekenning"/>
+      <translation language="en" translatedstring="Assignment"/>
+      <translation language="fr" translatedstring="Assignation"/>
+    </entry>
+    <entry nativestring="CAPACITYANOMALY.CATEGORY.SHIFTCAPACITY">
+      <translation language="nl" translatedstring="Beschikbaarheid"/>
+      <translation language="en" translatedstring="Availability"/>
+      <translation language="fr" translatedstring="Disponibilité"/>
+    </entry>
+    <entry nativestring="CAPACITYANOMALY.CATEGORY.SHIFTCAPACITYREQ">
+      <translation language="nl" translatedstring="Behoefte"/>
+      <translation language="en" translatedstring="Requirement"/>
+      <translation language="fr" translatedstring="Demande"/>
+    </entry>
+    <entry nativestring="CAPACITYANOMALY.SOURCETYPE.MANUAL">
+      <translation language="nl" translatedstring="Manueel"/>
+      <translation language="en" translatedstring="Manual"/>
+      <translation language="fr" translatedstring="Manuelle"/>
+    </entry>
+    <entry nativestring="CAPACITYANOMALY.SOURCETYPE.RULE">
+      <translation language="nl" translatedstring="Regel"/>
+      <translation language="en" translatedstring="Rule"/>
+      <translation language="fr" translatedstring="Règle"/>
+    </entry>
+    <entry nativestring="CAPACITYREQUIREMENT.TYPE.MANUAL">
+      <translation language="nl" translatedstring="Manueel"/>
+      <translation language="en" translatedstring="Manual"/>
+      <translation language="fr" translatedstring="Manuelle"/>
+    </entry>
+    <entry nativestring="CAPACITYREQUIREMENT.TYPE.PRODUCTION">
+      <translation language="nl" translatedstring="Productie"/>
+      <translation language="en" translatedstring="Production"/>
+      <translation language="fr" translatedstring="Production"/>
+    </entry>
+    <entry nativestring="CAPACITYREQUIREMENT.TYPE.SHIFT_REQUIREMENT">
+      <translation language="nl" translatedstring="Basisbehoefte"/>
+      <translation language="en" translatedstring="Basic Requirement"/>
+      <translation language="fr" translatedstring="Demande de Base"/>
+    </entry>
+    <entry nativestring="Capacities">
+      <translation language="nl" translatedstring="Beschikbaarheden"/>
+      <translation language="en" translatedstring="Availabilities"/>
+      <translation language="fr" translatedstring="Disponibilité"/>
+    </entry>
+    <entry nativestring="Capacity Management">
+      <translation language="nl" translatedstring="Capaciteit Beheer"/>
+      <translation language="en" translatedstring="Capacity Management"/>
+      <translation language="fr" translatedstring="Gestion des Capacités"/>
+    </entry>
+    <entry nativestring="Check over-allocation">
+      <translation language="nl" translatedstring="Controleer op teveel toegekend"/>
+      <translation language="en" translatedstring="Check over-assignment"/>
+      <translation language="fr" translatedstring="Contrôler assigné trop"/>
+    </entry>
+    <entry nativestring="Check over-assignment">
+      <translation language="nl" translatedstring="Controleer op teveel toegekend"/>
+      <translation language="en" translatedstring="Check over-assignment"/>
+      <translation language="fr" translatedstring="Contrôler assigné trop"/>
+    </entry>
+    <entry nativestring="Check skill assignments">
+      <translation language="nl" translatedstring="Controleer op vaardigheidstoekenningen"/>
+      <translation language="en" translatedstring="Check skill assignments"/>
+      <translation language="fr" translatedstring="Contrôler assignations de compétence"/>
+    </entry>
+    <entry nativestring="Custom Shift Selection">
+      <translation language="nl" translatedstring="Aangepaste Shift Selectie"/>
+      <translation language="en" translatedstring="Custom Shift Selection"/>
+      <translation language="fr" translatedstring="Sélection d'Équipes Personnalisée"/>
+    </entry>
+    <entry nativestring="Decrement with">
+      <translation language="nl" translatedstring="Verlagen met"/>
+      <translation language="en" translatedstring="Decrement with"/>
+      <translation language="fr" translatedstring="Diminuer avec"/>
+    </entry>
+    <entry nativestring="Do you want to continue and permanently remove these assignments?">
+      <translation language="nl" translatedstring="Bent u zeker dat u wenst door te gaan en deze toekenningen definitief wenst te verwijderen?"/>
+      <translation language="en" translatedstring="Do you want to continue and permanently remove these assignments?"/>
+      <translation language="fr" translatedstring="Voulez-vous continuer et supprimer définitivement ces assignations?"/>
+    </entry>
+    <entry nativestring="Employee '%1' is not able to execute skill '%2' with level %3.">
+      <translation language="nl" translatedstring="Werknemer '%1' mag vaardigheid '%2' met niveau '%3' niet uitvoeren."/>
+      <translation language="en" translatedstring="Employee '%1' is not able to execute skill '%2' with level %3."/>
+      <translation language="fr" translatedstring="Employé '%1' n'est pas autorisé d'exécuter compétence '%2' avec niveau '%3'."/>
+    </entry>
+    <entry nativestring="Employee '%1' is not able to execute skill '%2'.">
+      <translation language="nl" translatedstring="Werknemer '%1' mag vaardigheid '%2' niet uitvoeren."/>
+      <translation language="en" translatedstring="Employee '%1' is not able to execute skill '%2'."/>
+      <translation language="fr" translatedstring="Employé '%1' n'est pas autorisé d'exécuter compétence '%2'."/>
+    </entry>
+    <entry nativestring="FTE">
+      <translation language="nl" translatedstring="FTE"/>
+      <translation language="en" translatedstring="FTE"/>
+      <translation language="fr" translatedstring="FTE"/>
+    </entry>
+    <entry nativestring="FTE is over-assigned.">
+      <translation language="nl" translatedstring="FTE teveel is toegekend."/>
+      <translation language="en" translatedstring="FTE is over-assigned."/>
+      <translation language="fr" translatedstring="FTE est plus assigné."/>
+    </entry>
+    <entry nativestring="Filter Planning Cells">
+      <translation language="nl" translatedstring="Planningscellen Filteren"/>
+      <translation language="en" translatedstring="Filter Planning Cells"/>
+      <translation language="fr" translatedstring="Filtrer Cellules de Planification"/>
+    </entry>
+    <entry nativestring="Filter.none">
+      <translation language="nl" translatedstring="(Geen)"/>
+      <translation language="en" translatedstring="(None)"/>
+      <translation language="fr" translatedstring="(Aucune)"/>
+    </entry>
+    <entry nativestring="Ignore if less than">
+      <translation language="nl" translatedstring="Negeer indien minder dan"/>
+      <translation language="en" translatedstring="Ignore if less than"/>
+      <translation language="fr" translatedstring="Ignorez si moins de"/>
+    </entry>
+    <entry nativestring="Increment with">
+      <translation language="nl" translatedstring="Verhogen met"/>
+      <translation language="en" translatedstring="Increment with"/>
+      <translation language="fr" translatedstring="Augmenter avec"/>
+    </entry>
+    <entry nativestring="LOAD CAPACITIES">
+      <translation language="nl" translatedstring="CAPACITEITEN LADEN"/>
+      <translation language="en" translatedstring="LOAD CAPACITIES"/>
+      <translation language="fr" translatedstring="CHARGER CAPACITÉS"/>
+    </entry>
+    <entry nativestring="LOAD REQUIREMENTS">
+      <translation language="nl" translatedstring="BEHOEFTEN LADEN"/>
+      <translation language="en" translatedstring="LOAD REQUIREMENTS"/>
+      <translation language="fr" translatedstring="CHARGER DEMANDES"/>
+    </entry>
+    <entry nativestring="Level">
+      <translation language="nl" translatedstring="Niveau"/>
+      <translation language="en" translatedstring="Level"/>
+      <translation language="fr" translatedstring="Niveau"/>
+    </entry>
+    <entry nativestring="Load Availabilities">
+      <translation language="nl" translatedstring="Beschikbaarheden Laden"/>
+      <translation language="en" translatedstring="Load Availabilities"/>
+      <translation language="fr" translatedstring="Charger Disponibilités"/>
+    </entry>
+    <entry nativestring="Load Requirements">
+      <translation language="nl" translatedstring="Behoeften Laden"/>
+      <translation language="en" translatedstring="Load Requirements"/>
+      <translation language="fr" translatedstring="Charger Demandes"/>
+    </entry>
+    <entry nativestring="Load availabilities">
+      <translation language="nl" translatedstring="Beschikbaarheden laden"/>
+      <translation language="en" translatedstring="Load availabilities"/>
+      <translation language="fr" translatedstring="Charger disponibilités"/>
+    </entry>
+    <entry nativestring="Load requirements">
+      <translation language="nl" translatedstring="Behoeften laden"/>
+      <translation language="en" translatedstring="Load requirements"/>
+      <translation language="fr" translatedstring="Charger demandes"/>
+    </entry>
+    <entry nativestring="Loading availabilities.">
+      <translation language="nl" translatedstring="Bezig met het laden van beschikbaarheden."/>
+      <translation language="en" translatedstring="Loading availabilities."/>
+      <translation language="fr" translatedstring="En train de charger disponibilités."/>
+    </entry>
+    <entry nativestring="Loading skill requirements.">
+      <translation language="nl" translatedstring="Bezig met laden van behoeften."/>
+      <translation language="en" translatedstring="Loading skill requirements."/>
+      <translation language="fr" translatedstring="En train de charger des demandes de compétence."/>
+    </entry>
+    <entry nativestring="Manage Anomalies">
+      <translation language="nl" translatedstring="Anomalieën Beheren"/>
+      <translation language="en" translatedstring="Manage Anomalies"/>
+      <translation language="fr" translatedstring="Gérer Anomalies"/>
+    </entry>
+    <entry nativestring="Manage Assignments">
+      <translation language="nl" translatedstring="Toekenningen Beheren"/>
+      <translation language="en" translatedstring="Manage Assignments"/>
+      <translation language="fr" translatedstring="Gérer Assignations"/>
+    </entry>
+    <entry nativestring="Modify Requirements">
+      <translation language="nl" translatedstring="Behoeften Aanpassen"/>
+      <translation language="en" translatedstring="Edit Requirements"/>
+      <translation language="fr" translatedstring="Modifier Demandes"/>
+    </entry>
+    <entry nativestring="Only show employees that are able to execute the required skills.">
+      <translation language="nl" translatedstring="Enkel werknemers die in staat zijn om de benodigde vaardigheden uit te voeren tonen."/>
+      <translation language="en" translatedstring="Only show employees that are able to execute the required skills."/>
+      <translation language="fr" translatedstring="Montrez seulement des employés qui sont capables d'exécuter les compétences demandés."/>
+    </entry>
+    <entry nativestring="Only show employees that have remaining availability.">
+      <translation language="nl" translatedstring="Enkel werknemers die resterende beschikbaarheid hebben tonen."/>
+      <translation language="en" translatedstring="Only show employees that have remaining availability."/>
+      <translation language="fr" translatedstring="Montrez seulement des employés qui ont la disponibilité restante."/>
+    </entry>
+    <entry nativestring="Only show skill requirements that can be execuded by the selected employees.">
+      <translation language="nl" translatedstring="Enkel de behoeften die kunnen worden uitgevoerd door de geselecteerde werknemers tonen."/>
+      <translation language="en" translatedstring="Only show skill requirements that can be executed by the selected employees."/>
+      <translation language="fr" translatedstring="Montrez seulement des demandes de compétences qui peuvent être exécuté par les employés sélectionnés."/>
+    </entry>
+    <entry nativestring="Only show skills that can be execuded by the selected employees.">
+      <translation language="nl" translatedstring="Enkel de vaardigheden die kunnen worden uitgevoerd door de geselecteerde werknemers tonen."/>
+      <translation language="en" translatedstring="Only show skills that can be executed by the selected employees."/>
+      <translation language="fr" translatedstring="Montrez seulement des compétences qui peuvent être exécutées par des employés sélectionnés."/>
+    </entry>
+    <entry nativestring="Only show skills with remaining requirements.">
+      <translation language="nl" translatedstring="Enkel vaardigheden met resterende behoeften tonen."/>
+      <translation language="en" translatedstring="Only show skills with remaining requirements."/>
+      <translation language="fr" translatedstring="Montrez seulement des compétences avec des demandes restantes."/>
+    </entry>
+    <entry nativestring="Over-allocated">
+      <translation language="nl" translatedstring="Teveel toegekend"/>
+      <translation language="en" translatedstring="Over-assigned"/>
+      <translation language="fr" translatedstring="Assigné trop"/>
+    </entry>
+    <entry nativestring="Over-allocation of %1 FTE detected.">
+      <translation language="nl" translatedstring="Toekenning gedetecteerd van meer dan %1 FTE."/>
+      <translation language="en" translatedstring="Over-assignment of %1 FTE detected."/>
+      <translation language="fr" translatedstring="Assignation détectée de plus de %1 FTE."/>
+    </entry>
+    <entry nativestring="Over-assigned">
+      <translation language="nl" translatedstring="Teveel toegekend"/>
+      <translation language="en" translatedstring="Over-assigned"/>
+      <translation language="fr" translatedstring="Assigné trop"/>
+    </entry>
+    <entry nativestring="Over-assignment of %1 FTE detected.">
+      <translation language="nl" translatedstring="Toekenning gedetecteerd van meer dan %1 FTE."/>
+      <translation language="en" translatedstring="Over-assignment of %1 FTE detected."/>
+      <translation language="fr" translatedstring="Assignation détectée de plus de %1 FTE."/>
+    </entry>
+    <entry nativestring="Planning level for skill set to processunit.">
+      <translation language="nl" translatedstring="Plan niveau voor vaardigheid ingesteld op resource."/>
+      <translation language="en" translatedstring="Planning level for skill set to processunit."/>
+      <translation language="fr" translatedstring="Niveau de Planification défini sur ressource."/>
+    </entry>
+    <entry nativestring="Please select a resource.">
+      <translation language="nl" translatedstring="Gelieve een resource te selecteren."/>
+      <translation language="en" translatedstring="Please select a resource."/>
+      <translation language="fr" translatedstring="Veuillez sélectionner une ressource."/>
+    </entry>
+    <entry nativestring="Please select the desired code.">
+      <translation language="nl" translatedstring="Gelieve de gewenste codes te selecteren."/>
+      <translation language="en" translatedstring="Please select the desired codes."/>
+      <translation language="fr" translatedstring="Veuillez sélectionner les codes désirés."/>
+    </entry>
+    <entry nativestring="Please select the desired shifts.">
+      <translation language="nl" translatedstring="Gelieve de gewenste shiften te selecteren."/>
+      <translation language="en" translatedstring="Please select the desired shifts."/>
+      <translation language="fr" translatedstring="Veuillez sélectionner les équipes souhaitées."/>
+    </entry>
+    <entry nativestring="Preparing table data.">
+      <translation language="nl" translatedstring="Tabelgegevens worden voorbereid."/>
+      <translation language="en" translatedstring="Preparing table data."/>
+      <translation language="fr" translatedstring="Préparation des données en cours."/>
+    </entry>
+    <entry nativestring="Processing rules.">
+      <translation language="nl" translatedstring="Bezig met het verwerken van regels."/>
+      <translation language="en" translatedstring="Processing rules."/>
+      <translation language="fr" translatedstring="En train de traiter règles."/>
+    </entry>
+    <entry nativestring="Reject Holiday Request">
+      <translation language="nl" translatedstring="Verlofaanvraag Weigeren"/>
+      <translation language="en" translatedstring="Reject Holiday Request"/>
+      <translation language="fr" translatedstring="Rejeter Demande de Congé"/>
+    </entry>
+    <entry nativestring="Remove Requirements">
+      <translation language="nl" translatedstring="Behoeften Verwijderen"/>
+      <translation language="en" translatedstring="Remove Requirements"/>
+      <translation language="fr" translatedstring="Supprimer Demandes"/>
+    </entry>
+    <entry nativestring="Remove requirements">
+      <translation language="nl" translatedstring="Behoeften verwijderen"/>
+      <translation language="en" translatedstring="Remove requirements"/>
+      <translation language="fr" translatedstring="Supprimer demandes"/>
+    </entry>
+    <entry nativestring="Required">
+      <translation language="nl" translatedstring="Benodigd"/>
+      <translation language="en" translatedstring="Required"/>
+      <translation language="fr" translatedstring="Demandé"/>
+    </entry>
+    <entry nativestring="Requirement Rule">
+      <translation language="nl" translatedstring="Behoefte Regel"/>
+      <translation language="en" translatedstring="Requirement Rule"/>
+      <translation language="fr" translatedstring="Règle de Demande"/>
+    </entry>
+    <entry nativestring="Requirements">
+      <translation language="nl" translatedstring="Behoeften"/>
+      <translation language="en" translatedstring="Requirements"/>
+      <translation language="fr" translatedstring="Demandes"/>
+    </entry>
+    <entry nativestring="SCHEDULE.COMMAND.CRP.LOAD_CAPACITIES">
+      <translation language="nl" translatedstring="CRP: BESCHIKBAARHEDEN LADEN"/>
+      <translation language="en" translatedstring="CRP: LOAD AVAILABILITIES"/>
+      <translation language="fr" translatedstring="CRP: CHARGER DISPONIBILITÉS"/>
+    </entry>
+    <entry nativestring="SCHEDULE.COMMAND.CRP.LOAD_CAPACITYREQUIREMENTS">
+      <translation language="nl" translatedstring="CRP: BEHOEFTEN LADEN"/>
+      <translation language="en" translatedstring="CRP: LOAD REQUIREMENTS"/>
+      <translation language="fr" translatedstring="CRP: CHARGER DEMANDES"/>
+    </entry>
+    <entry nativestring="Set to">
+      <translation language="nl" translatedstring="Instellen op"/>
+      <translation language="en" translatedstring="Set to"/>
+      <translation language="fr" translatedstring="Mettre à"/>
+    </entry>
+    <entry nativestring="Shift Type">
+      <translation language="nl" translatedstring="Shift Type"/>
+      <translation language="en" translatedstring="Shift Type"/>
+      <translation language="fr" translatedstring="Type d'Équipe"/>
+    </entry>
+    <entry nativestring="Shift type '%1' is currently used in the following basic requirements. These requirements will be removed.">
+      <translation language="nl" translatedstring="Shift type '%1' wordt momenteel gebruikt in de volgende basisbehoeften. Deze behoeften zullen worden verwijderd."/>
+      <translation language="en" translatedstring="Shift type '%1' is currently used in the following basic requirements. These requirements will be removed."/>
+      <translation language="fr" translatedstring="Type d'équipe '%1' est actuellement utilisé dans les demandes de base suivantes. Celles demandes seront supprimées."/>
+    </entry>
+    <entry nativestring="Show assigned skills">
+      <translation language="nl" translatedstring="Toegekende vaardigheden tonen"/>
+      <translation language="en" translatedstring="Show assigned skills"/>
+      <translation language="fr" translatedstring="Montrez les compétences assignées"/>
+    </entry>
+    <entry nativestring="Show pending holidy requests">
+      <translation language="nl" translatedstring="Open verlofaanvragen tonen"/>
+      <translation language="en" translatedstring="Show pending holiday requests"/>
+      <translation language="fr" translatedstring="Montrez des demandes de congé pas traitée"/>
+    </entry>
+    <entry nativestring="Show the sum of remaining requirements">
+      <translation language="nl" translatedstring="De som van de resterende behoeften tonen"/>
+      <translation language="en" translatedstring="Show the sum of remaining requirements"/>
+      <translation language="fr" translatedstring="Montrez la somme des demandes restantes"/>
+    </entry>
+    <entry nativestring="Show the sum of requirements">
+      <translation language="nl" translatedstring="De som van behoeften tonen"/>
+      <translation language="en" translatedstring="Show the sum of requirements"/>
+      <translation language="fr" translatedstring="Montrez la somme des demandes"/>
+    </entry>
+    <entry nativestring="Show the sum of the allocations">
+      <translation language="nl" translatedstring="De som van de toekenningen tonen"/>
+      <translation language="en" translatedstring="Show the sum of the assignments"/>
+      <translation language="fr" translatedstring="Montrez la somme des assignations"/>
+    </entry>
+    <entry nativestring="Show the sum of the remaining availability">
+      <translation language="nl" translatedstring="De som van de resterende beschikbaarheid tonen"/>
+      <translation language="en" translatedstring="Show the sum of the remaining availability"/>
+      <translation language="fr" translatedstring="Montrez la somme de la disponibilité restante"/>
+    </entry>
+    <entry nativestring="Show the sum of total availability">
+      <translation language="nl" translatedstring="De som van de totale beschikbaarheid tonen"/>
+      <translation language="en" translatedstring="Show the sum of total availability"/>
+      <translation language="fr" translatedstring="Montrez la somme de la disponibilité totale"/>
+    </entry>
+    <entry nativestring="Show total allocated">
+      <translation language="nl" translatedstring="Totaal toegekend tonen"/>
+      <translation language="en" translatedstring="Show total assigned"/>
+      <translation language="fr" translatedstring="Afficher total assigné"/>
+    </entry>
+    <entry nativestring="Show total unavailability">
+      <translation language="nl" translatedstring="De totale onbeschikbaarheid tonen"/>
+      <translation language="en" translatedstring="Show total unavailability"/>
+      <translation language="fr" translatedstring="Montrez l'indisponibilité totale"/>
+    </entry>
+    <entry nativestring="Show unavailability by absence code ">
+      <translation language="nl" translatedstring="Onbeschikbaarheid per afwezigheidscode tonen"/>
+      <translation language="en" translatedstring="Show unavailability by absence code"/>
+      <translation language="fr" translatedstring="Montrez l'indisponibilité par code d'absence"/>
+    </entry>
+    <entry nativestring="Skill">
+      <translation language="nl" translatedstring="Vaardigheid"/>
+      <translation language="en" translatedstring="Skill"/>
+      <translation language="fr" translatedstring="Compétence"/>
+    </entry>
+    <entry nativestring="Skill '%1' is currently used in the following basic requirements. These requirements will be removed.">
+      <translation language="nl" translatedstring="Vaardigheid '%1' wordt momenteel gebruikt in de volgende basisbehoeften. Deze behoeften zullen worden verwijderd."/>
+      <translation language="en" translatedstring="Skill '%1' is currently used in the following basic requirements. These requirements will be removed."/>
+      <translation language="fr" translatedstring="La compétence '%1' est actuellement utilisé dans les demandes de base suivantes. Celles demandes seront supprimées."/>
+    </entry>
+    <entry nativestring="Skill Requirement">
+      <translation language="nl" translatedstring="Behoefte"/>
+      <translation language="en" translatedstring="Skill Requirement"/>
+      <translation language="fr" translatedstring="Demande de Compétence"/>
+    </entry>
+    <entry nativestring="Some of the selected rules are already added via the employee's planning cell.">
+      <translation language="nl" translatedstring="Sommige van de geselecteerde regels zijn reeds toegevoegd via de planningscell van de werknemer."/>
+      <translation language="en" translatedstring="Some of the selected rules are already added via the employee's planning cell."/>
+      <translation language="fr" translatedstring="Certaines des règles sélectionnées sont déjà ajoutés par le cellule de planification de l'employé."/>
+    </entry>
+    <entry nativestring="The atttendance period for that date has already been closed.">
+      <translation language="nl" translatedstring="De periode voor die datum is al afgesloten."/>
+      <translation language="en" translatedstring="The period for that date has already been closed."/>
+      <translation language="fr" translatedstring="La période pour cette date a déjà été fermée."/>
+    </entry>
+    <entry nativestring="The day has already been approved.">
+      <translation language="nl" translatedstring="De dag is al goedgekeurd."/>
+      <translation language="en" translatedstring="The day has already been approved."/>
+      <translation language="fr" translatedstring="Le jour a déjà été approuvé."/>
+    </entry>
+    <entry nativestring="The day has no planned labour time.">
+      <translation language="nl" translatedstring="De dag heeft geen geplande arbeidstijd."/>
+      <translation language="en" translatedstring="The day has no planned labor time."/>
+      <translation language="fr" translatedstring="Le jour n'a pas de durée de travail planifiée."/>
+    </entry>
+    <entry nativestring="The day has no template.">
+      <translation language="nl" translatedstring="De dag heeft geen dagtype."/>
+      <translation language="en" translatedstring="The day has no template."/>
+      <translation language="fr" translatedstring="Le jour n'a aucun modèle jour."/>
+    </entry>
+    <entry nativestring="The employee still has future assignments in the following planning cells.">
+      <translation language="nl" translatedstring="De werknemer heeft nog toekomstige toekenningen in de volgende planningscellen."/>
+      <translation language="en" translatedstring="The employee still has future assignments in the following planning cells."/>
+      <translation language="fr" translatedstring="L'employé a encore des assignations dans la future pour des cellules de planification suivantes."/>
+    </entry>
+    <entry nativestring="The selected days have no planning.">
+      <translation language="nl" translatedstring="De geselecteerde dagen hebben geen planning."/>
+      <translation language="en" translatedstring="The selected days have no planning."/>
+      <translation language="fr" translatedstring="Les jours sélectionnés n'ont pas de planification."/>
+    </entry>
+    <entry nativestring="The system was unable to reassign all of the selected assignments.">
+      <translation language="nl" translatedstring="Het was niet mogelijk om alle geselecteerde toekenningen over te dragen."/>
+      <translation language="en" translatedstring="The system was unable to reassign all of the selected assignments."/>
+      <translation language="fr" translatedstring="Il n'était pas possible de réassigner toutes les assignations sélectionnées."/>
+    </entry>
+    <entry nativestring="There are no allocations removed from this planning cell.">
+      <translation language="nl" translatedstring="Er zijn geen toekenningen verwijderd van deze planningscel."/>
+      <translation language="en" translatedstring="There are no assignments removed from this planning cell."/>
+      <translation language="fr" translatedstring="Il n'y a pas des assignations supprimé de cette cellule de planification."/>
+    </entry>
+    <entry nativestring="There are no anomalies removed from this planning cell">
+      <translation language="nl" translatedstring="Er zijn geen anomalieën verwijderd van deze planningscel."/>
+      <translation language="en" translatedstring="There are no anomalies removed from this planning cell."/>
+      <translation language="fr" translatedstring="Il n'y a pas des anomalies supprimé de cette cellule de planification."/>
+    </entry>
+    <entry nativestring="There are open holiday requests on the selected days.\nDepending on the changes, these holiday requests might be rejected.">
+      <translation language="nl" translatedstring="Er zijn open verlofaanvragen op de geselecteerde dagen.\nAfhankelijk van de wijzigingen kunnen deze verlofaanvragen worden verworpen."/>
+      <translation language="en" translatedstring="There are open holiday requests on the selected days.\nDepending on the changes, these holiday requests might be rejected."/>
+      <translation language="fr" translatedstring="Il ya des demandes de congé ouverte sur les jours sélectionnés.\nSelon les changements, ces demandes de congé pourraient être rejetées."/>
+    </entry>
+    <entry nativestring="There are still active/planned requirements for the selected machines and work centers.">
+      <translation language="nl" translatedstring="Er zijn nog actieve/geplande behoeften voor de geselecteerde machines en werkcentra."/>
+      <translation language="en" translatedstring="There are still active/planned requirements for the selected machines and work centers."/>
+      <translation language="fr" translatedstring="Il y a encore des demandes actives/planifiées pour les machines et centres de travail sélectionnés."/>
+    </entry>
+    <entry nativestring="There is already a requirement for the specified shift, skill and level.">
+      <translation language="nl" translatedstring="Er bestaat reeds een behoefte voor de gespecificeerde shift, vaardigheid en niveau."/>
+      <translation language="en" translatedstring="There is already a requirement for the specified shift, skill and level."/>
+      <translation language="fr" translatedstring="Il y a déjà une demande pour l'équipe, la compétence et le niveau spécifié."/>
+    </entry>
+    <entry nativestring="Totals">
+      <translation language="nl" translatedstring="Totalen"/>
+      <translation language="en" translatedstring="Totals"/>
+      <translation language="fr" translatedstring="Totaux"/>
+    </entry>
+    <entry nativestring="Un-allocated">
+      <translation language="nl" translatedstring="Niet toegekend"/>
+      <translation language="en" translatedstring="Un-assigned"/>
+      <translation language="fr" translatedstring="Pas assigné"/>
+    </entry>
+    <entry nativestring="Un-assigned">
+      <translation language="nl" translatedstring="Niet toegekend"/>
+      <translation language="en" translatedstring="Un-assigned"/>
+      <translation language="fr" translatedstring="Pas assigné"/>
+    </entry>
+    <entry nativestring="Unable to add absence for employee '%1' on '%2'.">
+      <translation language="nl" translatedstring="Het is niet mogelijk om afwezigheid toe te voegen voor werknemer '%1' op '%2'."/>
+      <translation language="en" translatedstring="Unable to add absence for employee '%1' on '%2'."/>
+      <translation language="fr" translatedstring="Pas possible d'ajouter l'absence pour employé '%1' sur '%2'."/>
+    </entry>
+    <entry nativestring="Unable to add absence.">
+      <translation language="nl" translatedstring="Het is niet mogelijk om afwezigheid toe te voegen."/>
+      <translation language="en" translatedstring="Unable to add absence."/>
+      <translation language="fr" translatedstring="Pas possible d'ajouter l'absence."/>
+    </entry>
+    <entry nativestring="Unable to delete anomaly reason '%1'.\nThe anomaly reason is still in use in the following rules.">
+      <translation language="nl" translatedstring="Niet mogelijk om anomaliereden '%1' te verwijderen.\nDe anomalie is nog in gebruik in de volgende regels."/>
+      <translation language="en" translatedstring="Unable to delete anomaly reason '%1'.\nThe anomaly reason is still in use in the following rules."/>
+      <translation language="fr" translatedstring="Pas possible de supprimer raison d'anomalie '%1'.\nL'anomalie est encore utilisée dans les règles suivantes."/>
+    </entry>
+    <entry nativestring="Unable to modify the planning for employee '%1' on '%2'.">
+      <translation language="nl" translatedstring="Het is niet mogelijk om de planning aan te passen voor werknemer '%1' op '%2'."/>
+      <translation language="en" translatedstring="Unable to edit the planning for employee '%1' on '%2'."/>
+      <translation language="fr" translatedstring="Pas possible de modifier la planification pour employé '%1' sur '%2'."/>
+    </entry>
+    <entry nativestring="Unable to modify the planning.">
+      <translation language="nl" translatedstring="Het is niet mogelijk om de planning aan te passen."/>
+      <translation language="en" translatedstring="Unable to edit the planning."/>
+      <translation language="fr" translatedstring="Pas possible de modifier la planification."/>
+    </entry>
+    <entry nativestring="Unable to remove the selected machines and work centers.">
+      <translation language="nl" translatedstring="Niet mogelijk om de geselecteerde machines en werkcentra te verwijderen."/>
+      <translation language="en" translatedstring="Unable to remove the selected machines and work centers."/>
+      <translation language="fr" translatedstring="Les machines et centres de travail sélectionnés ne peut pas être supprimés."/>
+    </entry>
+    <entry nativestring="Unable to restore the planning for employee '%1' on '%2'.">
+      <translation language="nl" translatedstring="Het is niet mogelijk om de planning te herstellen voor werknemer '%1' op '%2'."/>
+      <translation language="en" translatedstring="Unable to restore the planning for employee '%1' on '%2'."/>
+      <translation language="fr" translatedstring="Pas possible de restaurer la planification pour employé '%1' sur '%2'."/>
+    </entry>
+    <entry nativestring="Unable to restore the planning.">
+      <translation language="nl" translatedstring="Het is niet mogelijk om de planning te herstellen."/>
+      <translation language="en" translatedstring="Unable to restore the planning."/>
+      <translation language="fr" translatedstring="Pas possible de restaurer la planification."/>
+    </entry>
+    <entry nativestring="Under-allocated">
+      <translation language="nl" translatedstring="Te weinig toegekend"/>
+      <translation language="en" translatedstring="Under-assigned"/>
+      <translation language="fr" translatedstring="Assigné trop peu"/>
+    </entry>
+    <entry nativestring="Under-assigned">
+      <translation language="nl" translatedstring="Te weinig toegekend"/>
+      <translation language="en" translatedstring="Under-assigned"/>
+      <translation language="fr" translatedstring="Assigné trop peu"/>
+    </entry>
+    <entry nativestring="Use color indication for absence codes.">
+      <translation language="nl" translatedstring="Gebruik kleur indicatie voor afwezigheid codes."/>
+      <translation language="en" translatedstring="Use color indication for absence codes."/>
+      <translation language="fr" translatedstring="Utilisez l'indication de couleur pour des codes d'absence."/>
+    </entry>
+    <entry nativestring="Use maximum">
+      <translation language="nl" translatedstring="Gebruik max"/>
+      <translation language="en" translatedstring="Use max"/>
+      <translation language="fr" translatedstring="Utilisez max"/>
+    </entry>
+    <entry nativestring="Use system colors for codes without specific color settings.">
+      <translation language="nl" translatedstring="Gebruik systeem kleuren voor codes zonder specifieke kleurinstellingen."/>
+      <translation language="en" translatedstring="Use system colors for codes without specific color settings."/>
+      <translation language="fr" translatedstring="Utilisez des couleurs de système pour des codes sans des paramètres spécifiques de couleur."/>
+    </entry>
+    <entry nativestring="Validate Availabilities">
+      <translation language="nl" translatedstring="Beschikbaarheden Valideren"/>
+      <translation language="en" translatedstring="Validate Availabilities"/>
+      <translation language="fr" translatedstring="Validez Disponibilités"/>
+    </entry>
+    <entry nativestring="Validate Requirements">
+      <translation language="nl" translatedstring="Behoeften Valideren"/>
+      <translation language="en" translatedstring="Validate Requirements"/>
+      <translation language="fr" translatedstring="Validez Demandes"/>
+    </entry>
+    <entry nativestring="Validate availabilities">
+      <translation language="nl" translatedstring="Beschikbaarheden valideren"/>
+      <translation language="en" translatedstring="Validate availabilities"/>
+      <translation language="fr" translatedstring="Validez disponibilités"/>
+    </entry>
+    <entry nativestring="Validate requirements">
+      <translation language="nl" translatedstring="Behoeften valideren"/>
+      <translation language="en" translatedstring="Validate requirements"/>
+      <translation language="fr" translatedstring="Validez demandes"/>
+    </entry>
+    <entry nativestring="View CRP Settings">
+      <translation language="nl" translatedstring="CRP Instellingen Tonen"/>
+      <translation language="en" translatedstring="View CRP Settings"/>
+      <translation language="fr" translatedstring="Voir Paramètres CRP"/>
+    </entry>
+    <entry nativestring="View CRP settings">
+      <translation language="nl" translatedstring="CRP instellingen tonen"/>
+      <translation language="en" translatedstring="View CRP settings"/>
+      <translation language="fr" translatedstring="Voir paramètres CRP"/>
+    </entry>
+    <entry nativestring="View Planning Cells">
+      <translation language="nl" translatedstring="Planningscellen Tonen"/>
+      <translation language="en" translatedstring="View Planning Cells"/>
+      <translation language="fr" translatedstring="Voir Cellules de Planification"/>
+    </entry>
+    <entry nativestring="View planning cells">
+      <translation language="nl" translatedstring="Planningscellen tonen"/>
+      <translation language="en" translatedstring="View planning cells"/>
+      <translation language="fr" translatedstring="Voir cellules de planification"/>
+    </entry>
+    <entry nativestring="Visualization">
+      <translation language="nl" translatedstring="Visualisatie"/>
+      <translation language="en" translatedstring="Visualization"/>
+      <translation language="fr" translatedstring="Visualisation"/>
+    </entry>
+    <entry nativestring="When an employee is not able to execute the assigned skill">
+      <translation language="nl" translatedstring="Wanneer een werknemer de toegekende vaardigheid niet mag uitvoeren."/>
+      <translation language="en" translatedstring="When an employee is not able to execute the assigned skill"/>
+      <translation language="fr" translatedstring="Quand un employé n'est pas autorisé d'exécuter la compétence assignée."/>
+    </entry>
+    <entry nativestring="When detecting an over-allocation">
+      <translation language="nl" translatedstring="Wanneer er teveel is toegekend"/>
+      <translation language="en" translatedstring="When detecting an over-assignment"/>
+      <translation language="fr" translatedstring="Quand trop est assigné"/>
+    </entry>
+    <entry nativestring="When detecting an over-assignment">
+      <translation language="nl" translatedstring="Wanneer er teveel is toegekend"/>
+      <translation language="en" translatedstring="When detecting an over-assignment"/>
+      <translation language="fr" translatedstring="Quand trop est assigné"/>
+    </entry>
+    <entry nativestring="absenceconfiguration.absencecode.add">
+      <translation language="nl" translatedstring="Afwezigheidscode Toevoegen"/>
+      <translation language="en" translatedstring="Add Absence Code"/>
+      <translation language="fr" translatedstring="Ajouter Code d'Absence"/>
+    </entry>
+    <entry nativestring="absenceconfiguration.absencecode.add.tooltip">
+      <translation language="nl" translatedstring="Afwezigheidscode Toevoegen"/>
+      <translation language="en" translatedstring="Add Absence Code"/>
+      <translation language="fr" translatedstring="Ajouter Code d'Absence"/>
+    </entry>
+    <entry nativestring="absenceconfiguration.absencecode.remove">
+      <translation language="nl" translatedstring="Afwezigheidscode Verwijderen"/>
+      <translation language="en" translatedstring="Remove Absence Code"/>
+      <translation language="fr" translatedstring="Supprimer Code d'Absence"/>
+    </entry>
+    <entry nativestring="absenceconfiguration.absencecode.remove.tooltip">
+      <translation language="nl" translatedstring="Afwezigheidscode Verwijderen"/>
+      <translation language="en" translatedstring="Remove Absence Code"/>
+      <translation language="fr" translatedstring="Supprimer Code d'Absence"/>
+    </entry>
+    <entry nativestring="absenceconfiguration.absencecodes">
+      <translation language="nl" translatedstring="Afwezigheidscodes"/>
+      <translation language="en" translatedstring="Absence Codes"/>
+      <translation language="fr" translatedstring="Codes d'Absence"/>
+    </entry>
+    <entry nativestring="absenceconfiguration.absencecodes.subtitle">
+      <translation language="nl" translatedstring="Laat de volgende codes toe voor afwezigheidsregistraties"/>
+      <translation language="en" translatedstring="Allow the following codes for absence registrations"/>
+      <translation language="fr" translatedstring="Permettez les codes suivants pour les enregistrements d'absence"/>
+    </entry>
+    <entry nativestring="anomalyreason description">
+      <translation language="nl" translatedstring="Reden Omschrijving"/>
+      <translation language="en" translatedstring="Reason Description"/>
+      <translation language="fr" translatedstring="Description de Raison"/>
+    </entry>
+    <entry nativestring="anomalyreason name">
+      <translation language="nl" translatedstring="Reden Naam"/>
+      <translation language="en" translatedstring="Reason Name"/>
+      <translation language="fr" translatedstring="Nom de Raison"/>
+    </entry>
+    <entry nativestring="anomalyreason.name_description">
+      <translation language="nl" translatedstring="Naam - Omschrijving"/>
+      <translation language="en" translatedstring="Name - Description"/>
+      <translation language="fr" translatedstring="Nom - Description"/>
+    </entry>
+    <entry nativestring="attendance">
+      <translation language="nl" translatedstring="Aanwezigheid"/>
+      <translation language="en" translatedstring="Attendance"/>
+      <translation language="fr" translatedstring="Présence"/>
+    </entry>
+    <entry nativestring="attendanceday.plannedstart">
+      <translation language="nl" translatedstring="Geplande Start"/>
+      <translation language="en" translatedstring="Planned Start"/>
+      <translation language="fr" translatedstring="Début Planifié"/>
+    </entry>
+    <entry nativestring="attendanceday.plannedstop">
+      <translation language="nl" translatedstring="Geplande Stop"/>
+      <translation language="en" translatedstring="Planned Stop"/>
+      <translation language="fr" translatedstring="Fin Planifiée"/>
+    </entry>
+    <entry nativestring="calendarshift">
+      <translation language="nl" translatedstring="Shift"/>
+      <translation language="en" translatedstring="Shift"/>
+      <translation language="fr" translatedstring="Équipe"/>
+    </entry>
+    <entry nativestring="calendarshift.description">
+      <translation language="nl" translatedstring="Omschrijving"/>
+      <translation language="en" translatedstring="Description"/>
+      <translation language="fr" translatedstring="Description"/>
+    </entry>
+    <entry nativestring="calendarshift.name">
+      <translation language="nl" translatedstring="Shift"/>
+      <translation language="en" translatedstring="Name"/>
+      <translation language="fr" translatedstring="Nom"/>
+    </entry>
+    <entry nativestring="calendarshift.toggle.check">
+      <translation language="nl" translatedstring="Selectie Aanvinken/Andere Uitvinken"/>
+      <translation language="en" translatedstring="Check Selection/Uncheck Others"/>
+      <translation language="fr" translatedstring="Marquer Sélection/Démarquer Autres"/>
+    </entry>
+    <entry nativestring="calendarshift.toggle.check.tooltip">
+      <translation language="nl" translatedstring="Selectie Aanvinken/Andere Uitvinken"/>
+      <translation language="en" translatedstring="Check Selection/Uncheck Others"/>
+      <translation language="fr" translatedstring="Marquer Sélection/Démarquer Autres"/>
+    </entry>
+    <entry nativestring="calendarshift.toggle.uncheck">
+      <translation language="nl" translatedstring="Selectie Uitvinken/Andere Aanvinken"/>
+      <translation language="en" translatedstring="Uncheck Selection/Check Others"/>
+      <translation language="fr" translatedstring="Démarquer Sélection/Marquer Autres"/>
+    </entry>
+    <entry nativestring="calendarshift.toggle.uncheck.tooltip">
+      <translation language="nl" translatedstring="Selectie Uitvinken/Andere Aanvinken"/>
+      <translation language="en" translatedstring="Uncheck Selection/Check Others"/>
+      <translation language="fr" translatedstring="Démarquer Sélection/Marquer Autres"/>
+    </entry>
+    <entry nativestring="capacities">
+      <translation language="nl" translatedstring="Beschikbaarheden"/>
+      <translation language="en" translatedstring="Availabilities"/>
+      <translation language="fr" translatedstring="Disponibilités"/>
+    </entry>
+    <entry nativestring="capacity">
+      <translation language="nl" translatedstring="Beschikbaarheid"/>
+      <translation language="en" translatedstring="Availability"/>
+      <translation language="fr" translatedstring="Disponibilité"/>
+    </entry>
+    <entry nativestring="capacity.dtsstart">
+      <translation language="nl" translatedstring="Start"/>
+      <translation language="en" translatedstring="Start"/>
+      <translation language="fr" translatedstring="Démarrage"/>
+    </entry>
+    <entry nativestring="capacity.dtsstop">
+      <translation language="nl" translatedstring="Stop"/>
+      <translation language="en" translatedstring="Stop"/>
+      <translation language="fr" translatedstring="Arrêt"/>
+    </entry>
+    <entry nativestring="capacity.general.rules">
+      <translation language="nl" translatedstring="Algemene Beschikbaarheidsregels"/>
+      <translation language="en" translatedstring="General Availability Rules"/>
+      <translation language="fr" translatedstring="Règles Générales de Disponibilité"/>
+    </entry>
+    <entry nativestring="capacity.load">
+      <translation language="nl" translatedstring="Beschikbaarheden Laden"/>
+      <translation language="en" translatedstring="Load Availabilities"/>
+      <translation language="fr" translatedstring="Charger Disponibilités"/>
+    </entry>
+    <entry nativestring="capacity.load.employeeselection.wizardpanel.description">
+      <translation language="nl" translatedstring="Gelieve de gewenste werknemers te selecteren."/>
+      <translation language="en" translatedstring="Please select the desired employees."/>
+      <translation language="fr" translatedstring="Veuillez sélectionner les employés désirés."/>
+    </entry>
+    <entry nativestring="capacity.load.employeeselection.wizardpanel.name">
+      <translation language="nl" translatedstring="Werknemer Selectie"/>
+      <translation language="en" translatedstring="Employee Selection"/>
+      <translation language="fr" translatedstring="Sélection d'Employé"/>
+    </entry>
+    <entry nativestring="capacity.load.tooltip">
+      <translation language="nl" translatedstring="Beschikbaarheden Laden"/>
+      <translation language="en" translatedstring="Load Availabilities"/>
+      <translation language="fr" translatedstring="Charger Disponibilités"/>
+    </entry>
+    <entry nativestring="capacity.load.wizardpanel.description">
+      <translation language="nl" translatedstring="Gelieve de gewenste tijdstippen te specificeren voor het laden van de capaciteit."/>
+      <translation language="en" translatedstring="Please specify the desired timeframe for loading the capacity."/>
+      <translation language="fr" translatedstring="Veuillez spécifier les temps désirés pour le chargement de la capacité."/>
+    </entry>
+    <entry nativestring="capacity.load.wizardpanel.name">
+      <translation language="nl" translatedstring="Beschikbaarheden Laden Opties"/>
+      <translation language="en" translatedstring="Load Availabilities Options"/>
+      <translation language="fr" translatedstring="Options Chargement des Disponibilités"/>
+    </entry>
+    <entry nativestring="capacity.qtyallocated">
+      <translation language="nl" translatedstring="Toegekend"/>
+      <translation language="en" translatedstring="Assigned"/>
+      <translation language="fr" translatedstring="Assignée"/>
+    </entry>
+    <entry nativestring="capacity.rules.node.title">
+      <translation language="nl" translatedstring="Beschikbaarheidsregels"/>
+      <translation language="en" translatedstring="Availability Rules"/>
+      <translation language="fr" translatedstring="Règles de Disponibilité"/>
+    </entry>
+    <entry nativestring="capacity.specific.rules">
+      <translation language="nl" translatedstring="Specifieke Beschikbaarheidsregels"/>
+      <translation language="en" translatedstring="Specific Availability Rules"/>
+      <translation language="fr" translatedstring="Règles de Disponibilité Spécifique"/>
+    </entry>
+    <entry nativestring="capacityallocation">
+      <translation language="nl" translatedstring="Toekenning"/>
+      <translation language="en" translatedstring="Assignment"/>
+      <translation language="fr" translatedstring="Assignation"/>
+    </entry>
+    <entry nativestring="capacityallocation.analysis">
+      <translation language="nl" translatedstring="Analyse Toekenningen"/>
+      <translation language="en" translatedstring="Assignment Analysis"/>
+      <translation language="fr" translatedstring="Analyse d'Assignation"/>
+    </entry>
+    <entry nativestring="capacityallocation.dtscreation">
+      <translation language="nl" translatedstring="Creatiedatum"/>
+      <translation language="en" translatedstring="Creation Date"/>
+      <translation language="fr" translatedstring="Date de Création"/>
+    </entry>
+    <entry nativestring="capacityallocation.employee">
+      <translation language="nl" translatedstring="Werknemer"/>
+      <translation language="en" translatedstring="Employee"/>
+      <translation language="fr" translatedstring="Employé"/>
+    </entry>
+    <entry nativestring="capacityallocation.general.rules">
+      <translation language="nl" translatedstring="Algemene Toekenning Regels"/>
+      <translation language="en" translatedstring="General Assignment Rules"/>
+      <translation language="fr" translatedstring="Règles Générales d'Assignation"/>
+    </entry>
+    <entry nativestring="capacityallocation.level">
+      <translation language="nl" translatedstring="Niveau"/>
+      <translation language="en" translatedstring="Level"/>
+      <translation language="fr" translatedstring="Niveau"/>
+    </entry>
+    <entry nativestring="capacityallocation.planningcell">
+      <translation language="nl" translatedstring="Planningscel"/>
+      <translation language="en" translatedstring="Planning Cell"/>
+      <translation language="fr" translatedstring="Cellule de Planification"/>
+    </entry>
+    <entry nativestring="capacityallocation.qtyallocated">
+      <translation language="nl" translatedstring="Toegekend"/>
+      <translation language="en" translatedstring="Assigned"/>
+      <translation language="fr" translatedstring="Assignée"/>
+    </entry>
+    <entry nativestring="capacityallocation.remove">
+      <translation language="nl" translatedstring="Toekenningen Verwijderen"/>
+      <translation language="en" translatedstring="Remove Assignments"/>
+      <translation language="fr" translatedstring="Supprimer Assignations"/>
+    </entry>
+    <entry nativestring="capacityallocation.remove.tooltip">
+      <translation language="nl" translatedstring="Toekenningen Verwijderen"/>
+      <translation language="en" translatedstring="Remove Assignments"/>
+      <translation language="fr" translatedstring="Supprimer Assignations"/>
+    </entry>
+    <entry nativestring="capacityallocation.rules.node.title">
+      <translation language="nl" translatedstring="Toekenning Regels"/>
+      <translation language="en" translatedstring="Assignment Rules"/>
+      <translation language="fr" translatedstring="Règles d'Assignation"/>
+    </entry>
+    <entry nativestring="capacityallocation.shift">
+      <translation language="nl" translatedstring="Shift"/>
+      <translation language="en" translatedstring="Shift"/>
+      <translation language="fr" translatedstring="Équipe"/>
+    </entry>
+    <entry nativestring="capacityallocation.skill">
+      <translation language="nl" translatedstring="Vaardigheid"/>
+      <translation language="en" translatedstring="Skill"/>
+      <translation language="fr" translatedstring="Compétence"/>
+    </entry>
+    <entry nativestring="capacityallocation.specific.rules">
+      <translation language="nl" translatedstring="Specifieke Toekenning Regels"/>
+      <translation language="en" translatedstring="Specific Assignment Rules"/>
+      <translation language="fr" translatedstring="Règles d'Assignation Spécifique"/>
+    </entry>
+    <entry nativestring="capacityallocation.user">
+      <translation language="nl" translatedstring="Aangemaakt Door"/>
+      <translation language="en" translatedstring="Created By"/>
+      <translation language="fr" translatedstring="Créé Par"/>
+    </entry>
+    <entry nativestring="capacityallocations">
+      <translation language="nl" translatedstring="Toekenningen"/>
+      <translation language="en" translatedstring="Assignments"/>
+      <translation language="fr" translatedstring="Assignations"/>
+    </entry>
+    <entry nativestring="capacityanomalies">
+      <translation language="nl" translatedstring="Anomalieën"/>
+      <translation language="en" translatedstring="Anomalies"/>
+      <translation language="fr" translatedstring="Anomalies"/>
+    </entry>
+    <entry nativestring="capacityanomaly">
+      <translation language="nl" translatedstring="Anomalie"/>
+      <translation language="en" translatedstring="Anomaly"/>
+      <translation language="fr" translatedstring="Anomalie"/>
+    </entry>
+    <entry nativestring="capacityanomaly.add">
+      <translation language="nl" translatedstring="Anomalie Toevoegen"/>
+      <translation language="en" translatedstring="Add Anomaly"/>
+      <translation language="fr" translatedstring="Ajouter Anomalie"/>
+    </entry>
+    <entry nativestring="capacityanomaly.add.tooltip">
+      <translation language="nl" translatedstring="Anomalie Toevoegen"/>
+      <translation language="en" translatedstring="Add Anomaly"/>
+      <translation language="fr" translatedstring="Ajouter Anomalie"/>
+    </entry>
+    <entry nativestring="capacityanomaly.analysis">
+      <translation language="nl" translatedstring="Anomalie Analyse"/>
+      <translation language="en" translatedstring="Anomaly Analysis"/>
+      <translation language="fr" translatedstring="Analyse d'Anomalie"/>
+    </entry>
+    <entry nativestring="capacityanomaly.anomalyreason">
+      <translation language="nl" translatedstring="Anomaliereden"/>
+      <translation language="en" translatedstring="Anomaly Reason"/>
+      <translation language="fr" translatedstring="Raison d'Anomalie"/>
+    </entry>
+    <entry nativestring="capacityanomaly.category">
+      <translation language="nl" translatedstring="Categorie"/>
+      <translation language="en" translatedstring="Category"/>
+      <translation language="fr" translatedstring="Catégorie"/>
+    </entry>
+    <entry nativestring="capacityanomaly.description">
+      <translation language="nl" translatedstring="Omschrijving"/>
+      <translation language="en" translatedstring="Description"/>
+      <translation language="fr" translatedstring="Description"/>
+    </entry>
+    <entry nativestring="capacityanomaly.details.display">
+      <translation language="nl" translatedstring="Anomaliedetails"/>
+      <translation language="en" translatedstring="Anomaly Details"/>
+      <translation language="fr" translatedstring="Détails d'Anomalie"/>
+    </entry>
+    <entry nativestring="capacityanomaly.details.display.tooltip">
+      <translation language="nl" translatedstring="Anomaliedetails"/>
+      <translation language="en" translatedstring="Show Anomaly Details"/>
+      <translation language="fr" translatedstring="Détails d'Anomalie"/>
+    </entry>
+    <entry nativestring="capacityanomaly.edit">
+      <translation language="nl" translatedstring="Anomalie Aanpassen"/>
+      <translation language="en" translatedstring="Edit Anomaly"/>
+      <translation language="fr" translatedstring="Modifier Anomalie"/>
+    </entry>
+    <entry nativestring="capacityanomaly.edit.tooltip">
+      <translation language="nl" translatedstring="Anomalie Aanpassen"/>
+      <translation language="en" translatedstring="Edit Anomaly"/>
+      <translation language="fr" translatedstring="Modifier Anomalie"/>
+    </entry>
+    <entry nativestring="capacityanomaly.employee">
+      <translation language="nl" translatedstring="Werknemer"/>
+      <translation language="en" translatedstring="Employee"/>
+      <translation language="fr" translatedstring="Employé"/>
+    </entry>
+    <entry nativestring="capacityanomaly.operationrule">
+      <translation language="nl" translatedstring="Regel"/>
+      <translation language="en" translatedstring="Rule"/>
+      <translation language="fr" translatedstring="Règle"/>
+    </entry>
+    <entry nativestring="capacityanomaly.planningcell">
+      <translation language="nl" translatedstring="Planningscel"/>
+      <translation language="en" translatedstring="Planning Cell"/>
+      <translation language="fr" translatedstring="Cellule de Planification"/>
+    </entry>
+    <entry nativestring="capacityanomaly.reason">
+      <translation language="nl" translatedstring="Reden"/>
+      <translation language="en" translatedstring="Reason"/>
+      <translation language="fr" translatedstring="Raison"/>
+    </entry>
+    <entry nativestring="capacityanomaly.remove">
+      <translation language="nl" translatedstring="Anomalie Verwijderen"/>
+      <translation language="en" translatedstring="Remove Anomaly"/>
+      <translation language="fr" translatedstring="Supprimer Anomalie"/>
+    </entry>
+    <entry nativestring="capacityanomaly.remove.tooltip">
+      <translation language="nl" translatedstring="Anomalie Verwijderen"/>
+      <translation language="en" translatedstring="Remove Anomaly"/>
+      <translation language="fr" translatedstring="Supprimer Anomalie"/>
+    </entry>
+    <entry nativestring="capacityanomaly.rule">
+      <translation language="nl" translatedstring="Regel"/>
+      <translation language="en" translatedstring="Rule"/>
+      <translation language="fr" translatedstring="Règle"/>
+    </entry>
+    <entry nativestring="capacityanomaly.shift">
+      <translation language="nl" translatedstring="Shift"/>
+      <translation language="en" translatedstring="Shift"/>
+      <translation language="fr" translatedstring="Équipe"/>
+    </entry>
+    <entry nativestring="capacityanomaly.sourcetype">
+      <translation language="nl" translatedstring="Oorsprong Type"/>
+      <translation language="en" translatedstring="Source Type"/>
+      <translation language="fr" translatedstring="Type d'Origine"/>
+    </entry>
+    <entry nativestring="capacityanomaly.user">
+      <translation language="nl" translatedstring="Aangemaakt Door"/>
+      <translation language="en" translatedstring="Created By"/>
+      <translation language="fr" translatedstring="Créé Par"/>
+    </entry>
+    <entry nativestring="capacityanomalywizard.capacityanomaly.properties.wizardpanel.description">
+      <translation language="nl" translatedstring="Gelieve een reden en omschrijving (optioneel) voor de anomalie te specificeren."/>
+      <translation language="en" translatedstring="Please specify a reason and description (optional) for the anomaly."/>
+      <translation language="fr" translatedstring="Veuillez spécifier une raison et description (optionnel) pour l'anomalie."/>
+    </entry>
+    <entry nativestring="capacityanomalywizard.capacityanomaly.properties.wizardpanel.name">
+      <translation language="nl" translatedstring="Anomalie Instellingen"/>
+      <translation language="en" translatedstring="Anomaly Settings"/>
+      <translation language="fr" translatedstring="Paramètres Anomalie"/>
+    </entry>
+    <entry nativestring="capacityrequirement">
+      <translation language="nl" translatedstring="Behoefte"/>
+      <translation language="en" translatedstring="Requirement"/>
+      <translation language="fr" translatedstring="Demande"/>
+    </entry>
+    <entry nativestring="capacityrequirement.details.display">
+      <translation language="nl" translatedstring="Referentie Details"/>
+      <translation language="en" translatedstring="Reference Details"/>
+      <translation language="fr" translatedstring="Détails de Référence"/>
+    </entry>
+    <entry nativestring="capacityrequirement.details.display.tooltip">
+      <translation language="nl" translatedstring="Referentie Details Tonen"/>
+      <translation language="en" translatedstring="Show Reference Details"/>
+      <translation language="fr" translatedstring="Montrer Détails de Référence"/>
+    </entry>
+    <entry nativestring="capacityrequirement.dtsstart">
+      <translation language="nl" translatedstring="Start"/>
+      <translation language="en" translatedstring="Start"/>
+      <translation language="fr" translatedstring="Démarrage"/>
+    </entry>
+    <entry nativestring="capacityrequirement.dtsstop">
+      <translation language="nl" translatedstring="Stop"/>
+      <translation language="en" translatedstring="Stop"/>
+      <translation language="fr" translatedstring="Arrêt"/>
+    </entry>
+    <entry nativestring="capacityrequirement.general.rules">
+      <translation language="nl" translatedstring="Algemene Behoefte Regels"/>
+      <translation language="en" translatedstring="General Requirement Rules"/>
+      <translation language="fr" translatedstring="Règles Générales de Demande"/>
+    </entry>
+    <entry nativestring="capacityrequirement.load">
+      <translation language="nl" translatedstring="Behoeften Laden"/>
+      <translation language="en" translatedstring="Load Requirements"/>
+      <translation language="fr" translatedstring="Charger Demandes"/>
+    </entry>
+    <entry nativestring="capacityrequirement.load.tooltip">
+      <translation language="nl" translatedstring="Behoeften Laden"/>
+      <translation language="en" translatedstring="Load Requirements"/>
+      <translation language="fr" translatedstring="Charger Demandes"/>
+    </entry>
+    <entry nativestring="capacityrequirement.load.wizardpanel.description">
+      <translation language="nl" translatedstring="Gelieve de gewenste tijdstippen en instellingen te specificeren voor het laden van de behoeften."/>
+      <translation language="en" translatedstring="Please specify the desired timeframe and options for loading the requirements."/>
+      <translation language="fr" translatedstring="Veuillez spécifier les temps et paramètres désiré pour le chargement des demandes."/>
+    </entry>
+    <entry nativestring="capacityrequirement.load.wizardpanel.name">
+      <translation language="nl" translatedstring="Behoeften Laden Opties"/>
+      <translation language="en" translatedstring="Load Requirements Options"/>
+      <translation language="fr" translatedstring="Options Chargement des Demandes"/>
+    </entry>
+    <entry nativestring="capacityrequirement.qtyrequired">
+      <translation language="nl" translatedstring="Benodigd"/>
+      <translation language="en" translatedstring="Required"/>
+      <translation language="fr" translatedstring="Demandé"/>
+    </entry>
+    <entry nativestring="capacityrequirement.rules.node.title">
+      <translation language="nl" translatedstring="Behoefte Regels"/>
+      <translation language="en" translatedstring="Requirement Rules"/>
+      <translation language="fr" translatedstring="Règles de Demande"/>
+    </entry>
+    <entry nativestring="capacityrequirement.shift">
+      <translation language="nl" translatedstring="Shift"/>
+      <translation language="en" translatedstring="Shift"/>
+      <translation language="fr" translatedstring="Équipe"/>
+    </entry>
+    <entry nativestring="capacityrequirement.specific.rules">
+      <translation language="nl" translatedstring="Specifieke Behoefte Regels"/>
+      <translation language="en" translatedstring="Specific Requirement Rules"/>
+      <translation language="fr" translatedstring="Règles de Demande Spécifique"/>
+    </entry>
+    <entry nativestring="capacityrequirement.type">
+      <translation language="nl" translatedstring="Type"/>
+      <translation language="en" translatedstring="Type"/>
+      <translation language="fr" translatedstring="Type"/>
+    </entry>
+    <entry nativestring="capacityrequirement.user">
+      <translation language="nl" translatedstring="Aangemaakt Door"/>
+      <translation language="en" translatedstring="Created By"/>
+      <translation language="fr" translatedstring="Créé Par"/>
+    </entry>
+    <entry nativestring="capacityrequirements">
+      <translation language="nl" translatedstring="Behoeften"/>
+      <translation language="en" translatedstring="Requirements"/>
+      <translation language="fr" translatedstring="Demandes"/>
+    </entry>
+    <entry nativestring="default.capacityallocationrule">
+      <translation language="nl" translatedstring="Standaard Toekenning Regel"/>
+      <translation language="en" translatedstring="Default Assignment Rule"/>
+      <translation language="fr" translatedstring="Règle d'Assignation par Défaut"/>
+    </entry>
+    <entry nativestring="default.capacityrequirementrule">
+      <translation language="nl" translatedstring="Standaard Behoefte Regel"/>
+      <translation language="en" translatedstring="Default Requirement Rule"/>
+      <translation language="fr" translatedstring="Règle de Demande par Défaut"/>
+    </entry>
+    <entry nativestring="default.capacityrule">
+      <translation language="nl" translatedstring="Standaard Beschikbaarheidsregel"/>
+      <translation language="en" translatedstring="Default Availability Rule"/>
+      <translation language="fr" translatedstring="Règle de Disponibilité par Défaut"/>
+    </entry>
+    <entry nativestring="employee.allocation.wizardpanel.description">
+      <translation language="nl" translatedstring="Gelieve de werknemers te selecteren en de toekenningsinstellingen te specificeren."/>
+      <translation language="en" translatedstring="Please select the employees and specify the assignment options."/>
+      <translation language="fr" translatedstring="Veuillez sélectionner les employés et spécifier les paramètres d'assignation."/>
+    </entry>
+    <entry nativestring="employee.allocation.wizardpanel.name">
+      <translation language="nl" translatedstring="Behoefte Toekenning"/>
+      <translation language="en" translatedstring="Skill Requirement Assignment"/>
+      <translation language="fr" translatedstring="Assignation de Demande de Compétence"/>
+    </entry>
+    <entry nativestring="employee.capacityallocation.analysis">
+      <translation language="nl" translatedstring="Analyse"/>
+      <translation language="en" translatedstring="Analysis"/>
+      <translation language="fr" translatedstring="Analyse"/>
+    </entry>
+    <entry nativestring="employee.capacitymgt">
+      <translation language="nl" translatedstring="Capaciteit"/>
+      <translation language="en" translatedstring="Capacity"/>
+      <translation language="fr" translatedstring="Capacité"/>
+    </entry>
+    <entry nativestring="employee.reallocate">
+      <translation language="nl" translatedstring="Overdragen naar andere Werknemer"/>
+      <translation language="en" translatedstring="Reassign to another Employee"/>
+      <translation language="fr" translatedstring="Réassigner à un autre Employé"/>
+    </entry>
+    <entry nativestring="employee.reallocate.selection.wizardpanel.description">
+      <translation language="nl" translatedstring="Gelieve de werknemer te selecteren en de toekenningsinstellingen te specificeren."/>
+      <translation language="en" translatedstring="Please select the employee and specify the assignment options."/>
+      <translation language="fr" translatedstring="Veuillez sélectionner l'employé et spécifier les paramètres d'assignation."/>
+    </entry>
+    <entry nativestring="employee.reallocate.selection.wizardpanel.name">
+      <translation language="nl" translatedstring="Werknemer Toekenning"/>
+      <translation language="en" translatedstring="Employee Assignment"/>
+      <translation language="fr" translatedstring="Assignation d'Employé"/>
+    </entry>
+    <entry nativestring="employee.reallocate.tooltip">
+      <translation language="nl" translatedstring="De toekenningen van deze werknemer overdragen naar een andere werknemer."/>
+      <translation language="en" translatedstring="Reassign the assignments of this employee to another employee."/>
+      <translation language="fr" translatedstring="Réassigner les assignations de cet employé à un autre employé."/>
+    </entry>
+    <entry nativestring="employee.skills.display">
+      <translation language="nl" translatedstring="Vaardigheden Tonen"/>
+      <translation language="en" translatedstring="Show Skills"/>
+      <translation language="fr" translatedstring="Montrer Compétences"/>
+    </entry>
+    <entry nativestring="employee.skills.display.tooltip">
+      <translation language="nl" translatedstring="Vaardigheden Tonen"/>
+      <translation language="en" translatedstring="Show Skills"/>
+      <translation language="fr" translatedstring="Montrer Compétences"/>
+    </entry>
+    <entry nativestring="employeecapacity">
+      <translation language="nl" translatedstring="Beschikbaarheid"/>
+      <translation language="en" translatedstring="Availability"/>
+      <translation language="fr" translatedstring="Disponibilité"/>
+    </entry>
+    <entry nativestring="employeecapacity.preference.wizardpanel.description">
+      <translation language="nl" translatedstring="Gelieve de gewenste kolommen en andere instellingen voor deze tabel te kiezen."/>
+      <translation language="en" translatedstring="Please choose the columns and other settings for this table."/>
+      <translation language="fr" translatedstring="Veuillez sélectionner les colonnes et d'autres paramètres pour cette table."/>
+    </entry>
+    <entry nativestring="employeecapacity.preference.wizardpanel.name">
+      <translation language="nl" translatedstring="Voorkeuren Aanpassen"/>
+      <translation language="en" translatedstring="Adjust Preferences"/>
+      <translation language="fr" translatedstring="Modifier Préférences"/>
+    </entry>
+    <entry nativestring="employeecapacityselectionwrapper.details">
+      <translation language="nl" translatedstring="Details Beschikbaarheid"/>
+      <translation language="en" translatedstring="Availability Details"/>
+      <translation language="fr" translatedstring="Détails de Disponibilité"/>
+    </entry>
+    <entry nativestring="employeecapacityselectionwrapper.details.display">
+      <translation language="nl" translatedstring="Details Beschikbaarheid"/>
+      <translation language="en" translatedstring="Availability Details"/>
+      <translation language="fr" translatedstring="Détails de Disponibilité"/>
+    </entry>
+    <entry nativestring="employeecapacityselectionwrapper.details.display.tooltip">
+      <translation language="nl" translatedstring="Details Beschikbaarheid Tonen"/>
+      <translation language="en" translatedstring="Show Availability Details"/>
+      <translation language="fr" translatedstring="Montrer Détails de Disponibilité"/>
+    </entry>
+    <entry nativestring="employees.allocate">
+      <translation language="nl" translatedstring="Toekennen aan Werknemers"/>
+      <translation language="en" translatedstring="Assign to Employees"/>
+      <translation language="fr" translatedstring="Assigner aux Employés"/>
+    </entry>
+    <entry nativestring="employees.allocate.tooltip">
+      <translation language="nl" translatedstring="Toekennen aan Werknemers"/>
+      <translation language="en" translatedstring="Assign to Employees"/>
+      <translation language="fr" translatedstring="Assigner aux Employés"/>
+    </entry>
+    <entry nativestring="employees.selected.allocate">
+      <translation language="nl" translatedstring="Toekennen aan Geselecteerde Werknemers"/>
+      <translation language="en" translatedstring="Assign to Selected Employees"/>
+      <translation language="fr" translatedstring="Assigner aux Employés Sélectionnés"/>
+    </entry>
+    <entry nativestring="employees.selected.allocate.tooltip">
+      <translation language="nl" translatedstring="Toekennen aan Geselecteerde Werknemers"/>
+      <translation language="en" translatedstring="Assign to Selected Employees"/>
+      <translation language="fr" translatedstring="Assigner aux Employés Sélectionnés"/>
+    </entry>
+    <entry nativestring="employeeshiftcapacity">
+      <translation language="nl" translatedstring="Beschikbaarheid"/>
+      <translation language="en" translatedstring="Availability"/>
+      <translation language="fr" translatedstring="Disponibilité"/>
+    </entry>
+    <entry nativestring="employeeshiftcapacity.qtyactualavailable">
+      <translation language="nl" translatedstring="Resterende Beschikbaarheid"/>
+      <translation language="en" translatedstring="Remaining Availability"/>
+      <translation language="fr" translatedstring="Disponibilité Restante"/>
+    </entry>
+    <entry nativestring="employeeshiftcapacity.qtytargetallocated">
+      <translation language="nl" translatedstring="Toegekend"/>
+      <translation language="en" translatedstring="Assigned"/>
+      <translation language="fr" translatedstring="Assignée"/>
+    </entry>
+    <entry nativestring="employeeshiftcapacity.qtytargetavailable">
+      <translation language="nl" translatedstring="Totale Beschikbaarheid"/>
+      <translation language="en" translatedstring="Total Availability"/>
+      <translation language="fr" translatedstring="Disponibilité Totale"/>
+    </entry>
+    <entry nativestring="employeeshiftcapacity.qtyunavailable">
+      <translation language="nl" translatedstring="Onbeschikbaarheid"/>
+      <translation language="en" translatedstring="Unavailability"/>
+      <translation language="fr" translatedstring="Indisponibilité"/>
+    </entry>
+    <entry nativestring="employeeshiftcapacity.totalqtyunavailable">
+      <translation language="nl" translatedstring="Totale Onbeschikbaarheid"/>
+      <translation language="en" translatedstring="Total Unavailability"/>
+      <translation language="fr" translatedstring="Indisponibilité Totale"/>
+    </entry>
+    <entry nativestring="employeeskillrequirementplanning">
+      <translation language="nl" translatedstring="Planning"/>
+      <translation language="en" translatedstring="Planning"/>
+      <translation language="fr" translatedstring="Planification"/>
+    </entry>
+    <entry nativestring="employeeskillrequirementplanning.show.available.employees">
+      <translation language="nl" translatedstring="Beschikbare Werknemers Tonen"/>
+      <translation language="en" translatedstring="Show Available Employees"/>
+      <translation language="fr" translatedstring="Montrer Employés Disponibles"/>
+    </entry>
+    <entry nativestring="employeeskillrequirementplanning.show.available.employees.tooltip">
+      <translation language="nl" translatedstring="Beschikbare Werknemers Tonen"/>
+      <translation language="en" translatedstring="Show Available Employees"/>
+      <translation language="fr" translatedstring="Montrer Employés Disponibles"/>
+    </entry>
+    <entry nativestring="employeeskillrequirementplanning.show.capable.employees">
+      <translation language="nl" translatedstring="Bekwame Werknemers Tonen"/>
+      <translation language="en" translatedstring="Show Capable Employees"/>
+      <translation language="fr" translatedstring="Montrer Employés Capables"/>
+    </entry>
+    <entry nativestring="employeeskillrequirementplanning.show.capable.employees.tooltip">
+      <translation language="nl" translatedstring="Bekwame Werknemers Tonen"/>
+      <translation language="en" translatedstring="Show Capable Employees"/>
+      <translation language="fr" translatedstring="Montrer Employés Capables"/>
+    </entry>
+    <entry nativestring="employeeskillrequirementplanning.show.planned.employees">
+      <translation language="nl" translatedstring="Geplande Werknemers Tonen"/>
+      <translation language="en" translatedstring="Show Planned Employees"/>
+      <translation language="fr" translatedstring="Montrer Employés Planifiés"/>
+    </entry>
+    <entry nativestring="employeeskillrequirementplanning.show.planned.employees.tooltip">
+      <translation language="nl" translatedstring="Geplande Werknemers Tonen"/>
+      <translation language="en" translatedstring="Show Planned Employees"/>
+      <translation language="fr" translatedstring="Montrer Employés Planifiés"/>
+    </entry>
+    <entry nativestring="generate anomaly">
+      <translation language="nl" translatedstring="genereer anomalie"/>
+      <translation language="en" translatedstring="generate anomaly"/>
+      <translation language="fr" translatedstring="générez anomalie"/>
+    </entry>
+    <entry nativestring="level">
+      <translation language="nl" translatedstring="Niveau"/>
+      <translation language="en" translatedstring="Level"/>
+      <translation language="fr" translatedstring="Niveau"/>
+    </entry>
+    <entry nativestring="objt.crp.absencecodes.filter">
+      <translation language="nl" translatedstring="Afwezigheidscodes"/>
+      <translation language="en" translatedstring="Absence Codes"/>
+      <translation language="fr" translatedstring="Codes d'Absence"/>
+    </entry>
+    <entry nativestring="objt.crp.absencecodes.filter.tooltip">
+      <translation language="nl" translatedstring="Afwezigheidscodes"/>
+      <translation language="en" translatedstring="Absence Codes"/>
+      <translation language="fr" translatedstring="Codes d'Absence"/>
+    </entry>
+    <entry nativestring="objt.crp.anomalyreasons.filter">
+      <translation language="nl" translatedstring="Filter Anomalieredenen"/>
+      <translation language="en" translatedstring="Filter Anomaly Reasons"/>
+      <translation language="fr" translatedstring="Filtre Raisons d'Anomalie"/>
+    </entry>
+    <entry nativestring="objt.crp.anomalyreasons.filter.tooltip">
+      <translation language="nl" translatedstring="Filter Anomalieredenen"/>
+      <translation language="en" translatedstring="Filter Anomaly Reasons"/>
+      <translation language="fr" translatedstring="Filtre Raisons d'Anomalie"/>
+    </entry>
+    <entry nativestring="objt.crp.configuration">
+      <translation language="nl" translatedstring="CRP Instelling"/>
+      <translation language="en" translatedstring="CRP Setting"/>
+      <translation language="fr" translatedstring="Paramètre CRP"/>
+    </entry>
+    <entry nativestring="objt.crp.configurations.list">
+      <translation language="nl" translatedstring="CRP Instellingen"/>
+      <translation language="en" translatedstring="CRP Settings"/>
+      <translation language="fr" translatedstring="Paramètres CRP"/>
+    </entry>
+    <entry nativestring="objt.crp.configurations.node.title">
+      <translation language="nl" translatedstring="CRP Instellingen"/>
+      <translation language="en" translatedstring="CRP Settings"/>
+      <translation language="fr" translatedstring="Paramètres CRP"/>
+    </entry>
+    <entry nativestring="objt.crp.operationrule">
+      <translation language="nl" translatedstring="Regel"/>
+      <translation language="en" translatedstring="Rule"/>
+      <translation language="fr" translatedstring="Règle"/>
+    </entry>
+    <entry nativestring="objt.crp.rule.add">
+      <translation language="nl" translatedstring="Nieuwe Regel"/>
+      <translation language="en" translatedstring="New Rule"/>
+      <translation language="fr" translatedstring="Nouvelle Règle"/>
+    </entry>
+    <entry nativestring="objt.crp.rule.add.tooltip">
+      <translation language="nl" translatedstring="Nieuwe Regel"/>
+      <translation language="en" translatedstring="New Rule"/>
+      <translation language="fr" translatedstring="Nouvelle Règle"/>
+    </entry>
+    <entry nativestring="objt.crp.rule.paste">
+      <translation language="nl" translatedstring="Regel Plakken"/>
+      <translation language="en" translatedstring="Paste Rule"/>
+      <translation language="fr" translatedstring="Coller Règle"/>
+    </entry>
+    <entry nativestring="objt.crp.rule.paste.tooltip">
+      <translation language="nl" translatedstring="Regel Plakken"/>
+      <translation language="en" translatedstring="Paste Rule"/>
+      <translation language="fr" translatedstring="Coller Règle"/>
+    </entry>
+    <entry nativestring="objt.crp.rules.lock.name">
+      <translation language="nl" translatedstring="Regels Vergrendelen"/>
+      <translation language="en" translatedstring="Lock Rules"/>
+      <translation language="fr" translatedstring="Verrouiller Règles"/>
+    </entry>
+    <entry nativestring="objt.crp.rules.lock.tooltip">
+      <translation language="nl" translatedstring="Regels Vergrendelen"/>
+      <translation language="en" translatedstring="Lock Rules"/>
+      <translation language="fr" translatedstring="Verrouiller Règles"/>
+    </entry>
+    <entry nativestring="planningcell">
+      <translation language="nl" translatedstring="Planningscel"/>
+      <translation language="en" translatedstring="Planning Cell"/>
+      <translation language="fr" translatedstring="Cellule de Planification"/>
+    </entry>
+    <entry nativestring="planningcell.capacityallocation.analysis">
+      <translation language="nl" translatedstring="Analyse"/>
+      <translation language="en" translatedstring="Analysis"/>
+      <translation language="fr" translatedstring="Analyse"/>
+    </entry>
+    <entry nativestring="planningcell.capacityallocation.report">
+      <translation language="nl" translatedstring="Planningsrapport"/>
+      <translation language="en" translatedstring="Planning Report"/>
+      <translation language="fr" translatedstring="Rapport de Planification"/>
+    </entry>
+    <entry nativestring="planningcell.capacitymgt">
+      <translation language="nl" translatedstring="Capaciteit"/>
+      <translation language="en" translatedstring="Capacity"/>
+      <translation language="fr" translatedstring="Capacité"/>
+    </entry>
+    <entry nativestring="planningcell.employees">
+      <translation language="nl" translatedstring="Werknemers"/>
+      <translation language="en" translatedstring="Employees"/>
+      <translation language="fr" translatedstring="Employés"/>
+    </entry>
+    <entry nativestring="planningcell.employees.add">
+      <translation language="nl" translatedstring="Werknemers Toevoegen"/>
+      <translation language="en" translatedstring="Add Employees"/>
+      <translation language="fr" translatedstring="Ajouter Employés"/>
+    </entry>
+    <entry nativestring="planningcell.employees.add.tooltip">
+      <translation language="nl" translatedstring="Werknemers Toevoegen"/>
+      <translation language="en" translatedstring="Add Employees"/>
+      <translation language="fr" translatedstring="Ajouter Employés"/>
+    </entry>
+    <entry nativestring="planningcell.employees.remove">
+      <translation language="nl" translatedstring="Werknemers Verwijderen"/>
+      <translation language="en" translatedstring="Remove Employees"/>
+      <translation language="fr" translatedstring="Supprimer Employés"/>
+    </entry>
+    <entry nativestring="planningcell.employees.remove.tooltip">
+      <translation language="nl" translatedstring="Werknemers Verwijderen"/>
+      <translation language="en" translatedstring="Remove Employees"/>
+      <translation language="fr" translatedstring="Supprimer Employés"/>
+    </entry>
+    <entry nativestring="planningcell.selectionpanel.description">
+      <translation language="nl" translatedstring="Gelieve de gewenste planningscellen te selecteren."/>
+      <translation language="en" translatedstring="Please select the desired planning cells."/>
+      <translation language="fr" translatedstring="Veuillez sélectionner les cellules de planification désirées."/>
+    </entry>
+    <entry nativestring="planningcell.selectionpanel.title">
+      <translation language="nl" translatedstring="Planningscel Selectie"/>
+      <translation language="en" translatedstring="Planning Cell Selection"/>
+      <translation language="fr" translatedstring="Sélection de Cellule de Planification"/>
+    </entry>
+    <entry nativestring="planningcell.skillrequirements">
+      <translation language="nl" translatedstring="Basisbehoeften"/>
+      <translation language="en" translatedstring="Basic Requirements"/>
+      <translation language="fr" translatedstring="Demandes de Base"/>
+    </entry>
+    <entry nativestring="planningcell.skillrequirements.add">
+      <translation language="nl" translatedstring="Behoefte Toevoegen"/>
+      <translation language="en" translatedstring="Add Skill Requirement"/>
+      <translation language="fr" translatedstring="Ajouter Demande de Compétence"/>
+    </entry>
+    <entry nativestring="planningcell.skillrequirements.add.tooltip">
+      <translation language="nl" translatedstring="Behoefte Toevoegen"/>
+      <translation language="en" translatedstring="Add Skill Requirement"/>
+      <translation language="fr" translatedstring="Ajouter Demande de Compétence"/>
+    </entry>
+    <entry nativestring="planningcell.skillrequirements.delete">
+      <translation language="nl" translatedstring="Behoefte Verwijderen"/>
+      <translation language="en" translatedstring="Delete Skill Requirements"/>
+      <translation language="fr" translatedstring="Supprimer Demande de Compétence"/>
+    </entry>
+    <entry nativestring="planningcell.skillrequirements.delete.tooltip">
+      <translation language="nl" translatedstring="Behoefte Verwijderen"/>
+      <translation language="en" translatedstring="Delete Skill Requirements"/>
+      <translation language="fr" translatedstring="Supprimer Demande de Compétence"/>
+    </entry>
+    <entry nativestring="planningcell.skillrequirements.edit">
+      <translation language="nl" translatedstring="Behoefte Aanpassen"/>
+      <translation language="en" translatedstring="Edit Skill Requirement"/>
+      <translation language="fr" translatedstring="Modifier Demande de Compétence"/>
+    </entry>
+    <entry nativestring="planningcell.skillrequirements.edit.tooltip">
+      <translation language="nl" translatedstring="Behoefte Aanpassen"/>
+      <translation language="en" translatedstring="Edit Skill Requirement"/>
+      <translation language="fr" translatedstring="Modifier Demande de Compétence"/>
+    </entry>
+    <entry nativestring="planningcell.sqlfilter">
+      <translation language="nl" translatedstring="Planningscellen"/>
+      <translation language="en" translatedstring="Planning Cells"/>
+      <translation language="fr" translatedstring="Cellules de Planification"/>
+    </entry>
+    <entry nativestring="planningcells">
+      <translation language="nl" translatedstring="Planningscellen"/>
+      <translation language="en" translatedstring="Planning Cells"/>
+      <translation language="fr" translatedstring="Cellules de Planification"/>
+    </entry>
+    <entry nativestring="planningcells.list">
+      <translation language="nl" translatedstring="Planningscellen"/>
+      <translation language="en" translatedstring="Planning Cells"/>
+      <translation language="fr" translatedstring="Cellules de Planification"/>
+    </entry>
+    <entry nativestring="planningcells.my">
+      <translation language="nl" translatedstring="Mijn Planningscellen"/>
+      <translation language="en" translatedstring="My Planning Cells"/>
+      <translation language="fr" translatedstring="Mes Cellules de Planification"/>
+    </entry>
+    <entry nativestring="planningcellsqlfilter">
+      <translation language="nl" translatedstring="Planningscel Filter"/>
+      <translation language="en" translatedstring="Planning Cell Filter"/>
+      <translation language="fr" translatedstring="Filtre Cellule de Planification"/>
+    </entry>
+    <entry nativestring="processunit">
+      <translation language="nl" translatedstring="Resource"/>
+      <translation language="en" translatedstring="Resource"/>
+      <translation language="fr" translatedstring="Ressource"/>
+    </entry>
+    <entry nativestring="productionoperation">
+      <translation language="nl" translatedstring="Bewerking"/>
+      <translation language="en" translatedstring="Operation"/>
+      <translation language="fr" translatedstring="Opération"/>
+    </entry>
+    <entry nativestring="productionoperation.description">
+      <translation language="nl" translatedstring="Omschrijving"/>
+      <translation language="en" translatedstring="Description"/>
+      <translation language="fr" translatedstring="Description"/>
+    </entry>
+    <entry nativestring="productionoperation.dtsplannedstart">
+      <translation language="nl" translatedstring="Geplande Start"/>
+      <translation language="en" translatedstring="Planned Start"/>
+      <translation language="fr" translatedstring="Démarrage Planifié"/>
+    </entry>
+    <entry nativestring="productionoperation.dtsplannedstop">
+      <translation language="nl" translatedstring="Geplande Stop"/>
+      <translation language="en" translatedstring="Planned Stop"/>
+      <translation language="fr" translatedstring="Arrêt Planifié"/>
+    </entry>
+    <entry nativestring="productionoperation.name">
+      <translation language="nl" translatedstring="Naam"/>
+      <translation language="en" translatedstring="Name"/>
+      <translation language="fr" translatedstring="Nom"/>
+    </entry>
+    <entry nativestring="productionorder">
+      <translation language="nl" translatedstring="Productieorder"/>
+      <translation language="en" translatedstring="Production Order"/>
+      <translation language="fr" translatedstring="Ordre de Fabrication"/>
+    </entry>
+    <entry nativestring="ruleoperation.planningcell.add">
+      <translation language="nl" translatedstring="Planningscel Toevoegen"/>
+      <translation language="en" translatedstring="Add Planning Cell"/>
+      <translation language="fr" translatedstring="Ajouter Cellule de Planification"/>
+    </entry>
+    <entry nativestring="ruleoperation.planningcell.add.tooltip">
+      <translation language="nl" translatedstring="Planningscel Toevoegen"/>
+      <translation language="en" translatedstring="Add Planning Cell"/>
+      <translation language="fr" translatedstring="Ajouter Cellule de Planification"/>
+    </entry>
+    <entry nativestring="ruleoperation.planningcell.remove">
+      <translation language="nl" translatedstring="Planningscel Verwijderen"/>
+      <translation language="en" translatedstring="Remove Planning Cell"/>
+      <translation language="fr" translatedstring="Supprimer Cellule de Planification"/>
+    </entry>
+    <entry nativestring="ruleoperation.planningcell.remove.tooltip">
+      <translation language="nl" translatedstring="Planningscel Verwijderen"/>
+      <translation language="en" translatedstring="Remove Planning Cell"/>
+      <translation language="fr" translatedstring="Supprimer Cellule de Planification"/>
+    </entry>
+    <entry nativestring="shift">
+      <translation language="nl" translatedstring="Shift"/>
+      <translation language="en" translatedstring="Shift"/>
+      <translation language="fr" translatedstring="Équipe"/>
+    </entry>
+    <entry nativestring="shift.skillrequirement.wizardpanel.description">
+      <translation language="nl" translatedstring="Gelieve de benodigde hoeveelheid voor de geselecteerde shift en vaardigheid te specificeren."/>
+      <translation language="en" translatedstring="Please specify the required quantity for the selected shift and skill."/>
+      <translation language="fr" translatedstring="Veuillez spécifier la quantité demandée pour l'équipe et compétence sélectionnée."/>
+    </entry>
+    <entry nativestring="shift.skillrequirement.wizardpanel.name">
+      <translation language="nl" translatedstring="Behoefte Instellingen"/>
+      <translation language="en" translatedstring="Skill Requirement Properties"/>
+      <translation language="fr" translatedstring="Paramètres Demande de Compétence"/>
+    </entry>
+    <entry nativestring="shiftcapacities">
+      <translation language="nl" translatedstring="Analyse Beschikbaarheden"/>
+      <translation language="en" translatedstring="Availabilities Analysis"/>
+      <translation language="fr" translatedstring="Analyse Disponibilités"/>
+    </entry>
+    <entry nativestring="shiftcapacity">
+      <translation language="nl" translatedstring="Beschikbaarheid"/>
+      <translation language="en" translatedstring="Availability"/>
+      <translation language="fr" translatedstring="Disponibilité"/>
+    </entry>
+    <entry nativestring="shiftcapacity.capacities">
+      <translation language="nl" translatedstring="Details"/>
+      <translation language="en" translatedstring="Details"/>
+      <translation language="fr" translatedstring="Détails"/>
+    </entry>
+    <entry nativestring="shiftcapacity.capacityallocations">
+      <translation language="nl" translatedstring="Toekenningen"/>
+      <translation language="en" translatedstring="Assignments"/>
+      <translation language="fr" translatedstring="Assignations"/>
+    </entry>
+    <entry nativestring="shiftcapacity.dts">
+      <translation language="nl" translatedstring="Datum"/>
+      <translation language="en" translatedstring="Date"/>
+      <translation language="fr" translatedstring="Date"/>
+    </entry>
+    <entry nativestring="shiftcapacity.dtsstart">
+      <translation language="nl" translatedstring="Shift Start"/>
+      <translation language="en" translatedstring="Shift Start"/>
+      <translation language="fr" translatedstring="Début d'Équipe"/>
+    </entry>
+    <entry nativestring="shiftcapacity.dtsstop">
+      <translation language="nl" translatedstring="Shift Stop"/>
+      <translation language="en" translatedstring="Shift Stop"/>
+      <translation language="fr" translatedstring="Arrêt d'Équipe"/>
+    </entry>
+    <entry nativestring="shiftcapacity.processrules">
+      <translation language="nl" translatedstring="Beschikbaarheden Valideren"/>
+      <translation language="en" translatedstring="Validate Availabilities"/>
+      <translation language="fr" translatedstring="Validez Disponibilités"/>
+    </entry>
+    <entry nativestring="shiftcapacity.processrules.tooltip">
+      <translation language="nl" translatedstring="Beschikbaarheden Valideren"/>
+      <translation language="en" translatedstring="Validate Availabilities"/>
+      <translation language="fr" translatedstring="Validez Disponibilités"/>
+    </entry>
+    <entry nativestring="shiftcapacity.qtyactualallocated">
+      <translation language="nl" translatedstring="Effectief Toegekend"/>
+      <translation language="en" translatedstring="Actual Assigned"/>
+      <translation language="fr" translatedstring="Assigné Actuel"/>
+    </entry>
+    <entry nativestring="shiftcapacity.qtyactualavailable">
+      <translation language="nl" translatedstring="Resterende Beschikbaarheid"/>
+      <translation language="en" translatedstring="Remaining Availability"/>
+      <translation language="fr" translatedstring="Disponibilité Restante"/>
+    </entry>
+    <entry nativestring="shiftcapacity.qtytargetallocated">
+      <translation language="nl" translatedstring="Toegekend"/>
+      <translation language="en" translatedstring="Assigned"/>
+      <translation language="fr" translatedstring="Assignée"/>
+    </entry>
+    <entry nativestring="shiftcapacity.qtytargetavailable">
+      <translation language="nl" translatedstring="Totale Beschikbaarheid"/>
+      <translation language="en" translatedstring="Total Availability"/>
+      <translation language="fr" translatedstring="Disponibilité Totale"/>
+    </entry>
+    <entry nativestring="shiftcapacityrequirement">
+      <translation language="nl" translatedstring="Shiftbehoefte"/>
+      <translation language="en" translatedstring="Shift Requirement"/>
+      <translation language="fr" translatedstring="Demande d'équipe"/>
+    </entry>
+    <entry nativestring="shiftcapacityrequirement.capacityallocations">
+      <translation language="nl" translatedstring="Toekenningen"/>
+      <translation language="en" translatedstring="Assignments"/>
+      <translation language="fr" translatedstring="Assignations"/>
+    </entry>
+    <entry nativestring="shiftcapacityrequirement.capacityrequirements">
+      <translation language="nl" translatedstring="Details"/>
+      <translation language="en" translatedstring="Details"/>
+      <translation language="fr" translatedstring="Détails"/>
+    </entry>
+    <entry nativestring="shiftcapacityrequirement.dts">
+      <translation language="nl" translatedstring="Datum"/>
+      <translation language="en" translatedstring="Date"/>
+      <translation language="fr" translatedstring="Date"/>
+    </entry>
+    <entry nativestring="shiftcapacityrequirement.dtsstart">
+      <translation language="nl" translatedstring="Shift Start"/>
+      <translation language="en" translatedstring="Shift Start"/>
+      <translation language="fr" translatedstring="Début d'Équipe"/>
+    </entry>
+    <entry nativestring="shiftcapacityrequirement.dtsstop">
+      <translation language="nl" translatedstring="Shift Stop"/>
+      <translation language="en" translatedstring="Shift Stop"/>
+      <translation language="fr" translatedstring="Arrêt d'Équipe"/>
+    </entry>
+    <entry nativestring="shiftcapacityrequirement.processrules">
+      <translation language="nl" translatedstring="Behoeften Valideren"/>
+      <translation language="en" translatedstring="Validate Requirements"/>
+      <translation language="fr" translatedstring="Validez Demandes"/>
+    </entry>
+    <entry nativestring="shiftcapacityrequirement.processrules.tooltip">
+      <translation language="nl" translatedstring="Behoeften Valideren"/>
+      <translation language="en" translatedstring="Validate Requirements"/>
+      <translation language="fr" translatedstring="Validez Demandes"/>
+    </entry>
+    <entry nativestring="shiftcapacityrequirements">
+      <translation language="nl" translatedstring="Analyse Behoeften"/>
+      <translation language="en" translatedstring="Requirements Analysis"/>
+      <translation language="fr" translatedstring="Analyse de Demandes"/>
+    </entry>
+    <entry nativestring="shiftskillrequirement">
+      <translation language="nl" translatedstring="Behoefte"/>
+      <translation language="en" translatedstring="Requirement"/>
+      <translation language="fr" translatedstring="Demande"/>
+    </entry>
+    <entry nativestring="shiftskillrequirement.qtyallocated">
+      <translation language="nl" translatedstring="Toegekend"/>
+      <translation language="en" translatedstring="Assigned"/>
+      <translation language="fr" translatedstring="Assignée"/>
+    </entry>
+    <entry nativestring="shiftskillrequirement.qtyremainingrequired">
+      <translation language="nl" translatedstring="Resterend Benodigd"/>
+      <translation language="en" translatedstring="Remaining Required"/>
+      <translation language="fr" translatedstring="Demandé Restante"/>
+    </entry>
+    <entry nativestring="shiftskillrequirement.qtyrequired">
+      <translation language="nl" translatedstring="Benodigd"/>
+      <translation language="en" translatedstring="Required"/>
+      <translation language="fr" translatedstring="Demandée"/>
+    </entry>
+    <entry nativestring="shiftskillrequirement.remove">
+      <translation language="nl" translatedstring="Behoefte Verwijderen"/>
+      <translation language="en" translatedstring="Remove Requirement"/>
+      <translation language="fr" translatedstring="Supprimer Demande"/>
+    </entry>
+    <entry nativestring="shiftskillrequirement.remove.tooltip">
+      <translation language="nl" translatedstring="Behoefte Verwijderen"/>
+      <translation language="en" translatedstring="Remove Requirement"/>
+      <translation language="fr" translatedstring="Supprimer Demande"/>
+    </entry>
+    <entry nativestring="shiftskillrequirement.settings.wizardpanel.description">
+      <translation language="nl" translatedstring="Gelieve de instellingen te specificeren voor de vaardigheidsbehoefte."/>
+      <translation language="en" translatedstring="Please specify the properties for the skill requirement."/>
+      <translation language="fr" translatedstring="Veuillez spécifier les paramètres pour la demande de compétence."/>
+    </entry>
+    <entry nativestring="shiftskillrequirement.settings.wizardpanel.name">
+      <translation language="nl" translatedstring="Behoefte Instellingen"/>
+      <translation language="en" translatedstring="Skill Requirement Properties"/>
+      <translation language="fr" translatedstring="Paramètres Demande de Compétence"/>
+    </entry>
+    <entry nativestring="shiftskillrequirements">
+      <translation language="nl" translatedstring="Behoeftes"/>
+      <translation language="en" translatedstring="Requirements"/>
+      <translation language="fr" translatedstring="Demandes"/>
+    </entry>
+    <entry nativestring="skill.add">
+      <translation language="nl" translatedstring="Vaardigheden Toevoegen"/>
+      <translation language="en" translatedstring="Add Skill"/>
+      <translation language="fr" translatedstring="Ajouter Compétence"/>
+    </entry>
+    <entry nativestring="skill.add.tooltip">
+      <translation language="nl" translatedstring="Vaardigheden Toevoegen"/>
+      <translation language="en" translatedstring="Add Skill"/>
+      <translation language="fr" translatedstring="Ajouter Compétence"/>
+    </entry>
+    <entry nativestring="skill.capacitymgt">
+      <translation language="nl" translatedstring="Capaciteit"/>
+      <translation language="en" translatedstring="Capacity"/>
+      <translation language="fr" translatedstring="Capacité"/>
+    </entry>
+    <entry nativestring="skill.remove">
+      <translation language="nl" translatedstring="Vaardigheid Verwijderen"/>
+      <translation language="en" translatedstring="Remove Skill"/>
+      <translation language="fr" translatedstring="Supprimer Compétence"/>
+    </entry>
+    <entry nativestring="skill.remove.tooltip">
+      <translation language="nl" translatedstring="Vaardigheid Verwijderen"/>
+      <translation language="en" translatedstring="Remove Skill"/>
+      <translation language="fr" translatedstring="Supprimer Compétence"/>
+    </entry>
+    <entry nativestring="skillrequirement">
+      <translation language="nl" translatedstring="Behoefte"/>
+      <translation language="en" translatedstring="Skill Requirement"/>
+      <translation language="fr" translatedstring="Demande de Compétence"/>
+    </entry>
+    <entry nativestring="skillrequirement.allocate">
+      <translation language="nl" translatedstring="Toekennen aan Behoefte"/>
+      <translation language="en" translatedstring="Assign To Skill Requirement"/>
+      <translation language="fr" translatedstring="Assigner à Demande de Compétence"/>
+    </entry>
+    <entry nativestring="skillrequirement.allocate.tooltip">
+      <translation language="nl" translatedstring="Toekennen aan Behoefte"/>
+      <translation language="en" translatedstring="Assign to skill requirement"/>
+      <translation language="fr" translatedstring="Assigner à demande de compétence"/>
+    </entry>
+    <entry nativestring="skillrequirement.allocation.wizardpanel.description">
+      <translation language="nl" translatedstring="Gelieve de behoefte te selecteren en de toekennningsparameters te specificeren."/>
+      <translation language="en" translatedstring="Please select the skill requirement and specify the assignment options."/>
+      <translation language="fr" translatedstring="Veuillez sélectionner la demande de compétence et spécifier les paramètres d'assignation."/>
+    </entry>
+    <entry nativestring="skillrequirement.allocation.wizardpanel.name">
+      <translation language="nl" translatedstring="Werknemer Toekenning"/>
+      <translation language="en" translatedstring="Employee Assignment"/>
+      <translation language="fr" translatedstring="Assignation d'Employé"/>
+    </entry>
+    <entry nativestring="skillrequirement.edit">
+      <translation language="nl" translatedstring="Behoefte Aanpassen"/>
+      <translation language="en" translatedstring="Edit Skill Requirement"/>
+      <translation language="fr" translatedstring="Modifier Demande de Compétence"/>
+    </entry>
+    <entry nativestring="skillrequirement.edit.tooltip">
+      <translation language="nl" translatedstring="Behoefte Aanpassen"/>
+      <translation language="en" translatedstring="Edit Skill Requirement"/>
+      <translation language="fr" translatedstring="Modifier Demande de Compétence"/>
+    </entry>
+    <entry nativestring="skillrequirement.level">
+      <translation language="nl" translatedstring="Niveau"/>
+      <translation language="en" translatedstring="Level"/>
+      <translation language="fr" translatedstring="Niveau"/>
+    </entry>
+    <entry nativestring="skillrequirement.planningcell">
+      <translation language="nl" translatedstring="Planningscel"/>
+      <translation language="en" translatedstring="Planning Cell"/>
+      <translation language="fr" translatedstring="Cellule de Planification"/>
+    </entry>
+    <entry nativestring="skillrequirement.preference.wizardpanel.description">
+      <translation language="nl" translatedstring="Gelieve de gewenste kolommen en andere instellingen voor deze tabel te kiezen."/>
+      <translation language="en" translatedstring="Please choose the columns and other settings for this table."/>
+      <translation language="fr" translatedstring="Veuillez sélectionner les colonnes et d'autres paramètres pour cette table."/>
+    </entry>
+    <entry nativestring="skillrequirement.preference.wizardpanel.name">
+      <translation language="nl" translatedstring="Voorkeuren Aanpassen"/>
+      <translation language="en" translatedstring="Adjust Preferences"/>
+      <translation language="fr" translatedstring="Modifier Préférences"/>
+    </entry>
+    <entry nativestring="skillrequirement.qtyallocated">
+      <translation language="nl" translatedstring="Toegekend"/>
+      <translation language="en" translatedstring="Assigned"/>
+      <translation language="fr" translatedstring="Assignée"/>
+    </entry>
+    <entry nativestring="skillrequirement.qtyremainingrequired">
+      <translation language="nl" translatedstring="Resterend Benodigd"/>
+      <translation language="en" translatedstring="Remaining Required"/>
+      <translation language="fr" translatedstring="Demandé Restante"/>
+    </entry>
+    <entry nativestring="skillrequirement.qtyrequired">
+      <translation language="nl" translatedstring="Benodigd"/>
+      <translation language="en" translatedstring="Required"/>
+      <translation language="fr" translatedstring="Demandée"/>
+    </entry>
+    <entry nativestring="skillrequirement.selected.allocate">
+      <translation language="nl" translatedstring="Toekennen aan Geselecteerde Behoefte"/>
+      <translation language="en" translatedstring="Assign To Selected Skill Requirement"/>
+      <translation language="fr" translatedstring="Assigner à Demande de Compétence Sélectionnée"/>
+    </entry>
+    <entry nativestring="skillrequirement.selected.allocate.tooltip">
+      <translation language="nl" translatedstring="Toekennen aan de geselecteerde behoefte"/>
+      <translation language="en" translatedstring="Assign to selected skill requirement"/>
+      <translation language="fr" translatedstring="Assigner à la demande de compétence Sélectionnée"/>
+    </entry>
+    <entry nativestring="skillrequirement.shift">
+      <translation language="nl" translatedstring="Shift"/>
+      <translation language="en" translatedstring="Shift"/>
+      <translation language="fr" translatedstring="Équipe"/>
+    </entry>
+    <entry nativestring="skillrequirement.skill">
+      <translation language="nl" translatedstring="Vaardigheid"/>
+      <translation language="en" translatedstring="Skill"/>
+      <translation language="fr" translatedstring="Compétence"/>
+    </entry>
+    <entry nativestring="tabletabpanel.adjustpreferences">
+      <translation language="nl" translatedstring="Instellingen Aanpassen"/>
+      <translation language="en" translatedstring="Adjust Preferences"/>
+      <translation language="fr" translatedstring="Modifier Paramètres"/>
+    </entry>
+    <entry nativestring="tabletabpanel.adjustpreferences.tooltip">
+      <translation language="nl" translatedstring="Instellingen Aanpassen"/>
+      <translation language="en" translatedstring="Adjust Preferences"/>
+      <translation language="fr" translatedstring="Modifier Paramètres"/>
+    </entry>
+    <entry nativestring="when an employee is not able to execute the assigned skill.">
+      <translation language="nl" translatedstring="wanneer een werknemer de toegekende vaardigheid niet mag uitvoeren."/>
+      <translation language="en" translatedstring="when an employee is not able to execute the assigned skill."/>
+      <translation language="fr" translatedstring="quand un employé n'est pas autorisé d'exécuter la compétence assignée."/>
+    </entry>
+    <entry nativestring="when detecting an over-allocation.">
+      <translation language="nl" translatedstring="wanneer er teveel is toegekend."/>
+      <translation language="en" translatedstring="when detecting an over-assignment."/>
+      <translation language="fr" translatedstring="quand trop est assigné."/>
+    </entry>
+    <entry nativestring="when detecting an over-assignment.">
+      <translation language="nl" translatedstring="wanneer er teveel is toegekend."/>
+      <translation language="en" translatedstring="when detecting an over-assignment."/>
+      <translation language="fr" translatedstring="quand trop est assigné."/>
+    </entry>
+    <entry nativestring="wizard.FTE">
+      <translation language="nl" translatedstring="FTE toe."/>
+      <translation language="en" translatedstring="FTE."/>
+      <translation language="fr" translatedstring="FTE."/>
+    </entry>
+  </entries>
+  <xmlparserconfig path="objt.crp_config.xml"/>
+</dictionary>

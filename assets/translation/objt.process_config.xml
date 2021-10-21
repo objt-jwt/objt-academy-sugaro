@@ -1,0 +1,143 @@
+<config>
+
+  <!-- include the translation config of the objt library -->
+  <include path="../../../../../dce/src/main/assets"/>    <!-- toenhance: translator should be able to resolve path declared in objt_config.xml -->
+  <include path="../../../../../objt/src/main/assets"/>
+  <include ref="translation/objt_config.xml"/>
+
+  <actions>
+	<action class="objt.process.common.lotbestbeforeedit.supervisor.LotBestBeforeEditAction"/>
+    <action class="objt.process.common.lotparameters.supervisor.LotExtensionUserFieldsEditAction"/>
+    <action class="objt.vertical.mes.general.configurator.productionmgt.action.EquipmentModuleNewAction"/>
+    <action class="objt.process.mes.instructionlabelpreview.operatorclient.action.LabelPreviewAction"/>
+    <action class="objt.process.mes.instructionparameters.configurator.action.DocumentedInstructionParametersEditAction"/>
+    <action class="objt.process.mes.multitagedit.configurator.action.ProcessResourceMultiTagEditAction"/>
+    <action class="objt.process.mes.sharedequipment.configurator.action.SharedEquipmentModuleNewAction"/>
+    <action class="objt.process.mes.sharedequipment.configurator.action.MachineSharedEquipmentModuleAddAction"/>
+    <action class="objt.process.mes.sharedequipment.configurator.action.MachineSharedEquipmentModuleRemoveAction"/>
+    <action class="objt.process.mes.productionroutes.configurator.action.ProductionRouteSetDefaultAction"/>
+    <action class="objt.process.mes.productionroutes.configurator.action.TemplateProductionRouteApplyAction"/>
+    <action class="objt.process.mes.productionroutes.configurator.action.TemplateProductionRouteCreateAction"/>
+    <action class="objt.process.common.communicationdevices.configurator.action.CommunicationDeviceDefaultAction"/>
+    <action class="objt.process.common.communicationdevices.configurator.action.DeviceCommunicationDeviceAddAction"/>
+    <action class="objt.process.common.tagsonwarehouselocation.configurator.action.WarehouseLocationEquipmentModuleDeleteAction"/>
+    <action class="objt.process.common.tagsonwarehouselocation.configurator.action.WarehouseLocationEquipmentModuleAddAction"/>
+    <action class="objt.process.mes.phases.configurator.action.ManufacturingOperationPhaseOperationAddAction"/>
+    <action class="objt.process.mes.phases.configurator.action.ManufacturingOperationPhaseOperationDeleteAction"/>
+    <action class="objt.process.mes.phases.configurator.action.ManufacturingOperationPhaseOperationResequenceAction"/>
+    <action class="objt.process.mes.phases.configurator.action.PhaseOperationPhaseParameterResequenceAction"/>
+    <action class="objt.process.mes.phases.configurator.action.TemplatePhaseOperationPhaseParameterAddAction"/>
+    <action class="objt.process.mes.phases.configurator.action.TemplatePhaseOperationPhaseParameterDeleteAction"/>
+    <action class="objt.process.mes.phases.configurator.action.TemplatePhaseOperationEditAction"/>
+    <action class="objt.process.mes.phases.configurator.action.ResourceGroupTemplatePhaseParameterDeleteAction"/>
+    <action class="objt.process.mes.phases.configurator.action.PhaseParameterChildParameterReApplyAction"/>
+    <action class="objt.process.mes.phases.configurator.action.PhaseParameterUnOverruleAction"/>
+    <action class="objt.process.mes.phases.configurator.action.PhaseParameterOverruleAction"/>
+    <action class="objt.process.mes.phases.configurator.action.PhaseParameterShowTreeAction"/>
+    <action class="objt.process.mes.phases.configurator.action.PhaseParameterMultiTargetSettingsEditAction"/>
+    <action class="objt.process.mes.phases.configurator.action.TemplatePhaseParameterEditAction"/>
+    <action class="objt.process.mes.phases.configurator.action.PhaseParameterTargetSettingsEditAction"/>
+    <action class="objt.process.mes.phases.configurator.action.PhaseParameterSetManufacturingItemQtyAction"/>
+    <action class="objt.process.mes.phases.configurator.action.ResourceGroupTemplatePhaseOperationNewAction"/>
+    <action class="objt.process.mes.phases.configurator.action.ResourceGroupTemplatePhaseParameterNewAction"/>
+    <action class="objt.process.mes.phases.configurator.action.ResourceGroupTemplatePhaseOperationDeleteAction"/>
+    <action class="objt.process.mes.phases.operatorclient.action.RuntimePhaseOperationCompleteAction"/>
+    <action class="objt.process.mes.phases.operatorclient.action.RuntimePhaseOperationStartAction"/>
+    <action class="objt.process.mes.phasehandler.operatorclient.action.PhaseHandlerManOperationStartAction"/>
+    <action class="objt.process.mes.phasehandler.operatorclient.action.PhaseHandlerMachineOperationStartAction"/>
+    <action class="objt.process.mes.phases.operatorclient.action.RuntimePhaseOperationAbortAction"/>
+    <action class="objt.process.mes.weighstation.operatorclient.action.ContainerStorageItemQtyAdjustWeighingAction"/>
+    <action class="objt.process.mes.weighstation.operatorclient.action.RuntimePhaseOperationTareWeighingAction"/>
+    <action class="objt.process.mes.instructionparametereditor.configurator.action.ReapplyDocumentedInstructionPreSaveAction"/>
+    <action class="objt.process.mes.templaterecipe.configurator.action.ApplyTemplateRecipeToItemsAction"/>
+    <action class="objt.process.mes.wipinputpreparation.operatorclient.action.WipInputPreparationMarkSourceAsEmptyAction"/>
+    <action class="objt.process.wms.inspectionlotparameters.configurator.action.InspectionInstructionLotParameterAddAction"/>
+    <action class="objt.process.mes.dynamicwipin.operatorclient.action.DynamicWipInSelectionAction"/>
+    <action class="objt.process.mes.instructionparametereditor.configurator.action.ReapplyDocumentedInstructionAction"/>
+    <action class="objt.vertical.mes.general.operatorclient.productionmgt.action.MachineOperationStopAction"/>
+    <action class="objt.process.mes.hotwiredwipinlocation.operatorclient.action.HotWiredWipInForceReleaseNextTaskAction"/>
+    <action class="objt.process.mes.starttostopmachineoperationaction.operatorclient.action.MachineOperationStartToStopAction"/>
+    <action class="objt.process.mes.productionorderconsolidation.supervisor.action.ResourceOperationPlanningConsolidateAction"/>
+    <action class="objt.process.mes.productionorderconsolidation.supervisor.action.ResourceOperationPlanningUnconsolidateAction"/>
+    <action class="objt.process.common.driver.tagmgt.deviceservertagactionhandler.actionhandler.customactions.EnqAckTagAction"/>
+    <action class="objt.process.mes.oeetoolkit.operatorclient.action.ProductionOrderCreateAction"/>
+    <action class="objt.process.mes.productionroutes.operatorclient.action.ProductionOrderModifyProductionRouteAction"/>
+    <action class="objt.process.mes.silomanagement.operatorclient.action.EmptyReportConfirmationAction"/>
+    <action class="objt.process.mes.batching.configurator.action.RecipeManufacturingOperationAddBatchRecipeAction"/>
+    <action class="objt.process.mes.batching.configurator.action.RecipeManufacturingOperationRemoveBatchRecipeAction"/>
+    <action class="objt.process.mes.batching.operatorclient.action.BatchProductionOrderAddAction"/>
+    <action class="objt.process.mes.productiondeltacounter.operatorclient.action.ProductionDeltaCounterScrapAddAction"/>
+    <action class="objt.process.common.resourceprintermgt.operatorclient.action.ResourcePrinterDeviceDefaultAction"/>
+    <action class="objt.process.common.resourceprintermgt.operatorclient.action.ResourcePrinterDeviceAddAction"/>
+    <action class="objt.process.common.resourceprintermgt.operatorclient.action.ResourcePrinterDeviceRemoveAction"/>
+    <action class="objt.process.mes.moldmanagement.supervisor.action.MoldProductionOrderCreateAction"/>
+    <action class="objt.process.mes.moldmanagement.supervisor.action.StrokeCountResetAction"/>
+    <action class="objt.process.mes.moldmanagement.operatorclient.action.MoldPrintAction"/>
+    <action class="objt.process.mes.moldmanagement.operatorclient.action.MoldDisassembleAction"/>
+    <action class="objt.process.mes.moldmanagement.operatorclient.action.ReuseMoldComponentsAction"/>
+  </actions>
+
+  <tabpanels>
+
+    <!-- objt.mes.ui.generic -->
+    <tabpanel class="dce.pd.frame.explorer.appmgt.FixedPropertiesFormTabPanel"/>
+    <tabpanel class="objt.process.common.goodies.panel.ExtensionFieldTabPanel"/>
+    <tabpanel class="objt.process.common.goodies.panel.OptionBitFieldTabPanel"/>
+    <tabpanel class="objt.vertical.mes.general.configurator.productionmgt.panel.EquipmentModulePropertiesTabPanel"/>
+    <tabpanel class="objt.process.mes.photoinstructions.configurator.panel.PhotoInstructionSettingTabPanel"/>
+    <tabpanel class="objt.process.common.communicationdevices.configurator.panel.CommunicationDevicePropertiesTabPanel"/>
+    <tabpanel class="objt.process.common.communicationdevices.configurator.panel.CommunicationDeviceCommunicationsTabPanel"/>
+    <tabpanel class="objt.process.mes.phases.configurator.panel.PhaseParameterRoleListTabPanel"/>
+    <tabpanel class="objt.process.mes.instructionparametereditor.configurator.panel.InstructionParameterEditorTabPanel"/>
+    <tabpanel class="objt.process.mes.recipeviewbrowser.configurator.panel.RecipeViewTabPanel"/>
+    <tabpanel class="objt.process.mes.recipeviewbrowser.configurator.panel.RecipeViewWithFilterTabPanel"/>
+    <tabpanel class="objt.process.wms.containercontentpickingbypackaging.configurator.rulemgt.panel.ContainerInventoryByPackagingExpandRuleTabPanel"/>
+    <tabpanel class="objt.process.mes.wipinputpreparation.configurator.panel.WipInputPrepPropertiesTabPanel"/>
+    <tabpanel class="objt.process.mes.configurationsettings.configurator.panel.RecipeOptionsTabPanel"/>
+    <tabpanel class="objt.process.mes.silomanagement.configurator.panel.WarehouseLocationSettingsTabPanel"/>
+    <tabpanel class="objt.process.mes.configurationsettings.configurator.panel.WeighStationOptionsTabPanel"/>
+    <tabpanel class="objt.process.mes.moldmanagement.operatorclient.action.MoldPrintAction"/>
+    <tabpanel class="objt.process.common.tagsonwarehouselocation.supervisor.WarehouseLocationTagTabPanel"/>
+    <tabpanel class="objt.process.mes.multilevelbom.panel.MultiLevelBomSettingsTabPanel"/>
+  </tabpanels>
+
+  <xmlfiles>
+    <xmlfile name="dialogconfig.xml">
+      <node name="mainmenu" translate="title" />
+      <node name="menu" translate="title" />
+      <node name="dialog" translate="title" />
+    </xmlfile>
+
+    <xmlfile name="meta.xml">
+      <node name="listitem" translate="text" />
+      <node name="attribute" translate="title,tooltip" />
+    </xmlfile>
+
+    <!-- UI meta: translate class, attribute and association titles -->
+    <xmlfile name="uimeta.xml">
+      <node name="class" translate="title"/>
+      <node name="attribute" translate="title"/>
+      <node name="attributegroup" translate="title"/>
+      <node name="association" translate="title"/>
+    </xmlfile>
+
+    <!-- translate name and description of defined privileges -->
+    <xmlfile name="privileges.xml">
+      <node name="privilege" translate="application,module,domain,category,name,description"/>
+    </xmlfile>
+
+    <xmlfile name="weighstationconfig.xml">
+      <node name="param" translate="value"/>
+    </xmlfile>
+
+    <xmlfile name="configurations.xml">
+      <node name="param" translate="translate"/>
+    </xmlfile>
+  </xmlfiles>
+</config>
+
+
+
+
+
+

@@ -1,0 +1,8 @@
+# .gitignore file specifically for the objt.opplicationserver
+
+/data/
+
+/download/
+/upload/
+
+/db/generated_scripts

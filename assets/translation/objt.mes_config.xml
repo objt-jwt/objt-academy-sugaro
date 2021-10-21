@@ -1,0 +1,1201 @@
+<!-- Config file for translation keys from XML for classes defined in dce.pd.frame -->
+<config>
+
+  <postprocess
+          text="META(objt.common.inventorymgt.bo.StorageItemQty;inventoryCode1),META(objt.common.inventorymgt.bo.StorageItemQty;inventoryCode2),META(objt.common.inventorymgt.bo.StorageItemQty;inventoryCode3),META(objt.common.inventorymgt.bo.StorageItemQty;inventoryCode4),META(objt.common.inventorymgt.bo.StorageItemQty;inventoryCode5),META(objt.wms.ui.inventorymgt.wrapper.InventoryRecordWrapper;inventoryCode1),META(objt.wms.ui.inventorymgt.wrapper.InventoryRecordWrapper;inventoryCode2),META(objt.wms.ui.inventorymgt.wrapper.InventoryRecordWrapper;inventoryCode3),META(objt.wms.ui.inventorymgt.wrapper.InventoryRecordWrapper;inventoryCode4),META(objt.wms.ui.inventorymgt.wrapper.InventoryRecordWrapper;inventoryCode5),META(objt.mes.bo.materialmgt.InputItemQty;inventoryCode1),META(objt.mes.bo.materialmgt.InputItemQty;inventoryCode2),META(objt.mes.bo.materialmgt.InputItemQty;inventoryCode3),META(objt.mes.bo.materialmgt.InputItemQty;inventoryCode4),META(objt.mes.bo.materialmgt.InputItemQty;inventoryCode5),META(objt.mes.bo.materialmgt.OutputItemQty;inventoryCode1),META(objt.mes.bo.materialmgt.OutputItemQty;inventoryCode2),META(objt.mes.bo.materialmgt.OutputItemQty;inventoryCode3),META(objt.mes.bo.materialmgt.OutputItemQty;inventoryCode4),META(objt.mes.bo.materialmgt.OutputItemQty;inventoryCode5),META(objt.mes.bo.productionmgt.ManufacturingItemQty;inventoryCode1),META(objt.mes.bo.productionmgt.ManufacturingItemQty;inventoryCode2),META(objt.mes.bo.productionmgt.ManufacturingItemQty;inventoryCode3),META(objt.mes.bo.productionmgt.ManufacturingItemQty;inventoryCode4),META(objt.mes.bo.productionmgt.ManufacturingItemQty;inventoryCode5),META(objt.mes.bo.productionmgt.ProductionItemQty;inventoryCode1),META(objt.mes.bo.productionmgt.ProductionItemQty;inventoryCode2),META(objt.mes.bo.productionmgt.ProductionItemQty;inventoryCode3),META(objt.mes.bo.productionmgt.ProductionItemQty;inventoryCode4),META(objt.mes.bo.productionmgt.ProductionItemQty;inventoryCode5),META(objt.mes.bo.productionmgt.ProductiveItemQty;inventoryCode1),META(objt.mes.bo.productionmgt.ProductiveItemQty;inventoryCode2),META(objt.mes.bo.productionmgt.ProductiveItemQty;inventoryCode3),META(objt.mes.bo.productionmgt.ProductiveItemQty;inventoryCode4),META(objt.mes.bo.productionmgt.ProductiveItemQty;inventoryCode5),META(objt.wms.bo.warehousemgt.PickItemQty;inventoryCode1),META(objt.wms.bo.warehousemgt.PickItemQty;inventoryCode2),META(objt.wms.bo.warehousemgt.PickItemQty;inventoryCode3),META(objt.wms.bo.warehousemgt.PickItemQty;inventoryCode4),META(objt.wms.bo.warehousemgt.PickItemQty;inventoryCode5),META(objt.wms.bo.warehousemgt.BackorderItemQty;inventoryCode1),META(objt.wms.bo.warehousemgt.BackorderItemQty;inventoryCode2),META(objt.wms.bo.warehousemgt.BackorderItemQty;inventoryCode3),META(objt.wms.bo.warehousemgt.BackorderItemQty;inventoryCode4),META(objt.wms.bo.warehousemgt.BackorderItemQty;inventoryCode5),META(objt.wms.bo.warehousemgt.BackorderItemQty;inventoryCode1),META(objt.wms.bo.warehousemgt.BackorderItemQty;inventoryCode2),META(objt.wms.bo.warehousemgt.BackorderItemQty;inventoryCode3),META(objt.wms.bo.warehousemgt.BackorderItemQty;inventoryCode4),META(objt.wms.bo.warehousemgt.BackorderItemQty;inventoryCode5),META(dce.pd.sfc.bo.resourcemgt.ProcessResource;usrTxt1),META(dce.pd.sfc.bo.resourcemgt.ProcessResource;usrTxt2),META(dce.pd.sfc.bo.resourcemgt.ProcessResource;usrTxt3),META(dce.pd.sfc.bo.resourcemgt.ProcessResource;usrTxt4),META(dce.pd.sfc.bo.resourcemgt.ProcessResource;usrTxt5),META(dce.pd.sfc.bo.resourcemgt.ProcessResource;usrNum1),META(dce.pd.sfc.bo.resourcemgt.ProcessResource;usrNum2),META(dce.pd.sfc.bo.resourcemgt.ProcessResource;usrNum3),META(dce.pd.sfc.bo.resourcemgt.ProcessResource;usrNum4),META(dce.pd.sfc.bo.resourcemgt.ProcessResource;usrNum5),META(dce.pd.sfc.bo.resourcemgt.ProcessResource;usrDts1),META(dce.pd.sfc.bo.resourcemgt.ProcessResource;usrDts2),META(dce.pd.sfc.bo.resourcemgt.ProcessResource;usrDts3),META(dce.pd.sfc.bo.resourcemgt.ProcessResource;usrDts4),META(dce.pd.sfc.bo.resourcemgt.ProcessResource;usrDts5),META(dce.pd.sfc.bo.resourcemgt.ProcessResource;usrFlg1),META(dce.pd.sfc.bo.resourcemgt.ProcessResource;usrFlg2),META(dce.pd.sfc.bo.resourcemgt.ProcessResource;usrFlg3),META(dce.pd.sfc.bo.resourcemgt.ProcessResource;usrFlg4),META(dce.pd.sfc.bo.resourcemgt.ProcessResource;usrFlg5),META(objt.mes.bo.productionmgt.ProductionOrder;usrTxt1),META(objt.mes.bo.productionmgt.ProductionOrder;usrTxt2),META(objt.mes.bo.productionmgt.ProductionOrder;usrTxt3),META(objt.mes.bo.productionmgt.ProductionOrder;usrTxt4),META(objt.mes.bo.productionmgt.ProductionOrder;usrTxt5),META(objt.mes.bo.productionmgt.ProductionOrder;usrNum1),META(objt.mes.bo.productionmgt.ProductionOrder;usrNum2),META(objt.mes.bo.productionmgt.ProductionOrder;usrNum3),META(objt.mes.bo.productionmgt.ProductionOrder;usrNum4),META(objt.mes.bo.productionmgt.ProductionOrder;usrNum5),META(objt.mes.bo.productionmgt.ProductionOrder;usrDts1),META(objt.mes.bo.productionmgt.ProductionOrder;usrDts2),META(objt.mes.bo.productionmgt.ProductionOrder;usrDts3),META(objt.mes.bo.productionmgt.ProductionOrder;usrDts4),META(objt.mes.bo.productionmgt.ProductionOrder;usrDts5),META(objt.mes.bo.productionmgt.ProductionOrder;usrFlg1),META(objt.mes.bo.productionmgt.ProductionOrder;usrFlg2),META(objt.mes.bo.productionmgt.ProductionOrder;usrFlg3),META(objt.mes.bo.productionmgt.ProductionOrder;usrFlg4),META(objt.mes.bo.productionmgt.ProductionOrder;usrFlg5),META(objt.mes.bo.productionmgt.ResourceTrain;usrTxt1),META(objt.mes.bo.productionmgt.ResourceTrain;usrTxt2),META(objt.mes.bo.productionmgt.ResourceTrain;usrTxt3),META(objt.mes.bo.productionmgt.ResourceTrain;usrTxt4),META(objt.mes.bo.productionmgt.ResourceTrain;usrTxt5),META(objt.mes.bo.productionmgt.ResourceTrain;usrNum1),META(objt.mes.bo.productionmgt.ResourceTrain;usrNum2),META(objt.mes.bo.productionmgt.ResourceTrain;usrNum3),META(objt.mes.bo.productionmgt.ResourceTrain;usrNum4),META(objt.mes.bo.productionmgt.ResourceTrain;usrNum5),META(objt.mes.bo.productionmgt.ResourceTrain;usrDts1),META(objt.mes.bo.productionmgt.ResourceTrain;usrDts2),META(objt.mes.bo.productionmgt.ResourceTrain;usrDts3),META(objt.mes.bo.productionmgt.ResourceTrain;usrDts4),META(objt.mes.bo.productionmgt.ResourceTrain;usrDts5),META(objt.mes.bo.productionmgt.ResourceTrain;usrFlg1),META(objt.mes.bo.productionmgt.ResourceTrain;usrFlg2),META(objt.mes.bo.productionmgt.ResourceTrain;usrFlg3),META(objt.mes.bo.productionmgt.ResourceTrain;usrFlg4),META(objt.mes.bo.productionmgt.ResourceTrain;usrFlg5),META(objt.mes.bo.productionmgt.BaseParameterConfiguration;itemField)"/>
+
+  <!-- paths where included translation configs can be found during development -->
+  <include path="../../../../../dce/src/main/assets"/>
+  <include path=".."/>
+
+  <!-- include the translation config of base components -->
+  <include ref="translation/objt.common_config.xml"/>
+
+  <actions>
+
+    <!-- com.dlsc.djt.gantt.action -->
+    <action class="com.dlsc.djt.gantt.action.DjtArrowAction"/>
+    <action class="com.dlsc.djt.gantt.action.DjtLinkAction"/>
+    <action class="com.dlsc.djt.gantt.action.DjtMoveAction"/>
+    <action class="com.dlsc.djt.gantt.action.DjtResizeAction"/>
+
+    <!-- objt.mes.configurator.itemmgt.action -->
+    <action class="objt.mes.configurator.productionmgt.action.ToolNewAction"
+            translate="wizardpanel.1.name,wizardpanel.1.description,wizardpanel.2.name,wizardpanel.2.description,wizardpanel.3.name,wizardpanel.3.description,wizardpanel.4.name,wizardpanel.4.description,wizardpanel.5.name,wizardpanel.5.description"/>
+
+    <!-- objt.mes.configurator.labourmgt.action -->
+    <action class="objt.mes.configurator.labourmgt.action.ManualOperationGroupManualOperationResequenceAction"/>
+    <action class="objt.mes.configurator.labourmgt.action.ManualOperationPrivilegeAddAction"/>
+    <action class="objt.mes.configurator.labourmgt.action.ManualOperationPrivilegeRemoveAction"
+            translate="confirmMessage,listConfirmMessage"/>
+    <action class="objt.mes.configurator.labourmgt.action.SpecificLabourConfigurationAddAction"
+            translate="wizardpanel.1.name,wizardpanel.1.description,wizardpanel.2.name,wizardpanel.2.description,wizardpanel.3.name,wizardpanel.3.description,wizardpanel.4.name,wizardpanel.4.description,wizardpanel.5.name,wizardpanel.5.description"/>
+    <action class="objt.mes.configurator.labourmgt.action.SpecificLabourConfigurationEmployeeAddAction"/>
+    <action class="objt.mes.configurator.labourmgt.action.SpecificLabourConfigurationEmployeeRemoveAction"
+            translate="confirmMessage,listConfirmMessage"/>
+    <action class="objt.mes.configurator.labourmgt.action.SpecificLabourConfigurationPrivilegeAddAction"/>
+    <action class="objt.mes.configurator.labourmgt.action.SpecificLabourConfigurationPrivilegeRemoveAction"
+            translate="confirmMessage,listConfirmMessage"/>
+    <action class="objt.mes.configurator.labourmgt.action.SpecificLabourConfigurationRemoveAction"
+            translate="confirmMessage,listConfirmMessage"/>
+
+    <!-- objt.mes.configurator.productionmgt.action -->
+    <action class="objt.mes.configurator.productionmgt.action.DeviceExternalWorkCenterAddAction"/>
+    <action class="objt.mes.configurator.productionmgt.action.InterruptReasonAddAction"
+            translate="wizardpanel.1.name,wizardpanel.1.description,wizardpanel.2.name,wizardpanel.2.description,wizardpanel.3.name,wizardpanel.3.description,wizardpanel.4.name,wizardpanel.4.description,wizardpanel.5.name,wizardpanel.5.description"/>
+    <action class="objt.mes.configurator.productionmgt.action.InterruptReasonCopyAction"/>
+    <action class="objt.mes.configurator.productionmgt.action.InterruptReasonGroupCopyAction"/>
+    <action class="objt.mes.configurator.productionmgt.action.InterruptReasonGroupPasteAction"/>
+    <action class="objt.mes.configurator.productionmgt.action.InterruptReasonGroupPasteAction"/>
+    <action class="objt.mes.configurator.productionmgt.action.InterruptReasonPasteAction"/>
+    <action class="objt.mes.configurator.productionmgt.action.ManufacturingItemQtyPasteAction"/>
+    <action class="objt.mes.configurator.productionmgt.action.ManufacturingItemQtyResequenceAction"/>
+    <action class="objt.mes.configurator.productionmgt.action.ManufacturingItemQtyTreeTableResequenceAction"/>                                                                                                                                                                                                                                                 
+    <action class="objt.mes.configurator.productionmgt.action.ManufacturingOperationItemQtyAddAction"/>
+    <action class="objt.mes.configurator.productionmgt.action.ManufacturingOperationItemQtyEditAction"/>
+    <action class="objt.mes.configurator.productionmgt.action.ManufacturingOperationItemQtyCopyAction"/>
+    <action class="objt.mes.configurator.productionmgt.action.ManufacturingOperationPrimaryOutputAction"/>
+    <action class="objt.mes.configurator.productionmgt.action.ManufacturingOperationRemoveItemQtyAction"/>
+    <action class="objt.mes.configurator.productionmgt.action.ManufacturingOperationSequenceModifyAction"/>
+    <action class="objt.mes.configurator.productionmgt.action.OEEReportTargetEditAction"/>
+    <action class="objt.mes.configurator.productionmgt.action.OEEReportTargetNewAction"/>
+    <action class="objt.mes.configurator.productionmgt.action.OEEReportTargetPasteAction"/>
+    <action class="objt.mes.configurator.productionmgt.action.OEEReportTargetSplitAction"/>
+    <action class="objt.mes.configurator.labourmgt.action.OperationGroupManualOperationPasteAction"/>
+    <action class="objt.mes.configurator.productionmgt.action.OperationLinkDefaultSetAction"/>
+    <action class="objt.mes.configurator.productionmgt.action.OperationSegmentAddAction"/>
+    <action class="objt.mes.configurator.productionmgt.action.OperationSegmentDeleteAction"/>
+    <action class="objt.mes.configurator.productionmgt.action.OrderOperationLinkSequenceModifyAction"/>
+    <action class="objt.mes.configurator.productionmgt.action.PlanningCellProcessUnitAddAction"/>
+    <action class="objt.mes.configurator.productionmgt.action.PlanningCellProcessUnitPlannableToggleAction"/>
+    <action class="objt.mes.configurator.productionmgt.action.PlanningCellProcessUnitRemoveAction"/>
+    <action class="objt.mes.supervisor.qualitymgt.action.ProcessAggregationCalculateAction"/>
+    <action class="objt.mes.configurator.qualitymgt.action.ProcessAggregationConfigurationAddAction"/>
+    <action class="objt.mes.configurator.qualitymgt.action.ProcessAggregationConfigurationEditAction"/>
+    <action class="objt.mes.configurator.qualitymgt.action.ProcessAggregationConfigurationRemoveAction"
+            translate="confirmMessage,listConfirmMessage"/>
+    <action class="objt.mes.configurator.qualitymgt.action.ProcessAggregationConfigurationSetAddAction"/>
+    <action class="objt.mes.configurator.qualitymgt.action.ProcessAggregationConfigurationSetEditAction"/>
+    <action class="objt.mes.configurator.qualitymgt.action.ProcessAggregationConfigurationSetRemoveAction"
+            translate="confirmMessage,listConfirmMessage"/>
+    <action class="objt.mes.configurator.qualitymgt.action.ProcessAggregationUpdateAction"/>
+    <action class="objt.mes.configurator.productionmgt.action.ProcessMonitorParameterAddAction"/>
+    <action class="objt.mes.configurator.productionmgt.action.ProcessMonitorParameterEditAction"/>
+    <action class="objt.mes.configurator.productionmgt.action.ProcessMonitorParameterPasteAction"/>
+    <action class="objt.mes.configurator.qualitymgt.action.ProcessSetupParameterUsageDisplayAction"/>
+    <action class="objt.mes.configurator.productionmgt.action.ReasonGroupReasonResequenceAction"/>
+    <action class="objt.mes.configurator.productionmgt.action.RecipeDeleteAction"
+            translate="confirmMessage,listConfirmMessage"/>
+    <action class="objt.mes.configurator.productionmgt.action.RecipeManufacturingOperationAddAction"/>
+    <action class="objt.mes.configurator.productionmgt.action.RecipeManufacturingOperationDeleteAction"
+            translate="checkMessage1,checkMessage2,checkMessage3,checkMessage4,checkMessage5"/>
+    <action class="objt.mes.configurator.productionmgt.action.RecipeNewAction"
+            translate="sqlfilteractiontitle,sqlfilteractiondescription,childlisttabpaneltitle,childlisttabpaneldescription"/>
+    <action class="objt.mes.configurator.productionmgt.action.RecipeSettingsEditAction"/>
+    <action class="objt.mes.configurator.productionmgt.action.RecipeVariantDeleteAction"
+            translate="confirmMessage,listConfirmMessage"/>
+    <action class="objt.mes.configurator.productionmgt.action.RecipeVariantNewAction"/>
+    <action class="objt.mes.configurator.productionmgt.action.RecipeVariantVersionDeleteAction"
+            translate="checkMessage1,checkMessage2,checkMessage3,checkMessage4,checkMessage5"/>
+    <action class="objt.mes.configurator.productionmgt.action.RecipeVariantVersionEditAction"/>
+    <action class="objt.mes.configurator.productionmgt.action.RecipeVariantVersionNewAction"/>
+    <action class="objt.mes.configurator.productionmgt.action.RecipeVariantVersionPasteAction"/>
+    <action class="objt.mes.configurator.productionmgt.action.RecipeVariantVersionReleaseAction"/>
+    <action class="objt.mes.configurator.productionmgt.action.RecipeVariantVersionTestAction"/>
+    <action class="objt.mes.configurator.productionmgt.action.RecipeVariantVersionUpdateAction"
+            translate="sqlfilteractiontitle,sqlfilteractiondescription,childlisttabpaneltitle,childlisttabpaneldescription"/>
+    <action class="objt.mes.configurator.productionmgt.action.RecipeVariantVersionUserfieldEditAction"/>
+    <action class="objt.mes.configurator.productionmgt.action.ResourceGroupDeleteAction"/>
+    <action class="objt.mes.configurator.productionmgt.action.ResourceGroupExternalWorkCenterAddAction"/>
+    <action class="objt.mes.configurator.productionmgt.action.ResourceGroupExternalWorkCenterRemoveAction"
+            translate="confirmMessage,listConfirmMessage"/>
+    <action class="objt.mes.configurator.productionmgt.action.ResourceGroupManufacturingOperationDeleteAction"/>
+    <action class="objt.mes.configurator.productionmgt.action.ResourceGroupManufacturingOperationNewAction"
+            translate="wizardpanel.1.name,wizardpanel.1.description,wizardpanel.2.name,wizardpanel.2.description,wizardpanel.3.name,wizardpanel.3.description,wizardpanel.4.name,wizardpanel.4.description,wizardpanel.5.name,wizardpanel.5.description"/>
+    <action class="objt.mes.configurator.productionmgt.action.ResourceGroupProcessUnitCutAction"/>
+    <action class="objt.mes.configurator.productionmgt.action.ResourceGroupProcessUnitDeleteAction"
+            translate="confirmMessage,listConfirmMessage"/>
+    <action class="objt.mes.configurator.productionmgt.action.ResourceGroupProcessUnitPasteAction"/>
+    <action class="objt.mes.configurator.productionmgt.action.ResourceTrainProcessUnitAddAction"/>
+    <action class="objt.mes.configurator.productionmgt.action.ScrapReasonGroupPasteAction"/>
+    <action class="objt.mes.configurator.productionmgt.action.ScrapReasonPasteAction"/>
+    <action class="objt.mes.configurator.productionmgt.action.ScrapReasonPasteAction"/>
+
+    <!-- objt.mes.configurator.qualitymgt.action -->
+    <action class="objt.mes.configurator.qualitymgt.action.DataCollectionInstructionParameterAddAction"/>
+    <action class="objt.mes.configurator.qualitymgt.action.DataCollectionInstructionParameterDeleteAction"
+            translate="confirmMessage,listConfirmMessage"/>
+    <action class="objt.mes.configurator.qualitymgt.action.DataCollectionInstructionParameterEditAction"/>
+    <action class="objt.mes.configurator.qualitymgt.action.DocumentDisplayAction"/>
+    <action class="objt.mes.configurator.qualitymgt.action.DocumentedInstructionAddAction"/>
+    <action class="objt.mes.configurator.qualitymgt.action.DocumentedInstructionCopyAction"/>
+    <action class="objt.mes.configurator.qualitymgt.action.DocumentedInstructionDeleteAction"
+            translate="confirmMessage,listConfirmMessage,overrulingConfirmMessage,overrulingListConfirmMessage,disabledConfirmMessage,disabledListConfirmMessage,overrulingTooltip,disabledTooltip"/>
+    <action class="objt.mes.configurator.qualitymgt.action.DocumentedInstructionDisableAction"/>
+    <action class="objt.mes.configurator.qualitymgt.action.DocumentedInstructionEditAction"/>
+    <action class="objt.mes.configurator.qualitymgt.action.DocumentedInstructionOverruleAction"/>
+    <action class="objt.mes.configurator.qualitymgt.action.DocumentedInstructionOverruledDisplayAction"/>
+    <action class="objt.mes.configurator.qualitymgt.action.DocumentedInstructionOverrulingDisplayAction"/>
+    <action class="objt.mes.configurator.qualitymgt.action.DocumentedInstructionPasteAction"/>
+    <action class="objt.mes.configurator.qualitymgt.action.DocumentedInstructionTranslationAction"/>
+    <action class="objt.mes.configurator.qualitymgt.action.DocumentedInstructionUserFieldEditAction"
+            translate="panelTitle"/>
+    <action class="objt.mes.configurator.qualitymgt.action.InstructionSheetAddAction"/>
+    <action class="objt.mes.configurator.qualitymgt.action.InstructionSheetDeleteAction"
+            translate="confirmMessage,listConfirmMessage,overrulingConfirmMessage,overrulingListConfirmMessage,disabledConfirmMessage,disabledListConfirmMessage,overrulingTooltip,disabledTooltip"/>
+    <action class="objt.mes.configurator.qualitymgt.action.InstructionSheetDisableAction"/>
+    <action class="objt.mes.configurator.qualitymgt.action.InstructionSheetDocumentedInstructionAddAction"/>
+    <action class="objt.mes.configurator.qualitymgt.action.InstructionSheetDocumentedInstructionMandatoryAction"/>
+    <action class="objt.mes.configurator.qualitymgt.action.InstructionSheetDocumentedInstructionRemoveAction"/>
+    <action class="objt.mes.configurator.qualitymgt.action.InstructionSheetEditAction"/>
+    <action class="objt.mes.configurator.qualitymgt.action.InstructionSheetInstructionResequenceAction"/>
+    <action class="objt.mes.configurator.qualitymgt.action.InstructionSheetOverruleAction"/>
+    <action class="objt.mes.configurator.qualitymgt.action.InstructionSheetOverruledDisplayAction"/>
+    <action class="objt.mes.configurator.qualitymgt.action.InstructionSheetOverrulingDisplayAction"/>
+    <action class="objt.mes.configurator.qualitymgt.action.InstructionSheetPasteAction"/>
+    <action class="objt.mes.configurator.qualitymgt.action.InstructionSheetTranslationAction"/>
+    <action class="objt.mes.configurator.qualitymgt.action.InstructionSheetUserFieldEditAction"
+            translate="panelTitle"/>
+    <action class="objt.mes.configurator.qualitymgt.action.InstructionTriggerAddAction"/>
+    <action class="objt.mes.configurator.qualitymgt.action.InstructionTriggerEditAction"/>
+    <action class="objt.mes.configurator.qualitymgt.action.MeasurementAddAction"/>
+    <action class="objt.mes.configurator.qualitymgt.action.MeasurementDeleteAction"
+            translate="confirmMessage,listConfirmMessage"/>
+    <action class="objt.mes.configurator.qualitymgt.action.MeasurementEditAction"/>
+    <action class="objt.mes.configurator.qualitymgt.action.MeasurementResequenceAction"/>
+    <action class="objt.mes.configurator.qualitymgt.action.MeasurementTranslationAction"/>
+    <action class="objt.mes.configurator.qualitymgt.action.ProcessInstructionParameterTranslationAction"/>
+    <action class="objt.mes.configurator.qualitymgt.action.ProcessParameterResequenceAction"/>
+    <action class="objt.mes.configurator.qualitymgt.action.SetupInstructionParameterAddAction"/>
+    <action class="objt.mes.configurator.qualitymgt.action.SetupInstructionParameterDeleteAction"
+            translate="confirmMessage,listConfirmMessage"/>
+    <action class="objt.mes.configurator.qualitymgt.action.SetupInstructionParameterEditAction"/>
+
+    <!-- objt.mes.configurator.resourcemgt.action -->
+    <action class="objt.mes.configurator.productionmgt.action.DepartmentProcessUnitAddAction"/>
+    <action class="objt.mes.configurator.productionmgt.action.DepartmentProcessUnitRemoveAction"
+            translate="confirmMessage,listConfirmMessage"/>
+    <action class="objt.mes.configurator.resourcemgt.action.DeviceDepartmentAddAction"/>
+    <action class="objt.mes.configurator.productionmgt.action.DeviceMachineAddAction"/>
+    <action class="objt.mes.configurator.productionmgt.action.DeviceProcessResourceDefaultSetAction"/>
+    <action class="objt.mes.configurator.productionmgt.action.DeviceProcessResourceRemoveAction"
+            translate="confirmMessage,listConfirmMessage"/>
+    <action class="objt.mes.configurator.productionmgt.action.DeviceResourceTrainAddAction"/>
+    <action class="objt.mes.configurator.productionmgt.action.EquipmentModuleResequenceAction"/>
+    <action class="objt.mes.configurator.productionmgt.action.MachineInterruptReasonGroupManageAction"
+            translate="panelTitle"/>
+    <action class="objt.mes.configurator.productionmgt.action.ProcessResourceAlarmCodeTagEditAction"/>
+    <action class="objt.mes.configurator.productionmgt.action.ProcessResourceAlarmCodeTagNewAction"
+            csvattribute="keyAttributes"/>
+    <action class="objt.mes.configurator.productionmgt.action.ProcessResourceAlarmCodeTagPasteAction"/>
+    <action class="objt.mes.configurator.productionmgt.action.ProcessResourceAlarmTagEditAction"/>
+    <action class="objt.mes.configurator.productionmgt.action.ProcessResourceAlarmTagNewAction"
+            csvattribute="keyAttributes"/>
+    <action class="objt.mes.configurator.productionmgt.action.ProcessResourceAlarmTagPasteAction"/>
+    <action class="objt.mes.configurator.productionmgt.action.ProcessResourceControlTagNewAction"
+            csvattribute="keyAttributes"/>
+    <action class="objt.mes.configurator.productionmgt.action.ProcessResourceCounterTagEditAction"/>
+    <action class="objt.mes.configurator.productionmgt.action.ProcessResourceCounterTagNewAction"
+            csvattribute="keyAttributes"/>
+    <action class="objt.mes.configurator.productionmgt.action.ProcessResourcePrivateInterruptReasonGroupAddAction"/>
+    <action class="objt.mes.configurator.productionmgt.action.ProcessResourcePrivateInterruptReasonGroupPasteAction"/>
+    <action class="objt.mes.configurator.productionmgt.action.ProcessResourcePrivateInterruptReasonGroupRemoveAction"/>
+    <action class="objt.mes.configurator.productionmgt.action.ProcessResourcePrivateReasonGroupResequenceAction"/>
+    <action class="objt.mes.configurator.productionmgt.action.ProcessResourceProcessTagEditAction"/>
+    <action class="objt.mes.configurator.productionmgt.action.ProcessResourceProcessTagNewAction"
+            csvattribute="keyAttributes"/>
+    <action class="objt.mes.configurator.productionmgt.action.ProcessResourceSignalTagNewAction"
+            csvattribute="keyAttributes"/>
+    <action class="objt.mes.configurator.productionmgt.action.ProcessResourceTagEditAction"/>
+    <action class="objt.mes.configurator.productionmgt.action.ProcessResourceTagNewAction"
+            csvattribute="keyAttributes"/>
+    <action class="objt.mes.configurator.productionmgt.action.ProcessResourceTagPasteAction"/>
+    <action class="objt.mes.configurator.productionmgt.action.ProcessResourceTagRemoveAction"/>
+    <action class="objt.mes.configurator.productionmgt.action.ProcessResourceTextTagNewAction"
+            csvattribute="keyAttributes"/>
+    <action class="objt.mes.configurator.productionmgt.action.ProcessUnitDataColectionParameterBringOnlineAction"
+            translate="confirmMessage,listConfirmMessage"/>
+    <action class="objt.mes.configurator.productionmgt.action.ProcessUnitDataCollectionParameterAddAction"/>
+    <action class="objt.mes.configurator.productionmgt.action.ProcessUnitDataCollectionParameterDeleteAction"
+            translate="confirmMessage,listConfirmMessage"/>
+    <action class="objt.mes.configurator.productionmgt.action.ProcessUnitDataCollectionParameterEditAction"/>
+    <action class="objt.mes.configurator.productionmgt.action.ProcessUnitDataCollectionParameterPasteAction"/>
+    <action class="objt.mes.configurator.productionmgt.action.ProcessUnitDataCollectionParameterTakeOfflineAction"
+            translate="confirmMessage,listConfirmMessage"/>
+    <action class="objt.mes.configurator.productionmgt.action.ProcessUnitDepartmentAddAction"/>
+    <action class="objt.mes.configurator.productionmgt.action.ProcessUnitDepartmentRemoveAction"
+            translate="confirmMessage"/>
+    <action class="objt.mes.configurator.labourmgt.action.ProcessUnitDirectManualOperationAddAction"/>
+    <action class="objt.mes.configurator.labourmgt.action.ProcessUnitDirectManualOperationAddAction"/>
+    <action class="objt.mes.configurator.labourmgt.action.ProcessUnitDirectManualOperationDefaultAction"/>
+    <action class="objt.mes.configurator.productionmgt.action.ProcessUnitEquipmentModuleRemoveAction"
+            translate="confirmMessage,listConfirmMessage"/>
+    <action class="objt.mes.configurator.labourmgt.action.ProcessUnitIndirectManualOperationGroupAddAction"/>
+    <action class="objt.mes.configurator.labourmgt.action.ProcessUnitIndirectManualOperationGroupAddAction"/>
+    <action class="objt.mes.configurator.productionmgt.action.ProcessUnitInterruptReasonGroupAddAction"/>
+    <action class="objt.mes.configurator.productionmgt.action.ProcessUnitInterruptReasonGroupAddAction"/>
+    <action class="objt.mes.configurator.labourmgt.action.ProcessUnitManualOperationGroupResequenceAction"/>
+    <action class="objt.mes.configurator.labourmgt.action.ProcessUnitManualOperationResequenceAction"/>
+    <action class="objt.mes.configurator.productionmgt.action.ProcessUnitManufacturingOperationAddAction"/>
+    <action class="objt.mes.configurator.productionmgt.action.ProcessUnitManufacturingOperationDeleteAction"
+            translate="confirmMessage,listConfirmMessage"/>
+    <action class="objt.mes.configurator.productionmgt.action.ProcessUnitPrivateScrapReasonGroupAddAction"/>
+    <action class="objt.mes.configurator.productionmgt.action.ProcessUnitPrivateScrapReasonGroupPasteAction"/>
+    <action class="objt.mes.configurator.productionmgt.action.ProcessUnitPrivateScrapReasonGroupRemoveAction"/>
+    <action class="objt.mes.configurator.productionmgt.action.ProcessUnitReasonGroupResequenceAction"/>
+    <action class="objt.mes.configurator.productionmgt.action.ProcessUnitScrapReasonGroupAddAction"/>
+    <action class="objt.mes.configurator.productionmgt.action.ProcessUnitScrapReasonGroupAddAction"/>
+    <action class="objt.mes.configurator.productionmgt.action.BaseParameterNewAction"/>
+    <action class="objt.mes.configurator.productionmgt.action.BaseParameterEditAction"/>
+    <action class="objt.mes.configurator.productionmgt.action.BaseParameterDeleteAction"
+            translate="confirmMessage,listConfirmMessage"/>
+    <action class="objt.mes.configurator.productionmgt.action.BaseParameterCloneAction"/>
+    <action class="objt.mes.configurator.productionmgt.action.BaseParameterConfigurationNewAction"/>
+    <action class="objt.mes.configurator.productionmgt.action.BaseParameterConfigurationCriteriaEditAction"/>
+    <action class="objt.mes.configurator.productionmgt.action.BaseParameterConfigurationCloneAction"/>
+    <action class="objt.mes.configurator.productionmgt.action.BaseParameterConfigurationSettingsEditAction"/>
+    <action class="objt.mes.configurator.productionmgt.action.BaseParameterConfigurationDeleteAction"
+            translate="confirmMessage,listConfirmMessage"/>
+    <action class="objt.mes.configurator.productionmgt.action.BaseParameterConfigurationPreviewAction"/>
+    <action class="objt.mes.configurator.productionmgt.action.BaseParameterConfigurationOverruleAction"/>
+    <action class="objt.mes.configurator.productionmgt.action.BaseParameterConfigurationDeviationsDisplayAction"/>
+
+    <!-- objt.mes.configurator.tagmgt.action -->
+    <action class="objt.mes.configurator.productionmgt.action.TagBringOnlineAction"/>
+    <action class="objt.mes.configurator.productionmgt.action.TagTakeOfflineAction"/>
+
+    <!-- objt.mes.configurator.time.action -->
+    <action class="objt.mes.configurator.productionmgt.action.CalendarProcessUnitAddAction"/>
+
+    <!-- objt.mes.operatorclient.general.action -->
+    <action class="objt.mes.operatorclient.general.action.UserAuthenticationAction"/>
+
+    <!-- objt.mes.operatorclient.inspectionmgt.action -->
+    <action class="objt.mes.operatorclient.inspectionmgt.action.RuntimeInspectionSheetNavigateAction"/>
+    <action class="objt.mes.operatorclient.inspectionmgt.action.ProcessUnitContainerRuntimeInspectionSheetProcessAction"/>
+    <action class="objt.mes.operatorclient.inspectionmgt.action.RuntimeInspectionSheetCompleteAction"/>
+    <action class="objt.mes.operatorclient.inspectionmgt.action.RuntimeInspectionResultDisplayAction"/>
+
+    <!-- objt.mes.operatorclient.inventorymgt.action -->
+    <action class="objt.mes.operatorclient.inventorymgt.action.InventoryViewAction"/>
+    <action class="objt.mes.operatorclient.inventorymgt.action.SKUMoveAction"/>
+    <action class="objt.mes.operatorclient.inventorymgt.action.LPNMoveScanAction"/>
+
+    <!-- objt.mes.operatorclient.labourmgt.action -->
+    <action class="objt.mes.operatorclient.labourmgt.action.ManOperationQtyProducedAddAction"/>
+    <action class="objt.mes.operatorclient.labourmgt.action.ManOperationQtyReworkAddAction"/>
+    <action class="objt.mes.operatorclient.labourmgt.action.ManOperationQtyScrapAddAction"/>
+    <action class="objt.mes.operatorclient.labourmgt.action.ManOperationStartAction"/>
+    <action class="objt.mes.operatorclient.labourmgt.action.ManOperationStopAction"/>
+
+    <!-- objt.mes.operatorclient.maintenancemgt.action -->
+    <action class="objt.mes.operatorclient.maintenancemgt.action.MaintenanceOperationCompleteAction"/>
+    <action class="objt.mes.operatorclient.maintenancemgt.action.MaintenanceOperationEditAction"/>
+    <action class="objt.mes.operatorclient.maintenancemgt.action.MaintenanceOperationScheduleAction"/>
+
+    <!-- objt.mes.operatorclient.materialmgt.action -->
+    <action class="objt.mes.operatorclient.materialmgt.action.InputOperationInventoryAddAction"/>
+    <action class="objt.mes.operatorclient.materialmgt.action.InputOperationInventoryScanAction"/>
+    <action class="objt.mes.operatorclient.materialmgt.action.InputOperationInventoryScrapAction"/>
+    <action class="objt.mes.operatorclient.materialmgt.action.InputOperationItemAddAction"/>
+    <action class="objt.mes.operatorclient.materialmgt.action.InputOperationItemScrapAction"/>
+    <action class="objt.mes.operatorclient.materialmgt.action.InputOperationTaskDisplayAction"/>
+    <action class="objt.mes.operatorclient.materialmgt.action.OutputInventoryTraceOperationCompleteAction"/>
+    <action class="objt.mes.operatorclient.materialmgt.action.OutputInventoryTraceOperationInventoryAddAction"/>
+    <action class="objt.mes.operatorclient.materialmgt.action.OutputInventoryTraceOperationInventoryResumeAction"/>
+    <action class="objt.mes.operatorclient.materialmgt.action.OutputInventoryTraceOperationModifyAction"/>
+    <action class="objt.mes.operatorclient.materialmgt.action.OutputInventoryTraceOperationQtyReworkAddAction"/>
+    <action class="objt.mes.operatorclient.materialmgt.action.OutputInventoryTraceOperationQtyScrapAddAction"/>
+    <action class="objt.mes.operatorclient.materialmgt.action.OutputInventoryTraceOperationRemoveAction"/>
+    <action class="objt.mes.operatorclient.materialmgt.action.OutputOperationIntermediateContainerAddAction"/>
+    <action class="objt.mes.operatorclient.materialmgt.action.QualityControlStatusEditAction"/>
+    <action class="objt.mes.operatorclient.materialmgt.action.SerialComponentAddAction"/>
+    <action class="objt.mes.operatorclient.materialmgt.action.SerialComponentRemoveAction"/>
+    <action class="objt.mes.operatorclient.materialmgt.action.InputProductiveItemQtyEnableToggleAction"/>
+
+    <!-- objt.mes.operatorclient.productionmgt.action -->
+    <action class="objt.mes.operatorclient.productionmgt.action.AlarmConfirmAction"/>
+    <action class="objt.mes.operatorclient.productionmgt.action.EventEditAction"/>
+    <action class="objt.mes.operatorclient.productionmgt.action.InterruptOperationEditAction"/>
+    <action class="objt.mes.operatorclient.productionmgt.action.InterruptOperationSplitAction"/>
+    <action class="objt.mes.operatorclient.productionmgt.action.InterruptOperationStartAction"/>
+    <action class="objt.mes.operatorclient.productionmgt.action.InterruptOperationStopAction"/>
+    <action class="objt.mes.operatorclient.productionmgt.action.IsPresentOperationStartAction"/>
+    <action class="objt.mes.operatorclient.productionmgt.action.IsPresentOperationStopAction"/>
+    <action class="objt.mes.operatorclient.productionmgt.action.IsPresentOperationMultiStopAction"/>
+    <action class="objt.mes.operatorclient.productionmgt.action.MachineOperationQtyProducedAddAction"/>
+    <action class="objt.mes.operatorclient.productionmgt.action.MachineOperationQtyReworkAddAction"/>
+    <action class="objt.mes.operatorclient.productionmgt.action.MachineOperationQtyScrapAddAction"/>
+    <action class="objt.mes.operatorclient.productionmgt.action.MachineOperationRescheduleAction"/>
+    <action class="objt.mes.operatorclient.productionmgt.action.MachineOperationSegmentStartAction"/>
+    <action class="objt.mes.operatorclient.productionmgt.action.MachineOperationStartAction"/>
+    <action class="objt.mes.operatorclient.productionmgt.action.MachineOperationStopAction"/>
+    <action class="objt.mes.operatorclient.productionmgt.action.ProcessParameterTargetEditAction"/>
+    <action class="objt.mes.operatorclient.productionmgt.action.ProcessParameterValueEditAction"/>
+    <action class="objt.mes.operatorclient.productionmgt.action.ProductionOrderSegmentStartAction"/>
+    <action class="objt.mes.operatorclient.productionmgt.action.ProductionOrderStartAction"/>
+    <action class="objt.mes.operatorclient.productionmgt.action.ProductionOrderStopAction"/>
+
+    <!-- objt.mes.operatorclient.qualitymgt.action -->
+    <action class="objt.mes.operatorclient.qualitymgt.action.DocumentDisplayAction"/>
+    <action class="objt.mes.operatorclient.qualitymgt.action.InstructionTaskAbortAction"/>
+    <action class="objt.mes.operatorclient.qualitymgt.action.MeasurementSPCChartDisplayAction"/>
+    <action class="objt.mes.operatorclient.qualitymgt.action.MeasurementValueEditAction"/>
+    <action class="objt.mes.operatorclient.qualitymgt.action.RuntimeCheckInstructionProcessAction"/>
+    <action class="objt.mes.operatorclient.qualitymgt.action.RuntimeInputInstructionProcessAction"/>
+    <action class="objt.mes.operatorclient.qualitymgt.action.RuntimeInstructionSheetProcessAction"/>
+    <action class="objt.mes.operatorclient.qualitymgt.action.RuntimeInstructionSheetReopenAction"/>
+    <action class="objt.mes.operatorclient.qualitymgt.action.RuntimeOperationInstructionHistoryDisplayAction"
+            translate="panelTitle"/>
+    <action class="objt.mes.operatorclient.qualitymgt.action.RuntimeOperationInstructionOperatorHelpDisplayAction"/>
+    <action class="objt.mes.operatorclient.qualitymgt.action.RuntimeOperationInstructionProcessAction"/>
+    <action class="objt.mes.operatorclient.qualitymgt.action.RuntimeOperationInstructionResultDetailsDisplayAction"/>
+    <action class="objt.mes.operatorclient.qualitymgt.action.RuntimeProcessParameterDisplayAction"/>
+
+    <!-- objt.mes.operatorclient.resourcemgt.action -->
+    <action class="objt.mes.operatorclient.resourcemgt.action.TouchDocumentTemplatePrintAction"/>
+
+    <!-- objt.mes.operatorclient.time.action -->
+    <action class="objt.mes.operatorclient.productionmgt.action.ProcessUnitCalendarShiftCommentAddAction"/>
+    <action class="objt.mes.operatorclient.productionmgt.action.ProcessUnitCalendarShiftCommentEditAction"/>
+    <action class="objt.mes.operatorclient.productionmgt.action.ProcessUnitCalendarShiftCommentRemoveAction"/>
+
+    <!-- objt.mes.operatorclient.warehousemgt.action -->
+    <action class="objt.wms.operatorclient.warehousemgt.action.IndirectTaskAddAction"/>
+    <action class="objt.mes.operatorclient.warehousemgt.action.PickTaskAddAction"/>
+    <action class="objt.mes.operatorclient.warehousemgt.action.TaskHoldAction"/>
+    <action class="objt.mes.operatorclient.warehousemgt.action.TaskResetAction"/>
+    <action class="objt.mes.operatorclient.warehousemgt.action.TaskViewAction"/>
+    <action class="objt.mes.operatorclient.warehousemgt.action.TaskTerminateAction"/>
+
+    <!-- objt.common.appmgt.operatorclient.ui -->
+    <action class="objt.common.appmgt.operatorclient.ui.MeasurementSPCChartTouchTabPanel$SPCChartSettingsEditAction"/>
+
+    <!-- objt.mes.pd.planning.ui.action -->
+    <action class="objt.mes.pd.planning.ui.action.DiagramEntrySelectAction"/>
+    <action class="objt.mes.pd.planning.ui.action.DiagramRefreshAction"/>
+    <action class="objt.mes.pd.planning.ui.action.ManageCapacityDiagramsAction"
+            csvtranslate="attributeTitles"
+            translate="panelTitle"/>
+    <action class="objt.mes.pd.planning.ui.action.PlanGanttActualOperationOptionAction"/>
+    <action class="objt.mes.pd.planning.ui.action.PlanGanttEditAction"/>
+    <action class="objt.mes.pd.planning.ui.action.PlanGanttEmployeeCapacityOptionAction"/>
+    <action class="objt.mes.pd.planning.ui.action.PlanGanttPropertiesAction"/>
+    <action class="objt.mes.pd.planning.ui.action.PlanGanttToggleLinksAction"/>
+    <action class="objt.mes.pd.planning.ui.action.PlanningHandlerUpdateAction"/>
+    <action class="objt.mes.pd.planning.ui.action.ResourceOperationPlanningActualizeAction"/>
+    <action class="objt.mes.pd.planning.ui.action.ResourceOperationPlanningAddAction"/>
+    <action class="objt.mes.pd.planning.ui.action.ResourceOperationPlanningChangeModeWizardAction"/>
+    <action class="objt.mes.pd.planning.ui.action.ResourceOperationPlanningDeallocateAction"/>
+    <action class="objt.mes.pd.planning.ui.action.ResourceOperationPlanningDisableLinksAction"/>
+    <action class="objt.mes.pd.planning.ui.action.ResourceOperationPlanningDistributeAction"/>
+    <action class="objt.mes.pd.planning.ui.action.ResourceOperationPlanningEditAction"/>
+    <action class="objt.mes.pd.planning.ui.action.ResourceOperationPlanningEnableLinksAction"/>
+    <action class="objt.mes.pd.planning.ui.action.ResourceOperationPlanningFreezeAction"/>
+    <action class="objt.mes.pd.planning.ui.action.ResourceOperationPlanningGroupAction"/>
+    <action class="objt.mes.pd.planning.ui.action.ResourceOperationPlanningHideLinksAction"/>
+    <action class="objt.mes.pd.planning.ui.action.ResourceOperationPlanningLinkDeleteAction"/>
+    <action class="objt.mes.pd.planning.ui.action.ResourceOperationPlanningLinkEditAction"/>
+    <action class="objt.mes.pd.planning.ui.action.ResourceOperationPlanningLinkEnableToggleAction"/>
+    <action class="objt.mes.pd.planning.ui.action.ResourceOperationPlanningMoveForwardAction"/>
+    <action class="objt.mes.pd.planning.ui.action.ResourceOperationPlanningPullbackAction"/>
+    <action class="objt.mes.pd.planning.ui.action.ResourceOperationPlanningRemoveAction"/>
+    <action class="objt.mes.pd.planning.ui.action.ResourceOperationPlanningResequenceAction"/>
+    <action class="objt.mes.pd.planning.ui.action.ResourceOperationPlanningRevalidateConstraintsAction"/>
+    <action class="objt.mes.pd.planning.ui.action.ResourceOperationPlanningSealAction"/>
+    <action class="objt.mes.pd.planning.ui.action.ResourceOperationPlanningSealDestinationsAction"/>
+    <action class="objt.mes.pd.planning.ui.action.ResourceOperationPlanningSealSourcesAction"/>
+    <action class="objt.mes.pd.planning.ui.action.ResourceOperationPlanningShowLinksAction"/>
+    <action class="objt.mes.pd.planning.ui.action.ResourceOperationPlanningToResourceAction"/>
+    <action class="objt.mes.pd.planning.ui.action.ResourceOperationPlanningToTimeAction"/>
+    <action class="objt.mes.pd.planning.ui.action.ResourceOperationPlanningUnscheduleAction"/>
+    <action class="objt.mes.pd.planning.ui.action.ResourcePlanningRelationVisibilityToggleAction"/>
+
+    <!-- objt.mes.pd.scheduling.ui.action -->
+    <action class="objt.mes.pd.scheduling.ui.action.ProductionScheduleCopyAction"/>
+    <action class="objt.mes.pd.scheduling.ui.action.ProductionScheduleKPIUpdateAction"/>
+    <action class="objt.mes.pd.scheduling.ui.action.ProductionScheduleMasterDetailTabPanelShowDetailOptionAction"/>
+    <action class="objt.mes.pd.scheduling.ui.action.ProductionScheduleNewAction"/>
+    <action class="objt.mes.pd.scheduling.ui.action.ProductionScheduleOptimizeAction"/>
+    <action class="objt.mes.pd.scheduling.ui.action.ProductionScheduleRemoveAction"/>
+    <action class="objt.mes.pd.scheduling.ui.action.ProductionScheduleSetEditableAction"/>
+    <action class="objt.mes.pd.scheduling.ui.action.SchedulingAction"/>
+
+    <action class="objt.mes.supervisor.inventorymgt.action.InventoryForecastStockBreakCalculateViewAction"/>
+    <action class="objt.mes.supervisor.inventorymgt.action.InventoryForecastStockBreakCalculateAction"/>
+    <action class="objt.mes.supervisor.inventorymgt.action.InventoryForecastStockBreakDataViewAction"/>
+
+    <!-- objt.mes.supervisor.labourmgt.action -->
+    <action class="objt.mes.supervisor.labourmgt.action.ManOperationAddAction"/>
+    <action class="objt.mes.supervisor.labourmgt.action.ManOperationModifyAction"/>
+    <action class="objt.mes.supervisor.labourmgt.action.ManOperationQtyProducedModifyAction"/>
+    <action class="objt.mes.supervisor.labourmgt.action.ManOperationQtyReworkAction"/>
+    <action class="objt.mes.supervisor.labourmgt.action.ManOperationQtyScrapAction"/>
+    <action class="objt.mes.supervisor.labourmgt.action.ManOperationRemoveAction"/>
+    <action class="objt.mes.supervisor.labourmgt.action.ManOperationStopAction"/>
+
+    <!-- objt.mes.supervisor.materialmgt.action -->
+    <action class="objt.mes.supervisor.materialmgt.action.SerialComponentAddAction"/>
+    <action class="objt.mes.supervisor.materialmgt.action.SerialComponentRemoveAction"/>
+    <action class="objt.mes.supervisor.materialmgt.action.SerialComponentLinkRemoveAction"/>
+    <action class="objt.mes.supervisor.materialmgt.action.SerialComponentReplaceAction"/>
+    <action class="objt.mes.supervisor.materialmgt.action.SerialComponentViewAction"/>
+    <action class="objt.mes.supervisor.materialmgt.action.SerialIncludeComponentsAction"/>
+
+    <!-- objt.mes.supervisor.productionmgt.action -->
+    <action class="objt.mes.supervisor.productionmgt.action.AlarmAddAction"/>
+    <action class="objt.mes.supervisor.productionmgt.action.AlarmCommentAction"/>
+    <action class="objt.mes.supervisor.productionmgt.action.AlarmModifyAction"/>
+    <action class="objt.mes.supervisor.productionmgt.action.AlarmRemoveAction"/>
+    <action class="objt.mes.supervisor.productionmgt.action.InterruptCommentAction"/>
+    <action class="objt.mes.supervisor.productionmgt.action.InterruptOperationAddAction"/>
+    <action class="objt.mes.supervisor.productionmgt.action.InterruptOperationEditAction"/>
+    <action class="objt.mes.supervisor.productionmgt.action.InterruptOperationRemoveAction"/>
+    <action class="objt.mes.supervisor.productionmgt.action.MachineOperationGanttPropertiesAction"/>
+    <action class="objt.mes.supervisor.productionmgt.action.MachineOperationQtyProducedModifyAction"/>
+    <action class="objt.mes.supervisor.productionmgt.action.MachineOperationQtyReworkAction"/>
+    <action class="objt.mes.supervisor.productionmgt.action.MachineOperationQtyScrapAction"/>
+    <action class="objt.mes.supervisor.productionmgt.action.MachineOperationRescheduleAction"/>
+    <action class="objt.mes.supervisor.productionmgt.action.MachineOperationStopAction"/>
+    <action class="objt.mes.supervisor.productionmgt.action.OEELineBarChartPropertiesAction"/>
+    <action class="objt.mes.supervisor.productionmgt.action.OEEReportCommentAction"/>
+    <action class="objt.mes.supervisor.productionmgt.action.OEEReportRevalidateAction"/>
+    <action class="objt.mes.supervisor.productionmgt.action.OEEReportWrapperInterruptOperationParetoAction"/>
+    <action class="objt.mes.supervisor.productionmgt.action.OEEReportWrapperScrapOperationParetoAction"/>
+    <action class="objt.mes.supervisor.productionmgt.action.PlanningOperationAddAction"/>
+    <action class="objt.mes.supervisor.productionmgt.action.PlanningOperationEditAction"/>
+    <action class="objt.mes.supervisor.productionmgt.action.ProcessParameterTargetEditAction"/>
+    <action class="objt.mes.supervisor.productionmgt.action.ProcessParameterTimeFilterToggleAction"/>
+    <action class="objt.mes.supervisor.productionmgt.action.ProcessParameterValueEditAction"/>
+    <action class="objt.mes.supervisor.productionmgt.action.ProductionItemQtyResequenceAction"/>
+    <action class="objt.mes.supervisor.productionmgt.action.ProductionItemQtyTreeTableResequenceAction"/>
+    <action class="objt.mes.supervisor.productionmgt.action.ProductionOperationEditAction"/>
+    <action class="objt.mes.supervisor.productionmgt.action.ProductionOperationAbortAction"/>
+    <action class="objt.mes.supervisor.productionmgt.action.ProductionOperationCompleteAction"/>
+    <action class="objt.mes.supervisor.qualitymgt.action.OperationInstructionWrapperFilterApplicabilityToggleAction"/>
+    <action class="objt.mes.supervisor.qualitymgt.action.ProductionOperationDocumentedInstructionAddAction"/>
+    <action class="objt.mes.supervisor.qualitymgt.action.ProductionOperationDocumentedInstructionCopyAction"/>
+    <action class="objt.mes.supervisor.qualitymgt.action.ProductionOperationDocumentedInstructionDeleteAction"
+            translate="confirmMessage,listConfirmMessage,overrulingConfirmMessage,overrulingListConfirmMessage,overrulingTooltip"/>
+    <action class="objt.mes.supervisor.qualitymgt.action.ProductionOperationDocumentedInstructionEditAction"/>
+    <action class="objt.mes.supervisor.qualitymgt.action.ProductionOperationDocumentedInstructionPasteAction"/>
+    <action class="objt.mes.supervisor.qualitymgt.action.ProductionOperationDocumentedInstructionSheetManageAction"
+            translate="panelTitle"/>
+    <action class="objt.mes.supervisor.productionmgt.action.ProductionOperationGanttLinkAction"/>
+    <action class="objt.mes.supervisor.qualitymgt.action.ProductionOperationInstructionSheetAddAction"/>
+    <action class="objt.mes.supervisor.qualitymgt.action.ProductionOperationInstructionSheetCopyAction"/>
+    <action class="objt.mes.supervisor.qualitymgt.action.ProductionOperationInstructionSheetDeleteAction"
+            translate="confirmMessage,listConfirmMessage,overrulingConfirmMessage,overrulingListConfirmMessage,overrulingTooltip"/>
+    <action class="objt.mes.supervisor.qualitymgt.action.ProductionOperationInstructionSheetEditAction"/>
+    <action class="objt.mes.supervisor.qualitymgt.action.ProductionOperationInstructionSheetInstructionResequenceAction"/>
+    <action class="objt.mes.supervisor.qualitymgt.action.ProductionOperationInstructionSheetPasteAction"/>
+    <action class="objt.mes.supervisor.productionmgt.action.ProductionOperationItemQtyAddAction"/>
+    <action class="objt.mes.supervisor.productionmgt.action.ProductionItemQtyDataCollectionEditAction"/>
+    <action class="objt.mes.supervisor.productionmgt.action.ProductionOperationItemQtyDeleteAction"/>
+    <action class="objt.mes.supervisor.productionmgt.action.ProductionItemQtyEditAction"/>
+    <action class="objt.mes.supervisor.productionmgt.action.ProductionItemQtyQCStatusHandlingEditAction"/>
+    <action class="objt.mes.supervisor.productionmgt.action.ProductionItemQtyWIPHandlingEditAction"/>
+    <action class="objt.mes.supervisor.productionmgt.action.ProductionOperationOperationSegmentEditAction"/>
+    <action class="objt.mes.supervisor.productionmgt.action.ProductionOperationPlanAction"/>
+    <action class="objt.mes.supervisor.productionmgt.action.ProductionOperationPrimaryOutputAction"/>
+    <action class="objt.mes.supervisor.productionmgt.action.ProductionOperationScheduleAction"/>
+    <action class="objt.mes.supervisor.productionmgt.action.ProductionOperationUnplanAction"/>
+    <action class="objt.mes.supervisor.productionmgt.action.ProductionOperationUnscheduleAction"/>
+    <action class="objt.mes.supervisor.productionmgt.action.ProductionOrderAbortAction"/>
+    <action class="objt.mes.supervisor.productionmgt.action.ProductionOrderCompleteAction"/>
+    <action class="objt.mes.supervisor.productionmgt.action.ProductionOrderCreateAction"
+            translate="sqlfilteractiontitle,sqlfilteractiondescription,childlisttabpaneltitle,childlisttabpaneldescription"/>
+    <action class="objt.mes.supervisor.warehousemgt.action.PickOperationEditAction"/>
+    <action class="objt.mes.supervisor.warehousemgt.action.ProductionOrderDeallocateAction"/>
+    <action class="objt.mes.supervisor.productionmgt.action.ProductionOrderDeleteAction"/>
+    <action class="objt.mes.supervisor.productionmgt.action.ProductionOrderEditAction"/>
+    <action class="objt.mes.supervisor.productionmgt.action.ProductionOrderPlanAction"/>
+    <action class="objt.mes.supervisor.productionmgt.action.ProductionOrderScheduleAction"/>
+    <action class="objt.mes.supervisor.productionmgt.action.ProductionOrderUnplanAction"/>
+    <action class="objt.mes.supervisor.productionmgt.action.ProductionOrderUnscheduleAction"/>
+    <action class="objt.mes.supervisor.materialmgt.action.ProductPassportReportAction"/>
+    <action class="objt.mes.supervisor.productionmgt.action.RejectProductionRatioParetoAction"/>
+    <action class="objt.mes.supervisor.productionmgt.action.ReworkOperationModifyAction"/>
+    <action class="objt.mes.supervisor.productionmgt.action.RuntimeProcessParameterDisplayAction"/>
+    <action class="objt.mes.supervisor.productionmgt.action.ScrapOperationEventDisplayAction"/>
+    <action class="objt.mes.supervisor.productionmgt.action.ScrapOperationModifyAction"/>
+    <action class="objt.mes.supervisor.productionmgt.action.ScrapOperationTypeToggleAction"/>
+    <action class="objt.mes.supervisor.productionmgt.action.OutputProductionItemQtyQCHandlingEditAction"/>
+
+    <!-- objt.mes.supervisor.qualitymgt.action -->
+    <action class="objt.mes.supervisor.qualitymgt.action.InstructionTaskAbortAction"/>
+    <action class="objt.mes.supervisor.qualitymgt.action.InstructionTaskAddAction"/>
+    <action class="objt.mes.supervisor.qualitymgt.action.InstructionTaskDisplayAction"/>
+    <action class="objt.mes.supervisor.qualitymgt.action.MeasurementDataPointAddAction"/>
+    <action class="objt.mes.supervisor.qualitymgt.action.MeasurementDataPointRemoveAction"/>
+    <action class="objt.mes.supervisor.qualitymgt.action.MeasurementSPCChartDisplayAction"/>
+    <action class="objt.mes.supervisor.qualitymgt.action.MeasurementValueEditAction"/>
+    <action class="objt.mes.supervisor.qualitymgt.action.RuntimeInstructionSheetAddAction"/>
+    <action class="objt.mes.supervisor.qualitymgt.action.RuntimeInstructionSheetCloseAction"/>
+    <action class="objt.mes.supervisor.qualitymgt.action.RuntimeInstructionSheetProcessAction"/>
+    <action class="objt.mes.supervisor.qualitymgt.action.RuntimeInstructionSheetReopenAction"/>
+    <action class="objt.mes.supervisor.qualitymgt.action.RuntimeInstructionSheetResetAction"/>
+    <action class="objt.mes.supervisor.qualitymgt.action.RuntimeInstructionSheetTriggerEditAction"/>
+    <action class="objt.mes.supervisor.qualitymgt.action.RuntimeMeasurementDisplayAction"/>
+    <action class="objt.mes.supervisor.qualitymgt.action.RuntimeOCAPVisibilityToggleAction"/>
+    <action class="objt.mes.supervisor.qualitymgt.action.RuntimeOperationInstructionDisplayAction"/>
+    <action class="objt.mes.supervisor.qualitymgt.action.RuntimeOperationInstructionHistoryDisplayAction"
+            translate="panelTitle"/>
+    <action class="objt.mes.supervisor.qualitymgt.action.RuntimeOperationInstructionInstructionTriggerAddAction"/>
+    <action class="objt.mes.supervisor.qualitymgt.action.RuntimeOperationInstructionInstructionTriggerEditAction"/>
+    <action class="objt.mes.supervisor.qualitymgt.action.RuntimeOperationInstructionInstructionTriggerRemoveAction"/>
+    <action class="objt.mes.supervisor.qualitymgt.action.RuntimeOperationInstructionOperatorHelpDisplayAction"/>
+    <action class="objt.mes.supervisor.qualitymgt.action.RuntimeOperationInstructionProcessAction"/>
+    <action class="objt.mes.supervisor.qualitymgt.action.RuntimeOperationInstructionResetAction"/>
+    <action class="objt.mes.supervisor.qualitymgt.action.RuntimeOperationInstructionResultDetailsDisplayAction"/>
+    <action class="objt.mes.supervisor.qualitymgt.action.RuntimeOperationInstructionTriggerEditAction"/>
+    <action class="objt.mes.supervisor.qualitymgt.action.RuntimeSetupParameterDisplayAction"/>
+
+    <!-- objt.mes.supervisor.resourcemgt.action -->
+    <action class="objt.mes.supervisor.productionmgt.action.EmployeeLogoutAction"/>
+    <action class="objt.mes.supervisor.productionmgt.action.ProcessUnitCalendarDayEditAction"/>
+    <action class="objt.mes.supervisor.productionmgt.action.ProcessUnitCalendarShiftCommentEditAction"/>
+    <action class="objt.mes.supervisor.productionmgt.action.ProcessUnitCalendarShiftCommentRemoveAction"/>
+    <action class="objt.mes.supervisor.productionmgt.action.ProcessUnitCalendarShiftEditAction"/>
+    <action class="objt.mes.supervisor.productionmgt.action.ProcessUnitPlanningModeEditAction"/>
+
+    <!-- objt.mes.supervisor.tagmgt.action -->
+    <action class="objt.mes.supervisor.productionmgt.action.TagModifyAction"/>
+
+    <!-- objt.mes.supervisor.time.action -->
+    <action class="objt.mes.supervisor.time.action.CalendarDayPropertiesDisplayAction"/>
+
+    <!-- objt.mes.supervisor.warehousemgt.action -->
+    <action class="objt.mes.supervisor.warehousemgt.action.PutOperationTaskAddAction"/>
+    <action class="objt.mes.supervisor.warehousemgt.action.ProductionItemQtyInventoryHandlingEditAction"/>
+    <action class="objt.mes.supervisor.warehousemgt.action.ProductionOperationAllocateAction"/>
+    <action class="objt.mes.supervisor.warehousemgt.action.ProductionOperationDeallocateAction"/>
+    <action class="objt.mes.supervisor.warehousemgt.action.ProductionOperationReallocateAction"/>
+    <action class="objt.mes.supervisor.warehousemgt.action.ProductionOrderAllocateAction"/>
+    <action class="objt.mes.supervisor.warehousemgt.action.ProductionOrderReallocateAction"/>
+
+    <!-- objt.wms.configurator.inventorymgt.action -->
+    <action class="objt.wms.configurator.inventorymgt.action.ExternalWorkCenterWarehouseLocationAddAction"/>
+    <action class="objt.wms.configurator.inventorymgt.action.ProcessUnitAbstractStorageResourceRemoveAction"/>
+
+    <!-- objt.wms.operatorclient.ui.action -->
+    <action class="objt.wms.operatorclient.warehousemgt.action.InventoryKanbanConsumeAction"/>
+    <action class="objt.wms.operatorclient.warehousemgt.action.InventoryReturnAction"/>
+    <action class="objt.wms.operatorclient.inventorymgt.action.InventoryViewAction"/>
+    <action class="objt.wms.operatorclient.warehousemgt.action.TaskViewAction"/>
+    <action class="objt.wms.operatorclient.inspectionmgt.action.RuntimeInspectionInstructionProcessAction"/>
+    <action class="objt.wms.operatorclient.inspectionmgt.action.RuntimeInspectionSheetCloseAction"/>
+    <action class="objt.wms.operatorclient.inspectionmgt.action.RuntimeInspectionInstructionAbortAction"/>
+    <action class="objt.wms.operatorclient.inspectionmgt.action.ContainerRuntimeInspectionSheetProcessAction"/>
+    <action class="objt.wms.operatorclient.inspectionmgt.action.DocumentDisplayAction"/>
+    <action class="objt.wms.operatorclient.inspectionmgt.action.RuntimeInspectionSheetProcessAction"/>
+    <action class="objt.wms.operatorclient.inventorymgt.action.SKUMoveAction"/>
+
+  </actions>
+
+  <tabpanels>
+
+    <!-- dce -->
+    <tabpanel class="dce.pd.frame.resourceview.ui.ResourceViewRuntimeTabPanel"/>
+    <tabpanel class="dce.pd.frame.resourceview.ui.ExtendedResourceViewRuntimeTabPanel"/>
+    <tabpanel class="dce.pd.frame.resourceview.ui.ResourceViewTabPanel"/>
+    <tabpanel class="dce.ui.control.chart.BarChartTabPanel"
+              csvattribute="attributePaths,minAttributePaths,maxAttributePaths,tooltipPaths"
+              csvtranslate="attributeTitles"
+              translate="xAxisLabel,yAxisLabel"
+              attribute="keyAttributePath"/>
+
+    <!-- objt.common.appmgt -->
+    <tabpanel class="objt.common.appmgt.operatorclient.ui.MeasurementSPCChartTouchTabPanel"/>
+    <tabpanel class="objt.common.appmgt.ui.MeasurementSPCChartTabPanel"/>
+
+    <!-- objt.mes.configurator.appmgt.panel -->
+    <tabpanel class="objt.mes.configurator.appmgt.panel.DocumentTabPanel"/>
+
+    <!-- objt.mes.configurator.inventorymgt.panel -->
+    <tabpanel class="objt.mes.configurator.productionmgt.panel.QualityControlStatusInputHandlingTabPanel"/>
+    <tabpanel class="objt.mes.configurator.productionmgt.panel.QualityControlStatusOutputHandlingTabPanel"/>
+    <tabpanel class="objt.mes.configurator.productionmgt.panel.QualityControlStatusPhantomOutputHandlingTabPanel"/>
+
+    <!-- objt.mes.configurator.itemmgt.panel -->
+    <tabpanel class="objt.mes.configurator.itemmgt.panel.ItemParameterListTabPanel"/>
+
+    <!-- objt.mes.configurator.labourmgt.panel -->
+    <tabpanel class="objt.mes.configurator.labourmgt.panel.LabourConfigurationTabPanel"/>
+    <tabpanel class="objt.mes.configurator.labourmgt.panel.LabourConfigurationTabPanel"/>
+    <tabpanel class="objt.mes.configurator.labourmgt.panel.ManualOperationGroupPropertiesTabPanel"/>
+    <tabpanel class="objt.mes.configurator.labourmgt.panel.ManualOperationPropertiesTabPanel"/>
+    <tabpanel class="objt.mes.configurator.labourmgt.panel.ManualOperationRoleListTabPanel"/>
+
+    <!-- objt.mes.configurator.productionmgt.panel -->
+    <tabpanel class="objt.mes.configurator.productionmgt.panel.DataCollectionProcessParameterSettingsTabPanel"/>
+    <tabpanel class="objt.mes.configurator.productionmgt.panel.DataCollectionProcessParameterRegistrationTabPanel"/>
+    <tabpanel class="objt.mes.configurator.productionmgt.panel.DefaultInputOptionsTabPanel"/>
+    <tabpanel class="objt.mes.configurator.productionmgt.panel.DefaultOutputOptionsTabPanel"/>
+    <tabpanel class="objt.mes.configurator.productionmgt.panel.DefaultRecipeOptionsTabPanel"/>
+    <tabpanel class="objt.mes.configurator.productionmgt.panel.ExternalWorkCenterOperationSegmentTabPanel"/>
+    <tabpanel class="objt.mes.configurator.productionmgt.panel.ExternalWorkCenterOperationRunSegmentTabPanel"/>
+    <tabpanel class="objt.mes.configurator.productionmgt.panel.InterruptReasonGroupPropertiesTabPanel"/>
+    <tabpanel class="objt.mes.configurator.productionmgt.panel.InterruptReasonPropertiesTabPanel"/>
+    <tabpanel class="objt.mes.configurator.productionmgt.panel.ManufacturingOperationPropertiesTabPanel"/>
+    <tabpanel class="objt.mes.configurator.productionmgt.panel.MaterialDataCollectionSettingsTabPanel"/>
+    <tabpanel class="objt.mes.configurator.productionmgt.panel.MaterialInputHandlingTabPanel"/>
+    <tabpanel class="objt.mes.configurator.productionmgt.panel.MaterialOutputHandlingTabPanel"/>
+    <tabpanel class="objt.mes.configurator.productionmgt.panel.OperationDependencyGanttTabPanel"/>
+    <tabpanel class="objt.mes.configurator.productionmgt.panel.OperationRunSegmentTabPanel"/>
+    <tabpanel class="objt.mes.configurator.productionmgt.panel.OperationSegmentTabPanel"/>
+    <tabpanel class="objt.mes.configurator.productionmgt.panel.PhantomOutputMaterialHandlingTabPanel"/>
+    <tabpanel class="objt.mes.configurator.productionmgt.panel.PhantomSubOutputMaterialHandlingTabPanel"/>
+    <tabpanel class="objt.mes.configurator.productionmgt.panel.PlanningCellPropertiesTabPanel"/>
+    <tabpanel class="objt.mes.configurator.productionmgt.panel.ProcessMonitorParameterSettingsTabPanel"/>
+    <tabpanel class="objt.mes.configurator.productionmgt.panel.ProcessParameterAlarmTracingTabPanel"/>
+    <tabpanel class="objt.mes.configurator.productionmgt.panel.ProcessParameterTrendingTabPanel"/>
+    <tabpanel class="objt.mes.configurator.productionmgt.panel.RecipeBatchSettingsTabPanel"/>
+    <tabpanel class="objt.mes.configurator.productionmgt.panel.RecipeManufacturingOperationProcessUnitSelectionTabPanel"/>
+    <tabpanel class="objt.mes.configurator.productionmgt.panel.RecipePropertiesTabPanel"/>
+    <tabpanel class="objt.mes.configurator.productionmgt.panel.RecipeVariantPropertiesTabPanel"/>
+    <tabpanel class="objt.mes.configurator.productionmgt.panel.RecipeVariantVersionPropertiesTabPanel"/>
+    <tabpanel class="objt.mes.configurator.productionmgt.panel.ResourceGroupPropertiesTabPanel"/>
+    <tabpanel class="objt.mes.configurator.productionmgt.panel.ResourceTrainPropertiesTabPanel"/>
+    <tabpanel class="objt.mes.configurator.productionmgt.panel.ScrapReasonGroupPropertiesTabPanel"/>
+    <tabpanel class="objt.mes.configurator.productionmgt.panel.ScrapReasonPropertiesTabPanel"/>
+    <tabpanel class="objt.mes.configurator.productionmgt.panel.EmployeeProcessResourceSelectionTabPanel"/>
+    <tabpanel class="objt.mes.configurator.productionmgt.panel.EquipmentModulePropertiesTabPanel"/>
+    <tabpanel class="objt.mes.configurator.productionmgt.panel.MachinePropertiesTabPanel"/>
+    <tabpanel class="objt.mes.configurator.productionmgt.panel.WorkCenterPropertiesTabPanel"/>
+    <tabpanel class="objt.mes.configurator.productionmgt.panel.CounterTagProductionRejectCounterTabPanel"/>
+    <tabpanel class="objt.mes.configurator.productionmgt.panel.CounterTagRejectCounterTabPanel"/>
+    <tabpanel class="objt.mes.configurator.productionmgt.panel.ToolParameterListTabPanel"/>
+    <tabpanel class="objt.mes.configurator.productionmgt.panel.ToolPropertiesTabPanel"/>
+    <tabpanel class="objt.mes.configurator.productionmgt.panel.ProcessUnitCalendarPropertiesTabPanel"/>
+    <tabpanel class="objt.mes.configurator.productionmgt.panel.DefaultRejectOptionsTabPanel"/>
+    <tabpanel class="objt.mes.configurator.productionmgt.panel.BaseParameterOptionsTabPanel"/>
+
+    <!-- objt.mes.configurator.qualitymgt.panel -->
+    <tabpanel class="objt.mes.configurator.qualitymgt.panel.CheckInstructionSettingTabPanel"/>
+    <tabpanel class="objt.mes.configurator.qualitymgt.panel.DocumentedInstructionAttributeFilterTabPanel"/>
+    <tabpanel class="objt.mes.configurator.qualitymgt.panel.DocumentedInstructionInfoTabPanel"/>
+    <tabpanel class="objt.mes.configurator.qualitymgt.panel.DocumentedInstructionListTabPanel"
+              csvtranslate="attributeTitles"
+              csvattribute="attributePaths"/>
+    <tabpanel class="objt.mes.configurator.qualitymgt.panel.DocumentedInstructionOverrulingDisplayTabPanel"/>
+    <tabpanel class="objt.mes.configurator.qualitymgt.panel.DocumentedInstructionPropertiesTabPanel"/>
+    <tabpanel class="objt.mes.configurator.qualitymgt.panel.DocumentedInstructionResultOptionTabPanel"/>
+    <tabpanel class="objt.mes.configurator.qualitymgt.panel.DocumentedInstructionTaskSettingsTabPanel"/>
+    <tabpanel class="objt.mes.configurator.qualitymgt.panel.InputInstructionRegistrationTabPanel"/>
+    <tabpanel class="objt.mes.configurator.qualitymgt.panel.InputInstructionSettingTabPanel"/>
+    <tabpanel class="objt.mes.configurator.qualitymgt.panel.InspectionInstructionSettingsTabPanel"/>
+    <tabpanel class="objt.mes.configurator.qualitymgt.panel.InstructionOptionsTabPanel"/>
+    <tabpanel class="objt.mes.configurator.qualitymgt.panel.InstructionSheetListTabPanel"
+              csvtranslate="attributeTitles"
+              csvattribute="attributePaths"/>
+    <tabpanel class="objt.mes.configurator.qualitymgt.panel.InstructionSheetPropertiesTabPanel"/>
+    <tabpanel class="objt.mes.configurator.qualitymgt.panel.InstructionSheetResultOptionTabPanel"/>
+    <tabpanel class="objt.mes.configurator.qualitymgt.panel.InstructionSheetTaskSettingsTabPanel"/>
+    <tabpanel class="objt.mes.configurator.qualitymgt.panel.InstructionTriggerTabPanel"/>
+    <tabpanel class="objt.mes.configurator.qualitymgt.panel.MeasurementAlarmTracingTabPanel"/>
+    <tabpanel class="objt.mes.configurator.qualitymgt.panel.MeasurementRegistrationTabPanel"/>
+    <tabpanel class="objt.mes.configurator.qualitymgt.panel.MeasurementSamplingTabPanel"/>
+    <tabpanel class="objt.mes.configurator.qualitymgt.panel.MeasurementTabPanel"/>
+    <tabpanel class="objt.mes.configurator.qualitymgt.panel.OperationInstructionRoleListTabPanel"/>
+    <tabpanel class="objt.mes.configurator.qualitymgt.panel.PrintInstructionSettingTabPanel"/>
+    <tabpanel class="objt.mes.configurator.qualitymgt.panel.SetupProcessParameterInitializationTabPanel"/>
+    <tabpanel class="objt.mes.configurator.qualitymgt.panel.SetupProcessParameterSettingsTabPanel"/>
+    <tabpanel class="objt.mes.configurator.qualitymgt.panel.SetupProcessParameterUsageTabPanel"/>
+    <tabpanel class="objt.mes.configurator.qualitymgt.panel.SetupTextParameterInitializationTabPanel"/>
+    <tabpanel class="objt.mes.configurator.qualitymgt.panel.SetupTextParameterInitializationTabPanel"/>
+    <tabpanel class="objt.mes.configurator.qualitymgt.panel.SetupTextParameterSettingsTabPanel"/>
+    <tabpanel class="objt.mes.configurator.qualitymgt.panel.SetupTextParameterSettingsTabPanel"/>
+
+    <!-- objt.mes.operatorclient.productionmgt.panel -->
+    <tabpanel class="objt.mes.operatorclient.productionmgt.panel.MachineOperationTouchListTabPanel"/>
+    <tabpanel class="objt.mes.operatorclient.productionmgt.panel.ProcessParameterListOverviewTabPanel"
+              csvtranslate="attributeTitles"
+              csvattribute="attributePaths"/>
+
+    <!-- objt.mes.operatorclient.qualitymgt.panel -->
+    <tabpanel class="objt.mes.operatorclient.qualitymgt.panel.RuntimeInspectionInstructionSettingsTabPanel"/>
+    <tabpanel class="objt.mes.operatorclient.qualitymgt.panel.RuntimePrintInstructionSettingTabPanel"/>
+
+    <!-- objt.mes.pd.planning.ui -->
+    <tabpanel class="objt.mes.pd.planning.ui.PlanGanttTabPanel"
+              attribute="machineOperationNameInvocationPath,machineOperationLabelInvocationPath,machineOperationAnnotationInvocationPath,unavailabilityPlanningOperationNameInvocationPath,
+                         unavailabilityPlanningOperationLabelInvocationPath,unavailabilityPlanningOperationAnnotationInvocationPath,downtimePlanningOperationNameInvocationPath,
+                         downtimePlanningOperationLabelInvocationPath,downtimePlanningOperationAnnotationInvocationPath"/>
+
+    <!-- objt.mes.pd.planning.ui -->
+    <tabpanel class="objt.mes.pd.planning.ui.ResourceOperationPlanningTabPanel"
+              csvtranslate="attributeTitles"
+              csvattribute="attributePaths"/>
+
+    <!-- objt.mes.pd.scheduling.ui -->
+    <tabpanel class="objt.mes.pd.scheduling.ui.ProductionScheduleListTabPanel"/>
+    <tabpanel class="objt.mes.pd.scheduling.ui.ProductionScheduleNavigationTabPanel"/>
+
+    <!-- objt.mes.supervisor.general.panel -->
+    <tabpanel class="objt.mes.supervisor.general.panel.GenericLineBarChartTabPanel"/>
+
+    <!-- objt.mes.supervisor.productionmgt.panel -->
+    <tabpanel class="objt.mes.supervisor.productionmgt.panel.MachineOperationGanttTabPanel"
+              attribute="processResourceDiagramNameInvocationPath,machineOperationNameInvocationPath,machineOperationLabelInvocationPath,machineOperationAnnotationInvocationPath,
+                         machineOperationPlanningNameInvocationPath,machineOperationPlanningLabelInvocationPath,machineOperationPlanningAnnotationInvocationPath,interruptOperationNameInvocationPath,
+                         interruptOperationAnnotationInvocationPath,ScrapDiagramEntryAnnotationInvocationPath"/>
+    <tabpanel class="objt.mes.supervisor.productionmgt.panel.OEE1DetailsTabPanel"/>
+    <tabpanel class="objt.mes.supervisor.productionmgt.panel.OEE2DetailsTabPanel"/>
+    <tabpanel class="objt.mes.supervisor.productionmgt.panel.OEE3DetailsTabPanel"/>
+    <tabpanel class="objt.mes.supervisor.productionmgt.panel.OEE4DetailsTabPanel"/>
+    <tabpanel class="objt.mes.supervisor.productionmgt.panel.OEEBarChartTabPanel"
+              csvattribute="barNames,barDescriptions"/>
+    <tabpanel class="objt.mes.supervisor.productionmgt.panel.PlanningOperationSkillListTabPanel"/>
+    <tabpanel class="objt.mes.supervisor.qualitymgt.panel.ProcessAggregationBarChartTabPanel"
+              csvattribute="attributePaths,minAttributePaths,maxAttributePaths,tooltipPaths"
+              csvtranslate="attributeTitles"
+              translate="xAxisLabel,yAxisLabel"
+              attribute="keyAttributePath"/>
+    <tabpanel class="objt.mes.supervisor.productionmgt.panel.ProcessParameterTrendHistoryTabPanel"/>
+    <tabpanel class="objt.mes.supervisor.productionmgt.panel.ProcessTrendGroupedHistoryTabPanel"/>
+    <tabpanel class="objt.mes.supervisor.productionmgt.panel.ProcessTrendGroupedRuntimeTabPanel"/>
+    <tabpanel class="objt.mes.supervisor.productionmgt.panel.ProcessTrendHistoryTabPanel"/>
+    <tabpanel class="objt.mes.supervisor.productionmgt.panel.ProcessTrendRuntimeTabPanel"/>
+    <tabpanel class="objt.mes.supervisor.productionmgt.panel.RemoteOperationDependencyGanttTabPanel"/>
+    <tabpanel class="objt.mes.supervisor.productionmgt.panel.ProductionItemQtyQCInstructionTabPanel"/>
+
+    <!-- objt.mes.supervisor.qualitymgt.panel -->
+    <tabpanel class="objt.mes.supervisor.qualitymgt.panel.InstructionSheetTreeTableTabPanel"/>
+    <tabpanel class="objt.mes.supervisor.qualitymgt.panel.ProcessInstructionTrendHistoryTabPanel"/>
+    <tabpanel class="objt.mes.supervisor.qualitymgt.panel.RuntimeInstructionSheetResultOptionTabPanel"/>
+    <tabpanel class="objt.mes.supervisor.qualitymgt.panel.RuntimeInstructionSheetTaskSettingsTabPanel"/>
+    <tabpanel class="objt.mes.supervisor.qualitymgt.panel.RuntimeOperationInstructionResultOptionTabPanel"/>
+    <tabpanel class="objt.mes.supervisor.qualitymgt.panel.RuntimeOperationInstructionTaskSettingsTabPanel"/>
+
+    <!-- objt.mes.configurator.warehousemgt.panel -->
+    <tabpanel class="objt.mes.configurator.warehousemgt.panel.ManufacturingItemQtyPLEHandlingTabPanel"/>
+    <tabpanel class="objt.mes.configurator.warehousemgt.panel.PickingHandlingTabPanel"/>
+    <tabpanel class="objt.mes.configurator.warehousemgt.panel.PutAwayHandlingTabPanel"/>
+
+    <!-- objt.mes.supervisor.time.panel -->
+    <tabpanel class="objt.mes.supervisor.time.panel.CalendarDayPropertiesTabPanel"/>
+
+    <!-- objt.mes.supervisor.warehousemgt.panel -->
+    <tabpanel class="objt.mes.supervisor.warehousemgt.panel.ProductionItemQtyPLEHandlingTabPanel"/>
+  </tabpanels>
+
+  <xmlfiles>
+    <xmlfile name="interruptoperationpareto.xml" >
+      <node name="key" translate="name,description"/>
+      <node name="value" translate="name,description"/>
+    </xmlfile>
+    <xmlfile name="scrapoperationpareto.xml" >
+      <node name="key" translate="name,description"/>
+      <node name="value" translate="name,description"/>
+    </xmlfile>
+    <xmlfile name="reworkoperationpareto.xml" >
+      <node name="key" translate="name,description"/>
+      <node name="value" translate="name,description"/>
+    </xmlfile>
+    <xmlfile name="employeemachinetreeselection.xml">
+      <node name="basenode" translate="title"/>
+    </xmlfile>
+    <xmlfile name="equipmentmoduleinterruptreasontreeselection.xml">
+      <node name="basenode" translate="title"/>
+      <node name="childnode" attribute="attributepath" />
+    </xmlfile>
+    <xmlfile name="interruptreasontreeselection.xml">
+      <node name="basenode" translate="title"/>
+    </xmlfile>
+    <xmlfile name="itemtreeselection.xml">
+      <node name="basenode" translate="title"/>
+    </xmlfile>
+    <xmlfile name="machineinterruptreasontreeselection.xml">
+      <node name="basenode" translate="title"/>
+    </xmlfile>
+    <xmlfile name="machinetreeselection.xml">
+      <node name="basenode" translate="title"/>
+    </xmlfile>
+    <xmlfile name="manualoperation.indirect.treeselection.xml">
+      <node name="basenode" translate="title"/>
+    </xmlfile>
+    <xmlfile name="scrapreasontreeselection.xml">
+      <node name="basenode" translate="title"/>
+    </xmlfile>
+    <xmlfile name="machinescrapreasontreeselection.xml">
+      <node name="basenode" translate="title"/>
+    </xmlfile>
+    <xmlfile name="workcenterscrapreasontreeselection.xml">
+      <node name="basenode" translate="title"/>
+    </xmlfile>
+    <xmlfile name="processsetupparametertreeselection.xml">
+      <node name="basenode" translate="title"/>
+    </xmlfile>
+    <xmlfile name="productionoperationallocationshortagestreetable_config.xml">
+      <node name="attributetitles" csvtranslate="value"/>
+      <node name="attributepaths" csvattribute="value" translate="title"/>
+      <node name="tree" translate="attributetitle"/>
+      <node name="basenode" attribute="title"/>
+      <node name="childnode" attribute="title"/>
+    </xmlfile>
+
+    <!-- scan the text entries of listvalidators defined in the metafile -->
+    <xmlfile name="meta.xml">
+      <node name="listitem" translate="text"/>
+      <node name="attribute" translate="title"/>
+    </xmlfile>
+
+    <xmlfile name="resourceview_config.xml">
+      <node name="resource"        csvtranslate="viewtype,templatetype"/>
+      <node name="attrib"          translate="title"/>
+      <node name="association"     translate="title"/>
+      <node name="associationlist" translate="title"/>
+      <node name="animation"       translate="title"/>
+      <node name="action"          translate="title"/>
+      <node name="widget"          translate="title"/>
+      <node name="resource"        translate="title,tooltip"/>
+    </xmlfile>
+
+    <xmlfile name="lotgenealogy_config.xml" >
+      <node name="node" attribute="labelpath" />
+      <node name="link" attribute="labelpath" />
+    </xmlfile>
+
+    <!-- translate name and description of defined privileges -->
+    <xmlfile name="privileges.xml">
+      <node name="privilege" translate="application,module,domain,category,name,description"/>
+    </xmlfile>
+
+    <!-- UI meta: translate class, attribute and association titles -->
+    <xmlfile name="uimeta.xml">
+      <node name="class" translate="title"/>
+      <node name="attribute" translate="title"/>
+      <node name="attributegroup" translate="title"/>
+      <node name="association" translate="title"/>
+    </xmlfile>
+
+    <xmlfile name="planningcell.plangantttabpanel.xml">
+      <node name="popupaction" translate="title"/>
+      <node name="entry" attribute="labelattributepath"/>
+      <node name="entry" attribute="attributepath"/>
+      <node name="entry" attribute="annotationattributepath"/>
+      <node name="resourcecapacity" attribute="annotationattributepath"/>
+      <node name="totalcapacity" attribute="annotationattributepath"/>
+      <node name="diagramanimator" translate="name"/>
+    </xmlfile>
+
+    <xmlfile name="processunit.plangantttabpanel.xml">
+      <node name="popupaction" translate="title"/>
+      <node name="entry" attribute="labelattributepath"/>
+      <node name="entry" attribute="attributepath"/>
+      <node name="entry" attribute="annotationattributepath"/>
+      <node name="resourcecapacity" attribute="annotationattributepath"/>
+      <node name="totalcapacity" attribute="annotationattributepath"/>
+      <node name="diagramanimator" translate="name"/>
+    </xmlfile>
+
+    <xmlfile name="productionorder.plangantttabpanel.xml">
+      <node name="popupaction" translate="title"/>
+      <node name="entry" attribute="labelattributepath"/>
+      <node name="entry" attribute="attributepath"/>
+      <node name="entry" attribute="annotationattributepath"/>
+      <node name="resourcecapacity" attribute="annotationattributepath"/>
+      <node name="totalcapacity" attribute="annotationattributepath"/>
+      <node name="diagramanimator" translate="name"/>
+    </xmlfile>
+
+    <xmlfile name="productionschedule.plangantttabpanel.edit.xml">
+      <node name="popupaction" translate="title"/>
+      <node name="entry" attribute="labelattributepath"/>
+      <node name="entry" attribute="attributepath"/>
+      <node name="entry" attribute="annotationattributepath"/>
+      <node name="resourcecapacity" attribute="annotationattributepath"/>
+      <node name="totalcapacity" attribute="annotationattributepath"/>
+      <node name="diagramanimator" translate="name"/>
+      <node name="schedulingpreference" csvtranslate="name,description"/>
+    </xmlfile>
+
+    <xmlfile name="productionschedule.plangantttabpanel.readonly.xml">
+      <node name="popupaction" translate="title"/>
+      <node name="entry" attribute="labelattributepath"/>
+      <node name="entry" attribute="attributepath"/>
+      <node name="entry" attribute="annotationattributepath"/>
+      <node name="resourcecapacity" attribute="annotationattributepath"/>
+      <node name="totalcapacity" attribute="annotationattributepath"/>
+      <node name="diagramanimator" translate="name"/>
+    </xmlfile>
+
+    <xmlfile name="plangantttabpanel.edit.xml">
+      <node name="popupaction" translate="title"/>
+      <node name="entry" attribute="labelattributepath"/>
+      <node name="entry" attribute="attributepath"/>
+      <node name="entry" attribute="annotationattributepath"/>
+      <node name="resourcecapacity" attribute="annotationattributepath"/>
+      <node name="totalcapacity" attribute="annotationattributepath"/>
+      <node name="diagramanimator" translate="name"/>
+    </xmlfile>
+
+    <xmlfile name="plangantttabpanel.readonly.xml">
+      <node name="popupaction" translate="title"/>
+      <node name="entry" attribute="labelattributepath"/>
+      <node name="entry" attribute="attributepath"/>
+      <node name="entry" attribute="annotationattributepath"/>
+      <node name="resourcecapacity" attribute="annotationattributepath"/>
+      <node name="totalcapacity" attribute="annotationattributepath"/>
+      <node name="diagramanimator" translate="name"/>
+    </xmlfile>
+
+    <xmlfile name="machineoperationgantttabpanel.xml">
+      <node name="entry" attribute="labelattributepath"/>
+      <node name="entry" attribute="attributepath"/>
+      <node name="entry" attribute="annotationattributepath"/>
+      <node name="planningdiagram" attribute="labelattributepath"/>
+      <node name="planningdiagram" attribute="attributepath"/>
+      <node name="planningdiagram" attribute="annotationattributepath"/>
+      <node name="interruptdiagram" attribute="labelattributepath"/>
+      <node name="interruptdiagram" attribute="attributepath"/>
+      <node name="interruptdiagram" attribute="annotationattributepath"/>
+      <node name="diagramanimator" translate="name"/>
+    </xmlfile>
+
+    <xmlfile name="resourceoperationplannings.xml">
+      <node name="popupaction" translate="menu"/>
+    </xmlfile>
+
+    <xmlfile name="instructionsheettreetable_config.xml">
+      <node name="attributetitles" csvtranslate="value"/>
+      <node name="attributepaths" csvattribute="value" translate="title"/>
+      <node name="tree" translate="attributetitle"/>
+      <node name="basenode" attribute="title"/>
+      <node name="childnode" attribute="title"/>
+    </xmlfile>
+    
+    <xmlfile name="runtimeinstructiontreetable_config.xml">
+      <node name="attributetitles" csvtranslate="value"/>
+      <node name="attributepaths" csvattribute="value" translate="title"/>
+      <node name="tree" translate="attributetitle"/>
+      <node name="basenode" attribute="title"/>
+      <node name="childnode" attribute="title"/>
+    </xmlfile>
+
+    <xmlfile name="recipebomoverviewtreetable_config.xml">
+      <node name="attributetitles" csvtranslate="value"/>
+      <node name="attributepaths" csvattribute="value" translate="title"/>
+      <node name="tree" translate="attributetitle"/>
+      <node name="basenode" attribute="title"/>
+      <node name="childnode" attribute="title"/> 
+    </xmlfile>
+
+    <xmlfile name="serialcomponentwrappertreetable_config.xml">
+      <node name="attributetitles" csvtranslate="value"/>
+      <node name="attributepaths" csvattribute="value" translate="title"/>
+      <node name="tree" translate="attributetitle"/>
+      <node name="basenode" attribute="title"/>
+      <node name="childnode" attribute="title"/>
+    </xmlfile>
+
+    <xmlfile name="outputmanufacturingitemqtiestreetable_config.xml">
+      <node name="attributetitles" csvtranslate="value"/>
+      <node name="attributepaths" csvattribute="value" translate="title"/>
+      <node name="tree" translate="attributetitle"/>
+      <node name="basenode" attribute="title"/>
+      <node name="childnode" attribute="title"/>
+    </xmlfile>
+
+    <xmlfile name="documentedinstructionattributefilterconfig.xml">
+      <node name="filter" translate="title"/>
+    </xmlfile>
+
+    <xmlfile name="employees_audittrailconfig.xml">
+      <node name="owner" translate="title"/>
+      <node name="association" translate="associatedobjecttitle"/>
+      <node name="attribute" translate="title"/>
+      <node name="add" translate="description"/>
+      <node name="remove" translate="description"/>
+      <node name="update" translate="description"/>
+    </xmlfile>
+
+    <xmlfile name="resourcegroups_audittrailconfig.xml">
+      <node name="owner" translate="ownertitle"/>
+    </xmlfile>
+
+    <xmlfile name="workcenters_audittrailconfig.xml">
+      <node name="owner" translate="ownertitle"/>
+      <node name="association" translate="associatedobjecttitle"/>
+      <node name="attribute" translate="title"/>
+    </xmlfile>
+
+    <xmlfile name="processunits_audittrailconfig.xml">
+      <node name="owner" translate="ownertitle"/>
+      <node name="association" translate="associatedobjecttitle"/>
+      <node name="attribute" translate="title"/>
+    </xmlfile>
+
+    <xmlfile name="machines_audittrailconfig.xml">
+      <node name="owner" translate="ownertitle"/>
+      <node name="attribute" translate="title"/>
+    </xmlfile>
+
+    <xmlfile name="manufacturingoperations_audittrailconfig.xml">
+      <node name="owner" translate="ownertitle"/>
+      <node name="attribute" translate="title"/>
+    </xmlfile>
+
+    <xmlfile name="operationsegments_audittrailconfig.xml">
+      <node name="owner" translate="ownertitle"/>
+      <node name="attribute" translate="title"/>
+      <node name="composedattribute" translate="title"/>
+      <node name="add" translate="description"/>
+      <node name="remove" translate="description"/>
+    </xmlfile>
+
+    <xmlfile name="equipmentmodules_audittrailconfig.xml">
+      <node name="owner" translate="ownertitle"/>
+      <node name="association" translate="associatedobjecttitle"/>
+    </xmlfile>
+
+    <xmlfile name="tags_audittrailconfig.xml">
+      <node name="owner" translate="ownertitle"/>
+      <node name="attribute" translate="title"/>
+    </xmlfile>
+
+    <xmlfile name="alarms_audittrailconfig.xml">
+      <node name="owner" translate="ownertitle"/>
+      <node name="attribute" translate="title"/>
+    </xmlfile>
+
+    <xmlfile name="processparameters_audittrailconfig.xml">
+      <node name="owner" translate="ownertitle"/>
+      <node name="association" translate="associatedobjecttitle"/>
+      <node name="attribute" translate="title"/>
+      <node name="composedattribute" translate="title"/>
+    </xmlfile>
+
+    <xmlfile name="textparameters_audittrailconfig.xml:12.xml">
+      <node name="owner" translate="ownertitle"/>
+      <node name="attribute" translate="title"/>
+    </xmlfile>
+
+    <xmlfile name="resourcetrains_audittrailconfig.xml">
+      <node name="owner" translate="ownertitle"/>
+      <node name="association" translate="associatedobjecttitle"/>
+      <node name="attribute" translate="title"/>
+    </xmlfile>
+
+    <xmlfile name="planningcells_audittrailconfig.xml">
+      <node name="owner" translate="ownertitle"/>
+      <node name="association" translate="associatedobjecttitle"/>
+      <node name="attribute" translate="title"/>
+    </xmlfile>
+
+    <xmlfile name="calendars_audittrailconfig.xml">
+      <node name="owner" translate="ownertitle"/>
+      <node name="association" translate="associatedobjecttitle"/>
+      <node name="attribute" translate="title"/>
+    </xmlfile>
+
+    <xmlfile name="days_audittrailconfig.xml">
+      <node name="owner" translate="ownertitle"/>
+      <node name="attribute" translate="title"/>
+    </xmlfile>
+
+    <xmlfile name="interruptreasongroups_audittrailconfig.xml">
+      <node name="owner" translate="ownertitle"/>
+      <node name="attribute" translate="title"/>
+    </xmlfile>
+
+    <xmlfile name="scrapreasongroups_audittrailconfig.xml">
+      <node name="owner" translate="ownertitle"/>
+      <node name="attribute" translate="title"/>
+    </xmlfile>
+
+    <xmlfile name="manualoperations_audittrailconfig.xml">
+      <node name="owner" translate="ownertitle"/>
+      <node name="association" translate="associatedobjecttitle"/>
+    </xmlfile>
+
+    <xmlfile name="manualoperationgroups_audittrailconfig.xml">
+      <node name="owner" translate="ownertitle"/>
+      <node name="association" translate="associatedobjecttitle"/>
+      <node name="attribute" translate="title"/>
+    </xmlfile>
+
+    <xmlfile name="tools_audittrailconfig.xml">
+      <node name="owner" translate="ownertitle"/>
+      <node name="association" translate="associatedobjecttitle"/>
+      <node name="attribute" translate="title"/>
+      <node name="update" translate="description"/>
+    </xmlfile>
+
+    <xmlfile name="oeereporttargets_audittrailconfig.xml">
+      <node name="owner" translate="ownertitle"/>
+      <node name="association" translate="associatedobjecttitle"/>
+      <node name="attribute" translate="title"/>
+    </xmlfile>
+
+    <xmlfile name="recipes_audittrailconfig.xml">
+      <node name="owner" translate="ownertitle"/>
+      <node name="association" translate="associatedobjecttitle"/>
+      <node name="attribute" translate="title"/>
+    </xmlfile>
+
+    <xmlfile name="instructionsheets_audittrailconfig.xml">
+      <node name="owner" translate="ownertitle"/>
+      <node name="attribute" translate="title"/>
+      <node name="association" translate="associatedobjecttitle"/>
+    </xmlfile>
+
+    <xmlfile name="resultoptions_audittrailconfig.xml">
+      <node name="owner" translate="ownertitle"/>
+      <node name="attribute" translate="title"/>
+    </xmlfile>
+
+    <xmlfile name="instructiontriggers_audittrailconfig.xml">
+      <node name="owner" translate="ownertitle"/>
+      <node name="attribute" translate="title"/>
+    </xmlfile>
+
+    <xmlfile name="documentedinstructions_audittrailconfig.xml">
+      <node name="owner" translate="ownertitle"/>
+      <node name="association" translate="associatedobjecttitle"/>
+      <node name="attribute" translate="title"/>
+      <node name="field" attribute="value"/>
+    </xmlfile>
+
+    <xmlfile name="measurementinstructions_audittrailconfig.xml">
+      <node name="owner" translate="ownertitle"/>
+      <node name="attribute" translate="title"/>
+    </xmlfile>
+
+    <xmlfile name="processinstructions_audittrailconfig.xml">
+      <node name="owner" translate="ownertitle"/>
+    </xmlfile>
+
+    <xmlfile name="printinstructions_audittrailconfig.xml">
+      <node name="owner" translate="ownertitle"/>
+      <node name="attribute" translate="title"/>
+    </xmlfile>
+
+    <xmlfile name="inputinstructions_audittrailconfig.xml">
+      <node name="owner" translate="ownertitle"/>
+      <node name="attribute" translate="title"/>
+    </xmlfile>
+
+    <xmlfile name="checkinstructions_audittrailconfig.xml">
+      <node name="owner" translate="ownertitle"/>    
+    </xmlfile>     
+
+    <xmlfile name="tags_multieditconfig.xml">
+      <node name="module" translate="title"/>
+      <node name="group" translate="title"/>
+      <node name="section" translate="title"/>
+      <node name="attribute" translate="title"/>
+      <node name="constraint" translate="message"/>
+    </xmlfile>
+
+    <xmlfile name="processtags_multieditconfig.xml">
+      <node name="module" translate="title"/>
+      <node name="group" translate="title"/>
+      <node name="section" translate="title"/>
+      <node name="attribute" translate="title"/>
+      <node name="constraint" translate="message"/>
+    </xmlfile>
+
+  </xmlfiles>
+</config>

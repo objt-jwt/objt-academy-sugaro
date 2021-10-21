@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<dictionary includeSources="false" useRelativePaths="true">
+  <targets>
+    <target html="F" java="F" jrxml="T" path="..\..\resources" recursive="T" srt="T" xml="T"/>
+    <target html="F" java="T" jrxml="F" path="..\..\java" recursive="T" srt="F" xml="F"/>
+  </targets>
+  <languages>
+    <language id="nl" native="Dutch"/>
+    <language id="en" native="English"/>
+    <language id="fr" native="French"/>
+  </languages>
+  <includes>
+    <include path="dce_dic.xml"/>
+    <include path="objt.common_dic.xml"/>
+    <include path="objt.wms_dic.xml"/>
+    <include path="objt.mes_dic.xml"/>
+    <include path="objt.wfm_dic.xml"/>
+    <include path="objt.crp_dic.xml"/>
+  </includes>
+  <entries>
+    <entry nativestring="Meerbos 2&#13;&#10;B-9260 WICHELEN&#13;&#10;+32 (0)52 43 20 80&#13;&#10;www.objt.com"/>
+    <entry nativestring="Objective Supervisor (%INSTALLATION%)"/>
+    <entry nativestring="accessmgt.title">
+      <translation language="nl" translatedstring="Toegang Beheer"/>
+      <translation language="en" translatedstring="Access Management"/>
+      <translation language="fr" translatedstring="Gestion des Accès"/>
+    </entry>
+    <entry nativestring="attendancemgt.title">
+      <translation language="nl" translatedstring="Tijdsregistratie Beheer"/>
+      <translation language="en" translatedstring="Attendance Management"/>
+      <translation language="fr" translatedstring="Gestion des Présences"/>
+    </entry>
+    <entry nativestring="capacitymgt.title">
+      <translation language="nl" translatedstring="Capaciteit Beheer"/>
+      <translation language="en" translatedstring="Capacity Management"/>
+      <translation language="fr" translatedstring="Gestion des Capacités"/>
+    </entry>
+    <entry nativestring="downloads">
+      <translation language="nl" translatedstring="Importeren"/>
+      <translation language="en" translatedstring="Imports"/>
+      <translation language="fr" translatedstring="Importations"/>
+    </entry>
+    <entry nativestring="inboundmgt.title">
+      <translation language="nl" translatedstring="Ontvangst Beheer"/>
+      <translation language="en" translatedstring="Inbound Management"/>
+      <translation language="fr" translatedstring="Gestion des Réceptions"/>
+    </entry>
+    <entry nativestring="inspectionmgt.title">
+      <translation language="nl" translatedstring="Inspectie Beheer"/>
+      <translation language="en" translatedstring="Inspection Management"/>
+      <translation language="fr" translatedstring="Gestion des Inspections"/>
+    </entry>
+    <entry nativestring="label.menu">
+      <translation language="nl" translatedstring="Labels"/>
+      <translation language="en" translatedstring="Labels"/>
+      <translation language="fr" translatedstring="Etiquettes"/>
+    </entry>
+    <entry nativestring="outboundmgt.title">
+      <translation language="nl" translatedstring="Order &amp; Verzending Beheer"/>
+      <translation language="en" translatedstring="Outbound Management"/>
+      <translation language="fr" translatedstring="Gestion des Commandes &amp; Expéditions"/>
+    </entry>
+    <entry nativestring="productionmgt.title">
+      <translation language="nl" translatedstring="Productie Beheer"/>
+      <translation language="en" translatedstring="Production Management"/>
+      <translation language="fr" translatedstring="Gestion de Production"/>
+    </entry>
+    <entry nativestring="systemmgt.title">
+      <translation language="nl" translatedstring="Systeem Beheer"/>
+      <translation language="en" translatedstring="System Management"/>
+      <translation language="fr" translatedstring="Gestion du Système"/>
+    </entry>
+    <entry nativestring="valkitpackmgt.title">
+      <translation language="nl" translatedstring="VAL, Kit &amp; Herverpakking Beheer"/>
+      <translation language="en" translatedstring="VAL, Kit &amp; Repack Management"/>
+      <translation language="fr" translatedstring="Gestion de VAL, Kit &amp; Remballage"/>
+    </entry>
+    <entry nativestring="warehousemgt.title">
+      <translation language="nl" translatedstring="Voorraad Beheer"/>
+      <translation language="en" translatedstring="Warehouse Management"/>
+      <translation language="fr" translatedstring="Gestion du Stock"/>
+    </entry>
+  </entries>
+  <xmlparserconfig path="objt.supervisor-core_config.xml"/>
+</dictionary>

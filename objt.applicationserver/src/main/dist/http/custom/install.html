@@ -1,0 +1,108 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html;charset=ISO-8859-1">
+<title>Objective Server Pages</title>
+<link rel="stylesheet" href="/scripts/ServerPages.CSS">
+<link rel="stylesheet" type="text/css" href="/scripts/menu.css" />
+<script type="text/javascript" src="/scripts/menu.js"></script>
+</head>
+
+<script src="/scripts/prototype.js" type="text/javascript"></script>
+<script language="javascript" type="text/javascript">
+function setDynamicText(destination)
+{
+  var myAjax = new Ajax.Updater(destination, '/DynamicText',
+                                 {method: 'get', parameters: 'cmd=' + destination});
+}
+</script>
+
+<body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" onLoad="setDynamicText('logon_logoff')">
+<table class="table_header" width="100%" height="36" border="0" cellpadding="0" cellspacing="0" >
+  <tr>
+    <td width="210" bgcolor="#FFFFFF" ><img src="/webimages/objective.small.png" border="0"></td>
+    <td><font color="#000000" size="6" face="Arial, Helvetica, sans-serif"><div id="installation" style="float: left;"></div><spacer>&nbsp;Server Pages</font></td>
+  </tr>
+</table>
+<table class="table_header" width="100%" height="24" border="0" cellpadding="0" cellspacing="0" >
+  <tr bgcolor="#f50035">
+    <td height="24" valign="bottom">
+      <!-- menu -->
+      <div class="horizontalcssmenu">
+      <ul id="cssmenu1">
+        <li id="n1"><a href="/index.html">Home</a></li>
+        <li id="n2"><a href="/custom/doc.html">Documentation</a></li>
+        <li id="n3"><a href="/custom/install.html">Installation</a></li>
+        <li id="n4"><a href="/admin/admin.html"><img src="/webimages/menu_arrow.gif" width="11" height="11" border="0">Administration</a> 
+        <ul>
+				  <li><a href="#"><strong>Diagnostics</strong></a></li>
+					<li><a href="/admin/diagnostics.html">&nbsp;&nbsp;Overview</a></li>
+					<li><a href="/servlet/EventLog">&nbsp;&nbsp;EventLog Viewer</a></li>
+					<li><a href="/servlet/EventLogProfiler">&nbsp;&nbsp;EventLog Profiler</a></li>
+					<li><a href="/servlet/EventLogDownload">&nbsp;&nbsp;EventLog Download</a></li>
+					<li><a href="/servlet/ServerDiagnostics?cmd=status">&nbsp;&nbsp;Status</a></li>
+					<li><a href="/servlet/ServerDiagnostics?cmd=memory">&nbsp;&nbsp;Memory Usage</a></li>
+					<li><a href="/servlet/ServerDiagnostics?cmd=factory">&nbsp;&nbsp;Factory Cache</a></li>
+					<li><a href="/servlet/ServerDiagnostics?cmd=boindex">&nbsp;&nbsp;Factory Index</a></li>
+					<li><a href="/servlet/ConnectionPoolInfo">&nbsp;&nbsp;Connection Pool</a></li>
+					<li><a href="/servlet/ServerDiagnostics?cmd=alarms">&nbsp;&nbsp;Schedules</a></li>
+					<li><a href="/servlet/ServerDiagnostics?cmd=properties">&nbsp;&nbsp;Properties</a></li> 
+					<li><a href="/servlet/ServerDiagnostics?cmd=threads">&nbsp;&nbsp;Threads</a></li>
+					<li><a href="/servlet/ServerDiagnostics?cmd=license">&nbsp;&nbsp;License Info</a></li>
+					<li><a href="/servlet/ServerDiagnostics?cmd=build">&nbsp;&nbsp;Version Info</a></li>
+					<li><a href="/servlet/ServerConnectionInfo">&nbsp;&nbsp;Client List</a></li>
+					<li><a href="#"><strong>Modules</strong></a></li>
+					<li><a href="/servlet/ServerModuleInfo">&nbsp;&nbsp;Server Modules</a></li>
+					<li><a href="#"><strong>Commands</strong></a></li>
+					<li><a href="/admin/commands.html">&nbsp;&nbsp;Overview</a></li>
+					<li><a href="#"><strong>Developer</strong></a></li>
+					<li><a href="/servlet/WebQuery">&nbsp;&nbsp;Web Query</a></li>
+					<li><a href="/servlet/ObjectInfo">&nbsp;&nbsp;Object Info</a></li>
+					<li><a href="/servlet/ServerPlugin">&nbsp;&nbsp;Run Server Plugin</a></li>
+        </ul>
+        <li id="n5"><a href="/Logout" id="logon_logoff">test</a></li>
+      </ul>
+      </div>
+    </td>
+  </tr>
+</table>
+
+<script language="javascript" type="text/javascript">
+<!--
+	setDynamicText('installation');	
+//-->
+</script>
+
+<!-- InstanceBeginEditable name="contents" -->
+			<h1>Installation</h1>
+      <hr>
+      From this page, you can download and install Objective software onto a client computer.
+			<br>
+			<hr>
+			Prerequisites:<br>
+			To be able to install Objective client software on a new computer using the links below, you will need to install the <a href="/custom/ObjtStart-win-i586-jre8.exe">Objective Start</a> Program Launcher first.
+      <hr>
+	<img src="/webimages/objective.small.png">
+      <p> <a name="#OBJECTIVE"></a>
+	<img src="/webimages/objective.configurator.32.png" align="center"> <a name="#CONFIGURATOR" href="/bin/objt.configurator.objt">Install OBJT Configurator</a><br>
+	<img src="/webimages/objective.configurator.32.png" align="center"> <a name="#CONFIGURATOR" href="/bin/objt.configurator_sso.objt">Install OBJT Configurator (Single Sign-On)</a><br>
+	<br>
+	<img src="/webimages/objective.supervisor.32.png" align="center"> <a name="#SUPERVISOR" href="/bin/objt.supervisor.objt">Install OBJT Supervisor</a><br>
+	<img src="/webimages/objective.supervisor.32.png" align="center"> <a name="#SUPERVISOR" href="/bin/objt.supervisor_sso.objt">Install OBJT Supervisor (Single Sign-On)</a><br>
+    <br>
+	<img src="/webimages/objective.supervisor.32.png" align="center"> <a name="#SUPERVISOR" href="/bin/objt.supervisor_readonly.objt">Install Read Only OBJT Supervisor</a><br>
+	<img src="/webimages/objective.supervisor.32.png" align="center"> <a name="#SUPERVISOR" href="/bin/objt.supervisor_sso_readonly.objt">Install Read Only OBJT Supervisor (Single Sign-On)</a><br>
+    <br>
+    <img src="/webimages/objective.operator.32.png" align="center"> <a name="#OPERATORCLIENT" href="/bin/objt.wms.operatorclient.objt">Install WMS OperatorClient</a><br>
+    <img src="/webimages/objective.operator.32.png" align="center"> <a name="#OPERATORCLIENT" href="/bin/objt.wms.operatorclient_exclusive.objt">Install WMS OperatorClient (Exclusive)</a><br>
+	<br>
+	<img src="/webimages/objective.operator.32.png" align="center"> <a name="#OPERATORCLIENT" href="/bin/objt.mes.operatorclient.objt">Install MES OperatorClient</a><br>
+	<img src="/webimages/objective.operator.32.png" align="center"> <a name="#OPERATORCLIENT" href="/bin/objt.mes.operatorclient_exclusive.objt">Install MES OperatorClient (Exclusive)</a><br>
+	<br>
+	<img src="/webimages/objective.operator.32.png" align="center"> <a name="#OPERATORCLIENT" href="/bin/objt.mes.operatorclient.no_buttonbar.objt">Install MES OperatorClient (No Buttonbar)</a><br>
+	<img src="/webimages/objective.operator.32.png" align="center"> <a name="#OPERATORCLIENT" href="/bin/objt.mes.operatorclient_no_buttonbar_exclusive.objt">Install MES OperatorClient (No Buttonbar) (Exclusive)</a><br>
+	<br>
+	<img src="/webimages/objective.icon.32.png" align="center"> <a name="#TAGEXPLORER" href="/bin/objt.tagexplorer.objt">Install Tag Explorer</a><br>
+      </p>
+<!-- InstanceEndEditable -->
+</body>
+<!-- InstanceEnd --></html>

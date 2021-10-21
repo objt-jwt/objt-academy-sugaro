@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<dictionary includeSources="false" useRelativePaths="true">
+  <targets>
+    <target html="F" java="F" jrxml="T" path="../../resources" recursive="T" srt="F" xml="T"/>
+    <target html="F" java="T" jrxml="F" path="../../java" recursive="T" srt="F" xml="F"/>
+  </targets>
+  <languages>
+    <language id="nl" native="Dutch"/>
+    <language id="en" native="English"/>
+    <language id="fr" native="French"/>
+  </languages>
+  <entries></entries>
+  <xmlparserconfig path="objt.tagexplorer_config.xml"/>
+</dictionary>

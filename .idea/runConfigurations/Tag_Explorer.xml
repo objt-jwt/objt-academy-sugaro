@@ -1,0 +1,26 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Tag Explorer" type="Application" factoryName="Application">
+    <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+    <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+    <option name="MAIN_CLASS_NAME" value="objt.tagexplorer.TagExplorer" />
+    <module name="objt.tagexplorer_main" />
+    <option name="PROGRAM_PARAMETERS" value="tagexplorer.properties objt/tagexplorer/tagexplorer.xml" />
+    <option name="VM_PARAMETERS" value="-Xms64M -Xmx256M" />
+    <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/objt.tagexplorer" />
+    <RunnerSettings RunnerId="Debug">
+      <option name="DEBUG_PORT" value="3517" />
+      <option name="TRANSPORT" value="0" />
+      <option name="LOCAL" value="true" />
+    </RunnerSettings>
+    <RunnerSettings RunnerId="JProfiler">
+      <option name="WINDOW" value="false" />
+      <option name="JVMPI" value="false" />
+      <option name="INTERPRETED" value="false" />
+    </RunnerSettings>
+    <ConfigurationWrapper RunnerId="Debug" />
+    <method v="2">
+      <option name="Gradle.BeforeRunTask" enabled="true" tasks="processResources" externalProjectPath="$PROJECT_DIR$" vmOptions="" scriptParameters="" />
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

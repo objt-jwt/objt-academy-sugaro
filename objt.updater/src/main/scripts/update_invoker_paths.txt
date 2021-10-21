@@ -1,0 +1,12 @@
+#utility calls which were deprecated since they no longer have any added value over the direct invocation of the association
+STATIC(objt.mes.bo.productionmgt.OperationSegments;getMachineOperation;BO)=machineOperation
+STATIC(objt.mes.bo.productionmgt.OperationSegments;getManOperation;BO)=manOperation
+STATIC(objt.mes.bo.productionmgt.OperationSegments;getManufacturingOperation;BO)=manufacturingOperation
+STATIC(objt.mes.bo.productionmgt.OperationSegments;getProductionOperation;BO)=productionOperation
+STATIC(objt.mes.bo.labourmgt.ManOperations;getMachineOperation;BO)=machineOperation
+STATIC(objt.mes.bo.productionmgt.ScrapOperations;getMachineOperation;BO)=machineOperation
+STATIC(objt.mes.bo.productionmgt.ScrapOperations;getManOperation;BO)=manOperation
+STATIC(objt.mes.bo.productionmgt.ReworkOperations;getScrapOperation;BO)=scrapOperation
+#renaming on ProcessResourceAggregation
+processResourceState=processUnitState
+processResourceStateDuration=processUnitStateDuration

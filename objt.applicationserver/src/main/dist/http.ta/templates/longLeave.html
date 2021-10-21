@@ -1,0 +1,168 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title"><!--TRANSLATE(longleave.web)--></h3>
+  </div>
+  <div class="panel-body">
+
+    <div class="form-group">
+      <label for="datepicker"><!--TRANSLATE(time.from)--></label>
+      <div class='input-group date' id='dtsFrom'>
+        <input type="text" class='form-control' id='dtsFromTxt'">
+        <div class="input-group-addon">
+          <span class="glyphicon glyphicon-calendar"></span>
+				</div>
+			</div>
+		</div>
+    <div class="form-group">
+      <label for="datepicker"><!--TRANSLATE(time.to)--></label>
+      <div class='input-group date' id='dtsTo'>
+        <input type="text" class='form-control' id='dtsToTxt'">
+        <div class="input-group-addon">
+          <span class="glyphicon glyphicon-calendar"></span>
+				</div>
+			</div>
+		</div>
+		
+		<div class="form-group">
+			<label for="code"><!--TRANSLATE(Code)--></label>
+			<select id="code" class='form-control' onchange="showPeriodAttendanceCounter(this.value);"><!--PreparedHTML.PlaceHolder:AttendanceCodes--></select>
+			<div id="attendancecounter" class="table-responsive"></div>
+		</div>
+		<div class="form-group">
+			<label for="description"><!--TRANSLATE(Comment)--></label>
+			<div class="input-group">
+  		  <input type="text" class='form-control' id="description"/>
+        <div class="input-group-addon">
+  			  <span class="glyphicon glyphicon-th" id="description_kb"></span> 
+				</div>
+		  </div>
+	  </div>
+		
+    <button id="btn" class="btn btn-default pull-right" onclick='requestLongLeave(true,true);'><!--TRANSLATE(Request)--></button>
+	</div>
+</div>
+
+<script language="javascript" type="text/javascript">
+
+// Describe used functions
+
+function enableRequestButton(pEnabled)
+{
+  $("#btn").attr("disabled", !pEnabled);
+}
+
+function requestLongLeave(pValidate, pValidateCounters)
+{
+  var dateFrom = parseDate(document.getElementById('dtsFromTxt').value);
+  var dateTo = parseDate(document.getElementById('dtsToTxt').value);
+
+  if(+dateFrom > +dateTo)
+  {
+    alert("<!--TRANSLATE(Start date has to be before end date)-->");
+		return;
+	}
+
+  enableRequestButton(false);
+	
+  $.ajax
+  ({
+      url: ajaxurl,
+      data: { 'action':'requestLongLeave',
+              'dtsFrom': document.getElementById('dtsFromTxt').value,
+              'dtsTo': document.getElementById('dtsToTxt').value,
+              'code': document.getElementById('code').value,
+              'description': document.getElementById('description').value,
+			  'validate': pValidate,
+			  'validateCounters': pValidateCounters},
+    type: 'post'
+  });
+}
+
+function showAlert(pMessage)
+{
+  alert(pMessage);
+  enableRequestButton(true);
+}
+
+function showConfirmation(pMessage, pValidate, pValidateCounters)
+{
+  if (confirm(pMessage))
+  {
+    requestLongLeave(pValidate,pValidateCounters);
+  }
+  else
+  {
+    enableRequestButton(true);
+  }
+}
+
+function showPeriodAttendanceCounter(pCode)
+{
+  $.ajax
+  ({
+      url: ajaxurl,
+      data: { 'action':'showPeriodAttendanceCounter',
+              'code': pCode},
+      type: 'post',
+			success: function(data)
+        {
+					$("#attendancecounter").html(data);
+        }
+  });
+}
+
+// Configure 'from' datepicker
+$("#dtsFrom").datetimepicker({
+  defaultDate: new Date(),
+	format: 'DD/MM/YYYY',
+	focusOnShow: false,
+	locale: language
+});
+
+// Configure 'to' datepicker
+$("#dtsTo").datetimepicker({
+  defaultDate: new Date(),
+	format: 'DD/MM/YYYY',
+	focusOnShow: false,
+	locale: language
+});
+
+$("#dtsFrom").on("dp.change",function (e) {
+	var dateFrom = e.date;
+	var dateTo = $("#dtsTo").data("DateTimePicker").date();
+
+	if (dateFrom.isAfter(dateTo))
+  {
+	  $('#dtsTo').data("DateTimePicker").date(dateFrom);
+	  $('#dtsTo').data("DateTimePicker").viewDate(dateFrom);
+	}
+});
+
+$("#dtsTo").on("dp.change",function (e) {
+	var dateFrom = $("#dtsFrom").data("DateTimePicker").date();
+	var dateTo = e.date;
+
+	if (dateFrom.isAfter(dateTo))
+  {
+	  $('#dtsFrom').data("DateTimePicker").date(dateTo);
+	  $('#dtsFrom').data("DateTimePicker").viewDate(dateTo);
+	}
+});
+
+// Configure keyboard
+$('#description').keyboard({
+  layout: keyboardLayout,
+  autoAccept: true,
+  openOn: '',
+});
+
+$('#description_kb').click(function() {
+  $('#description').getkeyboard().reveal();
+});
+
+// Select current date as from/to date
+var myDate = new Date();
+$("#dtsFrom").datepicker("setDate", myDate);
+$("#dtsTo").datepicker("setDate", myDate);
+
+</script>

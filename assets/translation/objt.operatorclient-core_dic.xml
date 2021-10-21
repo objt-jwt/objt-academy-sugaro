@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<dictionary includeSources="false" useRelativePaths="true">
+  <targets>
+    <target html="F" java="F" jrxml="T" path="..\..\resources" recursive="T" srt="T" xml="T"/>
+    <target html="F" java="T" jrxml="F" path="..\..\java" recursive="T" srt="F" xml="F"/>
+  </targets>
+  <languages>
+    <language id="nl" native="Dutch"/>
+    <language id="en" native="English"/>
+    <language id="fr" native="French"/>
+  </languages>
+  <includes>
+    <include path="dce_dic.xml"/>
+    <include path="objt.common_dic.xml"/>
+    <include path="objt.wms_dic.xml"/>
+    <include path="objt.mes_dic.xml"/>
+    <include path="objt.wfm_dic.xml"/>
+    <include path="objt.crp_dic.xml"/>
+  </includes>
+  <entries>
+    <entry nativestring="Active Alarms">
+      <translation language="nl" translatedstring="Actieve Alarmen"/>
+      <translation language="en" translatedstring="Active Alarms"/>
+      <translation language="fr" translatedstring="Alarmes Actives"/>
+    </entry>
+    <entry nativestring="Active Employees">
+      <translation language="nl" translatedstring="Actieve Werknemers"/>
+      <translation language="en" translatedstring="Active Employees"/>
+      <translation language="fr" translatedstring="Employés Actifs"/>
+    </entry>
+    <entry nativestring="Active Indirect Labour">
+      <translation language="nl" translatedstring="Actieve Indirecte Uren"/>
+      <translation language="en" translatedstring="Active Indirect Labor"/>
+      <translation language="fr" translatedstring="Travail Indirect Actif"/>
+    </entry>
+    <entry nativestring="Active Interrupts">
+      <translation language="nl" translatedstring="Actieve Verstoringen"/>
+      <translation language="en" translatedstring="Active Interrupts"/>
+      <translation language="fr" translatedstring="Interruptions Actives"/>
+    </entry>
+    <entry nativestring="Alarms &amp; Interrupts">
+      <translation language="nl" translatedstring="Alarmen &amp; Verstoringen"/>
+      <translation language="en" translatedstring="Alarms &amp; Interrupts"/>
+      <translation language="fr" translatedstring="Alarmes &amp; Interruptions"/>
+    </entry>
+    <entry nativestring="Alarms History">
+      <translation language="nl" translatedstring="Alarmen Historiek"/>
+      <translation language="en" translatedstring="Alarm History"/>
+      <translation language="fr" translatedstring="Historique des Alarmes"/>
+    </entry>
+    <entry nativestring="Attendance History">
+      <translation language="nl" translatedstring="Aanwezigheid Historiek"/>
+      <translation language="en" translatedstring="Attendance History"/>
+      <translation language="fr" translatedstring="Historique des Présences"/>
+    </entry>
+    <entry nativestring="BOM">
+      <translation language="nl" translatedstring="BOM"/>
+      <translation language="en" translatedstring="BOM"/>
+      <translation language="fr" translatedstring="Composants"/>
+    </entry>
+    <entry nativestring="Current Attendance">
+      <translation language="nl" translatedstring="Huidige Aanwezigheid"/>
+      <translation language="en" translatedstring="Current Attendance"/>
+      <translation language="fr" translatedstring="Présence Courante"/>
+    </entry>
+    <entry nativestring="Indirect Labour History">
+      <translation language="nl" translatedstring="Indirecte Uren Historiek"/>
+      <translation language="en" translatedstring="Indirect Labor History"/>
+      <translation language="fr" translatedstring="Historique Travail Indirect"/>
+    </entry>
+    <entry nativestring="Indirect Task Overview">
+      <translation language="nl" translatedstring="Indirecte Taken"/>
+      <translation language="en" translatedstring="Indirect Tasks"/>
+      <translation language="fr" translatedstring="Tâches Indirectes"/>
+    </entry>
+    <entry nativestring="Inspection Overview">
+      <translation language="nl" translatedstring="Inspectie Overzicht"/>
+      <translation language="en" translatedstring="Inspection Overview"/>
+      <translation language="fr" translatedstring="Résumé d'Inspection"/>
+    </entry>
+    <entry nativestring="Instruction Sheet History">
+      <translation language="nl" translatedstring="Instructielijsten Historiek"/>
+      <translation language="en" translatedstring="Instruction Sheet History"/>
+      <translation language="fr" translatedstring="Historique Fiches d'Instructions"/>
+    </entry>
+    <entry nativestring="Interrupts History">
+      <translation language="nl" translatedstring="Verstoringen Historiek"/>
+      <translation language="en" translatedstring="Interrupts History"/>
+      <translation language="fr" translatedstring="Historique Interruptions"/>
+    </entry>
+    <entry nativestring="Job Details">
+      <translation language="nl" translatedstring="Job Details"/>
+      <translation language="en" translatedstring="Job Details"/>
+      <translation language="fr" translatedstring="Détails du Job"/>
+    </entry>
+    <entry nativestring="Job History">
+      <translation language="nl" translatedstring="Job Historiek"/>
+      <translation language="en" translatedstring="Job History"/>
+      <translation language="fr" translatedstring="Historique des Jobs"/>
+    </entry>
+    <entry nativestring="Job Overview">
+      <translation language="nl" translatedstring="Job Overzicht"/>
+      <translation language="en" translatedstring="Job Overview"/>
+      <translation language="fr" translatedstring="Résumé des Jobs"/>
+    </entry>
+    <entry nativestring="Kit">
+      <translation language="nl" translatedstring="Kit"/>
+      <translation language="en" translatedstring="Kit"/>
+      <translation language="fr" translatedstring="Kit"/>
+    </entry>
+    <entry nativestring="Log">
+      <translation language="nl" translatedstring="Logboek"/>
+      <translation language="en" translatedstring="Log"/>
+      <translation language="fr" translatedstring="Registre"/>
+    </entry>
+    <entry nativestring="Log &amp; Messages">
+      <translation language="nl" translatedstring="Logboek &amp; Berichten"/>
+      <translation language="en" translatedstring="Log &amp; Messages"/>
+      <translation language="fr" translatedstring="Registre &amp; Messages"/>
+    </entry>
+    <entry nativestring="Main Menu">
+      <translation language="nl" translatedstring="Hoofdmenu"/>
+      <translation language="en" translatedstring="Main Menu"/>
+      <translation language="fr" translatedstring="Menu"/>
+    </entry>
+    <entry nativestring="Material">
+      <translation language="nl" translatedstring="Materialen"/>
+      <translation language="en" translatedstring="Material"/>
+      <translation language="fr" translatedstring="Matériels"/>
+    </entry>
+    <entry nativestring="Params &amp; Instructions">
+      <translation language="nl" translatedstring="Params &amp; Instructies"/>
+      <translation language="en" translatedstring="Params &amp; Instructions"/>
+      <translation language="fr" translatedstring="Params &amp; Instructions"/>
+    </entry>
+    <entry nativestring="Repack Order Overview">
+      <translation language="nl" translatedstring="Herverpakking Overzicht"/>
+      <translation language="en" translatedstring="Repack Overview"/>
+      <translation language="fr" translatedstring="Résumé de Remballage"/>
+    </entry>
+    <entry nativestring="Resource View">
+      <translation language="nl" translatedstring="Resource View"/>
+      <translation language="en" translatedstring="Resource View"/>
+      <translation language="fr" translatedstring="Vue de Ressource"/>
+    </entry>
+    <entry nativestring="Trending">
+      <translation language="nl" translatedstring="Trending"/>
+      <translation language="en" translatedstring="Trending"/>
+      <translation language="fr" translatedstring="Tendances"/>
+    </entry>
+    <entry nativestring="WIP">
+      <translation language="nl" translatedstring="WIP"/>
+      <translation language="en" translatedstring="WIP"/>
+      <translation language="fr" translatedstring="WIP"/>
+    </entry>
+    <entry nativestring="WIP History">
+      <translation language="nl" translatedstring="WIP Historiek"/>
+      <translation language="en" translatedstring="WIP History"/>
+      <translation language="fr" translatedstring="Historique WIP"/>
+    </entry>
+    <entry nativestring="WIP IN">
+      <translation language="nl" translatedstring="WIP IN"/>
+      <translation language="en" translatedstring="WIP IN"/>
+      <translation language="fr" translatedstring="WIP IN"/>
+    </entry>
+    <entry nativestring="WIP IN History">
+      <translation language="nl" translatedstring="WIP IN Historiek"/>
+      <translation language="en" translatedstring="WIP IN History"/>
+      <translation language="fr" translatedstring="Historique WIP IN"/>
+    </entry>
+    <entry nativestring="WIP OUT">
+      <translation language="nl" translatedstring="WIP OUT"/>
+      <translation language="en" translatedstring="WIP OUT"/>
+      <translation language="fr" translatedstring="WIP OUT"/>
+    </entry>
+    <entry nativestring="WIP OUT History">
+      <translation language="nl" translatedstring="WIP OUT Historiek"/>
+      <translation language="en" translatedstring="WIP OUT History"/>
+      <translation language="fr" translatedstring="Historique WIP OUT"/>
+    </entry>
+  </entries>
+  <xmlparserconfig path="objt.operatorclient-core_config.xml"/>
+</dictionary>

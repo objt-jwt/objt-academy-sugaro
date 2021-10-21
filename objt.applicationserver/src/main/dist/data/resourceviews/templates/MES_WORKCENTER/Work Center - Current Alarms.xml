@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<template type="MES_WORKCENTER" description="" resourceclass="dce.pd.sfc.bo.resourcemgt.WorkCenter">
+  <resourceviewelement actionclick="1" actionclickparam="" actiondblclick="2" actiondblclickparam="" attributepath="" attributetitle="" background="-1908255" border="NONE" category="" font="Segoe UI-PLAIN-12" foreground="-16777216" height="775" iconname="" iconscaled="false" name="PACK3" opaque="true" resourceclassname="dce.pd.sfc.bo.resourcemgt.WorkCenter" resourceoid="328237" selectedborder="NONE" selectionid="false" width="1255" x="0" y="0" z="0">
+    <panelviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" background="-4144960" border="LOWERED_ETCH" height="770" iconname="" iconscaled="false" opaque="false" width="1250" x="5" y="5" z="0">
+      <widgetviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" alignment="0" attributepath="" background="-1973791" border="NONE" category="" font="Segoe UI-PLAIN-12" foreground="-16777216" height="45" iconname="" iconscaled="false" name="" objectpath=" " objectpathparam="" opaque="true" widgetclass="dce.pd.frame.resourceview.ui.widget.ExplorerActionWidget" width="45" x="52" y="23" z="0">
+        <param name="TEXT_VISIBLE" value="false"/>
+        <param name="TEXT_ALIGNMENT" value="4"/>
+        <param name="actionIdKey" value="MES"/>
+        <param name="PANEL_ID" value="Active_Alarms"/>
+        <param name="ID" value="objt.mes.resourceview.workcenter.alarm.edit_comments"/>
+        <param name="ACTION_NAME" value="objt.mes.resourceview.workcenter.alarm.edit_comments"/>
+        <param name="UIMETA_INVOKER_ACTION" value=" "/>
+      </widgetviewelement>
+      <widgetviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" alignment="0" attributepath="" background="-1973791" border="NONE" category="" font="Segoe UI-PLAIN-12" foreground="-16777216" height="45" iconname="" iconscaled="false" name="" objectpath=" " objectpathparam="" opaque="true" widgetclass="dce.pd.frame.resourceview.ui.widget.ExplorerActionWidget" width="45" x="5" y="23" z="1">
+        <param name="TEXT_VISIBLE" value="false"/>
+        <param name="TEXT_ALIGNMENT" value="4"/>
+        <param name="actionIdKey" value="MES"/>
+        <param name="PANEL_ID" value="Active_Alarms"/>
+        <param name="ID" value="objt.mes.resourceview.workcenter.alarm.confirm_comment"/>
+        <param name="ACTION_NAME" value="objt.mes.resourceview.workcenter.alarm.confirm_comment"/>
+        <param name="UIMETA_INVOKER_ACTION" value=" "/>
+      </widgetviewelement>
+      <textviewelement alignment="2" background="-8355712" border="NONE" font="Segoe UI-BOLD-12" foreground="-1" height="17" opaque="true" text="Current Alarms" width="1245" x="0" y="1" z="2"/>
+      <widgetviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" alignment="0" attributepath="" background="-1973791" border="NONE" category="" font="Segoe UI-PLAIN-12" foreground="-16777216" height="690" iconname="" iconscaled="false" name="" objectpath=" " objectpathparam="" opaque="false" widgetclass="dce.pd.frame.resourceview.ui.widget.TableTabPanelWidget" width="1230" x="5" y="70" z="3">
+        <param name="ID" value="objt.mes.resourceview.alarms.active.list"/>
+        <param name="UIMETA_INVOKER_ACTION0" value=" "/>
+        <param name="SHOW_CONFIRMATION0" value="true"/>
+        <param name="NAVIGATION_KEYS" value="HOME,UP,DOWN,END"/>
+        <param name="PANEL_ID" value="Active_Alarms"/>
+        <param name="actionIdKey" value="MES"/>
+        <param name="tabPanelIdKey" value="MES"/>
+      </widgetviewelement>
+    </panelviewelement>
+  </resourceviewelement>
+</template>

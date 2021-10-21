@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<application id="objt.core">
+  <imports>
+    <import file="./../../../../assets/model/objt.vertical.case"/>
+  </imports>
+  <database/>
+  <model oidmajor="91000"/>
+</application>

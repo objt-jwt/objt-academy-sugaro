@@ -1,0 +1,9 @@
+<aspectj>
+  <aspects>
+    <aspect name="objt.transaction.aspects.TransactionAspect" />
+    <weaver options="-nowarn"> <!-- options="-verbose -showWeaveInfo" -->
+      
+      <include within="objt.custom..*"/>
+    </weaver>
+  </aspects>
+</aspectj>

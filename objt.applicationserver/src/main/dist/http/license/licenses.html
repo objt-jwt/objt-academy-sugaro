@@ -1,0 +1,184 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=ISO-8859-1">
+    <title>Objective Server Pages</title>
+    <link rel="stylesheet" href="/scripts/ServerPages.CSS">
+    <link rel="stylesheet" type="text/css" href="/scripts/menu.css" />
+    <script type="text/javascript" src="/scripts/menu.js"></script>
+</head>
+
+<script src="/scripts/prototype.js" type="text/javascript"></script>
+<script language="javascript" type="text/javascript">
+function setDynamicText(destination)
+{
+  var myAjax = new Ajax.Updater(destination, '/DynamicText',
+                                 {method: 'get', parameters: 'cmd=' + destination});
+}
+</script>
+
+<body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" onLoad="setDynamicText('logon_logoff')">
+<table class="table_header" width="100%" height="36" border="0" cellpadding="0" cellspacing="0" >
+    <tr>
+        <td width="210" bgcolor="#FFFFFF" ><img src="/webimages/objective.small.png" border="0"></td>
+        <td><font color="#000000" size="6" face="Arial, Helvetica, sans-serif"><div id="installation" style="float: left;"></div><spacer>&nbsp;Server Pages</font></td>
+    </tr>
+</table>
+<table class="table_header" width="100%" height="24" border="0" cellpadding="0" cellspacing="0" >
+    <tr bgcolor="#f50035">
+        <td height="24" valign="bottom">
+            <!-- menu -->
+            <div class="horizontalcssmenu">
+                <ul id="cssmenu1">
+                    <li id="n1"><a href="/index.html">Home</a></li>
+                    <li id="n2"><a href="/custom/doc.html">Documentation</a></li>
+                    <li id="n3"><a href="/custom/install.html">Installation</a></li>
+                    <li id="n4"><a href="/admin/admin.html"><img src="/webimages/menu_arrow.gif" width="11" height="11" border="0">Administration</a>
+                        <ul>
+                            <li><a href="#"><strong>Diagnostics</strong></a></li>
+                            <li><a href="/admin/diagnostics.html">&nbsp;&nbsp;Overview</a></li>
+                            <li><a href="/servlet/EventLog">&nbsp;&nbsp;EventLog Viewer</a></li>
+                            <li><a href="/servlet/EventLogProfiler">&nbsp;&nbsp;EventLog Profiler</a></li>
+                            <li><a href="/servlet/EventLogDownload">&nbsp;&nbsp;EventLog Download</a></li>
+                            <li><a href="/servlet/ServerDiagnostics?cmd=uptime">&nbsp;&nbsp;Uptime</a></li>
+                            <li><a href="/servlet/ServerDiagnostics?cmd=memory">&nbsp;&nbsp;Memory Usage</a></li>
+                            <li><a href="/servlet/ServerDiagnostics?cmd=factory">&nbsp;&nbsp;Factory Cache</a></li>
+                            <li><a href="/servlet/ServerDiagnostics?cmd=boindex">&nbsp;&nbsp;Factory Index</a></li>
+                            <li><a href="/servlet/ConnectionPoolInfo">&nbsp;&nbsp;Connection Pool</a></li>
+                            <li><a href="/servlet/ServerDiagnostics?cmd=alarms">&nbsp;&nbsp;Schedules</a></li>
+                            <li><a href="/servlet/ServerDiagnostics?cmd=properties">&nbsp;&nbsp;Properties</a></li>
+                            <li><a href="/servlet/ServerDiagnostics?cmd=threads">&nbsp;&nbsp;Threads</a></li>
+                            <li><a href="/servlet/ServerDiagnostics?cmd=license">&nbsp;&nbsp;License Info</a></li>
+                            <li><a href="/servlet/ServerDiagnostics?cmd=build">&nbsp;&nbsp;Version Info</a></li>
+                            <li><a href="/servlet/ServerConnectionInfo">&nbsp;&nbsp;Client List</a></li>
+                            <li><a href="#"><strong>Modules</strong></a></li>
+                            <li><a href="/servlet/ServerModuleInfo">&nbsp;&nbsp;Server Modules</a></li>
+                            <li><a href="#"><strong>Commands</strong></a></li>
+                            <li><a href="/admin/commands.html">&nbsp;&nbsp;Overview</a></li>
+                            <li><a href="#"><strong>Developer</strong></a></li>
+                            <li><a href="/servlet/WebQuery">&nbsp;&nbsp;Web Query</a></li>
+                            <li><a href="/servlet/ObjectInfo">&nbsp;&nbsp;Object Info</a></li>
+                            <li><a href="/servlet/ServerPlugin">&nbsp;&nbsp;Run Server Plugin</a></li>
+                        </ul>
+                    <li id="n5"><a href="/Logout" id="logon_logoff">test</a></li>
+                </ul>
+            </div>
+        </td>
+    </tr>
+</table>
+
+<script language="javascript" type="text/javascript">
+<!--
+	setDynamicText('installation');
+//-->
+</script>
+
+<!-- InstanceBeginEditable name="contents" -->
+<h1>Third-Party Software Used by Objective</h1>
+
+<table>
+    <tr><th>Library</th><th>Info</th><th>License</th></tr>
+    <!-- html to copy in licenses.html file -->
+    <tr valign='top'><td>activation-1.1.jar</td><td><a href='https://www.oracle.com/java/technologies/java-beans-activation.html'>JavaBeans(TM) Activation Framework</a></td><td><a href='https://opensource.org/licenses/cddl1'>CDDL 1.0</a></td></tr>
+    <tr valign='top'><td>ant-*-1.9.7.jar</td><td><a href='http://ant.apache.org/'>Apache Ant</a></td><td><a href='http://ant.apache.org/license.html'>Apache 2.0</a></td></tr>
+    <tr valign='top'><td>aspectjrt-1.9.5.jar</td><td><a href='https://projects.eclipse.org/projects/tools.aspectj'>AspectJ Runtime</a></td><td><a href='https://www.eclipse.org/org/documents/epl-v10.php'>EPL 1.0</a></td></tr>
+    <tr valign='top'><td>avalon-framework-impl-4.2.0.jar</td><td><a href='https://svn.apache.org/repos/asf/avalon/site/framework/index.html'>Apache Avalon Framework</a></td><td><a href='https://svn.apache.org/repos/asf/avalon/site/framework/license.html'>Apache 2.0</a></td></tr>
+    <tr valign='top'><td>backport-util-concurrent-3.1.jar</td><td><a href='http://backport-jsr166.sourceforge.net/'>Backport of java util concurrent</a></td><td><a href='https://creativecommons.org/licenses/publicdomain/'>Public Domain</a></td></tr>
+    <tr valign='top'><td>barbecue-1.5-beta1.jar</td><td><a href='http://barbecue.sourceforge.net/'>Barbecue barcode library</a></td><td><a href='http://barbecue.svn.sourceforge.net/viewvc/barbecue/trunk/barbecue/LICENSE.txt?view=markup'>BSD</a></td></tr>
+    <tr valign='top'><td>barcode4j-2.1.jar</td><td><a href='http://barcode4j.sourceforge.net/'>Barcode4J</a></td><td><a href='https://www.apache.org/licenses/LICENSE-2.0.html'>Apache 2.0</a></td></tr>
+    <tr valign='top'><td>batik-*-1.9.jar</td><td><a href='https://xmlgraphics.apache.org/batik/'>Apache Batik SVG Toolkit</a></td><td><a href='https://xmlgraphics.apache.org/batik/license.html'>Apache 2.0</a></td></tr>
+    <tr valign='top'><td>bcprov-jdk15on-1.52.jar</td><td><a href='https://www.bouncycastle.org/java.html'>Bouncy Castle Crypto API</a></td><td><a href='https://www.bouncycastle.org/licence.html'>MIT</a></td></tr>
+    <tr valign='top'><td>bridj-0.6.2.jar</td><td><a href='https://code.google.com/archive/p/bridj/'>Naqtive Bridge for Java</a></td><td><a href='https://opensource.org/licenses/BSD-3-Clause'>BSD3</a></td></tr>
+    <tr valign='top'><td>bsh-1.3.0.jar</td><td><a href='https://beanshell.github.io/'>BeanShell</a></td><td><a href='https://beanshell.github.io/license.html'>Apache 2.0</a></td></tr>
+    <tr valign='top'><td>castor-*-1.3.3.jar</td><td><a href='https://castor-data-binding.github.io/castor/'>Castor Data binding</a></td><td><a href='https://castor-data-binding.github.io/castor/about/licenses.html'>Apache 2.0</a></td></tr>
+    <tr valign='top'><td>commons-beanutils-1.9.3.jar</td><td><a href='http://commons.apache.org/beanutils/'>Apache Commons BeanUtils</a></td><td><a href='http://www.apache.org/licenses/LICENSE-2.0'>Apache 2.0</a></td></tr>
+    <tr valign='top'><td>commons-cli-1.0.jar</td><td><a href='http://commons.apache.org/cli/'>Apache Commons CLI</a></td><td><a href='http://www.apache.org/licenses/LICENSE-2.0'>Apache 2.0</a></td></tr>
+    <tr valign='top'><td>commons-codec-1.8.jar</td><td><a href='http://commons.apache.org/codec/'>Apache Commons Codec</a></td><td><a href='http://www.apache.org/licenses/LICENSE-2.0'>Apache 2.0</a></td></tr>
+    <tr valign='top'><td>commons-collections-3.2.2.jar</td><td><a href='https://commons.apache.org/proper/commons-collections/'>Apache Commons Collections</a></td><td><a href='http://www.apache.org/licenses/LICENSE-2.0'>Apache 2.0</a></td></tr>
+    <tr valign='top'><td>commons-digester-2.1.jar</td><td><a href='https://commons.apache.org/proper/commons-digester/'>Apache Commons Digester</a></td><td><a href='https://www.apache.org/licenses/LICENSE-2.0'>Apache 2.0</a></td></tr>
+    <tr valign='top'><td>commons-io-1.3.1.jar</td><td><a href='http://commons.apache.org/proper/commons-io/'>Apache Commons IO</a></td><td><a href='https://www.apache.org/licenses/LICENSE-2.0'>Apache 2.0</a></td></tr>
+    <tr valign='top'><td>commons-lang-2.6.jar</td><td><a href='https://commons.apache.org/proper/commons-lang/'>Apache Commons Lang</a></td><td><a href='https://www.apache.org/licenses/LICENSE-2.0'>Apache 2.0</a></td></tr>
+    <tr valign='top'><td>commons-logging-1.2.jar</td><td><a href='https://commons.apache.org/proper/commons-logging/'>Apache Commons Logging</a></td><td><a href='https://www.apache.org/licenses/LICENSE-2.0'>Apache 2.0</a></td></tr>
+    <tr valign='top'><td>core-3.2.1.jar</td><td><a href='https://github.com/zxing'>Zxing Core</a></td><td><a href='https://www.apache.org/licenses/LICENSE-2.0'>Apache 2.0</a></td></tr>
+    <tr valign='top'><td>djt-2.2.jar</td><td><a >DJT Gantt</a></td><td><a href='/license/djt-LICENSE.txt'>Commercial</a></td></tr>
+    <tr valign='top'><td>dom4j-1.6.1.jar</td><td><a href='https://dom4j.github.io/'>Dom4J XML framework</a></td><td><a href='https://github.com/dom4j/dom4j/blob/master/LICENSE'>BSD</a></td></tr>
+    <tr valign='top'><td>DynamicJasper-5.1.0.jar</td><td><a href='http://dynamicjasper.com/'>Dynamic Jasper</a></td><td><a href='http://dynamicjasper.com/support/license/'>GLGPL3</a></td></tr>
+    <tr valign='top'><td>ecj-4.4.2.jar</td><td><a href='https://www.eclipse.org/jdt/core/index.php'>Eclipse ECJ API</a></td><td><a href='https://www.eclipse.org/org/documents/epl-v10.php'>EPL1.0</a></td></tr>
+    <tr valign='top'><td>eidlib-1.0.0.jar</td><td><a href='https://github.com/KeejOow/eidlib'>Java e-ID library</a></td><td><a href='https://github.com/KeejOow/eidlib/blob/master/LICENSE'>MIT</a></td></tr>
+    <tr valign='top'><td>freemarker-2.3.28.jar</td><td><a href='https://freemarker.apache.org/'>Freemarker template engine</a></td><td><a href='https://freemarker.apache.org/docs/app_license.html'>Apache 2.0</a></td></tr>
+    <tr valign='top'><td>gson-2.8.6.jar</td><td><a href='https://github.com/google/gson'>Google JSON Library</a></td><td><a href='https://github.com/google/gson/blob/master/LICENSE'>Apache 2.0</a></td></tr>
+    <tr valign='top'><td>guava-13.0.jar</td><td><a href='https://github.com/google/guava'>Guava: Google Core Libraries for Java</a></td><td><a href='https://github.com/google/guava/blob/master/COPYING'>Apache 2.0</a></td></tr>
+    <tr valign='top'><td>ical4j-1.0.6.jar</td><td><a href='https://github.com/ical4j/ical4j'>Icalendar parser</a></td><td><a href='https://github.com/ical4j/ical4j/blob/develop/LICENSE.txt'>BSD3</a></td></tr>
+    <tr valign='top'><td>icu4j-57.1.jar</td><td><a href='https://github.com/unicode-org/icu'>ICU - International Components for Unicode</a></td><td><a href='https://github.com/unicode-org/icu/blob/main/icu4c/LICENSE'>BSD</a></td></tr>
+    <tr valign='top'><td>itext-2.1.7.js6.jar</td><td><a href='http://www.lowagie.com/iText/'>Itext free java pdf library</a></td><td><a href='https://www.mozilla.org/en-US/MPL/1.1/'>MPL1.1</a></td></tr>
+    <tr valign='top'><td>jackson-*-2.11.3.jar</td><td><a href='https://github.com/FasterXML/jackson'>Jackson JSON Library</a></td><td><a href='https://www.apache.org/licenses/LICENSE-2.0'>Apache 2.0</a></td></tr>
+    <tr valign='top'><td>jakarta-regexp-1.4.jar</td><td><a href='https://jakarta.apache.org/regexp/'>Apache Jakarta Regexp</a></td><td><a href='https://www.apache.org/licenses/LICENSE-2.0'>Apache 2.0</a></td></tr>
+    <tr valign='top'><td>jasperreports-*-6.5.1.jar</td><td><a href='https://www.jaspersoft.com/products/jasperreports-library'>Jasper reports</a></td><td><a href='http://jasperreports.sourceforge.net/license.html'>LGPL</a></td></tr>
+    <tr valign='top'><td>javax.activation-api-1.2.0.jar</td><td><a href='https://github.com/javaee/activation'>JavaBeans Activation Framework</a></td><td><a href='https://oss.oracle.com/licenses/CDDL+GPL-1.1'>CDDL/GPLv2+CE</a></td></tr>
+    <tr valign='top'><td>javax.annotation-api-1.3.2.jar</td><td><a href='https://github.com/javaee/javax.annotation'>Common Annotations for the JavaTM Platform API</a></td><td><a href='https://oss.oracle.com/licenses/CDDL+GPL-1.1'>CDDL/GPLv2+CE</a></td></tr>
+    <tr valign='top'><td>javax.inject-1.jar</td><td><a href='http://code.google.com/p/atinject/'>javax inject</a></td><td><a href='http://www.apache.org/licenses/LICENSE-2.0'>Apache 2.0</a></td></tr>
+    <tr valign='top'><td>javax.inject-2.5.0-b42.jar</td><td><a href='http://code.google.com/p/atinject/'>javax inject</a></td><td><a href='http://www.apache.org/licenses/LICENSE-2.0'>Apache 2.0</a></td></tr>
+    <tr valign='top'><td>javax.mail-1.6.1.jar</td><td><a href='https://github.com/javaee/javamail'>Java mail API</a></td><td><a href='https://javaee.github.io/javamail/LICENSE'>CDDL/GPLv2+CE</a></td></tr>
+    <tr valign='top'><td>javax.servlet-api-3.1.0.jar</td><td><a href='https://javaee.github.io/servlet-spec/'>Java servlet API</a></td><td><a href='https://javaee.github.io/servlet-spec/LICENSE'>CDDL/GPLv2+CE</a></td></tr>
+    <tr valign='top'><td>javax.transaction-api-1.3.jar</td><td><a href='https://github.com/javaee/jta-spec'>Java Transaction API</a></td><td><a href='https://github.com/javaee/jta-spec/blob/master/LICENSE'>CDDL/GPLv2+CE</a></td></tr>
+    <tr valign='top'><td>javax.websocket-api-1.0.jar</td><td><a href='https://github.com/javaee/websocket-spec'>Java API for WebSocket</a></td><td><a href='https://github.com/javaee/websocket-spec/blob/master/LICENSE'>CDDL/GPLv2+CE</a></td></tr>
+    <tr valign='top'><td>javax.ws.rs-api-2.1.jar</td><td><a href='https://github.com/jax-rs'>Java API for RESTful Web Services</a></td><td><a href='https://oss.oracle.com/licenses/CDDL+GPL-1.1'>CDDL/GPLv2+CE</a></td></tr>
+    <tr valign='top'><td>javax.xml.soap-api-1.4.0.jar</td><td><a href='https://github.com/javaee/javax.xml.soap'>Java APIs for XML Messaging</a></td><td><a href='https://github.com/javaee/javax.xml.soap/blob/master/LICENSE'>CDDL/GPLv2+CE</a></td></tr>
+    <tr valign='top'><td>jaxb-api-2.3.1.jar</td><td><a href='https://javaee.github.io/jaxb-v2/'>The Java Architecture for XML Binding </a></td><td><a href='https://oss.oracle.com/licenses/CDDL+GPL-1.1'>CDDL/GPLv2+CE</a></td></tr>
+    <tr valign='top'><td>jaxws-api-2.3.1.jar</td><td><a href='https://github.com/javaee/jax-ws-spec'>JAXS-WS</a></td><td><a href='https://github.com/javaee/jax-ws-spec/blob/master/LICENSE.md'>CDDL/GPLv2+CE</a></td></tr>
+    <tr valign='top'><td>jcommon-1.0.23.jar</td><td><a href='https://sourceforge.net/projects/jfreechart/'>Jfree Chart Common</a></td><td><a href='http://www.gnu.org/licenses/lgpl.txt'>GLGPL</a></td></tr>
+    <tr valign='top'><td>jersey-*-2.27.jar</td><td><a href='https://eclipse-ee4j.github.io/jersey/'>Eclipse Jersey REST framework</a></td><td><a href='https://www.eclipse.org/legal/epl-2.0/'>EPL2</a></td></tr>
+    <tr valign='top'><td>jetty-*-9.2.17.v20160517.jar</td><td><a href='http://www.eclipse.org/jetty'>Eclipse Jetty</a></td><td><a href='https://github.com/eclipse/jetty.project/blob/jetty-10.0.x/LICENSE'>EPL2</a></td></tr>
+    <tr valign='top'><td>jfreechart-1.0.19.jar</td><td><a href='https://sourceforge.net/projects/jfreechart/'>Jfree Chart</a></td><td><a href='http://www.gnu.org/licenses/lgpl.txt'>GLGPL</a></td></tr>
+    <tr valign='top'><td>jgo-*-5.1.jar</td><td><a >JGO charting library</a></td><td><a href='/license/JGo-FullLicense.txt'>Commercial, runtime</a></td></tr>
+    <tr valign='top'><td>jgoodies-binding-2.7.0.jar</td><td><a href='http://www.jgoodies.com/freeware/libraries/'>JGoodies binding</a></td><td><a href='https://opensource.org/licenses/bsd-license.html'>BSD</a></td></tr>
+    <tr valign='top'><td>jgoodies-common-1.4.0.jar</td><td><a href='http://www.jgoodies.com/freeware/libraries/'>JGoodies common</a></td><td><a href='https://opensource.org/licenses/bsd-license.html'>BSD</a></td></tr>
+    <tr valign='top'><td>jgoodies-forms-1.6.0.jar</td><td><a href='http://www.jgoodies.com/freeware/libraries/'>JGoodies forms</a></td><td><a href='https://opensource.org/licenses/bsd-license.html'>BSD</a></td></tr>
+    <tr valign='top'><td>jgoodies-looks-2.5.2.jar</td><td><a href='http://www.jgoodies.com/freeware/libraries/'>JGoodies looks</a></td><td><a href='https://opensource.org/licenses/bsd-license.html'>BSD</a></td></tr>
+    <tr valign='top'><td>jgoodies-validation-2.4.2.jar</td><td><a href='http://www.jgoodies.com/freeware/libraries/'>JGoodies validation</a></td><td><a href='https://opensource.org/licenses/bsd-license.html'>BSD</a></td></tr>
+    <tr valign='top'><td>jide-action-3.7.4.jar</td><td><a href='http://www.jidesoft.com/products/action.htm'>Jide Action Framework</a></td><td><a href='http://www.jidesoft.com/purchase/SLA.htm'>Commercial</a></td></tr>
+    <tr valign='top'><td>jide-common-3.7.4.jar</td><td><a href='http://www.jidesoft.com/products/oss.htm'>Jide Common Layer</a></td><td><a href='http://openjdk.java.net/legal/gplv2+ce.html'>GPL2</a></td></tr>
+    <tr valign='top'><td>jide-grids-3.7.4.jar</td><td><a href='http://www.jidesoft.com/products/grids.htm'>Jide Grids</a></td><td><a href='http://www.jidesoft.com/purchase/SLA.htm'>Commercial</a></td></tr>
+    <tr valign='top'><td>jide-pivot-3.7.4.jar</td><td><a href='http://www.jidesoft.com/products/pivot.htm'>Jide Pivot Grid</a></td><td><a href='http://www.jidesoft.com/purchase/SLA.htm'>Commercial</a></td></tr>
+    <tr valign='top'><td>joda-time-2.1.jar</td><td><a href='https://www.joda.org/joda-time/'>Joda time</a></td><td><a href='https://github.com/JodaOrg/joda-time/blob/master/LICENSE.txt'>Apache 2.0</a></td></tr>
+    <tr valign='top'><td>kafka-clients-2.5.0.jar</td><td><a href='https://kafka.apache.org/'>Kafka client</a></td><td><a href='http://www.apache.org/licenses/LICENSE-2.0'>Apache 2.0</a></td></tr>
+    <tr valign='top'><td>jxbrowser-*-7.14.jar</td><td><a href='https://www.teamdev.com/jxbrowser'>TeamDev JxBrowser</a></td><td><a href='https://www.teamdev.com/jxbrowser/licence-agreement'>Commercial</a></td></tr>
+    <tr valign='top'><td>lucene-*-4.5.1.jar</td><td><a href='https://lucene.apache.org/core/'>Apache Lucene core</a></td><td><a href='https://www.apache.org/licenses/LICENSE-2.0'>Apache 2.0</a></td></tr>
+    <tr valign='top'><td>logback-*-1.2.3.jar</td><td><a href='http://logback.qos.ch/'>Logback logging</a></td><td><a href='http://logback.qos.ch/license.html'>EPL/LGPL</a></td></tr>
+    <tr valign='top'><td>logstash-logback-encoder-6.5.jar</td><td><a href='https://github.com/logstash/logstash-logback-encoder'>logstash logback encoder</a></td><td><a href='https://github.com/logstash/logstash-logback-encoder/blob/master/LICENSE'>Apache 2.0</a></td></tr>
+    <tr valign='top'><td>lz4-java-1.7.1.jar</td><td><a href='https://github.com/lz4/lz4-java'>LZ4 compression library</a></td><td><a href='https://github.com/lz4/lz4-java/blob/master/LICENSE.txt'>Apache 2.0</a></td></tr>
+    <tr valign='top'><td>mimepull-1.9.6.jar</td><td><a href='https://javaee.github.io/metro-mimepull/'>Pull API form MIME parsing</a></td><td><a href='https://oss.oracle.com/licenses/CDDL+GPL-1.1'>CDDL/GPLv2+CE</a></td></tr>
+    <tr valign='top'><td>mssql-jdbc-8.4.1.jre8.jar</td><td><a href='https://github.com/Microsoft/mssql-jdbc'>Microsoft JDBC Driver For SQL Server</a></td><td><a href='https://github.com/microsoft/mssql-jdbc/blob/dev/LICENSE'>MIT</a></td></tr>
+    <tr valign='top'><td>ojdbc7-12.1.jar</td><td><a >Oracle JDBC Driver</a></td><td><a href='/license/Oracle-OTN-license.txt'>OTN</a></td></tr>
+    <tr valign='top'><td>olap4j-0.9.7.309-JS-3.jar</td><td><a href='https://github.com/olap4j/olap4j'>Olap4J</a></td><td><a href='https://github.com/olap4j/olap4j/blob/master/LICENSE'>Apache 2.0</a></td></tr>
+    <tr valign='top'><td>osgi-resource-locator-1.0.1.jar</td><td><a href='https://github.com/eclipse-ee4j/glassfish-hk2-extra/tree/master/osgi-resource-locator'>OSGI Resource Locator</a></td><td><a href='https://github.com/eclipse-ee4j/glassfish-hk2-extra/blob/master/LICENSE.md'>EPL2</a></td></tr>
+    <tr valign='top'><td>poi-*-3.10-FINAL.jar</td><td><a href='http://poi.apache.org/'>Apache POI</a></td><td><a href='https://www.apache.org/licenses/LICENSE-2.0'>Apache 2.0</a></td></tr>
+    <tr valign='top'><td>serialio-8.1.jar</td><td><a href='https://www.serialio.com/support/serialport/serialport-install-notes'>Powered by Serial Port API</a></td><td><a href='https://www.serialio.com/faqs/what-are-terms-and-conditions-java-serialport-licensing'>Commercial</a></td></tr>
+    <tr valign='top'><td>serializer-2.7.2.jar</td><td><a href='http://xml.apache.org/xalan-j/'>Xalan Java Serializer</a></td><td><a href='https://www.apache.org/licenses/LICENSE-2.0'>Apache 2.0</a></td></tr>
+    <tr valign='top'><td>slf4j-api-1.7.30.jar</td><td><a href='http://www.slf4j.org/'>Simple logging façade for Java</a></td><td><a href='http://www.slf4j.org/license.html'>MIT</a></td></tr>
+    <tr valign='top'><td>snappy-java-1.1.7.3.jar</td><td><a href='https://github.com/xerial/snappy-java'>Snappy Compression Library</a></td><td><a href='https://github.com/xerial/snappy-java/blob/master/LICENSE'>Apache 2.0</a></td></tr>
+    <tr valign='top'><td>spring-beans-3.2.18.RELEASE.jar</td><td><a href='https://github.com/SpringSource/spring-framework'>Spring Beans</a></td><td><a href='https://www.apache.org/licenses/LICENSE-2.0'>Apache 2.0</a></td></tr>
+    <tr valign='top'><td>spring-core-3.2.18.RELEASE.jar</td><td><a href='https://github.com/SpringSource/spring-framework'>Spring Core</a></td><td><a href='https://www.apache.org/licenses/LICENSE-2.0'>Apache 2.0</a></td></tr>
+    <tr valign='top'><td>spring-data-commons-2.3.6.RELEASE.jar</td><td><a href='https://github.com/SpringSource/spring-framework'>Spring Core</a></td><td><a href='https://www.apache.org/licenses/LICENSE-2.0'>Apache 2.0</a></td></tr>
+    <tr valign='top'><td>stax-*-1.2.0.jar</td><td><a href='https://github.com/codehaus/stax'>Streaming API For XML</a></td><td><a href='https://www.apache.org/licenses/LICENSE-2.0'>Apache 2.0</a></td></tr>
+    <tr valign='top'><td>SteelSeries-3.9.30.jar</td><td><a href='https://github.com/HanSolo/SteelSeries-Swing'>Steelseries components</a></td><td><a href='https://github.com/HanSolo/SteelSeries-Swing/blob/master/LICENSE.txt'>BSD3</a></td></tr>
+    <tr valign='top'><td>trident-6.3.jar</td><td><a href='https://github.com/Insubstantial/insubstantial/tree/master/trident'>Trident</a></td><td><a href='https://opensource.org/licenses/bsd-license.php'>BSD2</a></td></tr>
+    <tr valign='top'><td>validation-api-1.1.0.Final.jar</td><td><a href='https://beanvalidation.org/'>Jakarta Bean validation API</a></td><td><a href='https://www.apache.org/licenses/LICENSE-2.0'>Apache 2.0</a></td></tr>
+    <tr valign='top'><td>webcam-capture-0.3.10.jar</td><td><a href='https://github.com/sarxos/webcam-capture'>Webcam capture API</a></td><td><a href='https://github.com/sarxos/webcam-capture/blob/master/LICENSE.txt'>MIT</a></td></tr>
+    <tr valign='top'><td>wrapper-3.5.37.jar</td><td><a href='https://wrapper.tanukisoftware.com/doc/english/product-overview.html'>Java Service Wrapper</a></td><td><a href='https://wrapper.tanukisoftware.com/doc/english/licenseDevelopment.html'>Commercial</a></td></tr>
+    <tr valign='top'><td>xalan-2.7.2.jar</td><td><a href='http://xml.apache.org/xalan-j/'>Xalan XSLT Processor</a></td><td><a href='http://xml.apache.org/xalan-j/#license'>Apache 2.0</a></td></tr>
+    <tr valign='top'><td>xml-apis-*-1.3.04.jar</td><td><a href='http://xerces.apache.org/xml-commons/components/external/#overview'>Apache XML commons</a></td><td><a href='https://www.apache.org/licenses/LICENSE-2.0'>Apache 2.0</a></td></tr>
+    <tr valign='top'><td>xmlbeans-2.3.0.jar</td><td><a href='http://xmlbeans.apache.org/'>XML Beans</a></td><td><a href='https://www.apache.org/licenses/LICENSE-2.0'>Apache 2.0</a></td></tr>
+    <tr valign='top'><td>xmlgraphics-commons-2.2.jar</td><td><a href='https://xmlgraphics.apache.org/commons/'>Apache XML Graphics</a></td><td><a href='https://www.apache.org/licenses/LICENSE-2.0'>Apache 2.0</a></td></tr>
+    <tr valign='top'><td>zstd-jni-1.4.4-7.jar</td><td><a href='https://github.com/luben/zstd-jni'>ZStd compression wrapper</a></td><td><a href='https://github.com/luben/zstd-jni/blob/master/LICENSE'>BSD</a></td></tr>
+
+</table>
+
+<p><font size="1">
+GPL, LGPL Remark: Upon request, we will supply the source code of the open source components on a data-medium.<br>
+Please direct your request to the following address: Objective International, Meerbos 2, BE-9260 Wichelen, Belgium
+</font></p>
+
+<!-- InstanceEndEditable -->
+</body>
+<!-- InstanceEnd -->
+</html>

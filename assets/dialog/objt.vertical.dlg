@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<model _name="objt.vertical">
+  <imports>
+    <import file="objt.process.dlg"/>
+  </imports>
+</model>

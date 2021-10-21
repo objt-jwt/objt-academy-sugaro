@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<uimetamodel>
+  <include ref="objt/common/meta/uimeta.xml"/>
+  <include ref="objt/mes/meta/uimeta.xml"/>
+  <include ref="objt/wms/meta/uimeta.xml"/>
+  <include ref="objt/wfm/meta/uimeta.xml"/>
+  <include ref="objt/crp/meta/uimeta.xml"/>
+  <include ref="objt/vertical/meta/uimeta.xml"/>
+</uimetamodel>

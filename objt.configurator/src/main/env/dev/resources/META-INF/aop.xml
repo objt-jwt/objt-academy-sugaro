@@ -1,0 +1,13 @@
+<aspectj>
+  <aspects>
+    <aspect name="dce.pd.frame.configurator.aspect.ConfiguratorTransactionAspect" />
+    <aspect name="objt.transaction.aspects.TransactionAspect" />
+    <weaver options="-nowarn"> <!-- options="-verbose -showWeaveInfo" -->
+      
+      <include within="objt.custom..*"/>
+      <!-- Do not attempt to weave the following classes (not relevant for the configurator) -->
+      <!-- toenhance: we should be able to exclude all back-end classes from the configurator's weaver -->
+      <exclude within="objt.mes.pd.scheduling.RemoteSchedulingHandler"/>
+    </weaver>
+  </aspects>
+</aspectj>

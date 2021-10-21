@@ -1,0 +1,8 @@
+<guimetamodel>
+  <include ref="objt/common/meta/meta.xml"/>
+  <include ref="objt/mes/meta/meta.xml"/>
+  <include ref="objt/wms/meta/meta.xml"/>
+  <include ref="objt/wfm/meta/meta.xml"/>
+  <include ref="objt/crp/meta/meta.xml"/>
+  <include ref="objt/vertical/meta/meta.xml"/>
+</guimetamodel>

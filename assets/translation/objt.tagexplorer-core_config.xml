@@ -1,0 +1,37 @@
+<!-- Config file for translation keys from XML for classes defined in objt.tagexplorer -->
+<config>
+
+  <!-- paths where included translation configs can be found during development -->
+  <include path="../../../../../../dce/src/main/assets"/>
+  <include ref="translation/dce_config.xml"/>
+
+  <tabpanels>
+
+    <!-- Package objt.tagexplorer -->
+    <tabpanel class="objt.tagexplorer.TagTrendTabPanel"/>
+
+    <tabpanel class="objt.tagexplorer.TagViewerTabPanel"/>
+
+    <tabpanel class="objt.tagexplorer.TagListListenerTabPanel"
+              csvattribute="attributePaths"
+              csvtranslate="attributeTitles"/>
+
+  </tabpanels>
+
+  <actions>
+
+    <!-- Package objt.tagexplorer.action -->
+    <action class="objt.tagexplorer.action.TagWriteAction"/>
+    <action class="objt.tagexplorer.action.TagServerRemoveAction"/>
+    <action class="objt.tagexplorer.action.TagMonitorManageAction"
+            csvattribute="attributePaths"
+            csvtranslate="attributeTitles"
+            translate="panelTitle,baseAttributePath"/>
+    <action class="objt.tagexplorer.action.TagReaderSaveAction"/>
+    <action class="objt.tagexplorer.action.TagServerRestartAction"/>
+    <action class="objt.tagexplorer.action.TagCalibrationAction"/>
+    <action class="objt.tagexplorer.action.TagServerAddAction"/>
+
+  </actions>
+
+</config>

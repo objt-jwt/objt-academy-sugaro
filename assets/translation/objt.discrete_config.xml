@@ -1,0 +1,142 @@
+<config>
+
+  <!-- include the translation config of the objt library -->
+  <include path="../../../../../dce/src/main/assets"/>    <!-- toenhance: translator should be able to resolve path declared in objt_config.xml -->
+  <include path="../../../../../objt/src/main/assets"/>
+  <include ref="translation/objt_config.xml"/>
+
+  <actions>
+    <action class="objt.discrete.common.options.supervisor.action.OptionAddAction" />
+    <action class="objt.discrete.common.options.supervisor.action.OptionRemoveAction" />
+
+    <action class="objt.discrete.mes.balancing.configurator.action.BalancingSchemaDeleteAction" />
+    <action class="objt.discrete.mes.balancing.configurator.action.BalancingSchemaDisableAction" />
+    <action class="objt.discrete.mes.balancing.configurator.action.BalancingSchemaDisplayAction" />
+    <action class="objt.discrete.mes.balancing.configurator.action.BalancingSchemaOverruleAction" />
+    <action class="objt.discrete.mes.balancing.configurator.action.BalancingSchemaOverrulingDisplayAction" />
+    <action class="objt.discrete.mes.balancing.configurator.action.BalancingSchemaOverruledDisplayAction" />
+    <action class="objt.discrete.mes.balancing.configurator.action.ManufacturingOperationResourceTrainAddAction" />
+    <action class="objt.discrete.mes.balancing.configurator.action.ManufacturingOperationResourceTrainRemoveAction" />
+    <action class="objt.discrete.mes.balancing.configurator.action.ManufacturingOperationBalancingSchemaAddAction" />
+    <action class="objt.discrete.mes.balancing.configurator.action.ResourceTrainProcessUnitRemoveAction" />
+    <action class="objt.discrete.mes.balancing.configurator.util.BalancingSchemaDisabledSelector" />
+    <action class="objt.discrete.mes.balancing.supervisor.action.ResourceTrainBalancingSchemaAddAction" />
+    <action class="objt.discrete.mes.balancing.supervisor.action.ResourceTrainBalancingSchemaDeleteAction" />
+    <action class="objt.discrete.mes.balancing.supervisor.action.ResourceTrainBalancingSchemaEditAction" />
+
+    <action class="objt.discrete.mes.calendardownload.download.action.DownloadCalendarAction" />
+    <action class="objt.discrete.mes.consolidation.operatorclient.action.ConsolidationCreateAction" />
+    <action class="objt.discrete.mes.operationsteps.configurator.action.InstructionResequenceAction" />
+    <action class="objt.discrete.mes.operationsteps.configurator.action.OperationStepAddAction" />
+    <action class="objt.discrete.mes.operationsteps.configurator.action.OperationStepCopyAction" />
+    <action class="objt.discrete.mes.operationsteps.configurator.action.OperationStepDeleteAction"
+            translate="confirmMessage,listConfirmMessage,overrulingConfirmMessage,overrulingListConfirmMessage,disabledConfirmMessage,disabledListConfirmMessage,overrulingTooltip,disabledTooltip"/>
+    <action class="objt.discrete.mes.operationsteps.configurator.action.OperationStepDisableAction" />
+    <action class="objt.discrete.mes.operationsteps.configurator.action.OperationStepDisplayAction" />
+    <action class="objt.discrete.mes.operationsteps.configurator.action.OperationStepItemQtyAddAction" />
+    <action class="objt.discrete.mes.operationsteps.configurator.action.OperationStepLinkSeqChangeAction" />
+    <action class="objt.discrete.mes.operationsteps.configurator.action.OperationStepOverruleAction" />
+    <action class="objt.discrete.mes.operationsteps.configurator.action.OperationStepOverruledDisplayAction" />
+    <action class="objt.discrete.mes.operationsteps.configurator.action.OperationStepOverrulingDisplayAction" />
+    <action class="objt.discrete.mes.operationsteps.configurator.action.OperationStepPasteAction" />
+    <action class="objt.discrete.mes.operationsteps.configurator.action.OperationStepTranslationAction" />
+    <action class="objt.discrete.mes.operationsteps.configurator.action.OperationStepUserFieldEditAction"
+            translate="panelTitle"/>
+    <action class="objt.discrete.mes.operationsteps.configurator.util.OperationStepDisabledSelector" />
+    <action class="objt.discrete.mes.operationsteps.configurator.action.OperationStepDocumentedInstructionAddAction" />
+    <action class="objt.discrete.mes.operationsteps.supervisor.action.ProductionOperationStepItemQtyDeleteAction" />
+    <action class="objt.discrete.mes.operationsteps.supervisor.action.ProductionOperationStepItemQtyAddAction" />
+    <action class="objt.discrete.mes.operationsteps.supervisor.action.ProductionOperationStepFilterApplicabilityToggleAction" />
+
+    <action class="objt.discrete.mes.bomcorrections.operatorclient.action.MachineOperationInputItemQtyAddAction" />
+    <action class="objt.discrete.mes.bomcorrections.operatorclient.action.MachineOperationInputItemQtyEditAction" />
+    <action class="objt.discrete.mes.bomcorrections.operatorclient.action.MachineOperationInputItemQtyReplaceAction" />
+    <action class="objt.discrete.mes.bomcorrections.operatorclient.action.MachineOperationInputItemQtyDeleteAction" />
+
+    <action class="objt.discrete.mes.bomcorrections.supervisor.action.ProductionOperationInputItemQtyReplaceAction" />
+    <action class="objt.discrete.mes.operationsteps.supervisor.action.ProductionOperationStepInputItemQtyReplaceAction" />
+
+    <action class="objt.discrete.mes.nonconformities.configurator.action.ProcessUnitNonConformityReasonGroupAddAction" />
+    <action class="objt.discrete.mes.nonconformities.configurator.action.ProcessUnitPrivateNonConformityReasonGroupAddAction" />
+    <action class="objt.discrete.mes.nonconformities.configurator.action.ProcessUnitPrivateNonConformityReasonGroupPasteAction" />
+    <action class="objt.discrete.mes.nonconformities.configurator.action.ProcessUnitPrivateNonConformityReasonGroupRemoveAction" />
+    <action class="objt.discrete.mes.nonconformities.configurator.action.NonConformityReasonPasteAction" />
+    <action class="objt.discrete.mes.nonconformities.configurator.action.NonConformityReasonGroupPasteAction" />
+    <action class="objt.discrete.mes.nonconformities.configurator.action.ProcessUnitNonConformityReasonGroupAddAction" />
+    <action class="objt.discrete.mes.nonconformities.configurator.action.ProcessUnitPrivateNonConformityReasonGroupAddAction" />
+    <action class="objt.discrete.mes.nonconformities.configurator.action.ProcessUnitPrivateNonConformityReasonGroupPasteAction" />
+    <action class="objt.discrete.mes.nonconformities.configurator.action.ProcessUnitPrivateNonConformityReasonGroupRemoveAction" />
+    <action class="objt.discrete.mes.nonconformities.supervisor.action.NonConformityForceCloseAction" />
+    <action class="objt.discrete.mes.nonconformities.supervisor.action.NonConformityCompleteAction" />
+    <action class="objt.discrete.mes.nonconformities.supervisor.action.NonConformityCreateAction" />
+    <action class="objt.discrete.mes.nonconformities.supervisor.action.NonConformityRemoveAction" />
+    <action class="objt.discrete.mes.nonconformities.supervisor.action.NonConformityEditAction" />
+    <action class="objt.discrete.mes.nonconformities.operatorclient.action.NonConformityCreateAction" />
+    <action class="objt.discrete.mes.nonconformities.operatorclient.action.NonConformityCompleteAction" />
+    <action class="objt.discrete.mes.nonconformities.operatorclient.action.NonConformityConfirmationAction" />
+
+    <action class="objt.discrete.wfm.useraccountability.configurator.action.AbstractIndirectManualOperationSelectAction" />
+    <action class="objt.discrete.wfm.useraccountability.supervisor.action.UserAccountabilityRecordCommentAction" />
+    <action class="objt.discrete.wfm.useraccountability.supervisor.action.UserAccountabilityRecordRevalidateAction" />
+  </actions>
+
+  <tabpanels>
+    <tabpanel class="objt.discrete.mes.balancing.configurator.panel.BalancingSchemaDetailsTabPanel" csvtranslate="attributeTitles" csvattribute="attributePaths"/>
+    <tabpanel class="objt.discrete.mes.balancing.configurator.panel.BalancingSchemaListTabPanel"/>
+    <tabpanel class="objt.discrete.mes.balancing.configurator.panel.BalancingSchemaPropertiesTabPanel"/>
+    <tabpanel class="objt.discrete.mes.balancing.configurator.panel.BalancingSchemaMasterDetailNavigationTabPanel" />
+
+    <tabpanel class="objt.discrete.mes.operationsteps.configurator.panel.OperationStepListTabPanel" csvtranslate="attributeTitles" csvattribute="attributePaths" />
+    <tabpanel class="objt.discrete.mes.operationsteps.configurator.panel.OperationStepAttributeFilterTabPanel" />
+    <tabpanel class="objt.discrete.mes.operationsteps.configurator.panel.OperationStepMasterDetailNavigationTabPanel" />
+    <tabpanel class="objt.discrete.mes.operationsteps.configurator.panel.OperationStepPropertiesTabPanel" />
+    <tabpanel class="objt.discrete.mes.operationsteps.configurator.panel.OperationStepSkillTabPanel" />
+    <tabpanel class="objt.discrete.mes.operationsteps.configurator.panel.OperationStepDurationTabPanel" />
+    <tabpanel class="objt.discrete.mes.operationsteps.supervisor.panel.ProductionOperationStepListTabPanel" csvtranslate="attributeTitles" csvattribute="attributePaths" />
+    <tabpanel class="objt.discrete.mes.operationsteps.supervisor.panel.ProductionOperationStepSkillTabPanel" />
+    <tabpanel class="objt.discrete.mes.operationsteps.supervisor.panel.ProductionOperationStepPropertiesTabPanel" />
+
+    <tabpanel class="objt.discrete.mes.nonconformities.configurator.panel.DefaultNonConformityOptionsTabPanel" />
+    <tabpanel class="objt.discrete.mes.nonconformities.configurator.panel.NonConformityReasonPropertiesTabPanel" />
+    <tabpanel class="objt.discrete.mes.nonconformities.configurator.panel.NonConformityReasonGroupPropertiesTabPanel" />
+
+    <tabpanel class="objt.vertical.mes.general.configurator.productionmgt.panel.MaterialInputHandlingTabPanel"/>
+  </tabpanels>
+
+  <xmlfiles>
+    <xmlfile name="meta.xml">
+      <node name="listitem" translate="text" />
+      <node name="attribute" translate="title,tooltip" />
+    </xmlfile>
+
+    <!-- UI meta: translate class, attribute and association titles -->
+    <xmlfile name="uimeta.xml">
+      <node name="class" translate="title"/>
+      <node name="attribute" translate="title"/>
+      <node name="attributegroup" translate="title"/>
+      <node name="association" translate="title"/>
+    </xmlfile>
+
+    <!-- translate name and description of defined privileges -->
+    <xmlfile name="privileges.xml">
+      <node name="privilege" translate="application,module,domain,category,name,description"/>
+    </xmlfile>
+
+    <xmlfile name="resourceview_config.xml">
+      <node name="resource"        csvtranslate="viewtype,templatetype"/>
+      <node name="attrib"          translate="title"/>
+      <node name="association"     translate="title"/>
+      <node name="associationlist" translate="title"/>
+      <node name="animation"       translate="title"/>
+      <node name="action"          translate="title"/>
+      <node name="widget"          translate="title"/>
+      <node name="resource"        translate="title,tooltip"/>
+    </xmlfile>
+  </xmlfiles>
+</config>
+
+
+
+
+
+

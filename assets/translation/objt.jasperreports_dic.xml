@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<dictionary includeSources="false" useRelativePaths="true">
+  <targets>
+    <target html="F" java="F" jrxml="T" path="../../reports" recursive="T" srt="F" xml="T"/>
+    <target html="F" java="T" jrxml="F" path="../../java" recursive="T" srt="F" xml="F"/>
+  </targets>
+  <languages>
+    <language id="en" native="English"/>
+    <language id="nl" native="Dutch"/>
+    <language id="fr" native="French"/>
+  </languages>
+  <includes>
+    <include path="dce_dic.xml"/>
+    <include path="objt.common_dic.xml"/>
+    <include path="objt.mes_dic.xml"/>
+    <include path="objt.wms_dic.xml"/>
+    <include path="objt.wfm_dic.xml"/>
+    <include path="objt.crp_dic.xml"/>
+  </includes>
+  <entries>
+    <entry nativestring="Alarms">
+      <translation language="en" translatedstring="Alarms"/>
+      <translation language="nl" translatedstring="Alarmen"/>
+      <translation language="fr" translatedstring="Alarmes"/>
+    </entry>
+    <entry nativestring="All Other Items">
+      <translation language="en" translatedstring="All Other Items"/>
+      <translation language="nl" translatedstring="Alle andere artikels"/>
+      <translation language="fr" translatedstring="Tous les autres articles"/>
+    </entry>
+    <entry nativestring="Allocated Duration">
+      <translation language="en" translatedstring="Allocated Duration"/>
+      <translation language="nl" translatedstring="Gealloceerde Tijdsduur"/>
+      <translation language="fr" translatedstring="Durée Allouée"/>
+    </entry>
+    <entry nativestring="Allocation">
+      <translation language="en" translatedstring="Allocation"/>
+      <translation language="nl" translatedstring="Allocatie"/>
+      <translation language="fr" translatedstring="Allocation"/>
+    </entry>
+    <entry nativestring="Availability">
+      <translation language="en" translatedstring="Availability"/>
+      <translation language="nl" translatedstring="Beschikbaarheid"/>
+      <translation language="fr" translatedstring="Disponibilité"/>
+    </entry>
+    <entry nativestring="Availibility losses">
+      <translation language="en" translatedstring="Availability Losses"/>
+      <translation language="nl" translatedstring="Beschikbaarheidsverliezen"/>
+      <translation language="fr" translatedstring="Pertes de Disponibilité"/>
+    </entry>
+    <entry nativestring="Average Allocation">
+      <translation language="en" translatedstring="Average Allocation"/>
+      <translation language="nl" translatedstring="Gemiddelde Allocatie"/>
+      <translation language="fr" translatedstring="Allocation Moyenne"/>
+    </entry>
+    <entry nativestring="Average Production">
+      <translation language="en" translatedstring="Average Production"/>
+      <translation language="nl" translatedstring="Gemiddelde Productie"/>
+      <translation language="fr" translatedstring="Production Moyenne"/>
+    </entry>
+    <entry nativestring="Average Reject">
+      <translation language="en" translatedstring="Average Reject"/>
+      <translation language="nl" translatedstring="Gemiddeld Afkeur"/>
+      <translation language="fr" translatedstring="Rejets Moyenne"/>
+    </entry>
+    <entry nativestring="Average Reworked">
+      <translation language="en" translatedstring="Average Reworked"/>
+      <translation language="nl" translatedstring="Gemiddeld Herwerkt"/>
+      <translation language="fr" translatedstring="Remaniée Moyenne"/>
+    </entry>
+    <entry nativestring="Average Yield">
+      <translation language="en" translatedstring="Average Yield"/>
+      <translation language="nl" translatedstring="Gemiddeld Goedgekeurd"/>
+      <translation language="fr" translatedstring="Rendement Moyenne"/>
+    </entry>
+    <entry nativestring="Consumed">
+      <translation language="en" translatedstring="Consumed"/>
+      <translation language="nl" translatedstring="Verbruikt"/>
+      <translation language="fr" translatedstring="Consommé"/>
+    </entry>
+    <entry nativestring="Control Instructions">
+      <translation language="en" translatedstring="Check Instructions"/>
+      <translation language="nl" translatedstring="Controle Instructies"/>
+      <translation language="fr" translatedstring="Instructions de Contrôle"/>
+    </entry>
+    <entry nativestring="Cumulated %">
+      <translation language="en" translatedstring="Cumulated %"/>
+      <translation language="nl" translatedstring="Gecumuleerd %"/>
+      <translation language="fr" translatedstring="% Cumulé"/>
+    </entry>
+    <entry nativestring="Data Collection Instructions">
+      <translation language="en" translatedstring="Data Collection Instructions"/>
+      <translation language="nl" translatedstring="Data Collectie Instructies"/>
+      <translation language="fr" translatedstring="Instruction de Collecte des Données"/>
+    </entry>
+    <entry nativestring="Default Value">
+      <translation language="en" translatedstring="Default Value"/>
+      <translation language="nl" translatedstring="Standaard Waarde"/>
+      <translation language="fr" translatedstring="Valeur par Défaut"/>
+    </entry>
+    <entry nativestring="Difference">
+      <translation language="en" translatedstring="Difference"/>
+      <translation language="nl" translatedstring="Verschil"/>
+      <translation language="fr" translatedstring="Différence"/>
+    </entry>
+    <entry nativestring="Direct Rework">
+      <translation language="en" translatedstring="Direct Rework"/>
+      <translation language="nl" translatedstring="Direct Herwerk"/>
+      <translation language="fr" translatedstring="Remaniement Direct"/>
+    </entry>
+    <entry nativestring="Duration Difference">
+      <translation language="en" translatedstring="Duration Difference"/>
+      <translation language="nl" translatedstring="Tijdsduur Verschil"/>
+      <translation language="fr" translatedstring="Différence de la Durée"/>
+    </entry>
+    <entry nativestring="Employee ID">
+      <translation language="en" translatedstring="Employee ID"/>
+      <translation language="nl" translatedstring="Werknemer ID"/>
+      <translation language="fr" translatedstring="ID d'Employé"/>
+    </entry>
+    <entry nativestring="End Date">
+      <translation language="en" translatedstring="End date"/>
+      <translation language="nl" translatedstring="Einde"/>
+      <translation language="fr" translatedstring="Date de Fin"/>
+    </entry>
+    <entry nativestring="Error Limits">
+      <translation language="en" translatedstring="Error Limits"/>
+      <translation language="nl" translatedstring="Foutgrenzen"/>
+      <translation language="fr" translatedstring="Limites d'Erreur"/>
+    </entry>
+    <entry nativestring="Event">
+      <translation language="en" translatedstring="Event"/>
+      <translation language="nl" translatedstring="Event"/>
+      <translation language="fr" translatedstring="Événement"/>
+    </entry>
+    <entry nativestring="Events">
+      <translation language="en" translatedstring="Events"/>
+      <translation language="nl" translatedstring="Events"/>
+      <translation language="fr" translatedstring="Événements"/>
+    </entry>
+    <entry nativestring="FTR">
+      <translation language="en" translatedstring="FTR"/>
+      <translation language="nl" translatedstring="FTR"/>
+      <translation language="fr" translatedstring="FTR"/>
+    </entry>
+    <entry nativestring="Failed Inspections">
+      <translation language="en" translatedstring="Failed Inspections"/>
+      <translation language="nl" translatedstring="Gefaalde Inspecties"/>
+      <translation language="fr" translatedstring="Inspections Échouées"/>
+    </entry>
+    <entry nativestring="Failed Inspections per Item">
+      <translation language="en" translatedstring="Failed Inspections per item"/>
+      <translation language="nl" translatedstring="Gefaalde Inspecties per Artikel"/>
+      <translation language="fr" translatedstring="Inspections Échouées par Article"/>
+    </entry>
+    <entry nativestring="General Information">
+      <translation language="en" translatedstring="General Information"/>
+      <translation language="nl" translatedstring="Algemene Informatie"/>
+      <translation language="fr" translatedstring="Informations Générales"/>
+    </entry>
+    <entry nativestring="Indirect Rework">
+      <translation language="en" translatedstring="Indirect Rework"/>
+      <translation language="nl" translatedstring="Indirect Herwerk"/>
+      <translation language="fr" translatedstring="Remaniement Indirect"/>
+    </entry>
+    <entry nativestring="Input Instructions">
+      <translation language="en" translatedstring="Input Instructions"/>
+      <translation language="nl" translatedstring="Input Instructies"/>
+      <translation language="fr" translatedstring="Instructions d'Entrée"/>
+    </entry>
+    <entry nativestring="Inputs">
+      <translation language="en" translatedstring="Inputs"/>
+      <translation language="nl" translatedstring="Inputs"/>
+      <translation language="fr" translatedstring="Entrées"/>
+    </entry>
+    <entry nativestring="Inspections Overview">
+      <translation language="en" translatedstring="Inspections Overview"/>
+      <translation language="nl" translatedstring="Inspectie Overzicht"/>
+      <translation language="fr" translatedstring="Résumé d'Inspections"/>
+    </entry>
+    <entry nativestring="Instruction Status">
+      <translation language="en" translatedstring="Instruction Status"/>
+      <translation language="nl" translatedstring="Instructie Status"/>
+      <translation language="fr" translatedstring="État d'Instructions"/>
+    </entry>
+    <entry nativestring="Instructions Sheet">
+      <translation language="en" translatedstring="Instruction Sheet"/>
+      <translation language="nl" translatedstring="Instructielijst"/>
+      <translation language="fr" translatedstring="Fiche d'Instructions"/>
+    </entry>
+    <entry nativestring="Instructions Sheets">
+      <translation language="en" translatedstring="Instruction Sheets"/>
+      <translation language="nl" translatedstring="Instructielijsten"/>
+      <translation language="fr" translatedstring="Fiches d'Instructions"/>
+    </entry>
+    <entry nativestring="Items Overview">
+      <translation language="en" translatedstring="Items Overview"/>
+      <translation language="nl" translatedstring="Artikel Overzicht"/>
+      <translation language="fr" translatedstring="Résumé d'Articles"/>
+    </entry>
+    <entry nativestring="Last Executed">
+      <translation language="en" translatedstring="Last Executed"/>
+      <translation language="nl" translatedstring="Laatst uitgevoerd"/>
+      <translation language="fr" translatedstring="Dernière Exécution"/>
+    </entry>
+    <entry nativestring="Lower Limit">
+      <translation language="en" translatedstring="Lower Limit"/>
+      <translation language="nl" translatedstring="Onder Grens"/>
+      <translation language="fr" translatedstring="Limite Inférieure"/>
+    </entry>
+    <entry nativestring="Material Consumption">
+      <translation language="en" translatedstring="Material Consumption"/>
+      <translation language="nl" translatedstring="Materiaalverbruik"/>
+      <translation language="fr" translatedstring="Consommation du Matériel"/>
+    </entry>
+    <entry nativestring="Measurement Instructions">
+      <translation language="en" translatedstring="Measurement Instructions"/>
+      <translation language="nl" translatedstring="Meet Instructies"/>
+      <translation language="fr" translatedstring="Instructions de Mesure"/>
+    </entry>
+    <entry nativestring="Measurment">
+      <translation language="en" translatedstring="Measurement"/>
+      <translation language="nl" translatedstring="Meeting"/>
+      <translation language="fr" translatedstring="Mesure"/>
+    </entry>
+    <entry nativestring="Measurment Instructions">
+      <translation language="en" translatedstring="Measurement Instructions"/>
+      <translation language="nl" translatedstring="Meet Instructies"/>
+      <translation language="fr" translatedstring="Instructions de Mesure"/>
+    </entry>
+    <entry nativestring="NRFT">
+      <translation language="en" translatedstring="NRFT"/>
+      <translation language="nl" translatedstring="NRFT"/>
+      <translation language="fr" translatedstring="NRFT"/>
+    </entry>
+    <entry nativestring="No Alarms Occurred">
+      <translation language="en" translatedstring="No Alarms Occurred"/>
+      <translation language="nl" translatedstring="Geen Alarmen"/>
+      <translation language="fr" translatedstring="Pas d'Alarmes"/>
+    </entry>
+    <entry nativestring="No Interrupts Occurred">
+      <translation language="en" translatedstring="No Interrupts Occurred"/>
+      <translation language="nl" translatedstring="Geen Verstoringen Opgetreden"/>
+      <translation language="fr" translatedstring="Pas d'Interruptions"/>
+    </entry>
+    <entry nativestring="No Reject Occurred">
+      <translation language="en" translatedstring="No Reject Occurred"/>
+      <translation language="nl" translatedstring="Geen Afkeur"/>
+      <translation language="fr" translatedstring="Pas de Rejet"/>
+    </entry>
+    <entry nativestring="No inspections for the given time frame">
+      <translation language="en" translatedstring="No inspections for the given time frame"/>
+      <translation language="nl" translatedstring="Geen inspecties voor de opgegeven tijdspanne"/>
+      <translation language="fr" translatedstring="Pas d'inspections pour la période spécifiée"/>
+    </entry>
+    <entry nativestring="No production">
+      <translation language="en" translatedstring="No Production"/>
+      <translation language="nl" translatedstring="Geen Productie"/>
+      <translation language="fr" translatedstring="Pas de Production"/>
+    </entry>
+    <entry nativestring="No production order found for the specified name">
+      <translation language="en" translatedstring="No production order found for the specified name"/>
+      <translation language="nl" translatedstring="Geen productie order gevonden voor de opgegeven naam"/>
+      <translation language="fr" translatedstring="Pas d'ordre de fabrication trouvé pour le nom spécifié"/>
+    </entry>
+    <entry nativestring="No reject">
+      <translation language="en" translatedstring="No Reject"/>
+      <translation language="nl" translatedstring="Geen Afkeur"/>
+      <translation language="fr" translatedstring="Pas de Rejets"/>
+    </entry>
+    <entry nativestring="No tasks found for the specified period">
+      <translation language="en" translatedstring="No tasks found for the specified period"/>
+      <translation language="nl" translatedstring="Geen taken gevonden voor de opgegeven periode"/>
+      <translation language="fr" translatedstring="Pas de tâches trouvées pour la période spécifiée"/>
+    </entry>
+    <entry nativestring="No yield">
+      <translation language="en" translatedstring="No Yield"/>
+      <translation language="nl" translatedstring="Niets Goedgekeurd"/>
+      <translation language="fr" translatedstring="Pas de Rendement"/>
+    </entry>
+    <entry nativestring="Nothing Reworked">
+      <translation language="en" translatedstring="Nothing Reworked"/>
+      <translation language="nl" translatedstring="Niets Herwerkt"/>
+      <translation language="fr" translatedstring="Rien remanié"/>
+    </entry>
+    <entry nativestring="Order OEE">
+      <translation language="en" translatedstring="Order OEE"/>
+      <translation language="nl" translatedstring="Order OEE"/>
+      <translation language="fr" translatedstring="OEE d'Ordre"/>
+    </entry>
+    <entry nativestring="Outputs">
+      <translation language="en" translatedstring="Outputs"/>
+      <translation language="nl" translatedstring="Outputs"/>
+      <translation language="fr" translatedstring="Sorties"/>
+    </entry>
+    <entry nativestring="PAUSED">
+      <translation language="en" translatedstring="PAUSED"/>
+      <translation language="nl" translatedstring="PAUZE"/>
+      <translation language="fr" translatedstring="PAUSE"/>
+    </entry>
+    <entry nativestring="Percentage">
+      <translation language="en" translatedstring="Percentage"/>
+      <translation language="nl" translatedstring="Percentage"/>
+      <translation language="fr" translatedstring="Pourcentage"/>
+    </entry>
+    <entry nativestring="Planned Duration">
+      <translation language="en" translatedstring="Planned Duration"/>
+      <translation language="nl" translatedstring="Geplande Tijdsduur"/>
+      <translation language="fr" translatedstring="Durée Prévue"/>
+    </entry>
+    <entry nativestring="Planned Start">
+      <translation language="en" translatedstring="Planned Start"/>
+      <translation language="nl" translatedstring="Geplande Start"/>
+      <translation language="fr" translatedstring="Démarrage Planifié"/>
+    </entry>
+    <entry nativestring="Planned Stop">
+      <translation language="en" translatedstring="Planned Stop"/>
+      <translation language="nl" translatedstring="Gepland Stop"/>
+      <translation language="fr" translatedstring="Arrêt Planifié"/>
+    </entry>
+    <entry nativestring="Plannend Duration">
+      <translation language="en" translatedstring="Planned Duration"/>
+      <translation language="nl" translatedstring="Geplande Tijd"/>
+      <translation language="fr" translatedstring="Durée Planifiée"/>
+    </entry>
+    <entry nativestring="Product Name">
+      <translation language="en" translatedstring="Product Name"/>
+      <translation language="nl" translatedstring="Product Naam"/>
+      <translation language="fr" translatedstring="Nom de Produit"/>
+    </entry>
+    <entry nativestring="Production Operation Details">
+      <translation language="en" translatedstring="Operation Details"/>
+      <translation language="nl" translatedstring="Bewerking Details"/>
+      <translation language="fr" translatedstring="Détails d'Opération"/>
+    </entry>
+    <entry nativestring="Production Order Details">
+      <translation language="en" translatedstring="Production Order Details"/>
+      <translation language="nl" translatedstring="Productieorder Details"/>
+      <translation language="fr" translatedstring="Détails d'Ordre de Fabrication"/>
+    </entry>
+    <entry nativestring="Production Run Details">
+      <translation language="en" translatedstring="Production Run Details"/>
+      <translation language="nl" translatedstring="Productie Run Details"/>
+      <translation language="fr" translatedstring="Détails d'Exécution de Production"/>
+    </entry>
+    <entry nativestring="Production order">
+      <translation language="en" translatedstring="Production Order"/>
+      <translation language="nl" translatedstring="Productieorder"/>
+      <translation language="fr" translatedstring="Ordre de Fabrication"/>
+    </entry>
+    <entry nativestring="Productivity">
+      <translation language="en" translatedstring="Productivity"/>
+      <translation language="nl" translatedstring="Productiviteit"/>
+      <translation language="fr" translatedstring="Productivité"/>
+    </entry>
+    <entry nativestring="Quality">
+      <translation language="en" translatedstring="Quality"/>
+      <translation language="nl" translatedstring="Kwaliteit"/>
+      <translation language="fr" translatedstring="Qualité"/>
+    </entry>
+    <entry nativestring="Release Date">
+      <translation language="en" translatedstring="Release Date"/>
+      <translation language="nl" translatedstring="Datum Vrijgave"/>
+      <translation language="fr" translatedstring="Date d'Autorisation"/>
+    </entry>
+    <entry nativestring="Reworked">
+      <translation language="en" translatedstring="Reworked"/>
+      <translation language="nl" translatedstring="Herwerkt"/>
+      <translation language="fr" translatedstring="Remaniement"/>
+    </entry>
+    <entry nativestring="Run Number">
+      <translation language="en" translatedstring="Run"/>
+      <translation language="nl" translatedstring="Run"/>
+      <translation language="fr" translatedstring="Exécution"/>
+    </entry>
+    <entry nativestring="Runs">
+      <translation language="en" translatedstring="Runs"/>
+      <translation language="nl" translatedstring="Runs"/>
+      <translation language="fr" translatedstring="Exécutions"/>
+    </entry>
+    <entry nativestring="Segment Time">
+      <translation language="en" translatedstring="Segment Time"/>
+      <translation language="nl" translatedstring="Tijd per Segment"/>
+      <translation language="fr" translatedstring="Temps par Segment"/>
+    </entry>
+    <entry nativestring="Setup Instructions">
+      <translation language="en" translatedstring="Setup Instructions"/>
+      <translation language="nl" translatedstring="Setup Instructies"/>
+      <translation language="fr" translatedstring="Instructions de Setup"/>
+    </entry>
+    <entry nativestring="Shift Averages">
+      <translation language="en" translatedstring="Shift Averages"/>
+      <translation language="nl" translatedstring="Shift Gemiddelden"/>
+      <translation language="fr" translatedstring="Moyenne d'Équipe"/>
+    </entry>
+    <entry nativestring="Shift Overview">
+      <translation language="en" translatedstring="Shift Overview"/>
+      <translation language="nl" translatedstring="Shift Overzicht"/>
+      <translation language="fr" translatedstring="Résumé d'Équipes"/>
+    </entry>
+    <entry nativestring="Shift Report">
+      <translation language="en" translatedstring="Shift Report"/>
+      <translation language="nl" translatedstring="Shift rapport"/>
+      <translation language="fr" translatedstring="Rapport d'Équipe"/>
+    </entry>
+    <entry nativestring="Shift Totals">
+      <translation language="en" translatedstring="Shift Totals"/>
+      <translation language="nl" translatedstring="Shift Totalen"/>
+      <translation language="fr" translatedstring="Total d'Équipe"/>
+    </entry>
+    <entry nativestring="Start Date">
+      <translation language="en" translatedstring="Start"/>
+      <translation language="nl" translatedstring="Start"/>
+      <translation language="fr" translatedstring="Démarrage"/>
+    </entry>
+    <entry nativestring="Sub Lot">
+      <translation language="en" translatedstring="Sub Lot"/>
+      <translation language="nl" translatedstring="Sub Lot"/>
+      <translation language="fr" translatedstring="Sous-Lot"/>
+    </entry>
+    <entry nativestring="Supplier Inspections">
+      <translation language="en" translatedstring="Supplier Inspections"/>
+      <translation language="nl" translatedstring="Leverancier Inspecties"/>
+      <translation language="fr" translatedstring="Inspections de Fournisseur"/>
+    </entry>
+    <entry nativestring="Supplier not found">
+      <translation language="en" translatedstring="Supplier not found"/>
+      <translation language="nl" translatedstring="Leverancier niet gevonden"/>
+      <translation language="fr" translatedstring="Fournisseur pas trouvé"/>
+    </entry>
+    <entry nativestring="Target">
+      <translation language="en" translatedstring="Target"/>
+      <translation language="nl" translatedstring="Doelwaarde"/>
+      <translation language="fr" translatedstring="Valeur Cible"/>
+    </entry>
+    <entry nativestring="Target Value">
+      <translation language="en" translatedstring="Target Value"/>
+      <translation language="nl" translatedstring="Doelwaarde"/>
+      <translation language="fr" translatedstring="Valeur Cible"/>
+    </entry>
+    <entry nativestring="Time(min)">
+      <translation language="en" translatedstring="Time (min)"/>
+      <translation language="nl" translatedstring="Duur (min)"/>
+      <translation language="fr" translatedstring="Durée (minutes)"/>
+    </entry>
+    <entry nativestring="Total Production">
+      <translation language="en" translatedstring="Total Production"/>
+      <translation language="nl" translatedstring="Totale Productie"/>
+      <translation language="fr" translatedstring="Production Totale"/>
+    </entry>
+    <entry nativestring="Total Reject">
+      <translation language="en" translatedstring="Total Reject"/>
+      <translation language="nl" translatedstring="Totaal Afkeur"/>
+      <translation language="fr" translatedstring="Rejets Totale"/>
+    </entry>
+    <entry nativestring="Total Reject Pareto">
+      <translation language="en" translatedstring="Total Reject Pareto"/>
+      <translation language="nl" translatedstring="Totale Afkeur Pareto"/>
+      <translation language="fr" translatedstring="Pareto de Rejet Totale"/>
+    </entry>
+    <entry nativestring="Total Reworked">
+      <translation language="en" translatedstring="Total Reworked"/>
+      <translation language="nl" translatedstring="Totaal Herwerkt"/>
+      <translation language="fr" translatedstring="Remaniée Totale"/>
+    </entry>
+    <entry nativestring="Total Yield">
+      <translation language="en" translatedstring="Total Yield"/>
+      <translation language="nl" translatedstring="Totaal Goedgekeurd"/>
+      <translation language="fr" translatedstring="Rendement Totale"/>
+    </entry>
+    <entry nativestring="Total:">
+      <translation language="en" translatedstring="Total:"/>
+      <translation language="nl" translatedstring="Totaal:"/>
+      <translation language="fr" translatedstring="Total:"/>
+    </entry>
+    <entry nativestring="Upper Limit">
+      <translation language="en" translatedstring="Upper Limit"/>
+      <translation language="nl" translatedstring="Bovengrens"/>
+      <translation language="fr" translatedstring="Limite Supérieure"/>
+    </entry>
+    <entry nativestring="WIP-IN">
+      <translation language="en" translatedstring="WIP-IN"/>
+      <translation language="nl" translatedstring="WIP-IN"/>
+      <translation language="fr" translatedstring="WIP-IN"/>
+    </entry>
+    <entry nativestring="WIP-OUT">
+      <translation language="en" translatedstring="WIP-OUT"/>
+      <translation language="nl" translatedstring="WIP-OUT"/>
+      <translation language="fr" translatedstring="WIP-OUT"/>
+    </entry>
+    <entry nativestring="WMS RF ANDROID (HANDHELD)">
+      <translation language="en" translatedstring="WMS RF ANDROID (HANDHELD)"/>
+      <translation language="nl" translatedstring="WMS RF ANDROID (HANDHELD)"/>
+      <translation language="fr" translatedstring="WMS RF ANDROID (HANDHELD)"/>
+    </entry>
+    <entry nativestring="WMS RF ANDROID (VEHICLE-MOUNT)">
+      <translation language="en" translatedstring="WMS RF ANDROID (VEHICLE-MOUNT)"/>
+      <translation language="nl" translatedstring="WMS RF ANDROID (VEHICLE-MOUNT)"/>
+      <translation language="fr" translatedstring="WMS RF ANDROID (VEHICLE-MOUNT)"/>
+    </entry>
+    <entry nativestring="WMS RF WINDOWS MOBILE">
+      <translation language="en" translatedstring="WMS RF WINDOWS MOBILE"/>
+      <translation language="nl" translatedstring="WMS RF WINDOWS MOBILE"/>
+      <translation language="fr" translatedstring="WMS RF WINDOWS MOBILE"/>
+    </entry>
+    <entry nativestring="Warning Limits">
+      <translation language="en" translatedstring="Warning Limits"/>
+      <translation language="nl" translatedstring="Waarschuwingsgrenzen"/>
+      <translation language="fr" translatedstring="Limites d'Avertissement"/>
+    </entry>
+    <entry nativestring="department.evacuationreport">
+      <translation language="en" translatedstring="Department Evacuation Report"/>
+      <translation language="nl" translatedstring="Afdeling Evacuatie Rapport"/>
+      <translation language="fr" translatedstring="Rapport d'Évacuation du Département"/>
+    </entry>
+    <entry nativestring="inventory.deadsince">
+      <translation language="en" translatedstring="Since"/>
+      <translation language="nl" translatedstring="Sinds"/>
+      <translation language="fr" translatedstring="Depuis"/>
+    </entry>
+    <entry nativestring="inventory.deadstock.report">
+      <translation language="en" translatedstring="Dead Stock Report"/>
+      <translation language="nl" translatedstring="Oude Voorraad Rapport"/>
+      <translation language="fr" translatedstring="Rapport Stock Ancien"/>
+    </entry>
+    <entry nativestring="machine.oeereport">
+      <translation language="en" translatedstring="OEE Report"/>
+      <translation language="nl" translatedstring="OEE Rapport"/>
+      <translation language="fr" translatedstring="Rapport d'OEE"/>
+    </entry>
+    <entry nativestring="percentage">
+      <translation language="en" translatedstring="Percentage"/>
+      <translation language="nl" translatedstring="Percentage"/>
+      <translation language="fr" translatedstring="Pourcentage"/>
+    </entry>
+    <entry nativestring="tasks.day.report">
+      <translation language="en" translatedstring="Task Day Report"/>
+      <translation language="nl" translatedstring="Taken Dag Rapport"/>
+      <translation language="fr" translatedstring="Tâche Jour Rapport"/>
+    </entry>
+    <entry nativestring="tasks.duration.average">
+      <translation language="en" translatedstring="Average Duration"/>
+      <translation language="nl" translatedstring="Gemiddelde Duur"/>
+      <translation language="fr" translatedstring="Durée Moyenne"/>
+    </entry>
+    <entry nativestring="tasks.duration.total">
+      <translation language="en" translatedstring="Total Duration"/>
+      <translation language="nl" translatedstring="Totale Duur"/>
+      <translation language="fr" translatedstring="Durée Total"/>
+    </entry>
+    <entry nativestring="tasks.overview.report">
+      <translation language="en" translatedstring="Task Duration Report"/>
+      <translation language="nl" translatedstring="Taken Duur Rapport"/>
+      <translation language="fr" translatedstring="Tâche Durée Rapport"/>
+    </entry>
+    <entry nativestring="tasks.report.pie.count">
+      <translation language="en" translatedstring="Task Count Distribution"/>
+      <translation language="nl" translatedstring="Verdeling Aantal Taken"/>
+      <translation language="fr" translatedstring="Distribution du Nombre de Tâches"/>
+    </entry>
+    <entry nativestring="tasks.report.pie.duration">
+      <translation language="en" translatedstring="Task Duration Distribution"/>
+      <translation language="nl" translatedstring="Verdeling Duurtijd Taken"/>
+      <translation language="fr" translatedstring="Distribution de la Durée de Tâches"/>
+    </entry>
+    <entry nativestring="tasks.total">
+      <translation language="en" translatedstring="# Tasks"/>
+      <translation language="nl" translatedstring="Totaal Aantal Taken"/>
+      <translation language="fr" translatedstring="Total"/>
+    </entry>
+    <entry nativestring="timeframe">
+      <translation language="en" translatedstring="Timeframe"/>
+      <translation language="nl" translatedstring="Tijdspanne"/>
+      <translation language="fr" translatedstring="Période"/>
+    </entry>
+    <entry nativestring="warehouses.all">
+      <translation language="en" translatedstring="&lt;All&gt;"/>
+      <translation language="nl" translatedstring="&lt;Alle&gt;"/>
+      <translation language="fr" translatedstring="&lt;Tous&gt;"/>
+    </entry>
+  </entries>
+</dictionary>

@@ -1,0 +1,21 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Access Server" type="Application" factoryName="Application">
+    <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+    <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+    <option name="MAIN_CLASS_NAME" value="dce.pd.server.ApplicationServer" />
+    <module name="objt.accessserver_main" />
+    <option name="PROGRAM_PARAMETERS" value="accessserver.properties objt/app/accessserver/accessserver.xml" />
+    <option name="VM_PARAMETERS" value="-server -Xms128M -Xmx512M -XX:+UseG1GC -javaagent:&quot;C:\javalib\aspectj\1.9.6\aspectjweaver.jar&quot;" />
+    <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/objt.accessserver" />
+    <RunnerSettings RunnerId="Debug">
+      <option name="DEBUG_PORT" value="" />
+      <option name="TRANSPORT" value="0" />
+      <option name="LOCAL" value="true" />
+    </RunnerSettings>
+    <ConfigurationWrapper RunnerId="Debug" />
+    <method v="2">
+      <option name="Gradle.BeforeRunTask" enabled="true" tasks="processResources" externalProjectPath="$PROJECT_DIR$" vmOptions="" scriptParameters="" />
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

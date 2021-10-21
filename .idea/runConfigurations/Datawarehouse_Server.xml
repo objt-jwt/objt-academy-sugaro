@@ -1,0 +1,21 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Datawarehouse Server" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="dce.pd.server.ApplicationServer" />
+    <module name="objt.datawarehouseserver_main" />
+    <option name="PROGRAM_PARAMETERS" value="datawarehouse.properties objt/app/datawarehouseserver/datawarehouse.xml objt/app/meta/meta.xml" />
+    <option name="VM_PARAMETERS" value="-server -Xms128M -Xmx1024M -javaagent:&quot;C:\javalib\aspectj\1.9.6\aspectjweaver.jar&quot;" />
+    <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/objt.datawarehouseserver" />
+    <RunnerSettings RunnerId="Debug">
+      <option name="DEBUG_PORT" value="1755" />
+      <option name="TRANSPORT" value="0" />
+      <option name="LOCAL" value="true" />
+    </RunnerSettings>
+    <RunnerSettings RunnerId="Run" />
+    <ConfigurationWrapper RunnerId="Debug" />
+    <ConfigurationWrapper RunnerId="Run" />
+    <method v="2">
+      <option name="Gradle.BeforeRunTask" enabled="true" tasks="processResources" externalProjectPath="$PROJECT_DIR$" vmOptions="" scriptParameters="" />
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

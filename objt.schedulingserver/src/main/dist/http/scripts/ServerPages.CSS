@@ -1,0 +1,33 @@
+body  { color: #000000; font-family: Arial, Helvetica, sans-serif }
+a:hover     { color: red; font-family: Arial, Helvetica, sans-serif; text-decoration: none }
+a:link     { font-family: Arial, Helvetica, sans-serif }
+a:vlink    { color: purple; font-size: 9px }
+h1 {	font: bold 24px Arial, Helvetica, sans-serif;}
+
+table {
+	font: 12px Arial, Helvetica, sans-serif;
+	text-align: left;
+}
+table td { /*any td at any level of mytable*/
+	border-bottom: 1px solid #CCC;
+	border-right: 1px solid #CCC;
+}
+table th { /*any td at any level of mytable*/
+	border-top: 1px solid #DB9F8D;
+	border-bottom: 1px solid #DB9F8D;
+	border-right: 1px solid #DB9F8D;
+	background: #D5D5D5;
+}
+
+.table_header {
+	font: 11px/24px Arial, Helvetica, sans-serif;
+	border-collapse: collapse;
+	text-align: left;
+}
+.table_header td { /*any td at any level of mytable*/
+	border-bottom: 1px;
+	border-right:  0px;
+}
+
+
+

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<objt codebase="http://%HTTPSERVER%" 
+      href="bin/objt.tagexplorer.objt" 
+      version="%INSTALLATION%-%VERSION%"
+      title="Objective Tag Explorer (%INSTALLATION%)" >
+
+  <shortcut iconhref="webimages/objective.icon.ico"
+            desktop="true" programfolder="Objective" />
+
+  <libs>
+    ${libs}
+	</libs>
+
+  <jvm minversion="1.8" maxversion="1.8" datamodel="32" href="jre/jre-8u192-windows-i586.jar">
+    <arg val="-Xmx256M" />
+    <arg val="-Dsun.java2d.d3d=false" />
+		<arg val="-DX.OBJECTIVE.INSTALLATION=%INSTALLATION%" />
+  </jvm>
+
+  <application mainclass="objt.tagexplorer.TagExplorer" >
+    <arg val="tagexplorer.properties" />
+    <arg val="objt/tagexplorer/tagexplorer.xml" />
+  </application>
+</objt>

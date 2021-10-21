@@ -1,0 +1,2083 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<model _name="objt">
+  <package _name="dce.pd.dialogmgr">
+    <dialogclass _name="AbstractDialog" isAbstract="true">
+      <dialoglevel _name="Error" leftText="FATAL ERROR" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" rightText="PRESS &lt;ENTER&gt;" type="list"/>
+    </dialogclass>
+  </package>
+  <package _name="dce.pd.dialogmgr.dialog">
+    <dialogclass _name="LoginDialog" description="LOGIN/LOGOUT" isAbstract="false">
+      <generalization dialogclass="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Dialog" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Employee" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Password" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="AbstractDialog" isAbstract="true">
+      <generalization dialogclass="dce.pd.dialogmgr.AbstractDialog"/>
+      <dialoglevel _name="Dialog" leftText="DIALOG" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="Employee" leftText="EMPLOYEE" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="Password" leftText="PASSWORD" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="password"/>
+      <dialoglevel _name="Confirmation" leftText="CONFIRMATION" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list">
+        <listitem text="SELECT"/>
+        <listitem text="YES"/>
+        <listitem text="NO"/>
+      </dialoglevel>
+    </dialogclass>
+  </package>
+  <package _name="objt.wms.dialog" description="WMS Dialogs">
+    <dialogclass _name="LoginDialog" description="LOGIN" isAbstract="false">
+      <generalization dialogclass="dce.pd.dialogmgr.dialog.LoginDialog"/>
+      <dialoglevel _name="Dialog" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Employee" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Password" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Role" leftText="TASKPROFILE" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="TaskSelectDialog" description="SELECT TASK" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.AbstractDialog"/>
+      <dialoglevel _name="Dialog" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Task" description="SELECT TASK LEVEL" leftText="SELECT TASK?" onEnter="true" onEntry="true" onEscape="true" onExit="false" onListSelect="true" type="list"/>
+      <dialoglevel _name="CreateMultiTaskOrder" leftText="CREATE MULTI ORDER PICK LIST?" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list">
+        <listitem text="SELECT"/>
+        <listitem text="YES"/>
+        <listitem text="NO"/>
+      </dialoglevel>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="TaskError" leftText="WARNING" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="AbstractDialog" isAbstract="true">
+      <generalization dialogclass="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="TaskErrorDialog" description="TASK ERROR" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.AbstractTaskDialog"/>
+      <dialoglevel _name="Continue" leftText="PRESS ENTER TO CONTINUE" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list">
+        <listitem text="CONTINUE"/>
+      </dialoglevel>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="ModifyTaskProfileDialog" description="MODIFY TASKPROFILE" isAbstract="false">
+      <generalization dialogclass="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Role" leftText="TASKPROFILE" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="TaskResetDialog" description="TASK RESET" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.AbstractTaskDialog"/>
+      <dialoglevel _name="Continue" leftText="PRESS ENTER TO CONTINUE" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list">
+        <listitem text="CONTINUE"/>
+      </dialoglevel>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="ContainerTaskSwapDialog" description="TASK SWAP" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.AbstractTaskDialog"/>
+      <dialoglevel _name="Dialog" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="LPN" leftText="SCAN LPN" onEnter="false" onEntry="false" onEscape="false" onExit="false" type="input"/>
+      <dialoglevel _name="TaskError" owner="objt.wms.dialog.AbstractTaskDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="TaskTerminateDialog" description="TASK TERMINATE" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.AbstractTaskDialog"/>
+      <dialoglevel _name="TerminateTask" leftText="TERMINATE TASK?" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list">
+        <listitem text="YES"/>
+        <listitem text="NO"/>
+      </dialoglevel>
+      <dialoglevel _name="Employee" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Password" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Reason" leftText="REASON" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="TaskError" owner="objt.wms.dialog.AbstractTaskDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="AbstractContainerTaskDialog" isAbstract="true">
+      <generalization dialogclass="objt.wms.dialog.AbstractTaskDialog"/>
+      <dialoglevel _name="LPN" leftText="SCAN LPN" onEnter="false" onEntry="false" onEscape="false" onExit="false" type="input"/>
+      <dialoglevel _name="LPNSerialIdentification" leftText="SERIAL IDENTIFICATION" onEnter="false" onEntry="false" onEscape="false" onExit="false" onListSelect="false" type="list">
+        <listitem text="IDENTIFY SERIALS"/>
+        <listitem text="CONTINUE"/>
+      </dialoglevel>
+      <dialoglevel _name="LPNStack" leftText="SCAN NEXT LPN" onEnter="false" onEntry="false" onEscape="false" onExit="false" type="input"/>
+      <dialoglevel _name="LPNStackSerialIdentification" leftText="SERIAL IDENTIFICATION" onEnter="false" onEntry="false" onEscape="false" onExit="false" onListSelect="false" type="list">
+        <listitem text="IDENTIFY SERIALS"/>
+        <listitem text="CONTINUE"/>
+      </dialoglevel>
+      <dialoglevel _name="Location" leftText="SCAN TO LOCATION" onEnter="false" onEntry="false" onEscape="false" onExit="false" type="input"/>
+      <dialoglevel _name="LocationOverrideConfirmation" leftText="OVERRIDE LOCATION ?" onEnter="false" onEntry="false" onEscape="false" onExit="false" onListSelect="false" type="list">
+        <listitem text="YES"/>
+        <listitem text="NO"/>
+      </dialoglevel>
+      <dialoglevel _name="LocationOverrideReason" leftText="REASON" onEnter="false" onEntry="false" onEscape="false" onExit="false" onListSelect="false" type="list"/>
+    </dialogclass>
+    <dialogclass _name="AbstractTaskDialog" isAbstract="true">
+      <generalization dialogclass="objt.wms.dialog.AbstractDialog"/>
+      <dialoglevel _name="Dialog" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Terminate" leftText="TERMINATE?" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list">
+        <listitem text="YES"/>
+        <listitem text="NO"/>
+      </dialoglevel>
+      <dialoglevel _name="TaskError" leftText="WARNING" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="AnyTaskDialog01" description="EXECUTE LPN TASK" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.AbstractTaskDialog"/>
+      <dialoglevel _name="LPN" leftText="SCAN LPN" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="TaskWarning" leftText="PRESS ENTER TO CONTINUE" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list">
+        <listitem text="CONTINUE"/>
+      </dialoglevel>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="TaskError" owner="objt.wms.dialog.AbstractTaskDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="ContainerPrintDialog" description="PRINT LPN" isAbstract="false">
+      <generalization dialogclass="objt.common.resourcemgt.dialog.AbstractPrintDialog"/>
+      <dialoglevel _name="LPN" description="Level to let the user scan the barcode of an LPN" leftText="SCAN LPN" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="DocumentTemplate" owner="objt.common.resourcemgt.dialog.AbstractPrintDialog"/>
+      <dialoglevel _name="PrinterDeviceInput" owner="objt.common.resourcemgt.dialog.AbstractPrintDialog"/>
+      <dialoglevel _name="PrinterDeviceSelection" owner="objt.common.resourcemgt.dialog.AbstractPrintDialog"/>
+      <dialoglevel _name="NumberOfCopies" owner="objt.common.resourcemgt.dialog.AbstractPrintDialog"/>
+      <dialoglevel _name="PrintConfirmation" owner="objt.common.resourcemgt.dialog.AbstractPrintDialog"/>
+      <dialoglevel _name="PrintingBusy" owner="objt.common.resourcemgt.dialog.AbstractPrintDialog"/>
+      <dialoglevel _name="PrintError" owner="objt.common.resourcemgt.dialog.AbstractPrintDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="MessageDialog" description="MESSAGE" isAbstract="false">
+      <generalization dialogclass="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="SelectMessage" leftText="SELECT MESSAGE" onEnter="false" onEntry="false" onEscape="false" onExit="false" onListSelect="false" type="list"/>
+      <dialoglevel _name="Message" leftText="PRESS OK TO CONTINUE" onEnter="false" onEntry="false" onEscape="false" onExit="false" onListSelect="false" type="list">
+        <listitem text="SELECT"/>
+        <listitem text="OK"/>
+      </dialoglevel>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="LocationWildCardIdentificationDialog" description="LOCATION IDENTIFICATION" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.AbstractDialog"/>
+      <dialoglevel _name="Location" leftText="SCAN LOCATION" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="Wildcard" leftText="ENTER MISSING VALUE" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="SerialIdentificationDialog" description="SERIAL NUMBERS" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.AbstractDialog"/>
+      <dialoglevel _name="ScanMode" leftText="SELECT SERIAL NUMBER SCAN MODE" onEnter="false" onEntry="false" onEscape="false" onExit="false" onListSelect="false" type="list">
+        <listitem text="SCAN WANTED"/>
+        <listitem text="SCAN UNWANTED"/>
+      </dialoglevel>
+      <dialoglevel _name="Options" leftText="OPTIONS" onEnter="false" onEntry="false" onEscape="false" onExit="false" onListSelect="false" type="list">
+        <listitem text="STOP"/>
+        <listitem text="ADD"/>
+        <listitem text="REMOVE"/>
+        <listitem text="OVERVIEW"/>
+        <listitem text="CHANGE SCAN MODE"/>
+      </dialoglevel>
+      <dialoglevel _name="Serial" leftText="SCAN SERIAL NUMBER TO ADD" onEnter="false" onEntry="false" onEscape="false" onExit="false" type="input"/>
+      <dialoglevel _name="SelectSKU" leftText="SELECT SKU" onEnter="false" onEntry="false" onEscape="false" onExit="false" onListSelect="false" type="list"/>
+      <dialoglevel _name="Overview" leftText="OVERVIEW" onEnter="false" onEntry="false" onEscape="false" onExit="false" onListSelect="false" type="list"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="ContainerSerialIdentificationDialog" description="CONTAINER SERIAL NUMBERS" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.AbstractDialog"/>
+      <dialoglevel _name="LPN" leftText="SCAN LPN" onEnter="false" onEntry="false" onEscape="false" onExit="false" type="input"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="StorageItemQtySelectionDialog" description="STORAGEITEMQTY SELECTION" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.AbstractDialog"/>
+      <dialoglevel _name="ScanLPN" leftText="SCAN FROM LPN" onEnter="false" onEntry="false" onEscape="false" onExit="false" type="input"/>
+      <dialoglevel _name="ScanSKU" leftText="SCAN SKU" onEnter="false" onEntry="false" onEscape="false" onExit="false" type="input"/>
+      <dialoglevel _name="SelectSKU" leftText="SELECT SKU" onEnter="false" onEntry="false" onEscape="false" onExit="false" onListSelect="false" type="list"/>
+      <dialoglevel _name="ScanLot" leftText="SCAN LOT" onEnter="false" onEntry="false" onEscape="false" onExit="false" type="input"/>
+      <dialoglevel _name="SelectLot" leftText="SELECT LOT" onEnter="false" onEntry="false" onEscape="false" onExit="false" onListSelect="false" type="list"/>
+      <dialoglevel _name="ScanSubLot" leftText="SCAN SUBLOT" onEnter="false" onEntry="false" onEscape="false" onExit="false" type="input"/>
+      <dialoglevel _name="SelectSubLot" leftText="SELECT SUBLOT" onEnter="false" onEntry="false" onEscape="false" onExit="false" onListSelect="false" type="list"/>
+      <dialoglevel _name="SelectInventoryCode1" leftText="SELECT INVENTORYCODE 1" onEnter="false" onEntry="false" onEscape="false" onExit="false" onListSelect="false" type="list"/>
+      <dialoglevel _name="SelectInventoryCode2" leftText="SELECT INVENTORYCODE 2" onEnter="false" onEntry="false" onEscape="false" onExit="false" onListSelect="false" type="list"/>
+      <dialoglevel _name="SelectInventoryCode3" leftText="SELECT INVENTORYCODE 3" onEnter="false" onEntry="false" onEscape="false" onExit="false" onListSelect="false" type="list"/>
+      <dialoglevel _name="SelectInventoryCode4" leftText="SELECT INVENTORYCODE 4" onEnter="false" onEntry="false" onEscape="false" onExit="false" onListSelect="false" type="list"/>
+      <dialoglevel _name="SelectInventoryCode5" leftText="SELECT INVENTORYCODE 5" onEnter="false" onEntry="false" onEscape="false" onExit="false" onListSelect="false" type="list"/>
+      <dialoglevel _name="SelectOwner" leftText="SELECT OWNER" onEnter="false" onEntry="false" onEscape="false" onExit="false" onListSelect="false" type="list"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="StorageItemQtySerialIdentificationDialog" description="STORAGEITEMQTY AND SERIAL IDENTIFICATION" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.AbstractDialog"/>
+      <dialoglevel _name="Options" leftText="OPTIONS" onEnter="false" onEntry="false" onEscape="false" onExit="false" onListSelect="false" type="list">
+        <listitem text="IDENTIFY SERIALS"/>
+        <listitem text="STOP"/>
+      </dialoglevel>
+      <dialoglevel _name="QuantityWarning" leftText="QUANTITY WARNING" onEnter="false" onEntry="false" onEscape="false" onExit="false" onListSelect="false" type="list">
+        <listitem text="ADD SERIAL NUMBERS"/>
+        <listitem text="CONFIRM NEW QTY"/>
+      </dialoglevel>
+      <dialoglevel _name="Reason" leftText="REASON" onEnter="false" onEntry="false" onEscape="false" onExit="false" onListSelect="false" type="list"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="AbstractIdentificationDialog" isAbstract="true">
+      <generalization dialogclass="objt.wms.dialog.AbstractDialog"/>
+      <dialoglevel _name="Barcode" leftText="SCAN BARCODE OR PRESS ENTER TO CONTINUE" onEnter="false" onEntry="false" onEscape="false" onExit="false" type="input"/>
+      <dialoglevel _name="LPN" leftText="ENTER LPN" onEnter="false" onEntry="false" onEscape="false" onExit="false" type="input"/>
+      <dialoglevel _name="SKU" leftText="ENTER SKU" onEnter="false" onEntry="false" onEscape="false" onExit="false" type="input"/>
+      <dialoglevel _name="Lot" leftText="ENTER LOT" onEnter="false" onEntry="false" onEscape="false" onExit="false" type="input"/>
+      <dialoglevel _name="SubLot" leftText="ENTER SUBLOT" onEnter="false" onEntry="false" onEscape="false" onExit="false" type="input"/>
+      <dialoglevel _name="DtsBestBefore" leftText="ENTER BEST BEFORE DATE" onEnter="false" onEntry="false" onEscape="false" onExit="false" type="input"/>
+      <dialoglevel _name="ProductionDate" leftText="ENTER PRODUCTION DATE" onEnter="false" onEntry="false" onEscape="false" onExit="false" type="input"/>
+      <dialoglevel _name="PackConfiguration" leftText="SELECT PACK CONFIGURATION" onEnter="false" onEntry="false" onEscape="false" onExit="false" onListSelect="false" type="list"/>
+      <dialoglevel _name="ContainerType" leftText="SELECT CONTAINER TYPE" onEnter="false" onEntry="false" onEscape="false" onExit="false" onListSelect="false" type="list"/>
+      <dialoglevel _name="Quantity" leftText="ENTER QUANTITY" onEnter="false" onEntry="false" onEscape="false" onExit="false" type="input"/>
+      <dialoglevel _name="SerialIdentification" leftText="SERIAL IDENTIFICATION" onEnter="false" onEntry="false" onEscape="false" onExit="false" onListSelect="false" type="list">
+        <listitem text="CONTINUE"/>
+        <listitem text="IDENTIFY SERIALS"/>
+      </dialoglevel>
+      <dialoglevel _name="QuantityWarning" leftText="QUANTITY WARNING" onEnter="false" onEntry="false" onEscape="false" onExit="false" onListSelect="false" type="list">
+        <listitem text="CONFIRM NEW QTY"/>
+        <listitem text="ADJUST SERIAL NUMBERS"/>
+      </dialoglevel>
+      <dialoglevel _name="NextItem" leftText="ADD ADDITIONAL INVENTORY ON THIS LPN?" onEnter="false" onEntry="false" onEscape="false" onExit="false" onListSelect="false" type="list">
+        <listitem text="YES"/>
+        <listitem text="NO"/>
+      </dialoglevel>
+    </dialogclass>
+  </package>
+  <package _name="objt.common.resourcemgt.dialog">
+    <dialogclass _name="AbstractPrintDialog" description="Abstract Dialog for Printing" isAbstract="true">
+      <generalization dialogclass="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="DocumentTemplate" description="Level to let the user select a documenttemplate" leftText="DOCUMENTTEMPLATE" onEnter="true" onEntry="true" onEscape="true" onExit="false" onListSelect="false" type="list"/>
+      <dialoglevel _name="PrinterDeviceInput" description="Level to let the user scan an (ID) barcode of a printerdevice" leftText="SCAN PRINTER" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="PrinterDeviceSelection" description="Level to let the user choose a printerdevice capable of printing the selected documenttemplate" leftText="SELECT PRINTER" onEnter="true" onEntry="true" onEscape="true" onExit="false" onListSelect="false" type="list"/>
+      <dialoglevel _name="NumberOfCopies" description="Level to let the user enter a number of copies" leftText="NUMBER OF COPIES" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="PrintConfirmation" description="Level to confirm to print" leftText="CONFIRM" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list">
+        <listitem text="SELECT"/>
+        <listitem text="YES"/>
+        <listitem text="NO"/>
+      </dialoglevel>
+      <dialoglevel _name="PrintError" description="Level to go to when a print exception occurs" leftText="SELECT ACTION" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list"/>
+      <dialoglevel _name="PrintingBusy" leftText="PRINTING IN PROGRESS..." onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list">
+        <listitem text="SELECT"/>
+      </dialoglevel>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+  </package>
+  <package _name="objt.wms.dialog.crossdock">
+    <dialogclass _name="ContainerCrossDockTaskDialog01" description="CROSSDOCK CONTAINER" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.AbstractContainerTaskDialog"/>
+      <dialoglevel _name="LPN" owner="objt.wms.dialog.AbstractContainerTaskDialog"/>
+      <dialoglevel _name="LPNSerialIdentification" owner="objt.wms.dialog.AbstractContainerTaskDialog"/>
+      <dialoglevel _name="LPNStack" owner="objt.wms.dialog.AbstractContainerTaskDialog"/>
+      <dialoglevel _name="LPNStackSerialIdentification" owner="objt.wms.dialog.AbstractContainerTaskDialog"/>
+      <dialoglevel _name="Location" owner="objt.wms.dialog.AbstractContainerTaskDialog"/>
+      <dialoglevel _name="LocationOverrideConfirmation" owner="objt.wms.dialog.AbstractContainerTaskDialog"/>
+      <dialoglevel _name="LocationOverrideReason" owner="objt.wms.dialog.AbstractContainerTaskDialog"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+  </package>
+  <package _name="objt.wms.dialog.inbound">
+    <dialogclass _name="NestLPNCloseDialog01" description="CLOSE NEST LPN" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.AbstractDialog"/>
+      <dialoglevel _name="TopLPN" leftText="SCAN TOP LPN" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="PutAwayMode" leftText="SELECT PUTAWAY MODE" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list"/>
+      <dialoglevel _name="ConfirmCloseLPN" leftText="CLOSE TOP LPN?" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list">
+        <listitem text="YES"/>
+        <listitem text="NO"/>
+      </dialoglevel>
+      <dialoglevel _name="Height" leftText="HEIGHT" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="Overhang" leftText="OVERHANG?" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list">
+        <listitem text="YES"/>
+        <listitem text="NO"/>
+      </dialoglevel>
+      <dialoglevel _name="Depth" leftText="DEPTH" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="Width" leftText="WIDTH" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="Weight" leftText="WEIGHT" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="PrintLabel" leftText="PRINT LABEL?" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list">
+        <listitem text="SELECT"/>
+        <listitem text="YES"/>
+        <listitem text="NO"/>
+      </dialoglevel>
+      <dialoglevel _name="DeleteTopLPN" leftText="DELETE EMPTY TOP LPN?" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list">
+        <listitem text="SELECT"/>
+        <listitem text="YES DELETE TOP LPN"/>
+        <listitem text="NO SCAN OTHER LPN"/>
+      </dialoglevel>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="NestLPNCreateDialog01" description="CREATE NEST LPN" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.AbstractDialog"/>
+      <dialoglevel _name="Location" leftText="SCAN LOCATION" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="TopLPN" leftText="SCAN TOP LPN" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="Container" leftText="SELECT CONTAINER" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list"/>
+      <dialoglevel _name="PutAwayMode" leftText="SELECT PUTAWAY MODE" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="PrintLabel" leftText="PRINT LABEL?" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list">
+        <listitem text="SELECT"/>
+        <listitem text="YES"/>
+        <listitem text="NO"/>
+      </dialoglevel>
+      <dialoglevel _name="ConfirmLPNContent" leftText="PLEASE SELECT ACTION" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list">
+        <listitem text="ADD SUB LPN"/>
+        <listitem text="CLOSE TOP LPN"/>
+        <listitem text="CLEAR TOP LPN"/>
+      </dialoglevel>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="NestLPNAddLPNDialog01" description="ADD SUB LPN'S" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.AbstractDialog"/>
+      <dialoglevel _name="TopLPN" leftText="SCAN TOP LPN" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="NestedLPN" leftText="SCAN SUB LPN TO ADD OR PRESS ENTER TO STOP" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="Stop" leftText="STOP ADDING SUB LPN'S?" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list">
+        <listitem text="YES CLOSE TOP LPN"/>
+        <listitem text="YES STOP AND CONTINUE LATER"/>
+        <listitem text="NO ADD ANOTHER SUB LPN"/>
+      </dialoglevel>
+      <dialoglevel _name="StopEmptyTopLPN" leftText="TOP LPN IS EMPTY. DELETE IT?" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list">
+        <listitem text="YES DELETE TOP LPN"/>
+        <listitem text="NO ADD SUB LPN"/>
+      </dialoglevel>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="NestLPNRemoveLPNDialog01" description="REMOVE SUB LPN'S" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.AbstractDialog"/>
+      <dialoglevel _name="TopLPN" leftText="SCAN TOP LPN" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="NestedLPN" leftText="SCAN SUB LPN TO REMOVE OR PRESS ENTER TO STOP" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="Stop" leftText="STOP REMOVING SUB LPN'S?" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list">
+        <listitem text="YES CLOSE TOP LPN"/>
+        <listitem text="YES STOP AND CONTINUE LATER"/>
+        <listitem text="YES ADD SUB LPN"/>
+        <listitem text="NO REMOVE ANOTHER SUB LPN"/>
+      </dialoglevel>
+      <dialoglevel _name="StopEmptyTopLPN" leftText="TOP LPN IS EMPTY. DELETE IT?" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list">
+        <listitem text="YES DELETE TOP LPN"/>
+        <listitem text="NO ADD SUB LPN"/>
+      </dialoglevel>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="AbstractInboundDialog" description="RECEIPT" isAbstract="true">
+      <generalization dialogclass="objt.wms.dialog.AbstractIdentificationDialog"/>
+      <dialoglevel _name="ScanInboundOrder" leftText="SCAN INBOUNDORDER" onEnter="false" onEntry="false" onEscape="false" onExit="false" rightText="&lt;ENTER&gt; FOR SELECT" type="input"/>
+      <dialoglevel _name="SelectInboundOrder" leftText="SELECT INBOUNDORDER" onEnter="false" onEntry="false" onEscape="false" onExit="false" onListSelect="false" type="list"/>
+      <dialoglevel _name="Inspection" leftText="PRESS OK TO CONTINUE" onEnter="false" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list">
+        <listitem text="OK"/>
+      </dialoglevel>
+    </dialogclass>
+    <dialogclass _name="LPNInboundDialog" description="LPN INBOUND" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.inbound.AbstractIdentificationDialog"/>
+      <dialoglevel _name="ScanInboundOrder" owner="objt.wms.dialog.inbound.AbstractInboundDialog"/>
+      <dialoglevel _name="SelectInboundOrder" owner="objt.wms.dialog.inbound.AbstractInboundDialog"/>
+      <dialoglevel _name="Inspection" owner="objt.wms.dialog.inbound.AbstractInboundDialog"/>
+      <dialoglevel _name="LocationTopLPN" leftText="SCAN LOCATION / TOP LPN" onEnter="false" onEntry="false" onEscape="false" onExit="false" type="input"/>
+      <dialoglevel _name="Barcode" owner="objt.wms.dialog.AbstractIdentificationDialog"/>
+      <dialoglevel _name="LPN" owner="objt.wms.dialog.AbstractIdentificationDialog"/>
+      <dialoglevel _name="SKU" owner="objt.wms.dialog.AbstractIdentificationDialog"/>
+      <dialoglevel _name="PurchaseOrder" owner="objt.wms.dialog.inbound.AbstractIdentificationDialog"/>
+      <dialoglevel _name="Lot" owner="objt.wms.dialog.AbstractIdentificationDialog"/>
+      <dialoglevel _name="SubLot" owner="objt.wms.dialog.AbstractIdentificationDialog"/>
+      <dialoglevel _name="DtsBestBefore" owner="objt.wms.dialog.AbstractIdentificationDialog"/>
+      <dialoglevel _name="ProductionDate" owner="objt.wms.dialog.AbstractIdentificationDialog"/>
+      <dialoglevel _name="PackConfiguration" owner="objt.wms.dialog.AbstractIdentificationDialog"/>
+      <dialoglevel _name="ContainerType" owner="objt.wms.dialog.AbstractIdentificationDialog"/>
+      <dialoglevel _name="ASN" owner="objt.wms.dialog.inbound.AbstractIdentificationDialog"/>
+      <dialoglevel _name="ASNQuantity" owner="objt.wms.dialog.inbound.AbstractIdentificationDialog"/>
+      <dialoglevel _name="Quantity" owner="objt.wms.dialog.AbstractIdentificationDialog"/>
+      <dialoglevel _name="SerialIdentification" owner="objt.wms.dialog.AbstractIdentificationDialog"/>
+      <dialoglevel _name="QuantityWarning" owner="objt.wms.dialog.AbstractIdentificationDialog"/>
+      <dialoglevel _name="NextItem" owner="objt.wms.dialog.AbstractIdentificationDialog"/>
+      <dialoglevel _name="PutAwayMode" leftText="SELECT PUTAWAY MODE" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="PrintLabel" leftText="PRINT LABEL?" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list">
+        <listitem text="SELECT"/>
+        <listitem text="YES"/>
+        <listitem text="NO"/>
+      </dialoglevel>
+      <dialoglevel _name="CreateTopLPN" leftText="CREATE A NEW TOP LPN?" onEnter="false" onEntry="false" onEscape="false" onExit="false" onListSelect="false" type="list">
+        <listitem text="SELECT"/>
+        <listitem text="YES"/>
+        <listitem text="NO"/>
+      </dialoglevel>
+      <dialoglevel _name="Location" leftText="SCAN LOCATION" onEnter="false" onEntry="false" onEscape="false" onExit="false" type="input"/>
+      <dialoglevel _name="LPNError" leftText="PRESS EXIT TO CONTINUE" onEnter="false" onEntry="false" onEscape="false" onExit="false" onListSelect="false" type="list">
+        <listitem text="EXIT"/>
+      </dialoglevel>
+      <dialoglevel _name="LPNInspection" owner="objt.wms.dialog.inbound.AbstractIdentificationDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="ReceiveOnLocationDialog" description="RECEIVE ON LOCATION" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.inbound.AbstractIdentificationDialog"/>
+      <dialoglevel _name="ScanInboundOrder" owner="objt.wms.dialog.inbound.AbstractInboundDialog"/>
+      <dialoglevel _name="SelectInboundOrder" owner="objt.wms.dialog.inbound.AbstractInboundDialog"/>
+      <dialoglevel _name="Inspection" owner="objt.wms.dialog.inbound.AbstractInboundDialog"/>
+      <dialoglevel _name="Barcode" owner="objt.wms.dialog.AbstractIdentificationDialog"/>
+      <dialoglevel _name="LPN" owner="objt.wms.dialog.AbstractIdentificationDialog"/>
+      <dialoglevel _name="SKU" owner="objt.wms.dialog.AbstractIdentificationDialog"/>
+      <dialoglevel _name="PurchaseOrder" owner="objt.wms.dialog.inbound.AbstractIdentificationDialog"/>
+      <dialoglevel _name="Lot" owner="objt.wms.dialog.AbstractIdentificationDialog"/>
+      <dialoglevel _name="SubLot" owner="objt.wms.dialog.AbstractIdentificationDialog"/>
+      <dialoglevel _name="DtsBestBefore" owner="objt.wms.dialog.AbstractIdentificationDialog"/>
+      <dialoglevel _name="ProductionDate" owner="objt.wms.dialog.AbstractIdentificationDialog"/>
+      <dialoglevel _name="PackConfiguration" owner="objt.wms.dialog.AbstractIdentificationDialog"/>
+      <dialoglevel _name="ContainerType" owner="objt.wms.dialog.AbstractIdentificationDialog"/>
+      <dialoglevel _name="ASN" owner="objt.wms.dialog.inbound.AbstractIdentificationDialog"/>
+      <dialoglevel _name="ASNQuantity" owner="objt.wms.dialog.inbound.AbstractIdentificationDialog"/>
+      <dialoglevel _name="Quantity" owner="objt.wms.dialog.AbstractIdentificationDialog"/>
+      <dialoglevel _name="SerialIdentification" owner="objt.wms.dialog.AbstractIdentificationDialog"/>
+      <dialoglevel _name="QuantityWarning" owner="objt.wms.dialog.AbstractIdentificationDialog"/>
+      <dialoglevel _name="NextItem" owner="objt.wms.dialog.AbstractIdentificationDialog"/>
+      <dialoglevel _name="Destination" leftText="SCAN LOCATION / (TOP) LPN" onEnter="false" onEntry="false" onEscape="false" onExit="false" type="input"/>
+      <dialoglevel _name="DestinationLPN" leftText="ENTER LPN" onEnter="false" onEntry="false" onEscape="false" onExit="false" type="input"/>
+      <dialoglevel _name="DestinationPackConfiguration" leftText="SELECT PACK CONFIGURATION" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list"/>
+      <dialoglevel _name="DestinationContainerType" leftText="SELECT CONTAINER TYPE" onEnter="false" onEntry="false" onEscape="false" onExit="false" onListSelect="false" type="list"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="PrintLabel" leftText="PRINT LABEL?" onEnter="false" onEntry="false" onEscape="false" onExit="false" onListSelect="false" type="list">
+        <listitem text="SELECT"/>
+        <listitem text="YES"/>
+        <listitem text="NO"/>
+      </dialoglevel>
+      <dialoglevel _name="LPNInspection" owner="objt.wms.dialog.inbound.AbstractIdentificationDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="InboundOrderCreateDialog" description="CREATE INBOUNDORDER" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.inbound.AbstractInboundDialog"/>
+      <dialoglevel _name="SupplierCustomer" leftText="ENTER SUPPLIER" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="SelectSupplierCustomer" leftText="SELECT SUPPLIER" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list"/>
+      <dialoglevel _name="SelectOpenReceiptReturn" leftText="SELECT OPTION" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list"/>
+      <dialoglevel _name="InboundOrderDescription" leftText="ENTER DESCRIPTION" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Inspection" owner="objt.wms.dialog.inbound.AbstractInboundDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="NestLPNOpenDialog" description="OPEN TOP LPN" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.AbstractDialog"/>
+      <dialoglevel _name="TopLPN" leftText="SCAN TOP LPN" onEnter="false" onEntry="false" onEscape="false" onExit="false" type="input"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="LPNOpenCloseDialog" description="OPEN/CLOSE LPN" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.AbstractDialog"/>
+      <dialoglevel _name="LPN" leftText="SCAN LPN" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+    </dialogclass>
+    <dialogclass _name="LPNOpenDialog" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.AbstractDialog"/>
+      <dialoglevel _name="LPN" leftText="SCAN LPN" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="LPNCloseDialog" description="CLOSE LPN" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.AbstractDialog"/>
+      <dialoglevel _name="LPN" leftText="SCAN LPN" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="PrintLabel" leftText="PRINT LABEL?" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list">
+        <listitem text="SELECT"/>
+        <listitem text="YES"/>
+        <listitem text="NO"/>
+      </dialoglevel>
+      <dialoglevel _name="LPNInspection" leftText="EXECUTE INSPECTION" onEnter="true" onEntry="false" onEscape="false" onExit="false" onListSelect="false" type="list">
+        <listitem text="YES"/>
+        <listitem text="NO"/>
+      </dialoglevel>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="AbstractIdentificationDialog" isAbstract="true">
+      <generalization dialogclass="objt.wms.dialog.inbound.AbstractInboundDialog"/>
+      <dialoglevel _name="Barcode" owner="objt.wms.dialog.AbstractIdentificationDialog"/>
+      <dialoglevel _name="LPN" owner="objt.wms.dialog.AbstractIdentificationDialog"/>
+      <dialoglevel _name="SKU" owner="objt.wms.dialog.AbstractIdentificationDialog"/>
+      <dialoglevel _name="PurchaseOrder" leftText="ENTER ORDER" onEnter="false" onEntry="false" onEscape="false" onExit="false" type="input"/>
+      <dialoglevel _name="Lot" owner="objt.wms.dialog.AbstractIdentificationDialog"/>
+      <dialoglevel _name="SubLot" owner="objt.wms.dialog.AbstractIdentificationDialog"/>
+      <dialoglevel _name="DtsBestBefore" owner="objt.wms.dialog.AbstractIdentificationDialog"/>
+      <dialoglevel _name="ProductionDate" owner="objt.wms.dialog.AbstractIdentificationDialog"/>
+      <dialoglevel _name="PackConfiguration" owner="objt.wms.dialog.AbstractIdentificationDialog"/>
+      <dialoglevel _name="ContainerType" owner="objt.wms.dialog.AbstractIdentificationDialog"/>
+      <dialoglevel _name="ASN" leftText="LPN KNOWN VIA ASN. PRESS OK TO CONTINUE" onEnter="false" onEntry="false" onEscape="false" onExit="false" onListSelect="false" type="list">
+        <listitem text="OK"/>
+      </dialoglevel>
+      <dialoglevel _name="ASNQuantity" leftText="PRESS OK TO VERIFY CONTENT" onEnter="false" onEntry="false" onEscape="false" onExit="false" onListSelect="false" type="list">
+        <listitem text="SELECT"/>
+        <listitem text="OK"/>
+      </dialoglevel>
+      <dialoglevel _name="Quantity" owner="objt.wms.dialog.AbstractIdentificationDialog"/>
+      <dialoglevel _name="SerialIdentification" owner="objt.wms.dialog.AbstractIdentificationDialog"/>
+      <dialoglevel _name="QuantityWarning" owner="objt.wms.dialog.AbstractIdentificationDialog"/>
+      <dialoglevel _name="NextItem" owner="objt.wms.dialog.AbstractIdentificationDialog"/>
+      <dialoglevel _name="LPNInspection" leftText="EXECUTE INSPECTION?" onEnter="false" onEntry="false" onEscape="false" onExit="false" onListSelect="false" type="list">
+        <listitem text="YES"/>
+        <listitem text="NO"/>
+      </dialoglevel>
+    </dialogclass>
+    <dialogclass _name="InboundOrderCloseDialog" description="CLOSE INBOUNDORDER" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.inbound.AbstractInboundDialog"/>
+      <dialoglevel _name="ScanInboundOrder" owner="objt.wms.dialog.inbound.AbstractInboundDialog"/>
+      <dialoglevel _name="SelectInboundOrder" owner="objt.wms.dialog.inbound.AbstractInboundDialog"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+  </package>
+  <package _name="objt.wms.dialog.inspection">
+    <dialogclass _name="CreateLPNInspectionDialog" description="CREATE LPN INSPECTION" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.AbstractDialog"/>
+      <dialoglevel _name="LPN" leftText="SCAN LPN" onEnter="false" onEntry="false" onEscape="false" onExit="false" type="input"/>
+      <dialoglevel _name="SelectSKU" leftText="SELECT SKU" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list"/>
+      <dialoglevel _name="SelectLot" leftText="SELECT LOT" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list"/>
+      <dialoglevel _name="InspectionSheet" leftText="SELECT INSPECTION SHEET" onEnter="false" onEntry="false" onEscape="false" onExit="false" onListSelect="false" type="list"/>
+      <dialoglevel _name="ExecuteInspection" leftText="EXECUTE INSPECTION?" onEnter="false" onEntry="false" onEscape="false" onExit="false" onListSelect="false" type="list">
+        <listitem text="YES"/>
+        <listitem text="NO"/>
+      </dialoglevel>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="InspectionSheetDialog" description="EXECUTE INSPECTION" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.AbstractDialog"/>
+      <dialoglevel _name="ScanInspection" leftText="SCAN LPN/RECEIPT/SERIAL OR PRESS ENTER TO SELECT" onEnter="false" onEntry="false" onEscape="false" onExit="false" type="input"/>
+      <dialoglevel _name="ScanLPN" leftText="SCAN LPN OR PRESS ENTER TO SELECT" onEnter="false" onEntry="false" onEscape="false" onExit="false" type="input"/>
+      <dialoglevel _name="SelectLPN" leftText="SELECT LPN" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list"/>
+      <dialoglevel _name="ConfirmLPN" leftText="SCAN LPN TO CONFIRM" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="SelectSKU" leftText="SELECT SKU" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list"/>
+      <dialoglevel _name="SelectInspection" leftText="SELECT INSPECTION" onEnter="false" onEntry="false" onEscape="false" onExit="false" onListSelect="false" type="list"/>
+      <dialoglevel _name="InspectionInfo" leftText="SELECT ACTION" onEnter="false" onEntry="false" onEscape="false" onExit="false" onListSelect="false" type="list"/>
+      <dialoglevel _name="Overview" leftText="SELECT INSTRUCTION" onEnter="false" onEntry="false" onEscape="false" onExit="false" onListSelect="false" type="list"/>
+      <dialoglevel _name="Summary" leftText="SELECT ACTION" onEnter="false" onEntry="false" onEscape="false" onExit="false" onListSelect="false" type="list"/>
+      <dialoglevel _name="Result" leftText="PRESS OK TO CONTINUE" onEnter="false" onEntry="false" onEscape="false" onExit="false" onListSelect="false" type="list">
+        <listitem text="OK"/>
+      </dialoglevel>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="InputInspectionDialog" description="INPUT INSPECTION" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.inspection.AbstractInspectionDialog"/>
+      <dialoglevel _name="Sample" owner="objt.wms.dialog.inspection.AbstractInspectionDialog"/>
+      <dialoglevel _name="EnterInput" leftText="ENTER INPUT" onEnter="false" onEntry="false" onEscape="false" onExit="false" type="input"/>
+      <dialoglevel _name="SelectInput" owner="objt.wms.dialog.inspection.AbstractInspectionDialog"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="CheckInspectionDialog" description="CHECK INSPECTION" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.inspection.AbstractInspectionDialog"/>
+      <dialoglevel _name="Sample" owner="objt.wms.dialog.inspection.AbstractInspectionDialog"/>
+      <dialoglevel _name="SelectInput" owner="objt.wms.dialog.inspection.AbstractInspectionDialog"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="AbstractInspectionDialog" isAbstract="true">
+      <generalization dialogclass="objt.wms.dialog.AbstractDialog"/>
+      <dialoglevel _name="Sample" leftText="PRESS OK TO CONTINUE" onEnter="false" onEntry="false" onEscape="false" onExit="false" onListSelect="false" type="list">
+        <listitem text="OK"/>
+      </dialoglevel>
+      <dialoglevel _name="SelectInput" leftText="SELECT INPUT" onEnter="false" onEntry="false" onEscape="false" onExit="false" onListSelect="false" type="list"/>
+    </dialogclass>
+    <dialogclass _name="SampleInstructionDialog" description="SAMPLE INSTRUCTION" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.AbstractDialog"/>
+      <dialoglevel _name="SelectLot" leftText="SELECT LOT" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list"/>
+      <dialoglevel _name="InstructionInfo" leftText="PRESS OK TO CONTINUE" onEnter="false" onEntry="false" onEscape="false" onExit="false" onListSelect="false" type="list">
+        <listitem text="OK"/>
+      </dialoglevel>
+      <dialoglevel _name="PrintLabel" leftText="PRESS OK TO PRINT LABELS" onEnter="false" onEntry="false" onEscape="false" onExit="false" onListSelect="false" type="list">
+        <listitem text="OK"/>
+      </dialoglevel>
+      <dialoglevel _name="SampleLabel" leftText="SCAN SAMPLE LABEL" onEnter="false" onEntry="false" onEscape="false" onExit="false" type="input"/>
+      <dialoglevel _name="RemoveSampleLabel" leftText="REMOVE SAMPLE LABEL?" onEnter="false" onEntry="false" onEscape="false" onExit="false" onListSelect="false" type="list">
+        <listitem text="YES"/>
+        <listitem text="NO"/>
+      </dialoglevel>
+      <dialoglevel _name="Stop" leftText="STOP SCANNING SAMPLE LABELS?" onEnter="false" onEntry="false" onEscape="false" onExit="false" onListSelect="false" type="list">
+        <listitem text="YES"/>
+        <listitem text="NO"/>
+      </dialoglevel>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="SamplePrintDialog" description="PRINT SAMPLE" isAbstract="false">
+      <generalization dialogclass="objt.common.resourcemgt.dialog.AbstractPrintDialog"/>
+      <dialoglevel _name="Sample" leftText="SCAN SAMPLE" onEnter="false" onEntry="false" onEscape="false" onExit="false" type="input"/>
+      <dialoglevel _name="DocumentTemplate" owner="objt.common.resourcemgt.dialog.AbstractPrintDialog"/>
+      <dialoglevel _name="PrinterDeviceInput" owner="objt.common.resourcemgt.dialog.AbstractPrintDialog"/>
+      <dialoglevel _name="PrinterDeviceSelection" owner="objt.common.resourcemgt.dialog.AbstractPrintDialog"/>
+      <dialoglevel _name="PrintConfirmation" owner="objt.common.resourcemgt.dialog.AbstractPrintDialog"/>
+      <dialoglevel _name="PrintingBusy" owner="objt.common.resourcemgt.dialog.AbstractPrintDialog"/>
+      <dialoglevel _name="PrintError" owner="objt.common.resourcemgt.dialog.AbstractPrintDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="SampleMoveDialog" description="MOVE SAMPLE" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.inspection.AbstractSampleDialog"/>
+      <dialoglevel _name="Sample" owner="objt.wms.dialog.inspection.AbstractSampleDialog"/>
+      <dialoglevel _name="Location" leftText="SCAN TO LOCATION" onEnter="false" onEntry="false" onEscape="false" onExit="false" type="input"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="AbstractSampleDialog" isAbstract="true">
+      <generalization dialogclass="objt.wms.dialog.AbstractDialog"/>
+      <dialoglevel _name="Sample" leftText="SCAN SAMPLE" onEnter="false" onEntry="false" onEscape="false" onExit="false" type="input"/>
+    </dialogclass>
+    <dialogclass _name="SampleInfoDialog" description="SAMPLE INFO" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.inspection.AbstractSampleDialog"/>
+      <dialoglevel _name="Sample" owner="objt.wms.dialog.inspection.AbstractSampleDialog"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="SampleIdentificationDialog" description="SAMPLE IDENTIFICATION" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.inspection.AbstractSampleDialog"/>
+      <dialoglevel _name="Sample" owner="objt.wms.dialog.inspection.AbstractSampleDialog"/>
+      <dialoglevel _name="RemoveSample" leftText="REMOVE SAMPLE?" onEnter="false" onEntry="false" onEscape="false" onExit="false" onListSelect="false" type="list">
+        <listitem text="YES"/>
+        <listitem text="NO"/>
+      </dialoglevel>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="SampleCreateDialog" description="CREATE SAMPLE" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.AbstractDialog"/>
+      <dialoglevel _name="LocationLPN" leftText="SCAN LOCATION/LPN" onEnter="false" onEntry="false" onEscape="false" onExit="false" type="input"/>
+      <dialoglevel _name="LPN" leftText="SCAN LPN" onEnter="false" onEntry="false" onEscape="false" onExit="false" type="input"/>
+      <dialoglevel _name="SelectItem" leftText="SELECT ITEM" onEnter="false" onEntry="false" onEscape="false" onExit="false" onListSelect="false" type="list"/>
+      <dialoglevel _name="SelectLot" leftText="SELECT LOT" onEnter="false" onEntry="false" onEscape="false" onExit="false" onListSelect="false" type="list"/>
+      <dialoglevel _name="SampleType" leftText="SAMPLE TYPE" onEnter="false" onEntry="false" onEscape="false" onExit="false" onListSelect="false" type="list"/>
+      <dialoglevel _name="SampleQty" leftText="ENTER NUMBER OF SAMPLES" onEnter="false" onEntry="false" onEscape="false" onExit="false" type="input"/>
+      <dialoglevel _name="PrintLabels" leftText="PRINT SAMPLE LABELS?" onEnter="false" onEntry="false" onEscape="false" onExit="false" onListSelect="false" type="list">
+        <listitem text="YES"/>
+        <listitem text="NO"/>
+      </dialoglevel>
+      <dialoglevel _name="ScanLabels" leftText="SCAN SAMPLE LABEL" onEnter="false" onEntry="false" onEscape="false" onExit="false" type="input"/>
+      <dialoglevel _name="RemoveSampleLabel" leftText="REMOVE SAMPLE LABEL?" onEnter="false" onEntry="false" onEscape="false" onExit="false" onListSelect="false" type="list">
+        <listitem text="YES"/>
+        <listitem text="NO"/>
+      </dialoglevel>
+      <dialoglevel _name="TargetLocation" leftText="SCAN TARGET LOCATION OR PRESS ENTER TO CONTINUE" onEnter="false" onEntry="false" onEscape="false" onExit="false" type="input"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="CreateSerialInspectionDialog" description="CREATE SERIAL INSPECTION" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.AbstractDialog"/>
+      <dialoglevel _name="Serial" leftText="SCAN SERIAL" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="SelectSerial" leftText="SELECT SKU" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list"/>
+      <dialoglevel _name="InspectionSheet" leftText="SELECT INSPECTION SHEET" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list"/>
+      <dialoglevel _name="ExecuteInspection" leftText="EXECUTE INSPECTION?" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list">
+        <listitem text="NO"/>
+        <listitem text="YES"/>
+      </dialoglevel>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+  </package>
+  <package _name="objt.wms.dialog.inventory.adjust">
+    <dialogclass _name="AbstractLocationAdjustDialog" description="INFO" isAbstract="true">
+      <generalization dialogclass="objt.wms.dialog.AbstractDialog"/>
+      <dialoglevel _name="Location" leftText="SCAN LOCATION" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="LocationError" leftText="PRESS EXIT TO SCAN ANOTHER LOCATION" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list">
+        <listitem text="EXIT"/>
+      </dialoglevel>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="LPNInventoryAttributeAdjustDialog01" description="LPN INV ATTRIB ADJUST" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.inventory.adjust.AbstractLPNAdjustDialog"/>
+      <dialoglevel _name="LPN" owner="objt.wms.dialog.inventory.adjust.AbstractLPNAdjustDialog"/>
+      <dialoglevel _name="SelectSKU" owner="objt.wms.dialog.inventory.adjust.AbstractLPNAdjustDialog"/>
+      <dialoglevel _name="SelectLot" owner="objt.wms.dialog.inventory.adjust.AbstractLPNAdjustDialog"/>
+      <dialoglevel _name="LPNError" owner="objt.wms.dialog.inventory.adjust.AbstractLPNAdjustDialog"/>
+      <dialoglevel _name="InventoryCode" leftText="SELECT INVENTORY ATTRIBUTE" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list"/>
+      <dialoglevel _name="Value" leftText="ENTER NEW VALUE" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="ValueList" leftText="SELECT NEW VALUE" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list"/>
+      <dialoglevel _name="Reason" leftText="REASON" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="LPNLockDialog01" description="LOCK LPN" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.inventory.adjust.AbstractLPNAdjustDialog"/>
+      <dialoglevel _name="LPN" owner="objt.wms.dialog.inventory.adjust.AbstractLPNAdjustDialog"/>
+      <dialoglevel _name="LPNError" owner="objt.wms.dialog.inventory.adjust.AbstractLPNAdjustDialog"/>
+      <dialoglevel _name="UpdateLock" leftText="UPDATE LOCK?" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list">
+        <listitem text="YES"/>
+        <listitem text="NO"/>
+      </dialoglevel>
+      <dialoglevel _name="Reason" leftText="LOCK REASON" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="LPNQCAdjustDialog01" description="LPN QC ADJUST" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.inventory.adjust.AbstractLPNAdjustDialog"/>
+      <dialoglevel _name="LPN" owner="objt.wms.dialog.inventory.adjust.AbstractLPNAdjustDialog"/>
+      <dialoglevel _name="SelectSKU" owner="objt.wms.dialog.inventory.adjust.AbstractLPNAdjustDialog"/>
+      <dialoglevel _name="SelectLot" owner="objt.wms.dialog.inventory.adjust.AbstractLPNAdjustDialog"/>
+      <dialoglevel _name="LPNError" owner="objt.wms.dialog.inventory.adjust.AbstractLPNAdjustDialog"/>
+      <dialoglevel _name="QC" leftText="SELECT NEW QC STATUS" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="LPNUnlockDialog01" description="UNLOCK LPN" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.inventory.adjust.AbstractLPNAdjustDialog"/>
+      <dialoglevel _name="LPN" owner="objt.wms.dialog.inventory.adjust.AbstractLPNAdjustDialog"/>
+      <dialoglevel _name="LPNError" owner="objt.wms.dialog.inventory.adjust.AbstractLPNAdjustDialog"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="LocationLockDialog01" description="LOCK LOCATION" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.inventory.adjust.AbstractLocationAdjustDialog"/>
+      <dialoglevel _name="Location" owner="objt.wms.dialog.inventory.adjust.AbstractLocationAdjustDialog"/>
+      <dialoglevel _name="UpdateLock" leftText="UPDATE LOCK?" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list">
+        <listitem text="YES"/>
+        <listitem text="NO"/>
+      </dialoglevel>
+      <dialoglevel _name="LockMode" leftText="LOCK MODE" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list"/>
+      <dialoglevel _name="Reason" leftText="LOCK REASON" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="LocationQtyAdjustDialog01" description="LOCATION QUANTITY ADJUST" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.inventory.adjust.AbstractLocationAdjustDialog"/>
+      <dialoglevel _name="Location" owner="objt.wms.dialog.inventory.adjust.AbstractLocationAdjustDialog"/>
+      <dialoglevel _name="SelectSKU" leftText="SELECT THE SKU TO ADJUST" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list"/>
+      <dialoglevel _name="SelectLot" leftText="SELECT THE LOT TO ADJUST" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list"/>
+      <dialoglevel _name="Delta" leftText="ENTER STOCK DIFFERENCE" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="SerialIdentification" leftText="SERIAL IDENTIFICATION" onEnter="false" onEntry="false" onEscape="false" onExit="false" onListSelect="false" type="list">
+        <listitem text="IDENTIFY SERIALS"/>
+        <listitem text="CONTINUE"/>
+      </dialoglevel>
+      <dialoglevel _name="Quantity" leftText="ENTER STOCK QUANTITY" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="Reason" leftText="REASON" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="LocationError" owner="objt.wms.dialog.inventory.adjust.AbstractLocationAdjustDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="LocationUnlockDialog01" description="UNLOCK LOCATION" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.inventory.adjust.AbstractLocationAdjustDialog"/>
+      <dialoglevel _name="Location" owner="objt.wms.dialog.inventory.adjust.AbstractLocationAdjustDialog"/>
+      <dialoglevel _name="LocationError" owner="objt.wms.dialog.inventory.adjust.AbstractLocationAdjustDialog"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="LPNQtyAdjustDialog01" description="LPN QUANTITY ADJUST" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.inventory.adjust.AbstractLPNAdjustDialog"/>
+      <dialoglevel _name="LPN" owner="objt.wms.dialog.inventory.adjust.AbstractLPNAdjustDialog"/>
+      <dialoglevel _name="SelectSKU" leftText="SELECT THE SKU TO ADJUST" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list"/>
+      <dialoglevel _name="SelectLot" leftText="SELECT THE LOT TO ADJUST" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list"/>
+      <dialoglevel _name="Delta" leftText="ENTER STOCK DIFFERENCE" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="SerialIdentification" leftText="SERIAL IDENTIFICATION" onEnter="false" onEntry="false" onEscape="false" onExit="false" onListSelect="false" type="list">
+        <listitem text="IDENTIFY SERIALS"/>
+        <listitem text="CONTINUE"/>
+      </dialoglevel>
+      <dialoglevel _name="Quantity" leftText="ENTER STOCK QUANTITY" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="Reason" leftText="REASON" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="LPNError" owner="objt.wms.dialog.inventory.adjust.AbstractLPNAdjustDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="AbstractLPNAdjustDialog" description="INFO" isAbstract="true">
+      <generalization dialogclass="objt.wms.dialog.AbstractDialog"/>
+      <dialoglevel _name="LPN" leftText="SCAN LPN" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="SelectSKU" leftText="SELECT THE SKU TO ADJUST" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list"/>
+      <dialoglevel _name="SelectLot" leftText="SELECT THE LOT TO ADJUST" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list"/>
+      <dialoglevel _name="LPNError" leftText="PRESS OK TO CONTINUE" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list">
+        <listitem text="OK"/>
+      </dialoglevel>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="LPNFoundDialog01" description="LPN FOUND" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.AbstractDialog"/>
+      <dialoglevel _name="LPN" leftText="SCAN LPN" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="Location" leftText="SCAN LOCATION" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="LocationError" leftText="PRESS EXIT TO SCAN ANOTHER LOCATION" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list">
+        <listitem text="EXIT"/>
+      </dialoglevel>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="LocationFullDialog" description="MARK LOCATION FULL" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.inventory.adjust.AbstractLocationAdjustDialog"/>
+      <dialoglevel _name="Location" owner="objt.wms.dialog.inventory.adjust.AbstractLocationAdjustDialog"/>
+      <dialoglevel _name="LocationFull" leftText="LOCATION FULL?" onEnter="false" onEntry="false" onEscape="false" onExit="false" onListSelect="false" type="list">
+        <listitem text="YES"/>
+        <listitem text="NO"/>
+      </dialoglevel>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="SerialQCAdjustDialog01" description="SERIAL QC ADJUST" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.AbstractDialog"/>
+      <dialoglevel _name="Serial" leftText="SCAN SERIAL" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="SelectSerial" leftText="SELECT SKU" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list"/>
+      <dialoglevel _name="QC" leftText="SELECT NEW QC STATUS" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+  </package>
+  <package _name="objt.wms.dialog.inventory.consume">
+    <dialogclass _name="KanbanConsumeDialog" description="KANBAN CONSUME" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.AbstractDialog"/>
+      <dialoglevel _name="ScanLPNLocation" leftText="SCAN LPN/LOCATION" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+  </package>
+  <package _name="objt.wms.dialog.inventory.count">
+    <dialogclass _name="LPNPickLocationCountDialog01" description="STOCK CHECK" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.inventory.count.AbstractLPNLocationCountDialog"/>
+      <dialoglevel _name="Location" owner="objt.wms.dialog.inventory.count.AbstractLocationCountDialog"/>
+      <dialoglevel _name="LPN" owner="objt.wms.dialog.inventory.count.AbstractLPNLocationCountDialog"/>
+      <dialoglevel _name="ConfirmLPN" owner="objt.wms.dialog.inventory.count.AbstractLPNLocationCountDialog"/>
+      <dialoglevel _name="SKU" owner="objt.wms.dialog.inventory.count.AbstractLocationCountDialog"/>
+      <dialoglevel _name="Lot" owner="objt.wms.dialog.inventory.count.AbstractLocationCountDialog"/>
+      <dialoglevel _name="SubLot" owner="objt.wms.dialog.inventory.count.AbstractLocationCountDialog"/>
+      <dialoglevel _name="ConfirmInput" owner="objt.wms.dialog.inventory.count.AbstractLocationCountDialog"/>
+      <dialoglevel _name="Quantity" owner="objt.wms.dialog.inventory.count.AbstractLocationCountDialog"/>
+      <dialoglevel _name="ConfirmQuantity" owner="objt.wms.dialog.inventory.count.AbstractLocationCountDialog"/>
+      <dialoglevel _name="QuantityWarning" owner="objt.wms.dialog.inventory.count.AbstractLocationCountDialog"/>
+      <dialoglevel _name="SerialIdentification" owner="objt.wms.dialog.inventory.count.AbstractLocationCountDialog"/>
+      <dialoglevel _name="ConfirmLPNContent" owner="objt.wms.dialog.inventory.count.AbstractLPNLocationCountDialog"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="LPNLocationCountDialog01" description="STOCK CHECK" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.inventory.count.AbstractLPNLocationCountDialog"/>
+      <dialoglevel _name="Location" owner="objt.wms.dialog.inventory.count.AbstractLocationCountDialog"/>
+      <dialoglevel _name="LPN" owner="objt.wms.dialog.inventory.count.AbstractLPNLocationCountDialog"/>
+      <dialoglevel _name="ConfirmLPN" owner="objt.wms.dialog.inventory.count.AbstractLPNLocationCountDialog"/>
+      <dialoglevel _name="SKU" owner="objt.wms.dialog.inventory.count.AbstractLocationCountDialog"/>
+      <dialoglevel _name="Lot" owner="objt.wms.dialog.inventory.count.AbstractLocationCountDialog"/>
+      <dialoglevel _name="SubLot" owner="objt.wms.dialog.inventory.count.AbstractLocationCountDialog"/>
+      <dialoglevel _name="ConfirmInput" owner="objt.wms.dialog.inventory.count.AbstractLocationCountDialog"/>
+      <dialoglevel _name="Quantity" owner="objt.wms.dialog.inventory.count.AbstractLocationCountDialog"/>
+      <dialoglevel _name="ConfirmQuantity" owner="objt.wms.dialog.inventory.count.AbstractLocationCountDialog"/>
+      <dialoglevel _name="QuantityWarning" owner="objt.wms.dialog.inventory.count.AbstractLocationCountDialog"/>
+      <dialoglevel _name="SerialIdentification" owner="objt.wms.dialog.inventory.count.AbstractLocationCountDialog"/>
+      <dialoglevel _name="ConfirmLPNContent" owner="objt.wms.dialog.inventory.count.AbstractLPNLocationCountDialog"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="PickLocationCountDialog01" description="STOCK CHECK" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.inventory.count.AbstractLocationCountDialog"/>
+      <dialoglevel _name="Location" owner="objt.wms.dialog.inventory.count.AbstractLocationCountDialog"/>
+      <dialoglevel _name="SKU" owner="objt.wms.dialog.inventory.count.AbstractLocationCountDialog"/>
+      <dialoglevel _name="Lot" owner="objt.wms.dialog.inventory.count.AbstractLocationCountDialog"/>
+      <dialoglevel _name="SubLot" owner="objt.wms.dialog.inventory.count.AbstractLocationCountDialog"/>
+      <dialoglevel _name="ConfirmInput" owner="objt.wms.dialog.inventory.count.AbstractLocationCountDialog"/>
+      <dialoglevel _name="Quantity" owner="objt.wms.dialog.inventory.count.AbstractLocationCountDialog"/>
+      <dialoglevel _name="ConfirmQuantity" owner="objt.wms.dialog.inventory.count.AbstractLocationCountDialog"/>
+      <dialoglevel _name="QuantityWarning" owner="objt.wms.dialog.inventory.count.AbstractLocationCountDialog"/>
+      <dialoglevel _name="SerialIdentification" owner="objt.wms.dialog.inventory.count.AbstractLocationCountDialog"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="LocationCountDialog01" description="STOCK CHECK" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.inventory.count.AbstractLocationCountDialog"/>
+      <dialoglevel _name="Location" owner="objt.wms.dialog.inventory.count.AbstractLocationCountDialog"/>
+      <dialoglevel _name="SKU" owner="objt.wms.dialog.inventory.count.AbstractLocationCountDialog"/>
+      <dialoglevel _name="Lot" owner="objt.wms.dialog.inventory.count.AbstractLocationCountDialog"/>
+      <dialoglevel _name="SubLot" owner="objt.wms.dialog.inventory.count.AbstractLocationCountDialog"/>
+      <dialoglevel _name="ConfirmInput" owner="objt.wms.dialog.inventory.count.AbstractLocationCountDialog"/>
+      <dialoglevel _name="Quantity" owner="objt.wms.dialog.inventory.count.AbstractLocationCountDialog"/>
+      <dialoglevel _name="ConfirmQuantity" owner="objt.wms.dialog.inventory.count.AbstractLocationCountDialog"/>
+      <dialoglevel _name="QuantityWarning" owner="objt.wms.dialog.inventory.count.AbstractLocationCountDialog"/>
+      <dialoglevel _name="SerialIdentification" owner="objt.wms.dialog.inventory.count.AbstractLocationCountDialog"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="LPNSwapLocationCountDialog01" description="STOCK CHECK" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.inventory.count.AbstractLPNLocationCountDialog"/>
+      <dialoglevel _name="Location" owner="objt.wms.dialog.inventory.count.AbstractLocationCountDialog"/>
+      <dialoglevel _name="LPN" owner="objt.wms.dialog.inventory.count.AbstractLPNLocationCountDialog"/>
+      <dialoglevel _name="Quantity" owner="objt.wms.dialog.inventory.count.AbstractLocationCountDialog"/>
+      <dialoglevel _name="ConfirmQuantity" owner="objt.wms.dialog.inventory.count.AbstractLocationCountDialog"/>
+      <dialoglevel _name="QuantityWarning" owner="objt.wms.dialog.inventory.count.AbstractLocationCountDialog"/>
+      <dialoglevel _name="SerialIdentification" owner="objt.wms.dialog.inventory.count.AbstractLocationCountDialog"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="NestLPNCountDialog01" description="STOCK CHECK" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.inventory.count.AbstractLPNLocationCountDialog"/>
+      <dialoglevel _name="Location" owner="objt.wms.dialog.inventory.count.AbstractLocationCountDialog"/>
+      <dialoglevel _name="LPN" owner="objt.wms.dialog.inventory.count.AbstractLPNLocationCountDialog"/>
+      <dialoglevel _name="ConfirmLPN" owner="objt.wms.dialog.inventory.count.AbstractLPNLocationCountDialog"/>
+      <dialoglevel _name="SKU" owner="objt.wms.dialog.inventory.count.AbstractLocationCountDialog"/>
+      <dialoglevel _name="Lot" owner="objt.wms.dialog.inventory.count.AbstractLocationCountDialog"/>
+      <dialoglevel _name="SubLot" owner="objt.wms.dialog.inventory.count.AbstractLocationCountDialog"/>
+      <dialoglevel _name="ConfirmInput" owner="objt.wms.dialog.inventory.count.AbstractLocationCountDialog"/>
+      <dialoglevel _name="Quantity" owner="objt.wms.dialog.inventory.count.AbstractLocationCountDialog"/>
+      <dialoglevel _name="ConfirmQuantity" owner="objt.wms.dialog.inventory.count.AbstractLocationCountDialog"/>
+      <dialoglevel _name="QuantityWarning" owner="objt.wms.dialog.inventory.count.AbstractLocationCountDialog"/>
+      <dialoglevel _name="SerialIdentification" owner="objt.wms.dialog.inventory.count.AbstractLocationCountDialog"/>
+      <dialoglevel _name="ConfirmLPNContent" owner="objt.wms.dialog.inventory.count.AbstractLPNLocationCountDialog"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="AbstractLocationCountDialog" isAbstract="true">
+      <generalization dialogclass="objt.wms.dialog.AbstractTaskDialog"/>
+      <dialoglevel _name="Location" leftText="SCAN LOCATION CHECKDIGIT" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="SKU" leftText="SCAN SKU OR PRESS ENTER TO STOP" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="Lot" leftText="SCAN LOT" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="SubLot" leftText="SCAN SUBLOT" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="ConfirmInput" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list">
+        <listitem text="SELECT"/>
+        <listitem text="YES"/>
+        <listitem text="NO"/>
+      </dialoglevel>
+      <dialoglevel _name="Quantity" leftText="ENTER COUNTED QTY" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="ConfirmQuantity" leftText="ENTER COUNTED QTY" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="QuantityWarning" leftText="CONFIRM LAST COUNT?" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list">
+        <listitem text="SELECT"/>
+        <listitem text="YES"/>
+        <listitem text="NO"/>
+      </dialoglevel>
+      <dialoglevel _name="SerialIdentification" leftText="SERIAL IDENTIFICATION" onEnter="false" onEntry="false" onEscape="false" onExit="false" onListSelect="false" type="list">
+        <listitem text="CONTINUE"/>
+        <listitem text="IDENTIFY SERIALS"/>
+      </dialoglevel>
+    </dialogclass>
+    <dialogclass _name="AbstractLPNLocationCountDialog" isAbstract="true">
+      <generalization dialogclass="objt.wms.dialog.inventory.count.AbstractLocationCountDialog"/>
+      <dialoglevel _name="LPN" leftText="SCAN LPN OR PRESS ENTER TO STOP" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="ConfirmLPN" leftText="RESCAN LPN" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="ConfirmLPNContent" leftText="CONFIRM LPN CONTENT?" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list">
+        <listitem text="YES CONFIRM LPN CONTENT"/>
+        <listitem text="NO CANCEL COUNT"/>
+        <listitem text="CONTINUE COUNTING"/>
+      </dialoglevel>
+    </dialogclass>
+  </package>
+  <package _name="objt.wms.dialog.inventory.info">
+    <dialogclass _name="AbstractLPNInfoDialog" description="INFO" isAbstract="true">
+      <generalization dialogclass="objt.wms.dialog.AbstractDialog"/>
+      <dialoglevel _name="LPN" leftText="SCAN LPN" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="SelectSKU" leftText="SELECT SKU" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list">
+        <listitem text="SELECT SKU"/>
+      </dialoglevel>
+      <dialoglevel _name="SelectLot" leftText="SELECT LOT" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list">
+        <listitem text="SELECT LOT"/>
+      </dialoglevel>
+      <dialoglevel _name="LPNError" leftText="PRESS OK TO CONTINUE" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list">
+        <listitem text="OK"/>
+      </dialoglevel>
+      <dialoglevel _name="Info" leftText="PRESS EXIT TO FINISH" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list">
+        <listitem text="EXIT"/>
+      </dialoglevel>
+    </dialogclass>
+    <dialogclass _name="AbstractLocationInfoDialog" description="INFO" isAbstract="true">
+      <generalization dialogclass="objt.wms.dialog.AbstractDialog"/>
+      <dialoglevel _name="Location" leftText="SCAN LOCATION" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="Info" leftText="PRESS EXIT TO FINISH" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list">
+        <listitem text="EXIT"/>
+      </dialoglevel>
+    </dialogclass>
+    <dialogclass _name="LPNInventoryAttributeInfoDialog01" description="INVENTORY ATTRIBUTES INFO" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.inventory.info.AbstractLPNInfoDialog"/>
+      <dialoglevel _name="LPN" owner="objt.wms.dialog.inventory.info.AbstractLPNInfoDialog"/>
+      <dialoglevel _name="SelectSKU" owner="objt.wms.dialog.inventory.info.AbstractLPNInfoDialog"/>
+      <dialoglevel _name="SelectLot" owner="objt.wms.dialog.inventory.info.AbstractLPNInfoDialog"/>
+      <dialoglevel _name="LPNError" owner="objt.wms.dialog.inventory.info.AbstractLPNInfoDialog"/>
+      <dialoglevel _name="Info" owner="objt.wms.dialog.inventory.info.AbstractLPNInfoDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="LPNLockInfoDialog01" description="LOCK INFO" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.inventory.info.AbstractLPNInfoDialog"/>
+      <dialoglevel _name="LPN" owner="objt.wms.dialog.inventory.info.AbstractLPNInfoDialog"/>
+      <dialoglevel _name="LPNError" owner="objt.wms.dialog.inventory.info.AbstractLPNInfoDialog"/>
+      <dialoglevel _name="Info" owner="objt.wms.dialog.inventory.info.AbstractLPNInfoDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="LPNQCInfoDialog01" description="QC INFO" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.inventory.info.AbstractLPNInfoDialog"/>
+      <dialoglevel _name="LPN" owner="objt.wms.dialog.inventory.info.AbstractLPNInfoDialog"/>
+      <dialoglevel _name="SelectSKU" owner="objt.wms.dialog.inventory.info.AbstractLPNInfoDialog"/>
+      <dialoglevel _name="SelectLot" owner="objt.wms.dialog.inventory.info.AbstractLPNInfoDialog"/>
+      <dialoglevel _name="LPNError" owner="objt.wms.dialog.inventory.info.AbstractLPNInfoDialog"/>
+      <dialoglevel _name="Info" owner="objt.wms.dialog.inventory.info.AbstractLPNInfoDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="LocationContentInfoDialog01" description="CONTENT INFO" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.inventory.info.AbstractLocationInfoDialog"/>
+      <dialoglevel _name="Location" owner="objt.wms.dialog.inventory.info.AbstractLocationInfoDialog"/>
+      <dialoglevel _name="Info" owner="objt.wms.dialog.inventory.info.AbstractLocationInfoDialog"/>
+      <dialoglevel _name="LPNContentInfo" leftText="SELECT LPN TO VIEW CONTENT OR PRESS EXIT TO FINISH" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list">
+        <listitem text="EXIT"/>
+      </dialoglevel>
+      <dialoglevel _name="SKUDetailInfo" leftText="SELECT SKU TO VIEW DETAILS OR PRESS EXIT TO FINISH" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list">
+        <listitem text="EXIT"/>
+      </dialoglevel>
+      <dialoglevel _name="SerialsDetailsInfo" leftText="SERIAL NUMBERS" onEnter="false" onEntry="false" onEscape="false" onExit="false" onListSelect="false" type="list"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="LocationLockInfoDialog01" description="LOCK INFO" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.inventory.info.AbstractLocationInfoDialog"/>
+      <dialoglevel _name="Location" owner="objt.wms.dialog.inventory.info.AbstractLocationInfoDialog"/>
+      <dialoglevel _name="Info" owner="objt.wms.dialog.inventory.info.AbstractLocationInfoDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="LPNContentInfoDialog01" description="CONTENT INFO" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.inventory.info.AbstractLPNInfoDialog"/>
+      <dialoglevel _name="LPN" owner="objt.wms.dialog.inventory.info.AbstractLPNInfoDialog"/>
+      <dialoglevel _name="LPNError" owner="objt.wms.dialog.inventory.info.AbstractLPNInfoDialog"/>
+      <dialoglevel _name="OrderInfo" leftText="SELECT CONTENT INFO OR PRESS EXIT TO FINISH" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list">
+        <listitem text="CONTENT INFO"/>
+        <listitem text="EXIT"/>
+      </dialoglevel>
+      <dialoglevel _name="Info" owner="objt.wms.dialog.inventory.info.AbstractLPNInfoDialog"/>
+      <dialoglevel _name="SKUDetailInfo" leftText="SELECT SKU TO VIEW DETAILS OR PRESS EXIT TO FINISH" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list">
+        <listitem text="EXIT"/>
+      </dialoglevel>
+      <dialoglevel _name="NestedLPNDetailInfo" leftText="SELECT LPN TO VIEW DETAILS OR PRESS EXIT TO FINISH" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list">
+        <listitem text="EXIT"/>
+      </dialoglevel>
+      <dialoglevel _name="SerialsDetailsInfo" leftText="SERIAL NUMBERS" onEnter="false" onEntry="false" onEscape="false" onExit="false" onListSelect="false" type="list"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="ItemInfoDialog01" description="ITEM INFO" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.AbstractDialog"/>
+      <dialoglevel _name="SelectSKU" leftText="SELECT SKU" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list"/>
+      <dialoglevel _name="Info" leftText="PRESS EXIT TO FINISH" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list">
+        <listitem text="EXIT"/>
+      </dialoglevel>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+  </package>
+  <package _name="objt.wms.dialog.inventory.nest">
+    <dialogclass _name="NestLPNCloseDialog01" description="CLOSE NEST LPN" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.AbstractDialog"/>
+      <dialoglevel _name="TopLPN" leftText="SCAN TOP LPN" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="ConfirmCloseLPN" leftText="CLOSE TOP LPN?" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list">
+        <listitem text="YES"/>
+        <listitem text="NO"/>
+      </dialoglevel>
+      <dialoglevel _name="Height" leftText="HEIGHT" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="Overhang" leftText="OVERHANG?" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list">
+        <listitem text="YES"/>
+        <listitem text="NO"/>
+      </dialoglevel>
+      <dialoglevel _name="Depth" leftText="DEPTH" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="Width" leftText="WIDTH" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="Weight" leftText="WEIGHT" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="PrintLabel" leftText="PRINT LABEL?" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list">
+        <listitem text="SELECT"/>
+        <listitem text="YES"/>
+        <listitem text="NO"/>
+      </dialoglevel>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="NestLPNCreateDialog01" description="CREATE NEST LPN" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.AbstractDialog"/>
+      <dialoglevel _name="Location" leftText="SCAN LOCATION" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="TopLPN" leftText="SCAN TOP LPN" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="Container" leftText="SELECT CONTAINER" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list"/>
+      <dialoglevel _name="PrintLabel" leftText="PRINT LABEL?" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list">
+        <listitem text="SELECT"/>
+        <listitem text="YES"/>
+        <listitem text="NO"/>
+      </dialoglevel>
+      <dialoglevel _name="ConfirmLPNContent" leftText="PLEASE SELECT ACTION" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list">
+        <listitem text="ADD SUB LPN"/>
+        <listitem text="CLOSE TOP LPN"/>
+        <listitem text="CLEAR TOP LPN"/>
+      </dialoglevel>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="NestLPNAddLPNDialog01" description="ADD SUB LPN'S" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.AbstractDialog"/>
+      <dialoglevel _name="TopLPN" leftText="SCAN TOP LPN" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="NestedLPN" leftText="SCAN SUB LPN TO ADD OR PRESS ENTER TO STOP" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="Stop" leftText="STOP ADDING SUB LPN'S?" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list">
+        <listitem text="YES CLOSE TOP LPN"/>
+        <listitem text="YES STOP AND CONTINUE LATER"/>
+        <listitem text="NO ADD ANOTHER SUB LPN"/>
+      </dialoglevel>
+      <dialoglevel _name="StopEmptyTopLPN" leftText="TOP LPN IS EMPTY. DELETE IT?" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list">
+        <listitem text="YES DELETE TOP LPN"/>
+        <listitem text="NO ADD SUB LPN"/>
+      </dialoglevel>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="NestLPNRemoveLPNDialog01" description="REMOVE SUB LPN'S" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.AbstractDialog"/>
+      <dialoglevel _name="TopLPN" leftText="SCAN TOP LPN" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="NestedLPN" leftText="SCAN SUB LPN TO REMOVE OR PRESS ENTER TO STOP" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="Stop" leftText="STOP REMOVING SUB LPN'S?" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list">
+        <listitem text="YES CLOSE TOP LPN"/>
+        <listitem text="YES STOP AND CONTINUE LATER"/>
+        <listitem text="YES ADD SUB LPN"/>
+        <listitem text="NO REMOVE ANOTHER SUB LPN"/>
+      </dialoglevel>
+      <dialoglevel _name="StopEmptyTopLPN" leftText="TOP LPN IS EMPTY. DELETE IT?" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list">
+        <listitem text="YES DELETE TOP LPN"/>
+        <listitem text="NO ADD SUB LPN"/>
+      </dialoglevel>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="NestLPNOpenDialog" description="OPEN TOP LPN" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.AbstractDialog"/>
+      <dialoglevel _name="TopLPN" leftText="SCAN TOP LPN" onEnter="false" onEntry="false" onEscape="false" onExit="false" type="input"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+  </package>
+  <package _name="objt.wms.dialog.inventory.takeon">
+    <dialogclass _name="InventoryTakeOnDialog01" description="INVENTORY TAKE ON" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.AbstractIdentificationDialog"/>
+      <dialoglevel _name="Location" leftText="SCAN LOCATION" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="Barcode" owner="objt.wms.dialog.AbstractIdentificationDialog"/>
+      <dialoglevel _name="LPN" owner="objt.wms.dialog.AbstractIdentificationDialog"/>
+      <dialoglevel _name="SKU" owner="objt.wms.dialog.AbstractIdentificationDialog"/>
+      <dialoglevel _name="Lot" owner="objt.wms.dialog.AbstractIdentificationDialog"/>
+      <dialoglevel _name="SubLot" owner="objt.wms.dialog.AbstractIdentificationDialog"/>
+      <dialoglevel _name="DtsBestBefore" owner="objt.wms.dialog.AbstractIdentificationDialog"/>
+      <dialoglevel _name="ProductionDate" owner="objt.wms.dialog.AbstractIdentificationDialog"/>
+      <dialoglevel _name="PackConfiguration" owner="objt.wms.dialog.AbstractIdentificationDialog"/>
+      <dialoglevel _name="ContainerType" owner="objt.wms.dialog.AbstractIdentificationDialog"/>
+      <dialoglevel _name="Quantity" owner="objt.wms.dialog.AbstractIdentificationDialog"/>
+      <dialoglevel _name="SerialIdentification" owner="objt.wms.dialog.AbstractIdentificationDialog"/>
+      <dialoglevel _name="QuantityWarning" owner="objt.wms.dialog.AbstractIdentificationDialog"/>
+      <dialoglevel _name="NextItem" owner="objt.wms.dialog.AbstractIdentificationDialog"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="PrintLabel" leftText="PRINT LABEL?" onEnter="false" onEntry="false" onEscape="false" onExit="false" onListSelect="false" type="list">
+        <listitem text="SELECT"/>
+        <listitem text="YES"/>
+        <listitem text="NO"/>
+      </dialoglevel>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+  </package>
+  <package _name="objt.wms.dialog.move">
+    <dialogclass _name="ContainerMoveTaskDialog01" description="RELOCATE LPN" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.AbstractContainerTaskDialog"/>
+      <dialoglevel _name="LPN" owner="objt.wms.dialog.AbstractContainerTaskDialog"/>
+      <dialoglevel _name="LPNStack" owner="objt.wms.dialog.AbstractContainerTaskDialog"/>
+      <dialoglevel _name="Location" owner="objt.wms.dialog.AbstractContainerTaskDialog"/>
+      <dialoglevel _name="LocationOverrideConfirmation" owner="objt.wms.dialog.AbstractContainerTaskDialog"/>
+      <dialoglevel _name="LocationOverrideReason" owner="objt.wms.dialog.AbstractContainerTaskDialog"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="ContainerMoveDialog01" description="RELOCATE LPN" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.AbstractDialog"/>
+      <dialoglevel _name="LPN" leftText="SCAN LPN" onEnter="false" onEntry="false" onEscape="false" onExit="false" type="input"/>
+      <dialoglevel _name="Location" leftText="SCAN TO LOCATION" onEnter="false" onEntry="false" onEscape="false" onExit="false" type="input"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="ContainerMoveTriggerDialog01" description="TRIGGER RELOCATE" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.AbstractDialog"/>
+      <dialoglevel _name="LPN" leftText="SCAN LPN" onEnter="false" onEntry="false" onEscape="false" onExit="false" type="input"/>
+      <dialoglevel _name="Confirmation" leftText="RELOCATE CONTAINER ?" onEnter="false" onEntry="false" onEscape="false" onExit="false" onListSelect="false" type="list">
+        <listitem text="SELECT"/>
+        <listitem text="YES"/>
+        <listitem text="NO"/>
+      </dialoglevel>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="SKUMoveDialog01" description="RELOCATE SKU" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.AbstractDialog"/>
+      <dialoglevel _name="FromLocationFromLPN" description="INFO" leftText="SCAN FROM LOCATION/LPN" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="FromLocationWarning" description="LOCATION WARNING" leftText="PRESS ENTER TO CONTINUE" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list">
+        <listitem text="OK"/>
+      </dialoglevel>
+      <dialoglevel _name="FromLPNWarning" description="FROM LPN WARNING" leftText="PRESS ENTER TO CONTINUE" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list">
+        <listitem text="OK"/>
+      </dialoglevel>
+      <dialoglevel _name="SKU" description="INFO" leftText="SCAN SKU" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="Lot" description="INFO" leftText="SELECT LOT" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list"/>
+      <dialoglevel _name="Quantity" description="INFO" leftText="QUANTITY?" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="SerialIdentification" leftText="SERIAL IDENTIFICATION" onEnter="false" onEntry="false" onEscape="false" onExit="false" onListSelect="false" type="list">
+        <listitem text="CONTINUE"/>
+        <listitem text="IDENTIFY SERIALS"/>
+      </dialoglevel>
+      <dialoglevel _name="ToLocationToLPN" description="INVENTORY INFO" leftText="SCAN TO LOCATION/LPN OR PRESS ENTER FOR NEW LPN" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="ToLocationWarning" description="LOCATION WARNING" leftText="PRESS ENTER TO CONTINUE" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list">
+        <listitem text="OK"/>
+      </dialoglevel>
+      <dialoglevel _name="ToLPNWarning" description="TO LPN WARNING" leftText="PRESS ENTER TO CONTINUE" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list">
+        <listitem text="OK"/>
+      </dialoglevel>
+      <dialoglevel _name="NewLPN" description="INFO" leftText="SCAN NEW LPN" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="Packaging" description="INFO" leftText="SELECT PACK CONFIGURATION" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list"/>
+      <dialoglevel _name="Container" description="INFO" leftText="SELECT CONTAINER TYPE" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="SKUMoveTaskDialog01" description="RELOCATE SKU" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.AbstractTaskDialog"/>
+      <dialoglevel _name="FromLocation" leftText="SCAN LOCATION" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="FromLPN" leftText="SCAN LPN" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="SKU" leftText="SCAN SKU" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="Lot" leftText="SCAN LOT" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="Sublot" leftText="SCAN SUBLOT" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="Quantity" leftText="QUANTITY?" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="SerialIdentification" leftText="SERIAL IDENTIFICATION" onEnter="false" onEntry="false" onEscape="false" onExit="false" onListSelect="false" type="list">
+        <listitem text="CONTINUE"/>
+        <listitem text="IDENTIFY SERIALS"/>
+      </dialoglevel>
+      <dialoglevel _name="AllocationOverrideReason" leftText="REASON" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list"/>
+      <dialoglevel _name="Location" leftText="SCAN TO LOCATION" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="LocationOverrideConfirmation" leftText="OVERRIDE LOCATION?" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list">
+        <listitem text="YES"/>
+        <listitem text="NO"/>
+      </dialoglevel>
+      <dialoglevel _name="LocationOverrideReason" leftText="REASON" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+  </package>
+  <package _name="objt.wms.dialog.outbound">
+    <dialogclass _name="ContainerOutboundTaskDialog01" description="MARSHALL CONTAINER" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.AbstractContainerTaskDialog"/>
+      <dialoglevel _name="LPN" owner="objt.wms.dialog.AbstractContainerTaskDialog"/>
+      <dialoglevel _name="LPNSerialIdentification" owner="objt.wms.dialog.AbstractContainerTaskDialog"/>
+      <dialoglevel _name="LPNStack" owner="objt.wms.dialog.AbstractContainerTaskDialog"/>
+      <dialoglevel _name="LPNStackSerialIdentification" owner="objt.wms.dialog.AbstractContainerTaskDialog"/>
+      <dialoglevel _name="Location" owner="objt.wms.dialog.AbstractContainerTaskDialog"/>
+      <dialoglevel _name="LocationOverrideConfirmation" owner="objt.wms.dialog.AbstractContainerTaskDialog"/>
+      <dialoglevel _name="LocationOverrideReason" owner="objt.wms.dialog.AbstractContainerTaskDialog"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+  </package>
+  <package _name="objt.wms.dialog.pick">
+    <dialogclass _name="ContainerContentPickTaskDialog01" description="SKU PICK" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.pick.AbstractSKUPickTaskDialog"/>
+      <dialoglevel _name="LPN" leftText="SCAN FROM LPN" onEnter="false" onEntry="false" onEscape="false" onExit="false" type="input"/>
+      <dialoglevel _name="SerialIdentification" owner="objt.wms.dialog.pick.AbstractSKUPickTaskDialog"/>
+      <dialoglevel _name="Quantity" owner="objt.wms.dialog.pick.AbstractSKUPickTaskDialog"/>
+      <dialoglevel _name="AllocationOverrideReason" owner="objt.wms.dialog.pick.AbstractSKUPickTaskDialog"/>
+      <dialoglevel _name="PickLPNConfirmation" owner="objt.wms.dialog.pick.AbstractSKUPickTaskDialog"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="ContainerPickTaskDialog01" description="PICK CONTAINER" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.AbstractContainerTaskDialog"/>
+      <dialoglevel _name="LPN" owner="objt.wms.dialog.AbstractContainerTaskDialog"/>
+      <dialoglevel _name="LPNSerialIdentification" owner="objt.wms.dialog.AbstractContainerTaskDialog"/>
+      <dialoglevel _name="LPNStack" owner="objt.wms.dialog.AbstractContainerTaskDialog"/>
+      <dialoglevel _name="LPNStackSerialIdentification" owner="objt.wms.dialog.AbstractContainerTaskDialog"/>
+      <dialoglevel _name="Location" owner="objt.wms.dialog.AbstractContainerTaskDialog"/>
+      <dialoglevel _name="LocationOverrideConfirmation" owner="objt.wms.dialog.AbstractContainerTaskDialog"/>
+      <dialoglevel _name="LocationOverrideReason" owner="objt.wms.dialog.AbstractContainerTaskDialog"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="PickLPNCloseDialog01" description="CLOSE PICK LPN" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.pick.AbstractPickContainerCloseDialog"/>
+      <dialoglevel _name="LPN" owner="objt.wms.dialog.pick.AbstractPickContainerCloseDialog"/>
+      <dialoglevel _name="DeleteLPN" owner="objt.wms.dialog.pick.AbstractPickContainerCloseDialog"/>
+      <dialoglevel _name="CloseLPN" owner="objt.wms.dialog.pick.AbstractPickContainerCloseDialog"/>
+      <dialoglevel _name="Location" owner="objt.wms.dialog.pick.AbstractPickContainerCloseDialog"/>
+      <dialoglevel _name="LocationOverride" owner="objt.wms.dialog.pick.AbstractPickContainerCloseDialog"/>
+      <dialoglevel _name="LocationOverrideReason" owner="objt.wms.dialog.pick.AbstractPickContainerCloseDialog"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="LocationPickTaskDialog01" description="SKU PICK" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.pick.AbstractSKUPickTaskDialog"/>
+      <dialoglevel _name="PickLocation" leftText="SCAN LOCATION" onEnter="false" onEntry="false" onEscape="false" onExit="false" type="input"/>
+      <dialoglevel _name="SerialIdentification" owner="objt.wms.dialog.pick.AbstractSKUPickTaskDialog"/>
+      <dialoglevel _name="Quantity" owner="objt.wms.dialog.pick.AbstractSKUPickTaskDialog"/>
+      <dialoglevel _name="AllocationOverrideReason" owner="objt.wms.dialog.pick.AbstractSKUPickTaskDialog"/>
+      <dialoglevel _name="Skip" leftText="CONFIRMATION" onEnter="false" onEntry="false" onEscape="false" onExit="false" onListSelect="false" type="list">
+        <listitem text="SELECT"/>
+        <listitem text="YES"/>
+      </dialoglevel>
+      <dialoglevel _name="PickLPNConfirmation" owner="objt.wms.dialog.pick.AbstractSKUPickTaskDialog"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="LocationLPNPickTaskDialog01" description="SKU PICK" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.pick.AbstractSKUPickTaskDialog"/>
+      <dialoglevel _name="PickLocation" leftText="SCAN LOCATION" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="LPN" leftText="SCAN FROM LPN" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="SerialIdentification" owner="objt.wms.dialog.pick.AbstractSKUPickTaskDialog"/>
+      <dialoglevel _name="Quantity" owner="objt.wms.dialog.pick.AbstractSKUPickTaskDialog"/>
+      <dialoglevel _name="AllocationOverrideReason" owner="objt.wms.dialog.pick.AbstractSKUPickTaskDialog"/>
+      <dialoglevel _name="Skip" leftText="CONFIRMATION" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list">
+        <listitem text="SELECT"/>
+        <listitem text="YES"/>
+      </dialoglevel>
+      <dialoglevel _name="PickLPNConfirmation" owner="objt.wms.dialog.pick.AbstractSKUPickTaskDialog"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="BulkPickTaskDialog01" description="SKU PICK" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.pick.AbstractSKUPickTaskDialog"/>
+      <dialoglevel _name="PickLocation" leftText="SCAN LOCATION" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="SerialIdentification" owner="objt.wms.dialog.pick.AbstractSKUPickTaskDialog"/>
+      <dialoglevel _name="Quantity" owner="objt.wms.dialog.pick.AbstractSKUPickTaskDialog"/>
+      <dialoglevel _name="AllocationOverrideReason" owner="objt.wms.dialog.pick.AbstractSKUPickTaskDialog"/>
+      <dialoglevel _name="PickLPNConfirmation" owner="objt.wms.dialog.pick.AbstractSKUPickTaskDialog"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="BulkPickTaskDialog02" description="SKU PICK" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.pick.AbstractSKUPickTaskDialog"/>
+      <dialoglevel _name="PickLocation" leftText="SCAN LOCATION" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="SerialIdentification" owner="objt.wms.dialog.pick.AbstractSKUPickTaskDialog"/>
+      <dialoglevel _name="Quantity" owner="objt.wms.dialog.pick.AbstractSKUPickTaskDialog"/>
+      <dialoglevel _name="AllocationOverrideReason" owner="objt.wms.dialog.pick.AbstractSKUPickTaskDialog"/>
+      <dialoglevel _name="Location" owner="objt.wms.dialog.pick.AbstractSKUPickTaskDialog"/>
+      <dialoglevel _name="LocationOverrideConfirmation" owner="objt.wms.dialog.pick.AbstractSKUPickTaskDialog"/>
+      <dialoglevel _name="LocationOverrideReason" owner="objt.wms.dialog.pick.AbstractSKUPickTaskDialog"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="ContainerContentPickTaskDialog02" description="SKU PICK" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.pick.AbstractSKUPickTaskDialog"/>
+      <dialoglevel _name="LPN" leftText="SCAN FROM LPN" onEnter="false" onEntry="false" onEscape="false" onExit="false" type="input"/>
+      <dialoglevel _name="SerialIdentification" owner="objt.wms.dialog.pick.AbstractSKUPickTaskDialog"/>
+      <dialoglevel _name="Quantity" owner="objt.wms.dialog.pick.AbstractSKUPickTaskDialog"/>
+      <dialoglevel _name="AllocationOverrideReason" owner="objt.wms.dialog.pick.AbstractSKUPickTaskDialog"/>
+      <dialoglevel _name="Location" owner="objt.wms.dialog.pick.AbstractSKUPickTaskDialog"/>
+      <dialoglevel _name="LocationOverrideConfirmation" owner="objt.wms.dialog.pick.AbstractSKUPickTaskDialog"/>
+      <dialoglevel _name="LocationOverrideReason" owner="objt.wms.dialog.pick.AbstractSKUPickTaskDialog"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="LocationLPNPickTaskDialog02" description="SKU PICK" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.pick.AbstractSKUPickTaskDialog"/>
+      <dialoglevel _name="PickLocation" leftText="SCAN LOCATION" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="LPN" leftText="SCAN FROM LPN" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="SerialIdentification" owner="objt.wms.dialog.pick.AbstractSKUPickTaskDialog"/>
+      <dialoglevel _name="Quantity" owner="objt.wms.dialog.pick.AbstractSKUPickTaskDialog"/>
+      <dialoglevel _name="AllocationOverrideReason" owner="objt.wms.dialog.pick.AbstractSKUPickTaskDialog"/>
+      <dialoglevel _name="Location" owner="objt.wms.dialog.pick.AbstractSKUPickTaskDialog"/>
+      <dialoglevel _name="LocationOverrideConfirmation" owner="objt.wms.dialog.pick.AbstractSKUPickTaskDialog"/>
+      <dialoglevel _name="LocationOverrideReason" owner="objt.wms.dialog.pick.AbstractSKUPickTaskDialog"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="LocationPickTaskDialog02" description="SKU PICK" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.pick.AbstractSKUPickTaskDialog"/>
+      <dialoglevel _name="PickLocation" leftText="SCAN LOCATION" onEnter="false" onEntry="false" onEscape="false" onExit="false" type="input"/>
+      <dialoglevel _name="SerialIdentification" owner="objt.wms.dialog.pick.AbstractSKUPickTaskDialog"/>
+      <dialoglevel _name="Quantity" owner="objt.wms.dialog.pick.AbstractSKUPickTaskDialog"/>
+      <dialoglevel _name="AllocationOverrideReason" owner="objt.wms.dialog.pick.AbstractSKUPickTaskDialog"/>
+      <dialoglevel _name="Location" owner="objt.wms.dialog.pick.AbstractSKUPickTaskDialog"/>
+      <dialoglevel _name="LocationOverrideConfirmation" owner="objt.wms.dialog.pick.AbstractSKUPickTaskDialog"/>
+      <dialoglevel _name="LocationOverrideReason" owner="objt.wms.dialog.pick.AbstractSKUPickTaskDialog"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="AbstractSKUPickTaskDialog" description="SKU PICK" isAbstract="true">
+      <generalization dialogclass="objt.wms.dialog.AbstractTaskDialog"/>
+      <dialoglevel _name="SerialIdentification" leftText="SERIAL IDENTIFICATION" onEnter="false" onEntry="false" onEscape="false" onExit="false" onListSelect="false" type="list">
+        <listitem text="IDENTIFY SERIALS"/>
+        <listitem text="CONTINUE"/>
+      </dialoglevel>
+      <dialoglevel _name="Quantity" leftText="ENTER QUANTITY" onEnter="false" onEntry="false" onEscape="false" onExit="false" type="input"/>
+      <dialoglevel _name="AllocationOverrideReason" leftText="REASON" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list"/>
+      <dialoglevel _name="Location" leftText="SCAN TO LOCATION" onEnter="false" onEntry="false" onEscape="false" onExit="false" type="input"/>
+      <dialoglevel _name="LocationOverrideConfirmation" leftText="OVERRIDE LOCATION ?" onEnter="false" onEntry="false" onEscape="false" onExit="false" onListSelect="false" type="list">
+        <listitem text="YES"/>
+        <listitem text="NO"/>
+      </dialoglevel>
+      <dialoglevel _name="LocationOverrideReason" leftText="REASON" onEnter="false" onEntry="false" onEscape="false" onExit="false" onListSelect="false" type="list"/>
+      <dialoglevel _name="PickLPNConfirmation" leftText="SCAN PICK LPN" onEnter="false" onEntry="false" onEscape="false" onExit="false" type="input"/>
+    </dialogclass>
+    <dialogclass _name="AbstractPickListDialog" description="MENU DIRECTED PICKING" isAbstract="true">
+      <generalization dialogclass="objt.wms.dialog.AbstractDialog"/>
+      <dialoglevel _name="TaskOrder" leftText="SCAN PICKLIST" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="TaskOrderError" leftText="PRESS ENTER TO CONTINUE" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list">
+        <listitem text="OK"/>
+      </dialoglevel>
+    </dialogclass>
+    <dialogclass _name="SKUPickListDialog" description="SKU PICK" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.pick.AbstractPickListDialog"/>
+      <dialoglevel _name="TaskOrder" owner="objt.wms.dialog.pick.AbstractPickListDialog"/>
+      <dialoglevel _name="TaskOrderError" owner="objt.wms.dialog.pick.AbstractPickListDialog"/>
+      <dialoglevel _name="LocationLPN" leftText="SCAN LOCATION/LPN" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="SKU" leftText="SCAN SKU" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="Lot" leftText="SELECT LOT" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="LPNPickListDialog" description="LPN PICK" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.pick.AbstractPickListDialog"/>
+      <dialoglevel _name="TaskOrder" owner="objt.wms.dialog.pick.AbstractPickListDialog"/>
+      <dialoglevel _name="TaskOrderError" owner="objt.wms.dialog.pick.AbstractPickListDialog"/>
+      <dialoglevel _name="LPN" leftText="SCAN FROM LPN" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="AbstractMenuDirectedSKUPickTaskDialog" description="MENU DIRECTED SKU PICK" isAbstract="true">
+      <generalization dialogclass="objt.wms.dialog.pick.AbstractSKUPickTaskDialog"/>
+    </dialogclass>
+    <dialogclass _name="BulkPickTaskDialog03" description="SKU PICK" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.pick.AbstractMenuDirectedSKUPickTaskDialog"/>
+      <dialoglevel _name="SerialIdentification" owner="objt.wms.dialog.pick.AbstractSKUPickTaskDialog"/>
+      <dialoglevel _name="Quantity" owner="objt.wms.dialog.pick.AbstractSKUPickTaskDialog"/>
+      <dialoglevel _name="AllocationOverrideReason" owner="objt.wms.dialog.pick.AbstractSKUPickTaskDialog"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="ContainerContentPickTaskDialog03" description="SKU PICK" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.pick.AbstractMenuDirectedSKUPickTaskDialog"/>
+      <dialoglevel _name="SerialIdentification" owner="objt.wms.dialog.pick.AbstractSKUPickTaskDialog"/>
+      <dialoglevel _name="Quantity" owner="objt.wms.dialog.pick.AbstractSKUPickTaskDialog"/>
+      <dialoglevel _name="AllocationOverrideReason" owner="objt.wms.dialog.pick.AbstractSKUPickTaskDialog"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="LocationLPNPickTaskDialog03" description="SKU PICK" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.pick.AbstractMenuDirectedSKUPickTaskDialog"/>
+      <dialoglevel _name="LPN" leftText="SCAN FROM LPN" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="SerialIdentification" owner="objt.wms.dialog.pick.AbstractSKUPickTaskDialog"/>
+      <dialoglevel _name="Quantity" owner="objt.wms.dialog.pick.AbstractSKUPickTaskDialog"/>
+      <dialoglevel _name="AllocationOverrideReason" owner="objt.wms.dialog.pick.AbstractSKUPickTaskDialog"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="LocationPickTaskDialog03" description="SKU PICK" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.pick.AbstractMenuDirectedSKUPickTaskDialog"/>
+      <dialoglevel _name="SerialIdentification" owner="objt.wms.dialog.pick.AbstractSKUPickTaskDialog"/>
+      <dialoglevel _name="Quantity" owner="objt.wms.dialog.pick.AbstractSKUPickTaskDialog"/>
+      <dialoglevel _name="AllocationOverrideReason" owner="objt.wms.dialog.pick.AbstractSKUPickTaskDialog"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="AbstractMenuDirectedContainerPickTaskDialog" description="MENU DIRECTED CONTAINER PICK" isAbstract="true">
+      <generalization dialogclass="objt.wms.dialog.AbstractContainerTaskDialog"/>
+    </dialogclass>
+    <dialogclass _name="ContainerPickTaskDialog03" description="PICK CONTAINER" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.pick.AbstractMenuDirectedContainerPickTaskDialog"/>
+      <dialoglevel _name="LPNSerialIdentification" owner="objt.wms.dialog.AbstractContainerTaskDialog"/>
+      <dialoglevel _name="LPNStack" owner="objt.wms.dialog.AbstractContainerTaskDialog"/>
+      <dialoglevel _name="LPNStackSerialIdentification" owner="objt.wms.dialog.AbstractContainerTaskDialog"/>
+      <dialoglevel _name="Location" owner="objt.wms.dialog.AbstractContainerTaskDialog"/>
+      <dialoglevel _name="LocationOverrideConfirmation" owner="objt.wms.dialog.AbstractContainerTaskDialog"/>
+      <dialoglevel _name="LocationOverrideReason" owner="objt.wms.dialog.AbstractContainerTaskDialog"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="PickLPNCloseDialog03" description="CLOSE PICK LPN" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.pick.AbstractPickContainerCloseDialog"/>
+      <dialoglevel _name="LPN" owner="objt.wms.dialog.pick.AbstractPickContainerCloseDialog"/>
+      <dialoglevel _name="DeleteLPN" owner="objt.wms.dialog.pick.AbstractPickContainerCloseDialog"/>
+      <dialoglevel _name="CloseLPN" owner="objt.wms.dialog.pick.AbstractPickContainerCloseDialog"/>
+      <dialoglevel _name="Location" owner="objt.wms.dialog.pick.AbstractPickContainerCloseDialog"/>
+      <dialoglevel _name="LocationOverride" owner="objt.wms.dialog.pick.AbstractPickContainerCloseDialog"/>
+      <dialoglevel _name="LocationOverrideReason" owner="objt.wms.dialog.pick.AbstractPickContainerCloseDialog"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="AbstractMultiOrderCreateDialog" description="ABSTRACT MULTI ORDER CREATE" isAbstract="true">
+      <generalization dialogclass="objt.wms.dialog.AbstractTaskDialog"/>
+      <dialoglevel _name="Overview" leftText="SELECT" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list"/>
+      <dialoglevel _name="SelectPickLists" leftText="SELECT PICKLISTS" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list"/>
+      <dialoglevel _name="PickListConfirmation" leftText="CONFIRM PICK LIST" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list">
+        <listitem text="YES SELECT NEXT"/>
+        <listitem text="YES END SELECTION"/>
+        <listitem text="NO"/>
+      </dialoglevel>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="MultiOrderCreateDialog01" description="MULTI ORDER CREATE" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.pick.AbstractMultiOrderCreateDialog"/>
+      <dialoglevel _name="Overview" owner="objt.wms.dialog.pick.AbstractMultiOrderCreateDialog"/>
+      <dialoglevel _name="SelectPickLists" owner="objt.wms.dialog.pick.AbstractMultiOrderCreateDialog"/>
+      <dialoglevel _name="PickListConfirmation" owner="objt.wms.dialog.pick.AbstractMultiOrderCreateDialog"/>
+      <dialoglevel _name="CreatePickCart" leftText="CREATE PICK CART?" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list">
+        <listitem text="SELECT"/>
+        <listitem text="YES"/>
+        <listitem text="NO"/>
+      </dialoglevel>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="MultiOrderCreateDialog03" description="MULTI ORDER CREATE" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.pick.AbstractMultiOrderCreateDialog"/>
+      <dialoglevel _name="WorkZone" leftText="SELECT WORKZONE" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list"/>
+      <dialoglevel _name="Overview" owner="objt.wms.dialog.pick.AbstractMultiOrderCreateDialog"/>
+      <dialoglevel _name="SelectPickLists" owner="objt.wms.dialog.pick.AbstractMultiOrderCreateDialog"/>
+      <dialoglevel _name="ScanPickList" leftText="SCAN PICK LIST" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="PickListConfirmation" owner="objt.wms.dialog.pick.AbstractMultiOrderCreateDialog"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="AbstractPickContainerOpenDialog" description="OPEN PICK CONTAINER" isAbstract="true">
+      <generalization dialogclass="objt.wms.dialog.AbstractTaskDialog"/>
+      <dialoglevel _name="LPN" leftText="SCAN PICK LPN" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="LPNConfirmation" leftText="SCAN PICK LPN" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="LPNInfo" leftText="PRESS OK TO CONTINUE" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list">
+        <listitem text="OK"/>
+      </dialoglevel>
+      <dialoglevel _name="Container" leftText="SELECT CONTAINER" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="PickCartOpenDialog01" description="OPEN PICK CART" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.pick.AbstractPickContainerOpenDialog"/>
+      <dialoglevel _name="LPN" owner="objt.wms.dialog.pick.AbstractPickContainerOpenDialog"/>
+      <dialoglevel _name="Container" owner="objt.wms.dialog.pick.AbstractPickContainerOpenDialog"/>
+      <dialoglevel _name="LPNConfirmation" owner="objt.wms.dialog.pick.AbstractPickContainerOpenDialog"/>
+      <dialoglevel _name="LPNInfo" owner="objt.wms.dialog.pick.AbstractPickContainerOpenDialog"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="PickCartLPNOpenDialog01" description="OPEN LPN ON PICK CART" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.pick.AbstractPickContainerOpenDialog"/>
+      <dialoglevel _name="LPN" owner="objt.wms.dialog.pick.AbstractPickContainerOpenDialog"/>
+      <dialoglevel _name="Container" owner="objt.wms.dialog.pick.AbstractPickContainerOpenDialog"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="PickLPNOpenSelectDialog" description="OPEN PICK LPN" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.AbstractTaskDialog"/>
+      <dialoglevel _name="PickListLPN" leftText="SCAN PICK LIST / PICK LPN" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="PickLPNCloseSelectDialog" description="CLOSE PICK LPN" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.AbstractTaskDialog"/>
+      <dialoglevel _name="LPN" leftText="SCAN PICK LPN" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="AbstractPickContainerCloseDialog" description="CLOSE PICK LPN" isAbstract="true">
+      <generalization dialogclass="objt.wms.dialog.AbstractTaskDialog"/>
+      <dialoglevel _name="LPN" leftText="SCAN PICK LPN" onEnter="false" onEntry="false" onEscape="false" onExit="false" type="input"/>
+      <dialoglevel _name="CloseLPN" leftText="CLOSE PICK LPN?" onEnter="false" onEntry="false" onEscape="false" onExit="false" onListSelect="false" type="list">
+        <listitem text="SELECT"/>
+        <listitem text="YES"/>
+        <listitem text="NO"/>
+      </dialoglevel>
+      <dialoglevel _name="Location" leftText="SCAN TO LOCATION" onEnter="false" onEntry="false" onEscape="false" onExit="false" type="input"/>
+      <dialoglevel _name="LocationOverride" leftText="OVERRIDE LOCATION?" onEnter="false" onEntry="false" onEscape="false" onExit="false" onListSelect="false" type="list">
+        <listitem text="YES"/>
+        <listitem text="NO"/>
+      </dialoglevel>
+      <dialoglevel _name="LocationOverrideReason" leftText="SELECT REASON" onEnter="false" onEntry="false" onEscape="false" onExit="false" onListSelect="false" type="list"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="DeleteLPN" leftText="DELETE PICK LPN?" onEnter="false" onEntry="false" onEscape="false" onExit="false" onListSelect="false" type="list">
+        <listitem text="SELECT"/>
+        <listitem text="YES"/>
+      </dialoglevel>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="PickCartCloseDialog01" description="CLOSE PICK CART" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.pick.AbstractPickContainerCloseDialog"/>
+      <dialoglevel _name="LPN" owner="objt.wms.dialog.pick.AbstractPickContainerCloseDialog"/>
+      <dialoglevel _name="CloseLPN" owner="objt.wms.dialog.pick.AbstractPickContainerCloseDialog"/>
+      <dialoglevel _name="Location" owner="objt.wms.dialog.pick.AbstractPickContainerCloseDialog"/>
+      <dialoglevel _name="LocationOverride" owner="objt.wms.dialog.pick.AbstractPickContainerCloseDialog"/>
+      <dialoglevel _name="LocationOverrideReason" owner="objt.wms.dialog.pick.AbstractPickContainerCloseDialog"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="DeleteLPN" owner="objt.wms.dialog.pick.AbstractPickContainerCloseDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="PickCartLPNCloseDialog01" description="CLOSE LPN ON PICK CART" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.pick.AbstractPickContainerCloseDialog"/>
+      <dialoglevel _name="LPN" owner="objt.wms.dialog.pick.AbstractPickContainerCloseDialog"/>
+      <dialoglevel _name="CloseLPN" owner="objt.wms.dialog.pick.AbstractPickContainerCloseDialog"/>
+      <dialoglevel _name="Location" owner="objt.wms.dialog.pick.AbstractPickContainerCloseDialog"/>
+      <dialoglevel _name="LocationOverride" owner="objt.wms.dialog.pick.AbstractPickContainerCloseDialog"/>
+      <dialoglevel _name="LocationOverrideReason" owner="objt.wms.dialog.pick.AbstractPickContainerCloseDialog"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="DeleteLPN" owner="objt.wms.dialog.pick.AbstractPickContainerCloseDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="StartPickListDialog" description="RESUME PICK LIST" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.AbstractDialog"/>
+      <dialoglevel _name="TaskOrderLPN" leftText="SCAN PICK LIST / LPN" onEnter="false" onEntry="false" onEscape="false" onExit="false" type="input"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="PickLPNOpenDialog01" description="OPEN PICK LPN" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.pick.AbstractPickContainerOpenDialog"/>
+      <dialoglevel _name="LPN" owner="objt.wms.dialog.pick.AbstractPickContainerOpenDialog"/>
+      <dialoglevel _name="LPNConfirmation" owner="objt.wms.dialog.pick.AbstractPickContainerOpenDialog"/>
+      <dialoglevel _name="LPNInfo" owner="objt.wms.dialog.pick.AbstractPickContainerOpenDialog"/>
+      <dialoglevel _name="Container" owner="objt.wms.dialog.pick.AbstractPickContainerOpenDialog"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="PickLPNOpenDialog03" description="OPEN PICK LPN" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.pick.AbstractPickContainerOpenDialog"/>
+      <dialoglevel _name="LPN" owner="objt.wms.dialog.pick.AbstractPickContainerOpenDialog"/>
+      <dialoglevel _name="LPNConfirmation" owner="objt.wms.dialog.pick.AbstractPickContainerOpenDialog"/>
+      <dialoglevel _name="LPNInfo" owner="objt.wms.dialog.pick.AbstractPickContainerOpenDialog"/>
+      <dialoglevel _name="Container" owner="objt.wms.dialog.pick.AbstractPickContainerOpenDialog"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="StopPickListDialog" description="STOP PICK LIST" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.AbstractDialog"/>
+      <dialoglevel _name="TaskOrderLPN" leftText="SCAN PICK LIST / LPN" onEnter="false" onEntry="false" onEscape="false" onExit="false" type="input"/>
+      <dialoglevel _name="Location" leftText="SCAN TO LOCATION" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+  </package>
+  <package _name="objt.wms.dialog.put">
+    <dialogclass _name="AbstractPutAwayTaskDialog" isAbstract="true">
+      <generalization dialogclass="objt.wms.dialog.AbstractContainerTaskDialog"/>
+      <dialoglevel _name="LPN" owner="objt.wms.dialog.AbstractContainerTaskDialog"/>
+      <dialoglevel _name="Location" owner="objt.wms.dialog.AbstractContainerTaskDialog"/>
+      <dialoglevel _name="LocationOverrideConfirmation" owner="objt.wms.dialog.AbstractContainerTaskDialog"/>
+      <dialoglevel _name="LocationOverrideReason" owner="objt.wms.dialog.AbstractContainerTaskDialog"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="ContainerPutTaskDialog01" description="PUTAWAY CONTAINER" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.put.AbstractPutAwayTaskDialog"/>
+      <dialoglevel _name="LPN" owner="objt.wms.dialog.AbstractContainerTaskDialog"/>
+      <dialoglevel _name="LPNStack" owner="objt.wms.dialog.AbstractContainerTaskDialog"/>
+      <dialoglevel _name="Location" owner="objt.wms.dialog.AbstractContainerTaskDialog"/>
+      <dialoglevel _name="LocationOverrideConfirmation" owner="objt.wms.dialog.AbstractContainerTaskDialog"/>
+      <dialoglevel _name="LocationOverrideReason" owner="objt.wms.dialog.AbstractContainerTaskDialog"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="DistributedPutawayTaskDialog" description="DISTRIBUTED PUTAWAY" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.put.AbstractPutAwayTaskDialog"/>
+      <dialoglevel _name="LPN" owner="objt.wms.dialog.AbstractContainerTaskDialog"/>
+      <dialoglevel _name="Location" owner="objt.wms.dialog.AbstractContainerTaskDialog"/>
+      <dialoglevel _name="LocationOverrideConfirmation" owner="objt.wms.dialog.AbstractContainerTaskDialog"/>
+      <dialoglevel _name="LocationOverrideReason" owner="objt.wms.dialog.AbstractContainerTaskDialog"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="StartPutListDialog" description="START DIST. PUTAWAY" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.AbstractContainerTaskDialog"/>
+      <dialoglevel _name="LPN" owner="objt.wms.dialog.AbstractContainerTaskDialog"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="StopPutListDialog" description="STOP DIST. PUTAWAY" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.AbstractDialog"/>
+      <dialoglevel _name="LPN" leftText="SCAN LPN" onEnter="false" onEntry="false" onEscape="false" onExit="false" type="input"/>
+      <dialoglevel _name="StopPutaway" leftText="STOP PUTAWAY LIST" onEnter="false" onEntry="false" onEscape="false" onExit="false" onListSelect="false" type="list">
+        <listitem text="YES"/>
+        <listitem text="NO"/>
+      </dialoglevel>
+      <dialoglevel _name="Location" leftText="SCAN TO LOCATION" onEnter="false" onEntry="false" onEscape="false" onExit="false" type="input"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+  </package>
+  <package _name="objt.wms.dialog.repack">
+    <dialogclass _name="AbstractCreateEmptyLPNDialog" isAbstract="true">
+      <generalization dialogclass="objt.wms.dialog.repack.AbstractRepackDialog"/>
+      <dialoglevel _name="Location" leftText="SCAN LOCATION" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="LPN" leftText="SCAN LPN" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="ContainerType" leftText="SELECT CONTAINER TYPE" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="LocationError" leftText="PRESS EXIT TO SCAN ANOTHER LOCATION" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list">
+        <listitem text="EXIT"/>
+      </dialoglevel>
+      <dialoglevel _name="LPNError" leftText="PRESS EXIT TO SCAN ANOTHER LPN" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list">
+        <listitem text="EXIT"/>
+      </dialoglevel>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="CreateEmptyLPNDialog" description="CREATE EMPTY LPN" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.repack.AbstractCreateEmptyLPNDialog"/>
+      <dialoglevel _name="Location" owner="objt.wms.dialog.repack.AbstractCreateEmptyLPNDialog"/>
+      <dialoglevel _name="LPN" owner="objt.wms.dialog.repack.AbstractCreateEmptyLPNDialog"/>
+      <dialoglevel _name="ContainerType" owner="objt.wms.dialog.repack.AbstractCreateEmptyLPNDialog"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="SelectAction" leftText="SELECT ACTION" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list">
+        <listitem text="ADD FULL LPN"/>
+        <listitem text="ADD LPN CONTENT"/>
+        <listitem text="CREATE NEW EMPTY LPN"/>
+      </dialoglevel>
+      <dialoglevel _name="LocationError" owner="objt.wms.dialog.repack.AbstractCreateEmptyLPNDialog"/>
+      <dialoglevel _name="LPNError" owner="objt.wms.dialog.repack.AbstractCreateEmptyLPNDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="CreateEmptyTopLPNDialog" description="CREATE EMPTY TOP LPN" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.repack.AbstractCreateEmptyLPNDialog"/>
+      <dialoglevel _name="Location" owner="objt.wms.dialog.repack.AbstractCreateEmptyLPNDialog"/>
+      <dialoglevel _name="LPN" owner="objt.wms.dialog.repack.AbstractCreateEmptyLPNDialog"/>
+      <dialoglevel _name="ContainerType" owner="objt.wms.dialog.repack.AbstractCreateEmptyLPNDialog"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="SelectAction" leftText="SELECT ACTION" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list">
+        <listitem text="ADD SUB LPN"/>
+        <listitem text="CREATE NEW EMPTY TOP LPN"/>
+      </dialoglevel>
+      <dialoglevel _name="LocationError" owner="objt.wms.dialog.repack.AbstractCreateEmptyLPNDialog"/>
+      <dialoglevel _name="LPNError" owner="objt.wms.dialog.repack.AbstractCreateEmptyLPNDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="AbstractAddDialog" isAbstract="true">
+      <generalization dialogclass="objt.wms.dialog.repack.AbstractRepackDialog"/>
+      <dialoglevel _name="ToLPN" leftText="SCAN TO LPN" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="FromLPN" leftText="SCAN FROM LPN OR PRESS ENTER TO STOP" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="SerialIdentification" leftText="SERIAL IDENTIFICATION" onEnter="false" onEntry="false" onEscape="false" onExit="false" onListSelect="false" type="list">
+        <listitem text="IDENTIFY SERIALS"/>
+        <listitem text="CONTINUE"/>
+      </dialoglevel>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="ToLPNError" leftText="PRESS EXIT TO SCAN ANOTHER LPN" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list">
+        <listitem text="EXIT"/>
+      </dialoglevel>
+      <dialoglevel _name="FromLPNError" leftText="PRESS EXIT TO SCAN ANOTHER LPN" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list">
+        <listitem text="EXIT"/>
+      </dialoglevel>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="RepackAddFullLPNDialog" description="REPACK FULL LPN" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.repack.AbstractAddDialog"/>
+      <dialoglevel _name="ToLPN" owner="objt.wms.dialog.repack.AbstractAddDialog"/>
+      <dialoglevel _name="FromLPN" owner="objt.wms.dialog.repack.AbstractAddDialog"/>
+      <dialoglevel _name="SerialIdentification" owner="objt.wms.dialog.repack.AbstractAddDialog"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Stop" leftText="STOP ADDING FULL LPN'S?" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list">
+        <listitem text="YES CLOSE TO LPN"/>
+        <listitem text="YES STOP AND CONTINUE LATER"/>
+        <listitem text="NO ADD ANOTHER LPN"/>
+      </dialoglevel>
+      <dialoglevel _name="StopEmpty" leftText="TO LPN IS EMPTY. DELETE IT?" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list">
+        <listitem text="NO ADD ANOTHER LPN"/>
+        <listitem text="YES DELETE TO LPN"/>
+      </dialoglevel>
+      <dialoglevel _name="ToLPNError" owner="objt.wms.dialog.repack.AbstractAddDialog"/>
+      <dialoglevel _name="FromLPNError" owner="objt.wms.dialog.repack.AbstractAddDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="RepackAddLPNContentDialog" description="REPACK LPN CONTENT" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.repack.AbstractAddDialog"/>
+      <dialoglevel _name="ToLPN" owner="objt.wms.dialog.repack.AbstractAddDialog"/>
+      <dialoglevel _name="FromLPN" owner="objt.wms.dialog.repack.AbstractAddDialog"/>
+      <dialoglevel _name="SKU" leftText="SCAN SKU" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="Lot" leftText="SELECT LOT" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list"/>
+      <dialoglevel _name="Quantity" leftText="ENTER QUANTITY" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="SerialIdentification" owner="objt.wms.dialog.repack.AbstractAddDialog"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Stop" leftText="STOP ADDING LPN CONTENT?" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list">
+        <listitem text="YES CLOSE TO LPN"/>
+        <listitem text="YES STOP AND CONTINUE LATER"/>
+        <listitem text="NO ADD OTHER CONTENT"/>
+      </dialoglevel>
+      <dialoglevel _name="StopEmpty" leftText="TO LPN IS EMPTY. DELETE IT?" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list">
+        <listitem text="NO ADD OTHER CONTENT"/>
+        <listitem text="YES DELETE TO LPN"/>
+      </dialoglevel>
+      <dialoglevel _name="ToLPNError" owner="objt.wms.dialog.repack.AbstractAddDialog"/>
+      <dialoglevel _name="FromLPNError" owner="objt.wms.dialog.repack.AbstractAddDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="AbstractCloseLPNDialog" isAbstract="true">
+      <generalization dialogclass="objt.wms.dialog.repack.AbstractRepackDialog"/>
+      <dialoglevel _name="LPN" leftText="SCAN LPN" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="ConfirmCloseLPN" leftText="CLOSE LPN?" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list">
+        <listitem text="YES"/>
+        <listitem text="NO"/>
+      </dialoglevel>
+      <dialoglevel _name="Height" leftText="HEIGHT" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="Overhang" leftText="OVERHANG?" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list">
+        <listitem text="YES"/>
+        <listitem text="NO"/>
+      </dialoglevel>
+      <dialoglevel _name="Depth" leftText="DEPTH" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="Width" leftText="WIDTH" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="Weight" leftText="WEIGHT" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="PrintLabel" leftText="PRINT LABEL?" onEnter="false" onEntry="false" onEscape="false" onExit="false" onListSelect="false" type="list">
+        <listitem text="SELECT"/>
+        <listitem text="YES"/>
+        <listitem text="NO"/>
+      </dialoglevel>
+      <dialoglevel _name="ConfirmDeleteLPN" leftText="DELETE EMPTY LPN?" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list">
+        <listitem text="SELECT"/>
+        <listitem text="YES"/>
+        <listitem text="NO"/>
+      </dialoglevel>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="CloseLPNDialog" description="CLOSE LPN" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.repack.AbstractCloseLPNDialog"/>
+      <dialoglevel _name="LPN" owner="objt.wms.dialog.repack.AbstractCloseLPNDialog"/>
+      <dialoglevel _name="ConfirmCloseLPN" owner="objt.wms.dialog.repack.AbstractCloseLPNDialog"/>
+      <dialoglevel _name="Height" owner="objt.wms.dialog.repack.AbstractCloseLPNDialog"/>
+      <dialoglevel _name="Overhang" owner="objt.wms.dialog.repack.AbstractCloseLPNDialog"/>
+      <dialoglevel _name="Depth" owner="objt.wms.dialog.repack.AbstractCloseLPNDialog"/>
+      <dialoglevel _name="Width" owner="objt.wms.dialog.repack.AbstractCloseLPNDialog"/>
+      <dialoglevel _name="Weight" owner="objt.wms.dialog.repack.AbstractCloseLPNDialog"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="PrintLabel" owner="objt.wms.dialog.repack.AbstractCloseLPNDialog"/>
+      <dialoglevel _name="ConfirmDeleteLPN" owner="objt.wms.dialog.repack.AbstractCloseLPNDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="CloseTopLPNDialog" description="CLOSE TOP LPN" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.repack.AbstractCloseLPNDialog"/>
+      <dialoglevel _name="LPN" owner="objt.wms.dialog.repack.AbstractCloseLPNDialog"/>
+      <dialoglevel _name="ConfirmCloseLPN" owner="objt.wms.dialog.repack.AbstractCloseLPNDialog"/>
+      <dialoglevel _name="Height" owner="objt.wms.dialog.repack.AbstractCloseLPNDialog"/>
+      <dialoglevel _name="Overhang" owner="objt.wms.dialog.repack.AbstractCloseLPNDialog"/>
+      <dialoglevel _name="Depth" owner="objt.wms.dialog.repack.AbstractCloseLPNDialog"/>
+      <dialoglevel _name="Width" owner="objt.wms.dialog.repack.AbstractCloseLPNDialog"/>
+      <dialoglevel _name="Weight" owner="objt.wms.dialog.repack.AbstractCloseLPNDialog"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="PrintLabel" owner="objt.wms.dialog.repack.AbstractCloseLPNDialog"/>
+      <dialoglevel _name="ConfirmDeleteLPN" owner="objt.wms.dialog.repack.AbstractCloseLPNDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="AbstractNestLPNDialog" isAbstract="true">
+      <generalization dialogclass="objt.wms.dialog.repack.AbstractRepackDialog"/>
+      <dialoglevel _name="TopLPN" leftText="SCAN TOP LPN" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="SubLPN" leftText="SCAN SUB LPN OR PRESS ENTER TO STOP" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="StopEmpty" leftText="TOP LPN IS EMPTY. DELETE IT?" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list">
+        <listitem text="NO ADD ANOTHER SUB LPN"/>
+        <listitem text="YES DELETE TOP LPN"/>
+      </dialoglevel>
+      <dialoglevel _name="TopLPNError" leftText="PRESS EXIT TO SCAN ANOTHER LPN" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list">
+        <listitem text="EXIT"/>
+      </dialoglevel>
+      <dialoglevel _name="SubLPNError" leftText="PRESS EXIT TO SCAN ANOTHER LPN" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list">
+        <listitem text="EXIT"/>
+      </dialoglevel>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="NestLPNAddLPNDialog" description="ADD SUB LPN" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.repack.AbstractNestLPNDialog"/>
+      <dialoglevel _name="TopLPN" owner="objt.wms.dialog.repack.AbstractNestLPNDialog"/>
+      <dialoglevel _name="SubLPN" owner="objt.wms.dialog.repack.AbstractNestLPNDialog"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Stop" leftText="STOP?" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list">
+        <listitem text="YES STOP AND CLOSE TOP LPN"/>
+        <listitem text="YES STOP AND CONTINUE LATER"/>
+        <listitem text="NO ADD ANOTHER SUB LPN"/>
+      </dialoglevel>
+      <dialoglevel _name="StopEmpty" owner="objt.wms.dialog.repack.AbstractNestLPNDialog"/>
+      <dialoglevel _name="TopLPNError" owner="objt.wms.dialog.repack.AbstractNestLPNDialog"/>
+      <dialoglevel _name="SubLPNError" owner="objt.wms.dialog.repack.AbstractNestLPNDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="NestLPNRemoveLPNDialog" description="REMOVE SUB LPN" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.repack.AbstractNestLPNDialog"/>
+      <dialoglevel _name="TopLPN" owner="objt.wms.dialog.repack.AbstractNestLPNDialog"/>
+      <dialoglevel _name="SubLPN" owner="objt.wms.dialog.repack.AbstractNestLPNDialog"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Stop" leftText="STOP?" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list">
+        <listitem text="YES STOP AND CLOSE TOP LPN"/>
+        <listitem text="YES STOP AND CONTINUE LATER"/>
+        <listitem text="YES ADD ANOTHER SUB LPN"/>
+        <listitem text="NO REMOVE ANOTHER SUB LPN"/>
+      </dialoglevel>
+      <dialoglevel _name="StopEmpty" owner="objt.wms.dialog.repack.AbstractNestLPNDialog"/>
+      <dialoglevel _name="TopLPNError" owner="objt.wms.dialog.repack.AbstractNestLPNDialog"/>
+      <dialoglevel _name="SubLPNError" owner="objt.wms.dialog.repack.AbstractNestLPNDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="AbstractRepackDialog" isAbstract="true">
+      <generalization dialogclass="objt.wms.dialog.AbstractDialog"/>
+    </dialogclass>
+  </package>
+  <package _name="objt.wms.dialog.replenish">
+    <dialogclass _name="ContainerReplenishTaskDialog01" description="REPLENISH CONTAINER" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.AbstractContainerTaskDialog"/>
+      <dialoglevel _name="LPN" owner="objt.wms.dialog.AbstractContainerTaskDialog"/>
+      <dialoglevel _name="LPNSerialIdentification" owner="objt.wms.dialog.AbstractContainerTaskDialog"/>
+      <dialoglevel _name="LPNStack" owner="objt.wms.dialog.AbstractContainerTaskDialog"/>
+      <dialoglevel _name="LPNStackSerialIdentification" owner="objt.wms.dialog.AbstractContainerTaskDialog"/>
+      <dialoglevel _name="PickCartConfirmation" leftText="SCAN PICK CART" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="Location" owner="objt.wms.dialog.AbstractContainerTaskDialog"/>
+      <dialoglevel _name="LocationOverrideConfirmation" owner="objt.wms.dialog.AbstractContainerTaskDialog"/>
+      <dialoglevel _name="LocationOverrideReason" owner="objt.wms.dialog.AbstractContainerTaskDialog"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="ContainerContentReplenishTaskDialog01" description="SKU REPLENISH" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.replenish.AbstractSKUReplenishTaskDialog"/>
+      <dialoglevel _name="LPN" leftText="SCAN LPN" onEnter="false" onEntry="false" onEscape="false" onExit="false" type="input"/>
+      <dialoglevel _name="SerialIdentification" owner="objt.wms.dialog.replenish.AbstractSKUReplenishTaskDialog"/>
+      <dialoglevel _name="Quantity" owner="objt.wms.dialog.replenish.AbstractSKUReplenishTaskDialog"/>
+      <dialoglevel _name="AllocationOverrideReason" owner="objt.wms.dialog.replenish.AbstractSKUReplenishTaskDialog"/>
+      <dialoglevel _name="ContainerIdentification" owner="objt.wms.dialog.replenish.AbstractSKUReplenishTaskDialog"/>
+      <dialoglevel _name="PickCartConfirmation" owner="objt.wms.dialog.replenish.AbstractSKUReplenishTaskDialog"/>
+      <dialoglevel _name="Location" owner="objt.wms.dialog.replenish.AbstractSKUReplenishTaskDialog"/>
+      <dialoglevel _name="LocationOverrideConfirmation" owner="objt.wms.dialog.replenish.AbstractSKUReplenishTaskDialog"/>
+      <dialoglevel _name="LocationOverrideReason" owner="objt.wms.dialog.replenish.AbstractSKUReplenishTaskDialog"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="BulkReplenishTaskDialog01" description="SKU REPLENISH" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.replenish.AbstractSKUReplenishTaskDialog"/>
+      <dialoglevel _name="SourceLocation" leftText="SCAN LOCATION" onEnter="false" onEntry="false" onEscape="false" onExit="false" type="input"/>
+      <dialoglevel _name="SerialIdentification" owner="objt.wms.dialog.replenish.AbstractSKUReplenishTaskDialog"/>
+      <dialoglevel _name="Quantity" owner="objt.wms.dialog.replenish.AbstractSKUReplenishTaskDialog"/>
+      <dialoglevel _name="AllocationOverrideReason" owner="objt.wms.dialog.replenish.AbstractSKUReplenishTaskDialog"/>
+      <dialoglevel _name="ContainerIdentification" owner="objt.wms.dialog.replenish.AbstractSKUReplenishTaskDialog"/>
+      <dialoglevel _name="PickCartConfirmation" owner="objt.wms.dialog.replenish.AbstractSKUReplenishTaskDialog"/>
+      <dialoglevel _name="Location" owner="objt.wms.dialog.replenish.AbstractSKUReplenishTaskDialog"/>
+      <dialoglevel _name="LocationOverrideConfirmation" owner="objt.wms.dialog.replenish.AbstractSKUReplenishTaskDialog"/>
+      <dialoglevel _name="LocationOverrideReason" owner="objt.wms.dialog.replenish.AbstractSKUReplenishTaskDialog"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="LocationReplenishTriggerDialog01" description="REPLENISHMENT REQUEST" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.AbstractDialog"/>
+      <dialoglevel _name="Location" leftText="SCAN LOCATION" onEnter="false" onEntry="false" onEscape="false" onExit="false" type="input"/>
+      <dialoglevel _name="Confirmation" leftText="ADD REPLENISHMENT ?" onEnter="false" onEntry="false" onEscape="false" onExit="false" onListSelect="false" type="list">
+        <listitem text="SELECT"/>
+        <listitem text="YES"/>
+        <listitem text="NO"/>
+      </dialoglevel>
+      <dialoglevel _name="Summary" leftText="PRESS ENTER TO CONTINUE" onEnter="false" onEntry="false" onEscape="false" onExit="false" onListSelect="false" type="list">
+        <listitem text="ENTER"/>
+      </dialoglevel>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="LocationReplenishTaskDialog01" description="SKU REPLENISH" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.replenish.AbstractSKUReplenishTaskDialog"/>
+      <dialoglevel _name="PickLocation" leftText="SCAN LOCATION" onEnter="false" onEntry="false" onEscape="false" onExit="false" type="input"/>
+      <dialoglevel _name="SerialIdentification" owner="objt.wms.dialog.replenish.AbstractSKUReplenishTaskDialog"/>
+      <dialoglevel _name="Quantity" owner="objt.wms.dialog.replenish.AbstractSKUReplenishTaskDialog"/>
+      <dialoglevel _name="AllocationOverrideReason" owner="objt.wms.dialog.replenish.AbstractSKUReplenishTaskDialog"/>
+      <dialoglevel _name="ContainerIdentification" owner="objt.wms.dialog.replenish.AbstractSKUReplenishTaskDialog"/>
+      <dialoglevel _name="Location" owner="objt.wms.dialog.replenish.AbstractSKUReplenishTaskDialog"/>
+      <dialoglevel _name="LocationOverrideConfirmation" owner="objt.wms.dialog.replenish.AbstractSKUReplenishTaskDialog"/>
+      <dialoglevel _name="LocationOverrideReason" owner="objt.wms.dialog.replenish.AbstractSKUReplenishTaskDialog"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="LocationLPNReplenishTaskDialog01" description="SKU REPLENISH" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.replenish.AbstractSKUReplenishTaskDialog"/>
+      <dialoglevel _name="PickLocation" leftText="SCAN LOCATION" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="LPN" leftText="SCAN LPN" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="SerialIdentification" owner="objt.wms.dialog.replenish.AbstractSKUReplenishTaskDialog"/>
+      <dialoglevel _name="Quantity" owner="objt.wms.dialog.replenish.AbstractSKUReplenishTaskDialog"/>
+      <dialoglevel _name="AllocationOverrideReason" owner="objt.wms.dialog.replenish.AbstractSKUReplenishTaskDialog"/>
+      <dialoglevel _name="ContainerIdentification" owner="objt.wms.dialog.replenish.AbstractSKUReplenishTaskDialog"/>
+      <dialoglevel _name="Location" owner="objt.wms.dialog.replenish.AbstractSKUReplenishTaskDialog"/>
+      <dialoglevel _name="LocationOverrideConfirmation" owner="objt.wms.dialog.replenish.AbstractSKUReplenishTaskDialog"/>
+      <dialoglevel _name="LocationOverrideReason" owner="objt.wms.dialog.replenish.AbstractSKUReplenishTaskDialog"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="AbstractSKUReplenishTaskDialog" description="SKU REPLENISH" isAbstract="true">
+      <generalization dialogclass="objt.wms.dialog.AbstractTaskDialog"/>
+      <dialoglevel _name="SerialIdentification" leftText="SERIAL IDENTIFICATION" onEnter="false" onEntry="false" onEscape="false" onExit="false" onListSelect="false" type="list">
+        <listitem text="IDENTIFY SERIALS"/>
+        <listitem text="CONTINUE"/>
+      </dialoglevel>
+      <dialoglevel _name="Quantity" leftText="ENTER QUANTITY" onEnter="false" onEntry="false" onEscape="false" onExit="false" type="input"/>
+      <dialoglevel _name="ContainerIdentification" leftText="SCAN TO LPN" onEnter="false" onEntry="false" onEscape="false" onExit="false" type="input"/>
+      <dialoglevel _name="PickCartConfirmation" leftText="SCAN PICK CART" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="Terminate" owner="objt.wms.dialog.AbstractTaskDialog"/>
+      <dialoglevel _name="AllocationOverrideReason" leftText="REASON" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list"/>
+      <dialoglevel _name="Location" leftText="SCAN TO LOCATION" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="LocationOverrideConfirmation" leftText="OVERRIDE LOCATION ?" onEnter="false" onEntry="false" onEscape="false" onExit="false" onListSelect="false" type="list">
+        <listitem text="YES"/>
+        <listitem text="NO"/>
+      </dialoglevel>
+      <dialoglevel _name="LocationOverrideReason" leftText="REASON" onEnter="false" onEntry="false" onEscape="false" onExit="false" onListSelect="false" type="list"/>
+    </dialogclass>
+    <dialogclass _name="ReplenishListStartDialog" description="START REPLENISH LIST" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.AbstractTaskDialog"/>
+      <dialoglevel _name="LPN" leftText="SCAN PICK CART" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="Container" leftText="SELECT CONTAINER TYPE" onEnter="false" onEntry="false" onEscape="false" onExit="false" onListSelect="false" type="list"/>
+      <dialoglevel _name="LPNInfo" leftText="PRESS OK TO CONTINUE" onEnter="false" onEntry="false" onEscape="false" onExit="false" onListSelect="false" type="list">
+        <listitem text="OK"/>
+      </dialoglevel>
+      <dialoglevel _name="LPNConfirm" leftText="SCAN PICK CART" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="ReplenishListStopDialog" description="STOP REPLENISH LIST" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.AbstractDialog"/>
+      <dialoglevel _name="DeleteLPN" leftText="DELETE PICK CART?" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list">
+        <listitem text="SELECT"/>
+        <listitem text="YES"/>
+      </dialoglevel>
+      <dialoglevel _name="Overview" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list"/>
+      <dialoglevel _name="Location" leftText="SCAN DROPOFF" onEnter="false" onEntry="false" onEscape="false" onExit="false" type="input"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="DropContainerDialog" description="DROP CONTAINER" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.AbstractDialog"/>
+      <dialoglevel _name="LPN" leftText="SCAN LPN" onEnter="true" onEntry="false" onEscape="false" onExit="false" type="input"/>
+      <dialoglevel _name="Location" leftText="SCAN TO LOCATION" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+  </package>
+  <package _name="objt.wms.dialog.ship">
+    <dialogclass _name="LPNLoadTaskDialog01" description="LOAD LPN" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.AbstractContainerTaskDialog"/>
+      <dialoglevel _name="LPN" owner="objt.wms.dialog.AbstractContainerTaskDialog"/>
+      <dialoglevel _name="LPNSerialIdentification" owner="objt.wms.dialog.AbstractContainerTaskDialog"/>
+      <dialoglevel _name="LPNStack" owner="objt.wms.dialog.AbstractContainerTaskDialog"/>
+      <dialoglevel _name="LPNStackSerialIdentification" owner="objt.wms.dialog.AbstractContainerTaskDialog"/>
+      <dialoglevel _name="Location" owner="objt.wms.dialog.AbstractContainerTaskDialog"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="LPNUnloadDialog01" description="UNLOAD LPN" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.AbstractDialog"/>
+      <dialoglevel _name="LPN" leftText="SCAN LPN" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="Location" leftText="SCAN TO LOCATION" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="LocationWarning" leftText="CONTINUE?" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list">
+        <listitem text="YES"/>
+        <listitem text="NO"/>
+      </dialoglevel>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="ShipmentUnloadDialog01" description="UNLOAD SHIPMENT" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.AbstractContainerTaskDialog"/>
+      <dialoglevel _name="Shipment" leftText="SELECT SHIPMENT" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list"/>
+      <dialoglevel _name="ConfirmShipment" leftText="SCAN LOADING DOCK TO CONFIRM" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="LPN" owner="objt.wms.dialog.AbstractContainerTaskDialog"/>
+      <dialoglevel _name="LPNStack" owner="objt.wms.dialog.AbstractContainerTaskDialog"/>
+      <dialoglevel _name="Location" owner="objt.wms.dialog.AbstractContainerTaskDialog"/>
+      <dialoglevel _name="LocationOverrideConfirmation" owner="objt.wms.dialog.AbstractContainerTaskDialog"/>
+      <dialoglevel _name="LocationWarning" leftText="CONTINUE?" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list">
+        <listitem text="YES"/>
+        <listitem text="NO"/>
+      </dialoglevel>
+      <dialoglevel _name="LocationOverrideReason" owner="objt.wms.dialog.AbstractContainerTaskDialog"/>
+      <dialoglevel _name="PartialUnloadInfo" leftText="STOP UNLOADING ANYWAY?" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list">
+        <listitem text="YES"/>
+        <listitem text="NO"/>
+      </dialoglevel>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="LPNUnloadTaskDialog01" description="UNLOAD LPN" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.AbstractContainerTaskDialog"/>
+      <dialoglevel _name="LPN" owner="objt.wms.dialog.AbstractContainerTaskDialog"/>
+      <dialoglevel _name="LPNStack" owner="objt.wms.dialog.AbstractContainerTaskDialog"/>
+      <dialoglevel _name="Location" owner="objt.wms.dialog.AbstractContainerTaskDialog"/>
+      <dialoglevel _name="LocationOverrideConfirmation" owner="objt.wms.dialog.AbstractContainerTaskDialog"/>
+      <dialoglevel _name="LocationWarning" leftText="CONTINUE?" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list">
+        <listitem text="YES"/>
+        <listitem text="NO"/>
+      </dialoglevel>
+      <dialoglevel _name="LocationOverrideReason" owner="objt.wms.dialog.AbstractContainerTaskDialog"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="ShipmentLoadDialog01" description="LOAD SHIPMENT" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.AbstractContainerTaskDialog"/>
+      <dialoglevel _name="Shipment" leftText="SELECT SHIPMENT" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list"/>
+      <dialoglevel _name="ConfirmShipment" leftText="SCAN LOADING DOCK TO CONFIRM" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="ShipmentInfo" leftText="SELECT OPTION" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list">
+        <listitem text="SHOW ORDER DETAILS"/>
+        <listitem text="START LOADING"/>
+      </dialoglevel>
+      <dialoglevel _name="OrderInfo" leftText="SELECT ORDER DETAIL" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list"/>
+      <dialoglevel _name="LPN" owner="objt.wms.dialog.AbstractContainerTaskDialog"/>
+      <dialoglevel _name="LPNSerialIdentification" owner="objt.wms.dialog.AbstractContainerTaskDialog"/>
+      <dialoglevel _name="LPNStack" owner="objt.wms.dialog.AbstractContainerTaskDialog"/>
+      <dialoglevel _name="LPNStackSerialIdentification" owner="objt.wms.dialog.AbstractContainerTaskDialog"/>
+      <dialoglevel _name="Location" owner="objt.wms.dialog.AbstractContainerTaskDialog"/>
+      <dialoglevel _name="PartialShipmentInfo" leftText="STOP LOADING ANYWAY?" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list">
+        <listitem text="YES"/>
+        <listitem text="NO"/>
+      </dialoglevel>
+      <dialoglevel _name="NotLoadableLPNWarning" leftText="PRESS ENTER TO CONTINUE" onEnter="true" onEntry="false" onEscape="true" onExit="false" onListSelect="false" type="list">
+        <listitem text="CONTINUE"/>
+      </dialoglevel>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+    <dialogclass _name="ShipmentCloseDialog01" description="CLOSE SHIPMENT" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.AbstractDialog"/>
+      <dialoglevel _name="SelectShipment" leftText="SELECT SHIPMENT" onEnter="false" onEntry="false" onEscape="false" onExit="false" onListSelect="false" type="list"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+  </package>
+  <package _name="objt.wms.dialog.transfer">
+    <dialogclass _name="ContainerTransferTaskDialog01" description="TRANSFER CONTAINER" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.AbstractContainerTaskDialog"/>
+      <dialoglevel _name="LPN" owner="objt.wms.dialog.AbstractContainerTaskDialog"/>
+      <dialoglevel _name="LPNStack" owner="objt.wms.dialog.AbstractContainerTaskDialog"/>
+      <dialoglevel _name="Location" owner="objt.wms.dialog.AbstractContainerTaskDialog"/>
+      <dialoglevel _name="LocationOverrideConfirmation" owner="objt.wms.dialog.AbstractContainerTaskDialog"/>
+      <dialoglevel _name="LocationOverrideReason" owner="objt.wms.dialog.AbstractContainerTaskDialog"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+  </package>
+</model>

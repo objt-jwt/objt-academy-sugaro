@@ -1,0 +1,16 @@
+<!-- Config file for translation keys from XML for classes defined in dce.pd.frame -->
+<config>
+
+  <!-- include the translation config of base components -->
+  <include path="../../../../../dce/src/main/assets"/>
+  <include ref="translation/dce_config.xml"/>
+
+  <!-- include the translation config of the objt components -->
+  <include path=".."/>
+  <include ref="translation/objt.common_config.xml"/>
+  <include ref="translation/objt.mes_config.xml"/>
+  <include ref="translation/objt.wms_config.xml"/>
+  <include ref="translation/objt.wfm_config.xml"/>
+  <include ref="translation/objt.crp_config.xml"/>
+
+</config>

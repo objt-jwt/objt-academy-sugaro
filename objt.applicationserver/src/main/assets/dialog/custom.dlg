@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<model _name="objt.core 7.0.4">
+  <imports>
+    <import file="./../../../../../assets/dialog/objt.vertical.dlg"/>
+  </imports>
+</model>

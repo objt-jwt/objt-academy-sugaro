@@ -1,0 +1,112 @@
+<?xml version="1.0"?>
+
+<updater>
+
+  <!-- ******************************************* Version Check ************************************************ -->
+
+  <update name="check_version" class="objt.updater.core.updaters.DbVersionCheck">
+    <property name="minversion" value="6.5.2" />
+  </update>
+
+  <!-- ******************************************* DB Updaters **************************************************** -->
+
+  <update name="update_tables" class="objt.updater.core.updaters.SQLExecUpdater" >
+    <property name="databasefile" value="${UPDATER.SCRIPT_PATH}/${DATABASE.VENDOR}/update_tables.sql" />
+    <property name="vendor" value="${DATABASE.VENDOR}" />
+    <property name="driver" value="${DATABASE.DRIVER}" />
+    <property name="url" value="${DATABASE.URL}" />
+    <property name="userid" value="${DATABASE.USER}" />
+    <property name="password" value="${DATABASE.PASSWORD}" />
+  </update>
+
+  <!-- synchronize the database tables and columns with the current meta model -->
+  <update name="synchronize_database" class="objt.updater.core.updaters.DbSyncUpdater" >
+    <property name="metafile" value="${FACTORY.CLASSMODELFILE}" />
+    <!-- database settings -->
+    <property name="vendor" value="${DATABASE.VENDOR}" />
+    <property name="driver" value="${DATABASE.DRIVER}" />
+    <property name="url" value="${DATABASE.URL}" />
+    <property name="userid" value="${DATABASE.USER}" />
+    <property name="password" value="${DATABASE.PASSWORD}" />
+    <!-- schema settings -->
+    <property name="schemaname" value="${DATABASE.SCHEMANAME}" />
+    <property name="databasename" value="${DATABASE.DATABASENAME}" />
+    <property name="datatablespace" value="${DATABASE.DATATABLESPACE}" />
+    <property name="indextablespace" value="${DATABASE.INDEXTABLESPACE}" />
+    <!-- upload field settings -->
+    <property name="nruploadfields" value="${DATABASE.NRUPLOADFIELDS}" />
+    <property name="uploadfieldlength" value="${DATABASE.UPLOADFIELDLENGTH}" />
+    <property name="uploaddescriptionlength" value="${DATABASE.UPLOADDESCRIPTIONLENGTH}" />
+  </update>
+
+  <!-- ******************************************* GENERAL/COMMON Updaters *********************************************** -->
+
+  <!-- ******************************************* WMS Updaters **************************************************** -->
+
+  <!-- ******************************************* MES Updaters **************************************************** -->
+
+  <update name="update_machopprodoplinks" class="objt.updater.updaters.MachOpProdOpLinkUpdater"
+          targetversion="7.0.1.0" />
+
+  <update name="update_manopmachoplinks" class="objt.updater.updaters.ManOpMachOpLinkUpdater"
+          targetversion="7.0.1.0" />
+
+  <update name="update_scrapopmachoplinks" class="objt.updater.updaters.ScrapOpMachOpLinkUpdater"
+          targetversion="7.0.1.0" />
+
+  <update name="update_scrapopmanoplinks" class="objt.updater.updaters.ScrapOpManOpLinkUpdater"
+          targetversion="7.0.1.0" />
+
+  <update name="update_reworkopscrapoplinks" class="objt.updater.updaters.ReworkOpScrapOpLinkUpdater"
+          targetversion="7.0.1.0" />
+
+  <update name="update_operationsegmentlinks" class="objt.updater.updaters.OperationSegmentLinkUpdater"
+          targetversion="7.0.1.0" />
+
+  <update name="update_attributefilterfields" class="objt.updater.updaters.AttributeFilterFieldUpdater"
+          targetversion="7.0.2.0" />
+
+  <update name="update_inputitemqty" class="objt.updater.updaters.InputItemQtyUpdater"
+          targetversion="7.0.2.0" />
+
+  <update name="update_outputitemqty" class="objt.updater.updaters.OutputItemQtyUpdater"
+          targetversion="7.0.2.0" />
+
+  <update name="update_productioncontext" class="objt.updater.updaters.ProductionContextUpdater"
+          targetversion="7.0.2.0" />
+
+  <update name="update_tags" class="objt.updater.updaters.TagUpdater"
+          targetversion="7.0.3.0" />
+
+  <update name="update_schedules" class="objt.updater.updaters.ScheduleUpdater"
+          targetversion="7.0.3.0" />
+
+  <update name="update_classnames" class="objt.updater.updaters.ClassNameUpdater"
+          targetversion="7.0.4.0" />
+
+  <update name="update_extensionconfig" class="objt.updater.updaters.ExtensionConfigUpdater"
+          targetversion="7.0.5.0" />
+
+  <!-- ******************************************* APP Updaters *************************************************** -->
+
+  <update name="update_resourceviews" class="objt.updater.core.updaters.ReplaceUpdater" >
+    <property name="dir" value="${UPDATER.RESOURCEVIEW_PATH}" />
+    <property name="includes" value="**/*.xml" />
+    <property name="encoding" value="UTF-8" />
+    <property name="replacefilterfile" value="${UPDATER.SCRIPT_PATH}/update_invoker_paths.txt" />
+    <property name="summary" value="true" />
+  </update>
+
+  <update name="update_user_preferences" class="objt.updater.core.updaters.ReplaceUpdater" >
+    <property name="dir" value="${UPDATER.USER_PREFERENCES_PATH}" />
+    <property name="includes" value="**/*.xml" />
+    <property name="encoding" value="UTF-8" />
+    <property name="replacefilterfile" value="${UPDATER.SCRIPT_PATH}/update_invoker_paths.txt" />
+    <property name="summary" value="true" />
+  </update>
+
+  <!-- ******************************************* Version Updater ************************************************ -->
+
+  <update name="update_version" class="objt.updater.core.updaters.DbVersionUpdater" />
+
+</updater>

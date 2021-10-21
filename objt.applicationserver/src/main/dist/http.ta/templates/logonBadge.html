@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Objective WebClient</title>
+
+	<link rel="stylesheet" type="text/css" href="../style/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../style/bootstrap-theme.min.css">
+
+  <script type="text/javascript" charset="utf-8" src="../scripts/jquery-1.12.4.min.js"></script>
+  <script type="text/javascript" charset="utf-8" src="../scripts/bootstrap.min.js"></script>
+	
+  <script type="text/javascript" charset="utf-8" src="../scripts/jquery-ui.min.js"></script>
+  <script type="text/javascript" charset="utf-8" src="../scripts/jquery.keyboard.js"></script>
+  <script type="text/javascript" charset="utf-8" src="../scripts/keyboards.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="../style/jquery-ui.css">
+  <link rel="stylesheet" type="text/css" href="../style/keyboard.css">
+
+<script>
+setDynamicText('installation');
+
+function setDynamicText(destination)
+{
+  $.ajax
+  ({
+      url: '/DynamicText',
+      data: {'cmd': destination},
+      success: function(data) <!-- when the AJAX-call is successful -->
+      {
+        document.getElementById(destination).innerHTML = "Objective WFM "+data;
+      },
+      type: 'get'
+  });
+}
+
+function submitBadgeOnEnter(myfield,e)
+{
+  var keycode;
+  if (window.event) keycode = window.event.keyCode;
+  else if (e) keycode = e.which;
+  else return true;
+
+  if (keycode == 13)
+  {
+    myfield.value = "~B~" + myfield.value;
+    myfield.form.submit();
+    return false;
+  }
+  else return true;
+}
+
+function validateForm(myForm)
+{
+  txt = myForm.j_username.value;
+	if ((txt.length > 0) && (txt.match("^~B~")== null))
+	{
+		myForm.j_username.value = "~B~" + txt;
+	}
+	return true;
+}
+</script>
+</head>
+
+<body>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a id='installation' class="navbar-brand" href="#">Objective WFM&nbsp;</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+						<li><a href="#" onClick="location.href='/ta.nl'">Nederlands</a></li>
+						<li><a href="#" onClick="location.href='/ta.fr'">Fran&ccedil;ais</a></li>
+						<li><a href="#" onClick="location.href='/ta.en'">English</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+
+      </div>
+    </nav>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4 col-md-offset-4">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title"><!--TRANSLATE(Logon using your badge)--></h3>
+					</div>
+					<div class="panel-body">
+						<form method="post" action='j_security_check'  onsubmit="return validateForm(this);" name="form" autocomplete="off" accept-charset="UTF-8">
+							<div class="form-group">
+								<label for="j_username"><!--TRANSLATE(Badge)--></label>
+								<input class="form-control" type="text" name="j_username" id="username" onKeyPress="return submitBadgeOnEnter(this,event)" autofocus/>
+							</div>
+							<button class="btn btn-default pull-right" type="submit"><!--TRANSLATE(Logon)--></button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

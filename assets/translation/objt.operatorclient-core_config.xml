@@ -1,0 +1,45 @@
+<!-- Config file for translation keys from XML for classes defined in dce.pd.frame -->
+<config>
+
+	<!-- include the translation config of the objt library -->
+  <include path="../../../../../../dce/src/main/assets"/>    <!-- toenhance: translator should be able to resolve path declared in objt_config.xml -->
+  <include path="../../../../../../objt/src/main/assets"/>
+  <include ref="translation/objt_config.xml"/>
+
+  <actions>
+  </actions>
+
+  <tabpanels>
+  </tabpanels>
+
+  <xmlfiles>
+
+    <xmlfile name="audittrailconfig.xml">
+      <node name="owner" translate="title"/>
+      <node name="association" translate="associatedobjecttitle"/>
+      <node name="attribute" translate="title"/>
+      <node name="add" translate="description"/>
+      <node name="remove" translate="description"/>
+      <node name="update" translate="description"/>
+    </xmlfile>
+
+    <xmlfile name="machine_buttonbar.xml">
+      <node name="button" translate="title"/>
+      <node name="buttonbar" translate="title"/>
+      <node name="mainbuttonbar" translate="title"/>
+    </xmlfile>
+
+    <xmlfile name="workcenter_buttonbar.xml">
+      <node name="button" translate="title"/>
+      <node name="buttonbar" translate="title"/>
+      <node name="mainbuttonbar" translate="title"/>
+    </xmlfile>
+
+    <xmlfile name="resourcetrain_buttonbar.xml">
+      <node name="button" translate="title"/>
+      <node name="buttonbar" translate="title"/>
+      <node name="mainbuttonbar" translate="title"/>
+    </xmlfile>
+  </xmlfiles>
+</config>
+

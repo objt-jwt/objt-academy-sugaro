@@ -1,0 +1,173 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title"><!--TRANSLATE(dayleave.web)--></h3>
+  </div>
+  <div class="panel-body">
+
+    <div class="form-group">
+      <label for="datepicker"><!--TRANSLATE(Date)--></label>
+      <div class='input-group date' id='datepicker'>
+        <input type="text" class='form-control' id='datepickerTxt' onkeydown="if (event.keyCode == 13) showAttendanceDay()">
+        <div class="input-group-addon">
+          <span class="glyphicon glyphicon-calendar"></span>
+				</div>
+			</div>
+		</div>
+    <div class="form-group">
+      <label for="calendar_day"><!--TRANSLATE(Calendar day)--></label>
+      <div id="calendar_day" class="form-control-static"></div>
+    </div>
+
+    <div class="form-group">
+      <label for="targetOperations"><!--TRANSLATE(Select)--></label>
+      <div class="dayleave_checkboxes" id="targetOperations"></div>
+
+		<div class="form-group">
+			<label for="code"><!--TRANSLATE(Code)--></label>
+			<select id="code" class='form-control' onchange="showPeriodAttendanceCounter(this.value);"><!--PreparedHTML.PlaceHolder:AttendanceCodes--></select>
+			<div id="attendancecounter" class="table-responsive"></div>
+		</div>
+		<div class="form-group">
+			<label for="description"><!--TRANSLATE(Comment)--></label>
+			<div class="input-group">
+  		  <input type="text" class='form-control' id="description"/>
+        <div class="input-group-addon">
+  			  <span class="glyphicon glyphicon-th" id="description_kb"></span> 
+				</div>
+		  </div>
+	  </div>
+
+    <button id="btn" class="btn btn-default pull-right" onclick='requestDayLeave(true,true);'><!--TRANSLATE(Request)--></button>
+  </div>
+</div>
+
+<script language="javascript" type="text/javascript">
+
+// Describe used functions
+
+function showTargetAttendanceDayOperations()
+{
+  $.ajax
+  ({
+      url: ajaxurl,
+      data: {'action':'showTargetAttendanceDayOperations', 'dts':document.getElementById('datepickerTxt').value},
+      type: 'post'
+  });
+}
+
+function selectedOperations()
+{
+  var children = document.getElementById('targetOperations').getElementsByTagName('input');
+  var checkedValues = new Array();
+
+  var i= 0;
+  for (counter=0; counter < children.length; counter++)
+  {
+     if (children[counter].checked == 1)
+     {
+        checkedValues[i]= children[counter].value;
+        i++;
+     }
+  }
+  return checkedValues;
+}
+
+
+function enableRequestButton(pEnabled)
+{
+  $("#btn").attr("disabled", !pEnabled);
+}
+
+function requestDayLeave(pValidate, pValidateCounters)
+{
+  var operations = selectedOperations();
+  if (operations.length == 0)
+  {
+    alert("<!--TRANSLATE(There are no segments selected.)-->");
+		return;
+  }
+
+  enableRequestButton(false);
+	
+  $.ajax
+  ({
+      url: ajaxurl,
+      data: { 'action':'requestDayLeave',
+              'dts': document.getElementById('datepickerTxt').value,
+              'code': document.getElementById('code').value,
+              'description': document.getElementById('description').value,
+              'operation' : operations,
+			  'validate': pValidate,
+			  'validateCounters': pValidateCounters},
+    type: 'post'
+  });	
+}
+
+function showAlert(pMessage)
+{
+  alert(pMessage);
+  enableRequestButton(true);
+}
+
+function showConfirmation(pMessage, pValidate, pValidateCounters)
+{
+  if (confirm(pMessage))
+  {
+    requestDayLeave(pValidate,pValidateCounters);
+  }
+  else
+  {
+    enableRequestButton(true);
+  }
+}
+
+function showPeriodAttendanceCounter(pCode)
+{
+  $.ajax
+  ({
+      url: ajaxurl,
+      data: { 'action':'showPeriodAttendanceCounter',
+              'code': pCode},
+      type: 'post',
+			success: function(data)
+        {
+					$("#attendancecounter").html(data);
+        }
+  });
+}
+
+// Configure datepicker
+$("#datepicker").datetimepicker({
+  defaultDate: new Date(),
+	format: 'DD/MM/YYYY',
+  focusOnShow: false,
+	locale: language
+});
+
+$("#datepicker").on("dp.change", function(e) {
+  showTargetAttendanceDayOperations();
+});
+
+// Configure keyboard
+$('#description').keyboard({
+  layout: keyboardLayout,
+  autoAccept: true,
+  openOn: '',
+});
+
+$('#description_kb').click(function() {
+  $('#description').getkeyboard().reveal();
+});
+
+
+// Select current date and show corresponding attendance operations
+var myDate = new Date();
+$("#datepicker").datepicker("setDate", myDate);
+showTargetAttendanceDayOperations();
+
+</script>
+
+
+
+
+

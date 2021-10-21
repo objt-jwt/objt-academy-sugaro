@@ -1,0 +1,27 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Application Server" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="dce.pd.server.ApplicationServer" />
+    <module name="objt.applicationserver_main" />
+    <option name="PROGRAM_PARAMETERS" value="applicationserver.properties objt/app/applicationserver/applicationserver.xml" />
+    <option name="VM_PARAMETERS" value="-server -Xms128M -Xmx2048M -XX:+UseG1GC -javaagent:&quot;C:\javalib\aspectj\1.9.6\aspectjweaver.jar&quot;" />
+    <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/objt.applicationserver" />
+    <RunnerSettings RunnerId="Debug">
+      <option name="DEBUG_PORT" value="1745" />
+      <option name="TRANSPORT" value="0" />
+      <option name="LOCAL" value="true" />
+    </RunnerSettings>
+    <RunnerSettings RunnerId="JProfiler">
+      <option name="WINDOW" value="false" />
+      <option name="JVMPI" value="false" />
+      <option name="INTERPRETED" value="false" />
+    </RunnerSettings>
+    <RunnerSettings RunnerId="Run" />
+    <ConfigurationWrapper RunnerId="Debug" />
+    <ConfigurationWrapper RunnerId="JProfiler" />
+    <ConfigurationWrapper RunnerId="Run" />
+    <method v="2">
+      <option name="Gradle.BeforeRunTask" enabled="true" tasks="processResources" externalProjectPath="$PROJECT_DIR$" vmOptions="" scriptParameters="" />
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

@@ -1,0 +1,21 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="OBJT Supervisor" type="Application" factoryName="Application">
+    <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+    <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+    <option name="MAIN_CLASS_NAME" value="dce.pd.frame.configurator.Configurator" />
+    <module name="objt.supervisor_main" />
+    <option name="PROGRAM_PARAMETERS" value="supervisor.properties objt/app/supervisor/supervisor.xml REMOTE" />
+    <option name="VM_PARAMETERS" value="-Xms64M -Xmx512M -Dsun.java2d.d3d=false -XX:+UseG1GC -javaagent:&quot;C:\javalib\aspectj\1.9.6\aspectjweaver.jar&quot;" />
+    <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/objt.supervisor" />
+    <RunnerSettings RunnerId="Debug">
+      <option name="DEBUG_PORT" value="51403" />
+      <option name="TRANSPORT" value="0" />
+      <option name="LOCAL" value="true" />
+    </RunnerSettings>
+    <ConfigurationWrapper RunnerId="Debug" />
+    <method v="2">
+      <option name="Gradle.BeforeRunTask" enabled="true" tasks="processResources" externalProjectPath="$PROJECT_DIR$" vmOptions="" scriptParameters="" />
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

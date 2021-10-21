@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<dictionary includeSources="false" useRelativePaths="true">
+  <targets>
+    <target html="F" java="F" jrxml="T" path="../../resources" recursive="T" srt="F" xml="T"/>
+    <target html="F" java="T" jrxml="F" path="../../java" recursive="T" srt="F" xml="F"/>
+  </targets>
+  <languages>
+    <language id="nl" native="Dutch"/>
+    <language id="en" native="English"/>
+    <language id="fr" native="French"/>
+  </languages>
+  <entries>
+    <entry nativestring="Cannot connect to tagserver.">
+      <translation language="nl" translatedstring="Kan niet verbinden met tagserver"/>
+      <translation language="en" translatedstring="Cannot connect to tag server"/>
+    </entry>
+    <entry nativestring="Objective Tag Explorer">
+      <translation language="nl" translatedstring="Objective Tag Explorer"/>
+      <translation language="en" translatedstring="Objective Tag Explorer"/>
+    </entry>
+    <entry nativestring="Meerbos 2&#13;&#10;B-9260 WICHELEN&#13;&#10;+32 (0)52 43 20 80&#13;&#10;www.objt.com"/>
+    <entry nativestring="Please specify the host.">
+      <translation language="nl" translatedstring="Geef de host a.u.b."/>
+      <translation language="en" translatedstring="Please specify the host."/>
+    </entry>
+    <entry nativestring="Please specify the tagserver name.">
+      <translation language="nl" translatedstring="Geef de naam van de tagserver a.u.b."/>
+      <translation language="en" translatedstring="Please specify the tag server name."/>
+    </entry>
+    <entry nativestring="Save changes ?">
+      <translation language="nl" translatedstring="Wijzigingen opslaan?"/>
+      <translation language="en" translatedstring="Save changes?"/>
+      <translation language="fr" translatedstring="Enregistrer Modifications?"/>
+    </entry>
+    <entry nativestring="Server Settings">
+      <translation language="nl" translatedstring="Server Instellingen"/>
+      <translation language="en" translatedstring="Server Settings"/>
+    </entry>
+    <entry nativestring="Tag Explorer">
+      <translation language="nl" translatedstring="Tag Explorer"/>
+      <translation language="en" translatedstring="Tag Explorer"/>
+    </entry>
+    <entry nativestring="Value">
+      <translation language="nl" translatedstring="Waarde"/>
+      <translation language="en" translatedstring="Value"/>
+      <translation language="fr" translatedstring="Valeur"/>
+    </entry>
+    <entry nativestring="[">
+      <translation language="nl" translatedstring="["/>
+      <translation language="en" translatedstring="["/>
+    </entry>
+    <entry nativestring="]">
+      <translation language="nl" translatedstring="]"/>
+      <translation language="en" translatedstring="]"/>
+    </entry>
+    <entry nativestring="grouptags.detail">
+      <translation language="nl" translatedstring="Group Tags"/>
+      <translation language="en" translatedstring="Group Tags"/>
+    </entry>
+    <entry nativestring="grouptags.list">
+      <translation language="nl" translatedstring="Group Tags"/>
+      <translation language="en" translatedstring="Group Tags"/>
+    </entry>
+    <entry nativestring="name">
+      <translation language="nl" translatedstring="Naam"/>
+      <translation language="en" translatedstring="Name"/>
+      <translation language="fr" translatedstring="Nom"/>
+    </entry>
+    <entry nativestring="readtags.list">
+      <translation language="nl" translatedstring="Read Tags"/>
+      <translation language="en" translatedstring="Read Tags"/>
+    </entry>
+    <entry nativestring="tag.calibrate">
+      <translation language="nl" translatedstring="Tag Kalibreren"/>
+      <translation language="en" translatedstring="Calibrate Tag"/>
+    </entry>
+    <entry nativestring="tag.dts">
+      <translation language="nl" translatedstring="Dts"/>
+      <translation language="en" translatedstring="Dts"/>
+    </entry>
+    <entry nativestring="tag.fix">
+      <translation language="nl" translatedstring="Tag Fixeren"/>
+      <translation language="en" translatedstring="Fix Tag"/>
+    </entry>
+    <entry nativestring="tag.group">
+      <translation language="nl" translatedstring="Taggroep"/>
+      <translation language="en" translatedstring="Tag Group"/>
+    </entry>
+    <entry nativestring="tag.host">
+      <translation language="nl" translatedstring="Host"/>
+      <translation language="en" translatedstring="Host"/>
+    </entry>
+    <entry nativestring="tag.id">
+      <translation language="nl" translatedstring="ID"/>
+      <translation language="en" translatedstring="ID"/>
+    </entry>
+    <entry nativestring="tag.name">
+      <translation language="nl" translatedstring="Naam"/>
+      <translation language="en" translatedstring="Name"/>
+    </entry>
+    <entry nativestring="tag.rawvalue">
+      <translation language="nl" translatedstring="Ruwe Waarde"/>
+      <translation language="en" translatedstring="Raw Value"/>
+    </entry>
+    <entry nativestring="tag.server">
+      <translation language="nl" translatedstring="Server"/>
+      <translation language="en" translatedstring="Server"/>
+    </entry>
+    <entry nativestring="tag.trend">
+      <translation language="nl" translatedstring="Trend"/>
+      <translation language="en" translatedstring="Trend Tag"/>
+    </entry>
+    <entry nativestring="tag.value">
+      <translation language="nl" translatedstring="Waarde"/>
+      <translation language="en" translatedstring="Value"/>
+    </entry>
+    <entry nativestring="tag.view">
+      <translation language="nl" translatedstring="Tag Overzicht"/>
+      <translation language="en" translatedstring="View Tag"/>
+    </entry>
+    <entry nativestring="tag.write">
+      <translation language="nl" translatedstring="Tag Schrijven"/>
+      <translation language="en" translatedstring="Write Tag"/>
+    </entry>
+    <entry nativestring="tagexplorer.serveridentificationwizardpanel.description">
+      <translation language="nl" translatedstring="Geef de naam en de host voor de tagserver of selecteer een tag server uit de lijst."/>
+      <translation language="en" translatedstring="Give the name and host for the tag server or select a tag server from the list below."/>
+    </entry>
+    <entry nativestring="tagexplorer.serveridentificationwizardpanel.name">
+      <translation language="nl" translatedstring="Tagserver Identificatie"/>
+      <translation language="en" translatedstring="Tag Server Identification"/>
+    </entry>
+    <entry nativestring="tagexplorer.tagcalibrationnwizardpanel.max.description">
+      <translation language="nl" translatedstring="Geef de maximum waarde en de ruwe data voor de huidige tag: "/>
+      <translation language="en" translatedstring="Give the maximum value and raw data for the current tag: "/>
+    </entry>
+    <entry nativestring="tagexplorer.tagcalibrationnwizardpanel.min.description">
+      <translation language="nl" translatedstring="Geef de minimum waarde en de ruwe data voor de huidige tag: "/>
+      <translation language="en" translatedstring="Give the minimum value and raw data for the current tag: "/>
+    </entry>
+    <entry nativestring="tagexplorer.tagcalibrationnwizardpanel.result.description">
+      <translation language="nl" translatedstring="De wizard heeft een offset en factor uitgerekend. U kan de waarde voor deze parameters checken door een waarde in te geven voor de ruwe data."/>
+      <translation language="en" translatedstring="The wizard calculated and offset and factor. You can check these parameters by inputting a value for the raw data."/>
+    </entry>
+    <entry nativestring="tagexplorer.tagcalibrationwizardpanel.max.name">
+      <translation language="nl" translatedstring="Tag Kalibratie: Maximum"/>
+      <translation language="en" translatedstring="Tag Calibration: Maximum"/>
+    </entry>
+    <entry nativestring="tagexplorer.tagcalibrationwizardpanel.min.name">
+      <translation language="nl" translatedstring="Tag Kalibratie: Minimum"/>
+      <translation language="en" translatedstring="Tag Calibration: Minimum"/>
+    </entry>
+    <entry nativestring="tagexplorer.tagcalibrationwizardpanel.result.name">
+      <translation language="nl" translatedstring="Tag Kalibratie: Resultaat"/>
+      <translation language="en" translatedstring="Tag Calibration: Result"/>
+    </entry>
+    <entry nativestring="tagreader.config">
+      <translation language="nl" translatedstring="Tag Reader Configuratie"/>
+      <translation language="en" translatedstring="Tag Reader Configuration"/>
+    </entry>
+    <entry nativestring="tagreader.config.grouped">
+      <translation language="nl" translatedstring="Tag Reader Configuratie"/>
+      <translation language="en" translatedstring="Tag Reader Configuration"/>
+    </entry>
+    <entry nativestring="tagreader.host">
+      <translation language="nl" translatedstring="Host"/>
+      <translation language="en" translatedstring="Host"/>
+    </entry>
+    <entry nativestring="tagreader.name">
+      <translation language="nl" translatedstring="Naam"/>
+      <translation language="en" translatedstring="Name"/>
+    </entry>
+    <entry nativestring="tagreader.properties">
+      <translation language="nl" translatedstring="Tagreader"/>
+      <translation language="en" translatedstring="Tag Reader"/>
+    </entry>
+    <entry nativestring="tagreader.save">
+      <translation language="nl" translatedstring="Tagreader Opslaan"/>
+      <translation language="en" translatedstring="Save Tag Reader"/>
+    </entry>
+    <entry nativestring="tagreader.tags.manage">
+      <translation language="nl" translatedstring="Tags Beheren"/>
+      <translation language="en" translatedstring="Manage Tags"/>
+    </entry>
+    <entry nativestring="tagreader.tags.manage.tooltip">
+      <translation language="nl" translatedstring="Tags Beheren"/>
+      <translation language="en" translatedstring="Manage Tags"/>
+    </entry>
+    <entry nativestring="tags.monitor">
+      <translation language="nl" translatedstring="Monitor"/>
+      <translation language="en" translatedstring="Tag Monitor"/>
+    </entry>
+    <entry nativestring="tags.monitorlist">
+      <translation language="nl" translatedstring="Monitoren"/>
+      <translation language="en" translatedstring="Tag Monitors"/>
+    </entry>
+    <entry nativestring="tagserver.add">
+      <translation language="nl" translatedstring="Tagserver Toevoegen"/>
+      <translation language="en" translatedstring="Add Tag Server"/>
+    </entry>
+    <entry nativestring="tagserver.delete">
+      <translation language="nl" translatedstring="Tagserver Verwijderen"/>
+      <translation language="en" translatedstring="Delete Tag Server"/>
+    </entry>
+    <entry nativestring="tagserver.host">
+      <translation language="nl" translatedstring="Host"/>
+      <translation language="en" translatedstring="Host"/>
+    </entry>
+    <entry nativestring="tagserver.masterdetail">
+      <translation language="nl" translatedstring="Tagserver"/>
+      <translation language="en" translatedstring="Tag Server"/>
+    </entry>
+    <entry nativestring="tagserver.name">
+      <translation language="nl" translatedstring="Naam"/>
+      <translation language="en" translatedstring="Name"/>
+    </entry>
+    <entry nativestring="tagserver.properties">
+      <translation language="nl" translatedstring="Tagserver"/>
+      <translation language="en" translatedstring="Tag Server"/>
+    </entry>
+    <entry nativestring="tagserver.remove">
+      <translation language="nl" translatedstring="Tagserver Verwijderen"/>
+      <translation language="en" translatedstring="Remove Tag Server"/>
+    </entry>
+    <entry nativestring="tagserver.restart">
+      <translation language="nl" translatedstring="Tagserver Herstarten"/>
+      <translation language="en" translatedstring="Restart Tag Server"/>
+    </entry>
+    <entry nativestring="tagserver.tagreader.list">
+      <translation language="nl" translatedstring="Tag Readers"/>
+      <translation language="en" translatedstring="Tag Readers"/>
+    </entry>
+    <entry nativestring="tagservers">
+      <translation language="nl" translatedstring="Tagservers"/>
+      <translation language="en" translatedstring="Tag Servers"/>
+    </entry>
+    <entry nativestring="writetags.list">
+      <translation language="nl" translatedstring="Write Tags"/>
+      <translation language="en" translatedstring="Write Tags"/>
+    </entry>
+  </entries>
+  <xmlparserconfig path="objt.tagexplorer-core_config.xml"/>
+</dictionary>

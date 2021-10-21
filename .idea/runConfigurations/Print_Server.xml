@@ -1,0 +1,28 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Print Server" type="Application" factoryName="Application">
+    <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+    <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+    <option name="MAIN_CLASS_NAME" value="dce.util.net.service.ComServiceWrapper" />
+    <module name="objt.printserver_main" />
+    <option name="PROGRAM_PARAMETERS" value="dce.pd.server.ApplicationServer printserver.properties objt/app/printserver/printserver.xml " />
+    <option name="VM_PARAMETERS" value="-javaagent:&quot;C:\javalib\aspectj\1.9.6\aspectjweaver.jar&quot; -Djava.library.path=./build/native" />
+    <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/objt.printserver" />
+    <RunnerSettings RunnerId="Debug">
+      <option name="DEBUG_PORT" value="1552" />
+      <option name="TRANSPORT" value="0" />
+      <option name="LOCAL" value="true" />
+    </RunnerSettings>
+    <RunnerSettings RunnerId="JProfiler">
+      <option name="WINDOW" value="false" />
+      <option name="JVMPI" value="false" />
+      <option name="INTERPRETED" value="false" />
+    </RunnerSettings>
+    <RunnerSettings RunnerId="Run" />
+    <ConfigurationWrapper RunnerId="Debug" />
+    <ConfigurationWrapper RunnerId="Run" />
+    <method v="2">
+      <option name="Gradle.BeforeRunTask" enabled="true" tasks="processResources" externalProjectPath="$PROJECT_DIR$" vmOptions="" scriptParameters="" />
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

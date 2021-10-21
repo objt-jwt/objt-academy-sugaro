@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<dictionary includeSources="false" useRelativePaths="true">
+  <targets>
+    <target html="F" java="F" jrxml="T" path="..\..\resources" recursive="T" srt="T" xml="T"/>
+    <target html="F" java="T" jrxml="F" path="..\..\java" recursive="T" srt="F" xml="F"/>
+  </targets>
+  <languages>
+    <language id="nl" native="Dutch"/>
+    <language id="en" native="English"/>
+    <language id="fr" native="French"/>
+  </languages>
+  <includes>
+    <include path="dce_dic.xml"/>
+    <include path="objt.common_dic.xml"/>
+    <include path="objt.wms_dic.xml"/>
+    <include path="objt.mes_dic.xml"/>
+    <include path="objt.wfm_dic.xml"/>
+    <include path="objt.crp_dic.xml"/>
+  </includes>
+  <entries>
+    <entry nativestring="Meerbos 2&#13;&#10;B-9260 WICHELEN&#13;&#10;+32 (0)52 43 20 80&#13;&#10;www.objt.com"/>
+    <entry nativestring="Objective Configurator (%INSTALLATION%)">
+      <translation language="nl" translatedstring="Objective Configurator (%INSTALLATION%)"/>
+      <translation language="en" translatedstring="Objective Configurator (%INSTALLATION%)"/>
+      <translation language="fr" translatedstring="Configurateur Objective (INSTALLATION %)"/>
+    </entry>
+    <entry nativestring="accessmgt.title">
+      <translation language="nl" translatedstring="Toegang Beheer"/>
+      <translation language="en" translatedstring="Access Management"/>
+      <translation language="fr" translatedstring="Gestion des Accès"/>
+    </entry>
+    <entry nativestring="accessserver.upload">
+      <translation language="nl" translatedstring="Toegangscontrole"/>
+      <translation language="en" translatedstring="Access Control"/>
+      <translation language="fr" translatedstring="Contrôle d'Accès"/>
+    </entry>
+    <entry nativestring="attendancemgt.title">
+      <translation language="nl" translatedstring="Tijdsregistratie Beheer"/>
+      <translation language="en" translatedstring="Attendance Management"/>
+      <translation language="fr" translatedstring="Gestion des Présences"/>
+    </entry>
+    <entry nativestring="balancingconfigurations">
+      <translation language="nl" translatedstring="Balanceringsconfiguraties"/>
+      <translation language="en" translatedstring="Balancing Configurations"/>
+      <translation language="fr" translatedstring="Configurations d’Équilibrage"/>
+    </entry>
+    <entry nativestring="balancingschemas">
+      <translation language="nl" translatedstring="Balanceringsschema's"/>
+      <translation language="en" translatedstring="Balancing Schemas"/>
+      <translation language="fr" translatedstring="Schémas d’Équilibrage"/>
+    </entry>
+    <entry nativestring="capacitymgt.title">
+      <translation language="nl" translatedstring="Capaciteit Beheer"/>
+      <translation language="en" translatedstring="Capacity Management"/>
+      <translation language="fr" translatedstring="Gestion des Capacités"/>
+    </entry>
+    <entry nativestring="developer.tools">
+      <translation language="nl" translatedstring="Ontwikkelaarstools"/>
+      <translation language="en" translatedstring="Developer Tools"/>
+      <translation language="fr" translatedstring="Outils de Développeurs"/>
+    </entry>
+    <entry nativestring="downloads">
+      <translation language="nl" translatedstring="Importeren"/>
+      <translation language="en" translatedstring="Imports"/>
+      <translation language="fr" translatedstring="Importations"/>
+    </entry>
+    <entry nativestring="inspectionmgt.title">
+      <translation language="nl" translatedstring="Inspectie Beheer"/>
+      <translation language="en" translatedstring="Inspection Management"/>
+      <translation language="fr" translatedstring="Gestion des Inspections"/>
+    </entry>
+    <entry nativestring="interruptreasongroups">
+      <translation language="nl" translatedstring="Verstoringensredengroepen"/>
+      <translation language="en" translatedstring="Interrupt Reason Groups"/>
+      <translation language="fr" translatedstring="Groupes de Raisons d'Interruption"/>
+    </entry>
+    <entry nativestring="inventorytraceoperations">
+      <translation language="nl" translatedstring="Track &amp; Trace"/>
+      <translation language="en" translatedstring="Track &amp; Trace"/>
+      <translation language="fr" translatedstring="Track &amp; Trace"/>
+    </entry>
+    <entry nativestring="itemextension">
+      <translation language="nl" translatedstring="Artikel Parameters"/>
+      <translation language="en" translatedstring="Item Parameters"/>
+      <translation language="fr" translatedstring="Paramètres de l’élément"/>
+    </entry>
+    <entry nativestring="itemmgt.title">
+      <translation language="nl" translatedstring="Artikel Beheer"/>
+      <translation language="en" translatedstring="Item Management"/>
+      <translation language="fr" translatedstring="Gestion d'Articles"/>
+    </entry>
+    <entry nativestring="label.menu">
+      <translation language="nl" translatedstring="Labels"/>
+      <translation language="en" translatedstring="Labels"/>
+      <translation language="fr" translatedstring="Etiquettes"/>
+    </entry>
+    <entry nativestring="logisticmgt.title">
+      <translation language="nl" translatedstring="Logistiek Beheer"/>
+      <translation language="en" translatedstring="Logistics Management"/>
+      <translation language="fr" translatedstring="Gestion Logistique"/>
+    </entry>
+    <entry nativestring="lotextension">
+      <translation language="nl" translatedstring="Lot Parameters"/>
+      <translation language="en" translatedstring="Lot Parameters"/>
+      <translation language="fr" translatedstring="Paramètres du lot"/>
+    </entry>
+    <entry nativestring="manufacturing.operationsteps">
+      <translation language="nl" translatedstring="Bewerkingsstappen"/>
+      <translation language="en" translatedstring="Operation Steps"/>
+      <translation language="fr" translatedstring="Étapes d’Opération"/>
+    </entry>
+    <entry nativestring="manufacturingoperations.productionorder">
+      <translation language="nl" translatedstring="Bewerkingen (Productieorder)"/>
+      <translation language="en" translatedstring="Operations (Production Order)"/>
+      <translation language="fr" translatedstring="Opérations (Ordre de Fabrication)"/>
+    </entry>
+    <entry nativestring="manufacturingoperations.recipe">
+      <translation language="nl" translatedstring="Bewerkingen (Recept)"/>
+      <translation language="en" translatedstring="Operations (Recipe)"/>
+      <translation language="fr" translatedstring="Opérations (Recette)"/>
+    </entry>
+    <entry nativestring="manufacturingoperations.wms">
+      <translation language="nl" translatedstring="Bewerkingen (VAL-Kit-Herverpak)"/>
+      <translation language="en" translatedstring="Operations (VAL-Kit-Repack)"/>
+      <translation language="fr" translatedstring="Opérations (VAL-Kit-Remballage)"/>
+    </entry>
+    <entry nativestring="objt.process.common.communicationdevices">
+      <translation language="nl" translatedstring="Communicatie Toestel"/>
+      <translation language="en" translatedstring="Communication Device"/>
+      <translation language="fr" translatedstring="Dispositif de communication"/>
+    </entry>
+    <entry nativestring="phaseoperation">
+      <translation language="nl" translatedstring="Fase"/>
+      <translation language="en" translatedstring="Phase"/>
+      <translation language="fr" translatedstring="Phase"/>
+    </entry>
+    <entry nativestring="production.operationsteps">
+      <translation language="nl" translatedstring="Productie Bewerkingsstappen"/>
+      <translation language="en" translatedstring="Production Operation Steps"/>
+      <translation language="fr" translatedstring="Étapes d’Opération de Production"/>
+    </entry>
+    <entry nativestring="productionmgt.title">
+      <translation language="nl" translatedstring="Productie Beheer"/>
+      <translation language="en" translatedstring="Production Management"/>
+      <translation language="fr" translatedstring="Gestion de Production"/>
+    </entry>
+    <entry nativestring="recipemgt.title">
+      <translation language="nl" translatedstring="Recept Beheer"/>
+      <translation language="en" translatedstring="Recipe Management"/>
+      <translation language="fr" translatedstring="Gestion des Recettes"/>
+    </entry>
+    <entry nativestring="resourcemgt.title">
+      <translation language="nl" translatedstring="Resource Beheer"/>
+      <translation language="en" translatedstring="Resource Management"/>
+      <translation language="fr" translatedstring="Gestion des Ressources"/>
+    </entry>
+    <entry nativestring="selectedPanel.load">
+      <translation language="nl" translatedstring="Opgeslagen panel selectie laden"/>
+      <translation language="en" translatedstring="Load saved panel selection"/>
+      <translation language="fr" translatedstring="Charger sélection de panneau sauvegardée"/>
+    </entry>
+    <entry nativestring="selectedPanel.reset">
+      <translation language="nl" translatedstring="Opgeslagen panel selectie resetten"/>
+      <translation language="en" translatedstring="Reset saved panel selection"/>
+      <translation language="fr" translatedstring="Réinitialiser sélection de panneau sauvegardée"/>
+    </entry>
+    <entry nativestring="selectedPanel.save">
+      <translation language="nl" translatedstring="Panel selectie opslaan"/>
+      <translation language="en" translatedstring="Save panel selection"/>
+      <translation language="fr" translatedstring="Sauvegarder sélection de panneau"/>
+    </entry>
+    <entry nativestring="server.updates">
+      <translation language="nl" translatedstring="Server Bijwerken"/>
+      <translation language="en" translatedstring="Update Server"/>
+      <translation language="fr" translatedstring="Actualiser Serveur"/>
+    </entry>
+    <entry nativestring="systemmgt.title">
+      <translation language="nl" translatedstring="Systeem Beheer"/>
+      <translation language="en" translatedstring="System Management"/>
+      <translation language="fr" translatedstring="Gestion du Système"/>
+    </entry>
+    <entry nativestring="valkitpackmgt.title">
+      <translation language="nl" translatedstring="VAL, Kit &amp; Herverpakking Beheer"/>
+      <translation language="en" translatedstring="VAL, Kit &amp; Repack Management"/>
+      <translation language="fr" translatedstring="Gestion de VAL, Kit &amp; Remballage"/>
+    </entry>
+    <entry nativestring="warehousemgt.title">
+      <translation language="nl" translatedstring="Voorraad Beheer"/>
+      <translation language="en" translatedstring="Warehouse Management"/>
+      <translation language="fr" translatedstring="Gestion du Stock"/>
+    </entry>
+  </entries>
+  <xmlparserconfig path="objt.configurator-core_config.xml"/>
+</dictionary>

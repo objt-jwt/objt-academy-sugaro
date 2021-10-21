@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<template resourceclass="dce.pd.sfc.bo.resourcemgt.WorkCenter" type="MES_WORKCENTER">
+  <resourceviewelement actionclick="1" actionclickparam="" actiondblclick="2" actiondblclickparam="" attributepath="" background="-4144960" border="NONE" category="" font="Segoe UI-PLAIN-12" foreground="-16777216" height="673" iconname="" iconscaled="false" name="New Weighing Station" opaque="false" resourceclassname="dce.pd.sfc.bo.resourcemgt.WorkCenter" resourceoid="20406505" selectedborder="NONE" selectionid="false" width="1184" x="1" y="0" z="0">
+    <textviewelement alignment="2" background="-8355712" border="NONE" font="Segoe UI-PLAIN-20" foreground="-16777216" height="27" opaque="false" text="Huidige fase" width="183" x="498" y="333" z="0"/>
+    <panelviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" background="-1973791" border="LOWERED_ETCH" foreground="-16777216" height="300" iconname="" iconscaled="false" opaque="false" width="686" x="497" y="363" z="1">
+      <resourceattributeviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" alignment="0" attributepath="value" attributetitle="Value" background="-1" border="LOWERED_ETCH" category="" font="Segoe UI-PLAIN-16" foreground="-16777216" height="51" iconname="" iconscaled="false" multiline="false" multiplicity="0" name="Value" objectpath="SINGLETON(objt.process.mes.phasehandler.operatorclient.module.PhaseHandlerController;getActivePhaseHandlerAttribute;'ATTR_KEY')" objectpathparam="FORMATTED_CURRENT_TARRA" opaque="true" width="135" x="538" y="3" z="0"/>
+      <widgetviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" alignment="0" attributepath="" attributetitle="" background="-1973791" border="NONE" category="" font="Segoe UI-PLAIN-16" foreground="-16777216" height="50" iconname="" iconscaled="false" name="" objectpath=" " objectpathparam="" opaque="false" widgetclass="dce.pd.frame.resourceview.ui.widget.ExplorerActionWidget" width="135" x="400" y="4" z="1">
+        <param name="ICON_VISIBLE" value="true"/>
+        <param name="TEXT_VISIBLE" value="true"/>
+        <param name="TEXT_ALIGNMENT" value="4"/>
+        <param name="actionIdKey" value="MES"/>
+        <param name="ID" value="objt.process.mes.weighstation.tare"/>
+        <param name="ACTION_NAME" value="objt.process.mes.weighstation.tare"/>
+        <param name="UIMETA_INVOKER_ACTION" value=" "/>
+        <param name="TEXT" value="Tarreer"/>
+      </widgetviewelement>
+      <widgetviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" alignment="0" attributepath="" attributetitle="" background="-1" border="NONE" category="" font="Segoe UI-PLAIN-12" foreground="-16777216" height="226" iconname="" iconscaled="false" name="" objectpath=" " objectpathparam="" opaque="false" widgetclass="objt.process.mes.linkedwidget.operatorclient.widget.LinkedWidget" width="270" x="399" y="61" z="2">
+        <param name="LINKED_ELEMENT_ID" value="WEIGHPHASE_RADIAL"/>
+        <param name="WRAPPED_WIDGET" value="objt.mes.operatorclient.general.widget.SteelSeriesRadialProcessWidget"/>
+        <param name="GAUGETYPE" value="TYPE4"/>
+        <param name="FRAMETYPE" value="ROUND"/>
+        <param name="FRAMEDESIGN" value="TILTED_BLACK"/>
+        <param name="TEST_VALUE" value="20"/>
+        <param name="LIMITS_VISIBLE" value="true"/>
+        <param name="TARGET_VISIBLE" value="true"/>
+        <param name="MINMAX_VISIBLE" value="true"/>
+        <param name="LED_VISIBLE" value="false"/>
+        <param name="TITLE_VISIBLE" value="true"/>
+        <param name="LCD_VISIBLE" value="true"/>
+        <param name="FRAME_VISIBLE" value="false"/>
+        <param name="KNOBSTYLE" value="BLACK"/>
+        <param name="KNOBTYPE" value="SMALL_STD_KNOB"/>
+        <param name="POINTERTYPE" value="TYPE1"/>
+        <param name="FOREGROUNDTYPE" value="FG_TYPE1"/>
+        <param name="BACKGROUNDCOLOR" value="NOISY_PLASTIC"/>
+      </widgetviewelement>
+      <panelviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" background="-4144960" border="NONE" foreground="-16777216" height="262" iconname="" iconscaled="false" opaque="false" width="394" x="3" y="4" z="3">
+        <resourceattributeviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" alignment="0" attributepath="abstractProductionItemQty.item.name" attributetitle="Output ManufacturingItemQty &gt; Item &gt; Name" background="-1" border="LOWERED_ETCH" category="" font="Segoe UI Semibold-PLAIN-16" foreground="-16777216" height="30" iconname="" iconscaled="false" multiline="false" multiplicity="0" name="item.name" objectpath="SINGLETON(objt.process.mes.phasehandler.operatorclient.module.PhaseHandlerController;getCurrentRuntimePhaseOperation).STATIC(objt.process.mes.phases.bo.AbstractPhaseOperations;getValidChildPhaseParameterByCategory;BO;'PHASEPARAM_CATEGORY')" objectpathparam="WEIGH" opaque="true" width="220" x="155" y="0" z="0"/>
+        <textviewelement alignment="2" background="-8355712" border="NONE" font="Segoe UI Semibold-PLAIN-16" foreground="-16777216" height="25" opaque="false" text="Artikel beschrijving" width="150" x="0" y="35" z="1"/>
+        <textviewelement alignment="2" background="-8355712" border="NONE" font="Segoe UI Semibold-PLAIN-16" foreground="-16777216" height="25" opaque="false" text="Stabiele gewichten" width="157" x="0" y="175" z="2"/>
+        <resourceattributeviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" alignment="0" attributepath="value" attributetitle="Value" background="-1" border="LOWERED_ETCH" category="" font="Segoe UI Semibold-PLAIN-16" foreground="-16777216" height="30" iconname="" iconscaled="false" multiline="false" multiplicity="0" name="Value" objectpath="SINGLETON(objt.process.mes.phasehandler.operatorclient.module.PhaseHandlerController;getActivePhaseHandlerAttribute;'ATTR_KEY')" objectpathparam="TARGET_STABLE_WEIGHTS" opaque="true" width="220" x="155" y="175" z="3"/>
+        <resourceattributeviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" alignment="0" attributepath="value" attributetitle="Value" background="-1" border="LOWERED_ETCH" category="" font="Segoe UI Semibold-PLAIN-16" foreground="-16777216" height="30" iconname="" iconscaled="false" multiline="false" multiplicity="0" name="Value" objectpath="SINGLETON(objt.process.mes.phasehandler.operatorclient.module.PhaseHandlerController;getActivePhaseHandlerAttribute;'ATTR_KEY')" objectpathparam="WEIGHING_MODE" opaque="true" width="220" x="155" y="140" z="4"/>
+        <textviewelement alignment="2" background="-8355712" border="NONE" font="Segoe UI Semibold-PLAIN-16" foreground="-16777216" height="25" opaque="false" text="Weeg mode" width="110" x="0" y="140" z="5"/>
+        <resourceattributeviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" alignment="0" attributepath="value" attributetitle="Value" background="-1" border="LOWERED_ETCH" category="" font="Segoe UI Semibold-PLAIN-16" foreground="-16777216" height="30" iconname="" iconscaled="false" multiline="false" multiplicity="0" name="Value" objectpath="SINGLETON(objt.process.mes.phasehandler.operatorclient.module.PhaseHandlerController;getActivePhaseHandlerAttribute;'ATTR_KEY')" objectpathparam="FORMATTED_LAST_WEIGHT" opaque="true" width="220" x="155" y="105" z="6"/>
+        <textviewelement alignment="2" background="-8355712" border="NONE" font="Segoe UI Semibold-PLAIN-16" foreground="-16777216" height="25" opaque="false" text="Actueel gewicht" width="161" x="0" y="105" z="7"/>
+        <resourceattributeviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" alignment="0" attributepath="value" attributetitle="Value" background="-1" border="LOWERED_ETCH" category="" font="Segoe UI Semibold-PLAIN-16" foreground="-16777216" height="30" iconname="" iconscaled="false" multiline="false" multiplicity="0" name="Value" objectpath="SINGLETON(objt.process.mes.phasehandler.operatorclient.module.PhaseHandlerController;getActivePhaseHandlerAttribute;'ATTR_KEY')" objectpathparam="FORMATTED_TARGET_WEIGHT" opaque="true" width="220" x="155" y="70" z="8"/>
+        <textviewelement alignment="2" background="-8355712" border="NONE" font="Segoe UI Semibold-PLAIN-16" foreground="-16777216" height="25" opaque="false" text="Doel gewicht" width="153" x="0" y="70" z="9"/>
+        <resourceattributeviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" alignment="0" attributepath="abstractProductionItemQty.item.description" attributetitle="Output ManufacturingItemQty &gt; Item &gt; Description" background="-1" border="LOWERED_ETCH" category="" font="Segoe UI Semibold-PLAIN-16" foreground="-16777216" height="30" iconname="" iconscaled="false" multiline="false" multiplicity="0" name="item.description" objectpath="SINGLETON(objt.process.mes.phasehandler.operatorclient.module.PhaseHandlerController;getCurrentRuntimePhaseOperation).STATIC(objt.process.mes.phases.bo.AbstractPhaseOperations;getValidChildPhaseParameterByCategory;BO;'PHASEPARAM_CATEGORY')" objectpathparam="WEIGH" opaque="true" width="220" x="155" y="35" z="10"/>
+        <textviewelement alignment="2" background="-8355712" border="NONE" font="Segoe UI Semibold-PLAIN-16" foreground="-16777216" height="25" opaque="false" text="Artikel naam" width="133" x="0" y="0" z="11"/>
+      </panelviewelement>
+    </panelviewelement>
+    <panelviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" background="-4144960" border="NONE" foreground="-16777216" height="171" iconname="" iconscaled="false" opaque="false" width="1179" x="5" y="5" z="2">
+      <panelviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" background="-16777216" border="NONE" foreground="-16777216" height="1" iconname="" iconscaled="false" opaque="true" width="1179" x="0" y="164" z="0"/>
+      <widgetviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" alignment="0" attributepath="" attributetitle="" background="-1973791" border="NONE" category="" font="Segoe UI-PLAIN-12" foreground="-16777216" height="120" iconname="" iconscaled="false" name="" objectpath=" " objectpathparam="" opaque="false" widgetclass="dce.pd.frame.resourceview.ui.widget.ExtendedTableTabPanelWidget" width="1105" x="74" y="32" z="1">
+        <param name="tabPanelIdKey" value="MES"/>
+        <param name="actionIdKey" value="MES"/>
+        <param name="ID" value="objt.mes.resourceview.machineoperations.scheduled.list"/>
+        <param name="SORT_MODE0" value="false"/>
+        <param name="SORT_MODE1" value="false"/>
+        <param name="SORT_MODE2" value="false"/>
+        <param name="UIMETA_INVOKER_ACTION0" value=" "/>
+        <param name="SHOW_CONFIRMATION0" value="true"/>
+        <param name="UIMETA_INVOKER_ACTION1" value=" "/>
+        <param name="SHOW_CONFIRMATION1" value="true"/>
+        <param name="TABLE_INVOKER0" value=" "/>
+        <param name="TABLE_INVOKER1" value=" "/>
+        <param name="TABLE_INVOKER2" value=" "/>
+        <param name="TABLE_INVOKER3" value=" "/>
+        <param name="PANEL_ID" value="JOB_QUEUE"/>
+      </widgetviewelement>
+      <widgetviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" alignment="0" attributepath="" attributetitle="" background="-1973791" border="NONE" category="" font="Segoe UI-PLAIN-12" foreground="-16777216" height="120" iconname="" iconscaled="false" name="" objectpath=" " objectpathparam="" opaque="false" widgetclass="dce.pd.frame.resourceview.ui.widget.ExplorerActionWidget" width="70" x="0" y="32" z="2">
+        <param name="ICON_VISIBLE" value="true"/>
+        <param name="TEXT_VISIBLE" value="false"/>
+        <param name="TEXT_ALIGNMENT" value="4"/>
+        <param name="actionIdKey" value="MES"/>
+        <param name="ID" value="objt.process.mes.phasehandler.manoperation.direct.start"/>
+        <param name="ACTION_NAME" value="objt.process.mes.phasehandler.manoperation.direct.start"/>
+        <param name="UIMETA_INVOKER_ACTION" value=" "/>
+        <param name="PANEL_ID" value="JOB_QUEUE"/>
+      </widgetviewelement>
+      <textviewelement alignment="2" background="-8355712" border="NONE" font="Segoe UI-PLAIN-22" foreground="-16777216" height="28" opaque="false" text="Geplande orders" width="183" x="0" y="0" z="3"/>
+    </panelviewelement>
+    <panelviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" background="-3355393" border="NONE" foreground="-16777216" height="161" iconname="" iconscaled="false" opaque="false" width="1179" x="5" y="173" z="3">
+      <textviewelement alignment="2" background="-8355712" border="NONE" font="Segoe UI-PLAIN-22" foreground="-16777216" height="28" opaque="false" text="Huidige orders" width="183" x="0" y="0" z="1"/>
+      <widgetviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" alignment="0" attributepath="" attributetitle="" background="-1973791" border="NONE" category="" font="Segoe UI-PLAIN-12" foreground="-16777216" height="120" iconname="" iconscaled="false" name="" objectpath=" " objectpathparam="" opaque="false" widgetclass="dce.pd.frame.resourceview.ui.widget.ExplorerActionWidget" width="70" x="0" y="33" z="2">
+        <param name="ICON_VISIBLE" value="true"/>
+        <param name="TEXT_VISIBLE" value="false"/>
+        <param name="TEXT_ALIGNMENT" value="4"/>
+        <param name="actionIdKey" value="MES"/>
+        <param name="ID" value="objt.mes.resourceview.workcenter.machineoperation.stop_machineoperation"/>
+        <param name="ACTION_NAME" value="objt.mes.resourceview.workcenter.machineoperation.stop_machineoperation"/>
+        <param name="UIMETA_INVOKER_ACTION" value=" "/>
+        <param name="PANEL_ID" value="JOBS"/>
+      </widgetviewelement>
+      <widgetviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" alignment="0" attributepath="" attributetitle="" background="-1973791" border="NONE" category="" font="Segoe UI-PLAIN-12" foreground="-16777216" height="120" iconname="" iconscaled="false" name="" objectpath=" " objectpathparam="" opaque="false" widgetclass="dce.pd.frame.resourceview.ui.widget.ExtendedTableTabPanelWidget" width="1105" x="74" y="33" z="3">
+        <param name="tabPanelIdKey" value="MES"/>
+        <param name="actionIdKey" value="MES"/>
+        <param name="ID" value="objt.mes.resourceview.machineoperations.active.list"/>
+        <param name="SORT_MODE0" value="false"/>
+        <param name="SORT_MODE1" value="false"/>
+        <param name="SORT_MODE2" value="false"/>
+        <param name="UIMETA_INVOKER_ACTION0" value=" "/>
+        <param name="SHOW_CONFIRMATION0" value="true"/>
+        <param name="UIMETA_INVOKER_ACTION1" value=" "/>
+        <param name="SHOW_CONFIRMATION1" value="true"/>
+        <param name="TABLE_INVOKER0" value=" "/>
+        <param name="TABLE_INVOKER1" value=" "/>
+        <param name="TABLE_INVOKER2" value=" "/>
+        <param name="TABLE_INVOKER3" value=" "/>
+        <param name="PANEL_ID" value="JOBS"/>
+        <param name="TABLE_ID0" value="PHASES"/>
+      </widgetviewelement>
+    </panelviewelement>
+    <panelviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" background="-4144960" border="NONE" foreground="-16777216" height="338" iconname="" iconscaled="false" opaque="false" width="490" x="5" y="332" z="4">
+      <textviewelement alignment="2" background="-8355712" border="NONE" font="Segoe UI-PLAIN-20" foreground="-16777216" height="27" opaque="false" text="Fases" width="183" x="0" y="0" z="0"/>
+      <widgetviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" alignment="0" attributepath="" attributetitle="" background="-1973791" border="NONE" category="" font="Segoe UI-PLAIN-12" foreground="-16777216" height="300" iconname="" iconscaled="false" name="" objectpath="STATIC(objt.mes.bo.productionmgt.WorkCenters;getActiveMachineOperationList;BO).STATIC(dce.util.Collections;getElementAt;BO;INTEGER('JOB_INDEX'))" objectpathparam="" opaque="false" widgetclass="dce.pd.frame.resourceview.ui.widget.ExtendedTableTabPanelWidget" width="415" x="73" y="31" z="1">
+        <param name="tabPanelIdKey" value="MES"/>
+        <param name="actionIdKey" value="MES"/>
+        <param name="ID" value="objt.process.mes.phases.runtimephaseoperations.list"/>
+        <param name="SORT_MODE0" value="false"/>
+        <param name="SORT_MODE1" value="false"/>
+        <param name="SORT_MODE2" value="false"/>
+        <param name="UIMETA_INVOKER_ACTION0" value=" "/>
+        <param name="SHOW_CONFIRMATION0" value="true"/>
+        <param name="UIMETA_INVOKER_ACTION1" value=" "/>
+        <param name="SHOW_CONFIRMATION1" value="true"/>
+        <param name="TABLE_INVOKER0" value=" "/>
+        <param name="TABLE_INVOKER1" value=" "/>
+        <param name="TABLE_INVOKER2" value=" "/>
+        <param name="TABLE_INVOKER3" value=" "/>
+        <param name="PANEL_ID" value="PHASES"/>
+        <tablepreferences>
+          <table aggregatecolumnsrange="0" autosizecolumns="true" class="objt.process.mes.phases.bo.RuntimePhaseOperation" id="objt.process.mes.phases.runtimephaseoperations.list">
+            <columnlayout>
+              <column attributepath="status" sizing="S_MAX_H" title="col1"/>
+              <column attributepath="name" title="name"/>
+              <column attributepath="description" title="description"/>
+              <column attributepath="dtsStart" selected="false" title="dtsStart"/>
+              <column attributepath="dtsStop" selected="false" title="dtsStop"/>
+              <column attributepath="id" selected="false" title="id"/>
+            </columnlayout>
+            <autofilter enabled="false"/>
+            <statusbar visible="false"/>
+          </table>
+        </tablepreferences>
+      </widgetviewelement>
+      <widgetviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" alignment="0" attributepath="" background="-1973791" border="NONE" category="" font="Segoe UI-PLAIN-12" foreground="-16777216" height="95" iconname="" iconscaled="false" name="" objectpath=" " objectpathparam="" opaque="false" widgetclass="dce.pd.frame.resourceview.ui.widget.ExplorerActionWidget" width="70" x="0" y="235" z="2">
+        <param name="ICON_VISIBLE" value="true"/>
+        <param name="TEXT_VISIBLE" value="false"/>
+        <param name="TEXT_ALIGNMENT" value="4"/>
+        <param name="actionIdKey" value="MES"/>
+        <param name="ID" value="objt.process.mes.phases.runtimephaseoperation.abort"/>
+        <param name="ACTION_NAME" value="objt.process.mes.phases.runtimephaseoperation.abort"/>
+        <param name="UIMETA_INVOKER_ACTION" value=" "/>
+        <param name="PANEL_ID" value="PHASES"/>
+      </widgetviewelement>
+      <widgetviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" alignment="0" attributepath="" background="-1973791" border="NONE" category="" font="Segoe UI-PLAIN-12" foreground="-16777216" height="95" iconname="" iconscaled="false" name="" objectpath=" " objectpathparam="" opaque="false" widgetclass="dce.pd.frame.resourceview.ui.widget.ExplorerActionWidget" width="70" x="0" y="132" z="3">
+        <param name="ICON_VISIBLE" value="true"/>
+        <param name="TEXT_VISIBLE" value="false"/>
+        <param name="TEXT_ALIGNMENT" value="4"/>
+        <param name="actionIdKey" value="MES"/>
+        <param name="ID" value="objt.process.mes.phases.runtimephaseoperation.complete"/>
+        <param name="ACTION_NAME" value="objt.process.mes.phases.runtimephaseoperation.complete"/>
+        <param name="UIMETA_INVOKER_ACTION" value=" "/>
+        <param name="PANEL_ID" value="PHASES"/>
+      </widgetviewelement>
+      <widgetviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" alignment="0" attributepath="" attributetitle="" background="-16711936" border="NONE" category="" font="Segoe UI-PLAIN-12" foreground="-16777216" height="95" iconname="" iconscaled="false" name="" objectpath=" " objectpathparam="" opaque="false" widgetclass="dce.pd.frame.resourceview.ui.widget.ExplorerActionWidget" width="70" x="0" y="30" z="4">
+        <param name="ICON_VISIBLE" value="true"/>
+        <param name="TEXT_VISIBLE" value="false"/>
+        <param name="TEXT_ALIGNMENT" value="4"/>
+        <param name="actionIdKey" value="MES"/>
+        <param name="ID" value="objt.process.mes.phases.runtimephaseoperation.start"/>
+        <param name="ACTION_NAME" value="objt.process.mes.phases.runtimephaseoperation.start"/>
+        <param name="UIMETA_INVOKER_ACTION" value=" "/>
+        <param name="PANEL_ID" value="PHASES"/>
+      </widgetviewelement>
+    </panelviewelement>
+  </resourceviewelement>
+</template>

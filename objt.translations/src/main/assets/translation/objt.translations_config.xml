@@ -1,0 +1,47 @@
+<config>
+
+  <include path="../../../../../assets"/>
+  <include path="../../../../../assets"/>
+
+  <include path="../../../../../assets"/>
+  <include path="../../../../../assets"/>
+  <include path="../../../../../assets"/>
+  <include path="../../../../../assets"/>
+
+  <include ref="translation/objt.configurator-core_config.xml"/>
+  <include ref="translation/objt.supervisor-core_config.xml"/>
+  <include ref="translation/objt.operatorclient-core_config.xml"/>
+  <include ref="translation/objt.applicationserver-core_config.xml"/>
+
+  <actions>
+  </actions>
+
+  <tabpanels>
+  </tabpanels>
+
+  <xmlfiles>
+    <xmlfile name="dialogconfig.xml">
+      <node name="mainmenu" translate="title" />
+      <node name="menu" translate="title" />
+      <node name="dialog" translate="title" />
+    </xmlfile>
+
+    <xmlfile name="meta.xml">
+      <node name="listitem" translate="text" />
+      <node name="attribute" translate="title,tooltip" />
+    </xmlfile>
+
+    <!-- UI meta: translate class, attribute and association titles -->
+    <xmlfile name="uimeta.xml">
+      <node name="class" translate="title"/>
+      <node name="attribute" translate="title"/>
+      <node name="attributegroup" translate="title"/>
+      <node name="association" translate="title"/>
+    </xmlfile>
+
+    <xmlfile name="configurations.xml">
+      <node name="param" translate="translate"/>
+    </xmlfile>
+  </xmlfiles>
+</config>
+

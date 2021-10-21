@@ -1,0 +1,25 @@
+
+/* holiday approval selected row */
+.selected  td
+{
+  background-color: #E7F4F9;
+}
+
+/* change pointer for table row actions */
+.webrowaction
+{
+  cursor: pointer;
+}
+
+/* condensed holiday planning overview */
+.holidayPlanningTable td, .holidayPlanningTable th
+{
+  font-size: 12px;
+}
+
+.holidayPlanningTable td:first-child
+{
+  max-width: 240px;
+  min-width: 120px;
+}
+

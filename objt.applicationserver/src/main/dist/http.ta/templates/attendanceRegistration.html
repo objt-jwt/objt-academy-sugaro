@@ -1,0 +1,137 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title"><!--TRANSLATE(Registration attendances)--></h3>
+  </div>
+  <div class="panel-body">
+		<div id="registrationButtons">
+		</div>
+		<div class="form-group">
+			<div class="input-group">
+				<div class="input-group-addon">
+					<label for="workInfo">Work @</label>
+				</div>
+				<input type="text" class='form-control' id="workInfo" onkeydown="if (event.keyCode == 13) registerWork()"/>
+			</div>
+		</div>
+<!--		<div class="form-group">-->
+<!--			<div class="input-group">-->
+<!--				<div class="input-group-addon">-->
+<!--					<label for="workInfo">Travel to</label>-->
+<!--				</div>-->
+<!--				<input type="text" class='form-control' id="travelInfo" onkeydown="if (event.keyCode == 13) registerTravel()"/>-->
+<!--			</div>-->
+<!--		</div>-->
+		<div class="btn-group btn-group-justified"> 
+				<a class="btn btn-danger" role="button" onclick="registerAttendance('STOP','');">STOP</a>
+		</div>
+	</div>
+</div>
+
+<div class='row'>
+	<div id="attendance" class="table-responsive"></div>
+</div>
+
+<script language="javascript" type="text/javascript">
+
+// Describe used functions
+function registerWork()
+{
+  info = $('#workInfo').val();
+	if (info == '')
+  {
+		$('#workInfo').closest('.form-group').addClass('has-error');
+	}
+	else
+	{
+    registerAttendance("WORK", info, '#workInfo');
+	}
+}
+
+<!--function registerTravel()-->
+<!--{-->
+<!--  info = $('#travelInfo').val();-->
+<!--	if (info == '')-->
+<!--  {-->
+<!--		$('#travelInfo').closest('.form-group').addClass('has-error');-->
+<!--	}-->
+<!--	else-->
+<!--	{-->
+<!--		registerAttendance("TRAVEL", info, '#travelInfo');-->
+<!--	}-->
+<!--}-->
+
+
+function registerAttendance(pType, pInfo, pInputField)
+{
+  /* if (!confirm("Bevestig : " + pType + " @ " + pInfo )) return; */
+
+	// clear errors
+	$('#workInfo').closest('.form-group').removeClass('has-error');
+	$('#travelInfo').closest('.form-group').removeClass('has-error');
+
+  $.ajax
+  ({
+      url: ajaxurl,
+      data: { 'action':'registerAttendance',
+			        'type': pType,
+							'info' : pInfo
+            },
+    type: 'post',
+		success: function(data)
+		{
+			$(pInputField).val('');
+		  buildAttendanceEventList();
+		}
+  });	
+}
+
+
+function buildAttendanceEventList()
+{
+  $.ajax
+  ({
+      url: ajaxurl,
+      data: { 'action':'buildAttendanceEventList'},
+      type: 'post',
+			success: function(data)
+        {
+					$("#attendance").html(data);
+        }
+  });
+}
+
+function buildLastRegistrationButtons()
+{
+  $.ajax
+  ({
+      url: ajaxurl,
+      data: { 'action':'buildLastRegistrationButtons'},
+      type: 'post',
+			success: function(data)
+        {
+					$("#registrationButtons").html(data);
+        }
+  });
+}
+
+
+$( "#workInfo" ).autocomplete({
+	source: ajaxurl + "?action=buildRegistrationAutoComplete&type=WORK"
+});
+
+$( "#travelInfo" ).autocomplete({
+	source: ajaxurl + "?action=buildRegistrationAutoComplete&type=TRAVEL"
+});
+
+// Show Last Registrations
+buildLastRegistrationButtons();
+
+// Show current list
+buildAttendanceEventList();
+
+</script>
+
+
+
+
+

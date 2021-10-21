@@ -1,0 +1,473 @@
+<!-- Config file for translation keys from XML for classes defined in objt.ta -->
+<config>
+
+  <postprocess text="META(objt.wfm.bo.attendancemgt.CostCenter;usrTxt1),META(objt.wfm.bo.attendancemgt.CostCenter;usrTxt2),META(objt.wfm.bo.attendancemgt.CostCenter;usrTxt3),META(objt.wfm.bo.attendancemgt.CostCenter;usrTxt4),META(objt.wfm.bo.attendancemgt.CostCenter;usrTxt5),META(objt.wfm.bo.accessmgt.VisitorEntry;usrTxt1),META(objt.wfm.bo.accessmgt.VisitorEntry;usrTxt2),META(objt.wfm.bo.accessmgt.VisitorEntry;usrTxt3),META(objt.wfm.bo.accessmgt.VisitorEntry;usrTxt4),META(objt.wfm.bo.accessmgt.VisitorEntry;usrTxt5),META(objt.wfm.bo.accessmgt.Visitor;usrDts1),META(objt.wfm.bo.accessmgt.Visitor;usrDts2),META(objt.wfm.bo.accessmgt.Visitor;usrDts3),META(objt.wfm.bo.accessmgt.Visitor;usrDts4),META(objt.wfm.bo.accessmgt.Visitor;usrDts5),META(objt.wfm.bo.accessmgt.Visitor;usrFlg1),META(objt.wfm.bo.accessmgt.Visitor;usrFlg2),META(objt.wfm.bo.accessmgt.Visitor;usrFlg3),META(objt.wfm.bo.accessmgt.Visitor;usrFlg4),META(objt.wfm.bo.accessmgt.Visitor;usrFlg5),META(objt.wfm.bo.accessmgt.Visitor;usrNum1),META(objt.wfm.bo.accessmgt.Visitor;usrNum2),META(objt.wfm.bo.accessmgt.Visitor;usrNum3),META(objt.wfm.bo.accessmgt.Visitor;usrNum4),META(objt.wfm.bo.accessmgt.Visitor;usrNum5),META(objt.wfm.bo.accessmgt.Visitor;usrTxt1),META(objt.wfm.bo.accessmgt.Visitor;usrTxt2),META(objt.wfm.bo.accessmgt.Visitor;usrTxt3),META(objt.wfm.bo.accessmgt.Visitor;usrTxt4),META(objt.wfm.bo.accessmgt.Visitor;usrTxt5),META(objt.wfm.bo.attendancemgt.AttendanceEvent;usrTxt1),META(objt.wfm.bo.attendancemgt.AttendanceEvent;usrTxt2),META(objt.wfm.bo.attendancemgt.AttendanceEvent;usrTxt3),META(objt.wfm.bo.attendancemgt.AttendanceEvent;usrTxt4),META(objt.wfm.bo.attendancemgt.AttendanceEvent;usrTxt5),META(objt.wfm.bo.attendancemgt.AttendanceOperation;usrTxt1),META(objt.wfm.bo.attendancemgt.AttendanceOperation;usrTxt2),META(objt.wfm.bo.attendancemgt.AttendanceOperation;usrTxt3),META(objt.wfm.bo.attendancemgt.AttendanceOperation;usrTxt4),META(objt.wfm.bo.attendancemgt.AttendanceOperation;usrTxt5),META(objt.wfm.bo.attendancemgt.DayAttendanceCounterCostDetail;usrTxt1),META(objt.wfm.bo.attendancemgt.DayAttendanceCounterCostDetail;usrTxt2),META(objt.wfm.bo.attendancemgt.DayAttendanceCounterCostDetail;usrTxt3),META(objt.wfm.bo.attendancemgt.DayAttendanceCounterCostDetail;usrTxt4),META(objt.wfm.bo.attendancemgt.DayAttendanceCounterCostDetail;usrTxt5),META(objt.wfm.uibo.time.DayAttendanceCounterCostDetailWrapper;usrTxt1),META(objt.wfm.uibo.time.DayAttendanceCounterCostDetailWrapper;usrTxt2),META(objt.wfm.uibo.time.DayAttendanceCounterCostDetailWrapper;usrTxt3),META(objt.wfm.uibo.time.DayAttendanceCounterCostDetailWrapper;usrTxt4),META(objt.wfm.uibo.time.DayAttendanceCounterCostDetailWrapper;usrTxt5)"/>
+
+  <!-- paths where included translation configs can be found during development -->
+  <include path="../../../../../dce/src/main/assets"/>
+  <include path=".."/>
+
+  <!-- include the translation config of base components -->
+  <include ref="translation/objt.common_config.xml"/>
+
+  <actions>
+
+    <!-- Attendance Code -->
+    <action class="objt.wfm.ui.time.action.AttendanceCodeConfigAction"/>
+    <action class="objt.wfm.ui.time.action.AttendanceCodeLinkSeqChangeAction"/>
+    <action class="objt.wfm.ui.time.action.AttendanceCodeAttendanceCodeGroupAddAction"/>
+    <action class="objt.wfm.ui.time.action.AttendanceCodeTransferCodeAddAction"/>
+    <action class="objt.wfm.ui.time.action.AttendanceCodeTransferCodeRemoveAction"/>
+    <action class="objt.wfm.ui.time.action.AttendanceCodeLinkDefaultSetAction"/>
+    <action class="objt.wfm.ui.time.action.AttendanceCodeTransferCodeEditAction"/>
+
+    <!-- Attendance Code Group -->
+    <action class="objt.wfm.ui.time.action.AttendanceCodeGroupAttendanceCounterCodeAddAction" />
+
+    <!--  Attendance Pattern  -->
+    <action class="objt.wfm.ui.time.action.AttendancePatternCopyAction"/>
+    <action class="objt.wfm.ui.time.action.AttendancePatternPasteAction"/>
+    <action class="objt.wfm.ui.time.action.EmployeeAttendancePatternApplyAction"/>
+    <action class="objt.wfm.ui.time.action.HolidayPatternHolidayAddAction"/>
+    <action class="objt.wfm.ui.time.action.HolidayPatternHolidayEditAction"/>
+    <action class="objt.wfm.ui.time.action.HolidayPatternHolidayDeleteAction"/>
+    <action class="objt.wfm.ui.time.action.HolidayPatternHolidayCopyAction"/>
+    <action class="objt.wfm.ui.time.action.HolidayPatternHolidayPasteAction"/>
+    <action class="objt.wfm.ui.time.action.ExceptionPatternExceptionDayAddAction"/>
+    <action class="objt.wfm.ui.time.action.ExceptionPatternExceptionDayEditAction"/>
+    <action class="objt.wfm.ui.time.action.ExceptionPatternExceptionDayDeleteAction"/>
+    <action class="objt.wfm.ui.time.action.ExceptionPatternExceptionDayCopyAction"/>
+    <action class="objt.wfm.ui.time.action.ExceptionPatternExceptionDayPasteAction"/>
+    <action class="objt.wfm.ui.time.action.AttendancePatternLinkAddAction"/>
+    <action class="objt.wfm.ui.time.action.AttendancePatternLinkEditAction"/>
+    <action class="objt.wfm.ui.time.action.AttendancePatternLinkRemoveAction"/>
+
+    <!--  Attendance Day  -->
+    <action class="objt.wfm.ui.time.action.TemplateAttendanceDayEditAction"/>
+    <action class="objt.wfm.ui.time.action.TemplateAttendanceDayAddAction"/>
+    <action class="objt.wfm.ui.time.action.AttendanceDayPasteAction"/>
+    <action class="objt.wfm.ui.time.action.AttendanceDayRuleOperationEditAction"/>
+
+    <action class="objt.wfm.ui.time.action.AttendanceDayApproveAction"/>
+    <action class="objt.wfm.ui.time.action.AttendanceDayEventListDisplayAction"/>
+    <action class="objt.wfm.ui.time.action.AttendanceDayInvalidateAction"/>
+    <action class="objt.wfm.ui.time.action.AttendanceDayProcessDayRuleAction"/>
+    <action class="objt.wfm.ui.time.action.AttendanceDayRecallAction"/>
+    <action class="objt.wfm.ui.time.action.AttendanceDayValidateAction"/>
+    <action class="objt.wfm.ui.time.action.AttendanceDayAttendanceCodeEditAction"/>
+    <action class="objt.wfm.ui.time.action.AttendanceDayDeleteAction"/>
+    <action class="objt.wfm.ui.time.action.AttendanceDayProcessPeriodRuleAction"/>
+    <action class="objt.wfm.ui.time.action.AttendanceDayTabPanelDisplayAction"/>
+    <action class="objt.wfm.ui.time.action.ActualEmployeeAttendanceOperationRebuildAction"/>
+
+    <action class="objt.wfm.ui.time.action.AttendanceDayRegistrationRemoveAction"/>
+    <action class="objt.wfm.ui.time.action.AttendanceDayRegistrationAddAction"/>
+    <action class="objt.wfm.ui.time.action.AttendanceDayRegistrationEnableAction"/>
+    <action class="objt.wfm.ui.time.action.AttendanceDayRegistrationDisableAction"/>
+
+    <action class="objt.wfm.ui.time.action.EmployeeAttendanceDayApplyAction"/>
+    <action class="objt.wfm.ui.time.action.EmployeeAttendanceDayEditAction"/>
+    <action class="objt.wfm.ui.time.action.EmployeeAttendanceDayRestoreActiveTemplateAction"/>
+    <action class="objt.wfm.ui.time.action.EmployeeAttendanceDayRestoreDefaultTemplateAction"/>
+    <action class="objt.wfm.ui.time.action.EmployeeAttendanceDayRemoveAction"/>
+
+    <action class="objt.wfm.ui.time.action.AttendanceDayInfoEventTabPanelDisplayAction"/>
+    <action class="objt.wfm.ui.time.action.AttendanceDayAttendancePatternDisplayAction" translate="panelTitle"/>
+
+    <action class="objt.wfm.ui.time.action.AttendanceDayChildAttendanceDayAddAction" translate="childlisttabpaneltitle,childlisttabpaneldescription"/>
+    <action class="objt.wfm.ui.time.action.AttendanceDayChildAttendanceDayRemoveAction"/>
+    <action class="objt.wfm.ui.time.action.AttendanceDayChildAttendanceDayPasteAction"/>
+    <action class="objt.wfm.ui.time.action.AttendanceDayChildAttendanceDayEditAction"/>
+    <action class="objt.wfm.ui.time.action.AttendanceDayLinkSequenceModifyAction"/>
+
+    <!-- AttendanceDayOverviewWrapper -->
+    <action class="objt.wfm.ui.time.action.AttendanceDayOverviewTabPanelShowInvalidsAction"/>
+    <action class="objt.wfm.ui.time.action.AttendanceDayOverviewWrapperEditAction"/>
+    <action class="objt.wfm.ui.time.action.AttendanceDayOverviewWrapperRemoveAction"/>
+
+    <!--  Holiday Request  -->
+    <action class="objt.wfm.ui.operationmgt.action.HolidayRequestOperationApproveAction"/>
+    <action class="objt.wfm.ui.time.action.HolidayRequestFlowResourceAddAction"/>
+    <action class="objt.wfm.ui.time.action.HolidayRequestFlowResourceRemoveAction"
+            translate="confirmMessage,listConfirmMessage"/>
+    <action class="objt.wfm.ui.time.action.HolidayRequestFlowNewAction" csvattribute="keyAttributes"/>
+    <action class="objt.wfm.ui.time.action.HolidayRequestFlowEditAction"/>
+    <action class="objt.wfm.ui.time.action.HolidayRequestFlowPasteAction" csvattribute="keyAttributes"/>
+
+    <action class="objt.wfm.ui.resourcemgt.action.HolidayRequestCodeGroupConfigurationResourceRemoveAction"
+            translate="confirmMessage,listConfirmMessage"/>
+    <action class="objt.wfm.ui.resourcemgt.action.HolidayRequestCodeGroupConfigurationRemoveAction"
+            translate="confirmMessage"/>
+    <action class="objt.wfm.ui.resourcemgt.action.HolidayRequestCodeGroupConfigurationResourceAddAction"/>
+    <action class="objt.wfm.ui.resourcemgt.action.HolidayRequestCodeGroupConfigurationAddAction"
+            translate="wizardpanel.1.name,wizardpanel.1.description,wizardpanel.2.name,wizardpanel.2.description,wizardpanel.3.name,wizardpanel.3.description,wizardpanel.4.name,wizardpanel.4.description,wizardpanel.5.name,wizardpanel.5.description" />
+
+    <!--  Attendance Week Wrapper  -->
+    <action class="objt.wfm.ui.time.action.AttendanceWeekRemoveAction"/>
+    <action class="objt.wfm.ui.time.action.AttendanceWeekEditAction"/>
+    <action class="objt.wfm.ui.time.action.AttendanceWeekAddAction"/>
+    <action class="objt.wfm.ui.time.action.AttendanceWeekPasteAction"/>
+
+    <!--  Employee Attendance Group  -->
+    <action class="objt.wfm.ui.time.action.AttendancePatternApplyAction"/>
+
+    <!-- Employee -->
+    <action class="objt.wfm.ui.resourcemgt.action.EmployeeLogoutAction"/>
+    <action class="objt.wfm.ui.resourcemgt.action.EmployeeLoginAction"/>
+    <action class="objt.wfm.ui.resourcemgt.action.EmployeeLogoutWithCodeAction"/>
+    <action class="objt.wfm.ui.resourcemgt.action.EmployeeEmployeeAttendanceGroupAddAction" translate="sqlfilteractiontitle,sqlfilteractiondescription,childlisttabpaneltitle,childlisttabpaneldescription"/>
+    <action class="objt.wfm.ui.time.action.EmployeeAttendanceConfigurationDisplayAction"/>
+    <action class="objt.wfm.ui.resourcemgt.action.EmployeePlanningReportAction"/>
+
+    <!-- Employee Attendance Operation -->
+    <action class="objt.wfm.ui.operationmgt.action.ActualEmployeeAttendanceOperationAddAction"/>
+    <action class="objt.wfm.ui.operationmgt.action.ActualEmployeeAttendanceOperationCostDetailsModifyAction"/>
+    <action class="objt.wfm.ui.operationmgt.action.ActualEmployeeAttendanceOperationEditAction"/>
+    <action class="objt.wfm.ui.operationmgt.action.ActualEmployeeAttendanceOperationRemoveAction"/>
+
+    <action class="objt.wfm.ui.operationmgt.action.TargetEmployeeAttendanceOperationAddAction"/>
+    <action class="objt.wfm.ui.operationmgt.action.TargetEmployeeAttendanceOperationEditAction"/>
+    <action class="objt.wfm.ui.operationmgt.action.TargetEmployeeAttendanceOperationRemoveAction"/>
+    <action class="objt.wfm.ui.operationmgt.action.TargetEmployeeAttendanceOperationSplitAction"/>
+
+    <action class="objt.wfm.ui.operationmgt.action.HolidayRequestOperationConfirmAction"/>
+    <action class="objt.wfm.ui.operationmgt.action.HolidayRequestOperationRejectAction"/>
+    <action class="objt.wfm.ui.operationmgt.action.HolidayRequestOperationCancelAction"/>
+    <action class="objt.wfm.ui.operationmgt.action.HolidayRequestOperationAddAction"/>
+
+    <!-- AttendanceDayAnomaly -->
+    <action class="objt.wfm.ui.operationmgt.action.AttendanceDayAnomalyOperationRuleDisplayAction"/>
+
+    <!-- Employee -->
+    <action class="objt.wfm.ui.resourcemgt.action.EmployeePerformanceReportAction"/>
+    <action class="objt.wfm.ui.time.action.EmployeeAbsenceAddAction"/>
+    <action class="objt.wfm.ui.rulemgt.action.EmployeeRuleOperationManageAction"/>
+
+    <!-- Rule -->
+    <action class="objt.wfm.ui.rulemgt.action.RuleOperationEditAction"/>
+    <action class="objt.wfm.ui.rulemgt.action.RuleOperationPasteAction"/>
+    <action class="objt.wfm.ui.rulemgt.action.RuleOperationAddAction"/>
+    <action class="objt.wfm.ui.rulemgt.action.RuleOperationEmployeeAddAction" translate="sqlfilteractiontitle,sqlfilteractiondescription,childlisttabpaneltitle,childlisttabpaneldescription"/>
+    <action class="objt.wfm.ui.rulemgt.action.RuleOperationEmployeeAttendanceGroupAddAction" translate="sqlfilteractiontitle,sqlfilteractiondescription,childlisttabpaneltitle,childlisttabpaneldescription"/>
+    <action class="objt.wfm.ui.rulemgt.action.RuleOperationResourceRemoveAction"/>
+    <action class="objt.wfm.ui.rulemgt.action.OperationRuleRemoveAction"/>
+    <action class="objt.wfm.ui.rulemgt.action.OperationRulePasteAction"/>
+    <action class="objt.wfm.ui.rulemgt.action.OperationRuleAddAction"/>
+    <action class="objt.wfm.ui.rulemgt.action.RuleOperationDisplayAction"/>
+
+    <!-- RulePeriod -->
+    <action class="objt.wfm.ui.time.action.RulePeriodPostSaveAction"/>
+
+    <!-- Day Attendance Counter -->
+    <action class="objt.wfm.ui.time.action.DayAttendanceCounterAddAction"/>
+    <action class="objt.wfm.ui.time.action.DayAttendanceCounterEditAction"/>
+    <action class="objt.wfm.ui.time.action.DayAttendanceCounterRemoveAction"/>
+    <action class="objt.wfm.ui.time.action.DayAttendanceCounterTabPanelDisplayAction"/>
+
+    <!-- Attendance Counter Adjustments -->
+    <action class="objt.wfm.ui.time.action.AttendanceCounterAdjustmentTabPanelDisplayAction"/>
+    <action class="objt.wfm.ui.time.action.PeriodAttendanceCounterAdjustmentPropertiesAction"/>
+
+    <!-- Period Attendance Counter -->
+    <action class="objt.wfm.ui.time.action.PeriodAttendanceCounterNewAction"/>
+    <action class="objt.wfm.ui.time.action.PeriodAttendanceCounterEditAction"/>
+    <action class="objt.wfm.ui.time.action.PeriodAttendanceCounterConvertCodeAction"/>
+    <action class="objt.wfm.ui.time.action.PeriodAttendanceCounterDeleteAction"/>
+    <action class="objt.wfm.ui.time.action.PeriodAttendanceCounterTabPanelDisplayAction"/>
+    <action class="objt.wfm.ui.time.action.PeriodAttendanceCounterRecalculateAction"/>
+    <action class="objt.wfm.ui.time.action.PeriodAttendanceCounterAdjustmentWrapperTabPanelDisplayAction"/>
+    <action class="objt.wfm.ui.time.action.EmployeeAttendancePeriodRollbackAction"/>
+    <action class="objt.wfm.ui.time.action.EmployeeAttendancePeriodCloseAction"/>
+    <action class="objt.wfm.ui.time.action.EmployeeAttendancePeriodEditAction"/>
+
+    <!-- AccessProfiles -->
+    <action class="objt.wfm.ui.accessmgt.action.AccessProfileEditAction"/>
+    <action class="objt.wfm.ui.accessmgt.action.AccessProfileDeleteAction"/>
+    <action class="objt.wfm.ui.accessmgt.action.AccessProfileCopyAction"/>
+    <action class="objt.wfm.ui.accessmgt.action.AccessProfilePasteAction"/>
+    <action class="objt.wfm.ui.accessmgt.action.AccessProfileAccessBadgeAddAction"/>
+    <action class="objt.wfm.ui.accessmgt.action.AccessProfileAccessBadgeRemoveAction"/>
+    <action class="objt.wfm.ui.accessmgt.action.AccessProfileAccessProfileDetailAddAction"/>
+    <action class="objt.wfm.ui.accessmgt.action.AccessProfileAccessProfileDetailModifyAction"/>
+    <action class="objt.wfm.ui.accessmgt.action.AccessProfileAccessProfileDetailRemoveAction"/>
+
+    <!-- AccessProfileDetails -->
+    <action class="objt.wfm.ui.accessmgt.action.AccessProfileDetailAccessGateAddAction"/>
+    <action class="objt.wfm.ui.accessmgt.action.AccessProfileDetailAccessGateRemoveAction"/>
+    <action class="objt.wfm.ui.accessmgt.action.AccessProfileDetailCopyAction"/>
+    <action class="objt.wfm.ui.accessmgt.action.AccessProfileDetailPasteAction"/>
+
+
+    <!-- AccessPatterns -->
+    <action class="objt.wfm.ui.accessmgt.action.AccessPatternNewAction"/>
+    <action class="objt.wfm.ui.accessmgt.action.AccessPatternEditAction"/>
+    <action class="objt.wfm.ui.accessmgt.action.AccessPatternDeleteAction"/>
+    <action class="objt.wfm.ui.accessmgt.action.AccessPatternCopyAction"/>
+    <action class="objt.wfm.ui.accessmgt.action.AccessPatternPasteAction"/>
+    <action class="objt.wfm.ui.accessmgt.action.AccessPatternAccessProfileDetailDisplayAction" translate="panelTitle"/>
+    <action class="objt.wfm.ui.accessmgt.action.AccessPatternAccessReaderDeviceDisplayAction" translate="panelTitle"/>
+
+    <!-- AccessDays -->
+    <action class="objt.wfm.ui.accessmgt.action.AccessDayNewAction"/>
+    <action class="objt.wfm.ui.accessmgt.action.AccessDayEditAction"/>
+    <action class="objt.wfm.ui.accessmgt.action.AccessDayDeleteAction"/>
+    <action class="objt.wfm.ui.accessmgt.action.AccessDayCopyAction"/>
+    <action class="objt.wfm.ui.accessmgt.action.AccessDayPasteAction"/>
+    <action class="objt.wfm.ui.accessmgt.action.AccessDayAccessPatternDisplayAction" translate="panelTitle"/>
+
+    <!-- ExceptionDays -->
+    <action class="objt.wfm.ui.accessmgt.action.ExceptionDayNewAction"/>
+    <action class="objt.wfm.ui.accessmgt.action.ExceptionDayEditAction"/>
+    <action class="objt.wfm.ui.accessmgt.action.ExceptionDayDeleteAction"/>
+
+    <!-- AccessArea -->
+    <action class="objt.wfm.ui.accessmgt.action.AccessAreaDeleteAction"
+            translate="checkMessage1"/>
+    <action class="objt.wfm.ui.accessmgt.action.AccessAreaAccessGateRemoveAction"/>
+
+    <!-- AccessGate -->
+    <action class="objt.wfm.ui.accessmgt.action.AccessGateAccessReaderDeviceAddAction"/>
+    <action class="objt.wfm.ui.accessmgt.action.AccessGateAccessReaderDeviceRemoveAction"
+            translate="confirmMessage,listConfirmMessage"/>
+    <action class="objt.wfm.ui.accessmgt.action.AccessGateAccessProfileDisplayAction"/>
+
+    <!-- Employee -->
+    <action class="objt.wfm.ui.accessmgt.action.EmployeeAccessBadgeRemoveAction"
+            translate="confirmMessage,listConfirmMessage"/>
+    <action class="objt.wfm.ui.accessmgt.action.EmployeeAccessBadgeAddAction"/>
+    <action class="objt.wfm.ui.accessmgt.action.EmployeeLogoutAction"/>
+    <action class="objt.wfm.ui.accessmgt.action.EmployeeLoginAction"/>
+
+    <!-- AccessBadge -->
+    <action class="objt.wfm.ui.accessmgt.action.AccessBadgeNewAction"
+            translate="wizardpanel.1.name,wizardpanel.1.description,wizardpanel.2.name,wizardpanel.2.description,wizardpanel.3.name,wizardpanel.3.description,wizardpanel.4.name,wizardpanel.4.description,wizardpanel.5.name,wizardpanel.5.description" />
+    <action class="objt.wfm.ui.accessmgt.action.AccessBadgeEditAction"/>
+    <action class="objt.wfm.ui.accessmgt.action.AccessBadgeDeleteAction"/>
+    <action class="objt.wfm.ui.accessmgt.action.AccessBadgeEmployeeLinkAddAction"/>
+    <action class="objt.wfm.ui.accessmgt.action.AccessBadgeEmployeeLinkEditAction"/>
+    <action class="objt.wfm.ui.accessmgt.action.AccessBadgeEmployeeLinkRemoveAction"/>
+
+    <action class="objt.wfm.ui.accessmgt.action.AccessConfigurationUpdateAction"/>
+    <action class="objt.wfm.ui.accessmgt.action.EvacuationReportAction"/>
+
+    <!-- AccessReaderDevice -->
+    <action class="objt.wfm.ui.accessmgt.action.AccessReaderDeviceRemoveAction"
+            translate="listConfirmMessage"/>
+    <action class="objt.wfm.ui.accessmgt.action.AccessReaderDeviceBringOnlineAction"
+            translate="confirmMessage"/>
+    <action class="objt.wfm.ui.accessmgt.action.AccessReaderDeviceTakeOfflineAction"
+            translate="confirmMessage"/>
+    <action class="objt.wfm.ui.accessmgt.action.AccessReaderDeviceChildAccessReaderDeviceAddAction"/>
+    <action class="objt.wfm.ui.accessmgt.action.AccessReaderDeviceChildAccessReaderDeviceRemoveAction"
+            translate="confirmMessage,listConfirmMessage"/>
+
+    <!-- AccessDevice -->
+    <action class="objt.wfm.ui.accessmgt.action.DeviceUploadMasterDataAction"/>
+    <action class="objt.wfm.ui.accessmgt.action.DeviceUploadSyncDataAction"/>
+
+
+    <!-- Visitor Mgt -->
+    <action class="objt.wfm.ui.accessmgt.action.VisitorProfileNewAction"/>
+    <action class="objt.wfm.ui.accessmgt.action.VisitorEntryLogoutAction"/>
+    <action class="objt.wfm.ui.accessmgt.action.VisitorEntryDeleteAction"/>
+    <action class="objt.wfm.ui.accessmgt.action.VisitorEntryEditAction"/>
+    <action class="objt.wfm.ui.accessmgt.action.VisitorEntryLoginAction"/>
+    <action class="objt.wfm.ui.accessmgt.action.VisitorEntryCompleteAction"/>
+    <action class="objt.wfm.ui.accessmgt.action.VisitorEntryAddAction"/>
+    <action class="objt.wfm.ui.accessmgt.action.VisitorEntryDuplicateAction"/>
+    <action class="objt.wfm.ui.accessmgt.action.VisitorEntryPasteAction"/>
+    <action class="objt.wfm.ui.accessmgt.action.VisitorProfileEditAction"/>
+    <action class="objt.wfm.ui.accessmgt.action.VisitorEntryReportAction"/>
+    <action class="objt.wfm.ui.accessmgt.action.VisitorEntryReportPreviewAction"/>
+
+    <!-- CostCenter -->
+    <action class="objt.wfm.ui.resourcemgt.action.CostCenterDeleteAction"/>
+    <action class="objt.wfm.ui.resourcemgt.action.CostCenterDeviceAddAction"/>
+
+    <!-- CostProfile -->
+    <action class="objt.wfm.ui.time.action.CostProfileApplyAction" translate="childlisttabpaneltitle,childlisttabpaneldescription"/>
+    <action class="objt.wfm.ui.time.action.CostProfileDeleteAction"/>
+    <action class="objt.wfm.ui.time.action.CostProfileEditAction"/>
+    <action class="objt.wfm.ui.time.action.CostProfileNewAction"/>
+
+    <!-- EmployeeCostProfileLink -->
+    <action class="objt.wfm.ui.resourcemgt.action.EmployeeCostProfileLinkEditAction"/>
+    <action class="objt.wfm.ui.resourcemgt.action.EmployeeEmployeeCostProfileLinkAddAction"/>
+
+  </actions>
+
+  <tabpanels>
+
+    <!-- Attendance Day -->
+    <tabpanel class="objt.wfm.ui.time.AttendanceDayCounterOverviewTabPanel"/>
+
+    <!-- AttendanceDayOverviewWrapper -->
+    <tabpanel class="objt.wfm.ui.time.AttendanceDayOverviewChildListTabPanel"
+              csvtranslate="attributeTitles"
+              csvattribute="attributePaths"/>
+
+    <!--  Attendance Pattern  -->
+    <tabpanel class="objt.wfm.ui.time.AttendancePatternTabPanel"/>
+
+    <!-- Attendance Code -->
+    <tabpanel class="objt.wfm.ui.time.DayCodePropertiesTabPanel"/>
+    <tabpanel class="objt.wfm.ui.time.CounterCodePropertiesTabPanel"/>
+
+    <!-- Period Attendance Counter Adjustment -->
+    <tabpanel class="objt.wfm.ui.time.PeriodAttendanceCounterAdjustmentListTabPanel"
+              csvtranslate="attributeTitles"
+              csvattribute="attributePaths"/>
+    <tabpanel class="objt.wfm.ui.time.action.PeriodAttendanceCounterAdjustmentWrapperTabPanelDisplayAction"/>
+
+
+    <!-- Holiday -->
+    <tabpanel class="objt.wfm.ui.time.AttendanceCodeGroupPropertiesTabPanel"/>
+    <tabpanel class="objt.wfm.ui.time.AttendancePatternPropertiesTabPanel"/>
+    <tabpanel class="objt.wfm.ui.time.HolidayRequestFlowPropertiesTabPanel"/>
+    <tabpanel class="objt.wfm.ui.time.HolidayRequestFlowDetailPropertiesTabPanel"/>
+    <tabpanel class="objt.wfm.ui.time.EmployeeHolidayRequestDayOverviewChildListTabPanel"/>
+
+    <!-- Configuration -->
+    <tabpanel class="objt.wfm.ui.resourcemgt.AttendanceReaderDevicePropertiesTabPanel"/>
+    <tabpanel class="objt.wfm.ui.resourcemgt.DefaultAttendanceCodesTabPanel"/>
+    <tabpanel class="objt.wfm.ui.resourcemgt.DefaultColorsTabPanel"/>
+    <tabpanel class="objt.wfm.ui.resourcemgt.EmployeeAttendanceGroupPropertiesTabPanel"/>
+    <tabpanel class="objt.wfm.ui.resourcemgt.GeneralConfigurationTabPanel"/>
+    <tabpanel class="objt.wfm.ui.resourcemgt.CounterCodeRestrictionTabPanel" translate="attendancecodetitle,attendancecodegrouptitle"/>
+    <tabpanel class="objt.wfm.ui.resourcemgt.InfoEventConfigurationTabPanel"/>
+    <tabpanel class="objt.wfm.ui.resourcemgt.VisitorConfigurationTabPanel"/>
+    <tabpanel class="objt.wfm.ui.resourcemgt.CostDetailConfigurationTabPanel"/>
+    <tabpanel class="objt.wfm.ui.resourcemgt.HolidayRequestConfigurationTabPanel"/>
+    <tabpanel class="objt.wfm.ui.resourcemgt.HolidayRequestFlowConfigurationTabPanel"/>
+    <tabpanel class="objt.wfm.ui.resourcemgt.AttendancePeriodConfigurationTabPanel"/>
+    <tabpanel class="objt.wfm.ui.resourcemgt.VisitorPropertiesTabPanel"/>
+
+    <!-- Anomaly Reason -->
+    <tabpanel class="objt.wfm.ui.operationmgt.AnomalyReasonPropertiesTabPanel"/>
+
+    <!-- Rule -->
+    <tabpanel class="objt.wfm.ui.rulemgt.AttendanceDayBreakPeriodRuleTabPanel"/>
+    <tabpanel class="objt.wfm.ui.rulemgt.AttendanceDayScheduledDurationValidateRuleTabPanel"/>
+    <tabpanel class="objt.wfm.ui.rulemgt.AttendanceDayAttendanceRuleTabPanel"/>
+    <tabpanel class="objt.wfm.ui.rulemgt.AttendanceDayTravelRuleTabPanel"/>
+    <tabpanel class="objt.wfm.ui.rulemgt.AttendanceDayUnplannedAbsenceRuleTabPanel"/>
+    <tabpanel class="objt.wfm.ui.rulemgt.AttendanceDayPlannedAbsenceRuleTabPanel"/>
+    <tabpanel class="objt.wfm.ui.rulemgt.AttendanceDayValidateRuleTabPanel"/>
+    <tabpanel class="objt.wfm.ui.rulemgt.DayAttendanceCounterRoundRuleTabPanel"/>
+    <tabpanel class="objt.wfm.ui.rulemgt.DayAttendanceCounterSummaryRuleTabPanel"/>
+    <tabpanel class="objt.wfm.ui.rulemgt.DayAttendanceCounterTruncateRuleTabPanel"/>
+    <tabpanel class="objt.wfm.ui.rulemgt.PeriodAttendanceCounterCloseRuleTabPanel"/>
+    <tabpanel class="objt.wfm.ui.rulemgt.PeriodAttendanceCounterCreateRuleTabPanel"/>
+    <tabpanel class="objt.wfm.ui.rulemgt.PeriodAttendanceCounterTruncateRuleTabPanel"/>
+    <tabpanel class="objt.wfm.ui.rulemgt.SegmentStartRoundRuleTabPanel"/>
+    <tabpanel class="objt.wfm.ui.rulemgt.SegmentStopRoundRuleTabPanel"/>
+    <tabpanel class="objt.wfm.ui.rulemgt.SegmentAttendanceRuleTabPanel"/>
+    <tabpanel class="objt.wfm.ui.rulemgt.SegmentBreakDurationRuleTabPanel"/>
+    <tabpanel class="objt.wfm.ui.rulemgt.PeriodDayAttendanceCounterSummaryRuleTabPanel"/>
+    <tabpanel class="objt.wfm.ui.rulemgt.AttendanceDayPeriodAttendanceCounterValidateRuleTabPanel"/>
+    <tabpanel class="objt.wfm.ui.rulemgt.AttendanceDayFlexibleWorkDurationRuleTabPanel"/>
+    <tabpanel class="objt.wfm.ui.rulemgt.RuleOperationTabPanel"/>
+    <tabpanel class="objt.wfm.ui.rulemgt.SegmentStopValidationRuleTabPanel"/>
+    <tabpanel class="objt.wfm.ui.rulemgt.SegmentStartValidationRuleTabPanel"/>
+    <tabpanel class="objt.wfm.ui.rulemgt.AttendanceDayUnplannedAbsenceValidationRuleTabPanel"/>
+    <tabpanel class="objt.wfm.ui.rulemgt.SegmentAttendanceValidationRuleTabPanel"/>
+    <tabpanel class="objt.wfm.ui.rulemgt.AttendanceDayPlannedAbsenceValidationRuleTabPanel"/>
+    <tabpanel class="objt.wfm.ui.rulemgt.AttendanceDayAutoLogoutValidationRuleTabPanel"/>
+    <tabpanel class="objt.wfm.ui.rulemgt.DayCodeConvertRuleTabPanel"/>
+    <tabpanel class="objt.wfm.ui.rulemgt.HolidayRequestMaximumHorizonValidationRuleTabPanel"/>
+    <tabpanel class="objt.wfm.ui.rulemgt.HolidayRequestSpecialDaysValidationRuleTabPanel"/>
+    <tabpanel class="objt.wfm.ui.rulemgt.HolidayRequestConsecutiveDaysValidationRuleTabPanel"/>
+
+    <!-- RulePeriod -->
+    <tabpanel class="objt.wfm.ui.time.RulePeriodPropertiesTabPanel"/>
+
+    <!-- Employee -->
+    <tabpanel class="objt.wfm.ui.time.AttendanceDayOverviewTabPanel"
+              csvtranslate="attributeTitles"
+              csvattribute="attributePaths"/>
+    <tabpanel class="objt.wfm.ui.time.EmployeeAttendanceDayGanttTabPanel"/>
+    <tabpanel class="objt.wfm.ui.time.EmployeeListAttendanceDayGanttTabPanel"/>
+    <tabpanel class="objt.wfm.ui.time.EmployeePeriodAttendanceCounterWrapperListTabPanel"/>
+    <tabpanel class="objt.wfm.ui.time.PeriodAttendanceCounterAdjustmentListTabPanel"/>
+
+    <!-- Access Mgt -->
+    <tabpanel class="objt.wfm.ui.accessmgt.AccessAreaPropertiesTabPanel"/>
+    <tabpanel class="objt.wfm.ui.accessmgt.AccessGatePropertiesTabPanel"/>
+    <tabpanel class="objt.wfm.ui.accessmgt.AccessBadgePropertiesTabPanel"/>
+    <tabpanel class="objt.wfm.ui.accessmgt.AccessDayPropertiesTabPanel"/>
+    <tabpanel class="objt.wfm.ui.accessmgt.AccessPatternPropertiesTabPanel"/>
+    <tabpanel class="objt.wfm.ui.accessmgt.AccessProfilePropertiesTabPanel"/>
+    <tabpanel class="objt.wfm.ui.accessmgt.AccessReaderDevicePropertiesTabPanel"/>
+    <tabpanel class="objt.wfm.ui.accessmgt.ExceptionDayPropertiesTabPanel"/>
+    <tabpanel class="objt.wfm.ui.accessmgt.VisitorProfilePropertiesTabPanel"/>
+    <tabpanel class="objt.wfm.ui.accessmgt.VisitorEntryPropertiesTabPanel"/>
+
+    <!-- CostCenter -->
+    <tabpanel class="objt.wfm.ui.resourcemgt.CostCenterPropertiesTabPanel"/>
+
+    <!-- CostProfile -->
+    <tabpanel class="objt.wfm.ui.time.CostProfilePropertiesTabPanel"/>
+
+    <!-- EmployeeCostProfileLink -->
+    <tabpanel class="objt.wfm.ui.resourcemgt.EmployeeCostProfileLinkPropertiesTabPanel"/>
+    
+  </tabpanels>
+
+  <xmlfiles>
+    <xmlfile name="absencecodesqltreeselection.xml">
+      <node name="basenode" translate="title"/>
+      <node name="childnode" attribute="attributepath"/>
+    </xmlfile>
+    <xmlfile name="attendancedaycodesqltreeselection.xml">
+      <node name="basenode" translate="title"/>
+      <node name="childnode" attribute="attributepath"/>
+    </xmlfile>
+    <xmlfile name="attendancecodesqltreeselection.xml">
+      <node name="basenode" translate="title"/>
+    </xmlfile>
+    <xmlfile name="attendancecountercodesqltreeselection.xml">
+      <node name="basenode" translate="title"/>
+    </xmlfile>
+    <xmlfile name="employeeattendancegrouptreeselection.xml">
+      <node name="basenode" translate="title"/>
+    </xmlfile>
+    <xmlfile name="employeetreeselection.xml">
+      <node name="basenode" translate="title"/>
+    </xmlfile>
+
+    <!-- scan the text entries of listvalidators defined in the metafile -->
+    <xmlfile name="meta.xml">
+      <node name="listitem" translate="text" />
+      <node name="attribute" translate="title,tooltip" />
+    </xmlfile>
+
+    <xmlfile name="operatorclient_buttonbar.xml">
+      <node name="button" translate="title"/>
+      <node name="buttonbar" translate="title"/>
+      <node name="mainbuttonbar" translate="title"/>
+    </xmlfile>
+
+    <!-- translate name and description of defined privileges -->
+    <xmlfile name="privileges.xml">
+      <node name="privilege" translate="application,module,domain,category,name,description"/>
+    </xmlfile>
+
+    <!-- UI meta: translate class, attribute and association titles -->
+    <xmlfile name="uimeta.xml">
+      <node name="class" translate="title"/>
+      <node name="attribute" translate="title"/>
+      <node name="attributegroup" translate="title"/>
+      <node name="association" translate="title"/>
+    </xmlfile>
+
+    <!-- translate menu and action titles for the web client -->
+    <xmlfile name="menu.xml">
+      <node name="menu" translate="title"/>
+      <node name="action" translate="title"/>
+    </xmlfile>
+
+    <xmlfile name="holidayrequestflowconfig.xml">
+      <node name="field" attribute="value"/>
+    </xmlfile>
+  </xmlfiles>
+</config>

@@ -1,0 +1,62 @@
+<webserviceregistryconfig>
+
+  <properties>
+    <logging></logging>
+
+    <requesttimeout></requesttimeout>
+    <connecttimeout></connecttimeout>
+  </properties>
+
+  <!--<soapwebservice>-->
+    <!--<serviceclass>schemas.dynamics.microsoft.page.item_obj.ItemObjPort</serviceclass>-->
+    <!--<namespace>urn:microsoft-dynamics-schemas/page/item_obj</namespace>-->
+    <!--<servicename>Item_Obj_Service</servicename>-->
+    <!--<endpointurl>https://mail.stubbe-tabak.be:7087/STUBBE_TEST_WS/WS/Stubbe%20Tobacco%20Trading/Page/Item_Obj</endpointurl>-->
+
+    <!--&lt;!&ndash;-->
+      <!--OPTIONAL ATTRIBUTES-->
+      <!--if wsdlurl is not filled in the endpointurl is used as wsdlurl-->
+      <!--if portname if not filled in then the default port is used-->
+    <!--&ndash;&gt;-->
+    <!--<wsdlurl>file:///D:/Item_Obj.xml</wsdlurl>-->
+    <!--<portname>Item_Obj_Port</portname>-->
+    <!--<username>Objective</username>-->
+    <!--<password>Obj@Stubbe.1</password>-->
+
+    <!--&lt;!&ndash; optional default properties override per service &ndash;&gt;-->
+    <!--&lt;!&ndash;<logging>false</logging>&ndash;&gt;-->
+    <!--&lt;!&ndash;<requesttimeout>10000</requesttimeout>&ndash;&gt;-->
+    <!--&lt;!&ndash;<connecttimeout>20000</connecttimeout>&ndash;&gt;-->
+  <!--</soapwebservice>-->
+
+  <!--<soapwebservice>-->
+    <!--<serviceclass>euroma.mes.msc.HelloWorld</serviceclass>-->
+    <!--<namespace>http://msc.mes.euroma/</namespace>-->
+    <!--<servicename>HelloWorldImplService</servicename>-->
+    <!--<endpointurl>http://l0-objt-176:49280/api/esa/GetHelloWorldAsString?wsdl</endpointurl>-->
+  <!--</soapwebservice>-->
+
+  <restwebservice>
+    <id>AUTH</id>
+    <baseurl>https://zetestpdqa-id.azurewebsites.net/connect/token</baseurl>
+    <!--<username></username>-->
+    <!--<password></password>-->
+    <logging>true</logging>
+    <!--<requesttimeout></requesttimeout>-->
+    <!--<connecttimeout></connecttimeout>-->
+    <requestcontenttype>application/x-www-form-urlencoded</requestcontenttype>
+    <responsecontenttype>application/json</responsecontenttype>
+  </restwebservice>
+
+  <restwebservice>
+    <id>COMPLETEREQUEST</id>
+    <baseurl>https://zetestpdqa-api.azurewebsites.net/api/v1.0/tracehub/level3</baseurl>
+    <!--<username></username>-->
+    <!--<password></password>-->
+    <logging>true</logging>
+    <!--<requesttimeout></requesttimeout>-->
+    <!--<connecttimeout></connecttimeout>-->
+    <requestcontenttype>application/json</requestcontenttype>
+    <responsecontenttype>application/json</responsecontenttype>
+  </restwebservice>
+</webserviceregistryconfig>

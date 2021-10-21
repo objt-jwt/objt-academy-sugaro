@@ -1,0 +1,526 @@
+<!-- Config file for translation keys from XML for classes defined in dce.pd.frame -->
+<config>
+  <postprocess text="META(objt.common.inventorymgt.bo.StorageItemQty;inventoryCode1),META(objt.common.inventorymgt.bo.StorageItemQty;inventoryCode2),META(objt.common.inventorymgt.bo.StorageItemQty;inventoryCode3),META(objt.common.inventorymgt.bo.StorageItemQty;inventoryCode4),META(objt.common.inventorymgt.bo.StorageItemQty;inventoryCode5),META(objt.common.itemmgt.bo.Item;usrTxt1),META(objt.common.itemmgt.bo.Item;usrTxt2),META(objt.common.itemmgt.bo.Item;usrTxt3),META(objt.common.itemmgt.bo.Item;usrTxt4),META(objt.common.itemmgt.bo.Item;usrTxt5),META(objt.common.itemmgt.bo.Item;usrNum1),META(objt.common.itemmgt.bo.Item;usrNum2),META(objt.common.itemmgt.bo.Item;usrNum3),META(objt.common.itemmgt.bo.Item;usrNum4),META(objt.common.itemmgt.bo.Item;usrNum5),META(objt.common.itemmgt.bo.Item;usrDts1),META(objt.common.itemmgt.bo.Item;usrDts2),META(objt.common.itemmgt.bo.Item;usrDts3),META(objt.common.itemmgt.bo.Item;usrDts4),META(objt.common.itemmgt.bo.Item;usrDts5),META(objt.common.itemmgt.bo.Item;usrFlg1),META(objt.common.itemmgt.bo.Item;usrFlg2),META(objt.common.itemmgt.bo.Item;usrFlg3),META(objt.common.itemmgt.bo.Item;usrFlg4),META(objt.common.itemmgt.bo.Item;usrFlg5),META(objt.common.resourcemgt.bo.Carrier;usrTxt1),META(objt.common.resourcemgt.bo.Carrier;usrTxt2),META(objt.common.resourcemgt.bo.Carrier;usrTxt3),META(objt.common.resourcemgt.bo.Carrier;usrTxt4),META(objt.common.resourcemgt.bo.Carrier;usrTxt5),META(objt.common.resourcemgt.bo.Carrier;usrNum1),META(objt.common.resourcemgt.bo.Carrier;usrNum2),META(objt.common.resourcemgt.bo.Carrier;usrNum3),META(objt.common.resourcemgt.bo.Carrier;usrNum4),META(objt.common.resourcemgt.bo.Carrier;usrNum5),META(objt.common.resourcemgt.bo.Carrier;usrDts1),META(objt.common.resourcemgt.bo.Carrier;usrDts2),META(objt.common.resourcemgt.bo.Carrier;usrDts3),META(objt.common.resourcemgt.bo.Carrier;usrDts4),META(objt.common.resourcemgt.bo.Carrier;usrDts5),META(objt.common.resourcemgt.bo.Carrier;usrFlg1),META(objt.common.resourcemgt.bo.Carrier;usrFlg2),META(objt.common.resourcemgt.bo.Carrier;usrFlg3),META(objt.common.resourcemgt.bo.Carrier;usrFlg4),META(objt.common.resourcemgt.bo.Carrier;usrFlg5),META(objt.common.resourcemgt.bo.Customer;usrTxt1),META(objt.common.resourcemgt.bo.Customer;usrTxt2),META(objt.common.resourcemgt.bo.Customer;usrTxt3),META(objt.common.resourcemgt.bo.Customer;usrTxt4),META(objt.common.resourcemgt.bo.Customer;usrTxt5),META(objt.common.resourcemgt.bo.Customer;usrNum1),META(objt.common.resourcemgt.bo.Customer;usrNum2),META(objt.common.resourcemgt.bo.Customer;usrNum3),META(objt.common.resourcemgt.bo.Customer;usrNum4),META(objt.common.resourcemgt.bo.Customer;usrNum5),META(objt.common.resourcemgt.bo.Customer;usrDts1),META(objt.common.resourcemgt.bo.Customer;usrDts2),META(objt.common.resourcemgt.bo.Customer;usrDts3),META(objt.common.resourcemgt.bo.Customer;usrDts4),META(objt.common.resourcemgt.bo.Customer;usrDts5),META(objt.common.resourcemgt.bo.Customer;usrFlg1),META(objt.common.resourcemgt.bo.Customer;usrFlg2),META(objt.common.resourcemgt.bo.Customer;usrFlg3),META(objt.common.resourcemgt.bo.Customer;usrFlg4),META(objt.common.resourcemgt.bo.Customer;usrFlg5),META(dce.bo.resourcemgt.Department;usrTxt1),META(dce.bo.resourcemgt.Department;usrTxt2),META(dce.bo.resourcemgt.Department;usrTxt3),META(dce.bo.resourcemgt.Department;usrTxt4),META(dce.bo.resourcemgt.Department;usrTxt5),META(dce.bo.resourcemgt.Department;usrNum1),META(dce.bo.resourcemgt.Department;usrNum2),META(dce.bo.resourcemgt.Department;usrNum3),META(dce.bo.resourcemgt.Department;usrNum4),META(dce.bo.resourcemgt.Department;usrNum5),META(dce.bo.resourcemgt.Department;usrDts1),META(dce.bo.resourcemgt.Department;usrDts2),META(dce.bo.resourcemgt.Department;usrDts3),META(dce.bo.resourcemgt.Department;usrDts4),META(dce.bo.resourcemgt.Department;usrDts5),META(dce.bo.resourcemgt.Department;usrFlg1),META(dce.bo.resourcemgt.Department;usrFlg2),META(dce.bo.resourcemgt.Department;usrFlg3),META(dce.bo.resourcemgt.Department;usrFlg4),META(dce.bo.resourcemgt.Department;usrFlg5),META(objt.common.resourcemgt.bo.Employee;usrTxt1),META(objt.common.resourcemgt.bo.Employee;usrTxt2),META(objt.common.resourcemgt.bo.Employee;usrTxt3),META(objt.common.resourcemgt.bo.Employee;usrTxt4),META(objt.common.resourcemgt.bo.Employee;usrTxt5),META(objt.common.resourcemgt.bo.Employee;usrNum1),META(objt.common.resourcemgt.bo.Employee;usrNum2),META(objt.common.resourcemgt.bo.Employee;usrNum3),META(objt.common.resourcemgt.bo.Employee;usrNum4),META(objt.common.resourcemgt.bo.Employee;usrNum5),META(objt.common.resourcemgt.bo.Employee;usrDts1),META(objt.common.resourcemgt.bo.Employee;usrDts2),META(objt.common.resourcemgt.bo.Employee;usrDts3),META(objt.common.resourcemgt.bo.Employee;usrDts4),META(objt.common.resourcemgt.bo.Employee;usrDts5),META(objt.common.resourcemgt.bo.Employee;usrFlg1),META(objt.common.resourcemgt.bo.Employee;usrFlg2),META(objt.common.resourcemgt.bo.Employee;usrFlg3),META(objt.common.resourcemgt.bo.Employee;usrFlg4),META(objt.common.resourcemgt.bo.Employee;usrFlg5),META(objt.common.resourcemgt.bo.Supplier;usrTxt1),META(objt.common.resourcemgt.bo.Supplier;usrTxt2),META(objt.common.resourcemgt.bo.Supplier;usrTxt3),META(objt.common.resourcemgt.bo.Supplier;usrTxt4),META(objt.common.resourcemgt.bo.Supplier;usrTxt5),META(objt.common.resourcemgt.bo.Supplier;usrNum1),META(objt.common.resourcemgt.bo.Supplier;usrNum2),META(objt.common.resourcemgt.bo.Supplier;usrNum3),META(objt.common.resourcemgt.bo.Supplier;usrNum4),META(objt.common.resourcemgt.bo.Supplier;usrNum5),META(objt.common.resourcemgt.bo.Supplier;usrDts1),META(objt.common.resourcemgt.bo.Supplier;usrDts2),META(objt.common.resourcemgt.bo.Supplier;usrDts3),META(objt.common.resourcemgt.bo.Supplier;usrDts4),META(objt.common.resourcemgt.bo.Supplier;usrDts5),META(objt.common.resourcemgt.bo.Supplier;usrFlg1),META(objt.common.resourcemgt.bo.Supplier;usrFlg2),META(objt.common.resourcemgt.bo.Supplier;usrFlg3),META(objt.common.resourcemgt.bo.Supplier;usrFlg4),META(objt.common.resourcemgt.bo.Supplier;usrFlg5),META(dce.pd.sfc.bo.resourcemgt.Machine;usrTxt1),META(dce.pd.sfc.bo.resourcemgt.Machine;usrTxt2),META(dce.pd.sfc.bo.resourcemgt.Machine;usrTxt3),META(dce.pd.sfc.bo.resourcemgt.Machine;usrTxt4),META(dce.pd.sfc.bo.resourcemgt.Machine;usrTxt5),META(dce.pd.sfc.bo.resourcemgt.Machine;usrNum1),META(dce.pd.sfc.bo.resourcemgt.Machine;usrNum2),META(dce.pd.sfc.bo.resourcemgt.Machine;usrNum3),META(dce.pd.sfc.bo.resourcemgt.Machine;usrNum4),META(dce.pd.sfc.bo.resourcemgt.Machine;usrNum5),META(dce.pd.sfc.bo.resourcemgt.Machine;usrDts1),META(dce.pd.sfc.bo.resourcemgt.Machine;usrDts2),META(dce.pd.sfc.bo.resourcemgt.Machine;usrDts3),META(dce.pd.sfc.bo.resourcemgt.Machine;usrDts4),META(dce.pd.sfc.bo.resourcemgt.Machine;usrDts5),META(dce.pd.sfc.bo.resourcemgt.Machine;usrFlg1),META(dce.pd.sfc.bo.resourcemgt.Machine;usrFlg2),META(dce.pd.sfc.bo.resourcemgt.Machine;usrFlg3),META(dce.pd.sfc.bo.resourcemgt.Machine;usrFlg4),META(dce.pd.sfc.bo.resourcemgt.Machine;usrFlg5),META(dce.pd.sfc.bo.resourcemgt.WorkCenter;usrTxt1),META(dce.pd.sfc.bo.resourcemgt.WorkCenter;usrTxt2),META(dce.pd.sfc.bo.resourcemgt.WorkCenter;usrTxt3),META(dce.pd.sfc.bo.resourcemgt.WorkCenter;usrTxt4),META(dce.pd.sfc.bo.resourcemgt.WorkCenter;usrTxt5),META(dce.pd.sfc.bo.resourcemgt.WorkCenter;usrNum1),META(dce.pd.sfc.bo.resourcemgt.WorkCenter;usrNum2),META(dce.pd.sfc.bo.resourcemgt.WorkCenter;usrNum3),META(dce.pd.sfc.bo.resourcemgt.WorkCenter;usrNum4),META(dce.pd.sfc.bo.resourcemgt.WorkCenter;usrNum5),META(dce.pd.sfc.bo.resourcemgt.WorkCenter;usrDts1),META(dce.pd.sfc.bo.resourcemgt.WorkCenter;usrDts2),META(dce.pd.sfc.bo.resourcemgt.WorkCenter;usrDts3),META(dce.pd.sfc.bo.resourcemgt.WorkCenter;usrDts4),META(dce.pd.sfc.bo.resourcemgt.WorkCenter;usrDts5),META(dce.pd.sfc.bo.resourcemgt.WorkCenter;usrFlg1),META(dce.pd.sfc.bo.resourcemgt.WorkCenter;usrFlg2),META(dce.pd.sfc.bo.resourcemgt.WorkCenter;usrFlg3),META(dce.pd.sfc.bo.resourcemgt.WorkCenter;usrFlg4),META(dce.pd.sfc.bo.resourcemgt.WorkCenter;usrFlg5),META(objt.wfm.bo.attendancemgt.CostProfileDetail;usrTxt1),META(objt.wfm.bo.attendancemgt.CostProfileDetail;usrTxt2),META(objt.wfm.bo.attendancemgt.CostProfileDetail;usrTxt3),META(objt.wfm.bo.attendancemgt.CostProfileDetail;usrTxt4),META(objt.wfm.bo.attendancemgt.CostProfileDetail;usrTxt5)"/>
+
+  <!-- paths where included translation configs can be found during development -->
+  <include path="../../../../../dce/src/main/assets"/>
+  <include path=".."/>
+
+  <!-- include the translation config of base components -->
+  <include ref="translation/dce_config.xml"/>
+
+  <actions>
+    <action class="objt.common.generic.ui.action.UserFieldEditAction"/>
+
+    <!-- Package objt.common.appmgt.ui.action -->
+    <action class="objt.common.appmgt.ui.action.SQLFilterAddAction"/>
+    <action class="objt.common.appmgt.ui.action.SQLFilterDeleteAction"/>
+    <action class="objt.common.appmgt.ui.action.SQLFilterEditAction"/>
+    <action class="objt.common.appmgt.ui.action.SQLFilterPasteAction"/>
+
+    <action class="objt.common.appmgt.ui.action.ObjectLinkDefaultSetAction"/>
+
+    <action class="objt.common.appmgt.ui.action.ReportManageAction"/>
+    <action class="objt.common.appmgt.ui.action.RoleProfileUserNewAction"/>
+    <action class="objt.common.appmgt.ui.action.RoleProfileDeviceNewAction"/>
+    <action class="objt.common.appmgt.ui.action.RoleProfileEditAction"/>
+    <action class="objt.common.appmgt.ui.action.RoleRoleProfileAddAction"/>
+    <action class="objt.common.appmgt.ui.action.RoleRoleProfileRemoveAction"
+            translate="confirmMessage,listConfirmMessage"/>
+    <action class="objt.common.appmgt.ui.action.RoleRemoveResourceAction"
+            translate="confirmMessage,listConfirmMessage"/>
+    <action class="objt.common.appmgt.ui.action.RoleAddResourceListAction"
+            translate="childlisttabpaneltitle,childlisttabpaneldescription"/>
+    <action class="objt.common.appmgt.ui.action.RoleRemoveParentRoleProfileAction"/>
+    <action class="objt.common.appmgt.ui.action.RoleProfileDeleteAction"/>
+    <action class="objt.common.appmgt.ui.action.RoleProfilePrivilegeManageAction"/>
+    <action class="objt.common.appmgt.ui.action.RoleProfileDevicePrivilegeManageAction"/>
+    <action class="objt.common.appmgt.ui.action.TemplateRoleProfileReApplyAction"/>
+    <action class="objt.common.appmgt.ui.action.TouchCommentAction"/>
+    <action class="objt.common.appmgt.ui.action.RoleProfileRemoveResourceAction"/>
+    <action class="objt.common.appmgt.ui.action.RoleProfileRoleAddAction"/>
+    <action class="objt.common.appmgt.ui.action.RoleProfileRoleRemoveAction"
+            translate="confirmMessage,listConfirmMessage"/>
+    <action class="objt.common.appmgt.ui.action.CreateRoleProfileTemplateAction"/>
+    <action class="objt.common.appmgt.ui.action.ParameterAddAction"/>
+    <action class="objt.common.appmgt.ui.action.ParameterEditAction"/>
+    <action class="objt.common.appmgt.ui.action.ParameterResequenceAction"/>
+    <action class="objt.common.appmgt.ui.action.EventEditAction"/>
+    <action class="objt.common.appmgt.ui.action.AuditTrailHistoryAction"/>
+    <action class="objt.common.appmgt.ui.action.RoleProfileDeviceAddAction"
+            translate="sqlfilteractiontitle,sqlfilteractiondescription,childlisttabpaneltitle,childlisttabpaneldescription"/>
+    <action class="objt.common.appmgt.ui.action.PrivilegeDeviceRoleProfileAddAction"/>
+    <action class="objt.common.appmgt.ui.action.RoleProfileNewAction"/>
+
+    <action class="objt.common.appmgt.ui.action.NumberSequenceDetailRemoveAction"/>
+    <action class="objt.common.appmgt.ui.action.NumberSequenceDetailAddAction"/>
+    <action class="objt.common.appmgt.ui.action.NumberSequenceDetailEditAction"/>
+    <action class="objt.common.appmgt.ui.action.NumberSequenceDetailPasteAction"/>
+
+    <action class="objt.common.appmgt.ui.action.PropertyAddAction"/>
+    <action class="objt.common.appmgt.ui.action.PropertyEditAction"/>
+    <action class="objt.common.appmgt.ui.action.PropertyRemoveAction"/>
+
+    <action class="objt.common.appmgt.ui.action.DownloadableFactoryObjectIsDownloadedToggleAction"/>
+
+    <action class="objt.common.appmgt.ui.action.UploadTransactionCreateAction"/>
+    <action class="objt.common.appmgt.ui.action.UploadTransactionDeleteAction"/>
+    <action class="objt.common.appmgt.ui.action.UploadTransactionResubmitAction"/>
+    <action class="objt.common.appmgt.ui.action.UploadTransactionTriggerAction"/>
+      
+    <action class="objt.common.appmgt.ui.action.MessageSendAction"/>
+
+    <action class="objt.common.appmgt.ui.action.DocumentEditAction"/>
+
+    <action class="objt.common.appmgt.ui.action.CommentAction"/>
+    <action class="objt.common.appmgt.ui.action.ParameterFactoryObjectDocumentAddAction"
+            translate="wizardpanel.1.name,wizardpanel.1.description,wizardpanel.2.name,wizardpanel.2.description,wizardpanel.3.name,wizardpanel.3.description,wizardpanel.4.name,wizardpanel.4.description,wizardpanel.5.name,wizardpanel.5.description" />
+    <action class="objt.common.appmgt.ui.action.ParameterFactoryObjectDocumentRemoveAction"
+            translate="confirmMessage,listConfirmMessage"/>
+    <action class="objt.common.appmgt.ui.action.ParameterFactoryObjectDocumentsEditAction"/>
+    <action class="objt.common.appmgt.ui.action.SQLFilterCopyAction"/>
+    <action class="objt.common.appmgt.ui.action.DocumentPostSaveAction"/>
+    <action class="objt.common.appmgt.ui.action.MetaAttributePostSaveAction"/>
+
+    <!-- objt.common.inventorymgt -->
+    <action class="objt.common.inventorymgt.ui.action.GenealogyAddBOLinkAction" />
+    <action class="objt.common.inventorymgt.ui.action.GenealogyAddBOSqlFilterWizardAction" />
+
+    <!-- objt.common.itemmgt -->
+    <action class="objt.common.itemmgt.ui.action.ContainerNewAction"
+            translate="wizardpanel.1.name,wizardpanel.1.description,wizardpanel.2.name,wizardpanel.2.description,wizardpanel.3.name,wizardpanel.3.description,wizardpanel.4.name,wizardpanel.4.description,wizardpanel.5.name,wizardpanel.5.description" />
+    <action class="objt.common.itemmgt.ui.action.ItemNewAction"
+            translate="wizardpanel.1.name,wizardpanel.1.description,wizardpanel.2.name,wizardpanel.2.description,wizardpanel.3.name,wizardpanel.3.description,wizardpanel.4.name,wizardpanel.4.description,wizardpanel.5.name,wizardpanel.5.description" />
+    <action class="objt.common.itemmgt.ui.action.ItemMultiEditAction"/>
+    <action class="objt.common.itemmgt.ui.action.ItemUomAddAction"/>
+    <action class="objt.common.itemmgt.ui.action.ItemUomEditAction"/>
+    <action class="objt.common.itemmgt.ui.action.ItemUomRemoveAction"
+            translate="confirmMessage,listConfirmMessage"/>
+    <action class="objt.common.itemmgt.ui.action.ItemUomConversionCalculationAction"/>
+    <action class="objt.common.itemmgt.ui.action.ItemGroupItemAddAction"/>
+    <action class="objt.common.itemmgt.ui.action.ItemItemGroupAddAction"
+            translate="childlisttabpaneldescription,childlisttabpaneltitle"/>
+    <action class="objt.common.itemmgt.ui.action.ItemContainerAddAction"/>
+    <action class="objt.common.itemmgt.ui.action.ItemContainerEditAction"/>
+    <action class="objt.common.itemmgt.ui.action.ItemContainerDeleteAction"
+            translate="confirmMessage,listConfirmMessage"/>
+    <action class="objt.common.itemmgt.ui.action.ItemContainerDefaultAction"/>
+    <action class="objt.common.itemmgt.ui.action.ItemAlternateAddAction"/>
+    <action class="objt.common.itemmgt.ui.action.ItemAlternateEditAction"/>
+    <action class="objt.common.itemmgt.ui.action.ItemAlternateDeleteAction"
+            translate="confirmMessage,listConfirmMessage"/>
+    <action class="objt.common.itemmgt.ui.action.ItemAlternateDefaultAction"/>
+    <action class="objt.common.itemmgt.ui.action.PhantomItemBOMItemQtyEditAction"/>
+    <action class="objt.common.itemmgt.ui.action.PhantomItemDeleteAction"/>
+
+    <action class="objt.common.languagemgt.ui.action.FixedTranslationAction" />
+
+    <action class="objt.common.languagemgt.ui.action.FixedTranslationAction" />
+
+    <action class="objt.common.resourcemgt.ui.action.DepartmentRemoveAction" />
+    <action class="objt.common.resourcemgt.ui.action.DocumentTemplateConfigurationAddAction" />
+    <action class="objt.common.resourcemgt.ui.action.DocumentTemplateConfigurationEditAction" />
+    <action class="objt.common.resourcemgt.ui.action.DocumentTemplateConfigurationDeleteAction" />
+    <action class="objt.common.resourcemgt.ui.action.DocumentTemplateConfigurationPasteAction" />
+    <action class="objt.common.resourcemgt.ui.action.DocumentTemplatePrintAction"
+            translate="childlisttabpaneltitle,childlisttabpaneldescription"/>
+    <action class="objt.common.resourcemgt.ui.action.DocumentTemplateFileEditAction"/>
+    <action class="objt.common.resourcemgt.ui.action.DocumentTemplatePreviewSelectAction"/>
+    <action class="objt.common.resourcemgt.ui.action.LabelListManageAction"/>
+    <action class="objt.common.resourcemgt.ui.action.LabelImageListManageAction"/>
+    <action class="objt.common.resourcemgt.ui.action.DocumentTemplatePreviewAction"/>
+    <action class="objt.common.resourcemgt.ui.action.DocumentTemplatePrintPreviewAction"/>
+    <action class="objt.common.resourcemgt.ui.action.EmployeeDeleteAction"/>
+    <action class="objt.common.resourcemgt.ui.action.ResourcePrinterDeviceAddAction"/>
+    <action class="objt.common.resourcemgt.ui.action.ResourcePrinterDeviceDeleteAction"
+            translate="confirmMessage,listConfirmMessage"/>
+    <action class="objt.common.resourcemgt.ui.action.PrinterDeviceDeleteAction"
+            translate="checkMessage1,checkMessage2,checkMessage3,checkMessage4,checkMessage5"/>
+    <action class="objt.common.resourcemgt.ui.action.DocumentTemplateDeleteAction"
+            translate="checkMessage1,checkMessage2,checkMessage3,checkMessage4,checkMessage5"/>
+    <action class="objt.common.resourcemgt.ui.action.TouchDocumentTemplatePrintAction"/>
+    <action class="objt.common.resourcemgt.ui.action.EmployeeDepartmentAddAction"/>
+    <action class="objt.common.resourcemgt.ui.action.EmployeeDepartmentLinkEditAction"/>
+    <action class="objt.common.resourcemgt.ui.action.EmployeeDepartmentRemoveAction"
+            translate="confirmMessage"/>
+    <action class="objt.common.resourcemgt.ui.action.EmployeeDepartmentMoveAction"/>
+    <action class="objt.common.resourcemgt.ui.action.EmployeeGroupEmployeeAddAction"/>
+    <action class="objt.common.resourcemgt.ui.action.EmployeeEmployeeGroupAddAction"
+            translate="childlisttabpaneltitle,childlisttabpaneldescription"/>
+    <action class="objt.common.resourcemgt.ui.action.EmployeeEmployeeGroupRemoveAction"/>
+
+    <action class="objt.common.resourcemgt.ui.action.ResourceDisplayRolesAction"/>
+    <action class="objt.common.resourcemgt.ui.action.ResourceLinkResequenceAction"/>
+    <action class="objt.common.resourcemgt.ui.action.ResourceRoleLinkDefaultSetAction"/>
+    <action class="objt.common.resourcemgt.ui.action.ResourceRoleLinkCopyAction"/>
+    <action class="objt.common.resourcemgt.ui.action.ResourceRoleLinkPasteAction"/>
+    <action class="objt.common.resourcemgt.ui.action.ResourceRoleAddAction"/>
+    <action class="objt.common.resourcemgt.ui.action.ResourceRoleProfileRemoveAction"/>
+    <action class="objt.common.resourcemgt.ui.action.ResourcePrivilegeManageAction"/>
+    <action class="objt.common.resourcemgt.ui.action.ResourcePrintOperationDeleteAction"
+            translate="confirmMessage,listConfirmMessage"/>
+    <action class="objt.common.resourcemgt.ui.action.ResourcePrintOperationDefaultAction"/>
+    <action class="objt.common.resourcemgt.ui.action.ResourceUniqueChildResourceAddAction"
+            translate="childlisttabpaneltitle,childlisttabpaneldescription,uniqueConstraintErrorMessage"/>
+    <action class="objt.common.resourcemgt.ui.action.ResourceChildResourceRemoveAction"
+            translate="confirmMessage,listConfirmMessage"/>
+
+    <action class="objt.common.resourcemgt.ui.action.DeviceWorkCenterAddAction"/>
+
+    <action class="objt.common.resourcemgt.ui.action.EmployeeBeIDNewAction"/>
+    <action class="objt.common.resourcemgt.ui.action.EmployeeBeIDEditAction"/>
+    <action class="objt.common.resourcemgt.ui.action.EmployeePasswordEditAction" />
+    <action class="objt.common.resourcemgt.ui.action.EmployeeMultiEditAction"/>
+
+    <action class="objt.common.rulemgt.ui.action.OperationInstructionLinkSeqChangeAction"/>
+    <action class="objt.common.rulemgt.ui.action.RuleOperationCreateAction"/>
+    <action class="objt.common.rulemgt.ui.action.RuleOperationModifyAction"/>
+    <action class="objt.common.rulemgt.ui.action.RuleOperationRemoveAction"
+            translate="confirmMessage"/>
+    <action class="objt.common.rulemgt.ui.action.OperationRulePasteAction"/>
+    <action class="objt.common.rulemgt.ui.action.RuleOperationPasteAction"/>
+    <action class="objt.common.rulemgt.ui.action.OperationRuleAddAction"/>
+    <action class="objt.common.rulemgt.ui.action.OperationRuleRemoveAction"
+            translate="confirmMessage,listConfirmMessage"/>
+
+    <action class="objt.common.time.ui.action.CalendarNewAction"/>
+    <action class="objt.common.time.ui.action.CalendarUpdateAction"/>
+    <action class="objt.common.time.ui.action.CalendarSetDefaultAction"/>
+    <action class="objt.common.time.ui.action.CalendarEditAction"/>
+    <action class="objt.common.time.ui.action.DayNewAction"/>
+    <action class="objt.common.time.ui.action.DayEditAction"/>
+    <action class="objt.common.time.ui.action.ShiftManageAction"/>
+    <action class="objt.common.time.ui.action.ScheduleTriggerAction" />
+    <action class="objt.common.time.ui.action.ScheduleUpdateAction"/>
+    <action class="objt.common.time.ui.action.CalendarApplyAction"/>
+
+    <action class="objt.common.uommgt.ui.action.UomConfigAction"/>
+
+    <action class="objt.common.appmgt.ui.action.XRDataPointIsExcludedToggleAction"/>
+    <action class="objt.common.appmgt.ui.action.XRDataPointCommentAction"/>
+
+    <action class="objt.common.itemmgt.ui.action.SerialIdentificationConfigurationDeleteAction"/>
+    <action class="objt.common.itemmgt.ui.action.SerialIdentificationConfigurationUpdateAction"/>
+    <action class="objt.common.itemmgt.ui.action.SerialIdentificationConfigurationInfoAction"/>
+    <action class="objt.common.itemmgt.ui.action.SerialIdentificationConfigurationAddAction"/>
+    <action class="objt.common.itemmgt.ui.action.SerialIdentificationConfigurationEditAction"/>
+    <action class="objt.common.itemmgt.ui.action.SerialIdentificationConfigurationPasteAction"/>
+
+    <!--Operatorclient-->
+    <action class="objt.common.appmgt.operatorclient.ui.action.MessageDisplayAction"/>
+    <action class="objt.common.appmgt.operatorclient.ui.action.MessageConfirmAction"/>
+  </actions>
+
+  <tabpanels>
+    <tabpanel class="objt.common.appmgt.ui.ControlChartTabPanel$HistogramUseIndividualValuesOptionsPanel"/>
+    <tabpanel class="objt.common.appmgt.ui.ApplicationPrivilegeTabPanel"/>
+    <tabpanel class="objt.common.appmgt.ui.DimensionTabPanel"/>
+    <tabpanel class="objt.common.appmgt.ui.DocumentPreviewTabPanel"/>
+    <tabpanel class="objt.common.appmgt.ui.RoleResourceListTabPanel"
+              csvtranslate="attributeTitles"
+              csvattribute="attributePaths"/>
+    <tabpanel class="objt.common.appmgt.ui.PrivilegeTabPanel"/>
+    <tabpanel class="objt.common.appmgt.ui.PrivilegeSelectionTabPanel"/>
+    <tabpanel class="objt.common.appmgt.ui.DeviceRoleProfilePropertiesTabPanel"/>
+    <tabpanel class="objt.common.appmgt.ui.DocumentTabPanel"/>
+
+    <tabpanel class="objt.common.appmgt.ui.UploadTransactionTabPanel"
+              csvtranslate="attributeTitles"
+              csvattribute="attributePaths"/>
+    <tabpanel class="objt.common.appmgt.ui.SubUploadTransactionTabPanel"
+              csvtranslate="attributeTitles"
+              csvattribute="attributePaths"/>
+
+    <tabpanel class="objt.common.appmgt.ui.SkillPropertiesTabPanel"/>
+    <tabpanel class="objt.common.appmgt.ui.PrivilegePropertiesTabPanel"/>
+
+    <tabpanel class="objt.common.appmgt.ui.MeasurementSPCChartTabPanel"/>
+    <tabpanel class="objt.common.appmgt.ui.MeasurementSPCChartTabPanel$SPCChartTypeSelector"/>
+    <tabpanel class="objt.common.appmgt.ui.ControlChartTabPanel"/>
+    <tabpanel class="objt.common.appmgt.ui.ControlChartTabPanel$LimitOptionsPanel"/>
+    <tabpanel class="objt.common.appmgt.ui.ControlChartTabPanel$DomainAxisOptionsPanel"/>
+    <tabpanel class="objt.common.appmgt.ui.ControlChartTabPanel$DataTypeOptionsPanel"/>
+    <tabpanel class="objt.common.appmgt.ui.ControlChartTabPanel$ExcludedPointsVisibleToggleAction"/>
+    <tabpanel class="objt.common.appmgt.ui.ControlChartTabPanel$ValueTypeOptionsPanel"/>
+    <tabpanel class="objt.common.appmgt.ui.ControlChartTabPanel$HistogramUseIndividualValuesOptionsPanel"/>
+    <tabpanel class="objt.common.appmgt.ui.HistogramChartTabPanel"/>
+    <tabpanel class="objt.common.appmgt.ui.HistogramChartTabPanel$ShowDetailsToggleAction"/>
+    <tabpanel class="objt.common.appmgt.ui.HistogramChartTabPanel$ValueTypeOptionsPanel"/>
+    <tabpanel class="objt.common.appmgt.ui.HistogramChartTabPanel$NominalToggleAction"/>
+    <tabpanel class="objt.common.appmgt.ui.UIMetaConfigurationTabPanel"/>
+
+    <tabpanel class="objt.common.contactmgt.ui.AddressListTabPanel"
+              csvtranslate="listAttributeTitles,addressAttributeTitles"/>
+
+    <tabpanel class="objt.common.generic.ui.UserFieldTabPanel"/>
+
+    <!-- objt.common.inventorymgt.ui -->
+    <tabpanel class="objt.common.inventorymgt.ui.GenealogySessionInfoTabPanel" />
+    <tabpanel class="objt.common.inventorymgt.ui.GenealogyTabPanel" />
+    <tabpanel class="objt.common.inventorymgt.ui.LotGenealogyTabPanel" csvtranslate="attributeTitles"/>
+
+    <tabpanel class="objt.common.itemmgt.ui.ItemPropertiesTabPanel"/>
+    <tabpanel class="objt.common.itemmgt.ui.ItemLotControlTabPanel"/>
+    <tabpanel class="objt.common.itemmgt.ui.ItemGroupPropertiesTabPanel"/>
+    <tabpanel class="objt.common.itemmgt.ui.ContainerPropertiesTabPanel"/>
+    <tabpanel class="objt.common.itemmgt.ui.PhantomItemPropertiesTabPanel"/>
+
+    <!-- Package dce.pd.frame.explorer.languagemgt -->
+    <tabpanel class="objt.common.languagemgt.ui.FixedTranslationTabPanel" />
+
+    <!-- Package dce.pd.frame.explorer.languagemgt -->
+    <tabpanel class="objt.common.languagemgt.ui.FixedTranslationTabPanel" />
+
+    <tabpanel class="objt.common.resourcemgt.ui.EmployeePropertiesTabPanel"/>
+    <tabpanel class="objt.common.resourcemgt.ui.EmployeePersonalDataTabPanel"/>
+    <tabpanel class="objt.common.resourcemgt.ui.ResourceRoleProfileListTabPanel"
+              csvtranslate="attributeTitles"
+              csvattribute="attributePaths"/>
+    <tabpanel class="objt.common.resourcemgt.ui.CustomerPropertiesTabPanel"/>
+    <tabpanel class="objt.common.resourcemgt.ui.SupplierPropertiesTabPanel"/>
+    <tabpanel class="objt.common.resourcemgt.ui.CarrierPropertiesTabPanel"/>
+    <tabpanel class="objt.common.resourcemgt.ui.ConfigurationPropertiesTabPanel"/>
+    <tabpanel class="objt.common.resourcemgt.ui.AuthenticationConfigurationTabPanel"/>
+    <tabpanel class="objt.common.resourcemgt.ui.EmployeeImageTabPanel"/>
+    <tabpanel class="objt.common.resourcemgt.ui.EmployeeGroupPropertiesTabPanel"/>
+    <tabpanel class="objt.common.resourcemgt.ui.TouchDeviceParameterTabPanel"/>
+    <tabpanel class="objt.common.resourcemgt.ui.ThinDeviceParameterTabPanel"/>
+    <tabpanel class="objt.common.resourcemgt.ui.DepartmentPropertiesTabPanel"/>
+    <tabpanel class="objt.common.resourcemgt.ui.DefaultItemOptionsTabPanel"/>
+    <tabpanel class="objt.common.resourcemgt.ui.DevicePropertiesTabPanel"/>
+    <tabpanel class="objt.common.resourcemgt.ui.DocumentTemplateGroupPropertiesTabPanel"/>
+    <tabpanel class="objt.common.resourcemgt.ui.DocumentTemplatePropertiesTabPanel"/>
+    <tabpanel class="objt.common.resourcemgt.ui.PrinterDevicePropertiesTabPanel"/>
+    <tabpanel class="objt.common.resourcemgt.ui.PrinterDeviceGroupPropertiesTabPanel"/>
+    <tabpanel class="objt.common.resourcemgt.ui.SubConfigurationPropertiesTabPanel"/>
+    <tabpanel class="objt.common.resourcemgt.ui.PrinterDeviceCommunicationsTabPanel"/>
+    <tabpanel class="objt.common.resourcemgt.ui.WindowsDeviceParameterTabPanel"/>
+    <tabpanel class="objt.common.resourcemgt.ui.DefaultAuditTrailOptionsTabPanel"/>
+
+    <tabpanel class="objt.common.rulemgt.ui.OperationRuleListTabPanel"
+              csvtranslate="attributeTitles"
+              csvattribute="attributePaths" />
+    <tabpanel class="objt.common.rulemgt.ui.GenericOperationRuleTabPanel" />
+    <tabpanel class="objt.common.rulemgt.ui.RuleOperationPropertiesTabPanel" />
+
+    <tabpanel class="objt.common.time.ui.SchedulePropertiesTabPanel" />
+    <tabpanel class="objt.common.time.supervisor.panel.AbstractResourceCalendarDayOverviewChildListTabPanel"/>
+
+    <tabpanel class="objt.common.uommgt.ui.GeneralDimensionTabPanel" />
+    <tabpanel class="objt.common.uommgt.ui.GeneralUomTabPanel" />
+
+    <tabpanel class="objt.common.appmgt.operatorclient.ui.MessageOperationTabPanel" />
+  </tabpanels>
+
+  <xmlfiles>
+    <xmlfile name="departmenttreeselection.xml">
+      <node name="basenode" translate="title"/>
+    </xmlfile>
+    <xmlfile name="documenttemplatetreeselection.xml">
+      <node name="basenode" translate="title"/>
+    </xmlfile>
+    <xmlfile name="printerdevicetreeselection.xml">
+      <node name="basenode" translate="title"/>
+    </xmlfile>
+    <xmlfile name="warehouslocationsqltreeselection.xml">
+      <node name="basenode" translate="title"/>
+    </xmlfile>
+
+    <!-- translate name and description of defined privileges -->
+    <xmlfile name="privileges.xml">
+      <node name="privilege" translate="application,module,domain,category,name,description"/>
+    </xmlfile>
+
+    <!-- scan the text entries of listvalidators defined in the metafile -->
+    <xmlfile name="meta.xml">
+      <node name="listitem" translate="text"/>
+      <node name="attribute" translate="title,tooltip"/>
+    </xmlfile>
+
+    <!-- UI meta: translate class, attribute and association titles -->
+    <xmlfile name="uimeta.xml">
+      <node name="class" translate="title"/>
+      <node name="attribute" translate="title"/>
+      <node name="attributegroup" translate="title"/>
+      <node name="association" translate="title"/>
+    </xmlfile>
+
+    <xmlfile name="employees_audittrailconfig.xml">
+      <node name="owner" translate="ownertitle"/>
+      <node name="association" translate="associatedobjecttitle"/>
+      <node name="attribute" translate="title"/>
+      <node name="add" translate="description"/>
+      <node name="remove" translate="description"/>
+      <node name="update" translate="description"/>
+    </xmlfile>
+
+    <xmlfile name="privileges_audittrailconfig.xml">
+      <node name="owner" translate="ownertitle"/>
+      <node name="association" translate="associatedobjecttitle"/>
+      <node name="attribute" translate="title"/>
+      <node name="add" translate="description"/>
+      <node name="remove" translate="description"/>
+      <node name="update" translate="description"/>
+    </xmlfile>
+
+    <xmlfile name="skills_audittrailconfig.xml">
+      <node name="owner" translate="ownertitle"/>
+      <node name="association" translate="associatedobjecttitle"/>
+      <node name="attribute" translate="title"/>
+      <node name="add" translate="description"/>
+      <node name="remove" translate="description"/>
+      <node name="update" translate="description"/>
+    </xmlfile>
+
+    <xmlfile name="roleprofiles_audittrailconfig.xml">
+      <node name="owner" translate="ownertitle"/>
+      <node name="association" translate="associatedobjecttitle"/>
+      <node name="attribute" translate="title"/>
+      <node name="add" translate="description"/>
+      <node name="remove" translate="description"/>
+      <node name="update" translate="description"/>
+    </xmlfile>
+
+    <xmlfile name="devices_audittrailconfig.xml">
+      <node name="owner" translate="ownertitle"/>
+      <node name="association" translate="associatedobjecttitle"/>
+      <node name="attribute" translate="title"/>
+      <node name="add" translate="description"/>
+      <node name="remove" translate="description"/>
+      <node name="update" translate="description"/>
+    </xmlfile>
+
+    <xmlfile name="departments_audittrailconfig.xml">
+      <node name="owner" translate="ownertitle"/>
+      <node name="association" translate="associatedobjecttitle"/>
+      <node name="attribute" translate="title"/>
+      <node name="add" translate="description"/>
+      <node name="remove" translate="description"/>
+      <node name="update" translate="description"/>
+    </xmlfile>
+
+    <xmlfile name="documenttemplates_audittrailconfig.xml">
+      <node name="owner" translate="ownertitle"/>
+      <node name="association" translate="associatedobjecttitle"/>
+      <node name="attribute" translate="title"/>
+      <node name="add" translate="description"/>
+      <node name="remove" translate="description"/>
+      <node name="update" translate="description"/>
+    </xmlfile>
+
+    <xmlfile name="labelgroups_audittrailconfig.xml">
+      <node name="owner" translate="ownertitle"/>
+      <node name="association" translate="associatedobjecttitle"/>
+      <node name="attribute" translate="title"/>
+      <node name="add" translate="description"/>
+      <node name="remove" translate="description"/>
+      <node name="update" translate="description"/>
+    </xmlfile>
+
+    <xmlfile name="documenttemplateconfigurations_audittrailconfig.xml">
+      <node name="owner" translate="ownertitle"/>
+      <node name="association" translate="associatedobjecttitle"/>
+      <node name="attribute" translate="title"/>
+      <node name="add" translate="description"/>
+      <node name="remove" translate="description"/>
+      <node name="update" translate="description"/>
+    </xmlfile>
+
+    <xmlfile name="containers_audittrailconfig.xml">
+      <node name="owner" translate="ownertitle"/>
+      <node name="association" translate="associatedobjecttitle"/>
+      <node name="attribute" translate="title"/>
+      <node name="add" translate="description"/>
+      <node name="remove" translate="description"/>
+      <node name="update" translate="description"/>
+    </xmlfile>
+
+    <xmlfile name="items_audittrailconfig.xml">
+      <node name="owner" translate="ownertitle"/>
+      <node name="association" translate="associatedobjecttitle"/>
+      <node name="attribute" translate="title"/>
+      <node name="add" translate="description"/>
+      <node name="remove" translate="description"/>
+      <node name="update" translate="description"/>
+    </xmlfile>
+
+    <xmlfile name="phantomitems_audittrailconfig.xml">
+      <node name="owner" translate="ownertitle"/>
+      <node name="association" translate="associatedobjecttitle"/>
+      <node name="attribute" translate="title"/>
+      <node name="add" translate="description"/>
+      <node name="remove" translate="description"/>
+      <node name="update" translate="description"/>
+    </xmlfile>
+
+    <xmlfile name="itemgroups_audittrailconfig.xml">
+      <node name="owner" translate="ownertitle"/>
+      <node name="association" translate="associatedobjecttitle"/>
+      <node name="attribute" translate="title"/>
+      <node name="add" translate="description"/>
+      <node name="remove" translate="description"/>
+      <node name="update" translate="description"/>
+    </xmlfile>
+
+    <xmlfile name="printerdevices_audittrailconfig.xml">
+      <node name="owner" translate="ownertitle"/>
+      <node name="association" translate="associatedobjecttitle"/>
+      <node name="attribute" translate="title"/>
+      <node name="add" translate="description"/>
+      <node name="remove" translate="description"/>
+      <node name="update" translate="description"/>
+    </xmlfile>   
+
+    <xmlfile name="customers_audittrailconfig.xml">
+      <node name="owner" translate="ownertitle"/>
+      <node name="association" translate="associatedobjecttitle"/>
+      <node name="attribute" translate="title"/>
+      <node name="add" translate="description"/>
+      <node name="remove" translate="description"/>
+      <node name="update" translate="description"/>
+    </xmlfile>
+
+    <xmlfile name="carriers_audittrailconfig.xml">
+      <node name="owner" translate="ownertitle"/>
+      <node name="association" translate="associatedobjecttitle"/>
+      <node name="attribute" translate="title"/>
+      <node name="add" translate="description"/>
+      <node name="remove" translate="description"/>
+      <node name="update" translate="description"/>
+    </xmlfile>
+
+    <xmlfile name="suppliers_audittrailconfig.xml">
+      <node name="owner" translate="ownertitle"/>
+      <node name="association" translate="associatedobjecttitle"/>
+      <node name="attribute" translate="title"/>
+      <node name="add" translate="description"/>
+      <node name="remove" translate="description"/>
+      <node name="update" translate="description"/>
+    </xmlfile>
+
+    <xmlfile name="uoms_audittrailconfig.xml">
+      <node name="owner" translate="ownertitle"/>
+      <node name="association" translate="associatedobjecttitle"/>
+      <node name="attribute" translate="title"/>
+      <node name="add" translate="description"/>
+      <node name="remove" translate="description"/>
+      <node name="update" translate="description"/>
+    </xmlfile>
+
+    <xmlfile name="items_multieditconfig.xml">
+      <node name="module" translate="title"/>
+      <node name="group" translate="title"/>
+      <node name="section" translate="title"/>
+      <node name="attribute" translate="title"/>
+      <node name="constraint" translate="message"/>
+    </xmlfile>
+
+    <xmlfile name="employees_multieditconfig.xml">
+      <node name="module" translate="title"/>
+      <node name="group" translate="title"/>
+      <node name="section" translate="title"/>
+      <node name="attribute" translate="title"/>
+      <node name="constraint" translate="message"/>
+    </xmlfile>
+  </xmlfiles>
+</config>

@@ -1,0 +1,161 @@
+By downloading, or installing, or using this product, you indicate your 
+acceptance of the following DJT License Agreement. This is a legal agreement 
+between you (either an individual or an entity) and Dirk Lemmermann Software &
+Consulting ("DLSC"). If you do not accept and agree with all of the terms of 
+this agreement, do not order or download the DJT class library or any source 
+code for the DJT class library.
+
+SOFTWARE LICENSE  
+
+
+The SOFTWARE is protected by copyright laws and international copyright 
+treaties, as well as other intellectual property laws and treaties. 
+The SOFTWARE is licensed, not sold.
+
+1. GRANT OF LICENSE  
+
+
+1.1 If You Have Any Version Of A DJT Product: This license permits you to use
+the class libraries, including source code if you have purchased it (i.e. Java
+Packages), which may include electronic documentation (the "SOFTWARE"), on a 
+single computer:
+
+i) To Build Applets. Provided that applets you build are used only as an 
+   internal component in end-user oriented user-interfaces, you may copy them 
+   to additional computers (e.g. Web Servers), from which you may allow 
+   end-users to download, royalty-free, the applets in the course of browsing 
+   or interacting with Web pages you create. You are not permitted to 
+   distribute the applets in any fashion which would promote, encourage or 
+   allow reuse or redistribution of the applet, other than as permitted above;
+   and
+
+ii) To Build Stand-Alone Java Applications. You have a royalty-free right to 
+    reproduce and distribute the class libraries as an integral part of your 
+    application(s), subject to the restrictions below. 
+
+1.2 Source Code. If you have purchased the "Source Code" version of any 
+    product, you must use reasonable efforts to maintain the confidentiality 
+    of the source code, including ensuring that it is installed and used only 
+    on the single machine (individual source code license) or machines (source
+    code site license) for which it is licensed, and that it is not otherwise 
+    used or copied.
+
+
+1.3 Limited Distribution Rights. Your royalty-free distribution rights 
+    described in Section 1.1 above are granted provided that you: 
+
+(a) distribute the Applet or applets you build only in conjunction with and as
+    an integral part of your Web pages, and distribute the class libraries only
+    as an integral part of your end-user, stand-alone application;
+
+(b) your Web pages or software product(s) are targeted at end-users, and are 
+    not a development tool;
+
+(c) you do not use DLSC's name to market your Web pages or application;
+
+(d) you include a valid copyright notice on your Web pages and software 
+    products; and
+
+(e) you agree to indemnify, hold harmless, and defend DLSC and its suppliers 
+    from and against any claims or lawsuits, including attorney's fees, that 
+    arise or result from the use or distribution of your Web pages and/or 
+    applications. 
+
+1.4 Use Definition. The SOFTWARE is "in use" on a computer when it is loaded 
+    into temporary memory (i.e. RAM) or installed into permanent memory (e.g. 
+    hard disk, CD-ROM, or other storage device) of that computer, except that 
+    a copy installed on a network server for the sole purpose of distribution 
+    to other computers is not "in use".
+
+2. COPYRIGHT  
+
+
+The SOFTWARE (including any images, photographs and text incorporated into the
+SOFTWARE) is owned by DLSC or its suppliers and is protected by Germany's and 
+other countries' copyright laws and international treaty provisions. Therefore
+you must treat the SOFTWARE like any other copyrighted material and not 
+reproduce it except that you may either: (a) make one copy of the SOFTWARE 
+solely for backup or archival purposes, or (b) transfer the SOFTWARE to a 
+single hard disk provided you keep the original solely for backup or archival 
+purposes. You may not copy the printed materials accompanying the SOFTWARE. 
+
+3. OTHER RESTRICTIONS  
+
+
+You may not rent or lease the SOFTWARE, but you may transfer the SOFTWARE and 
+accompanying written materials on a permanent basis provided you retain no 
+copies and the recipient agrees to the terms of this License Agreement. You may
+not reverse engineer, decompile, disassemble, or translate the SOFTWARE, 
+except to the extent such foregoing restriction is expressly prohibited by 
+applicable law. 
+
+4. MISCELLANEOUS  
+
+
+This license agreement is governed by the laws of Germany, and the parties 
+agree to resolve any dispute exclusively in the courts of Lower Saxony, 
+Germany. 
+
+5. LIMITED WARRANTY  
+
+
+LIMITED WARRANTY. DLSC warrants that (a) the SOFTWARE will perform 
+substantially in accordance with the accompanying written materials for a 
+period of ninety (90) days from the date of receipt, and (b) any Support 
+Services provided by DLSC shall be substantially as described in applicable 
+written materials provided to you by DLSC, and DLSC will make commercially 
+reasonable efforts to solve any problem issues. Some states and jurisdictions 
+do not allow limitations on duration of an implied warranty, so the above 
+limitation may not apply to you. To the extent allowed by applicable law, 
+implied warranties on the SOFTWARE, if any, are limited to ninety (90) days. 
+
+CUSTOMER REMEDIES. DLSC's and its suppliers' entire liability and your 
+exclusive remedy shall be, at DLSC's option, either (a) return of the price 
+paid, if any, or (b) repair or replacement of the SOFTWARE that does not meet 
+DLSC's Limited Warranty and that is returned to DLSC with a copy of your 
+receipt. This Limited Warranty is void if failure of the SOFTWARE has resulted
+from accident, abuse, or misapplication. Any replacement SOFTWARE will be 
+warranted for the remainder of the original warranty period or thirty (30) 
+days, whichever is longer.
+
+SPECIFIC DISCLAIMER FOR HIGH-RISK ACTIVITIES. The SOFTWARE is not designed or 
+intended for use in high-risk activities including, without restricting the 
+generality of the foregoing, on-line control of aircraft, air traffic, 
+aircraft navigation or aircraft communications; or in the design, construction,
+operation or maintenance of any nuclear facility. DLSC and its suppliers 
+specifically disclaim any express or implied warranty of fitness for such 
+purposes or any other purposes. 
+
+NO LIABILITY FOR CONSEQUENTIAL DAMAGES. To the maximum extent permitted by 
+applicable laws, in no event shall DLSC or its suppliers be liable for any 
+damages whatsoever (including without limitation, damages for loss of business
+profits, business interruption, loss of information, or other pecuniary loss) 
+arising out of the use of or inability to use this DLSC product, even if DLSC 
+has been advised of the possibility of such damages. Because some states and 
+jurisdictions do not allow the exclusion or limitation of liability for 
+consequential or incidental damages, the above limitation may not apply to 
+you. 
+
+NO OTHER WARRANTIES. TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, DLSC 
+AND ITS SUPPLIERS DISCLAIM ALL OTHER WARRANTIES, EITHER EXPRESS OR IMPLIED, 
+INCLUDING, BUT NOT LIMITED TO, IMPLIED WARRANTIES OF MERCHANTABILITY AND 
+FITNESS FOR A PARTICULAR PURPOSE, WITH REGARD TO THE SOFTWARE AND THE 
+ACCOMPANYING PRINTED MATERIALS. THIS LIMITED WARRANTY GIVES YOU SPECIFIC 
+LEGAL RIGHTS. YOU MAY HAVE OTHERS WHICH VARY FROM STATE/JURISDICTION TO 
+STATE/JURISDICTION. 
+
+6. LIMITATION OF LIABILITY  
+
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL DLSC OR 
+ITS SUPPLIERS BE LIABLE FOR ANY SPECIAL, INCIDENTAL, INDIRECT, OR 
+CONSEQUENTIAL DAMAGES WHATSOEVER (INCLUDING, WITHOUT LIMITATION, DAMAGES FOR 
+LOSS OF BUSINESS PROFITS, BUSINESS INTERRUPTION, LOSS OF BUSINESS INFORMATION,
+OR ANY OTHER PECUNIARY LOSS) ARISING OUT OF THE USE OF OR INABILITY TO USE THE
+SOFTWARE OR THE PROVISION OF OR FAILURE TO PROVIDE SUPPORT SERVICES, EVEN IF 
+DLSC HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. IN ANY CASE, 
+DLSC'S ENTIRE LIABILITY UNDER ANY PROVISION OF THIS AGREEMENT SHALL BE LIMITED
+TO THE GREATER OF THE AMOUNT ACTUALLY PAID BY YOU FOR THE SOFTWARE OR 10.00 EURO; PROVIDED, HOWEVER, IF YOU HAVE ENTERED INTO A DLSC SUPPORT SERVICES 
+AGREEMENT, DLSC'S ENTIRE LIABILITY REGARDING SUPPORT SERVICES SHALL BE 
+GOVERNED BY THE TERMS OF THAT AGREEMENT. BECAUSE SOME STATES AND JURISDICTIONS
+DO NOT ALLOW THE EXCLUSION OR LIMITATION OF LIABILITY, THE ABOVE LIMITATION 
+MAY NOT APPLY TO YOU. 

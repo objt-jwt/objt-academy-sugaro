@@ -1,0 +1,243 @@
+pipeline {
+  agent any
+
+  //  parameters {
+  //
+  //  }
+
+  stages {
+    stage('Prepare') {
+      steps {
+        script {
+          // clean workspace
+          cleanWs()
+
+          // checkout
+          def res = checkout(scm)
+
+          env.GIT_BRANCH = res["GIT_BRANCH"]
+          env.GIT_LOCAL_BRANCH = env.GIT_BRANCH.replace("origin/", "")
+          env.GIT_URL = res["GIT_URL"]
+          env.GIT_REPOSITORY = env.GIT_URL.split("/")[1].replace(".git", "")
+
+          // releasetool base url
+          if (!env.RELEASETOOL_BASEURL) {
+            env.RELEASETOOL_BASEURL = "http://s0-rdi:49600"
+          }
+          println("using release tool: " + env.RELEASETOOL_BASEURL)
+
+          // load properties
+          echo "Read properties"
+          
+          jenkinsProperties = readProperties file: "jenkins/distribution/${BUILD_ENVIRONMENT_NAME}/jenkins.properties"
+          jenkinsProperties.each {
+            echo "Read property: ${it}"
+          }
+          //BUILD_VERSION='7.0.0.0' # to be injected via jenkins pipeline
+          //BUILD_MATURITY_LEVEL='dev' # to be injected via jenkins pipeline
+          //BUILD_ENVIRONMENT_NAME='qa_intern' # to be injected via jenkins pipeline
+          env.VERSION_PROPERTIES_PATH = jenkinsProperties['VERSION_PROPERTIES_PATH']
+          env.PROJECT_MAIL_RECIPIENT = jenkinsProperties['PROJECT_MAIL_RECIPIENT']
+          env.SLACK_CHANNEL = jenkinsProperties['SLACK_CHANNEL']
+          env.SERVICE_NAME = jenkinsProperties['SERVICE_NAME']
+          env.DEPLOY_TEAM_SERVER = jenkinsProperties['DEPLOY_TEAM_SERVER']
+          env.BUILD_JDK = jenkinsProperties['BUILD_JDK']
+
+          env.JIRA_RELEASE = jenkinsProperties['JIRA_RELEASE']
+          env.JIRA_PROJECT_KEY = jenkinsProperties['JIRA_PROJECT_KEY']
+          env.JIRA_VERSION = jenkinsProperties['JIRA_VERSION']
+          env.JIRA_ARCHIVE = jenkinsProperties['JIRA_ARCHIVE']
+          env.JIRA_PREPARE_NEXT = jenkinsProperties['JIRA_PREPARE_NEXT']
+
+          env.GITHUB_RELEASE = jenkinsProperties['GITHUB_RELEASE']
+
+          // set build name
+          echo 'Determining build name...'
+
+          versionProperties = readProperties file: VERSION_PROPERTIES_PATH
+          env.BUILD_VERSION = versionProperties['build.version']
+          buildDate = new Date().format('yyyyMMdd.HHmmss')
+          buildName = versionProperties['build.version'] + " BUILD " + buildDate
+          currentBuild.displayName = buildName
+
+          echo 'Build name set to: ' + currentBuild.displayName
+
+          // set zip file name
+          env.ZIP_FILE_NAME = "${JOB_BASE_NAME}_${currentBuild.displayName}.zip".replace(" ", "_")
+        }
+      }
+    }
+
+    stage('Build') {
+
+      tools {
+        jdk env.BUILD_JDK
+      }
+
+      steps {
+        // build gradle
+        bat "gradlew buildProjectDeployment -PdistributionName=standard -PenvironmentName=${BUILD_ENVIRONMENT_NAME} -PmaturityLevel=${BUILD_MATURITY_LEVEL} -Pversion=${BUILD_VERSION}"
+      }
+    }
+
+    stage('Deploy') {
+
+      parallel {
+        stage('Archive') {
+          steps {
+            // archive artifact
+            archiveArtifacts artifacts: '/build/install/**/*.*', fingerprint: true, onlyIfSuccessful: true, excludes: '/build/install/java/**/*.*'
+          }
+        }
+
+        stage('Deploy on Team Server') {
+          when {
+             environment name: 'DEPLOY_TEAM_SERVER', value: 'true'
+          }
+
+          steps {
+            // get state of service
+            script {
+              def serviceState = bat(script: 'sc query %SERVICE_NAME% || exit 0', returnStdout: true)
+              if (serviceState.contains('RUNNING')) {
+                // stop service
+                env.SERVICE_STATE = 'RUNNING'
+                echo 'Service state RUNNING, stop service'
+                bat 'net stop %SERVICE_NAME%'
+              }
+              else if (serviceState.contains('STOPPED')) {
+                // do nothing
+                env.SERVICE_STATE = 'STOPPED'
+                echo 'Service state STOPPED'
+              }
+              else {
+                // service does not exist
+                env.SERVICE_STATE = 'NOT_INSTALLED'
+                echo 'Service state NOT_INSTALLED,'
+              }
+            }
+
+            // copy files
+            bat """
+                 robocopy build/install/ "D:/Objective/%JOB_BASE_NAME%" /MIR /NFL /NP /XD "data" "logs"
+                 exit 0
+                 """
+
+            // start service if it was running
+            script {
+              if (env.SERVICE_STATE.equals('RUNNING')) {
+                echo 'Service was running, start service again'
+                bat 'net start %SERVICE_NAME%'
+              }
+              else if (env.SERVICE_STATE.equals('NOT_INSTALLED')) {
+                 echo 'Service was not installed, install service'
+                 bat '"D:/Objective/%JOB_BASE_NAME%/objt.applicationserver/bin/wrapper.exe" -i wrapper.ini'
+              }
+            }
+          }
+        }
+      }
+    }
+
+    stage('Github Release') {
+      when {
+        environment name: 'GITHUB_RELEASE', value: 'true'
+      }
+      steps {
+        script {
+          def versionParts = env.BUILD_VERSION.split(/[.-]/)
+          def tagName = "${versionParts[0]}.${versionParts[1]}/${versionParts[0]}.${versionParts[1]}.${versionParts[2]}/${BUILD_VERSION}"
+
+          def cmd = "curl -s -o curl_github_release.out -w \"%%{http_code}\" -X POST \"${RELEASETOOL_BASEURL}/api/v1/git/release-head\" -H \"accept: */*\" -H \"Content-Type: application/json\" -d \"{ \\\"branch\\\": \\\"${GIT_LOCAL_BRANCH}\\\", \\\"jiraProjectKey\\\": \\\"${JIRA_PROJECT_KEY}\\\", \\\"repo\\\": \\\"${GIT_REPOSITORY}\\\", \\\"releaseName\\\": \\\"${BUILD_VERSION}\\\", \\\"tagName\\\": \\\"${tagName}\\\"}\""
+          stdout = bat(returnStdout:true, script: cmd).trim()
+          httpresult = stdout.readLines().drop(1).join(" ")
+          if (httpresult != "200") {
+            println("release head of branch failed:\n${stdout}")
+            error("release head of branch failed: httpresult ${httpresult}")
+          }
+        }
+      }
+    }
+
+    stage('Jira Release') {
+      when {
+        environment name: 'JIRA_RELEASE', value: 'true'
+      }
+      steps {
+        script {
+          def cmd = "curl -s -o curl_jira_release.out -w \"%%{http_code}\" -X POST \"${RELEASETOOL_BASEURL}/api/v1/jira/release\" -H \"accept: application/json\" -H \"Content-Type: application/json\" -d \"{ \\\"archive\\\": ${JIRA_ARCHIVE}, \\\"jiraProjectKey\\\": \\\"${JIRA_PROJECT_KEY}\\\", \\\"jiraReleaseVersion\\\": \\\"${BUILD_VERSION}\\\", \\\"jiraVersion\\\": \\\"${JIRA_VERSION}\\\", \\\"prepareNext\\\": ${JIRA_PREPARE_NEXT}}\""
+          stdout = bat(returnStdout:true, script: cmd).trim()
+          httpresult = stdout.readLines().drop(1).join(" ")
+          if (httpresult != "200") {
+            println("jira release failed:\n${stdout}")
+            error("jira release failed: httpresult ${httpresult}")
+          }
+        }
+      }
+    }
+  }
+
+  post {
+
+    success {
+      // set result
+      script {
+        currentBuild.result = 'SUCCESS'
+      }
+
+      script {
+          if(env.SLACK_CHANNEL)
+          {
+             def attachments = [
+                [
+                  text: "${JOB_NAME} - ${currentBuild.displayName} - $BUILD_URL",
+                  fallback: 'Auto build.',
+                  color: '#ff6699'
+                ]
+             ]
+
+             slackSend(channel: '#${SLACK_CHANNEL}', attachments: attachments)
+          }
+      }
+
+      // send email to builder and project mail recipients
+      script {
+        def content = '${SCRIPT,template="groovy_pipeline_git.template"}'
+        if(env.PROJECT_MAIL_RECIPIENT)
+        {
+          emailext(body: content, mimeType: 'text/html',
+                   subject: "${JOB_NAME} - ${currentBuild.displayName}",
+                   recipientProviders: [[$class: 'RequesterRecipientProvider']],
+                   to: "${env.PROJECT_MAIL_RECIPIENT}")
+        }
+        else
+        {
+          emailext(body: content, mimeType: 'text/html',
+                   subject: "${JOB_NAME} - ${currentBuild.displayName}",
+                   recipientProviders: [[$class: 'RequesterRecipientProvider']])
+        }
+      }
+    }
+
+    failure {
+      // send mail to builder
+      script {
+        def content = '${SCRIPT,template="groovy_pipeline_git.template"}'
+        emailext(body: content, mimeType: 'text/html',
+                 subject: "${JOB_NAME} - ${currentBuild.displayName}",
+                 recipientProviders: [[$class: 'CulpritsRecipientProvider'], [$class: 'RequesterRecipientProvider']]
+        )
+      }
+    }
+  }
+
+  options {
+    skipDefaultCheckout(true)
+
+    // keep only 10 builds
+    buildDiscarder(logRotator(numToKeepStr: '10'))
+
+    // timeout after 60 minutes
+    timeout(time: 60, unit: 'MINUTES')
+  }
+}

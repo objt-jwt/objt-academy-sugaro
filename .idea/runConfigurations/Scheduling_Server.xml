@@ -1,0 +1,19 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Scheduling Server" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="dce.pd.server.ApplicationServer" />
+    <module name="objt.schedulingserver_main" />
+    <option name="PROGRAM_PARAMETERS" value="schedulingserver.properties objt/app/schedulingserver/schedulingserver.xml" />
+    <option name="VM_PARAMETERS" value="-server -Xmx1024M -javaagent:&quot;C:\javalib\aspectj\1.9.6\aspectjweaver.jar&quot;" />
+    <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/objt.schedulingserver" />
+    <RunnerSettings RunnerId="Debug">
+      <option name="DEBUG_PORT" value="" />
+      <option name="TRANSPORT" value="0" />
+      <option name="LOCAL" value="true" />
+    </RunnerSettings>
+    <ConfigurationWrapper RunnerId="Debug" />
+    <method v="2">
+      <option name="Gradle.BeforeRunTask" enabled="true" tasks="processResources" externalProjectPath="$PROJECT_DIR$" vmOptions="" scriptParameters="" />
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

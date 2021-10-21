@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<objt codebase="http://%HTTPSERVER%" 
+      href="bin/objt.wms.operatorclient_exclusive.objt"
+  		version="%INSTALLATION%-%VERSION%"
+      title="Objective WMS OperatorClient (%INSTALLATION%)" >
+
+	<shortcut iconhref="webimages/objective.operator.ico"
+            desktop="true" programfolder="Objective" />
+
+  <libs>
+    ${libs}
+	</libs>
+
+  <nativelibs>
+    <jar href="lib/serialio-windows-8.1.jar" />
+  </nativelibs>
+
+	<jvm minversion="1.8" maxversion="1.8" datamodel="32" href="jre/jre-8u192-windows-i586.jar">
+		<arg val="-Xmx256M" />
+		<arg val="-Dsun.java2d.d3d=false" />
+		<arg val="-DX.REMOTE.SERVER.HOST=%APPLICATIONSERVER%" />
+		<arg val="-DX.OBJECTIVE.INSTALLATION=%INSTALLATION%" />
+		<arg val="-Ddce.ui.util.FrameUtil.exclusiveApplication=YES" />
+	</jvm>
+
+	<application mainclass="dce.pd.sfc.frame.operatorclient.GenericOperatorClient" >
+		<arg val="operatorclient.wms.properties"/>
+		<arg val="objt/app/operatorclient/wms/operatorclient.xml"/>
+	</application>
+</objt>

@@ -1,0 +1,118 @@
+<!-- Config file for translation keys from XML for classes defined in objt.ta -->
+<config>
+  <postprocess text=""/>
+
+  <!-- paths where included translation configs can be found during development -->
+  <include path="../../../../../dce/src/main/assets"/>
+  <include path=".."/>
+
+  <!-- include the translation config of base components -->
+  <include ref="translation/objt.common_config.xml"/>
+
+  <actions>
+
+    <!--capacitymgt-->
+    <action class="objt.crp.ui.capacitymgt.action.CapacityRequirementLoadAction"/>
+    <action class="objt.crp.ui.capacitymgt.action.CapacityLoadAction"/>
+    <action class="objt.crp.ui.capacitymgt.action.EmployeeCapacityAllocateAction"/>
+    <action class="objt.crp.ui.capacitymgt.action.EmployeeSkillRequirementPlanningTabPanelShowDetailOptionAction"/>
+    <action class="objt.crp.ui.capacitymgt.action.EmployeeCapacityAllocateAction"/>
+    <action class="objt.crp.ui.capacitymgt.action.EmployeeCapacityReallocateAction"/>
+    <action class="objt.crp.ui.capacitymgt.action.CapacityAllocationRemoveAction"/>
+    <action class="objt.crp.ui.capacitymgt.action.CapacityAnomalyAddAction"/>
+    <action class="objt.crp.ui.capacitymgt.action.ShiftCapacityProcessRulesAction"/>
+    <action class="objt.crp.ui.capacitymgt.action.CapacityAnomalyRemoveAction"/>
+    <action class="objt.crp.ui.capacitymgt.action.CapacityAnomalyEditAction"/>
+    <action class="objt.crp.ui.capacitymgt.action.ShiftCapacityRequirementProcessRulesAction"/>
+    <action class="objt.crp.ui.capacitymgt.action.PlanningCellUpdateAction"/>
+    <action class="objt.crp.ui.capacitymgt.action.ShiftFilter"/>
+    <action class="objt.crp.ui.capacitymgt.action.PlanningCellCapacityAllocationReportAction"/>
+
+    <!--requirement-->
+    <action class="objt.crp.ui.requirement.action.ShiftSkillRequirementAddAction"/>
+    <action class="objt.crp.ui.requirement.action.ShiftSkillRequirementEditAction"/>
+    <action class="objt.crp.ui.requirement.action.ShiftSkillRequirementRemoveAction"/>
+
+    <!--operationmgt-->
+    <action class="objt.crp.ui.operationmgt.action.HolidayRequestOperationRejectAction"/>
+    <action class="objt.crp.ui.operationmgt.action.HolidayRequestOperationConfirmAction"/>
+
+    <!--resourcemgt-->
+    <action class="objt.crp.ui.resourcemgt.action.PlanningCellEmployeeAddAction"
+      translate="sqlfilteractiontitle,sqlfilteractiondescription,childlisttabpaneltitle,childlisttabpaneldescription"/>
+    <action class="objt.crp.ui.resourcemgt.action.PlanningCellEmployeeRemoveAction"
+      translate="confirmMessage,listConfirmMessage"/>
+    <action class="objt.crp.ui.resourcemgt.action.ShiftSkillRequirementAddAction"
+      translate="sqlfilteractiontitle,sqlfilteractiondescription,childlisttabpaneltitle,childlisttabpaneldescription"/>
+    <action class="objt.crp.ui.resourcemgt.action.ShiftSkillRequirementEditAction"/>
+    <action class="objt.crp.ui.resourcemgt.action.ShiftSkillRequirementDeleteAction"/>
+    <action class="objt.crp.ui.resourcemgt.action.AbsenceConfigurationAbsenceCodeAddAction"
+      translate="sqlfilteractiontitle,sqlfilteractiondescription,childlisttabpaneltitle,childlisttabpaneldescription"/>
+    <action class="objt.crp.ui.resourcemgt.action.AbsenceConfigurationAbsenceCodeRemoveAction"/>
+    <action class="objt.crp.ui.resourcemgt.action.EmployeeSkillsDisplayAction"/>
+
+    <!--rulemgt-->
+    <action class="objt.crp.ui.rulemgt.action.RuleOperationAddAction"/>
+    <action class="objt.crp.ui.rulemgt.action.RuleOperationResourceRemoveAction"/>
+    <action class="objt.crp.ui.rulemgt.action.RuleOperationEmployeeAddAction"
+            translate="sqlfilteractiontitle,sqlfilteractiondescription,childlisttabpaneltitle,childlisttabpaneldescription"/>
+    <action class="objt.crp.ui.rulemgt.action.RuleOperationPlanningCellAddAction"
+            translate="sqlfilteractiontitle,sqlfilteractiondescription,childlisttabpaneltitle,childlisttabpaneldescription"/>
+    <action class="objt.crp.ui.rulemgt.action.RuleOperationPasteAction"/>
+    <action class="objt.crp.ui.rulemgt.action.OperationRuleAddAction"/>
+    <action class="objt.crp.ui.rulemgt.action.EmployeeRuleOperationManageAction"/>
+    <action class="objt.crp.ui.rulemgt.action.RuleOperationDisplayAction"/>
+
+    <!--time-->
+    <action class="objt.crp.ui.time.action.EmployeeAbsenceAddAction"/>
+    <action class="objt.crp.ui.time.action.EmployeeAttendanceDayApplyAction"/>
+    <action class="objt.crp.ui.time.action.EmployeeAttendanceDayRestoreActiveTemplateAction"/>
+
+  </actions>
+
+  <tabpanels>
+    <!-- capacitymgt-->
+    <tabpanel class="objt.crp.ui.capacitymgt.EmployeeSkillRequirementPlanningTabPanel"/>
+
+    <!-- operationmgt-->
+    <tabpanel class="objt.crp.ui.operationmgt.AnomalyReasonPropertiesTabPanel"/>
+
+    <!-- resourcemgt-->
+    <tabpanel class="objt.crp.ui.resourcemgt.AbsenceCodeConfigurationTabPanel"/>
+
+    <!-- rulemgt -->
+    <tabpanel class="objt.crp.ui.rulemgt.DefaultCapacityRequirementRuleTabPanel"/>
+    <tabpanel class="objt.crp.ui.rulemgt.DefaultCapacityAllocationRuleTabPanel"/>
+    <tabpanel class="objt.crp.ui.rulemgt.DefaultCapacityRuleTabPanel"/>
+    <tabpanel class="objt.crp.ui.rulemgt.RuleOperationTabPanel"/>
+    
+    <tabpanel class="objt.crp.configurator.appmgt.panel.SkillPropertiesTabPanel" />
+
+  </tabpanels>
+
+  <xmlfiles>
+
+    <!-- scan the text entries of listvalidators defined in the metafile -->
+    <xmlfile name="meta.xml">
+      <node name="listitem" translate="text" />
+      <node name="attribute" translate="title,tooltip" />
+    </xmlfile>
+
+    <!-- translate name and description of defined privileges -->
+    <xmlfile name="privileges.xml">
+      <node name="privilege" translate="application,module,domain,category,name,description"/>
+    </xmlfile>
+
+    <xmlfile name="employeeskillrequirementconfig.xml">
+      <node name="attributeTitles" csvtranslate="value"/>
+    </xmlfile>
+
+    <!-- UI meta: translate class, attribute and association titles -->
+    <xmlfile name="uimeta.xml">
+      <node name="class" translate="title"/>
+      <node name="attribute" translate="title"/>
+      <node name="attributegroup" translate="title"/>
+      <node name="association" translate="title"/>
+    </xmlfile>
+  </xmlfiles>
+</config>

@@ -1,0 +1,3 @@
+# .gitignore file specifically for the objt.datawarehouseserver
+
+db/generated_scripts

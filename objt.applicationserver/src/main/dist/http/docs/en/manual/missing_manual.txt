@@ -1,0 +1,6 @@
+If you are running the server in a development environment, the manual is not available. However if you need it do the following steps:
+
+1. Copy the Manual (zip file) \\Sourcerer\Projects\OBJT.Objective\02.Development\<major>.<minor>\04.Documentation\Manuals\Objective_WebHelp_EN_<major>.<minor>.<release>.zip
+2. Place the copy in the following folder install\http\docs\en
+3. Rename the zip file to manual.zip
+4. Reload this documents page that shows the missing manual message

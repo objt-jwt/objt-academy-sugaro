@@ -1,0 +1,35 @@
+<webmenu>
+	<menu id="attendances" title="Attendances" >
+		<action	href="#" onclick="showPage('operator', 'attendances');" title="Summary"                  roles="web.attendancemgt.attendances" />
+		<action	href="#" onclick="showPage('operator', 'attendanceRegistration.form');" title="Registration" roles="web.attendancemgt.registrations.modify" />
+ 		<action	href="#" onclick="showPage('operator', 'attendanceRegistrationManage.form');" title="Manage" roles="web.attendancemgt.registrations.manage" />
+		<action	href="#" onclick="showPage('operator', 'anomalies');" title="Anomalies"                  roles="web.attendancemgt.attendances" />
+		<action title="-" />
+		<action href="#" onclick="showPage('operator', 'planningReport');" title="Planning"              roles="web.attendancemgt.attendances.planning"/>
+  </menu>
+
+  <menu id="counters" title="Balances" >
+		<action	href="#" onclick="showPage('operator', 'counters');" title="Summary" roles="web.attendancemgt.balances" />
+  </menu>
+
+  <menu id="holiday" title="holiday.web" >
+		<action href="#" onclick="showPage('operator', 'holidays');" title="Summary" roles="web.attendancemgt.holidayrequests" />
+		<action href="#" onclick="showPage('operator', 'shortLeave.form');" title="shortleave.web" roles="web.attendancemgt.holidayrequests.add.short" />
+		<action href="#" onclick="showPage('operator', 'dayLeave.form');" title="dayleave.web" roles="web.attendancemgt.holidayrequests.add.day" />
+		<action href="#" onclick="showPage('operator', 'longLeave.form');" title="longleave.web" roles="web.attendancemgt.holidayrequests.add.long" />
+  </menu>
+
+	<menu id="approval" title="holiday.approval.web" >
+		<action href="#" onclick="showPage('operator', 'holidayApproval');" title="approval.web" roles="web.attendancemgt.holidayrequests.approval" />
+		<action href="#" onclick="showPage('operator', 'holidayPlanning');" title="Planning" roles="web.attendancemgt.holidayrequests.planning" />
+	</menu>
+
+	<menu id="employee" title="Employee" >
+		<action href="#" onclick="showPage('operator', 'employeeFilter');" title="Other employee" roles="web.attendancemgt.employees.switch" />
+		<action href="#" onclick="showPage('modifyPassword', 'showForm');" title="Password" roles="web.attendancemgt.employees.password" />
+		<action href="#" onclick="showPage('modifyPassword', 'showSSOForm');" title="Auto Logon" roles="web.attendancemgt.employees.password" />
+		<action title="-" />
+		<action href="operator?action=logout" title="Logoff" />
+	</menu>
+	<menu id="logout"  href="operator?action=logout" title="Logoff" />
+</webmenu>

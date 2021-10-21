@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<model _name="objt.process">
+  <imports>
+    <import file="objt.dlg"/>
+  </imports>
+  <package _name="objt.process.common.hotwiredwipinlocation.dialog.move">
+    <dialogclass _name="ContainerMoveTaskDialog01" isAbstract="false">
+      <generalization dialogclass="objt.wms.dialog.move.ContainerMoveTaskDialog01"/>
+      <dialoglevel _name="LPN" owner="objt.wms.dialog.AbstractContainerTaskDialog"/>
+      <dialoglevel _name="LPNStack" owner="objt.wms.dialog.AbstractContainerTaskDialog"/>
+      <dialoglevel _name="Quantity" leftText="ENTER STOCK QUANTITY" onEnter="true" onEntry="false" onEscape="true" onExit="false" type="input"/>
+      <dialoglevel _name="Location" owner="objt.wms.dialog.AbstractContainerTaskDialog"/>
+      <dialoglevel _name="LocationOverrideConfirmation" owner="objt.wms.dialog.AbstractContainerTaskDialog"/>
+      <dialoglevel _name="LocationOverrideReason" owner="objt.wms.dialog.AbstractContainerTaskDialog"/>
+      <dialoglevel _name="Confirmation" owner="dce.pd.dialogmgr.dialog.AbstractDialog"/>
+      <dialoglevel _name="Error" owner="dce.pd.dialogmgr.AbstractDialog"/>
+    </dialogclass>
+  </package>
+</model>

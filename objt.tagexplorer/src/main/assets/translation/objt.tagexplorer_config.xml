@@ -1,0 +1,16 @@
+<!-- Config file for translation keys from XML for classes defined in objt.tagexplorer -->
+<config>
+
+  <!-- paths where included translation configs can be found during development -->
+  <include path="../../../../../assets"/>
+  <include ref="translation/dce_config.xml"/>
+
+  <actions>
+  </actions>
+
+  <tabpanels>
+  </tabpanels>
+
+  <xmlfiles>
+  </xmlfiles>
+</config>

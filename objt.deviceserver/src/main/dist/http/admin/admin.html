@@ -1,0 +1,80 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html;charset=ISO-8859-1">
+<title>Objective DeviceServer Pages</title>
+<link rel="stylesheet" href="/scripts/ServerPages.CSS">
+<link rel="stylesheet" type="text/css" href="/scripts/menu.css" />
+<script type="text/javascript" src="/scripts/menu.js"></script>
+</head>
+
+<script src="/scripts/prototype.js" type="text/javascript"></script>
+<script language="javascript" type="text/javascript">
+function setDynamicText(destination)
+{
+  var myAjax = new Ajax.Updater(destination, '/DynamicText',
+                                 {method: 'get', parameters: 'cmd=' + destination});
+}
+</script>
+
+<body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" onLoad="setDynamicText('logon_logoff')">
+<table class="table_header" width="100%" height="36" border="0" cellpadding="0" cellspacing="0" >
+  <tr>
+    <td width="210" bgcolor="#FFFFFF" ><img src="/webimages/objective.small.png" border="0"></td>
+    <td><font color="#000000" size="6" face="Arial, Helvetica, sans-serif"><div id="installation" style="float: left;"></div><spacer>&nbsp;DeviceServer Pages</font></td>
+  </tr>
+</table>
+<table class="table_header" width="100%" height="24" border="0" cellpadding="0" cellspacing="0">
+    <tr bgcolor="#f50035">
+        <td height="24" valign="bottom">
+            <!-- menu -->
+            <div class="horizontalcssmenu">
+                <ul id="cssmenu1">
+                    <li id="n1"><a href="/index.html">Home</a></li>
+                    <li id="n4"><a href="/admin/admin.html"><img src="/webimages/menu_arrow.gif" width="11" height="11" border="0">Administration</a>
+                        <ul>
+                            <li><a href="#"><strong>Diagnostics</strong></a></li>
+                            <li><a href="/admin/diagnostics.html">&nbsp;&nbsp;Overview</a></li>
+                            <li><a href="/servlet/EventLog">&nbsp;&nbsp;EventLog Viewer</a></li>
+                            <li><a href="/servlet/EventLogProfiler">&nbsp;&nbsp;EventLog Profiler</a></li>
+                            <li><a href="/servlet/EventLogDownload">&nbsp;&nbsp;EventLog Download</a></li>
+                            <li><a href="/servlet/ServerDiagnostics?cmd=status">&nbsp;&nbsp;Status</a></li>
+                            <li><a href="/servlet/ServerDiagnostics?cmd=memory">&nbsp;&nbsp;Memory Usage</a></li>
+                            <li><a href="/servlet/ServerDiagnostics?cmd=properties">&nbsp;&nbsp;Properties</a></li>
+                            <li><a href="/servlet/ServerDiagnostics?cmd=threads">&nbsp;&nbsp;Threads</a></li>
+                            <li><a href="/servlet/ServerDiagnostics?cmd=build">&nbsp;&nbsp;Version Info</a></li>
+                            <li><a href="/servlet/ServerConnectionInfo">&nbsp;&nbsp;Client List</a></li>
+                            <li><a href="#"><strong>Modules</strong></a></li>
+                            <li><a href="/servlet/ServerModuleInfo">&nbsp;&nbsp;Server Modules</a></li>
+                            <li><a href="#"><strong>Commands</strong></a></li>
+                            <li><a href="/admin/commands.html">&nbsp;&nbsp;Overview</a></li>
+                        </ul>
+                    <li><a href="/servlet/info">Tag Info</a></li>
+                    <li><a href="/servlet/deviceinfo">Device Info</a></li>
+                </ul>
+            </div>
+        </td>
+    </tr>
+</table>
+
+<script language="javascript" type="text/javascript">
+<!--
+  setDynamicText('installation'); 
+//-->
+</script>
+
+<!-- InstanceBeginEditable name="contents" -->
+
+      <h1>Server Administration</h1>
+      <hr>
+
+      <img src="/webimages/objective.icon.16.png" align="absbottom">
+      <a href="/admin/diagnostics.html">Server Diagnostics</a>
+      <p>Provides information about the current status of the server.</p>
+      <br>
+
+      <img src="/webimages/objective.icon.16.png" align="absbottom">
+      <a href="/admin/commands.html">Server Commands</a>
+      <p>Trigger server activiy.</p>
+<!-- InstanceEndEditable -->
+</body>
+<!-- InstanceEnd --></html>

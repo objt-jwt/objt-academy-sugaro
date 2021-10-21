@@ -1,0 +1,77 @@
+<div id="popup-dialog">
+	<form id="dialogform">
+		<input type="hidden" name="action" value="<!--PreparedHTML.PlaceHolder:action-->"/>
+		<input type="hidden" name="panelid" value="<!--PreparedHTML.PlaceHolder:panelid-->"/>
+		<input type="hidden" name="tableref" value="<!--PreparedHTML.PlaceHolder:tableref-->"/>
+		<input type="hidden" name="selectedrefs" value="<!--PreparedHTML.PlaceHolder:selectedrefs-->"/>
+					
+    <p><!--PreparedHTML.PlaceHolder:message--></p>
+		
+		<div class="form-group">
+			<label for="comment"><!--TRANSLATE(Comment)--></label>
+			<div class="input-group">
+				<input type="text" class='form-control' name="comment" id="comment"/>
+				<div class="input-group-addon">
+					<span class="glyphicon glyphicon-th" id="comment_kb"></span> 
+				</div>
+			</div>
+		</div>
+	</form>
+</div>
+
+ <script>
+
+function approve()
+{
+  var data = $('#dialogform').serialize();
+  $.ajax
+  ({
+		 url: ajaxurl,
+		 data: data,
+		 type: 'post'
+  });
+}
+
+ 
+ $(function() {
+$( "#popup-dialog" ).dialog({
+  title: "<!--PreparedHTML.PlaceHolder:title-->",
+  buttons:
+	{
+    "<!--TRANSLATE(OK)-->": function() 
+			{
+				 var bValid = true;
+				 if ( bValid )
+				 {
+					 approve();
+					 $( this ).dialog( "close" );
+	 				 $( this).dialog("destroy");
+				 }
+			},
+    "<!--TRANSLATE(Cancel)-->": function() 
+			{
+				$( this ).dialog( "close" );
+ 			  $( this).dialog("destroy");
+			}
+  }
+});
+
+// Disable standard form submit
+$("#dialogform").submit(function(e) {
+  e.preventDefault();
+});
+
+
+// Configure keyboard
+$('#comment').keyboard({
+  layout: 'objt-international',
+  autoAccept: true,
+  openOn: '',
+});
+
+$('#comment_kb').click(function() {
+  $('#comment').getkeyboard().reveal();
+});
+
+});
+</script>

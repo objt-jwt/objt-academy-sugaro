@@ -1,0 +1,1563 @@
+<config>
+
+  <postprocess text="META(objt.common.inventorymgt.bo.StorageItemQty;inventoryCode1),META(objt.common.inventorymgt.bo.StorageItemQty;inventoryCode2),META(objt.common.inventorymgt.bo.StorageItemQty;inventoryCode3),META(objt.common.inventorymgt.bo.StorageItemQty;inventoryCode4),META(objt.common.inventorymgt.bo.StorageItemQty;inventoryCode5),META(objt.wms.bo.warehousemgt.PickItemQty;inventoryCode1),META(objt.wms.bo.warehousemgt.PickItemQty;inventoryCode2),META(objt.wms.bo.warehousemgt.PickItemQty;inventoryCode3),META(objt.wms.bo.warehousemgt.PickItemQty;inventoryCode4),META(objt.wms.bo.warehousemgt.PickItemQty;inventoryCode5),META(objt.wms.bo.warehousemgt.BackorderItemQty;inventoryCode1),META(objt.wms.bo.warehousemgt.BackorderItemQty;inventoryCode2),META(objt.wms.bo.warehousemgt.BackorderItemQty;inventoryCode3),META(objt.wms.bo.warehousemgt.BackorderItemQty;inventoryCode4),META(objt.wms.bo.warehousemgt.BackorderItemQty;inventoryCode5),META(objt.wms.bo.productionmgt.MakeItemQty;inventoryCode1),META(objt.wms.bo.productionmgt.MakeItemQty;inventoryCode2),META(objt.wms.bo.productionmgt.MakeItemQty;inventoryCode3),META(objt.wms.bo.productionmgt.MakeItemQty;inventoryCode4),META(objt.wms.bo.productionmgt.MakeItemQty;inventoryCode5),META(objt.wms.bo.warehousemgt.PackItemQty;inventoryCode1),META(objt.wms.bo.warehousemgt.PackItemQty;inventoryCode2),META(objt.wms.bo.warehousemgt.PackItemQty;inventoryCode3),META(objt.wms.bo.warehousemgt.PackItemQty;inventoryCode4),META(objt.wms.bo.warehousemgt.PackItemQty;inventoryCode5),META(objt.wms.bo.inventorymgt.InventoryAllocation;inventoryCode1),META(objt.wms.bo.inventorymgt.InventoryAllocation;inventoryCode2),META(objt.wms.bo.inventorymgt.InventoryAllocation;inventoryCode3),META(objt.wms.bo.inventorymgt.InventoryAllocation;inventoryCode4),META(objt.wms.bo.inventorymgt.InventoryAllocation;inventoryCode5),META(objt.wms.bo.warehousemgt.MoveItemQty;inventoryCode1),META(objt.wms.bo.warehousemgt.MoveItemQty;inventoryCode2),META(objt.wms.bo.warehousemgt.MoveItemQty;inventoryCode3),META(objt.wms.bo.warehousemgt.MoveItemQty;inventoryCode4),META(objt.wms.bo.warehousemgt.MoveItemQty;inventoryCode5),META(objt.wms.bo.outboundmgt.OutboundItemQty;inventoryCode1),META(objt.wms.bo.outboundmgt.OutboundItemQty;inventoryCode2),META(objt.wms.bo.outboundmgt.OutboundItemQty;inventoryCode3),META(objt.wms.bo.outboundmgt.OutboundItemQty;inventoryCode4),META(objt.wms.bo.outboundmgt.OutboundItemQty;inventoryCode5),META(objt.wms.bo.inboundmgt.InboundItemQty;inventoryCode1),META(objt.wms.bo.inboundmgt.InboundItemQty;inventoryCode2),META(objt.wms.bo.inboundmgt.InboundItemQty;inventoryCode3),META(objt.wms.bo.inboundmgt.InboundItemQty;inventoryCode4),META(objt.wms.bo.inboundmgt.InboundItemQty;inventoryCode5),META(objt.wms.bo.inventorymgt.InventoryBalance;inventoryCode1),META(objt.wms.bo.inventorymgt.InventoryBalance;inventoryCode2),META(objt.wms.bo.inventorymgt.InventoryBalance;inventoryCode3),META(objt.wms.bo.inventorymgt.InventoryBalance;inventoryCode4),META(objt.wms.bo.inventorymgt.InventoryBalance;inventoryCode5),META(objt.wms.bo.warehousemgt.WorkGroupOrder;usrTxt1),META(objt.wms.bo.warehousemgt.WorkGroupOrder;usrTxt2),META(objt.wms.bo.warehousemgt.WorkGroupOrder;usrTxt3),META(objt.wms.bo.warehousemgt.WorkGroupOrder;usrTxt4),META(objt.wms.bo.warehousemgt.WorkGroupOrder;usrTxt5),META(objt.wms.bo.warehousemgt.WorkGroupOrder;usrNum1),META(objt.wms.bo.warehousemgt.WorkGroupOrder;usrNum2),META(objt.wms.bo.warehousemgt.WorkGroupOrder;usrNum3),META(objt.wms.bo.warehousemgt.WorkGroupOrder;usrNum4),META(objt.wms.bo.warehousemgt.WorkGroupOrder;usrNum5),META(objt.wms.bo.warehousemgt.WorkGroupOrder;usrDts1),META(objt.wms.bo.warehousemgt.WorkGroupOrder;usrDts2),META(objt.wms.bo.warehousemgt.WorkGroupOrder;usrDts3),META(objt.wms.bo.warehousemgt.WorkGroupOrder;usrDts4),META(objt.wms.bo.warehousemgt.WorkGroupOrder;usrDts5),META(objt.wms.bo.warehousemgt.WorkGroupOrder;usrFlg1),META(objt.wms.bo.warehousemgt.WorkGroupOrder;usrFlg2),META(objt.wms.bo.warehousemgt.WorkGroupOrder;usrFlg3),META(objt.wms.bo.warehousemgt.WorkGroupOrder;usrFlg4),META(objt.wms.bo.warehousemgt.WorkGroupOrder;usrFlg5),META(objt.wms.bo.warehousemgt.ConsignmentOrder;usrTxt1),META(objt.wms.bo.warehousemgt.ConsignmentOrder;usrTxt2),META(objt.wms.bo.warehousemgt.ConsignmentOrder;usrTxt3),META(objt.wms.bo.warehousemgt.ConsignmentOrder;usrTxt4),META(objt.wms.bo.warehousemgt.ConsignmentOrder;usrTxt5),META(objt.wms.bo.warehousemgt.ConsignmentOrder;usrNum1),META(objt.wms.bo.warehousemgt.ConsignmentOrder;usrNum2),META(objt.wms.bo.warehousemgt.ConsignmentOrder;usrNum3),META(objt.wms.bo.warehousemgt.ConsignmentOrder;usrNum4),META(objt.wms.bo.warehousemgt.ConsignmentOrder;usrNum5),META(objt.wms.bo.warehousemgt.ConsignmentOrder;usrDts1),META(objt.wms.bo.warehousemgt.ConsignmentOrder;usrDts2),META(objt.wms.bo.warehousemgt.ConsignmentOrder;usrDts3),META(objt.wms.bo.warehousemgt.ConsignmentOrder;usrDts4),META(objt.wms.bo.warehousemgt.ConsignmentOrder;usrDts5),META(objt.wms.bo.warehousemgt.ConsignmentOrder;usrFlg1),META(objt.wms.bo.warehousemgt.ConsignmentOrder;usrFlg2),META(objt.wms.bo.warehousemgt.ConsignmentOrder;usrFlg3),META(objt.wms.bo.warehousemgt.ConsignmentOrder;usrFlg4),META(objt.wms.bo.warehousemgt.ConsignmentOrder;usrFlg5),META(objt.wms.bo.outboundmgt.DeliveryOrder;usrTxt1),META(objt.wms.bo.outboundmgt.DeliveryOrder;usrTxt2),META(objt.wms.bo.outboundmgt.DeliveryOrder;usrTxt3),META(objt.wms.bo.outboundmgt.DeliveryOrder;usrTxt4),META(objt.wms.bo.outboundmgt.DeliveryOrder;usrTxt5),META(objt.wms.bo.outboundmgt.DeliveryOrder;usrNum1),META(objt.wms.bo.outboundmgt.DeliveryOrder;usrNum2),META(objt.wms.bo.outboundmgt.DeliveryOrder;usrNum3),META(objt.wms.bo.outboundmgt.DeliveryOrder;usrNum4),META(objt.wms.bo.outboundmgt.DeliveryOrder;usrNum5),META(objt.wms.bo.outboundmgt.DeliveryOrder;usrDts1),META(objt.wms.bo.outboundmgt.DeliveryOrder;usrDts2),META(objt.wms.bo.outboundmgt.DeliveryOrder;usrDts3),META(objt.wms.bo.outboundmgt.DeliveryOrder;usrDts4),META(objt.wms.bo.outboundmgt.DeliveryOrder;usrDts5),META(objt.wms.bo.outboundmgt.DeliveryOrder;usrFlg1),META(objt.wms.bo.outboundmgt.DeliveryOrder;usrFlg2),META(objt.wms.bo.outboundmgt.DeliveryOrder;usrFlg3),META(objt.wms.bo.outboundmgt.DeliveryOrder;usrFlg4),META(objt.wms.bo.outboundmgt.DeliveryOrder;usrFlg5),META(objt.wms.bo.inboundmgt.InboundOrder;usrTxt1),META(objt.wms.bo.inboundmgt.InboundOrder;usrTxt2),META(objt.wms.bo.inboundmgt.InboundOrder;usrTxt3),META(objt.wms.bo.inboundmgt.InboundOrder;usrTxt4),META(objt.wms.bo.inboundmgt.InboundOrder;usrTxt5),META(objt.wms.bo.inboundmgt.InboundOrder;usrNum1),META(objt.wms.bo.inboundmgt.InboundOrder;usrNum2),META(objt.wms.bo.inboundmgt.InboundOrder;usrNum3),META(objt.wms.bo.inboundmgt.InboundOrder;usrNum4),META(objt.wms.bo.inboundmgt.InboundOrder;usrNum5),META(objt.wms.bo.inboundmgt.InboundOrder;usrDts1),META(objt.wms.bo.inboundmgt.InboundOrder;usrDts2),META(objt.wms.bo.inboundmgt.InboundOrder;usrDts3),META(objt.wms.bo.inboundmgt.InboundOrder;usrDts4),META(objt.wms.bo.inboundmgt.InboundOrder;usrDts5),META(objt.wms.bo.inboundmgt.InboundOrder;usrFlg1),META(objt.wms.bo.inboundmgt.InboundOrder;usrFlg2),META(objt.wms.bo.inboundmgt.InboundOrder;usrFlg3),META(objt.wms.bo.inboundmgt.InboundOrder;usrFlg4),META(objt.wms.bo.inboundmgt.InboundOrder;usrFlg5),META(objt.wms.bo.warehousemgt.InventoryOrder;usrTxt1),META(objt.wms.bo.warehousemgt.InventoryOrder;usrTxt2),META(objt.wms.bo.warehousemgt.InventoryOrder;usrTxt3),META(objt.wms.bo.warehousemgt.InventoryOrder;usrTxt4),META(objt.wms.bo.warehousemgt.InventoryOrder;usrTxt5),META(objt.wms.bo.warehousemgt.InventoryOrder;usrNum1),META(objt.wms.bo.warehousemgt.InventoryOrder;usrNum2),META(objt.wms.bo.warehousemgt.InventoryOrder;usrNum3),META(objt.wms.bo.warehousemgt.InventoryOrder;usrNum4),META(objt.wms.bo.warehousemgt.InventoryOrder;usrNum5),META(objt.wms.bo.warehousemgt.InventoryOrder;usrDts1),META(objt.wms.bo.warehousemgt.InventoryOrder;usrDts2),META(objt.wms.bo.warehousemgt.InventoryOrder;usrDts3),META(objt.wms.bo.warehousemgt.InventoryOrder;usrDts4),META(objt.wms.bo.warehousemgt.InventoryOrder;usrDts5),META(objt.wms.bo.warehousemgt.InventoryOrder;usrFlg1),META(objt.wms.bo.warehousemgt.InventoryOrder;usrFlg2),META(objt.wms.bo.warehousemgt.InventoryOrder;usrFlg3),META(objt.wms.bo.warehousemgt.InventoryOrder;usrFlg4),META(objt.wms.bo.warehousemgt.InventoryOrder;usrFlg5),META(objt.wms.bo.warehousemgt.MoveOrder;usrTxt1),META(objt.wms.bo.warehousemgt.MoveOrder;usrTxt2),META(objt.wms.bo.warehousemgt.MoveOrder;usrTxt3),META(objt.wms.bo.warehousemgt.MoveOrder;usrTxt4),META(objt.wms.bo.warehousemgt.MoveOrder;usrTxt5),META(objt.wms.bo.warehousemgt.MoveOrder;usrNum1),META(objt.wms.bo.warehousemgt.MoveOrder;usrNum2),META(objt.wms.bo.warehousemgt.MoveOrder;usrNum3),META(objt.wms.bo.warehousemgt.MoveOrder;usrNum4),META(objt.wms.bo.warehousemgt.MoveOrder;usrNum5),META(objt.wms.bo.warehousemgt.MoveOrder;usrDts1),META(objt.wms.bo.warehousemgt.MoveOrder;usrDts2),META(objt.wms.bo.warehousemgt.MoveOrder;usrDts3),META(objt.wms.bo.warehousemgt.MoveOrder;usrDts4),META(objt.wms.bo.warehousemgt.MoveOrder;usrDts5),META(objt.wms.bo.warehousemgt.MoveOrder;usrFlg1),META(objt.wms.bo.warehousemgt.MoveOrder;usrFlg2),META(objt.wms.bo.warehousemgt.MoveOrder;usrFlg3),META(objt.wms.bo.warehousemgt.MoveOrder;usrFlg4),META(objt.wms.bo.warehousemgt.MoveOrder;usrFlg5),META(objt.wms.bo.outboundmgt.OutboundOrder;usrTxt1),META(objt.wms.bo.outboundmgt.OutboundOrder;usrTxt2),META(objt.wms.bo.outboundmgt.OutboundOrder;usrTxt3),META(objt.wms.bo.outboundmgt.OutboundOrder;usrTxt4),META(objt.wms.bo.outboundmgt.OutboundOrder;usrTxt5),META(objt.wms.bo.outboundmgt.OutboundOrder;usrNum1),META(objt.wms.bo.outboundmgt.OutboundOrder;usrNum2),META(objt.wms.bo.outboundmgt.OutboundOrder;usrNum3),META(objt.wms.bo.outboundmgt.OutboundOrder;usrNum4),META(objt.wms.bo.outboundmgt.OutboundOrder;usrNum5),META(objt.wms.bo.outboundmgt.OutboundOrder;usrDts1),META(objt.wms.bo.outboundmgt.OutboundOrder;usrDts2),META(objt.wms.bo.outboundmgt.OutboundOrder;usrDts3),META(objt.wms.bo.outboundmgt.OutboundOrder;usrDts4),META(objt.wms.bo.outboundmgt.OutboundOrder;usrDts5),META(objt.wms.bo.outboundmgt.OutboundOrder;usrFlg1),META(objt.wms.bo.outboundmgt.OutboundOrder;usrFlg2),META(objt.wms.bo.outboundmgt.OutboundOrder;usrFlg3),META(objt.wms.bo.outboundmgt.OutboundOrder;usrFlg4),META(objt.wms.bo.outboundmgt.OutboundOrder;usrFlg5),META(objt.wms.bo.outboundmgt.ShipOrder;usrTxt1),META(objt.wms.bo.outboundmgt.ShipOrder;usrTxt2),META(objt.wms.bo.outboundmgt.ShipOrder;usrTxt3),META(objt.wms.bo.outboundmgt.ShipOrder;usrTxt4),META(objt.wms.bo.outboundmgt.ShipOrder;usrTxt5),META(objt.wms.bo.outboundmgt.ShipOrder;usrNum1),META(objt.wms.bo.outboundmgt.ShipOrder;usrNum2),META(objt.wms.bo.outboundmgt.ShipOrder;usrNum3),META(objt.wms.bo.outboundmgt.ShipOrder;usrNum4),META(objt.wms.bo.outboundmgt.ShipOrder;usrNum5),META(objt.wms.bo.outboundmgt.ShipOrder;usrDts1),META(objt.wms.bo.outboundmgt.ShipOrder;usrDts2),META(objt.wms.bo.outboundmgt.ShipOrder;usrDts3),META(objt.wms.bo.outboundmgt.ShipOrder;usrDts4),META(objt.wms.bo.outboundmgt.ShipOrder;usrDts5),META(objt.wms.bo.outboundmgt.ShipOrder;usrFlg1),META(objt.wms.bo.outboundmgt.ShipOrder;usrFlg2),META(objt.wms.bo.outboundmgt.ShipOrder;usrFlg3),META(objt.wms.bo.outboundmgt.ShipOrder;usrFlg4),META(objt.wms.bo.outboundmgt.ShipOrder;usrFlg5),META(objt.common.inventorymgt.bo.Warehouse;usrTxt1),META(objt.common.inventorymgt.bo.Warehouse;usrTxt2),META(objt.common.inventorymgt.bo.Warehouse;usrTxt3),META(objt.common.inventorymgt.bo.Warehouse;usrTxt4),META(objt.common.inventorymgt.bo.Warehouse;usrTxt5),META(objt.common.inventorymgt.bo.Warehouse;usrNum1),META(objt.common.inventorymgt.bo.Warehouse;usrNum2),META(objt.common.inventorymgt.bo.Warehouse;usrNum3),META(objt.common.inventorymgt.bo.Warehouse;usrNum4),META(objt.common.inventorymgt.bo.Warehouse;usrNum5),META(objt.common.inventorymgt.bo.Warehouse;usrDts1),META(objt.common.inventorymgt.bo.Warehouse;usrDts2),META(objt.common.inventorymgt.bo.Warehouse;usrDts3),META(objt.common.inventorymgt.bo.Warehouse;usrDts4),META(objt.common.inventorymgt.bo.Warehouse;usrDts5),META(objt.common.inventorymgt.bo.Warehouse;usrFlg1),META(objt.common.inventorymgt.bo.Warehouse;usrFlg2),META(objt.common.inventorymgt.bo.Warehouse;usrFlg3),META(objt.common.inventorymgt.bo.Warehouse;usrFlg4),META(objt.common.inventorymgt.bo.Warehouse;usrFlg5),META(objt.common.inventorymgt.bo.Warehouse;usrTxt1),META(objt.common.inventorymgt.bo.WarehouseLocation;usrTxt1),META(objt.common.inventorymgt.bo.WarehouseLocation;usrTxt2),META(objt.common.inventorymgt.bo.WarehouseLocation;usrTxt3),META(objt.common.inventorymgt.bo.WarehouseLocation;usrTxt4),META(objt.common.inventorymgt.bo.WarehouseLocation;usrTxt5),META(objt.common.inventorymgt.bo.WarehouseLocation;usrNum1),META(objt.common.inventorymgt.bo.WarehouseLocation;usrNum2),META(objt.common.inventorymgt.bo.WarehouseLocation;usrNum3),META(objt.common.inventorymgt.bo.WarehouseLocation;usrNum4),META(objt.common.inventorymgt.bo.WarehouseLocation;usrNum5),META(objt.common.inventorymgt.bo.WarehouseLocation;usrDts1),META(objt.common.inventorymgt.bo.WarehouseLocation;usrDts2),META(objt.common.inventorymgt.bo.WarehouseLocation;usrDts3),META(objt.common.inventorymgt.bo.WarehouseLocation;usrDts4),META(objt.common.inventorymgt.bo.WarehouseLocation;usrDts5),META(objt.common.inventorymgt.bo.WarehouseLocation;usrFlg1),META(objt.common.inventorymgt.bo.WarehouseLocation;usrFlg2),META(objt.common.inventorymgt.bo.WarehouseLocation;usrFlg3),META(objt.common.inventorymgt.bo.WarehouseLocation;usrFlg4),META(objt.common.inventorymgt.bo.WarehouseLocation;usrFlg5),META(objt.mes.bo.materialmgt.InputItemQty;inventoryCode1),META(objt.mes.bo.materialmgt.InputItemQty;inventoryCode2),META(objt.mes.bo.materialmgt.InputItemQty;inventoryCode3),META(objt.mes.bo.materialmgt.InputItemQty;inventoryCode4),META(objt.mes.bo.materialmgt.InputItemQty;inventoryCode5),META(objt.mes.bo.materialmgt.OutputItemQty;inventoryCode1),META(objt.mes.bo.materialmgt.OutputItemQty;inventoryCode2),META(objt.mes.bo.materialmgt.OutputItemQty;inventoryCode3),META(objt.mes.bo.materialmgt.OutputItemQty;inventoryCode4),META(objt.mes.bo.materialmgt.OutputItemQty;inventoryCode5),META(objt.mes.bo.productionmgt.ProductionItemQty;inventoryCode1),META(objt.mes.bo.productionmgt.ProductionItemQty;inventoryCode2),META(objt.mes.bo.productionmgt.ProductionItemQty;inventoryCode3),META(objt.mes.bo.productionmgt.ProductionItemQty;inventoryCode4),META(objt.mes.bo.productionmgt.ProductionItemQty;inventoryCode5),META(objt.wms.transaction.util.OutboundOperationRequest;backorderoption),META(objt.wms.ui.inventorymgt.wrapper.InventoryRecordWrapper;inventoryCode1),META(objt.wms.ui.inventorymgt.wrapper.InventoryRecordWrapper;inventoryCode2),META(objt.wms.ui.inventorymgt.wrapper.InventoryRecordWrapper;inventoryCode3),META(objt.wms.ui.inventorymgt.wrapper.InventoryRecordWrapper;inventoryCode4),META(objt.wms.ui.inventorymgt.wrapper.InventoryRecordWrapper;inventoryCode5),META(objt.mes.bo.productionmgt.ManufacturingItemQty;inventoryCode1),META(objt.mes.bo.productionmgt.ManufacturingItemQty;inventoryCode2),META(objt.mes.bo.productionmgt.ManufacturingItemQty;inventoryCode3),META(objt.mes.bo.productionmgt.ManufacturingItemQty;inventoryCode4),META(objt.mes.bo.productionmgt.ManufacturingItemQty;inventoryCode5),META(objt.wms.bo.warehousemgt.PackItemQty;inventoryCode1),META(objt.wms.bo.warehousemgt.PackItemQty;inventoryCode2),META(objt.wms.bo.warehousemgt.PackItemQty;inventoryCode3),META(objt.wms.bo.warehousemgt.PackItemQty;inventoryCode4),META(objt.wms.bo.warehousemgt.PackItemQty;inventoryCode5),META(objt.wms.operatorclient.warehousemgt.wrapper.PackOperationWrapper;inventoryCode1),META(objt.wms.operatorclient.warehousemgt.wrapper.PackOperationWrapper;inventoryCode2),META(objt.wms.operatorclient.warehousemgt.wrapper.PackOperationWrapper;inventoryCode3),META(objt.wms.operatorclient.warehousemgt.wrapper.PackOperationWrapper;inventoryCode4),META(objt.wms.operatorclient.warehousemgt.wrapper.PackOperationWrapper;inventoryCode5),META(objt.wms.bo.inventorymgt.PickStorageResource;inventoryCode1),META(objt.wms.bo.inventorymgt.PickStorageResource;inventoryCode2),META(objt.wms.bo.inventorymgt.PickStorageResource;inventoryCode3),META(objt.wms.bo.inventorymgt.PickStorageResource;inventoryCode4),META(objt.wms.bo.inventorymgt.PickStorageResource;inventoryCode5),META(objt.wms.bo.inventorymgt.PickZoneItemLink;inventoryCode1),META(objt.wms.bo.inventorymgt.PickZoneItemLink;inventoryCode2),META(objt.wms.bo.inventorymgt.PickZoneItemLink;inventoryCode3),META(objt.wms.bo.inventorymgt.PickZoneItemLink;inventoryCode4),META(objt.wms.bo.inventorymgt.PickZoneItemLink;inventoryCode5),META(objt.wms.bo.warehousemgt.ReplenishItemQty;inventoryCode1),META(objt.wms.bo.warehousemgt.ReplenishItemQty;inventoryCode2),META(objt.wms.bo.warehousemgt.ReplenishItemQty;inventoryCode3),META(objt.wms.bo.warehousemgt.ReplenishItemQty;inventoryCode4),META(objt.wms.bo.warehousemgt.ReplenishItemQty;inventoryCode5),META(objt.wms.bo.inboundmgt.ASNRecord;inventoryCode1),META(objt.wms.bo.inboundmgt.ASNRecord;inventoryCode2),META(objt.wms.bo.inboundmgt.ASNRecord;inventoryCode3),META(objt.wms.bo.inboundmgt.ASNRecord;inventoryCode4),META(objt.wms.bo.inboundmgt.ASNRecord;inventoryCode5),META(objt.wms.bo.inboundmgt.PurchaseItemQty;inventoryCode1),META(objt.wms.bo.inboundmgt.PurchaseItemQty;inventoryCode2),META(objt.wms.bo.inboundmgt.PurchaseItemQty;inventoryCode3),META(objt.wms.bo.inboundmgt.PurchaseItemQty;inventoryCode4),META(objt.wms.bo.inboundmgt.PurchaseItemQty;inventoryCode5),META(objt.wms.bo.warehousemgt.PLEKeyGroup;PLEKey1),META(objt.wms.bo.warehousemgt.PLEKeyGroup;PLEKey2),META(objt.wms.bo.warehousemgt.PLEKeyGroup;PLEKey3),META(objt.wms.bo.warehousemgt.PLEKeyGroup;PLEKey4),META(objt.wms.bo.warehousemgt.PLEKeyGroup;PLEKey5),META(objt.wms.bo.warehousemgt.PLEKeyGroup;PLEKey6),META(objt.wms.bo.warehousemgt.PLEKeyGroup;PLEKey7),META(objt.wms.bo.warehousemgt.PLEKeyGroup;PLEKey8),META(objt.wms.bo.warehousemgt.PLEKeyGroup;PLEKey9),META(objt.wms.bo.warehousemgt.PLEKeyGroup;PLEKey10)"/>
+
+  <!-- paths where included translation configs can be found during development -->
+  <include path="../../../../../dce/src/main/assets"/>
+  <include path=".."/>
+
+  <!-- include the translation config of base components -->
+  <include ref="translation/objt.common_config.xml"/>
+
+  <tabpanels>                           
+
+    <!-- BEGIN objt.wms.configurator.appmgt -->
+    <tabpanel class="objt.wms.configurator.appmgt.panel.DocumentTabPanel"/>
+    <!-- END objt.wms.configurator.appmgt -->
+
+    <!-- BEGIN objt.wms.configurator.inboundmgt -->
+    <tabpanel class="objt.wms.configurator.inboundmgt.panel.DefaultInboundOptionsTabPanel"/>
+    <tabpanel class="objt.wms.configurator.inboundmgt.panel.DefaultInboundUploadOptionsTabPanel" />
+    <tabpanel class="objt.wms.configurator.inboundmgt.panel.DefaultReturnOptionsTabPanel"/>
+    <tabpanel class="objt.wms.configurator.inboundmgt.panel.DefaultReturnUploadOptionsTabPanel" />
+    <!-- END objt.wms.configurator.inboundmgt -->
+
+    <!-- BEGIN objt.wms.configurator.inspectionmgt -->
+    <tabpanel class="objt.wms.configurator.inspectionmgt.panel.InspectionInstructionPropertiesTabPanel"/>
+    <tabpanel class="objt.wms.configurator.inspectionmgt.panel.CheckInspectionInstructionOptionsTabPanel"/>
+    <tabpanel class="objt.wms.configurator.inspectionmgt.panel.DocumentTabPanel"/>
+    <tabpanel class="objt.wms.configurator.inspectionmgt.panel.InboundOrderInspectionInstructionFrequencyPropertiesTabPanel"/>
+    <tabpanel class="objt.wms.configurator.inspectionmgt.panel.InputInspectionInstructionOptionsTabPanel"/>
+    <tabpanel class="objt.wms.configurator.inspectionmgt.panel.InspectionGroupPropertiesTabPanel"/>
+    <tabpanel class="objt.wms.configurator.inspectionmgt.panel.InspectionInstructionApplicabilityTabPanel"/>
+    <tabpanel class="objt.wms.configurator.inspectionmgt.panel.InspectionInstructionInfoTabPanel"/>
+    <tabpanel class="objt.wms.configurator.inspectionmgt.panel.InspectionInstructionSampleOptionsTabPanel"/>
+    <tabpanel class="objt.wms.configurator.inspectionmgt.panel.InspectionSheetInspectionInstructionHandlingTabPanel"/>
+    <tabpanel class="objt.wms.configurator.inspectionmgt.panel.InspectionSheetPropertiesTabPanel"/>
+    <tabpanel class="objt.wms.configurator.inspectionmgt.panel.InspectionSheetResultGroupedTabPanel"/>
+    <tabpanel class="objt.wms.configurator.inspectionmgt.panel.InspectionInstructionOwnerSampleInstructionOptionsTabPanel"/>
+    <tabpanel class="objt.wms.configurator.inspectionmgt.panel.InventoryInspectionInstructionFrequencyPropertiesTabPanel"/>
+    <tabpanel class="objt.wms.configurator.inspectionmgt.panel.MeasurementInspectionInstructionOptionsTabPanel"/>
+    <tabpanel class="objt.wms.configurator.inspectionmgt.panel.SampleInstructionOptionsTabPanel"/>
+    <tabpanel class="objt.wms.configurator.inspectionmgt.panel.SampleTypePropertiesTabPanel"/>
+    <tabpanel class="objt.wms.configurator.inspectionmgt.panel.InspectionSetPropertiesTabPanel"/>
+    <tabpanel class="objt.wms.configurator.inspectionmgt.panel.InspectionSheetInspectionInstructionTreeTableTabPanel"/>
+    <tabpanel class="objt.wms.configurator.inspectionmgt.panel.InspectionSheetAdHocSettingsTabPanel"/>
+    <!-- END objt.wms.configurator.inspectionmgt -->
+
+    <!-- BEGIN objt.wms.configurator.inventorymgt -->
+    <tabpanel class="objt.wms.configurator.inventorymgt.panel.AislePropertiesTabPanel"/>
+    <tabpanel class="objt.wms.configurator.inventorymgt.panel.DefaultAssetOptionsTabPanel"/>
+    <tabpanel class="objt.wms.configurator.inventorymgt.panel.DefaultInspectionOptionsTabPanel"/>
+    <tabpanel class="objt.wms.configurator.inventorymgt.panel.DefaultInventoryBalanceOptionsTabPanel"/>
+    <tabpanel class="objt.wms.configurator.inventorymgt.panel.DefaultInventoryCodeOptionsTabPanel"/>
+    <tabpanel class="objt.wms.configurator.inventorymgt.panel.DefaultInventoryOptionsTabPanel"/>
+    <tabpanel class="objt.wms.configurator.inventorymgt.panel.DropOffStorageResourceGroupPropertiesTabPanel"/>
+    <tabpanel class="objt.wms.configurator.inventorymgt.panel.InboundStorageResourceGroupPropertiesTabPanel"/>
+    <tabpanel class="objt.wms.configurator.inventorymgt.panel.KanbanPickStorageResourcePropertiesGroupedTabPanel"/>
+    <tabpanel class="objt.wms.configurator.inventorymgt.panel.LPNBufferItemLinkPropertiesTabPanel"/>
+    <tabpanel class="objt.wms.configurator.inventorymgt.panel.LPNBufferPropertiesTabPanel"/>
+    <tabpanel class="objt.wms.configurator.inventorymgt.panel.LPNBufferPLEPropertiesTabPanel"/>
+    <tabpanel class="objt.wms.configurator.inventorymgt.panel.LPNBufferRestrictionSettingItemLinkTabPanel"/>
+    <tabpanel class="objt.wms.configurator.inventorymgt.panel.OutboundStorageResourceGroupPropertiesTabPanel"/>
+    <tabpanel class="objt.wms.configurator.inventorymgt.panel.PickStorageResourcePropertiesGroupedTabPanel"/>
+    <tabpanel class="objt.wms.configurator.inventorymgt.panel.PickZoneItemLinkPropertiesTabPanel"/>
+    <tabpanel class="objt.wms.configurator.inventorymgt.panel.PickZonePropertiesTabPanel"/>
+    <tabpanel class="objt.wms.configurator.inventorymgt.panel.QualityControlStatusPropertiesTabPanel"/>
+    <tabpanel class="objt.wms.configurator.inventorymgt.panel.QualityControlStatusTransitionRoleListTabPanel"/>
+    <tabpanel class="objt.wms.configurator.inventorymgt.panel.QualityControlStatusTransitionMatrixTabPanel"/>
+    <tabpanel class="objt.wms.configurator.inventorymgt.panel.ShipStorageResourceGroupPropertiesTabPanel"/>
+    <tabpanel class="objt.wms.configurator.inventorymgt.panel.StageInStorageResourceGroupPropertiesTabPanel"/>
+    <tabpanel class="objt.wms.configurator.inventorymgt.panel.StageLocationPropertiesTabPanel"/>
+    <tabpanel class="objt.wms.configurator.inventorymgt.panel.StageOutStorageResourceGroupPropertiesTabPanel"/>
+    <tabpanel class="objt.wms.configurator.inventorymgt.panel.StorageResourceCubicsTabPanel"/>
+    <tabpanel class="objt.wms.configurator.inventorymgt.panel.StorageZonePropertiesTabPanel"/>
+    <tabpanel class="objt.wms.configurator.inventorymgt.panel.WarehouseLocationCubicsTabPanel"/>
+    <tabpanel class="objt.wms.configurator.inventorymgt.panel.WarehouseLocationDimensionTabPanel"/>
+    <tabpanel class="objt.wms.configurator.inventorymgt.panel.WarehouseLocationPropertiesTabPanel"/>
+    <tabpanel class="objt.wms.configurator.inventorymgt.panel.WarehousePropertiesTabPanel"/>
+    <tabpanel class="objt.wms.configurator.inventorymgt.panel.WorkZonePropertiesTabPanel"/>
+    <!-- END objt.wms.configurator.inventorymgt -->
+
+    <!-- BEGIN objt.wms.configurator.itemmgt -->
+    <tabpanel class="objt.wms.configurator.itemmgt.panel.ContainerPropertiesTabPanel"/>
+    <tabpanel class="objt.wms.configurator.itemmgt.panel.ItemInventorySettingsTabPanel"/>
+    <tabpanel class="objt.wms.configurator.itemmgt.panel.ItemPropertiesTabPanel"/>
+    <tabpanel class="objt.wms.configurator.itemmgt.panel.PackagingConfigurationTabPanel"/>
+    <tabpanel class="objt.wms.configurator.itemmgt.panel.ItemAQLSettingsTabPanel"/>
+    <tabpanel class="objt.wms.configurator.itemmgt.panel.ItemSupplierDetailAQLSettingsTabPanel"/>
+    <tabpanel class="objt.wms.configurator.itemmgt.panel.ItemCustomerDetailAQLSettingsTabPanel"/>
+    <!-- END objt.wms.configurator.itemmgt -->
+
+    <!-- BEGIN objt.wms.configurator.outboundmgt -->
+    <tabpanel class="objt.wms.configurator.outboundmgt.panel.DefaultDeliveryOptionsTabPanel"/>
+    <tabpanel class="objt.wms.configurator.outboundmgt.panel.DefaultOutboundOptionsTabPanel"/>
+    <tabpanel class="objt.wms.configurator.outboundmgt.panel.DefaultShipOptionsTabPanel"/>
+    <!-- END objt.wms.configurator.outboundmgt -->
+
+    <!-- BEGIN objt.wms.configurator.productionmgt -->
+    <tabpanel class="objt.wms.configurator.productionmgt.panel.KitManufacturingOperationPropertiesTabPanel"/>
+    <tabpanel class="objt.wms.configurator.productionmgt.panel.KitMaterialInputHandlingTabPanel"/>
+    <tabpanel class="objt.wms.configurator.productionmgt.panel.KitMaterialOutputHandlingTabPanel"/>
+    <tabpanel class="objt.wms.configurator.productionmgt.panel.ManufacturingOperationPropertiesTabPanel"/>
+    <tabpanel class="objt.wms.configurator.productionmgt.panel.ManufacturingOperationWorkCenterSelectionTabPanel"/>
+    <tabpanel class="objt.wms.configurator.productionmgt.panel.QualityControlStatusInputHandlingTabPanel"/>
+    <tabpanel class="objt.wms.configurator.productionmgt.panel.QualityControlStatusOutputHandlingTabPanel"/>
+    <tabpanel class="objt.wms.configurator.productionmgt.panel.VALMaterialInputHandlingTabPanel"/>
+    <tabpanel class="objt.wms.configurator.productionmgt.panel.VALMaterialOutputHandlingTabPanel"/>
+    <!-- END objt.wms.configurator.productionmgt -->
+
+    <!-- BEGIN objt.wms.configurator.qualitymgt -->
+    <tabpanel class="objt.wms.configurator.qualitymgt.panel.CheckInstructionSettingTabPanel"/>
+    <tabpanel class="objt.wms.configurator.qualitymgt.panel.DocumentedInstructionListTabPanel"/>
+    <tabpanel class="objt.wms.configurator.qualitymgt.panel.InputInstructionSettingTabPanel"/>
+    <tabpanel class="objt.wms.configurator.qualitymgt.panel.PrintInstructionSettingTabPanel"/>
+    <!-- END objt.wms.configurator.qualitymgt -->
+
+    <!-- BEGIN objt.wms.configurator.resourcemgt -->
+    <tabpanel class="objt.wms.configurator.resourcemgt.panel.CarrierPropertiesTabPanel"/>
+    <tabpanel class="objt.wms.configurator.resourcemgt.panel.CustomerPropertiesTabPanel"/>
+    <tabpanel class="objt.wms.configurator.resourcemgt.panel.EmployeeWorkCenterSelectionTabPanel" />
+    <tabpanel class="objt.wms.configurator.resourcemgt.panel.SupplierPropertiesTabPanel"/>
+    <tabpanel class="objt.wms.configurator.resourcemgt.panel.WorkCenterPropertiesTabPanel"/>
+    <!-- END objt.wms.configurator.resourcemgt -->
+
+    <!-- BEGIN objt.wms.configurator.rulemgt -->
+    <tabpanel class="objt.wms.configurator.rulemgt.panel.WarehouseRuleFilterTabPanel"/>
+    <tabpanel class="objt.wms.configurator.rulemgt.panel.InspectionRuleFilterTabPanel"/>
+
+    <tabpanel class="objt.wms.configurator.rulemgt.panel.AttributeFilterRestrictRuleTabPanel"/>
+    <tabpanel class="objt.wms.configurator.rulemgt.panel.AbstractContainerInventoryExpandRuleTabPanel"/>
+    <tabpanel class="objt.wms.configurator.rulemgt.panel.BulkInventoryExpandRuleTabPanel"/>
+    <tabpanel class="objt.wms.configurator.rulemgt.panel.ContainerContentInventoryExpandRuleTabPanel"/>
+    <tabpanel class="objt.wms.configurator.rulemgt.panel.ContainerInventoryExpandRuleTabPanel"/>
+    <tabpanel class="objt.wms.configurator.rulemgt.panel.EmptyLocationExpandRuleTabPanel"/>
+    <tabpanel class="objt.wms.configurator.rulemgt.panel.InventoryQuantityRatedRuleTabPanel"/>
+    <tabpanel class="objt.wms.configurator.rulemgt.panel.InventoryTimestampRatedRuleTabPanel"/>
+    <tabpanel class="objt.wms.configurator.rulemgt.panel.ItemLocationExpandRuleTabPanel"/>
+    <tabpanel class="objt.wms.configurator.rulemgt.panel.ItemRuleItemGroupListTabPanel"/>
+    <tabpanel class="objt.wms.configurator.rulemgt.panel.LocationAvailableCubicsRatedRuleTabPanel"/>
+    <tabpanel class="objt.wms.configurator.rulemgt.panel.LocationDepthRatedRuleTabPanel"/>
+    <tabpanel class="objt.wms.configurator.rulemgt.panel.LocationExpandRuleTabPanel"/>
+    <tabpanel class="objt.wms.configurator.rulemgt.panel.LocationHeightRatedRuleTabPanel"/>
+    <tabpanel class="objt.wms.configurator.rulemgt.panel.LocationLPNCountRatedRuleTabPanel"/>
+    <tabpanel class="objt.wms.configurator.rulemgt.panel.LocationUsedCubicsRatedRuleTabPanel"/>
+    <tabpanel class="objt.wms.configurator.rulemgt.panel.LocationWeightRatedRuleTabPanel"/>
+    <tabpanel class="objt.wms.configurator.rulemgt.panel.LocationWidthRatedRuleTabPanel"/>
+    <tabpanel class="objt.wms.configurator.rulemgt.panel.DynamicRatedRuleTabPanel"/>
+    <tabpanel class="objt.wms.configurator.rulemgt.panel.LPNBufferContainerInventoryExpandRuleTabPanel"/>
+    <tabpanel class="objt.wms.configurator.rulemgt.panel.LPNBufferLocationExpandRuleTabPanel"/>
+    <tabpanel class="objt.wms.configurator.rulemgt.panel.MoveSelectorExpandRuleTabPanel"/>
+    <tabpanel class="objt.wms.configurator.rulemgt.panel.NestContainerInventoryExpandRuleTabPanel"/>
+    <tabpanel class="objt.wms.configurator.rulemgt.panel.PickLocationExpandRuleTabPanel"/>
+    <tabpanel class="objt.wms.configurator.rulemgt.panel.PickLocationInventoryExpandRuleTabPanel"/>
+    <tabpanel class="objt.wms.configurator.rulemgt.panel.PickSelectorExpandRuleTabPanel"/>
+    <tabpanel class="objt.wms.configurator.rulemgt.panel.PickZoneInventoryExpandRuleTabPanel"/>
+    <tabpanel class="objt.wms.configurator.rulemgt.panel.PickZoneLocationExpandRuleTabPanel"/>
+    <tabpanel class="objt.wms.configurator.rulemgt.panel.PutSelectorExpandRuleTabPanel"/>
+    <tabpanel class="objt.wms.configurator.rulemgt.panel.CrossDockSelectorExpandRuleTabPanel"/>
+    <tabpanel class="objt.wms.configurator.rulemgt.panel.ReplenishSelectorExpandRuleTabPanel"/>
+    <tabpanel class="objt.wms.configurator.rulemgt.panel.RuleItemGroupPropertiesTabPanel"/>
+    <tabpanel class="objt.wms.configurator.rulemgt.panel.RuleSelectorTabPanel"
+              csvtranslate="attributeTitles"
+              csvattribute="attributePaths"/>
+    <tabpanel class="objt.wms.configurator.rulemgt.panel.ScenarioPropertiesTabPanel"/>
+    <tabpanel class="objt.wms.configurator.rulemgt.panel.SiloInventoryExpandRuleTabPanel"/>
+    <tabpanel class="objt.wms.configurator.rulemgt.panel.StorageZoneMaxRestrictRuleTabPanel"/>
+    <tabpanel class="objt.wms.configurator.rulemgt.panel.StorageZoneMinMaxRatedRuleTabPanel"/>  
+    <tabpanel class="objt.wms.configurator.rulemgt.panel.InboundContainerInspectionRuleTabPanel"/>
+    <tabpanel class="objt.wms.configurator.rulemgt.panel.InboundOrderInspectionRuleTabPanel"/>
+    <tabpanel class="objt.wms.configurator.rulemgt.panel.ProductionContainerInspectionRuleTabPanel"/>
+    <tabpanel class="objt.wms.configurator.rulemgt.panel.NoInspectionRuleTabPanel"/>
+    <!-- END objt.wms.configurator.rulemgt -->
+
+    <!-- BEGIN objt.wms.configurator.systemymgt -->
+    <tabpanel class="objt.wms.configurator.systemmgt.panel.DefaultPLEKeyOptionsTabPanel"/>
+    <!-- END objt.wms.configurator.systemymgt -->
+
+    <!-- BEGIN objt.wms.configurator.warehousemgt -->
+    <tabpanel class="objt.wms.configurator.warehousemgt.panel.DefaultPickingOptionsTabPanel"/>
+    <tabpanel class="objt.wms.configurator.warehousemgt.panel.DefaultRepackOptionsTabPanel"/>
+    <tabpanel class="objt.wms.configurator.warehousemgt.panel.DefaultPutAwayOptionsTabPanel"/>
+    <tabpanel class="objt.wms.configurator.warehousemgt.panel.MobileRackPropertiesTabPanel"/>
+    <tabpanel class="objt.wms.configurator.warehousemgt.panel.TaskAllocationOverrideReasonPropertiesTabPanel"/>
+    <tabpanel class="objt.wms.configurator.warehousemgt.panel.TaskLocationOverrideReasonPropertiesTabPanel"/>
+    <tabpanel class="objt.wms.configurator.warehousemgt.panel.TaskProfileDetailListTabPanel"
+              csvtranslate="attributeTitles" />
+    <tabpanel class="objt.wms.configurator.warehousemgt.panel.TaskProfilePropertiesTabPanel"/>
+    <tabpanel class="objt.wms.configurator.warehousemgt.panel.TaskTypePropertiesTabPanel"/>
+    <tabpanel class="objt.wms.configurator.warehousemgt.panel.TaskReasonPropertiesTabPanel"/>
+    <tabpanel class="objt.wms.configurator.warehousemgt.panel.TaskTerminateReasonPropertiesTabPanel"/>
+    <tabpanel class="objt.wms.configurator.warehousemgt.panel.PLEGroupPropertiesTabPanel"/>
+    <tabpanel class="objt.wms.configurator.warehousemgt.panel.PLEFlowPropertiesTabPanel"/>
+    <tabpanel class="objt.wms.configurator.warehousemgt.panel.AbstractPLEFlowReleaseSettingsTabPanel"/>
+    <tabpanel class="objt.wms.configurator.warehousemgt.panel.PLEFlowReleaseSettingsTabPanel"/>
+    <tabpanel class="objt.wms.configurator.warehousemgt.panel.PLEWorkZoneFlowListTabPanel"/>
+    <tabpanel class="objt.wms.configurator.warehousemgt.panel.PLEWorkZoneFlowReleaseSettingsTabPanel"/>
+    <tabpanel class="objt.wms.configurator.warehousemgt.panel.PLEFlowAllocationSettingsTabPanel"/>
+    <tabpanel class="objt.wms.configurator.warehousemgt.panel.PLEFlowMultiPickSettingsTabPanel"/>
+    <tabpanel class="objt.wms.configurator.warehousemgt.panel.PLEWorkZoneFlowMultiPickSettingsTabPanel"/>
+    <tabpanel class="objt.wms.configurator.warehousemgt.panel.PLEFlowReplenishmentSettingsTabPanel"/>
+    <tabpanel class="objt.wms.configurator.warehousemgt.panel.PLEFlowGeneralSettingsTabPanel"/>
+    <tabpanel class="objt.wms.configurator.warehousemgt.panel.PLEFlowGroupingSettingsTabPanel"/>
+    <tabpanel class="objt.wms.configurator.warehousemgt.panel.WarehouseBinNameConfigurationTabPanel"/>
+    <tabpanel class="objt.wms.configurator.warehousemgt.panel.WorkZoneCalendarPropertiesTabPanel"/>
+    <tabpanel class="objt.wms.configurator.warehousemgt.panel.IndirectTaskActivityPropertiesTabPanel"/>
+    <!-- END objt.wms.configurator.warehousemgt -->
+
+    <!-- BEGIN objt.wms.operatorclient.productionmgt -->
+    <tabpanel class="objt.wms.operatorclient.productionmgt.panel.MakeOrderWrapperTouchListTabPanel"/>
+    <!-- END objt.wms.operatorclient.productionmgt -->
+
+    <!-- BEGIN objt.wms.supervisor.inboundmgt -->
+    <tabpanel class="objt.wms.supervisor.inboundmgt.panel.ReceiptInstructionTabPanel"/>
+    <tabpanel class="objt.wms.supervisor.inboundmgt.panel.InboundOperationQCInstructionTabPanel"/>
+    <tabpanel class="objt.wms.supervisor.inboundmgt.panel.PurchaseOperationQCInstructionTabPanel"/>
+    <!-- END objt.wms.supervisor.inboundmgt -->
+
+    <!-- BEGIN objt.wms.supervisor.inspectionmgt -->
+    <tabpanel class="objt.wms.supervisor.inspectionmgt.panel.InspectionInfoTabPanel"/>
+    <tabpanel class="objt.wms.supervisor.inspectionmgt.panel.RuntimeAQLDetailPropertiesTabPanel"/>
+    <!-- END objt.wms.supervisor.inspectionmgt -->
+
+    <!-- BEGIN objt.wms.supervisor.inventorymgt -->
+    <tabpanel class="objt.wms.supervisor.inventorymgt.panel.AssetBalanceOverviewTabPanel"
+              csvtranslate="attributeTitles"/>
+    <tabpanel class="objt.wms.supervisor.inventorymgt.panel.InventoryLockPropertiesTabPanel"/>
+    <tabpanel class="objt.wms.supervisor.inventorymgt.panel.StockBrowserTabPanel"/>
+    <tabpanel class="objt.wms.supervisor.inventorymgt.panel.InventoryForecastStockBreakTabPanel"/>
+    <tabpanel class="objt.wms.supervisor.inventorymgt.panel.InventoryForecastTableGraphTabPanel"/>
+    <!-- END objt.wms.supervisor.inventorymgt -->
+
+    <!-- BEGIN objt.wms.supervisor.warehousemgt -->
+    <tabpanel class="objt.wms.supervisor.warehousemgt.panel.TaskOverviewNavigationTabPanel"
+              csvtranslate="attributeTitles"/>
+    <tabpanel class="objt.wms.supervisor.warehousemgt.panel.TaskOverviewTabPanel"
+              csvtranslate="attributeTitles"/>
+    <!-- END objt.wms.supervisor.warehousemgt -->
+  </tabpanels>
+
+  <actions>
+
+    <!-- BEGIN objt.mes.operatorclient.ui -->
+    <action class="objt.mes.operatorclient.resourcemgt.action.TouchDocumentTemplatePrintAction"/>
+    <!-- END objt.mes.operatorclient.ui -->
+
+    <!-- BEGIN objt.mes.ui.itemmgt -->
+    <action class="objt.mes.supervisor.materialmgt.action.ProductPassportReportAction"/>
+    <!-- END objt.mes.ui.itemmgt -->
+
+    <!-- BEGIN objt.mes.ui.productionmgt -->
+    <action class="objt.mes.configurator.productionmgt.action.DeviceProcessResourceRemoveAction"/>
+    <action class="objt.wms.configurator.productionmgt.action.DepartmentWarehouseAddAction"/>
+    <!-- END objt.mes.ui.productionmgt -->
+
+    <!-- BEGIN objt.wms.configurator.appmgt -->
+    <action class="objt.wms.configurator.appmgt.action.DocumentDisplayAction"/>
+    <!-- END objt.wms.configurator.appmgt -->
+    
+    <!-- BEGIN objt.wms.configurator.general -->
+    <action class="objt.wms.configurator.general.action.BlankLabelPrintAction"/>
+    <!-- END objt.wms.configurator.general -->
+
+    <!-- BEGIN objt.wms.configurator.inspectionmgt -->
+    <action class="objt.wms.configurator.inspectionmgt.action.AbstractInspectionInstructionDeleteAction"
+            translate="confirmMessage,listConfirmMessage"/>
+    <action class="objt.wms.configurator.inspectionmgt.action.AbstractInspectionInstructionPasteAction"/>
+    <action class="objt.wms.configurator.inspectionmgt.action.InspectionGroupItemAddAction"/>
+    <action class="objt.wms.configurator.inspectionmgt.action.InspectionInstructionItemAddAction"/>
+    <action class="objt.wms.configurator.inspectionmgt.action.InspectionInstructionItemRemoveAction"
+            translate="confirmMessage,listConfirmMessage"/>
+    <action class="objt.wms.configurator.inspectionmgt.action.InspectionInstructionLinkPasteAction"/>
+    <action class="objt.wms.configurator.inspectionmgt.action.InspectionInstructionNewAction"/>
+    <action class="objt.wms.configurator.inspectionmgt.action.InspectionRuleOperationAddAction"
+            translate="wizardpanel.1.name,wizardpanel.1.description,wizardpanel.2.name,wizardpanel.2.description,wizardpanel.3.name,wizardpanel.3.description,wizardpanel.4.name,wizardpanel.4.description,wizardpanel.5.name,wizardpanel.5.description"/>
+    <action class="objt.wms.configurator.inspectionmgt.action.InspectionRuleOperationEditAction"/>
+    <action class="objt.wms.configurator.inspectionmgt.action.InspectionSheetInspectionInstructionAddAction"/>
+    <action class="objt.wms.configurator.inspectionmgt.action.InspectionSheetInspectionInstructionRemoveAction"
+            translate="confirmMessage,listConfirmMessage"/>
+    <action class="objt.wms.configurator.inspectionmgt.action.InspectionSheetInspectionInstructionResequenceAction"/>
+    <action class="objt.wms.configurator.inspectionmgt.action.InspectionSheetInspectionInstructionResequenceAction"/>
+    <action class="objt.wms.configurator.inspectionmgt.action.InspectionSheetNewAction"/>
+    <action class="objt.wms.configurator.inspectionmgt.action.InspectionSheetPasteAction"/>
+    <action class="objt.wms.configurator.inspectionmgt.action.ItemInspectionGroupAddAction"/>
+    <action class="objt.wms.configurator.inspectionmgt.action.ItemInspectionGroupRemoveAction"
+            translate="confirmMessage"/>
+    <action class="objt.wms.configurator.inspectionmgt.action.ItemInspectionInstructionAddAction"/>
+    <action class="objt.wms.configurator.inspectionmgt.action.InspectionSheetInspectionSetAddAction"/>
+    <action class="objt.wms.configurator.inspectionmgt.action.InspectionSheetInspectionSetContentAddAction"/>
+    <action class="objt.wms.configurator.inspectionmgt.action.ItemInspectionInstructionRemoveAction"
+            translate="confirmMessage,listConfirmMessage"/>
+    <action class="objt.wms.configurator.inspectionmgt.action.InspectionSetNewAction"/>
+    <action class="objt.wms.configurator.inspectionmgt.action.InspectionSetPasteAction"/>
+    <action class="objt.wms.configurator.inspectionmgt.action.InspectionSetInspectionInstructionAddAction"/>
+    <action class="objt.wms.configurator.inspectionmgt.action.InspectionSetInspectionInstructionRemoveAction"/>
+    <action class="objt.wms.configurator.inspectionmgt.action.InspectionSetInspectionInstructionResequenceAction"/>
+    <action class="objt.wms.configurator.inspectionmgt.action.InspectionInstructionLinkCopyAction"/>
+    <action class="objt.wms.supervisor.inspectionmgt.action.RuntimeInspectionSheetReferenceRefreshAction"/>
+    <!-- END objt.wms.configurator.inspectionmgt -->
+
+    <!-- BEGIN objt.wms.configurator.inventorymgt -->
+    <action class="objt.wms.configurator.inventorymgt.action.AisleGroupAisleAddAction"
+            translate="wizardpanel.1.name,wizardpanel.1.description,wizardpanel.2.name,wizardpanel.2.description,wizardpanel.3.name,wizardpanel.3.description,wizardpanel.4.name,wizardpanel.4.description,wizardpanel.5.name,wizardpanel.5.description" />
+    <action class="objt.wms.configurator.inventorymgt.action.AisleGroupAisleRemoveAction"/>
+    <action class="objt.wms.configurator.inventorymgt.action.AisleGroupDeleteAction"/>
+    <action class="objt.wms.configurator.inventorymgt.action.AisleGroupEquipmentModuleRemoveAction"
+            translate="confirmMessage,listConfirmMessage"/>
+    <action class="objt.wms.configurator.inventorymgt.action.AisleWarehouseLocationAddAction"/>
+    <action class="objt.wms.configurator.inventorymgt.action.AisleWarehouseLocationRemoveAction"/>
+    <action class="objt.wms.configurator.inventorymgt.action.DropOffStorageResourceGroupDeleteAction"/>
+    <action class="objt.wms.configurator.inventorymgt.action.DropOffStorageResourceGroupWarehouseLocationAddAction"/>
+    <action class="objt.wms.configurator.inventorymgt.action.ItemPickStorageResourceAddAction"/>
+    <action class="objt.wms.configurator.inventorymgt.action.LPNBufferBringOnlineAction"
+            translate="confirmMessage"/>
+    <action class="objt.wms.configurator.inventorymgt.action.LPNBufferDeleteAction"/>
+    <action class="objt.wms.configurator.inventorymgt.action.LPNBufferNewAction"
+            translate="wizardpanel.1.name,wizardpanel.1.description,wizardpanel.2.name,wizardpanel.2.description,wizardpanel.3.name,wizardpanel.3.description,wizardpanel.4.name,wizardpanel.4.description,wizardpanel.5.name,wizardpanel.5.description"/>
+    <action class="objt.wms.configurator.inventorymgt.action.LPNBufferTakeOfflineAction"
+            translate="confirmMessage"/>
+    <action class="objt.wms.configurator.inventorymgt.action.LPNBufferWarehouseLocationAddAction"/>
+    <action class="objt.wms.configurator.inventorymgt.action.LPNBufferWarehouseLocationBringOnlineAction"
+            translate="confirmMessage"/>
+    <action class="objt.wms.configurator.inventorymgt.action.LPNBufferWarehouseLocationRemoveAction"
+            translate="confirmMessage,listConfirmMessage"/>
+    <action class="objt.wms.configurator.inventorymgt.action.LPNBufferWarehouseLocationTakeOfflineAction"
+            translate="confirmMessage"/>
+    <action class="objt.wms.configurator.inventorymgt.action.LPNBufferSpecificSettingItemLinkAddAction"/>
+    <action class="objt.wms.configurator.inventorymgt.action.LPNBufferItemBringOnlineAction"
+            translate="confirmMessage"/>
+    <action class="objt.wms.configurator.inventorymgt.action.LPNBufferSpecificSettingItemLinkRemoveAction"
+            translate="confirmMessage,listConfirmMessage"/>
+    <action class="objt.wms.configurator.inventorymgt.action.OnlineLPNBufferItemEditAction"/>
+    <action class="objt.wms.configurator.inventorymgt.action.LPNBufferItemTakeOfflineAction"
+            translate="confirmMessage"/>
+    <action class="objt.wms.configurator.inventorymgt.action.PickStorageResourceBringOnlineAction"
+            translate="confirmMessage"/>
+    <action class="objt.wms.configurator.inventorymgt.action.PickStorageResourceDeleteAction"
+            translate="confirmMessage,listConfirmMessage"/>
+    <action class="objt.wms.configurator.inventorymgt.action.PickStorageResourceSequenceModifyAction"/>
+    <action class="objt.wms.configurator.inventorymgt.action.PickStorageResourceTakeOfflineAction"
+            translate="confirmMessage"/>
+    <action class="objt.wms.configurator.inventorymgt.action.PickZoneBringOnlineAction"
+            translate="confirmMessage"/>
+    <action class="objt.wms.configurator.inventorymgt.action.PickZoneDeleteAction"/>
+    <action class="objt.wms.configurator.inventorymgt.action.PickZoneItemAddAction"/>
+    <action class="objt.wms.configurator.inventorymgt.action.PickZoneItemBringOnlineAction"
+            translate="confirmMessage"/>
+    <action class="objt.wms.configurator.inventorymgt.action.PickZoneItemLinkSequenceModifyAction"/>
+    <action class="objt.wms.configurator.inventorymgt.action.PickZoneItemLinkToggleAction"/>
+    <action class="objt.wms.configurator.inventorymgt.action.PickZoneItemRemoveAction"
+            translate="confirmMessage,listConfirmMessage"/>
+    <action class="objt.wms.configurator.inventorymgt.action.PickZoneItemTakeOfflineAction"
+            translate="confirmMessage"/>
+    <action class="objt.wms.configurator.inventorymgt.action.PickZoneNewAction"
+            translate="wizardpanel.1.name,wizardpanel.1.description,wizardpanel.2.name,wizardpanel.2.description,wizardpanel.3.name,wizardpanel.3.description,wizardpanel.4.name,wizardpanel.4.description,wizardpanel.5.name,wizardpanel.5.description" />
+    <action class="objt.wms.configurator.inventorymgt.action.PickZoneTakeOfflineAction"
+            translate="confirmMessage"/>
+    <action class="objt.wms.configurator.inventorymgt.action.PickZoneWarehouseLocationAddAction"/>
+    <action class="objt.wms.configurator.inventorymgt.action.PickZoneWarehouseLocationBringOnlineAction"
+            translate="confirmMessage"/>
+    <action class="objt.wms.configurator.inventorymgt.action.PickZoneWarehouseLocationRemoveAction"
+            translate="confirmMessage,listConfirmMessage"/>
+    <action class="objt.wms.configurator.inventorymgt.action.PickZoneWarehouseLocationTakeOfflineAction"
+            translate="confirmMessage"/>
+    <action class="objt.wms.configurator.inventorymgt.action.ProcessUnitAbstractStorageResourceRemoveAction"/>
+    <action class="objt.wms.configurator.inventorymgt.action.ProcessUnitAbstractStorageResourceResequenceAction"/>
+    <action class="objt.wms.configurator.inventorymgt.action.ProcessUnitPickZoneAddAction"/>
+    <action class="objt.wms.configurator.inventorymgt.action.ProcessUnitWarehouseLocationAddAction"/>
+    <action class="objt.wms.configurator.inventorymgt.action.QualityControlStatusNewAction"/>
+    <action class="objt.wms.configurator.inventorymgt.action.QualityControlStatusEditAction"/>
+    <action class="objt.wms.configurator.inventorymgt.action.QualityControlStatusDeleteAction"/>
+    <action class="objt.wms.configurator.inventorymgt.action.QualityControlStatusTransitionCopyAction"/>
+    <action class="objt.wms.configurator.inventorymgt.action.QualityControlStatusTransitionPasteAction"/>
+    <action class="objt.wms.configurator.inventorymgt.action.QualityControlStatusTransitionAbstractRoleAddAction"/>
+    <action class="objt.wms.configurator.inventorymgt.action.QualityControlStatusTransitionEditAction"/>
+    <action class="objt.wms.configurator.inventorymgt.action.StageStorageResourceGroupStageLocationRemoveAction"
+            translate="confirmMessage,listConfirmMessage"/>
+    <action class="objt.wms.configurator.inventorymgt.action.StageStorageResourceGroupStageWarehouseLocationAddAction"/>
+    <action class="objt.wms.configurator.inventorymgt.action.StageStorageResourceGroupStorageResourceAddAction"/>
+    <action class="objt.wms.configurator.inventorymgt.action.StagingRouteEvaluateAction"/>
+    <action class="objt.wms.configurator.inventorymgt.action.StorageResourceGroupDeleteAction"/>
+    <action class="objt.wms.configurator.inventorymgt.action.StorageResourceGroupPostSaveAction"/>
+    <action class="objt.wms.configurator.inventorymgt.action.StorageResourceGroupStorageResourceRemoveAction"
+            translate="confirmMessage,listConfirmMessage"/>
+    <action class="objt.wms.configurator.inventorymgt.action.StorageResourceGroupValidationAction"/>
+    <action class="objt.wms.configurator.inventorymgt.action.StorageResourceGroupWarehouseLocationAddAction"/>
+    <action class="objt.wms.configurator.inventorymgt.action.StorageZoneChildStorageZoneAddAction"/>
+    <action class="objt.wms.configurator.inventorymgt.action.StorageZoneDeleteAction"/>
+    <action class="objt.wms.configurator.inventorymgt.action.StorageZoneMinMaxConfigAddAction"/>
+    <action class="objt.wms.configurator.inventorymgt.action.StorageZoneMinMaxConfigEditAction"/>
+    <action class="objt.wms.configurator.inventorymgt.action.StorageZoneMinMaxConfigRemoveAction"/>
+    <action class="objt.wms.configurator.inventorymgt.action.StorageZoneResourceAddAction"/>
+    <action class="objt.wms.configurator.inventorymgt.action.StorageZoneResourceRemoveAction"
+            translate="confirmMessage,listConfirmMessage"/>
+    <action class="objt.wms.configurator.inventorymgt.action.WarehouseDeleteAction"
+            translate="confirmMessage"/>
+    <action class="objt.wms.configurator.inventorymgt.action.WarehouseDepartmentAddAction"/>
+    <action class="objt.wms.configurator.inventorymgt.action.WarehouseLocationAddAction"/>
+    <action class="objt.wms.configurator.inventorymgt.action.WarehouseLocationDeleteAction"
+            translate="confirmMessage"/>
+    <action class="objt.wms.configurator.inventorymgt.action.WarehouseLocationMultiEditAction"
+            csvtranslate="warningAttributeTitles"
+            csvattribute="warningAttributePath"
+            translate="title,description,warningMessage"/>
+    <action class="objt.wms.configurator.inventorymgt.action.WarehouseLocationDimensionEditAction"/>
+    <action class="objt.wms.configurator.inventorymgt.action.WarehouseLocationGenerateAction"/>
+    <action class="objt.wms.configurator.inventorymgt.action.WarehouseLocationPickStorageResourceAddAction"/>
+    <action class="objt.wms.configurator.inventorymgt.action.WarehouseNewAction"
+            csvattribute="keyAttributes" />
+    <action class="objt.wms.configurator.inventorymgt.action.WarehouseStorageResourceGroupAddAction"/>
+    <action class="objt.wms.configurator.inventorymgt.action.WarehouseStorageResourceGroupRemoveAction"
+            translate="confirmMessage,listConfirmMessage"/>
+    <action class="objt.wms.configurator.inventorymgt.action.WorkZoneDeleteAction"/>
+    <action class="objt.wms.configurator.inventorymgt.action.WorkZoneResourceAddAction"/>
+    <action class="objt.wms.configurator.inventorymgt.action.WorkZoneResourceRemoveAction"/>
+    <!-- END objt.wms.configurator.inventorymgt -->
+
+    <!-- BEGIN objt.wms.configurator.itemmgt -->
+    <action class="objt.wms.configurator.itemmgt.action.ItemGroupItemAddAction"/>
+    <action class="objt.wms.configurator.itemmgt.action.ItemInventoryForecastPostSaveAction"/>
+    <action class="objt.wms.configurator.itemmgt.action.ItemPackagingAddAction"/>
+    <action class="objt.wms.configurator.itemmgt.action.ItemPackagingDefaultAction"/>
+    <action class="objt.wms.configurator.itemmgt.action.ItemPackagingRemoveAction" translate="confirmMessage,listConfirmMessage"/>
+    <action class="objt.wms.configurator.itemmgt.action.ItemCustomerDetailAQLSettingsAddAction"/>
+    <action class="objt.wms.configurator.itemmgt.action.ItemCustomerDetailAQLSettingsDeleteAction"/>
+    <action class="objt.wms.configurator.itemmgt.action.ItemSupplierDetailAQLSettingsAddAction"/>
+    <action class="objt.wms.configurator.itemmgt.action.ItemSupplierDetailAQLSettingsDeleteAction"/>
+    <action class="objt.wms.configurator.itemmgt.action.PackagingItemApplyAction"/>
+    <action class="objt.wms.configurator.itemmgt.action.PackagingItemViewAction"/>
+    <action class="objt.wms.configurator.itemmgt.action.PackagingPreviewAction"/>
+    <action class="objt.wms.configurator.itemmgt.action.PackagingReApplyAction"/>
+    <action class="objt.wms.configurator.itemmgt.action.PackagingRemoveAction"/>
+    <action class="objt.wms.configurator.itemmgt.action.PackagingTemplateCopyAction"/>
+    <action class="objt.wms.configurator.itemmgt.action.PackagingTemplatePasteAction"/>
+    <action class="objt.wms.configurator.itemmgt.action.PackagingUnapplyAction"/>
+    <!-- END objt.wms.configurator.itemmgt -->
+
+    <!-- BEGIN objt.wms.configurator.productionmgt -->
+    <action class="objt.wms.configurator.productionmgt.action.DepartmentWarehouseAddAction"/>
+    <action class="objt.wms.configurator.productionmgt.action.KitManufacturingOperationAddAction"/>
+    <action class="objt.wms.configurator.productionmgt.action.KitManufacturingOperationEditAction"/>
+    <action class="objt.wms.configurator.productionmgt.action.KitRecipeBringOnlineAction"
+            translate="confirmMessage"/>
+    <action class="objt.wms.configurator.productionmgt.action.KitRecipeTakeOfflineAction"
+            translate="confirmMessage"/>
+    <action class="objt.wms.configurator.productionmgt.action.ManufacturingOperationItemQtyAddAction"/>
+    <action class="objt.wms.configurator.productionmgt.action.ManufacturingOperationItemQtyEditAction"/>
+    <action class="objt.wms.configurator.productionmgt.action.ManufacturingOperationRemoveAction"
+            translate="confirmMessage,listConfirmMessage"/>
+    <action class="objt.wms.configurator.productionmgt.action.ResourceGroupManufacturingOperationNewAction"
+            translate="wizardpanel.1.name,wizardpanel.1.description,wizardpanel.2.name,wizardpanel.2.description,wizardpanel.3.name,wizardpanel.3.description,wizardpanel.4.name,wizardpanel.4.description,wizardpanel.5.name,wizardpanel.5.description" />
+    <action class="objt.wms.configurator.productionmgt.action.VALManufacturingOperationAddAction"/>
+    <action class="objt.wms.configurator.productionmgt.action.VALManufacturingOperationEditAction"/>
+    <action class="objt.wms.configurator.productionmgt.action.WorkCenterManufacturingOperationAddAction"/>
+    <action class="objt.wms.configurator.productionmgt.action.WorkCenterManufacturingOperationRemoveAction"/>
+    <!-- END objt.wms.configurator.productionmgt -->
+
+    <!-- BEGIN objt.wms.configurator.qualitymgt -->
+    <action class="objt.wms.configurator.qualitymgt.action.DocumentedInstructionAddAction"/>
+    <action class="objt.wms.configurator.qualitymgt.action.DocumentedInstructionCopyAction"/>
+    <action class="objt.wms.configurator.qualitymgt.action.DocumentedInstructionDeleteAction"/>
+    <action class="objt.wms.configurator.qualitymgt.action.DocumentedInstructionDisableAction"/>
+    <action class="objt.wms.configurator.qualitymgt.action.DocumentedInstructionEditAction"/>
+    <action class="objt.wms.configurator.qualitymgt.action.DocumentedInstructionOverruleAction"/>
+    <action class="objt.wms.configurator.qualitymgt.action.DocumentedInstructionPasteAction"/>
+    <action class="objt.wms.configurator.qualitymgt.action.DocumentedInstructionTranslationAction"/>
+    <action class="objt.wms.configurator.qualitymgt.action.DocumentedInstructionUserFieldEditAction"
+            translate="panelTitle"/>
+    <action class="objt.wms.configurator.qualitymgt.action.InstructionSheetDocumentedInstructionMandatoryAction"/>
+    <action class="objt.wms.configurator.qualitymgt.action.InstructionSheetInstructionResequenceAction"/>
+    <!-- END objt.wms.configurator.qualitymgt -->
+
+    <!-- BEGIN objt.wms.configurator.resourcemgt -->
+    <action class="objt.wms.configurator.resourcemgt.action.DeviceWorkCenterDefaultSetAction"/>
+    <action class="objt.wms.configurator.resourcemgt.action.WorkCenterDeleteAction"/>
+    <action class="objt.wms.configurator.resourcemgt.action.WorkCenterNewAction"
+            translate="wizardpanel.1.name,wizardpanel.1.description,wizardpanel.2.name,wizardpanel.2.description,wizardpanel.3.name,wizardpanel.3.description,wizardpanel.4.name,wizardpanel.4.description,wizardpanel.5.name,wizardpanel.5.description" />
+    <!-- END objt.wms.configurator.resourcemgt -->
+
+    <!-- BEGIN objt.wms.configurator.rulemgt -->
+    <action class="objt.wms.configurator.rulemgt.action.RuleOperationOperationRuleAddAction"/>
+    <action class="objt.wms.configurator.rulemgt.action.RuleOperationOperationRuleRemoveAction"
+            translate="confirmMessage"/>
+    <action class="objt.wms.configurator.rulemgt.action.ScenarioAddAction"
+            translate="wizardpanel.1.name,wizardpanel.1.description,wizardpanel.2.name,wizardpanel.2.description,wizardpanel.3.name,wizardpanel.3.description,wizardpanel.4.name,wizardpanel.4.description,wizardpanel.5.name,wizardpanel.5.description"
+            csvattribute="keyAttributes" />
+    <action class="objt.wms.configurator.rulemgt.action.ScenarioEditAction"/>
+    <action class="objt.wms.configurator.rulemgt.action.ScenarioPasteAction"/>
+    <!-- END objt.wms.configurator.rulemgt -->
+
+    <!-- BEGIN objt.wms.configurator.warehousemgt -->
+    <action class="objt.wms.configurator.warehousemgt.action.PackConfigurationEditAction"/>
+    <action class="objt.wms.configurator.warehousemgt.action.PackConfigurationNewAction"/>
+    <action class="objt.wms.configurator.warehousemgt.action.PackConfigurationRemoveAction"
+            translate="confirmMessage,listConfirmMessage"/>
+    <action class="objt.wms.configurator.warehousemgt.action.PLEKeyGroupAddAction"/>
+    <action class="objt.wms.configurator.warehousemgt.action.PLEKeyGroupEditAction"/>
+    <action class="objt.wms.configurator.warehousemgt.action.PLEKeyGroupPasteAction"/>
+    <action class="objt.wms.configurator.warehousemgt.action.PLEKeyGroupDeleteAction"
+            translate="confirmMessage,listConfirmMessage"/>
+    <action class="objt.wms.configurator.warehousemgt.action.PLEKeyGroupBringOnlineAction"
+            translate="confirmMessage,listConfirmMessage"/>
+    <action class="objt.wms.configurator.warehousemgt.action.PLEKeyGroupTakeOfflineAction"
+            translate="confirmMessage,listConfirmMessage"/>
+    <action class="objt.wms.configurator.warehousemgt.action.PLEFlowEditAction"/>
+    <action class="objt.wms.configurator.warehousemgt.action.PLEFlowPasteAction"/>
+    <action class="objt.wms.configurator.warehousemgt.action.PLEFlowDeleteAction"
+            translate="confirmMessage,listConfirmMessage"/>
+    <action class="objt.wms.configurator.warehousemgt.action.PLEFlowBringOnlineAction"
+            translate="confirmMessage,listConfirmMessage"/>
+    <action class="objt.wms.configurator.warehousemgt.action.PLEFlowTakeOfflineAction"
+            translate="confirmMessage,listConfirmMessage"/>
+    <action class="objt.wms.configurator.warehousemgt.action.PLEGroupEditAction"/>
+    <action class="objt.wms.configurator.warehousemgt.action.PLEGroupPasteAction"/>
+    <action class="objt.wms.configurator.warehousemgt.action.PLEGroupDeleteAction"
+            translate="confirmMessage,listConfirmMessage"/>
+    <action class="objt.wms.configurator.warehousemgt.action.PLEGroupBringOnlineAction"
+            translate="confirmMessage,listConfirmMessage"/>
+    <action class="objt.wms.configurator.warehousemgt.action.PLEGroupTakeOfflineAction"
+            translate="confirmMessage,listConfirmMessage"/>
+    <action class="objt.wms.configurator.warehousemgt.action.PLEWorkZoneFlowAddAction"/>
+    <action class="objt.wms.configurator.warehousemgt.action.PLEWorkZoneFlowDeleteAction"
+            translate="confirmMessage,listConfirmMessage"/>
+    <action class="objt.wms.configurator.warehousemgt.action.ReasonGroupTaskReasonAddAction"
+            translate="wizardpanel.1.name,wizardpanel.1.description,wizardpanel.2.name,wizardpanel.2.description,wizardpanel.3.name,wizardpanel.3.description,wizardpanel.4.name,wizardpanel.4.description,wizardpanel.5.name,wizardpanel.5.description" />
+    <action class="objt.wms.configurator.warehousemgt.action.SpecificWarehouseConfigurationAddAction"/>
+    <action class="objt.wms.configurator.warehousemgt.action.SpecificWarehouseConfigurationRemoveAction"/>
+    <action class="objt.wms.configurator.warehousemgt.action.TaskProfileDeleteAction"/>
+    <action class="objt.wms.configurator.warehousemgt.action.TaskProfileDetailAddAction"/>
+    <action class="objt.wms.configurator.warehousemgt.action.TaskProfileDetailDeleteAction"/>
+    <action class="objt.wms.configurator.warehousemgt.action.TaskProfileDetailDeleteChildAction"/>
+    <action class="objt.wms.configurator.warehousemgt.action.TaskProfileDetailEditAction"/>
+    <action class="objt.wms.configurator.warehousemgt.action.TaskProfileModifyAction"/>
+    <action class="objt.wms.configurator.warehousemgt.action.TaskProfilePasteAction"/>
+    <action class="objt.wms.configurator.warehousemgt.action.TaskProfileResourceAddAction"
+            translate="childlisttabpaneldescription,childlisttabpaneltitle"/>
+    <action class="objt.wms.configurator.warehousemgt.action.TaskProfileResourceRemoveAction"
+            translate="confirmMessage,listConfirmMessage"/>
+    <!-- END objt.wms.configurator.warehousemgt -->
+
+    <!-- BEGIN objt.wms.operatorclient.inspectionmgt -->
+    <action class="objt.wms.operatorclient.inspectionmgt.action.ContainerRuntimeInspectionSheetProcessAction"/>
+    <action class="objt.wms.operatorclient.inspectionmgt.action.DocumentDisplayAction"/>
+    <action class="objt.wms.operatorclient.inspectionmgt.action.RuntimeInspectionInstructionAbortAction"/>
+    <action class="objt.wms.operatorclient.inspectionmgt.action.RuntimeInspectionInstructionProcessAction"/>
+    <action class="objt.wms.operatorclient.inspectionmgt.action.RuntimeInspectionResultDisplayAction"/>
+    <action class="objt.wms.operatorclient.inspectionmgt.action.RuntimeInspectionSheetCloseAction"/>
+    <action class="objt.wms.operatorclient.inspectionmgt.action.RuntimeInspectionSheetNavigateAction"/>
+    <action class="objt.wms.operatorclient.inspectionmgt.action.RuntimeInspectionSheetProcessAction"/>
+    <action class="objt.wms.operatorclient.inspectionmgt.action.RuntimeInspectionSheetCompleteAction"/>
+    <action class="objt.wms.operatorclient.inspectionmgt.action.RuntimeInspectionSheetWIPInventoryDisplayAction"/>
+    <!-- END objt.wms.operatorclient.inspectionmgt -->
+
+    <!-- BEGIN objt.wms.operatorclient.inventorymgt -->
+    <action class="objt.wms.operatorclient.warehousemgt.action.InventoryKanbanConsumeAction"/>
+    <action class="objt.wms.operatorclient.warehousemgt.action.InventoryKanbanConsumeAction"/>
+    <action class="objt.wms.operatorclient.inventorymgt.action.InventoryQualityControlStatusEditAction"/>
+    <action class="objt.wms.operatorclient.warehousemgt.action.InventoryReturnAction"/>
+    <action class="objt.wms.operatorclient.inventorymgt.action.InventoryViewAction"/>
+    <action class="objt.wms.operatorclient.materialmgt.action.SerialComponentAddAction"/>
+    <action class="objt.wms.operatorclient.materialmgt.action.SerialComponentRemoveAction"/>
+    <action class="objt.wms.operatorclient.inventorymgt.action.SKUMoveAction"/>
+    <!-- END objt.wms.operatorclient.inventorymgt -->
+
+    <!-- BEGIN objt.wms.operatorclient.productionmgt -->
+    <action class="objt.wms.operatorclient.productionmgt.action.MakeOrderAddOutputInventoryAction"/>
+    <action class="objt.wms.operatorclient.productionmgt.action.MakeOrderCloseAction"/>
+    <action class="objt.wms.operatorclient.productionmgt.action.MakeOrderCloseLPNAction"/>
+    <action class="objt.wms.operatorclient.productionmgt.action.MakeOrderConsumeAction"/>
+    <action class="objt.wms.operatorclient.productionmgt.action.MakeOrderInstructionViewAction"/>
+    <action class="objt.wms.operatorclient.productionmgt.action.MakeOrderInventoryDisplayAction"/>
+    <action class="objt.wms.operatorclient.productionmgt.action.MakeOrderNavigateAction"/>
+    <action class="objt.wms.operatorclient.productionmgt.action.MakeOrderPickListOverviewAction"/>
+    <action class="objt.wms.operatorclient.productionmgt.action.MakeOrderPickListReleaseAction"/>
+    <action class="objt.wms.operatorclient.productionmgt.action.MakeOrderPickTaskAddAction"/>
+    <action class="objt.wms.operatorclient.productionmgt.action.MakeOrderRefreshAction"/>
+    <action class="objt.wms.operatorclient.productionmgt.action.MakeOrderRequestLPNAction"/>
+    <action class="objt.wms.operatorclient.productionmgt.action.MakeOrderRescheduleAction"/>
+    <action class="objt.wms.operatorclient.productionmgt.action.MakeOrderStartAction"/>
+    <!-- END objt.wms.operatorclient.productionmgt -->
+
+    <!-- BEGIN objt.wms.operatorclient.warehousemgt -->
+    <action class="objt.wms.operatorclient.warehousemgt.action.IndirectTaskAddAction"/>
+    <action class="objt.wms.operatorclient.warehousemgt.action.PackOrderCloseAction"/>
+    <action class="objt.wms.operatorclient.warehousemgt.action.PackOrderNavigateAction"/>
+    <action class="objt.wms.operatorclient.warehousemgt.action.PackOrderRescheduleAction"/>
+    <action class="objt.wms.operatorclient.warehousemgt.action.PackOrderScheduleAction"/>
+    <action class="objt.wms.operatorclient.warehousemgt.action.PackOrderUnscheduleAction"/>
+    <action class="objt.wms.operatorclient.warehousemgt.action.RepackInstructionViewAction"/>
+    <action class="objt.wms.operatorclient.warehousemgt.action.RepackLPNAction"/>
+    <action class="objt.wms.operatorclient.warehousemgt.action.RepackFullNestLPNAction"/>
+    <action class="objt.wms.operatorclient.warehousemgt.action.RepackLPNCloseAction"/>
+    <action class="objt.wms.operatorclient.warehousemgt.action.RepackLPNContentStatusToggleAction"/>
+    <action class="objt.wms.operatorclient.warehousemgt.action.RepackLPNCreateAction"/>
+    <action class="objt.wms.operatorclient.warehousemgt.action.RepackLPNDimensionsEditAction"/>
+    <action class="objt.wms.operatorclient.warehousemgt.action.RepackLPNPrintAction"/>
+    <action class="objt.wms.operatorclient.warehousemgt.action.RepackLPNReopenAction"/>
+    <action class="objt.wms.operatorclient.warehousemgt.action.RepackNestLPNAction"/>
+    <action class="objt.wms.operatorclient.warehousemgt.action.RepackRestrictToWipAction"/>
+    <action class="objt.wms.operatorclient.warehousemgt.action.RepackRequestLPNAction"/>
+    <action class="objt.wms.operatorclient.warehousemgt.action.TaskResetAction"/>
+    <action class="objt.wms.operatorclient.warehousemgt.action.TaskViewAction"/>
+    <action class="objt.wms.operatorclient.warehousemgt.action.TaskTerminateAction"/>
+    <action class="objt.wms.operatorclient.warehousemgt.action.TouchDocumentTemplatePrintAction"/>
+    <!-- END objt.wms.operatorclient.warehousemgt -->
+
+    <!-- BEGIN objt.wms.supervisor.inboundmgt -->
+    <action class="objt.wms.supervisor.inboundmgt.action.ASNCloseAction"/>
+    <action class="objt.wms.supervisor.inboundmgt.action.ASNInboundOrderCreateAction"/>
+    <action class="objt.wms.supervisor.inboundmgt.action.InboundOperationAddAction"/>
+    <action class="objt.wms.supervisor.inboundmgt.action.InboundOperationASNAddAction"/>
+    <action class="objt.wms.supervisor.inboundmgt.action.InboundOperationCloseAction"/>
+    <action class="objt.wms.supervisor.inboundmgt.action.InboundOperationDeleteAction"/>
+    <action class="objt.wms.supervisor.inboundmgt.action.InboundOperationEditAction"/>
+    <action class="objt.wms.supervisor.inboundmgt.action.InboundOperationPreReceiptGenerateAction"/>
+    <action class="objt.wms.supervisor.inboundmgt.action.InboundOperationPreReceiveAction"/>
+    <action class="objt.wms.supervisor.inboundmgt.action.InboundOperationPurchaseOperationAddAction"/>
+    <action class="objt.wms.supervisor.inboundmgt.action.InboundOperationUnreceiveAction"/>
+    <action class="objt.wms.supervisor.inboundmgt.action.InboundOrderAssetTraceEditAction"/>
+    <action class="objt.wms.supervisor.inboundmgt.action.InboundOrderCloseAction"/>
+    <action class="objt.wms.supervisor.inboundmgt.action.InboundOrderCreateAction"/>
+    <action class="objt.wms.supervisor.inboundmgt.action.InboundOrderDeleteAction"/>
+    <action class="objt.wms.supervisor.inboundmgt.action.InboundOrderEditAction"/>
+    <action class="objt.wms.supervisor.inboundmgt.action.InboundOrderInboundPlanAction"/>
+    <action class="objt.wms.supervisor.inboundmgt.action.InboundOrderInboundScheduleAction"/>
+    <action class="objt.wms.supervisor.inboundmgt.action.InboundOrderInboundUnplanAction"/>
+    <action class="objt.wms.supervisor.inboundmgt.action.InboundOrderInboundUnscheduleAction"/>
+    <action class="objt.wms.supervisor.inboundmgt.action.InboundOrderReportAction"/>
+    <action class="objt.wms.supervisor.inboundmgt.action.PreReceiptInventoryTraceOperationAbortAction"/>
+    <action class="objt.wms.supervisor.inboundmgt.action.PreReceiptInventoryTraceOperationInboundAction"/>
+    <action class="objt.wms.supervisor.inboundmgt.action.PurchaseOrderCloseAction"/>
+    <action class="objt.wms.supervisor.inboundmgt.action.PurchaseOrderInboundOrderCreateAction"/>
+    <action class="objt.wms.supervisor.inboundmgt.action.ASNRecordInboundOrderCreateAction"/>
+    <action class="objt.wms.supervisor.inboundmgt.action.ASNRecordCloseAction"/>
+    <!-- END objt.wms.supervisor.inboundmgt -->
+
+    <!-- BEGIN objt.wms.supervisor.inspectionmgt -->
+    <action class="objt.wms.supervisor.inspectionmgt.action.ContainerStorageItemQtyRuntimeInspectionSheetAddAction"/>
+    <action class="objt.wms.supervisor.inspectionmgt.action.ContainerStorageItemQtyRuntimeInspectionSheetRemoveAction"/>
+    <action class="objt.wms.supervisor.inspectionmgt.action.InboundOrderRuntimeInspectionSheetAddAction"/>
+    <action class="objt.wms.supervisor.inspectionmgt.action.InboundOrderRuntimeInspectionSheetRemoveAction"/>
+    <action class="objt.wms.supervisor.inspectionmgt.action.InspectionInventoryEvacuateAction"/>
+    <action class="objt.wms.supervisor.inspectionmgt.action.InspectionInventoryRelocateAction"/>
+    <action class="objt.wms.supervisor.inspectionmgt.action.InspectionInventoryRequestAction"/>
+    <action class="objt.wms.supervisor.inspectionmgt.action.InspectionInventorySKUMoveAction"/>
+    <action class="objt.wms.supervisor.inspectionmgt.action.InventoryInspectionSheetAddAction"/>
+    <action class="objt.wms.supervisor.inspectionmgt.action.LotRuntimeInspectionSheetAddAction"/>
+    <action class="objt.wms.supervisor.inspectionmgt.action.LotRuntimeInspectionSheetRemoveAction"/>
+    <action class="objt.wms.supervisor.inspectionmgt.action.MeasurementSPCChartDisplayAction"/>
+    <action class="objt.wms.supervisor.inspectionmgt.action.RuntimeInspectionInstructionAbortAction"/>
+    <action class="objt.wms.supervisor.inspectionmgt.action.RuntimeInspectionInstructionProcessAction"/>
+    <action class="objt.wms.supervisor.inspectionmgt.action.RuntimeInspectionInstructionResetAction"/>
+    <action class="objt.wms.supervisor.inspectionmgt.action.RuntimeInspectionSheetCloseAction"/>
+    <action class="objt.wms.supervisor.inspectionmgt.action.RuntimeInspectionSheetProcessAction"/>
+    <action class="objt.wms.supervisor.inspectionmgt.action.SampleCreateAction"/>
+    <action class="objt.wms.supervisor.inspectionmgt.action.SampleDeleteAction"/>
+    <action class="objt.wms.supervisor.inspectionmgt.action.SampleMoveAction"/>
+    <action class="objt.wms.supervisor.inspectionmgt.action.SerialRuntimeInspectionSheetAddAction"/>
+    <action class="objt.wms.supervisor.inspectionmgt.action.SerialRuntimeInspectionSheetRemoveAction"/>
+    <action class="objt.wms.supervisor.inspectionmgt.action.InspectionReferenceAction"/>
+    <action class="objt.wms.supervisor.inspectionmgt.action.RuntimeInspectionResultDeleteAction"/>
+    <action class="objt.wms.supervisor.inspectionmgt.action.InspectionContainerSetContainerAddAction"/>
+    <action class="objt.wms.supervisor.inspectionmgt.action.InspectionContainerSetContainerRemoveAction"
+            translate="confirmMessage,listConfirmMessage"/>
+    <action class="objt.wms.supervisor.inspectionmgt.action.ItemSupplierDetailAQLSettingsEditAction"/>
+    <action class="objt.wms.supervisor.inspectionmgt.action.RuntimeInspectionSheetContextUpdateAction"/>
+    <action class="objt.wms.supervisor.inspectionmgt.action.RuntimeInspectionSheetEditAction"/>
+    <action class="objt.wms.supervisor.inspectionmgt.action.InspectionInventoryQualityControlStatusEditAction"/>
+    <action class="objt.wms.supervisor.inspectionmgt.action.InspectionContainerSetApproveAction"/>
+    <action class="objt.wms.supervisor.inspectionmgt.action.InspectionWipInventoryToggleRestrictToInspectionAction"/>
+    <action class="objt.wms.supervisor.inspectionmgt.action.RuntimeInspectionSheetStartAction"/>
+    <action class="objt.wms.supervisor.inspectionmgt.action.RuntimeInspectionSheetCompleteAction"/>
+    <action class="objt.wms.supervisor.inspectionmgt.action.RuntimeInspectionSheetReportAction"/>
+    <action class="objt.wms.supervisor.inspectionmgt.action.InspectionContainerSetFirmAction"/>
+    <action class="objt.wms.supervisor.inspectionmgt.action.InspectionContainerSetUnfirmAction"/>
+
+    <!-- END objt.wms.supervisor.inspectionmgt -->
+
+    <!-- BEGIN objt.wms.supervisor.inventorymgt -->
+    <action class="objt.wms.supervisor.inventorymgt.action.AssetAdjustAction"/>
+    <action class="objt.wms.supervisor.inventorymgt.action.AssetReceiveAction"/>
+    <action class="objt.wms.supervisor.inventorymgt.action.AssetShipAction"/>
+    <action class="objt.wms.supervisor.inventorymgt.action.AssetTraceWrapperTabPanelDisplayAction"/>
+    <action class="objt.wms.supervisor.inventorymgt.action.ContainerStorageItemQtyContentStatusEditAction"/>
+    <action class="objt.wms.supervisor.inventorymgt.action.ContainerStorageItemQtyContentViewAction"/>
+    <action class="objt.wms.supervisor.inventorymgt.action.ContainerStorageItemQtyDimensionEditAction"/>
+    <action class="objt.wms.supervisor.inventorymgt.action.ContainerStorageItemQtyLostAction"/>
+    <action class="objt.wms.supervisor.inventorymgt.action.ContainerStorageItemQtyPackagingEditAction"/>
+    <action class="objt.wms.supervisor.inventorymgt.action.ContainerStorageItemQtyPrintAction"/>
+    <action class="objt.wms.supervisor.inventorymgt.action.ContainerStorageItemQtyRemoveAction"/>
+    <action class="objt.wms.supervisor.inventorymgt.action.InventoryBalanceCompleteAction"/>
+    <action class="objt.wms.supervisor.inventorymgt.action.InventoryCodesEditAction"/>
+    <action class="objt.wms.supervisor.inventorymgt.action.InventoryLockAcquireAction"/>
+    <action class="objt.wms.supervisor.inventorymgt.action.InventoryLockInfoAction"/>
+    <action class="objt.wms.supervisor.inventorymgt.action.InventoryLockReleaseAction"/>
+    <action class="objt.wms.supervisor.inventorymgt.action.InventoryMoveAction"/>
+    <action class="objt.wms.supervisor.inventorymgt.action.InventoryNonAllocateableInfoAction"/>
+    <action class="objt.wms.supervisor.inventorymgt.action.InventoryOwnerClearAction"/>
+    <action class="objt.wms.supervisor.inventorymgt.action.InventoryQtyEditAction"/>
+    <action class="objt.wms.supervisor.inventorymgt.action.InventoryQualityControlStatusEditAction"/>
+    <action class="objt.wms.supervisor.inventorymgt.action.InventoryRemoveAction"/>
+    <action class="objt.wms.supervisor.inventorymgt.action.InventoryTraceOperationLostLPNAbortAction"/>
+    <action class="objt.wms.supervisor.inventorymgt.action.InventoryTraceOperationLostLPNCompleteAction"/>
+    <action class="objt.wms.supervisor.inventorymgt.action.LotQualityControlStatusModifyAction"/>
+    <action class="objt.wms.supervisor.inventorymgt.action.SerialQualityControlStatusEditAction"/>
+    <action class="objt.wms.supervisor.inventorymgt.action.StockBrowserInventoryLockAcquireAction"/>
+    <action class="objt.wms.supervisor.inventorymgt.action.StockBrowserInventoryLockReleaseAction"/>
+    <action class="objt.wms.supervisor.inventorymgt.action.StockBrowserNavigationAction"/>
+    <action class="objt.wms.supervisor.inventorymgt.action.StorageResourceQtyCubicsRecalculateAction"/>
+    <action class="objt.wms.supervisor.inventorymgt.action.WarehouseLocationFullToggleAction"/>
+    <action class="objt.wms.supervisor.inventorymgt.action.WarehouseLocationWeightRecalculateAction"/>
+    <action class="objt.wms.supervisor.inventorymgt.action.InventoryForecastGraphAction"/>
+    <action class="objt.wms.supervisor.inventorymgt.action.InventoryForecastTabPanelOptionAction"/>
+    <action class="objt.wms.supervisor.inventorymgt.action.InventoryForecastStockBreakCalculateAction"/>
+    <action class="objt.wms.supervisor.inventorymgt.util.InventoryBalanceItemLevelValueList"/>
+    <action class="objt.wms.supervisor.inventorymgt.util.InventoryBalanceLocationLevelValueList"/>
+    <action class="objt.wms.supervisor.inventorymgt.util.ResourceItemTraceLevelSelector"/>
+    <!-- END objt.wms.supervisor.inventorymgt -->
+
+    <!-- BEGIN objt.wms.supervisor.outboundmgt -->
+    <action class="objt.wms.supervisor.outboundmgt.action.ConsignmentOrderActiveDeliveryOrderRemoveAction"/>
+    <action class="objt.wms.supervisor.outboundmgt.action.ConsignmentOrderDeliveryOrderAddAction"/>
+    <action class="objt.wms.supervisor.outboundmgt.action.ConsignmentOrderDeliveryOrderRemoveAction"/>
+    <action class="objt.wms.supervisor.outboundmgt.action.ConsignmentOrderOutboundOrderAddAction"/>
+    <action class="objt.wms.supervisor.outboundmgt.action.ConsignmentOrderOutboundOrderRemoveAction"/>
+    <action class="objt.wms.supervisor.outboundmgt.action.ConsignmentOrderShipOrderAddAction"/>
+    <action class="objt.wms.supervisor.outboundmgt.action.ConsignmentOrderShipOrderRemoveAction"/>
+    <action class="objt.wms.supervisor.outboundmgt.action.ConsolidatedOutboundOrdersOverviewAction"/>
+    <action class="objt.wms.supervisor.outboundmgt.action.DeliveryOrderAbortAction"/>
+    <action class="objt.wms.supervisor.outboundmgt.action.DeliveryOrderCompleteAction"/>
+    <action class="objt.wms.supervisor.outboundmgt.action.DeliveryOrderConsignmentOrderAddAction"/>
+    <action class="objt.wms.supervisor.outboundmgt.action.DeliveryOrderConsignmentOrderRemoveAction"/>
+    <action class="objt.wms.supervisor.outboundmgt.action.DeliveryOrderCreateAction"/>
+    <action class="objt.wms.supervisor.outboundmgt.action.DeliveryOrderDeleteAction"/>
+    <action class="objt.wms.supervisor.outboundmgt.action.DeliveryOrderEditAction"/>
+    <action class="objt.wms.supervisor.outboundmgt.action.DeliveryOrderOutboundOrderAddAction"/>
+    <action class="objt.wms.supervisor.outboundmgt.action.DeliveryOrderOutboundOrderRemoveAction"/>
+    <action class="objt.wms.supervisor.outboundmgt.action.DeliveryOrderScheduleAction"/>
+    <action class="objt.wms.supervisor.outboundmgt.action.DeliveryOrderShipOrderAddAction"/>
+    <action class="objt.wms.supervisor.outboundmgt.action.DeliveryOrderUnscheduleAction"/>
+    <action class="objt.wms.supervisor.outboundmgt.action.OutboundOperationAbortAction"/>
+    <action class="objt.wms.supervisor.outboundmgt.action.OutboundOperationAddAction"/>
+    <action class="objt.wms.supervisor.outboundmgt.action.OutboundOperationDeleteAction"/>
+    <action class="objt.wms.supervisor.outboundmgt.action.OutboundOperationEditAction"/>
+    <action class="objt.wms.supervisor.outboundmgt.action.OutboundOrderAddressEditAction"/>
+    <action class="objt.wms.supervisor.outboundmgt.action.OutboundOrderAllocateAction"/>
+    <action class="objt.wms.supervisor.outboundmgt.action.OutboundOrderCloseAction"/>
+    <action class="objt.wms.supervisor.outboundmgt.action.OutboundOrderConsignmentOrderAddAction"/>
+    <action class="objt.wms.supervisor.outboundmgt.action.OutboundOrderConsignmentOrderRemoveAction"/>
+    <action class="objt.wms.supervisor.outboundmgt.action.OutboundOrderCreateAction"/>
+    <action class="objt.wms.supervisor.outboundmgt.action.OutboundOrderDeallocateAction"/>
+    <action class="objt.wms.supervisor.outboundmgt.action.OutboundOrderDeleteAction"/>
+    <action class="objt.wms.supervisor.outboundmgt.action.OutboundOrderDeliveryOrderAddAction"/>
+    <action class="objt.wms.supervisor.outboundmgt.action.OutboundOrderDeliveryOrderRemoveAction"/>
+    <action class="objt.wms.supervisor.outboundmgt.action.OutboundOrderEditAction"/>
+    <action class="objt.wms.supervisor.outboundmgt.action.OutboundOrderPlanAction"/>
+    <action class="objt.wms.supervisor.outboundmgt.action.OutboundOrderReallocateAction"/>
+    <action class="objt.wms.supervisor.outboundmgt.action.OutboundOrderReleaseAction"/>
+    <action class="objt.wms.supervisor.outboundmgt.action.OutboundOrderShipOrderAddAction"/>
+    <action class="objt.wms.supervisor.outboundmgt.action.OutboundOrderShipOrderRemoveAction"/>
+    <action class="objt.wms.supervisor.outboundmgt.action.OutboundOrderUnplanAction"/>
+    <action class="objt.wms.supervisor.outboundmgt.action.OutboundOrderUnreleaseAction"/>
+    <action class="objt.wms.supervisor.outboundmgt.action.OutboundOrderWorkGroupOrderAddAction"/>
+    <action class="objt.wms.supervisor.outboundmgt.action.OutboundOrderWorkGroupOrderRemoveAction"/>
+    <action class="objt.wms.supervisor.outboundmgt.action.ShipOrderAddContainerAction"/>
+    <action class="objt.wms.supervisor.outboundmgt.action.ShipOrderAssetTraceEditAction"/>
+    <action class="objt.wms.supervisor.outboundmgt.action.ShipOrderChildOrderSequenceModifyAction"/>
+    <action class="objt.wms.supervisor.outboundmgt.action.ShipOrderCloseAction"/>
+    <action class="objt.wms.supervisor.outboundmgt.action.ShipOrderConsignmentOrderAddAction"/>
+    <action class="objt.wms.supervisor.outboundmgt.action.ShipOrderConsignmentOrderRemoveAction"/>
+    <action class="objt.wms.supervisor.outboundmgt.action.ShipOrderContainerSequenceModifyAction"/>
+    <action class="objt.wms.supervisor.outboundmgt.action.ShipOrderCreateAction"/>
+    <action class="objt.wms.supervisor.outboundmgt.action.ShipOrderDeleteAction"/>
+    <action class="objt.wms.supervisor.outboundmgt.action.ShipOrderEditAction"/>
+    <action class="objt.wms.supervisor.outboundmgt.action.ShipOrderLPNLoadTaskToggleAction"/>
+    <action class="objt.wms.supervisor.outboundmgt.action.ShipOrderLPNUnloadTaskToggleAction"/>
+    <action class="objt.wms.supervisor.outboundmgt.action.ShipOrderOutboundOrderAddAction"/>
+    <action class="objt.wms.supervisor.outboundmgt.action.ShipOrderOutboundOrderRemoveAction"/>
+    <action class="objt.wms.supervisor.outboundmgt.action.ShipOrderPauseAction"/>
+    <action class="objt.wms.supervisor.outboundmgt.action.ShipOrderPlanAction"/>
+    <action class="objt.wms.supervisor.outboundmgt.action.ShipOrderRemoveContainerAction"/>
+    <action class="objt.wms.supervisor.outboundmgt.action.ShipOrderCMRReportAction"/>
+    <action class="objt.wms.supervisor.outboundmgt.action.ShipOrderPackingSlipReportAction"/>
+    <action class="objt.wms.supervisor.outboundmgt.action.ShipOrderResumeAction"/>
+    <action class="objt.wms.supervisor.outboundmgt.action.ShipOrderScheduleAction"/>
+    <action class="objt.wms.supervisor.outboundmgt.action.ShipOrderUnloadContainerAction"/>
+    <action class="objt.wms.supervisor.outboundmgt.action.ShipOrderUnplanAction"/>
+    <action class="objt.wms.supervisor.outboundmgt.action.ShipOrderUnscheduleAction"/>
+    <action class="objt.wms.supervisor.outboundmgt.action.WorkGroupOrderOutboundOrderAddAction"/>
+    <action class="objt.wms.supervisor.outboundmgt.action.WorkGroupOrderOutboundOrderRemoveAction"/>
+    <!-- END objt.wms.supervisor.outboundmgt -->
+
+    <!-- BEGIN objt.wms.supervisor.ordermgt -->
+    <action class="objt.common.appmgt.ui.action.ParameterFactoryObjectDocumentAddAction"
+            translate="wizardpanel.1.name,wizardpanel.1.description,wizardpanel.2.name,wizardpanel.2.description,wizardpanel.3.name,wizardpanel.3.description,wizardpanel.4.name,wizardpanel.4.description,wizardpanel.5.name,wizardpanel.5.description"/>
+    <action class="objt.common.appmgt.ui.action.ParameterFactoryObjectDocumentRemoveAction" translate="confirmMessage,listConfirmMessage"/>
+    <!-- END objt.wms.supervisor.ordermgt -->
+
+    <!-- BEGIN objt.wms.supervisor.productionmgt -->
+    <action class="objt.wms.supervisor.productionmgt.action.KitOrderCreateAction"/>
+    <action class="objt.wms.supervisor.productionmgt.action.KitOrderDeleteAction"/>
+    <action class="objt.wms.supervisor.productionmgt.action.KitOrderEditAction"/>
+    <action class="objt.wms.supervisor.productionmgt.action.MakeOrderAllocateAction"/>
+    <action class="objt.wms.supervisor.productionmgt.action.MakeOrderCloseAction"/>
+    <action class="objt.wms.supervisor.productionmgt.action.MakeOrderDeallocateAction"/>
+    <action class="objt.wms.supervisor.productionmgt.action.MakeOrderPlanAction"/>
+    <action class="objt.wms.supervisor.productionmgt.action.MakeOrderReallocateAction"/>
+    <action class="objt.wms.supervisor.productionmgt.action.MakeOrderReplanAction"/>
+    <action class="objt.wms.supervisor.productionmgt.action.MakeOrderScheduleAction"/>
+    <action class="objt.wms.supervisor.productionmgt.action.MakeOrderUnplanAction"/>
+    <action class="objt.wms.supervisor.productionmgt.action.MakeOrderUnscheduleAction"/>
+    <!-- END objt.wms.supervisor.productionmgt -->
+
+    <!-- BEGIN objt.wms.supervisor.qualitymgt -->
+    <action class="objt.wms.supervisor.qualitymgt.action.RuntimeOperationInstructionHistoryDisplayAction"/>
+    <!-- END objt.wms.supervisor.qualitymgt -->
+
+    <!-- BEGIN objt.wms.supervisor.rulemgt -->
+    <action class="objt.common.rulemgt.ui.action.RuleInfoLogAction"/>
+    <!-- END objt.wms.supervisor.rulemgt -->
+
+    <!-- BEGIN objt.wms.supervisor.systemmgt -->
+    <action class="objt.wms.supervisor.sytemmgt.action.MessageSendAction"/>
+    <!-- END objt.wms.supervisor.systemmgt -->
+
+    <!-- BEGIN objt.wms.supervisor.warehousemgt -->
+    <action class="objt.wms.supervisor.warehousemgt.action.AbstractStorageResourcePopulateAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.AisleCloseAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.AisleOpenAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.AisleScheduleAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.BackorderOperationCloseAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.BackorderOperationReallocateAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.BackorderOrderCloseAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.BackorderOrderEditAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.BackorderOrderScheduleAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.BackorderOrderUnscheduleAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.BackorderOperationScheduleAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.BackorderOperationUnscheduleAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.BackorderOrderAllocateAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.BackorderOrderDeallocateAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.ConsignmentOrderAllocateAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.ConsignmentOrderCompleteAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.ConsignmentOrderCreateAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.ConsignmentOrderDeallocateAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.ConsignmentOrderDeleteAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.ConsignmentOrderEditAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.ConsignmentOrderPlanAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.ConsignmentOrderReleaseAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.ConsignmentOrderUnplanAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.ConsignmentOrderUnreleaseAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.ConsignmentOrderWorkGroupOrderAddAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.ConsignmentOrderWorkGroupOrderRemoveAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.CrossDockTaskOrderEditAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.CrossDockTaskOrderCloseAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.CrossDockTaskOrderScheduleAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.CrossDockTaskOrderUnscheduleAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.EmployeeActiveTaskProfileEditAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.GroupPickOrderPickOrderAddAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.GroupPickOrderPickOrderRemoveAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.GroupPickOrderDeleteAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.IndirectTaskAddAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.InventoryOperationAddAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.InventoryOperationDeleteAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.InventoryOrderAddAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.InventoryOrderCloseAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.InventoryOrderCreateAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.InventoryOrderScheduleAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.InventoryOrderUnscheduleAction"/>
+    <action class="objt.wms.supervisor.inventorymgt.action.InventoryModifyAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.LPNBufferCheckReplenishmentsAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.LPNBufferEvacuateAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.MoveOrderCloseAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.MoveOrderCreateAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.MoveOrderScheduleAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.MoveOrderUnscheduleAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.PickMultiTaskOrderCloseAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.PickTaskOrderPickMultiTaskOrderAddAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.PickTaskOrderPickMultiTaskOrderRemoveAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.PickMultiTaskOrderDeleteAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.PickMultiTaskOrderEditAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.PickMultiTaskOrderPickTaskOrderAddAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.PickMultiTaskOrderPickTaskOrderRemoveAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.PickMultiTaskOrderScheduleAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.PickMultiTaskOrderUnscheduleAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.PackOperationAbortAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.PackOrderCloseAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.PackOrderContainerAddAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.PackOrderContainerRemoveAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.PackOrderCreateAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.PackOrderDeleteAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.PackOrderEditAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.PackOrderPlanAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.PackOrderUnplanAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.PackOrderReplanAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.PackOrderScheduleAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.PackOrderUnscheduleAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.PickListReportAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.PickOperationCloseAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.PickOrderCloseAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.PickOrderEditAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.PickOrderAllocateAction"
+            translate="confirmMessage,listConfirmMessage"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.PickOrderDeallocateAction"
+            translate="confirmMessage,listConfirmMessage"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.PickOrderGroupPickOrderAddAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.PickOrderGroupPickOrderRemoveAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.PickOrderPickContainerCloseAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.PickOrderReallocateAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.PickOrderScheduleAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.PickOrderUnscheduleAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.PickStorageResourceCheckReplenishmentAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.PickTaskCompleteAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.PickTaskOrderCloseAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.PickTaskOrderEditAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.PickTaskOrderForceScheduleAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.PickTaskOrderScheduleAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.PickTaskOrderUnscheduleAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.PickZoneCheckReplenishmentsAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.PickZoneEvacuateAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.PickZonePopulateAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.PickZoneRepopulateAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.PutOperationCloseAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.PutOrderCloseAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.PutTaskCompleteAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.PutTaskOrderCloseAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.PutTaskOrderEditAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.PutTaskOrderPutContainerDropOffAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.ReplenishMultiTaskOrderCloseAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.ReplenishMultiTaskOrderEditAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.ReplenishMultiTaskOrderPickContainerDropOffAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.ReplenishMultiTaskOrderScheduleAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.ReplenishMultiTaskOrderUnscheduleAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.ReplenishOperationCloseAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.ReplenishOperationCreateAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.ReplenishOperationScheduleAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.ReplenishOperationReallocateAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.ReplenishOperationUnscheduleAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.ReplenishOperationUnscheduleAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.ReplenishTaskCompleteAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.ResourceTaskProfileAddAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.ResourceTaskProfileRemoveAction"
+            translate="confirmMessage,listConfirmMessage"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.TaskAbortAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.TaskCompleteAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.TaskHoldAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.TaskPriorityEditAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.TaskResetAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.TaskScheduleAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.TaskTerminateAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.TaskUnscheduleAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.TaskWrapperTabPanelDisplayAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.TaskWrapperTabPanelRefreshAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.WorkGroupOrderCompleteAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.WorkGroupOrderConsignmentOrderAddAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.WorkGroupOrderConsignmentOrderRemoveAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.WorkGroupOrderCreateAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.WorkGroupOrderDeleteAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.WorkGroupOrderEditAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.WorkZoneCalendarShiftEditAction"/>
+    <action class="objt.wms.supervisor.warehousemgt.action.WorkZoneCalendarDayEditAction"/>
+    <!-- END objt.wms.supervisor.warehousemgt -->
+  </actions>
+
+  <xmlfiles>
+    <xmlfile name="warehouselocationtreeselection.xml">
+      <node name="basenode" translate="title"/>
+    </xmlfile>
+    <xmlfile name="warehousetreeselection.xml">
+      <node name="basenode" translate="title"/>
+    </xmlfile>
+    <xmlfile name="storagezonetreeselection.xml">
+      <node name="basenode" translate="title"/>
+    </xmlfile>
+    <xmlfile name="inboundstorageresourcegrouptreeselection.xml">
+      <node name="basenode" translate="title"/>
+    </xmlfile>
+    <xmlfile name="outboundstorageresourcegrouptreeselection.xml">
+      <node name="basenode" translate="title"/>
+    </xmlfile>
+    <xmlfile name="shipstorageresourcegrouptreeselection.xml">
+      <node name="basenode" translate="title"/>
+    </xmlfile>
+    <xmlfile name="dropoffstorageresourcegrouptreeselection.xml">
+      <node name="basenode" translate="title"/>
+    </xmlfile>
+    <xmlfile name="inventorylockreasontreeselection.xml">
+      <node name="basenode" translate="title"/>
+    </xmlfile>
+    <xmlfile name="mobileracktreeselection.xml">
+      <node name="basenode" translate="title"/>
+    </xmlfile>
+    <xmlfile name="aislegrouptreeselection.xml">
+      <node name="basenode" translate="title"/>
+    </xmlfile>
+    <xmlfile name="stockbrowser.xml">
+      <node name="popupaction" translate="menu"/>
+    </xmlfile>
+
+     <!-- scan the text entries of listvalidators defined in the metafile -->
+    <xmlfile name="meta.xml">
+      <node name="listitem" translate="text" />
+      <node name="attribute" translate="title" />
+    </xmlfile>
+
+    <xmlfile name="resourceview_config.xml">
+      <node name="resource"        csvtranslate="viewtype,templatetype"/>
+      <node name="attrib"          translate="title"/>
+      <node name="association"     translate="title"/>
+      <node name="associationlist" translate="title"/>
+      <node name="animation"       translate="title"/>
+      <node name="action"          translate="title"/>
+      <node name="resource"        translate="title,tooltip"/>
+    </xmlfile>
+
+    <xmlfile name="lotgenealogy_config.xml" >
+      <node name="node" attribute="labelpath" />
+      <node name="link" attribute="labelpath" />
+    </xmlfile>
+
+    <xmlfile name="containertreetable_config.xml">
+      <node name="attributetitles" csvtranslate="value"/>
+      <node name="attributepaths" csvattribute="value" translate="title"/>
+      <node name="tree" translate="attributetitle"/>
+      <node name="basenode" attribute="title"/>
+      <node name="childnode" attribute="title"/>
+    </xmlfile>
+
+    <xmlfile name="shiporderchildordertreetable_config.xml">
+      <node name="attributetitles" csvtranslate="value"/>
+      <node name="attributepaths" csvattribute="value" translate="title"/>
+      <node name="tree" translate="attributetitle"/>
+      <node name="basenode" attribute="title"/>
+      <node name="childnode" attribute="title"/>
+    </xmlfile>
+
+    <xmlfile name="deliveryorderchildordertreetable_config.xml">
+      <node name="attributetitles" csvtranslate="value"/>
+      <node name="attributepaths" csvattribute="value" translate="title"/>
+      <node name="tree" translate="attributetitle"/>
+      <node name="basenode" attribute="title"/>
+      <node name="childnode" attribute="title"/>
+    </xmlfile>
+
+    <xmlfile name="outboundoperationallocationshortagestreetable_config.xml">
+      <node name="attributetitles" csvtranslate="value"/>
+      <node name="attributepaths" csvattribute="value" translate="title"/>
+      <node name="tree" translate="attributetitle"/>
+      <node name="basenode" attribute="title"/>
+      <node name="childnode" attribute="title"/>
+    </xmlfile>
+
+     <xmlfile name="makeoperationallocationshortagestreetable_config.xml">
+      <node name="attributetitles" csvtranslate="value"/>
+      <node name="attributepaths" csvattribute="value" translate="title"/>
+      <node name="tree" translate="attributetitle"/>
+      <node name="basenode" attribute="title"/>
+      <node name="childnode" attribute="title"/>
+    </xmlfile>
+
+    <xmlfile name="backorderoperationreallocationresulttreetable_config.xml">
+      <node name="attributetitles" csvtranslate="value"/>
+      <node name="attributepaths" csvattribute="value" translate="title"/>
+      <node name="tree" translate="attributetitle"/>
+      <node name="basenode" attribute="title"/>
+      <node name="childnode" attribute="title"/>
+    </xmlfile>
+
+    <xmlfile name="inspectionsheet_inspectioninstructiontreetable_config.xml">
+      <node name="attributetitles" csvtranslate="value"/>
+      <node name="attributepaths" csvattribute="value" translate="title"/>
+      <node name="tree" translate="attributetitle"/>
+      <node name="basenode" attribute="title"/>
+      <node name="childnode" attribute="title"/>
+    </xmlfile>
+
+    <xmlfile name="tasknavigationaction_config.xml">
+      <node name="navigation" csvtranslate="title"/>
+    </xmlfile>
+
+    <xmlfile name="makeoperationnavigationaction_config.xml">
+      <node name="navigation" csvtranslate="title"/>
+    </xmlfile>
+
+    <xmlfile name="kitmakeoperationnavigationaction_config.xml">
+      <node name="navigation" csvtranslate="title"/>
+    </xmlfile>
+
+    <xmlfile name="valmakeoperationnavigationaction_config.xml">
+      <node name="navigation" csvtranslate="title"/>
+    </xmlfile>
+
+    <xmlfile name="deliveryorderchildordernavigationaction_config.xml">
+      <node name="navigation" csvtranslate="title"/>
+    </xmlfile>
+
+    <xmlfile name="shiporderchildordernavigationaction_config.xml">
+      <node name="navigation" csvtranslate="title"/>
+    </xmlfile>
+
+    <xmlfile name="outboundordernavigationaction_config.xml">
+      <node name="navigation" translate="title"/>
+    </xmlfile>
+
+    <xmlfile name="inboundordernavigationaction_config.xml">
+      <node name="navigation" translate="title"/>
+    </xmlfile>
+
+    <xmlfile name="taskfilterconfig.xml">
+      <node name="taskfilter" csvtranslate="title"/>
+      <node name="item" translate="title"/>
+    </xmlfile>
+
+    <xmlfile name="inspectionrulefilterconfig.xml">
+      <node name="rulefilter" csvtranslate="title"/>
+    </xmlfile>
+
+    <xmlfile name="warehouserulefilterconfig.xml">
+      <node name="rulefilter" csvtranslate="title"/>
+      <node name="item" translate="title"/>
+    </xmlfile>  
+
+    <xmlfile name="workgrouporderchildordernavigationaction_config.xml">
+      <node name="navigation" csvtranslate="title"/>
+    </xmlfile>
+
+    <!-- config used for scanning dialogconfig files -->
+    <xmlfile name="dialogconfig.xml">
+      <node name="mainmenu" translate="title" />
+      <node name="menu" translate="title" />
+      <node name="dialog" translate="title" />
+    </xmlfile>
+
+    <xmlfile name="menudialogconfig.xml">
+      <node name="mainmenu" translate="title" />
+      <node name="menu" translate="title" />
+      <node name="dialog" translate="title" />
+    </xmlfile>
+
+    <xmlfile name="checkinspectiondialog.xml">
+      <node name="field" attribute="value"/>
+    </xmlfile>
+
+    <xmlfile name="containerpicktaskdialog01.xml">
+      <node name="field" attribute="value"/>
+    </xmlfile>
+
+    <xmlfile name="containerpicktaskdialog03.xml">
+      <node name="field" attribute="value"/>
+    </xmlfile>
+
+    <xmlfile name="inputinspectiondialog.xml">
+      <node name="field" attribute="value"/>
+    </xmlfile>
+
+    <xmlfile name="inspectionsheetdialog.xml">
+      <node name="field" attribute="value"/>
+    </xmlfile>
+
+    <xmlfile name="picklpnclosedialog01.xml">
+      <node name="field" attribute="value"/>
+    </xmlfile>
+
+    <xmlfile name="picklpnclosedialog03.xml">
+      <node name="field" attribute="value"/>
+    </xmlfile>
+
+    <xmlfile name="shipmentloaddialog01.xml">
+      <node name="field" attribute="value"/>
+    </xmlfile>
+
+    <xmlfile name="shipmentunloaddialog01.xml">
+      <node name="field" attribute="value"/>
+    </xmlfile>
+
+    <xmlfile name="containermovedialog01.xml">
+      <node name="field" attribute="value"/>
+    </xmlfile>
+
+    <xmlfile name="containermovetaskdialog01.xml">
+      <node name="field" attribute="value"/>
+    </xmlfile>
+
+    <xmlfile name="containermovetriggerdialog01.xml">
+      <node name="field" attribute="value"/>
+    </xmlfile>
+
+    <xmlfile name="containerputtaskdialog01.xml">
+      <node name="field" attribute="value"/>
+    </xmlfile>
+
+    <xmlfile name="lpninbounddialog.xml">
+      <node name="field" attribute="value"/>
+    </xmlfile>
+
+    <xmlfile name="serialidentificationdialog.xml">
+      <node name="field" attribute="value"/>
+    </xmlfile>
+
+    <xmlfile name="storageitemqtyselectiondialog.xml">
+      <node name="field" attribute="value"/>
+    </xmlfile>
+
+    <xmlfile name="indirecttaskdialog.xml">
+      <node name="field" attribute="value"/>
+    </xmlfile>
+
+    <xmlfile name="storageitemqtyserialidentificationdialog.xml">
+      <node name="field" attribute="value"/>
+    </xmlfile>
+
+    <xmlfile name="replenishliststopdialog.xml">
+      <node name="field" attribute="value"/>
+    </xmlfile>
+
+    <xmlfile name="replenishliststartdialog.xml">
+      <node name="field" attribute="value"/>
+    </xmlfile>
+
+    <xmlfile name="locationfulldialog.xml">
+      <node name="field" attribute="value"/>
+    </xmlfile>
+
+    <xmlfile name="containercontentreplenishtaskdialog01.xml">
+      <node name="field" attribute="value"/>
+    </xmlfile>
+
+    <xmlfile name="bulkreplenishtaskdialog01.xml">
+      <node name="field" attribute="value"/>
+    </xmlfile>
+
+    <!-- translate name and description of defined privileges -->
+    <xmlfile name="privileges.xml">
+      <node name="privilege" translate="application,module,domain,category,name,description"/>
+    </xmlfile>
+
+    <!-- UI meta: translate class, attribute and association titles -->
+    <xmlfile name="uimeta.xml">
+      <node name="class" translate="title"/>
+      <node name="attribute" translate="title"/>
+      <node name="attributegroup" translate="title"/>
+      <node name="association" translate="title"/>
+    </xmlfile>
+
+    <xmlfile name="workcenter_buttonbar.xml">
+      <node name="button" translate="title"/>
+      <node name="buttonbar" translate="title"/>
+      <node name="mainbuttonbar" translate="title"/>
+    </xmlfile>
+
+    <xmlfile name="items_audittrailconfig.xml">
+      <node name="owner" translate="ownertitle"/>
+      <node name="association" translate="associatedobjecttitle"/>
+      <node name="attribute" translate="title"/>
+      <node name="composedattribute" translate="title"/>
+      <node name="add" translate="description"/>
+      <node name="remove" translate="description"/>
+      <node name="update" translate="description"/>
+    </xmlfile>
+
+    <xmlfile name="phantomitems_audittrailconfig.xml">
+      <node name="owner" translate="ownertitle"/>
+      <node name="association" translate="associatedobjecttitle"/>
+      <node name="attribute" translate="title"/>
+      <node name="composedattribute" translate="title"/>
+      <node name="add" translate="description"/>
+      <node name="remove" translate="description"/>
+      <node name="update" translate="description"/>
+    </xmlfile>
+
+    <xmlfile name="packagings_audittrailconfig.xml">
+      <node name="owner" translate="ownertitle"/>
+      <node name="association" translate="associatedobjecttitle"/>
+      <node name="attribute" translate="title"/>
+      <node name="composedattribute" translate="title"/>
+      <node name="add" translate="description"/>
+      <node name="remove" translate="description"/>
+      <node name="update" translate="description"/>
+    </xmlfile>
+
+    <xmlfile name="qualitycontrolstatuses_audittrailconfig.xml">
+      <node name="owner" translate="ownertitle"/>
+      <node name="association" translate="associatedobjecttitle"/>
+      <node name="attribute" translate="title"/>
+      <node name="composedattribute" translate="title"/>
+      <node name="add" translate="description"/>
+      <node name="remove" translate="description"/>
+      <node name="update" translate="description"/>
+    </xmlfile>
+
+    <xmlfile name="inspectioninstructions_audittrailconfig.xml">
+      <node name="owner" translate="ownertitle"/>
+      <node name="association" translate="associatedobjecttitle"/>
+      <node name="attribute" translate="title"/>
+      <node name="composedattribute" translate="title"/>
+      <node name="add" translate="description"/>
+      <node name="remove" translate="description"/>
+      <node name="update" translate="description"/>
+    </xmlfile>
+
+    <xmlfile name="inspectionsets_audittrailconfig.xml">
+      <node name="owner" translate="ownertitle"/>
+      <node name="association" translate="associatedobjecttitle"/>
+      <node name="attribute" translate="title"/>
+      <node name="composedattribute" translate="title"/>
+      <node name="add" translate="description"/>
+      <node name="remove" translate="description"/>
+      <node name="update" translate="description"/>
+    </xmlfile>
+
+    <xmlfile name="inspectionsheets_audittrailconfig.xml">
+      <node name="owner" translate="ownertitle"/>
+      <node name="association" translate="associatedobjecttitle"/>
+      <node name="attribute" translate="title"/>
+      <node name="composedattribute" translate="title"/>
+      <node name="add" translate="description"/>
+      <node name="remove" translate="description"/>
+      <node name="update" translate="description"/>
+    </xmlfile>
+
+    <xmlfile name="inspectiongroups_audittrailconfig.xml">
+      <node name="owner" translate="ownertitle"/>
+      <node name="association" translate="associatedobjecttitle"/>
+      <node name="attribute" translate="title"/>
+      <node name="composedattribute" translate="title"/>
+      <node name="add" translate="description"/>
+      <node name="remove" translate="description"/>
+      <node name="update" translate="description"/>
+    </xmlfile>
+
+    <xmlfile name="inspectionrules_audittrailconfig.xml">
+      <node name="owner" translate="ownertitle"/>
+      <node name="association" translate="associatedobjecttitle"/>
+      <node name="attribute" translate="title"/>
+      <node name="composedattribute" translate="title"/>
+      <node name="add" translate="description"/>
+      <node name="remove" translate="description"/>
+      <node name="update" translate="description"/>
+    </xmlfile>
+
+    <xmlfile name="inspectionsampletypes_audittrailconfig.xml">
+      <node name="owner" translate="ownertitle"/>
+      <node name="association" translate="associatedobjecttitle"/>
+      <node name="attribute" translate="title"/>
+      <node name="composedattribute" translate="title"/>
+      <node name="add" translate="description"/>
+      <node name="remove" translate="description"/>
+      <node name="update" translate="description"/>
+    </xmlfile>
+
+    <xmlfile name="mobileracks_audittrailconfig.xml">
+      <node name="owner" translate="ownertitle"/>
+      <node name="association" translate="associatedobjecttitle"/>
+      <node name="attribute" translate="title"/>
+      <node name="composedattribute" translate="title"/>
+      <node name="add" translate="description"/>
+      <node name="remove" translate="description"/>
+      <node name="update" translate="description"/>
+    </xmlfile>
+
+    <xmlfile name="storagezones_audittrailconfig.xml">
+      <node name="owner" translate="ownertitle"/>
+      <node name="association" translate="associatedobjecttitle"/>
+      <node name="attribute" translate="title"/>
+      <node name="composedattribute" translate="title"/>
+      <node name="add" translate="description"/>
+      <node name="remove" translate="description"/>
+      <node name="update" translate="description"/>
+    </xmlfile>
+
+    <xmlfile name="storageresourcegroups_audittrailconfig.xml">
+      <node name="owner" translate="ownertitle"/>
+      <node name="association" translate="associatedobjecttitle"/>
+      <node name="attribute" translate="title"/>
+      <node name="composedattribute" translate="title"/>
+      <node name="add" translate="description"/>
+      <node name="remove" translate="description"/>
+      <node name="update" translate="description"/>
+    </xmlfile>
+
+    <xmlfile name="machines_audittrailconfig.xml">
+      <node name="owner" translate="ownertitle"/>
+      <node name="association" translate="associatedobjecttitle"/>
+      <node name="attribute" translate="title"/>
+    </xmlfile>
+
+    <xmlfile name="workcenters_audittrailconfig.xml">
+      <node name="owner" translate="ownertitle"/>
+      <node name="association" translate="associatedobjecttitle"/>
+      <node name="attribute" translate="title"/>
+      <node name="composedattribute" translate="title"/>
+      <node name="add" translate="description"/>
+      <node name="remove" translate="description"/>
+      <node name="update" translate="description"/>
+    </xmlfile>
+
+    <xmlfile name="tasktypes_audittrailconfig.xml">
+      <node name="owner" translate="ownertitle"/>
+      <node name="association" translate="associatedobjecttitle"/>
+      <node name="attribute" translate="title"/>
+      <node name="composedattribute" translate="title"/>
+      <node name="add" translate="description"/>
+      <node name="remove" translate="description"/>
+      <node name="update" translate="description"/>
+    </xmlfile>
+
+    <xmlfile name="taskprofiles_audittrailconfig.xml">
+      <node name="owner" translate="ownertitle"/>
+      <node name="association" translate="associatedobjecttitle"/>
+      <node name="attribute" translate="title"/>
+      <node name="composedattribute" translate="title"/>
+      <node name="add" translate="description"/>
+      <node name="remove" translate="description"/>
+      <node name="update" translate="description"/>
+    </xmlfile>
+
+    <xmlfile name="taskreasons_audittrailconfig.xml">
+      <node name="owner" translate="ownertitle"/>
+      <node name="association" translate="associatedobjecttitle"/>
+      <node name="attribute" translate="title"/>
+      <node name="composedattribute" translate="title"/>
+      <node name="add" translate="description"/>
+      <node name="remove" translate="description"/>
+      <node name="update" translate="description"/>
+    </xmlfile>
+
+    <xmlfile name="reasons_audittrailconfig.xml">
+      <node name="owner" translate="ownertitle"/>
+      <node name="association" translate="associatedobjecttitle"/>
+      <node name="attribute" translate="title"/>
+      <node name="composedattribute" translate="title"/>
+      <node name="add" translate="description"/>
+      <node name="remove" translate="description"/>
+      <node name="update" translate="description"/>
+    </xmlfile>
+
+    <xmlfile name="manufacturingoperations_audittrailconfig.xml">
+      <node name="owner" translate="ownertitle"/>
+      <node name="association" translate="associatedobjecttitle"/>
+      <node name="attribute" translate="title"/>
+      <node name="composedattribute" translate="title"/>
+      <node name="add" translate="description"/>
+      <node name="remove" translate="description"/>
+      <node name="update" translate="description"/>
+    </xmlfile>
+
+    <xmlfile name="warehouses_audittrailconfig.xml">
+      <node name="owner" translate="ownertitle"/>
+      <node name="association" translate="associatedobjecttitle"/>
+      <node name="attribute" translate="title"/>
+      <node name="composedattribute" translate="title"/>
+      <node name="add" translate="description"/>
+      <node name="remove" translate="description"/>
+      <node name="update" translate="description"/>
+    </xmlfile>
+
+    <xmlfile name="warehouselocations_audittrailconfig.xml">
+      <node name="owner" translate="ownertitle"/>
+      <node name="association" translate="associatedobjecttitle"/>
+      <node name="attribute" translate="title"/>
+      <node name="composedattribute" translate="title"/>
+      <node name="add" translate="description"/>
+      <node name="remove" translate="description"/>
+      <node name="update" translate="description"/>
+    </xmlfile>
+
+    <xmlfile name="pickzones_audittrailconfig.xml">
+      <node name="owner" translate="ownertitle"/>
+      <node name="association" translate="associatedobjecttitle"/>
+      <node name="attribute" translate="title"/>
+      <node name="composedattribute" translate="title"/>
+      <node name="add" translate="description"/>
+      <node name="remove" translate="description"/>
+      <node name="update" translate="description"/>
+    </xmlfile>
+
+    <xmlfile name="pickstorageresources_audittrailconfig.xml">
+      <node name="owner" translate="ownertitle"/>
+      <node name="association" translate="associatedobjecttitle"/>
+      <node name="attribute" translate="title"/>
+      <node name="composedattribute" translate="title"/>
+      <node name="add" translate="description"/>
+      <node name="remove" translate="description"/>
+      <node name="update" translate="description"/>
+    </xmlfile>
+
+    <xmlfile name="lpnbuffers_audittrailconfig.xml">
+      <node name="owner" translate="ownertitle"/>
+      <node name="association" translate="associatedobjecttitle"/>
+      <node name="attribute" translate="title"/>
+      <node name="composedattribute" translate="title"/>
+      <node name="add" translate="description"/>
+      <node name="remove" translate="description"/>
+      <node name="update" translate="description"/>
+    </xmlfile>
+
+    <xmlfile name="manufacturingoperations_audittrailconfig.xml">
+      <node name="owner" translate="ownertitle"/>
+      <node name="association" translate="associatedobjecttitle"/>
+      <node name="attribute" translate="title"/>
+      <node name="add" translate="description"/>
+      <node name="remove" translate="description"/>
+      <node name="update" translate="description"/>
+    </xmlfile>
+
+    <xmlfile name="rules_audittrailconfig.xml">
+      <node name="owner" translate="ownertitle"/>
+      <node name="association" translate="associatedobjecttitle"/>
+      <node name="attribute" translate="title"/>
+      <node name="composedattribute" translate="title"/>
+      <node name="add" translate="description"/>
+      <node name="remove" translate="description"/>
+      <node name="update" translate="description"/>
+    </xmlfile>
+
+    <xmlfile name="configurations_audittrailconfig.xml">
+      <node name="owner" translate="ownertitle"/>
+      <node name="association" translate="associatedobjecttitle"/>
+      <node name="attribute" translate="title"/>
+      <node name="add" translate="description"/>
+      <node name="remove" translate="description"/>
+      <node name="update" translate="description"/>
+    </xmlfile>
+
+    <xmlfile name="ple_audittrailconfig.xml">
+      <node name="owner" translate="ownertitle"/>
+      <node name="attribute" translate="title"/>
+      <node name="add" translate="description"/>
+      <node name="remove" translate="description"/>
+      <node name="update" translate="description"/>
+    </xmlfile>   
+             
+    <xmlfile name="items_multieditconfig.xml">
+      <node name="module" translate="title"/>
+      <node name="group" translate="title"/>
+      <node name="section" translate="title"/>
+      <node name="attribute" translate="title"/>
+      <node name="constraint" translate="message"/>
+    </xmlfile>
+
+    <xmlfile name="warehouselocations_multieditconfig.xml">
+      <node name="module" translate="title"/>
+      <node name="group" translate="title"/>
+      <node name="section" translate="title"/>
+      <node name="attribute" translate="title"/>
+      <node name="constraint" translate="message"/>
+    </xmlfile>
+
+    <xmlfile name="employees_multieditconfig.xml">
+      <node name="module" translate="title"/>
+      <node name="group" translate="title"/>
+      <node name="section" translate="title"/>
+      <node name="attribute" translate="title"/>
+      <node name="constraint" translate="message"/>
+    </xmlfile>
+
+    <xmlfile name="plegroups_multieditconfig.xml">
+      <node name="module" translate="title"/>
+      <node name="group" translate="title"/>
+      <node name="section" translate="title"/>
+      <node name="attribute" translate="title"/>
+      <node name="constraint" translate="message"/>
+    </xmlfile>
+  </xmlfiles>
+</config>

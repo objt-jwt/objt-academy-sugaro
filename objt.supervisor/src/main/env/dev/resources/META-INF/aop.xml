@@ -1,0 +1,10 @@
+<aspectj>
+  <aspects>
+    <aspect name="dce.pd.frame.configurator.aspect.ConfiguratorTransactionAspect" />
+    <aspect name="objt.transaction.aspects.TransactionAspect" />
+    <weaver options="-nowarn"> <!-- options="-verbose -showWeaveInfo" -->
+      
+      <include within="objt.custom..*"/>
+    </weaver>
+  </aspects>
+</aspectj>

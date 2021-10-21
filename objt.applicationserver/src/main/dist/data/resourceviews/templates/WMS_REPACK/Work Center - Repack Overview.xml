@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<template resourceclass="dce.pd.sfc.bo.resourcemgt.WorkCenter" type="WMS_REPACK">
+  <resourceviewelement actionclick="1" actionclickparam="" actiondblclick="2" actiondblclickparam="" attributepath="" attributetitle="" background="-1908255" border="NONE" category="" font="Segoe UI-PLAIN-12" foreground="-16777216" height="775" iconname="" iconscaled="false" name="REPACK1" opaque="true" resourceclassname="dce.pd.sfc.bo.resourcemgt.WorkCenter" resourceoid="1519593" selectedborder="NONE" selectionid="false" width="1255" x="0" y="0" z="0">
+    <panelviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" background="-1908255" border="LOWERED_ETCH" foreground="-16777216" height="289" iconname="" iconscaled="false" opaque="true" width="1250" x="5" y="485" z="0">
+      <widgetviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" alignment="0" attributepath="" background="-1973791" border="NONE" category="" font="Segoe UI-PLAIN-12" foreground="-16777216" height="45" iconname="" iconscaled="false" name="" objectpath=" " objectpathparam="" opaque="true" widgetclass="dce.pd.frame.resourceview.ui.widget.ExplorerActionWidget" width="45" x="460" y="23" z="1">
+        <param name="TEXT_VISIBLE" value="false"/>
+        <param name="TEXT_ALIGNMENT" value="4"/>
+        <param name="ID" value="objt.wms.resourceview.workcenter.repack.out.storageitemqty.view_task"/>
+        <param name="ACTION_NAME" value="objt.wms.resourceview.workcenter.repack.out.storageitemqty.view_task"/>
+        <param name="UIMETA_INVOKER_ACTION" value=" "/>
+        <param name="PANEL_ID" value="Repack_Outputs"/>
+      </widgetviewelement>
+      <widgetviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" alignment="0" attributepath="" background="-1973791" border="NONE" category="" font="Segoe UI-PLAIN-12" foreground="-16777216" height="45" iconname="" iconscaled="false" name="" objectpath=" " objectpathparam="" opaque="true" widgetclass="dce.pd.frame.resourceview.ui.widget.ExplorerActionWidget" width="45" x="405" y="23" z="2">
+        <param name="TEXT_VISIBLE" value="false"/>
+        <param name="TEXT_ALIGNMENT" value="4"/>
+        <param name="ID" value="objt.wms.resourceview.workcenter.repack.out.storageitemqty.view_inventory"/>
+        <param name="ACTION_NAME" value="objt.wms.resourceview.workcenter.repack.out.storageitemqty.view_inventory"/>
+        <param name="UIMETA_INVOKER_ACTION" value=" "/>
+        <param name="PANEL_ID" value="Repack_Outputs"/>
+      </widgetviewelement>
+      <widgetviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" alignment="0" attributepath="" background="-1973791" border="NONE" category="" font="Segoe UI-PLAIN-12" foreground="-16777216" height="45" iconname="" iconscaled="false" name="" objectpath=" " objectpathparam="" opaque="true" widgetclass="dce.pd.frame.resourceview.ui.widget.ExplorerActionWidget" width="45" x="350" y="23" z="3">
+        <param name="TEXT_VISIBLE" value="false"/>
+        <param name="TEXT_ALIGNMENT" value="4"/>
+        <param name="ID" value="objt.wms.resourceview.workcenter.repack.out.storageitemqty.print_lpn"/>
+        <param name="ACTION_NAME" value="objt.wms.resourceview.workcenter.repack.out.storageitemqty.print_lpn"/>
+        <param name="UIMETA_INVOKER_ACTION" value=" "/>
+        <param name="PANEL_ID" value="Repack_Outputs"/>
+      </widgetviewelement>
+      <widgetviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" alignment="0" attributepath="" background="-1973791" border="NONE" category="" font="Segoe UI-PLAIN-12" foreground="-16777216" height="45" iconname="" iconscaled="false" name="" objectpath=" " objectpathparam="" opaque="true" widgetclass="dce.pd.frame.resourceview.ui.widget.ExplorerActionWidget" width="45" x="295" y="23" z="4">
+        <param name="TEXT_VISIBLE" value="false"/>
+        <param name="TEXT_ALIGNMENT" value="4"/>
+        <param name="ID" value="objt.wms.resourceview.workcenter.repack.out.storageitemqty.edit_sublpn_dimensions"/>
+        <param name="ACTION_NAME" value="objt.wms.resourceview.workcenter.repack.out.storageitemqty.edit_sublpn_dimensions"/>
+        <param name="UIMETA_INVOKER_ACTION" value=" "/>
+        <param name="PANEL_ID" value="Repack_Outputs"/>
+      </widgetviewelement>
+      <widgetviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" alignment="0" attributepath="" background="-1973791" border="NONE" category="" font="Segoe UI-PLAIN-12" foreground="-16777216" height="45" iconname="" iconscaled="false" name="" objectpath=" " objectpathparam="" opaque="true" widgetclass="dce.pd.frame.resourceview.ui.widget.ExplorerActionWidget" width="45" x="248" y="23" z="5">
+        <param name="TEXT_VISIBLE" value="false"/>
+        <param name="TEXT_ALIGNMENT" value="4"/>
+        <param name="ID" value="objt.wms.resourceview.workcenter.repack.out.storageitemqty.close_sublpn"/>
+        <param name="ACTION_NAME" value="objt.wms.resourceview.workcenter.repack.out.storageitemqty.close_sublpn"/>
+        <param name="UIMETA_INVOKER_ACTION" value=" "/>
+        <param name="PANEL_ID" value="Repack_Outputs"/>
+      </widgetviewelement>
+      <widgetviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" alignment="0" attributepath="" background="-1973791" border="NONE" category="" font="Segoe UI-PLAIN-12" foreground="-16777216" height="45" iconname="" iconscaled="false" name="" objectpath=" " objectpathparam="" opaque="true" widgetclass="dce.pd.frame.resourceview.ui.widget.ExplorerActionWidget" width="45" x="201" y="23" z="6">
+        <param name="TEXT_VISIBLE" value="false"/>
+        <param name="TEXT_ALIGNMENT" value="4"/>
+        <param name="ID" value="objt.wms.resourceview.workcenter.repack.packorder.pack_new_sub"/>
+        <param name="ACTION_NAME" value="objt.wms.resourceview.workcenter.repack.packorder.pack_new_sub"/>
+        <param name="UIMETA_INVOKER_ACTION" value=" "/>
+        <param name="PANEL_ID" value="Repack_Outputs"/>
+      </widgetviewelement>
+      <widgetviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" alignment="0" attributepath="" background="-1973791" border="NONE" category="" font="Segoe UI-PLAIN-12" foreground="-16777216" height="45" iconname="" iconscaled="false" name="" objectpath=" " objectpathparam="" opaque="true" widgetclass="dce.pd.frame.resourceview.ui.widget.ExplorerActionWidget" width="45" x="154" y="23" z="7">
+        <param name="TEXT_VISIBLE" value="false"/>
+        <param name="TEXT_ALIGNMENT" value="4"/>
+        <param name="ID" value="objt.wms.resourceview.workcenter.repack.packorder.pack_new_top"/>
+        <param name="ACTION_NAME" value="objt.wms.resourceview.workcenter.repack.packorder.pack_new_top"/>
+        <param name="UIMETA_INVOKER_ACTION" value=" "/>
+        <param name="PANEL_ID" value="Repack_Outputs"/>
+      </widgetviewelement>
+      <widgetviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" alignment="0" attributepath="" background="-1973791" border="NONE" category="" font="Segoe UI-PLAIN-12" foreground="-16777216" height="45" iconname="" iconscaled="false" name="" objectpath=" " objectpathparam="" opaque="true" widgetclass="dce.pd.frame.resourceview.ui.widget.ExplorerActionWidget" width="45" x="99" y="23" z="8">
+        <param name="TEXT_VISIBLE" value="false"/>
+        <param name="TEXT_ALIGNMENT" value="4"/>
+        <param name="ID" value="objt.wms.resourceview.workcenter.repack.out.storageitemqty.edit_dimensions"/>
+        <param name="ACTION_NAME" value="objt.wms.resourceview.workcenter.repack.out.storageitemqty.edit_dimensions"/>
+        <param name="UIMETA_INVOKER_ACTION" value=" "/>
+        <param name="PANEL_ID" value="Repack_Outputs"/>
+      </widgetviewelement>
+      <widgetviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" alignment="0" attributepath="" background="-1973791" border="NONE" category="" font="Segoe UI-PLAIN-12" foreground="-16777216" height="45" iconname="" iconscaled="false" name="" objectpath=" " objectpathparam="" opaque="true" widgetclass="dce.pd.frame.resourceview.ui.widget.ExplorerActionWidget" width="45" x="52" y="23" z="9">
+        <param name="TEXT_VISIBLE" value="false"/>
+        <param name="TEXT_ALIGNMENT" value="4"/>
+        <param name="ID" value="objt.wms.resourceview.workcenter.repack.out.storageitemqty.close_lpn"/>
+        <param name="ACTION_NAME" value="objt.wms.resourceview.workcenter.repack.out.storageitemqty.close_lpn"/>
+        <param name="UIMETA_INVOKER_ACTION" value=" "/>
+        <param name="PANEL_ID" value="Repack_Outputs"/>
+      </widgetviewelement>
+      <widgetviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" alignment="0" attributepath="" background="-1973791" border="NONE" category="" font="Segoe UI-PLAIN-12" foreground="-16777216" height="45" iconname="" iconscaled="false" name="" objectpath=" " objectpathparam="" opaque="true" widgetclass="dce.pd.frame.resourceview.ui.widget.ExplorerActionWidget" width="45" x="5" y="23" z="10">
+        <param name="TEXT_VISIBLE" value="false"/>
+        <param name="TEXT_ALIGNMENT" value="4"/>
+        <param name="ID" value="objt.wms.resourceview.workcenter.repack.packorder.pack_new_lpn"/>
+        <param name="ACTION_NAME" value="objt.wms.resourceview.workcenter.repack.packorder.pack_new_lpn"/>
+        <param name="UIMETA_INVOKER_ACTION" value=" "/>
+        <param name="PANEL_ID" value="Repack_Outputs"/>
+      </widgetviewelement>
+      <widgetviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" alignment="0" attributepath="" attributetitle="" background="-1973791" border="NONE" category="" font="Segoe UI-PLAIN-12" foreground="-16777216" height="209" iconname="" iconscaled="false" name="" objectpath="" objectpathparam="" opaque="false" widgetclass="dce.pd.frame.resourceview.ui.widget.TableTabPanelWidget" width="1235" x="5" y="70" z="11">
+        <param name="ID" value="objt.wms.resourceview.workcenter.repack.packoperation.inventorywrappers.output.list"/>
+        <param name="UIMETA_INVOKER_ACTION0" value=" "/>
+        <param name="SHOW_CONFIRMATION0" value="true"/>
+        <param name="NAVIGATION_KEYS" value="UP,DOWN"/>
+        <param name="PANEL_ID" value="Repack_Outputs"/>
+        <param name="actionIdKey" value="WMS"/>
+        <param name="tabPanelIdKey" value="WMS"/>
+      </widgetviewelement>
+      <textviewelement alignment="2" background="-8355712" border="NONE" font="Segoe UI-BOLD-12" foreground="-1" height="17" opaque="true" text="WIP OUT" width="1245" x="0" y="1" z="12"/>
+    </panelviewelement>
+    <panelviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" background="-1908255" border="LOWERED_ETCH" foreground="-16777216" height="258" iconname="" iconscaled="false" opaque="true" width="1250" x="5" y="215" z="1">
+      <widgetviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" alignment="0" attributepath="" background="-1973791" border="NONE" category="" font="Segoe UI-PLAIN-12" foreground="-16777216" height="45" iconname="" iconscaled="false" name="" objectpath=" " objectpathparam="" opaque="true" widgetclass="dce.pd.frame.resourceview.ui.widget.ExplorerActionWidget" width="45" x="61" y="23" z="0">
+        <param name="ICON_VISIBLE" value="true"/>
+        <param name="TEXT_VISIBLE" value="false"/>
+        <param name="TEXT_ALIGNMENT" value="4"/>
+        <param name="actionIdKey" value="WMS"/>
+        <param name="PANEL_ID" value="Repack_Inputs"/>
+        <param name="ID" value="objt.wms.resourceview.workcenter.repack.top.lpn.full"/>
+        <param name="ACTION_NAME" value="objt.wms.resourceview.workcenter.repack.top.lpn.full"/>
+        <param name="UIMETA_INVOKER_ACTION" value=" "/>
+      </widgetviewelement>
+      <widgetviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" alignment="0" attributepath="" attributetitle="" background="-1973791" border="NONE" category="" font="Segoe UI-PLAIN-12" foreground="-16777216" height="45" iconname="" iconscaled="false" name="" objectpath=" " objectpathparam="" opaque="true" widgetclass="dce.pd.frame.resourceview.ui.widget.ExplorerActionWidget" width="45" x="5" y="23" z="1">
+        <param name="ICON_VISIBLE" value="true"/>
+        <param name="TEXT_VISIBLE" value="false"/>
+        <param name="TEXT_ALIGNMENT" value="4"/>
+        <param name="actionIdKey" value="WMS"/>
+        <param name="ID" value="objt.wms.resourceview.workcenter.repack.packoperation.request.lpn"/>
+        <param name="ACTION_NAME" value="objt.wms.resourceview.workcenter.repack.packoperation.request.lpn"/>
+        <param name="UIMETA_INVOKER_ACTION" value=" "/>
+        <param name="PANEL_ID" value="Repack_Orders"/>
+      </widgetviewelement>
+      <widgetviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" alignment="0" attributepath="" attributetitle="" background="-1973791" border="NONE" category="" font="Segoe UI-PLAIN-12" foreground="-16777216" height="178" iconname="" iconscaled="false" name="" objectpath=" " objectpathparam="" opaque="false" widgetclass="dce.pd.frame.resourceview.ui.widget.ExtendedTableTabPanelWidget" width="1235" x="5" y="70" z="2">
+        <param name="ID" value="objt.wms.resourceview.workcenter.repack.packoperation.inventorywrappers.input.list"/>
+        <param name="SORT_MODE0" value="false"/>
+        <param name="SORT_MODE1" value="false"/>
+        <param name="SORT_MODE2" value="false"/>
+        <param name="UIMETA_INVOKER_ACTION0" value=" "/>
+        <param name="SHOW_CONFIRMATION0" value="true"/>
+        <param name="UIMETA_INVOKER_ACTION1" value=" "/>
+        <param name="SHOW_CONFIRMATION1" value="true"/>
+        <param name="TABLE_INVOKER0" value=" "/>
+        <param name="TABLE_INVOKER1" value=" "/>
+        <param name="PANEL_ID" value="Repack_Inputs"/>
+        <param name="actionIdKey" value="WMS"/>
+        <param name="tabPanelIdKey" value="WMS"/>
+        <param name="NAVIGATION_KEYS" value="UP,DOWN"/>
+        <param name="TABLE_INVOKER2" value=" "/>
+        <param name="TABLE_INVOKER3" value=" "/>
+      </widgetviewelement>
+      <widgetviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" alignment="0" attributepath="" attributetitle="" background="-1973791" border="NONE" category="" font="Segoe UI-PLAIN-12" foreground="-16777216" height="45" iconname="" iconscaled="false" name="" objectpath=" " objectpathparam="" opaque="true" widgetclass="dce.pd.frame.resourceview.ui.widget.ExplorerActionWidget" width="45" x="276" y="23" z="3">
+        <param name="TEXT_VISIBLE" value="false"/>
+        <param name="TEXT_ALIGNMENT" value="4"/>
+        <param name="ID" value="objt.wms.resourceview.workcenter.repack.out.storageitemqty.view_inventory"/>
+        <param name="ACTION_NAME" value="objt.wms.resourceview.workcenter.repack.out.storageitemqty.view_inventory"/>
+        <param name="UIMETA_INVOKER_ACTION" value=" "/>
+        <param name="PANEL_ID" value="Repack_Inputs"/>
+        <param name="actionIdKey" value="WMS"/>
+        <param name="ICON_VISIBLE" value="true"/>
+      </widgetviewelement>
+      <widgetviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" alignment="0" attributepath="" attributetitle="" background="-1973791" border="NONE" category="" font="Segoe UI-PLAIN-12" foreground="-16777216" height="45" iconname="" iconscaled="false" name="" objectpath=" " objectpathparam="" opaque="true" widgetclass="dce.pd.frame.resourceview.ui.widget.ExplorerActionWidget" width="45" x="220" y="23" z="4">
+        <param name="TEXT_VISIBLE" value="false"/>
+        <param name="TEXT_ALIGNMENT" value="4"/>
+        <param name="ID" value="objt.wms.resourceview.workcenter.repack.in.storageitemqty.repack_lpn_to_nest"/>
+        <param name="ACTION_NAME" value="objt.wms.resourceview.workcenter.repack.in.storageitemqty.repack_lpn_to_nest"/>
+        <param name="UIMETA_INVOKER_ACTION" value=" "/>
+        <param name="PANEL_ID" value="Repack_Inputs"/>
+        <param name="actionIdKey" value="WMS"/>
+        <param name="ICON_VISIBLE" value="true"/>
+      </widgetviewelement>
+      <widgetviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" alignment="0" attributepath="" attributetitle="" background="-1973791" border="NONE" category="" font="Segoe UI-PLAIN-12" foreground="-16777216" height="45" iconname="" iconscaled="false" name="" objectpath=" " objectpathparam="" opaque="true" widgetclass="dce.pd.frame.resourceview.ui.widget.ExplorerActionWidget" width="45" x="164" y="23" z="5">
+        <param name="TEXT_VISIBLE" value="false"/>
+        <param name="TEXT_ALIGNMENT" value="4"/>
+        <param name="ID" value="objt.wms.resourceview.workcenter.repack.in.storageitemqty.repack_lpn_content"/>
+        <param name="ACTION_NAME" value="objt.wms.resourceview.workcenter.repack.in.storageitemqty.repack_lpn_content"/>
+        <param name="UIMETA_INVOKER_ACTION" value=" "/>
+        <param name="PANEL_ID" value="Repack_Inputs"/>
+        <param name="actionIdKey" value="WMS"/>
+        <param name="ICON_VISIBLE" value="true"/>
+      </widgetviewelement>
+      <widgetviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" alignment="0" attributepath="" attributetitle="" background="-1973791" border="NONE" category="" font="Segoe UI-PLAIN-12" foreground="-16777216" height="45" iconname="" iconscaled="false" name="" objectpath=" " objectpathparam="" opaque="true" widgetclass="dce.pd.frame.resourceview.ui.widget.ExplorerActionWidget" width="45" x="108" y="23" z="6">
+        <param name="TEXT_VISIBLE" value="false"/>
+        <param name="TEXT_ALIGNMENT" value="4"/>
+        <param name="ID" value="objt.wms.resourceview.workcenter.repack.in.storageitemqty.repack_full_lpn"/>
+        <param name="ACTION_NAME" value="objt.wms.resourceview.workcenter.repack.in.storageitemqty.repack_full_lpn"/>
+        <param name="UIMETA_INVOKER_ACTION" value=" "/>
+        <param name="PANEL_ID" value="Repack_Inputs"/>
+        <param name="actionIdKey" value="WMS"/>
+        <param name="ICON_VISIBLE" value="true"/>
+      </widgetviewelement>
+      <textviewelement alignment="2" background="-8355712" border="NONE" font="Segoe UI-BOLD-12" foreground="-1" height="17" opaque="true" text="To Repack" width="1245" x="0" y="1" z="7"/>
+    </panelviewelement>
+    <panelviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" background="-1908255" border="LOWERED_ETCH" foreground="-16777216" height="196" iconname="" iconscaled="false" opaque="true" width="790" x="465" y="5" z="2">
+      <widgetviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" alignment="0" attributepath="" background="-1973791" border="NONE" category="" font="Segoe UI-PLAIN-12" foreground="-16777216" height="163" iconname="" iconscaled="false" name="" objectpath=" " objectpathparam="" opaque="false" widgetclass="dce.pd.frame.resourceview.ui.widget.ExtendedTableTabPanelWidget" width="775" x="5" y="23" z="4">
+        <param name="ID" value="objt.wms.resourceview.workcenter.repack.packoperations.list"/>
+        <param name="SORT_MODE0" value="false"/>
+        <param name="SORT_MODE1" value="false"/>
+        <param name="SORT_MODE2" value="false"/>
+        <param name="UIMETA_INVOKER_ACTION0" value=" "/>
+        <param name="SHOW_CONFIRMATION0" value="true"/>
+        <param name="UIMETA_INVOKER_ACTION1" value=" "/>
+        <param name="SHOW_CONFIRMATION1" value="true"/>
+        <param name="TABLE_INVOKER0" value=" "/>
+        <param name="TABLE_INVOKER1" value=" "/>
+        <param name="NAVIGATION_KEYS" value="UP,DOWN"/>
+        <param name="PANEL_ID" value="Repack_Operations"/>
+        <param name="actionIdKey" value="WMS"/>
+        <param name="tabPanelIdKey" value="WMS"/>
+        <param name="TABLE_ID0" value="WIP_IN"/>
+        <param name="TABLE_ID1" value="WIP_OUT"/>
+        <tablepreferences>
+          <table aggregatecolumnsrange="0" autosizecolumns="true" class="objt.wms.operatorclient.warehousemgt.wrapper.PackOperationWrapper" id="objt.wms.resourceview.workcenter.repack.packoperations.list">
+            <columnlayout>
+              <column attributepath="item.name" sorting="ASC,1" title="item"/>
+              <column attribute="objt.wms.bo.warehousemgt.PackItemQty;value" attributepath="roundedValue(qtyToPick)" title="packitemqty.qtytopick"/>
+              <column attribute="objt.wms.bo.warehousemgt.PackItemQty;value" attributepath="roundedValue(qtyPicked)" title="packitemqty.qtypicked"/>
+              <column attribute="objt.wms.bo.warehousemgt.PackItemQty;value" attributepath="roundedValue(qtyRepacked)" title="packitemqty.qtyrepacked"/>
+              <column attribute="objt.wms.bo.warehousemgt.PackItemQty;value" attributepath="roundedValue(qtyToRepack)" title="packitemqty.qtytorepack"/>
+              <column attributepath="lotID" selected="false" title="lot"/>
+              <column attributepath="subLotID" selected="false" title="sublot"/>
+              <column attribute="objt.wms.operatorclient.warehousemgt.wrapper.PackOperationWrapper;inventoryCode1" attributepath="inventoryCode1" selected="false"/>
+              <column attribute="objt.wms.operatorclient.warehousemgt.wrapper.PackOperationWrapper;inventoryCode2" attributepath="inventoryCode2" selected="false"/>
+              <column attributepath="item.description" selected="false" title="item description"/>
+              <column attributepath="item.baseUom.symbol" selected="false" title="uom"/>
+            </columnlayout>
+            <autofilter enabled="false"/>
+            <statusbar visible="false"/>
+          </table>
+        </tablepreferences>
+      </widgetviewelement>
+      <textviewelement alignment="2" background="-8355712" border="NONE" font="Segoe UI-BOLD-12" foreground="-1" height="17" opaque="true" text="Repack Lines" width="785" x="0" y="1" z="9"/>
+    </panelviewelement>
+    <panelviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" background="-1908255" border="LOWERED_ETCH" foreground="-16777216" height="196" iconname="" iconscaled="false" opaque="true" width="450" x="5" y="5" z="3">
+      <widgetviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" alignment="0" attributepath="" background="-1973791" border="NONE" category="" font="Segoe UI-PLAIN-12" foreground="-16777216" height="45" iconname="" iconscaled="false" name="" objectpath=" " objectpathparam="" opaque="true" widgetclass="dce.pd.frame.resourceview.ui.widget.ExplorerActionWidget" width="45" x="107" y="23" z="0">
+        <param name="ICON_VISIBLE" value="true"/>
+        <param name="TEXT_VISIBLE" value="false"/>
+        <param name="TEXT_ALIGNMENT" value="4"/>
+        <param name="actionIdKey" value="WMS"/>
+        <param name="PANEL_ID" value="Repack_Orders"/>
+        <param name="ID" value="objt.wms.resourceview.workcenter.repack.packorder.unschedule"/>
+        <param name="ACTION_NAME" value="objt.wms.resourceview.workcenter.repack.packorder.unschedule"/>
+        <param name="UIMETA_INVOKER_ACTION" value=" "/>
+      </widgetviewelement>
+      <widgetviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" alignment="0" attributepath="" background="-1973791" border="NONE" category="" font="Segoe UI-PLAIN-12" foreground="-16777216" height="45" iconname="" iconscaled="false" name="" objectpath=" " objectpathparam="" opaque="true" widgetclass="dce.pd.frame.resourceview.ui.widget.ExplorerActionWidget" width="45" x="60" y="23" z="1">
+        <param name="ICON_VISIBLE" value="true"/>
+        <param name="TEXT_VISIBLE" value="false"/>
+        <param name="TEXT_ALIGNMENT" value="4"/>
+        <param name="actionIdKey" value="WMS"/>
+        <param name="PANEL_ID" value="Repack_Orders"/>
+        <param name="ID" value="objt.wms.resourceview.workcenter.repack.packorder.schedule"/>
+        <param name="ACTION_NAME" value="objt.wms.resourceview.workcenter.repack.packorder.schedule"/>
+        <param name="UIMETA_INVOKER_ACTION" value=" "/>
+      </widgetviewelement>
+      <widgetviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" alignment="0" attributepath="" background="-1973791" border="NONE" category="" font="Segoe UI-PLAIN-12" foreground="-16777216" height="116" iconname="" iconscaled="false" name="" objectpath=" " objectpathparam="" opaque="false" widgetclass="dce.pd.frame.resourceview.ui.widget.ExtendedTableTabPanelWidget" width="435" x="5" y="70" z="2">
+        <param name="actionIdKey" value="WMS"/>
+        <param name="tabPanelIdKey" value="WMS"/>
+        <param name="ID" value="objt.wms.resourceview.workcenter.repack.packorders.list"/>
+        <param name="SORT_MODE0" value="false"/>
+        <param name="SORT_MODE1" value="false"/>
+        <param name="SORT_MODE2" value="false"/>
+        <param name="UIMETA_INVOKER_ACTION0" value=" "/>
+        <param name="SHOW_CONFIRMATION0" value="true"/>
+        <param name="UIMETA_INVOKER_ACTION1" value=" "/>
+        <param name="SHOW_CONFIRMATION1" value="true"/>
+        <param name="TABLE_INVOKER0" value=" "/>
+        <param name="TABLE_INVOKER1" value=" "/>
+        <param name="PANEL_ID" value="Repack_Orders"/>
+        <param name="CLEAR_OTHER_TABLES_SELECTION" value="false"/>
+        <param name="NAVIGATION_KEYS" value="UP,DOWN"/>
+        <param name="TABLE_ID0" value="Repack_Operations"/>
+        <param name="TABLE_ID1" value="Repack_Inputs"/>
+        <param name="TABLE_ID2" value="Repack_Outputs"/>
+        <param name="TABLE_INVOKER2" value=" "/>
+        <tablepreferences>
+          <table aggregatecolumnsrange="0" autosizecolumns="true" class="objt.wms.bo.warehousemgt.PackOrder" id="objt.wms.resourceview.workcenter.repack.packorders.list">
+            <columnlayout>
+              <column attributepath="id" title="packorder"/>
+              <column attributepath="status" title="packorder.status"/>
+              <column attribute="objt.wms.bo.outboundmgt.OutboundOrder;dtsDueBefore" attributepath="STATIC(objt.wms.bo.warehousemgt.PackOrders;getOutboundOrder;BO).dtsDueBefore" selected="false" title="outboundorder.dtsduebefore"/>
+              <column attributepath="STATIC(objt.wms.bo.warehousemgt.PackOrders;getOutboundOrder;BO).id" selected="false" title="order"/>
+              <column attributepath="STATIC(objt.wms.bo.warehousemgt.PackOrders;getWorkCenter;BO).name" selected="false" title="packorder.workcenter"/>
+            </columnlayout>
+            <autofilter enabled="false"/>
+            <statusbar visible="false"/>
+          </table>
+        </tablepreferences>
+      </widgetviewelement>
+      <widgetviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" alignment="0" attributepath="" attributetitle="" background="-1973791" border="NONE" category="" font="Segoe UI-PLAIN-12" foreground="-16777216" height="45" iconname="" iconscaled="false" name="" objectpath=" " objectpathparam="" opaque="true" widgetclass="dce.pd.frame.resourceview.ui.widget.ExplorerActionWidget" width="45" x="217" y="23" z="3">
+        <param name="TEXT_VISIBLE" value="false"/>
+        <param name="TEXT_ALIGNMENT" value="4"/>
+        <param name="ID" value="objt.wms.resourceview.workcenter.repack.packorder.view_instructions"/>
+        <param name="ACTION_NAME" value="objt.wms.resourceview.workcenter.repack.packorder.view_instructions"/>
+        <param name="UIMETA_INVOKER_ACTION" value=" "/>
+        <param name="actionIdKey" value="WMS"/>
+        <param name="PANEL_ID" value="Repack_Orders"/>
+      </widgetviewelement>
+      <widgetviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" alignment="0" attributepath="" attributetitle="" background="-1973791" border="NONE" category="" font="Segoe UI-PLAIN-12" foreground="-16777216" height="45" iconname="" iconscaled="false" name="" objectpath=" " objectpathparam="" opaque="true" widgetclass="dce.pd.frame.resourceview.ui.widget.ExplorerActionWidget" width="45" x="162" y="23" z="4">
+        <param name="TEXT_VISIBLE" value="false"/>
+        <param name="TEXT_ALIGNMENT" value="4"/>
+        <param name="ID" value="objt.wms.resourceview.workcenter.repack.packorder.close_packorder"/>
+        <param name="ACTION_NAME" value="objt.wms.resourceview.workcenter.repack.packorder.close_packorder"/>
+        <param name="UIMETA_INVOKER_ACTION" value=" "/>
+        <param name="actionIdKey" value="WMS"/>
+        <param name="PANEL_ID" value="Repack_Orders"/>
+      </widgetviewelement>
+      <widgetviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" alignment="0" attributepath="" background="-1973791" border="NONE" category="" font="Segoe UI-PLAIN-12" foreground="-16777216" height="45" iconname="" iconscaled="false" name="" objectpath=" " objectpathparam="" opaque="true" widgetclass="dce.pd.frame.resourceview.ui.widget.ExplorerActionWidget" width="45" x="5" y="23" z="5">
+        <param name="TEXT_VISIBLE" value="false"/>
+        <param name="TEXT_ALIGNMENT" value="4"/>
+        <param name="ID" value="objt.wms.resourceview.workcenter.repack.packorder.reschedule"/>
+        <param name="ACTION_NAME" value="objt.wms.resourceview.workcenter.repack.packorder.reschedule"/>
+        <param name="UIMETA_INVOKER_ACTION" value=" "/>
+        <param name="actionIdKey" value="WMS"/>
+        <param name="PANEL_ID" value="Repack_Orders"/>
+      </widgetviewelement>
+      <textviewelement alignment="2" background="-8355712" border="NONE" font="Segoe UI-BOLD-12" foreground="-1" height="17" opaque="true" text="Repack Orders" width="445" x="0" y="1" z="6"/>
+    </panelviewelement>
+  </resourceviewelement>
+</template>

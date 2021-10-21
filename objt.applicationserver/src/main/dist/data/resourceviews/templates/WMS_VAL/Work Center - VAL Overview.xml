@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<template type="WMS_VAL" description="" resourceclass="dce.pd.sfc.bo.resourcemgt.WorkCenter">
+  <resourceviewelement actionclick="1" actionclickparam="" actiondblclick="2" actiondblclickparam="" attributepath="" attributetitle="" background="-1908255" border="NONE" category="" font="Segoe UI-PLAIN-12" foreground="-16777216" height="775" iconname="" iconscaled="false" name="VAL1" opaque="true" resourceclassname="dce.pd.sfc.bo.resourcemgt.WorkCenter" resourceoid="1411434" selectedborder="NONE" selectionid="false" width="1255" x="0" y="0" z="0">
+    <panelviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" background="-1908255" border="LOWERED_ETCH" height="289" iconname="" iconscaled="false" opaque="true" width="620" x="635" y="485" z="0">
+      <widgetviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" alignment="0" attributepath="" background="-1973791" border="NONE" category="" font="Segoe UI-PLAIN-12" foreground="-16777216" height="209" iconname="" iconscaled="false" name="" objectpath=" " objectpathparam="" opaque="false" widgetclass="dce.pd.frame.resourceview.ui.widget.TableTabPanelWidget" width="600" x="5" y="70" z="0">
+        <param name="ID" value="objt.wms.resourceview.workcenter.val.inventorywrappers.output.overview"/>
+        <param name="UIMETA_INVOKER_ACTION0" value=" "/>
+        <param name="SHOW_CONFIRMATION0" value="true"/>
+        <param name="PANEL_ID" value="VAL_Output_Inventory"/>
+        <param name="NAVIGATION_KEYS" value="UP,DOWN"/>
+        <param name="actionIdKey" value="WMS"/>
+        <param name="tabPanelIdKey" value="WMS"/>
+        <tablepreferences>
+          <table aggregatecolumnsrange="1" autosizecolumns="true" class="objt.wms.operatorclient.inventorymgt.wrapper.InventoryWrapper" id="objt.wms.resourceview.workcenter.val.inventorywrappers.output.overview">
+            <columnlayout>
+              <column attributepath="containerStorageItemQty.name" sorting="ASC,1" title="lpn"/>
+              <column attributepath="storageItemQty.rootItem.CONCAT(BO;name% - %description)" exporttitle="ITEM_NAME_DESCRIPTION" title="item||item.name_description" usertitle="Item"/>
+              <column attributepath="storageItemQty.value" title="qtyonhand"/>
+              <column attributepath="storageItemQty.uom.symbol" title="uom"/>
+              <column attribute="objt.wms.bo.warehousemgt.Task;category" attributepath="taskWrapper.task.category" title="task"/>
+            </columnlayout>
+            <autofilter enabled="false"/>
+            <statusbar visible="false"/>
+          </table>
+        </tablepreferences>
+      </widgetviewelement>
+      <widgetviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" alignment="0" attributepath="" background="-1973791" border="NONE" category="" font="Segoe UI-PLAIN-12" foreground="-16777216" height="45" iconname="" iconscaled="false" name="" objectpath=" " objectpathparam="" opaque="true" widgetclass="dce.pd.frame.resourceview.ui.widget.ExplorerActionWidget" width="45" x="162" y="23" z="1">
+        <param name="TEXT_VISIBLE" value="false"/>
+        <param name="TEXT_ALIGNMENT" value="4"/>
+        <param name="ID" value="objt.wms.resourceview.workcenter.inventory.print_inventory"/>
+        <param name="ACTION_NAME" value="objt.wms.resourceview.workcenter.inventory.print_inventory"/>
+        <param name="UIMETA_INVOKER_ACTION" value=" "/>
+        <param name="PANEL_ID" value="VAL_Output_Inventory"/>
+        <param name="actionIdKey" value="WMS"/>
+      </widgetviewelement>
+      <widgetviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" alignment="0" attributepath="" background="-1973791" border="NONE" category="" font="Segoe UI-PLAIN-12" foreground="-16777216" height="45" iconname="" iconscaled="false" name="" objectpath=" " objectpathparam="" opaque="true" widgetclass="dce.pd.frame.resourceview.ui.widget.ExplorerActionWidget" width="45" x="107" y="23" z="2">
+        <param name="TEXT_VISIBLE" value="false"/>
+        <param name="TEXT_ALIGNMENT" value="4"/>
+        <param name="ID" value="objt.wms.resourceview.workcenter.containerstorageitemqtyinventory.view_task"/>
+        <param name="ACTION_NAME" value="objt.wms.resourceview.workcenter.containerstorageitemqtyinventory.view_task"/>
+        <param name="UIMETA_INVOKER_ACTION" value=" "/>
+        <param name="PANEL_ID" value="VAL_Output_Inventory"/>
+        <param name="actionIdKey" value="WMS"/>
+      </widgetviewelement>
+      <widgetviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" alignment="0" attributepath="" background="-1973791" border="NONE" category="" font="Segoe UI-PLAIN-12" foreground="-16777216" height="45" iconname="" iconscaled="false" name="" objectpath=" " objectpathparam="" opaque="true" widgetclass="dce.pd.frame.resourceview.ui.widget.ExplorerActionWidget" width="45" x="60" y="23" z="3">
+        <param name="TEXT_VISIBLE" value="false"/>
+        <param name="TEXT_ALIGNMENT" value="4"/>
+        <param name="ID" value="objt.wms.resourceview.workcenter.inventory.release_task"/>
+        <param name="ACTION_NAME" value="objt.wms.resourceview.workcenter.inventory.release_task"/>
+        <param name="UIMETA_INVOKER_ACTION" value=" "/>
+        <param name="PANEL_ID" value="VAL_Output_Inventory"/>
+        <param name="actionIdKey" value="WMS"/>
+      </widgetviewelement>
+      <widgetviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" alignment="0" attributepath="" background="-1973791" border="NONE" category="" font="Segoe UI-PLAIN-12" foreground="-16777216" height="45" iconname="" iconscaled="false" name="" objectpath=" " objectpathparam="" opaque="true" widgetclass="dce.pd.frame.resourceview.ui.widget.ExplorerActionWidget" width="45" x="5" y="23" z="4">
+        <param name="TEXT_VISIBLE" value="false"/>
+        <param name="TEXT_ALIGNMENT" value="4"/>
+        <param name="ID" value="objt.wms.resourceview.workcenter.nestedcontainerstorageitemqty.view_inventory"/>
+        <param name="ACTION_NAME" value="objt.wms.resourceview.workcenter.nestedcontainerstorageitemqty.view_inventory"/>
+        <param name="UIMETA_INVOKER_ACTION" value=" "/>
+        <param name="PANEL_ID" value="VAL_Output_Inventory"/>
+        <param name="actionIdKey" value="WMS"/>
+      </widgetviewelement>
+      <textviewelement alignment="2" background="-8355712" border="NONE" font="Segoe UI-BOLD-12" foreground="-1" height="17" opaque="true" text="WIP OUT" width="615" x="0" y="1" z="5"/>
+    </panelviewelement>
+    <panelviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" background="-1908255" border="LOWERED_ETCH" height="258" iconname="" iconscaled="false" opaque="true" width="1250" x="5" y="215" z="1">
+      <widgetviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" alignment="0" attributepath="" background="-1973791" border="NONE" category="" font="Segoe UI-PLAIN-12" foreground="-16777216" height="45" iconname="" iconscaled="false" name="" objectpath=" " objectpathparam="" opaque="true" widgetclass="dce.pd.frame.resourceview.ui.widget.ExplorerActionWidget" width="45" x="5" y="23" z="0">
+        <param name="TEXT_VISIBLE" value="false"/>
+        <param name="TEXT_ALIGNMENT" value="4"/>
+        <param name="ID" value="objt.wms.resourceview.workcenter.val.makeorder.add_picktask"/>
+        <param name="ACTION_NAME" value="objt.wms.resourceview.workcenter.val.makeorder.add_picktask"/>
+        <param name="UIMETA_INVOKER_ACTION" value=" "/>
+        <param name="PANEL_ID" value="VAL_Outputs"/>
+        <param name="actionIdKey" value="WMS"/>
+      </widgetviewelement>
+      <widgetviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" alignment="0" attributepath="" background="-1973791" border="NONE" category="" font="Segoe UI-PLAIN-12" foreground="-16777216" height="45" iconname="" iconscaled="false" name="" objectpath="" objectpathparam="" opaque="true" widgetclass="dce.pd.frame.resourceview.ui.widget.ExplorerActionWidget" width="45" x="107" y="23" z="1">
+        <param name="TEXT_VISIBLE" value="false"/>
+        <param name="TEXT_ALIGNMENT" value="4"/>
+        <param name="ID" value="objt.wms.resourceview.workcenter.print_blank_sscc"/>
+        <param name="ACTION_NAME" value="objt.wms.resourceview.workcenter.print_blank_sscc"/>
+        <param name="UIMETA_INVOKER_ACTION" value=" "/>
+        <param name="PANEL_ID" value="VAL_Outputs"/>
+        <param name="actionIdKey" value="WMS"/>
+      </widgetviewelement>
+      <widgetviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" alignment="0" attributepath="" background="-1973791" border="NONE" category="" font="Segoe UI-PLAIN-12" foreground="-16777216" height="45" iconname="" iconscaled="false" name="" objectpath=" " objectpathparam="" opaque="true" widgetclass="dce.pd.frame.resourceview.ui.widget.ExplorerActionWidget" width="45" x="60" y="23" z="2">
+        <param name="TEXT_VISIBLE" value="false"/>
+        <param name="TEXT_ALIGNMENT" value="4"/>
+        <param name="ID" value="objt.wms.resourceview.workcenter.val.makeorder.view_instruction"/>
+        <param name="ACTION_NAME" value="objt.wms.resourceview.workcenter.val.makeorder.view_instruction"/>
+        <param name="UIMETA_INVOKER_ACTION" value=" "/>
+        <param name="PANEL_ID" value="VAL_Outputs"/>
+        <param name="actionIdKey" value="WMS"/>
+      </widgetviewelement>
+      <widgetviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" alignment="0" attributepath="" background="-1973791" border="NONE" category="" font="Segoe UI-PLAIN-12" foreground="-16777216" height="45" iconname="" iconscaled="false" name="" objectpath="" objectpathparam="" opaque="true" widgetclass="dce.pd.frame.resourceview.ui.widget.ExplorerActionWidget" width="45" x="256" y="23" z="3">
+        <param name="TEXT_VISIBLE" value="false"/>
+        <param name="TEXT_ALIGNMENT" value="4"/>
+        <param name="ID" value="objt.wms.resourceview.workcenter.val.materialinput.close_lpn"/>
+        <param name="ACTION_NAME" value="objt.wms.resourceview.workcenter.val.materialinput.close_lpn"/>
+        <param name="UIMETA_INVOKER_ACTION" value=" "/>
+        <param name="PANEL_ID" value="VAL_Outputs"/>
+        <param name="actionIdKey" value="WMS"/>
+      </widgetviewelement>
+      <widgetviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" alignment="0" attributepath="" background="-1973791" border="NONE" category="" font="Segoe UI-PLAIN-12" foreground="-16777216" height="45" iconname="" iconscaled="false" name="" objectpath=" " objectpathparam="" opaque="true" widgetclass="dce.pd.frame.resourceview.ui.widget.ExplorerActionWidget" width="45" x="311" y="23" z="4">
+        <param name="TEXT_VISIBLE" value="false"/>
+        <param name="TEXT_ALIGNMENT" value="4"/>
+        <param name="ID" value="objt.wms.resourceview.workcenter.val.makeitemqty.display_inventory"/>
+        <param name="ACTION_NAME" value="objt.wms.resourceview.workcenter.val.makeitemqty.display_inventory"/>
+        <param name="UIMETA_INVOKER_ACTION" value=" "/>
+        <param name="PANEL_ID" value="VAL_Outputs"/>
+        <param name="actionIdKey" value="WMS"/>
+      </widgetviewelement>
+      <widgetviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" alignment="0" attributepath="" background="-1973791" border="NONE" category="" font="Segoe UI-PLAIN-12" foreground="-16777216" height="45" iconname="" iconscaled="false" name="" objectpath=" " objectpathparam="" opaque="true" widgetclass="dce.pd.frame.resourceview.ui.widget.ExplorerActionWidget" width="45" x="209" y="23" z="5">
+        <param name="TEXT_VISIBLE" value="false"/>
+        <param name="TEXT_ALIGNMENT" value="4"/>
+        <param name="ID" value="objt.wms.resourceview.workcenter.val.materialinput.register_val_by_lpn"/>
+        <param name="ACTION_NAME" value="objt.wms.resourceview.workcenter.val.materialinput.register_val_by_lpn"/>
+        <param name="UIMETA_INVOKER_ACTION" value=" "/>
+        <param name="PANEL_ID" value="VAL_Outputs"/>
+        <param name="actionIdKey" value="WMS"/>
+      </widgetviewelement>
+      <widgetviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" alignment="0" attributepath="" background="-1973791" border="NONE" category="" font="Segoe UI-PLAIN-12" foreground="-16777216" height="45" iconname="" iconscaled="false" name="" objectpath=" " objectpathparam="" opaque="true" widgetclass="dce.pd.frame.resourceview.ui.widget.ExplorerActionWidget" width="45" x="162" y="23" z="6">
+        <param name="TEXT_VISIBLE" value="false"/>
+        <param name="TEXT_ALIGNMENT" value="4"/>
+        <param name="ID" value="objt.wms.resourceview.workcenter.val.materialinput.register_val"/>
+        <param name="ACTION_NAME" value="objt.wms.resourceview.workcenter.val.materialinput.register_val"/>
+        <param name="UIMETA_INVOKER_ACTION" value=" "/>
+        <param name="PANEL_ID" value="VAL_Outputs"/>
+        <param name="actionIdKey" value="WMS"/>
+      </widgetviewelement>
+      <widgetviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" alignment="0" attributepath="" background="-1973791" border="NONE" category="" font="Segoe UI-PLAIN-12" foreground="-16777216" height="178" iconname="" iconscaled="false" name="" objectpath="" objectpathparam="" opaque="false" widgetclass="dce.pd.frame.resourceview.ui.widget.TableTabPanelWidget" width="1230" x="5" y="70" z="7">
+        <param name="ID" value="objt.wms.resourceview.workcenter.val.materialinputwrappers.list"/>
+        <param name="UIMETA_INVOKER_ACTION0" value=" "/>
+        <param name="SHOW_CONFIRMATION0" value="true"/>
+        <param name="NAVIGATION_KEYS" value="UP,DOWN"/>
+        <param name="PANEL_ID" value="VAL_Outputs"/>
+        <param name="actionIdKey" value="WMS"/>
+        <param name="tabPanelIdKey" value="WMS"/>
+        <tablepreferences>
+          <table aggregatecolumnsrange="0" autosizecolumns="true" class="objt.wms.ui.materialmgt.wrapper.MaterialInputWrapper" id="objt.wms.resourceview.workcenter.val.materialinputwrappers.list">
+            <columnlayout>
+              <column attributepath="item.CONCAT(BO;name% - %description)" exporttitle="ITEM_NAME_DESCRIPTION" title="Item"/>
+              <column attribute="objt.mes.bo.productionmgt.ProductionItemQty;value" attributepath="roundedValue(qtyOnHand)" title="makeitemqty.qtyonhand"/>
+              <column attribute="objt.mes.bo.productionmgt.ProductionItemQty;value" attributepath="roundedValue(qtyRemaining)" title="makeitemqty.qtytodo"/>
+              <column attribute="objt.mes.bo.productionmgt.ProductionItemQty;value" attributepath="roundedValue(qtyConsumed)" title="makeitemqty.qtyproduced"/>
+              <column attribute="objt.wms.bo.productionmgt.MakeItemQty;qtyTarget" attributepath="roundedValue(qtyTarget)" title="makeitemqty.qtyordered"/>
+              <column attributepath="item.baseUom.symbol" title="makeitemqty.uom"/>
+            </columnlayout>
+            <autofilter enabled="false"/>
+            <statusbar visible="false"/>
+          </table>
+        </tablepreferences>
+      </widgetviewelement>
+      <textviewelement alignment="2" background="-8355712" border="NONE" font="Segoe UI-BOLD-12" foreground="-1" height="17" opaque="true" text="Outputs" width="1245" x="0" y="1" z="8"/>
+    </panelviewelement>
+    <panelviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" background="-1908255" border="LOWERED_ETCH" height="289" iconname="" iconscaled="false" opaque="true" width="620" x="5" y="485" z="3">
+      <widgetviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" alignment="0" attributepath="" background="-1973791" border="NONE" category="" font="Segoe UI-PLAIN-12" foreground="-16777216" height="209" iconname="" iconscaled="false" name="" objectpath=" " objectpathparam="" opaque="false" widgetclass="dce.pd.frame.resourceview.ui.widget.ExtendedTableTabPanelWidget" width="600" x="5" y="70" z="1">
+        <param name="ID" value="objt.wms.resourceview.workcenter.val.inventorywrappers.input.overview"/>
+        <param name="SORT_MODE0" value="false"/>
+        <param name="SORT_MODE1" value="false"/>
+        <param name="SORT_MODE2" value="false"/>
+        <param name="UIMETA_INVOKER_ACTION0" value=" "/>
+        <param name="SHOW_CONFIRMATION0" value="true"/>
+        <param name="UIMETA_INVOKER_ACTION1" value=" "/>
+        <param name="SHOW_CONFIRMATION1" value="true"/>
+        <param name="TABLE_INVOKER0" value=" "/>
+        <param name="TABLE_INVOKER1" value=" "/>
+        <param name="PANEL_ID" value="VAL_Input_Inventory"/>
+        <param name="actionIdKey" value="WMS"/>
+        <param name="tabPanelIdKey" value="WMS"/>
+        <param name="NAVIGATION_KEYS" value="UP,DOWN"/>
+        <param name="TABLE_INVOKER2" value=" "/>
+        <param name="TABLE_INVOKER3" value=" "/>
+        <tablepreferences>
+          <table aggregatecolumnsrange="1" autosizecolumns="true" class="objt.wms.operatorclient.inventorymgt.wrapper.InventoryWrapper" id="objt.wms.resourceview.workcenter.val.inventorywrappers.input.overview">
+            <columnlayout>
+              <column attributepath="containerStorageItemQty.name" sorting="ASC,1" title="lpn"/>
+              <column attributepath="storageItemQty.rootItem.CONCAT(BO;name% - %description)" exporttitle="ITEM_NAME_DESCRIPTION" title="item||item.name_description" usertitle="Item"/>
+              <column attributepath="storageItemQty.value" title="qtyonhand"/>
+              <column attributepath="storageItemQty.uom.symbol" title="uom"/>
+            </columnlayout>
+            <autofilter enabled="false"/>
+            <statusbar visible="false"/>
+          </table>
+        </tablepreferences>
+      </widgetviewelement>
+      <widgetviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" alignment="0" attributepath="" background="-1973791" border="NONE" category="" font="Segoe UI-PLAIN-12" foreground="-16777216" height="45" iconname="" iconscaled="false" name="" objectpath=" " objectpathparam="" opaque="true" widgetclass="dce.pd.frame.resourceview.ui.widget.ExplorerActionWidget" width="45" x="5" y="23" z="2">
+        <param name="TEXT_VISIBLE" value="false"/>
+        <param name="TEXT_ALIGNMENT" value="4"/>
+        <param name="ID" value="objt.wms.resourceview.workcenter.nestedcontainerstorageitemqty.view_inventory"/>
+        <param name="ACTION_NAME" value="objt.wms.resourceview.workcenter.nestedcontainerstorageitemqty.view_inventory"/>
+        <param name="UIMETA_INVOKER_ACTION" value=" "/>
+        <param name="PANEL_ID" value="VAL_Input_Inventory"/>
+        <param name="actionIdKey" value="WMS"/>
+      </widgetviewelement>
+      <textviewelement alignment="2" background="-8355712" border="NONE" font="Segoe UI-BOLD-12" foreground="-1" height="17" opaque="true" text="WIP IN" width="615" x="0" y="1" z="6"/>
+    </panelviewelement>
+    <panelviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" background="-1908255" border="LOWERED_ETCH" height="196" iconname="" iconscaled="false" opaque="true" width="1250" x="5" y="5" z="4">
+      <widgetviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" alignment="0" attributepath="" background="-1973791" border="NONE" category="" font="Segoe UI-PLAIN-12" foreground="-16777216" height="45" iconname="" iconscaled="false" name="" objectpath=" " objectpathparam="" opaque="true" widgetclass="dce.pd.frame.resourceview.ui.widget.ExplorerActionWidget" width="45" x="248" y="23" z="0">
+        <param name="TEXT_VISIBLE" value="false"/>
+        <param name="TEXT_ALIGNMENT" value="4"/>
+        <param name="ID" value="objt.wms.resourceview.workcenter.val.materialinput.overview_picklist"/>
+        <param name="ACTION_NAME" value="objt.wms.resourceview.workcenter.val.materialinput.overview_picklist"/>
+        <param name="UIMETA_INVOKER_ACTION" value=" "/>
+        <param name="PANEL_ID" value="VAL_Orders"/>
+        <param name="actionIdKey" value="WMS"/>
+      </widgetviewelement>
+      <widgetviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" alignment="0" attributepath="" background="-1973791" border="NONE" category="" font="Segoe UI-PLAIN-12" foreground="-16777216" height="45" iconname="" iconscaled="false" name="" objectpath=" " objectpathparam="" opaque="true" widgetclass="dce.pd.frame.resourceview.ui.widget.ExplorerActionWidget" width="45" x="201" y="23" z="1">
+        <param name="TEXT_VISIBLE" value="false"/>
+        <param name="TEXT_ALIGNMENT" value="4"/>
+        <param name="ID" value="objt.wms.resourceview.workcenter.val.makeorder.release_picklist"/>
+        <param name="ACTION_NAME" value="objt.wms.resourceview.workcenter.val.makeorder.release_picklist"/>
+        <param name="UIMETA_INVOKER_ACTION" value=" "/>
+        <param name="PANEL_ID" value="VAL_Orders"/>
+        <param name="actionIdKey" value="WMS"/>
+      </widgetviewelement>
+      <widgetviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" alignment="0" attributepath="" background="-1973791" border="NONE" category="" font="Segoe UI-PLAIN-12" foreground="-16777216" height="45" iconname="" iconscaled="false" name="" objectpath=" " objectpathparam="" opaque="true" widgetclass="dce.pd.frame.resourceview.ui.widget.ExplorerActionWidget" width="45" x="154" y="23" z="2">
+        <param name="TEXT_VISIBLE" value="false"/>
+        <param name="TEXT_ALIGNMENT" value="4"/>
+        <param name="ID" value="objt.wms.resourceview.workcenter.val.makeorder.request_lpn"/>
+        <param name="ACTION_NAME" value="objt.wms.resourceview.workcenter.val.makeorder.request_lpn"/>
+        <param name="UIMETA_INVOKER_ACTION" value=" "/>
+        <param name="PANEL_ID" value="VAL_Orders"/>
+        <param name="actionIdKey" value="WMS"/>
+      </widgetviewelement>
+      <widgetviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" alignment="0" attributepath="" background="-1973791" border="NONE" category="" font="Segoe UI-PLAIN-12" foreground="-16777216" height="45" iconname="" iconscaled="false" name="" objectpath=" " objectpathparam="" opaque="true" widgetclass="dce.pd.frame.resourceview.ui.widget.ExplorerActionWidget" width="45" x="303" y="23" z="3">
+        <param name="TEXT_VISIBLE" value="false"/>
+        <param name="TEXT_ALIGNMENT" value="4"/>
+        <param name="ID" value="objt.wms.resourceview.workcenter.val.makeorder.close_makeorder"/>
+        <param name="ACTION_NAME" value="objt.wms.resourceview.workcenter.val.makeorder.close_makeorder"/>
+        <param name="UIMETA_INVOKER_ACTION" value=" "/>
+        <param name="PANEL_ID" value="VAL_Outputs"/>
+        <param name="actionIdKey" value="WMS"/>
+      </widgetviewelement>
+      <widgetviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" alignment="0" attributepath="" background="-1973791" border="NONE" category="" font="Segoe UI-PLAIN-12" foreground="-16777216" height="116" iconname="" iconscaled="false" name="" objectpath=" " objectpathparam="" opaque="false" widgetclass="dce.pd.frame.resourceview.ui.widget.ExtendedTableTabPanelWidget" width="1230" x="5" y="70" z="4">
+        <param name="actionIdKey" value="WMS"/>
+        <param name="tabPanelIdKey" value="WMS"/>
+        <param name="ID" value="objt.wms.resourceview.workcenter.val.open.makeoperations.list"/>
+        <param name="SORT_MODE0" value="false"/>
+        <param name="SORT_MODE1" value="false"/>
+        <param name="SORT_MODE2" value="false"/>
+        <param name="UIMETA_INVOKER_ACTION0" value=" "/>
+        <param name="SHOW_CONFIRMATION0" value="true"/>
+        <param name="UIMETA_INVOKER_ACTION1" value=" "/>
+        <param name="SHOW_CONFIRMATION1" value="true"/>
+        <param name="TABLE_INVOKER0" value=" "/>
+        <param name="TABLE_INVOKER1" value=" "/>
+        <param name="PANEL_ID" value="VAL_Orders"/>
+        <param name="CLEAR_OTHER_TABLES_SELECTION" value="false"/>
+        <param name="NAVIGATION_KEYS" value="UP,DOWN"/>
+        <param name="TABLE_INVOKER2" value=" "/>
+        <param name="TABLE_INVOKER3" value=" "/>
+        <param name="TABLE_ID0" value="VAL_Outputs"/>
+        <param name="TABLE_ID1" value="VAL_Input_Inventory"/>
+        <param name="TABLE_ID2" value="VAL_Output_Inventory"/>
+        <tablepreferences>
+          <table aggregatecolumnsrange="0" autosizecolumns="true" class="objt.wms.operatorclient.productionmgt.wrapper.MakeOperationWrapper" id="objt.wms.resourceview.workcenter.val.open.makeoperations.list">
+            <columnlayout>
+              <column attributepath="makeOrder.id" title="makeorder.id"/>
+              <column attributepath="targetOutboundOperation.outboundOrder.id" title="order"/>
+              <column attribute="objt.wms.bo.productionmgt.MakeOperation;status" attributepath="targetMakeOperation.STATIC(objt.wms.bo.productionmgt.MakeOperations;getProductionStatus;BO)" title="makeoperation.status"/>
+              <column attributepath="item.name" title="item"/>
+              <column attributepath="item.description" title="item description"/>
+              <column attribute="objt.wms.bo.productionmgt.MakeItemQty;qtyTarget" attributepath="qtyTarget" title="outputmakeitemqty.qtytarget"/>
+              <column attribute="objt.mes.bo.productionmgt.ProductionItemQty;value" attributepath="qtyProduced" title="outputmakeitemqty.value"/>
+              <column attributepath="uom.symbol" title="makeoperation.uom"/>
+            </columnlayout>
+            <autofilter enabled="false"/>
+            <statusbar visible="false"/>
+          </table>
+        </tablepreferences>
+      </widgetviewelement>
+      <widgetviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" alignment="0" attributepath="" background="-1973791" border="NONE" category="" font="Segoe UI-PLAIN-12" foreground="-16777216" height="45" iconname="" iconscaled="false" name="" objectpath=" " objectpathparam="" opaque="true" widgetclass="dce.pd.frame.resourceview.ui.widget.ExplorerActionWidget" width="45" x="99" y="23" z="5">
+        <param name="TEXT_VISIBLE" value="false"/>
+        <param name="TEXT_ALIGNMENT" value="4"/>
+        <param name="ID" value="objt.wms.resourceview.workcenter.val.start_makeorder_by_lpn"/>
+        <param name="ACTION_NAME" value="objt.wms.resourceview.workcenter.val.start_makeorder_by_lpn"/>
+        <param name="UIMETA_INVOKER_ACTION" value=" "/>
+        <param name="actionIdKey" value="WMS"/>
+        <param name="PANEL_ID" value="VAL_Orders"/>
+      </widgetviewelement>
+      <widgetviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" alignment="0" attributepath="" background="-1973791" border="NONE" category="" font="Segoe UI-PLAIN-12" foreground="-16777216" height="45" iconname="" iconscaled="false" name="" objectpath=" " objectpathparam="" opaque="true" widgetclass="dce.pd.frame.resourceview.ui.widget.ExplorerActionWidget" width="45" x="52" y="23" z="6">
+        <param name="TEXT_VISIBLE" value="false"/>
+        <param name="TEXT_ALIGNMENT" value="4"/>
+        <param name="ID" value="objt.wms.resourceview.workcenter.val.start_makeorder"/>
+        <param name="ACTION_NAME" value="objt.wms.resourceview.workcenter.val.start_makeorder"/>
+        <param name="UIMETA_INVOKER_ACTION" value=" "/>
+        <param name="actionIdKey" value="WMS"/>
+        <param name="PANEL_ID" value="VAL_Orders"/>
+      </widgetviewelement>
+      <widgetviewelement actionclick="1" actionclickparam="" actiondblclick="0" actiondblclickparam="" alignment="0" attributepath="" background="-1973791" border="NONE" category="" font="Segoe UI-PLAIN-12" foreground="-16777216" height="45" iconname="" iconscaled="false" name="" objectpath=" " objectpathparam="" opaque="true" widgetclass="dce.pd.frame.resourceview.ui.widget.ExplorerActionWidget" width="45" x="5" y="23" z="7">
+        <param name="TEXT_VISIBLE" value="false"/>
+        <param name="TEXT_ALIGNMENT" value="4"/>
+        <param name="ID" value="objt.wms.resourceview.workcenter.val.makeorder.reschedule"/>
+        <param name="ACTION_NAME" value="objt.wms.resourceview.workcenter.val.makeorder.reschedule"/>
+        <param name="UIMETA_INVOKER_ACTION" value=" "/>
+        <param name="actionIdKey" value="WMS"/>
+        <param name="PANEL_ID" value="VAL_Orders"/>
+      </widgetviewelement>
+      <textviewelement alignment="2" background="-8355712" border="NONE" font="Segoe UI-BOLD-12" foreground="-1" height="17" opaque="true" text="VAL Orders" width="1245" x="0" y="1" z="8"/>
+    </panelviewelement>
+  </resourceviewelement>
+</template>

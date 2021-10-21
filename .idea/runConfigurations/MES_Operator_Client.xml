@@ -1,0 +1,28 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="MES Operator Client" type="Application" factoryName="Application">
+    <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+    <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+    <option name="MAIN_CLASS_NAME" value="dce.pd.sfc.frame.operatorclient.GenericOperatorClient" />
+    <module name="objt.mes.operatorclient_main" />
+    <option name="PROGRAM_PARAMETERS" value="operatorclient.mes.properties objt/app/operatorclient/mes/operatorclient.xml " />
+    <option name="VM_PARAMETERS" value="-Xms64M -Xmx256M -Dsun.java2d.d3d=false -XX:+UseG1GC" />
+    <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/objt.mes.operatorclient" />
+    <RunnerSettings RunnerId="Debug">
+      <option name="DEBUG_PORT" value="1932" />
+      <option name="TRANSPORT" value="0" />
+      <option name="LOCAL" value="true" />
+    </RunnerSettings>
+    <RunnerSettings RunnerId="JProfiler">
+      <option name="WINDOW" value="false" />
+      <option name="JVMPI" value="false" />
+      <option name="INTERPRETED" value="false" />
+    </RunnerSettings>
+    <RunnerSettings RunnerId="Run" />
+    <ConfigurationWrapper RunnerId="Debug" />
+    <ConfigurationWrapper RunnerId="Run" />
+    <method v="2">
+      <option name="Gradle.BeforeRunTask" enabled="true" tasks="processResources" externalProjectPath="$PROJECT_DIR$" vmOptions="" scriptParameters="" />
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

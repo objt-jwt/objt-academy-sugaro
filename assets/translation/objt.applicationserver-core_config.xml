@@ -1,0 +1,16 @@
+<config>
+  <!-- include the translation config of the objt library -->
+  <include path="../../../../../../dce/src/main/assets"/>    <!-- toenhance: translator should be able to resolve path declared in objt_config.xml -->
+  <include path="../../../../../../objt/src/main/assets"/>
+  <include ref="translation/objt_config.xml"/>
+
+  <actions>
+  </actions>
+
+  <tabpanels>
+  </tabpanels>
+
+  <xmlfiles>
+  </xmlfiles>
+</config>
+

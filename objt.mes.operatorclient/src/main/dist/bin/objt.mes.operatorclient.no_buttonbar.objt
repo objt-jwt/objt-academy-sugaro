@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<objt codebase="http://%HTTPSERVER%" 
+      href="bin/objt.mes.operatorclient.no_buttonbar.objt"
+  	  version="%INSTALLATION%-%VERSION%"
+      title="Objective MES OperatorClient (%INSTALLATION%)" >
+
+  <shortcut iconhref="webimages/objective.operator.ico"
+            desktop="true" programfolder="Objective" />
+
+  <libs>
+    ${libs}
+	</libs>
+
+  <nativelibs>
+    <jar href="lib/serialio-windows-8.1.jar" />
+  </nativelibs>
+
+  <jvm minversion="1.8" maxversion="1.8" datamodel="32" href="jre/jre-8u192-windows-i586.jar">
+    <arg val="-Xmx1024M" />
+    <arg val="-Dsun.java2d.d3d=false" />
+    <arg val="-DX.REMOTE.SERVER.HOST=%APPLICATIONSERVER%" />
+    <arg val="-DX.OBJECTIVE.INSTALLATION=%INSTALLATION%" />
+    <arg val="-Ddce.ui.util.FrameUtil.maximized=YES" />
+  </jvm>
+
+  <application mainclass="dce.pd.sfc.frame.operatorclient.GenericOperatorClient" >
+    <arg val="operatorclient.mes.properties"/>
+    <arg val="objt/app/operatorclient/mes/operatorclient_no_buttonbar.xml"/>
+  </application>
+</objt>

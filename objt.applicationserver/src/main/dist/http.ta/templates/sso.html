@@ -1,0 +1,79 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title"><!--TRANSLATE(Auto Logon)--></h3>
+  </div>
+  <div class="panel-body">
+
+    <div class="form-group">
+      <label><!--TRANSLATE(Status)--> &nbsp;</label>
+      <input type='text' class='form-control' readonly value="<!--PreparedHTML.PlaceHolder:SSO_STATUS-->" >
+    </div>
+
+    <div class="form-group">
+      <label><!--TRANSLATE(Employee)--> &nbsp;</label>
+      <input type='text' class='form-control' readonly value="<!--PreparedHTML.PlaceHolder:EMPLOYEE-->" >
+    </div>
+		
+		<div class="form-group">
+			<label for="passwordField"><!--TRANSLATE(Confirm Password)--></label>
+			<div class="input-group">
+  		  <input type="password" class='form-control' id="passwordField"/>
+        <div class="input-group-addon">
+  			  <span class="glyphicon glyphicon-th" id="passwordField_kb"></span> 
+				</div>
+		  </div>
+	  </div>
+
+    <div id="feedback"></div>
+
+		<div class="form-group">
+			<button id="btn" class="btn btn-default pull-right" onclick='storeSSO();'><!--TRANSLATE(Save)--></button>
+			<button id="btn" class="btn btn-default pull-right" onclick='clearSSO();'><!--TRANSLATE(Clear)--></button>
+		</div>
+	</div>
+</div>
+
+<script language="javascript" type="text/javascript">
+		
+// Describe used functions
+
+function storeSSO()
+{
+  $.ajax
+  ({
+      url: '<!--PreparedHTML.PlaceHolder:AJAXURL-->',
+      data: { 'action':'storeSSO',
+              'passwordField': document.getElementById('passwordField').value},
+      success: function(result)
+	  {
+	    eval(result);
+      },
+      type: 'GET'
+  });
+}
+
+function clearSSO()
+{
+  $.ajax
+  ({
+      url: '<!--PreparedHTML.PlaceHolder:AJAXURL-->',
+      data: { 'action':'clearSSO'},
+      success: function(result)
+	  {
+	    eval(result);
+      },
+      type: 'GET'
+  });
+}
+
+ // Keyboards  
+  $('#passwordField').keyboard({
+    layout: keyboardLayout,
+	autoAccept: true,
+	openOn: ''
+  });
+  
+  $('#passwordField_kb').click(function() {
+    $('#passwordField').getkeyboard().reveal();
+  });
+</script>

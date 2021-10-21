@@ -1,0 +1,97 @@
+<div id='popup-dialog'>
+	<form id="dialogform">
+		<input type="hidden" name="action" value="holidayApproval.approveAction"/>
+		<input type="hidden" name="actionid" value="approveAction"/>
+		<input type="hidden" name="panelid" value="<!--PreparedHTML.PlaceHolder:panelid-->"/>
+		<input type="hidden" name="tableref" value="<!--PreparedHTML.PlaceHolder:tableref-->"/>
+		<input type="hidden" name="selectedrefs" value="<!--PreparedHTML.PlaceHolder:selectedrefs-->"/>
+		
+		<div class='form-group'>
+			<label for="code"><!--TRANSLATE(Code)--></label>
+			<select class='form-control' name="code" id="code" onchange="showAbsenceCodeCounter(this.value);">
+					<!--PreparedHTML.PlaceHolder:AttendanceCodes-->
+			</select></td>
+		</div>
+		<div id="attendancecounter" class="attendance table-responsive"></div>
+		<div class="form-group">
+			<label for="comment"><!--TRANSLATE(Comment)--></label>
+			<div class="input-group">
+				<input type="text" class='form-control' name="comment" id="comment"/>
+				<div class="input-group-addon">
+					<span class="glyphicon glyphicon-th" id="comment_kb"></span> 
+				</div>
+			</div>
+		</div>
+	</form>
+</div>
+
+ <script>
+ 
+
+function showAbsenceCodeCounter(pCode)
+{
+  $.ajax
+  ({
+      url: ajaxurl,
+      data: { 'action':'showAbsenceCodeCounter',
+              'code': pCode,
+			  'selectedrefs': document.getElementsByName('selectedrefs')[0].value},
+      type: 'post',
+			success: function(data)
+        {
+					$("div.attendance").html(data);
+        }
+  });
+}
+
+function approve(pValidate)
+{
+	var data = $('#dialogform').serializeArray();
+	data.push({name:"validate", value: pValidate});
+
+  $.ajax
+  ({
+      url: ajaxurl,
+      data: data,
+      type: 'post'
+  });
+}
+ 
+ $(function() {
+showAbsenceCodeCounter("<!--PreparedHTML.PlaceHolder:defaultcode-->");
+$( "#popup-dialog" ).dialog({
+  title: "<!--TRANSLATE(Approve Holiday Requests)-->",
+	buttons: 
+	{
+    "<!--TRANSLATE(Approve)-->": function() 
+			{
+				approve(true);
+				$( this ).dialog( "close" );
+				$( this).dialog("destroy");
+			},
+    "<!--TRANSLATE(Cancel)-->": function() 
+			{
+				$( this ).dialog( "close" );
+				$( this).dialog("destroy");
+			}
+  }
+});
+
+// Disable standard form submit
+$("#dialogform").submit(function(e) {
+  e.preventDefault();
+});
+
+// Configure keyboard
+$('#comment').keyboard({
+  layout: 'objt-international',
+  autoAccept: true,
+  openOn: '',
+});
+
+$('#comment_kb').click(function() {
+  $('#comment').getkeyboard().reveal();
+});
+
+});
+</script>

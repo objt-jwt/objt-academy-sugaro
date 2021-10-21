@@ -1,0 +1,84 @@
+<config>
+
+  <!-- include the translation config of the objt library -->
+  <include path="../../../../../dce/src/main/assets"/>    <!-- toenhance: translator should be able to resolve path declared in objt_config.xml -->
+  <include path="../../../../../objt/src/main/assets"/>
+  <include ref="translation/objt_config.xml"/>
+
+  <!-- include the translation config of the individual discrete & process layer -->
+  <include path=".."/>
+  <include ref="translation/objt.discrete_config.xml"/>
+  <include ref="translation/objt.vertical_config.xml"/>
+
+  <actions>
+    <action class="objt.vertical.mes.general.configurator.productionmgt.action.EquipmentModuleNewAction"/>
+    <action class="objt.vertical.mes.general.configurator.productionmgt.action.ProcessUnitManufacturingOperationDeleteAction" />
+    <action class="objt.vertical.mes.general.configurator.productionmgt.action.ResourceGroupManufacturingOperationDeleteAction" />
+    <action class="objt.vertical.mes.general.configurator.productionmgt.action.RecipeVariantVersionReleaseAction" />
+    <action class="objt.vertical.mes.general.configurator.productionmgt.action.RecipeVariantVersionTestAction" />
+
+    <action class="objt.vertical.mes.general.supervisor.productionmgt.action.ProductionOperationProcessUnitSelectionAction" />
+    <action class="objt.vertical.mes.general.supervisor.productionmgt.action.ProductionOperationProcessUnitAutoSelectionAction" />
+    <action class="objt.vertical.mes.general.supervisor.productionmgt.action.ProductionOperationResourceTrainSelectionAction" />
+    <action class="objt.vertical.mes.general.supervisor.productionmgt.action.ProductionOrderPlanAction" />       
+
+    <action class="objt.vertical.mes.general.supervisor.productionmgt.action.ProductionItemQtyEditAction"/>
+    <action class="objt.vertical.mes.general.supervisor.productionmgt.action.ProductionOperationItemQtyDeleteAction" />
+    <action class="objt.vertical.mes.general.supervisor.productionmgt.action.MachineOperationStopAction" />
+    <action class="objt.vertical.mes.general.operatorclient.productionmgt.action.MachineOperationQtyProducedAddAction" />
+    <action class="objt.vertical.mes.general.operatorclient.productionmgt.action.MachineOperationQtyReworkAddAction" />
+    <action class="objt.vertical.mes.general.operatorclient.productionmgt.action.MachineOperationQtyScrapAddAction" />
+  </actions>
+
+  <tabpanels>
+    <tabpanel class="objt.vertical.mes.general.configurator.productionmgt.panel.InterruptReasonPropertiesTabPanel"/>
+    <tabpanel class="objt.vertical.mes.general.configurator.productionmgt.panel.EquipmentModulePropertiesTabPanel"/>
+    <tabpanel class="objt.vertical.mes.general.configurator.productionmgt.panel.MaterialInputHandlingTabPanel"/>
+    <tabpanel class="objt.vertical.mes.general.configurator.productionmgt.panel.ResourceTrainPropertiesTabPanel" />
+  </tabpanels>
+
+  <xmlfiles>
+    <xmlfile name="dialogconfig.xml">
+      <node name="mainmenu" translate="title" />
+      <node name="menu" translate="title" />
+      <node name="dialog" translate="title" />
+    </xmlfile>
+
+    <xmlfile name="meta.xml">
+      <node name="listitem" translate="text" />
+      <node name="attribute" translate="title,tooltip" />
+    </xmlfile>
+
+    <!-- UI meta: translate class, attribute and association titles -->
+    <xmlfile name="uimeta.xml">
+      <node name="class" translate="title"/>
+      <node name="attribute" translate="title"/>
+      <node name="attributegroup" translate="title"/>
+      <node name="association" translate="title"/>
+    </xmlfile>
+
+    <!-- translate name and description of defined privileges -->
+    <xmlfile name="privileges.xml">
+      <node name="privilege" translate="application,module,domain,category,name,description"/>
+    </xmlfile>
+
+    <xmlfile name="configurations.xml">
+      <node name="param" translate="translate"/>
+    </xmlfile>
+
+    <xmlfile name="configurator.xml">
+      <node name="action" translate="name,tooltip"/>
+    </xmlfile>
+
+    <xmlfile name="resourceview_config.xml">
+      <node name="resource"        csvtranslate="viewtype,templatetype"/>
+      <node name="attrib"          translate="title"/>
+      <node name="association"     translate="title"/>
+      <node name="associationlist" translate="title"/>
+      <node name="animation"       translate="title"/>
+      <node name="action"          translate="title"/>
+      <node name="widget"          translate="title"/>
+      <node name="resource"        translate="title,tooltip"/>
+    </xmlfile>
+  </xmlfiles>
+</config>

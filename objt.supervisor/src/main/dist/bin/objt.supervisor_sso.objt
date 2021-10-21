@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<objt codebase="http://%HTTPSERVER%" 
+      href="bin/objt.supervisor_sso.objt"
+  		version="%INSTALLATION%-%VERSION%"
+      title="Objective Supervisor (%INSTALLATION%)" >
+
+	<shortcut iconhref="webimages/objective.supervisor.ico"
+            desktop="true" programfolder="Objective" />
+
+  <libs>
+    ${libs}
+	</libs>
+
+	<jvm minversion="1.8" maxversion="1.8" datamodel="32" href="jre/jre-8u192-windows-i586.jar">
+		<arg val="-Xmx512M" />
+		<arg val="-Dsun.java2d.d3d=false" />
+		<arg val="-DX.REMOTE.SERVER.HOST=%APPLICATIONSERVER%" />
+		<arg val="-DX.OBJECTIVE.INSTALLATION=%INSTALLATION%" />
+		<arg val="-DApplication.WebHelp=http://%HTTPSERVER%/docs/en/manual/index.html" />
+		<arg val="-DApplication.LicenseInfo=http://%HTTPSERVER%/license/licenses.html" />
+	</jvm>
+
+	<application mainclass="dce.pd.frame.configurator.Configurator" >
+		<arg val="supervisor.properties"/>
+		<arg val="objt/app/supervisor/supervisor.xml"/>
+		<arg val="REMOTE"/>
+		<arg val="~SSO~"/>
+	</application>
+</objt>

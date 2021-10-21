@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<template type="MES_MACHINE" resourceclass="dce.pd.sfc.bo.resourcemgt.Machine">
+  <resourceviewelement actionclick="1" actionclickparam="" actiondblclick="2" actiondblclickparam="" attributepath="" background="-1908255" border="NONE" category="" font="Tahoma-BOLD-20" foreground="-16777216" height="775" iconname="" iconscaled="false" name="MLD1" opaque="true" resourceclassname="dce.pd.sfc.bo.resourcemgt.Machine" resourceoid="26" selectedborder="NONE" selectionid="false" width="1250" x="5" y="5" z="0">
+    <panelviewelement actionclick="1" actionclickparam="" actiondblclick="2" actiondblclickparam="" background="-4144960" border="LOWERED_ETCH" height="500" iconname="" iconscaled="false" opaque="false" width="1250" x="0" y="0" z="0">
+      <widgetviewelement actionclick="1" actionclickparam="" actiondblclick="2" actiondblclickparam="" alignment="0" attributepath="" background="-1" border="LOWERED_ETCH" category="" font="Tahoma-PLAIN-11" foreground="-16777216" height="450" iconname="" iconscaled="false" name="" objectpath="STATIC(objt.mes.bo.productionmgt.Machines;getActiveMachineOperation;BO).STATIC(objt.mes.bo.productionmgt.MachineOperations;getExecutableRuntimeProcessInstructionById;BO;'INSTRUCTION_ID').processParameter('PARAM_NAME')" objectpathparam="CYCLETIME|1" opaque="true" widgetclass="objt.mes.operatorclient.productionmgt.widget.ProcessParameterTrendWidget" width="930" x="310" y="30" z="0">
+        <param name="TIMEFRAME" value="3600000"/>
+        <param name="ID" value="1"/>
+      </widgetviewelement>
+      <textviewelement alignment="2" background="-8355712" border="NONE" font="Tahoma-PLAIN-14" foreground="-16777216" height="29" opaque="false" text="Actual Cycletime" width="108" x="93" y="380" z="1"/>
+      <resourceattributeviewelement actionclick="1" actionclickparam="" actiondblclick="2" actiondblclickparam="" alignment="0" attributepath="STATIC(objt.mes.bo.productionmgt.MachineOperations;getFormattedActualThroughput;BO)" attributetitle="machineoperation.actualthroughput" background="-1" border="LOWERED_ETCH" category="" font="Tahoma-PLAIN-20" foreground="-16777216" height="29" iconname="" multiline="false" multiplicity="0" name="machineoperation.actualthroughput" objectpath="STATIC(objt.mes.bo.productionmgt.Machines;getActiveMachineOperation;BO)" objectpathparam="" opaque="true" width="200" x="100" y="30" z="2"/>
+      <widgetviewelement actionclick="1" actionclickparam="" actiondblclick="2" actiondblclickparam="" alignment="0" attributepath="" background="-1908255" border="NONE" category="" font="Tahoma-PLAIN-11" foreground="-16777216" height="260" iconname="" iconscaled="false" name="" objectpath="STATIC(objt.mes.bo.productionmgt.Machines;getActiveMachineOperation;BO).STATIC(objt.mes.bo.productionmgt.MachineOperations;getExecutableRuntimeProcessInstructionById;BO;'INSTRUCTION_ID').processParameter('PARAM_NAME')" objectpathparam="CYCLETIME|1" opaque="false" widgetclass="objt.mes.operatorclient.general.widget.SteelSeriesRadialProcessWidget" width="260" x="20" y="120" z="3">
+        <param name="GAUGETYPE" value="TYPE2"/>
+        <param name="FRAMETYPE" value="ROUND"/>
+        <param name="FRAMEDESIGN" value="SHINY_METAL"/>
+        <param name="FRAMEEFFECT" value="EFFECT_INNER_FRAME"/>
+        <param name="BACKGROUNDCOLOR" value="WHITE"/>
+        <param name="FOREGROUNDTYPE" value="FG_TYPE1"/>
+        <param name="POINTERTYPE" value="TYPE1"/>
+        <param name="KNOBTYPE" value="SMALL_STD_KNOB"/>
+        <param name="KNOBSTYLE" value="SILVER"/>
+        <param name="LCDCOLOR" value="SECTIONS_LCD"/>
+        <param name="FRAME_VISIBLE" value="true"/>
+        <param name="LED_VISIBLE" value="true"/>
+        <param name="LIMITS_VISIBLE" value="true"/>
+        <param name="TARGET_VISIBLE" value="true"/>
+        <param name="TEST_VALUE" value="0"/>
+        <param name="MINMAX_VISIBLE" value="false"/>
+      </widgetviewelement>
+      <textviewelement alignment="2" background="-8355712" border="NONE" font="Tahoma-PLAIN-20" foreground="-16777216" height="29" opaque="false" text="Target" width="72" x="5" y="65" z="4"/>
+      <textviewelement alignment="2" background="-8355712" border="NONE" font="Tahoma-PLAIN-20" foreground="-16777216" height="29" opaque="false" text="Average" width="82" x="5" y="30" z="5"/>
+      <resourceattributeviewelement actionclick="1" actionclickparam="" actiondblclick="2" actiondblclickparam="" alignment="0" attributepath="STATIC(objt.mes.bo.productionmgt.MachineOperations;getFormattedTargetThroughput;BO)" attributetitle="machineoperation.targetthroughput" background="-1" border="LOWERED_ETCH" category="" font="Tahoma-PLAIN-20" foreground="-16777216" height="29" iconname="" multiline="false" multiplicity="0" name="machineoperation.targetthroughput" objectpath="STATIC(objt.mes.bo.productionmgt.Machines;getActiveMachineOperation;BO)" objectpathparam="" opaque="true" width="200" x="100" y="65" z="6"/>
+      <textviewelement alignment="0" background="-8355712" border="NONE" font="Tahoma-BOLD-12" foreground="-1" height="17" opaque="true" text="Throughput" width="1245" x="0" y="1" z="7"/>
+    </panelviewelement>
+  </resourceviewelement>
+</template>

@@ -1,0 +1,212 @@
+<config>
+  <postprocess text=":ASC1,:ASC2,:ASC3,:ASC4,:ASC5,:ASC6,:ASC7,:ASC8,:ASC9,:ASC10,:ASC,:DESC1,:DESC2,:DESC3,:DESC4,:DESC5,:DESC6,:DESC7,:DESC8,:DESC9,:DESC10,:DESC,:S_NONE,:S_MAX_D,:S_MAX_H,:S_MAX_A,:S_MAX_P,:S_MIN_D,:S_MIN_H,:S_MIN_A,:S_MIN_P,:S_PREF_D,:S_PREF_H,:S_PREF_A,:S_PREF_P,:S_FIX_D,:S_FIX_H,:S_FIX_A,:S_FIX_P"/>
+
+  <tabpanels>
+
+    <!-- Package dce.pd.frame.explorer.appmgt -->
+    <tabpanel class="dce.ui.control.ganttchart.GanttTabPanel"/>
+
+    <!-- Package dce.pd.frame.explorer.appmgt -->
+    <tabpanel class="dce.pd.frame.explorer.appmgt.FixedPropertiesTabPanel" />
+    <tabpanel class="dce.pd.frame.explorer.appmgt.PropertiesTabPanel" />
+    <tabpanel class="dce.pd.frame.explorer.appmgt.SQLFilterTabPanel"
+              csvtranslate="attributeTitles"
+              csvattribute="attributePaths" />
+    <tabpanel class="dce.pd.frame.explorer.appmgt.RemoteSQLFilterTabPanel"
+              csvtranslate="attributeTitles"
+              csvattribute="attributePaths" />
+
+    <!-- Package dce.pd.frame.explorer.generic -->
+    <tabpanel class="dce.pd.frame.explorer.generic.GenericChildListTabPanel"
+              csvtranslate="attributeTitles"
+              csvattribute="attributePaths" />
+    <tabpanel class="dce.pd.frame.explorer.generic.GenericRemoteChildListTabPanel"
+              csvtranslate="attributeTitles"
+              csvattribute="attributePaths"/>
+
+    <tabpanel class="dce.pd.frame.explorer.generic.GenericNavigationTabPanel" />
+
+    <!-- Tree table -->
+    <tabpanel class="dce.pd.frame.explorer.generic.GenericTreeTableTabPanel"/>
+    <tabpanel class="dce.pd.frame.explorer.generic.GenericRemoteTreeTableTabPanel"/>
+
+    <!-- Pareto -->
+    <tabpanel class="dce.pd.frame.explorer.generic.GenericRemoteParetoTabPanel"
+              csvattribute="attributePaths"
+              csvtranslate="attributeTitles"
+              attribute="keyAttributePath"/>
+
+    <!-- Summary -->
+    <tabpanel class="dce.pd.frame.explorer.generic.GenericRemoteSummaryTabPanel"/>
+
+    <!-- Package dce.pd.frame.explorer.touch -->
+    <tabpanel class="dce.pd.frame.explorer.touch.TouchChildListTabPanel"
+              csvtranslate="attributeTitles"
+              csvattribute="attributePaths"/>
+    <tabpanel class="dce.pd.frame.explorer.touch.TouchListTabPanel"/>
+
+    <!-- Package dce.pd.frame.explorer.itemmgt -->
+    <tabpanel class="dce.pd.frame.explorer.itemmgt.ItemUomConversionTabPanel" />
+
+    <!-- Package dce.pd.frame.explorer.time -->
+    <tabpanel class="dce.pd.frame.explorer.time.WeekTabPanel" />
+
+    <!-- Package dce.pd.frame.explorer.time.util -->
+    <tabpanel class="dce.pd.frame.explorer.time.util.ShiftFilterPanel" />
+    <tabpanel class="dce.pd.frame.explorer.time.util.ShiftSelectionPanel" />
+    <tabpanel class="dce.pd.frame.explorer.time.util.TimeFilterPanel" />
+
+    <!-- Package dce.pd.frame.resourceview.ui -->
+    <tabpanel class="dce.pd.frame.resourceview.ui.ResourceViewDesignerTabPanel" />
+    <tabpanel class="dce.pd.frame.resourceview.ui.ResourceViewDesignerEditorTabPanel" />
+    <tabpanel class="dce.pd.frame.resourceview.ui.ResourceViewDesignerPropertiesTabPanel" />
+    <tabpanel class="dce.pd.frame.resourceview.ui.ResourceViewPreviewTabPanel" />
+    <tabpanel class="dce.pd.frame.resourceview.ui.ResourceViewRuntimeTabPanel" />
+    <tabpanel class="dce.pd.frame.resourceview.ui.ResourceViewTabPanel" />
+
+    <!-- Package dce.ui.frame.explorer -->
+    <tabpanel class="dce.ui.frame.explorer.GroupedTabPanel" />
+    <tabpanel class="dce.ui.frame.explorer.InspectorTabPanel" />
+    <tabpanel class="dce.ui.frame.explorer.MasterDetailNavigationTabPanel" />
+    <tabpanel class="dce.ui.frame.explorer.TextInfoTabPanel"
+              translate="text" />
+  </tabpanels>
+
+  <actions>
+
+    <!--  Package dce.pd.frame.configurator.action -->
+    <action class="dce.pd.frame.configurator.action.MyDispBaseBOAddChildAction"/>
+    <action class="dce.pd.frame.configurator.action.MyDispBaseBORemoveChildAction" />
+    <action class="dce.pd.frame.configurator.action.MyDispBaseBOClearAction"/>
+    <action class="dce.pd.frame.configurator.action.NodeLockingAction"
+            attribute="lockName,attributePath" />
+    <action class="dce.pd.frame.configurator.action.NodeLockingAdministrationAction"
+            csvtranslate="lockTitles"
+            csvattribute="lockPaths" />
+    <action class="dce.pd.frame.configurator.action.UserPropertiesEditAction" />
+    <action class="dce.pd.frame.configurator.action.SQLFilterBaseBORefreshAction"/>
+    <action class="dce.pd.frame.configurator.action.SQLFilterNodeRefreshAction"/>
+    <action class="dce.pd.frame.configurator.action.SQLFilterMyBaseBOFactoryObjectFilterAction"/>
+
+
+    <!-- Package dce.pd.frame.download.action -->
+    <action class="dce.pd.frame.download.action.DownloadAction" />
+    <action class="dce.pd.frame.download.action.DownloadEventFileViewAction" />
+
+    <!-- Package dce.pd.frame.explorer.appmgt.action -->
+    <action class="dce.pd.frame.explorer.appmgt.action.UserPropertiesSaveAction" />
+
+    <!-- Package dce.pd.frame.explorer.multiedit.action -->
+    <action class="dce.pd.frame.explorer.multiedit.action.OnlineFactoryObjectMultiEditAction"
+            csvtranslate="warningAttributeTitles"
+            csvattribute="warningAttributePath"
+            translate="title,description,warningMessage"/>
+
+    <!-- Package dce.pd.frame.explorer.generic.action -->
+    <action class="dce.pd.frame.explorer.generic.action.GenericChildListAttributeFilterAction"/>
+    <action class="dce.pd.frame.explorer.generic.action.GenericChildListSummaryDetailAction"/>
+    <action class="dce.pd.frame.explorer.generic.action.GenericCloneAction" />
+    <action class="dce.pd.frame.explorer.generic.action.GenericCopyAction" />
+    <action class="dce.pd.frame.explorer.generic.action.GenericCopySelectionAction"
+            csvtranslate="attributeTitles"
+            csvattribute="attributePaths" />
+    <action class="dce.pd.frame.explorer.generic.action.GenericCutAction" />
+    <action class="dce.pd.frame.explorer.generic.action.GenericCutSelectionAction"
+            csvtranslate="attributeTitles"
+            csvattribute="attributePaths" />
+    <action class="dce.pd.frame.explorer.generic.action.GenericDeleteAction"
+            attribute="confirmAttributePath"
+            translate="confirmMessage,listConfirmMessage"/>
+    <action class="dce.pd.frame.explorer.multiedit.action.GenericMultiEditAction"
+            csvtranslate="warningAttributeTitles"
+            csvattribute="warningAttributePath"
+            translate="title,description,warningMessage"/>
+    <action class="dce.pd.frame.explorer.generic.action.GenericNavigationAction"
+            csvtranslate="attributeTitles"/>
+    <action class="dce.pd.frame.explorer.generic.action.GenericRemoveAction"
+            attribute="confirmAttributePath"
+            translate="confirmMessage,listConfirmMessage"/>
+    <action class="dce.pd.frame.explorer.generic.action.GenericCheckedDeleteAction"
+            translate="confirmMessage,listConfirmMessage,checkMessage1,checkMessage2,checkMessage3,checkMessage4,checkMessage5"/>
+    <action class="dce.pd.frame.explorer.generic.action.GenericChildListSummaryAction"/>
+    <action class="dce.pd.frame.explorer.generic.action.GenericChildListColumnSelectionAction"/>
+
+    <action class="dce.pd.frame.explorer.generic.action.GenericExtendedSqlFilterAction"
+            translate="sqlfilteractiontitle,sqlfilteractiondescription,childlisttabpaneltitle,childlisttabpaneldescription" />
+    <action class="dce.pd.frame.explorer.generic.action.GenericManageAction"
+            translate="panelTitle"
+            csvtranslate="attributeTitles"
+            attribute="baseAttributePath"
+            csvattribute="attributePaths" />
+    <action class="dce.pd.frame.explorer.generic.action.GenericNewAction"
+            translate="wizardpanel.1.name,wizardpanel.1.description,wizardpanel.2.name,wizardpanel.2.description,wizardpanel.3.name,wizardpanel.3.description,wizardpanel.4.name,wizardpanel.4.description,wizardpanel.5.name,wizardpanel.5.description"
+            csvattribute="keyAttributes" />
+    <action class="dce.pd.frame.explorer.generic.action.GenericPasteAction" />
+    <action class="dce.pd.frame.explorer.generic.action.GenericPushEventAction" />
+    <action class="dce.pd.frame.explorer.generic.action.GenericSqlFilterAction"
+            translate="sqlfilteractiontitle,sqlfilteractiondescription,childlisttabpaneltitle,childlisttabpaneldescription"
+            csvtranslate="attributeTitles" />
+    <action class="dce.pd.frame.explorer.generic.action.GenericSQLManageAction"
+            translate="panelTitle"
+            csvtranslate="attributeTitles"
+            attribute="baseAttributePath"
+            csvattribute="baseAttributePath" />
+    <action class="dce.pd.frame.explorer.generic.action.GenericTabPanelDisplayAction" translate="panelTitle"/>
+    <action class="dce.pd.frame.explorer.generic.action.GenericTabPanelEditAction" translate="panelTitle"/>
+    <action class="dce.pd.frame.explorer.generic.action.GenericTreeAddAction"/>
+    <action class="dce.pd.frame.explorer.generic.action.GenericRemoteCommandAction"/>
+    <action class="dce.pd.frame.explorer.generic.action.GenericParetoAction"/>
+    <action class="dce.pd.frame.explorer.generic.action.GenericParetoDetailAction"/>
+    <action class="dce.pd.frame.explorer.generic.action.GenericTakeOfflineAction"
+            translate="confirmMessage"/>
+    <action class="dce.pd.frame.explorer.generic.action.GenericBringOnlineAction"
+            translate="confirmMessage"/>
+
+    <!-- Package dce.pd.frame.explorer.generic -->
+    <action class="dce.pd.frame.explorer.generic.GenericValueList"
+            csvtranslate="titles"
+            csvattribute="values"/>
+
+    <!-- Package dce.pd.frame.explorer.time.action -->
+    <action class="dce.pd.frame.explorer.time.action.ModifyDayAction" />
+    <action class="dce.pd.frame.explorer.time.action.NewDayAction" />
+    <action class="dce.pd.frame.explorer.time.action.RemoveDayAction" />
+
+    <!-- Package dce.pd.frame.explorer.time.util -->
+    <action class="dce.pd.frame.explorer.time.util.TimeFilter" />
+
+    <!-- Package dce.pd.frame.explorer.touch -->
+    <action class="dce.pd.frame.explorer.touch.TouchDurationFilter"/>
+    <action class="dce.pd.frame.explorer.touch.action.TouchTabPanelSearchAction"/>
+    <action class="dce.pd.frame.explorer.touch.action.TouchTabPanelDisplayAction" translate="panelTitle"/>
+
+    <!-- Package dce.ui.control.ganttchart.action -->
+    <action class="dce.ui.control.ganttchart.action.GanttArrowAction" />
+    <action class="dce.ui.control.ganttchart.action.GanttResizeAction" />
+    <action class="dce.ui.control.ganttchart.action.GanttMoveAction" />
+    <action class="dce.ui.control.ganttchart.action.GanttAnnotationAction"/>
+    <action class="dce.ui.control.ganttchart.action.GanttGridAction"/>
+    <action class="dce.ui.control.ganttchart.action.GanttLinkAction"/>
+
+    <!-- Package dce.ui.frame.explorer.action -->
+    <action class="dce.ui.frame.explorer.action.EditableActionWrapperAction" />
+    <action class="dce.ui.frame.explorer.action.ScreenDumpAction"/>
+    <action class="dce.ui.frame.explorer.action.MasterDetailNavigationTabPanelShowDetailOptionAction" />
+    <action class="dce.ui.frame.explorer.action.TableTabPanelExportAction" />
+    <action class="dce.ui.frame.explorer.action.TableTabPanelReportAction"
+            translate="headerText" />
+    <action class="dce.ui.frame.explorer.action.TabPanelRefreshAction" />
+    <action class="dce.ui.frame.explorer.action.TabPanelOptionAction" />
+
+    <!-- Package dce.ui.frame.explorer.util -->
+    <action class="dce.ui.frame.explorer.util.DateFilter" />
+    <action class="dce.ui.frame.explorer.util.DateSelectionAction"/>
+    <action class="dce.pd.frame.explorer.filter.panel.SQLFilterPanel"/>
+    <action class="dce.ui.frame.explorer.util.MasterDetailNavigationTabPanelPreferenceSelector"/>
+    <action class="dce.ui.frame.explorer.util.ExplorerTabPanelPreferenceSelector"/>
+    <action class="dce.pd.frame.explorer.filter.panel.QuickSQLFilterBar" />
+
+    <!-- Package dce.pd.sfc.frame.operatorclient.action -->
+    <action class="dce.pd.sfc.frame.operatorclient.action.MasterTabPanelRefreshAction"/>
+  </actions>
+</config>

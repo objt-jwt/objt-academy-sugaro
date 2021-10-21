@@ -1,0 +1,55 @@
+<dialogmanager
+   host="localhost" 
+   port="${THIN.PORT}"
+	 
+	 device="test2"
+
+	 allowexit="YES"
+   autoconnect="YES"
+   connectionretries="10"
+   connectionretryinterval="5"
+   retaininputfocus="false"
+   encodeinput="false"
+   alwaysontop="NO"
+   showborder="YES"
+   screenwidth="240"
+   screenheight="301"
+   volume="100"
+   aimcode="YES" >
+
+  <device
+		titleheight=""
+		titlefont=""
+		statusheight=""
+		statusfont=""
+		labelheightL=""
+		labelfontL=""
+    labelforegroundL=""
+    labelbackgroundL=""
+		labelheightR=""
+		labelfontR=""
+    labelforegroundR=""
+    labelbackgroundR=""
+		inputheight=""
+		inputfont=""
+		popupfont=""
+		infolabelheight=""
+		infolabelfont=""
+		infotextfont=""
+    infolabelforeground="" 
+    infolabelbackground="" >
+
+    <history
+			leftrow="0"
+			leftcol="0"
+			leftcolwidth="100"
+			centerrow="1"
+			centercol="0"
+			centercolwidth="100"
+			rightrow="2"
+			rightcol="0"
+			rightcolwidth="100"
+			historyrowheight=""
+			historyfont="" />
+  </device>
+</dialogmanager>
