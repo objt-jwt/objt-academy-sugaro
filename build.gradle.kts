@@ -12,7 +12,7 @@ val environmentName = project.property("environmentName")
 val maturityLevel = project.property("maturityLevel")
 
 allprojects {
-    group = "com.objt.delivery.project"
+    group = "com.objt.delivery.sugaro"
 
     // when running a dev build and the version has not been set, automatically read the 'Application.Version' property
     if (environmentName == "dev" && project.version == "unspecified") {
