@@ -1,0 +1,27 @@
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - "main"
+      - "release/7.1.0/main"
+jobs:
+  merge-branch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+      - uses: FranzDiebold/github-env-vars-action@v1.2.1
+      - name: Merge branch
+        uses: Germanedge/github-auto-branch-merge@main
+        with:
+          target_branch: "release/7.1.0/feature/7.0.x-integration"
+          source_branch: ${{ env.GITHUB_REF_NAME }}
+          commit_message: "[Automated] Merge branch '${{env.GITHUB_REF_NAME}}' into 'release/7.1.0/feature/7.0.x-integration'"
+      - name: Send slack notification
+        if: failure()
+        uses: rtCamp/action-slack-notify@v2
+        env:
+          SLACK_USERNAME: git-action
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+          SLACK_FOOTER: 'job status: ${{ job.status }}'

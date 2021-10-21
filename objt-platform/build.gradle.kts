@@ -7,7 +7,7 @@ javaPlatform {
 }
 
 dependencies {
-    api(platform("com.objt:objt.core-platform:7.0.4.0"))
+    api(platform("com.objt:objt.core-platform:7.0.4.1"))
 }
 
 dependencies {

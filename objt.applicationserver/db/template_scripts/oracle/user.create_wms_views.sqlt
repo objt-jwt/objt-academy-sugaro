@@ -2589,7 +2589,7 @@ SELECT /*+ FIRST_ROWS(30) */ warehouse.OID OID,
        warehouse.USRTXT64 USRTXT64,
        warehouse.USRTXT65 USRTXT65
 FROM OBJT_WAREHOUSE warehouse
-LEFT OUTER JOIN OBJT_RESOURCELINK departmentwarehouselink on warehouse.oid = departmentwarehouselink.CHILDOID and departmentwarehouselink.PARENTCLASSNAME = 'dce.bo.resourcemgt.Department'
+LEFT OUTER JOIN OBJT_RESOURCELINK departmentwarehouselink on warehouse.oid = departmentwarehouselink.CHILDOID and departmentwarehouselink.PARENTCLASSNAME = CLASSNAME(dce.bo.resourcemgt.Department)
 LEFT OUTER JOIN OBJT_DEPARTMENT department on departmentwarehouselink.PARENTOID = department.oid
 WHERE warehouse.NAME <> 'SYSTEM'
 /
@@ -3431,7 +3431,7 @@ FROM OBJT_STORAGEITEMQTY storageitemqty
      LEFT OUTER JOIN OBJT_CONTAINERSTORAGEITEMQTY csitq ON storageitemqty.CONTAINERSTORAGEITEMQTYOID = csitq.oid,
      OBJT_WAREHOUSELOCATION location,
      OBJT_WAREHOUSE warehouse
-     LEFT OUTER JOIN OBJT_RESOURCELINK departmentwarehouselink on warehouse.OID = departmentwarehouselink.CHILDOID and departmentwarehouselink.PARENTCLASSNAME = 'dce.bo.resourcemgt.Department'
+     LEFT OUTER JOIN OBJT_RESOURCELINK departmentwarehouselink on warehouse.OID = departmentwarehouselink.CHILDOID and departmentwarehouselink.PARENTCLASSNAME = CLASSNAME(dce.bo.resourcemgt.Department)
      LEFT OUTER JOIN OBJT_DEPARTMENT department on departmentwarehouselink.PARENTOID = department.oid,     OBJT_LOT lot,
      OBJT_ITEM item,
      OBJT_UOM uom

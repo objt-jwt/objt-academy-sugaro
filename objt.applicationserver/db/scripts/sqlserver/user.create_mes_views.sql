@@ -541,6 +541,46 @@ AND machineoperation.PROCESSUNITOID = processresource.OID
 AND (processresource.CLASSOID = 9000000000000010923 OR processresource.CLASSOID = 9000000000000037041)
 AND scrapoperation.OID = scrapitemqty.SCRAPOPERATIONOID
 AND scrapitemqty.UOMOID = uom.OID
+UNION ALL
+SELECT scrapoperation.OID OID,
+       scrapoperation.BOTYPE TYPE,
+	     scrapoperation.DTSSTART DTSSTART,
+	     scrapoperation.DTSSTOP DTSSTOP,
+       processresource.OID PROCESSRESOURCE_OID,
+       machineoperation.OID MACHINEOPERATION_OID,
+       manoperation.OID DIRECT_TASK_OID,
+       productionoperation.OID PRODUCTIONOPERATION_OID,
+	     employee.OID EMPLOYEE_OID,
+	     scrapitemqty.ITEMOID ITEM_OID,
+	     scrapitemqty.REASONOID REASON_OID,
+	     scrapitemqty.QTYNRFT QTYNRFT,
+	     (scrapitemqty.VALUE - scrapitemqty.QTYREWORKED) QTYREJECT,
+	     scrapitemqty.VALUE QTYREJECTED,
+	     scrapitemqty.QTYSETUP QTYREJECTED_SETUP,
+	     scrapitemqty.QTYLOAD QTYREJECTED_LOAD,
+	     scrapitemqty.QTYRUN QTYREJECTED_RUN,
+	     scrapitemqty.QTYUNLOAD QTYREJECTED_UNLOAD,
+	     scrapitemqty.QTYRESET QTYREJECTED_RESET,
+	     scrapitemqty.QTYREWORKED QTYREWORKED,
+	     scrapitemqty.QTYREWORKABLE QTYREWORKABLE,
+	     uom.SYMBOL UOM,
+       scrapoperation.DTSUPDATE DTSUPDATE
+FROM OBJT_SCRAPOPERATION scrapoperation WITH (NOLOCK),
+     OBJT_MANOPERATION manoperation WITH (NOLOCK),
+     OBJT_MACHINEOPERATION machineoperation WITH (NOLOCK),
+     OBJT_PRODUCTIONOPERATION productionoperation WITH (NOLOCK),
+     OBJT_PROCESSUNIT processresource WITH (NOLOCK),
+     OBJT_SCRAPITEMQTY scrapitemqty WITH (NOLOCK),
+     OBJT_EMPLOYEE employee WITH (NOLOCK),
+     OBJT_UOM uom WITH (NOLOCK)
+WHERE scrapoperation.MANOPERATIONOID = manoperation.OID
+AND manoperation.MACHINEOPERATIONOID = machineoperation.OID
+AND machineoperation.PRODUCTIONOPERATIONOID = productionoperation.OID
+AND machineoperation.PROCESSUNITOID = processresource.OID
+AND (processresource.CLASSOID = 9000000000000010923 OR processresource.CLASSOID = 9000000000000037041)
+AND scrapoperation.OID = scrapitemqty.SCRAPOPERATIONOID
+AND scrapitemqty.UOMOID = uom.OID
+AND manoperation.EMPLOYEEOID = employee.OID
 GO
 
 -- REWORKOPERATIONS --

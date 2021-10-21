@@ -1,22 +1,22 @@
 on:
+  workflow_dispatch:
   push:
     branches:
-      - "feature/*"
-      - "hotfix/*"
+      - "release/7.1.0/main"
 jobs:
   merge-branch:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
       - uses: FranzDiebold/github-env-vars-action@v1.2.1
       - name: Merge branch
         uses: Germanedge/github-auto-branch-merge@main
         with:
-          target_branch: 'dev'
+          target_branch: "release/7.1.0/qa"
           source_branch: ${{ env.GITHUB_REF_NAME }}
-          commit_message: "[Automated] Merge branch '${{env.GITHUB_REF_NAME}}' into dev"
-        env:
-          GITHUB_TOKEN: ${{ github.token }}
+          commit_message: "[Automated] Merge branch '${{env.GITHUB_REF_NAME}}' into release/7.1.0/qa"
       - name: Send slack notification
         if: failure()
         uses: rtCamp/action-slack-notify@v2

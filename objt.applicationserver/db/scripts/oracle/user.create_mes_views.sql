@@ -489,7 +489,8 @@ FROM OBJT_SCRAPOPERATION scrapoperation,
      OBJT_SCRAPITEMQTY scrapitemqty,
      OBJT_EMPLOYEE employee,
      OBJT_UOM uom
-WHERE scrapoperation.MACHINEOPERATIONOID = machineoperation.OID
+WHERE scrapoperation.MANOPERATIONOID = manoperation.OID
+AND manoperation.MACHINEOPERATIONOID = machineoperation.OID
 AND machineoperation.PRODUCTIONOPERATIONOID = productionoperation.OID
 AND machineoperation.PROCESSUNITOID = processresource.OID
 AND (processresource.CLASSOID = 9000000000000010923 OR processresource.CLASSOID = 9000000000000037041)
@@ -514,13 +515,11 @@ SELECT /*+ FIRST_ROWS(30) */  reworkoperation.OID OID,
 	     uom.SYMBOL UOM,
 	     reworkoperation.DTSUPDATE DTSUPDATE
 FROM OBJT_REWORKOPERATION reworkoperation,
-     OBJT_OPERATIONLINK scrapop_reworkop_link,
      OBJT_SCRAPOPERATION scrapoperation,
      OBJT_REWORKITEMQTY reworkitemqty,
      OBJT_EMPLOYEE employee,
      OBJT_UOM uom
-WHERE reworkoperation.OID = scrapop_reworkop_link.CHILDOID
-AND scrapop_reworkop_link.PARENTOID = scrapoperation.OID
+WHERE reworkoperation.SCRAPOPERATIONOID = scrapoperation.OID
 AND reworkoperation.OID = reworkitemqty.REWORKOPERATIONOID
 AND reworkitemqty.UOMOID = uom.OID
 AND reworkoperation.EMPLOYEEOID = employee.OID
@@ -1620,6 +1619,8 @@ FROM OBJT_RUNTIMEOPERATIONINSTRUCT runtimedocumentedinstruction,
      OBJT_PRODUCTIONORDER productionorder
 WHERE runtimedocumentedinstruction.CLASSOID = 9000000000000089962
 AND runtimedocumentedinstruction.OPERATIONOID = machineoperation.OID
+AND NOT EXISTS (SELECT instructionsheetlink.OID FROM OBJT_INSTRUCTIONLINK instructionsheetlink
+                WHERE runtimedocumentedinstruction.OID = instructionsheetlink.CHILDOID)
 AND machineoperation.PROCESSUNITOID = processresource.OID
 AND (processresource.CLASSOID = 9000000000000010923 OR processresource.CLASSOID = 9000000000000037041)
 AND machineoperation.PRODUCTIONOPERATIONOID = productionoperation.OID
@@ -2236,6 +2237,7 @@ WHERE runtimeinputinstruction.CLASSOID = 9000000000000089954
 AND runtimeinputinstruction.OPERATIONOID = machineoperation.OID
 AND NOT EXISTS (SELECT instructionsheetlink.OID FROM OBJT_INSTRUCTIONLINK instructionsheetlink
                 WHERE runtimeinputinstruction.OID = instructionsheetlink.CHILDOID)
+AND machineoperation.CLASSOID = 9000000000000085787
 AND machineoperation.PROCESSUNITOID = processresource.OID
 AND (processresource.CLASSOID = 9000000000000010923 OR processresource.CLASSOID = 9000000000000037041)
 AND machineoperation.PRODUCTIONOPERATIONOID = productionoperation.OID
