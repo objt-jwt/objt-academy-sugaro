@@ -1,0 +1,26 @@
+<uploadtransactionfactory>
+  <upload id="INVENTORY.MOVE" class="objt.common.inventorymgt.bo.InventoryTraceOperation">
+    <transaction transtype="9001" outputmap="INVENTORY.MOVE"/>
+  </upload>
+
+  <outputmap id="INVENTORY.MOVE">
+    <input>
+      <field id="inventorytraceoperation" source="input" value="BO" class="objt.common.inventorymgt.bo.InventoryTraceOperation" object="YES" required="YES"/>
+      <field id="item" source="invoker" value="'inventorytraceoperation'.item" object="YES"/>
+      <field id="lot" source="invoker" value="'inventorytraceoperation'.lot" object="YES"/>
+      <field id="fromlocation" source="invoker" value="'inventorytraceoperation'.fromLocation" object="YES"/>
+      <field id="tolocation" source="invoker" value="'inventorytraceoperation'.toLocation" object="YES"/>
+    </input>
+    <output>
+      <field id="description"                           source="constant" value="INVENTORY.MOVE"/>
+      <field id="transfield1" title="1. Item id"        source="invoker"  value="'item'.name"/>
+      <field id="transfield2" title="2. Lot"            source="invoker"  value="'lot'.lotID"/>
+      <field id="transfield3" title="3. Quantity"       source="invoker"  value="'inventorytraceoperation'.fromQtyInitial"/>
+      <field id="transfield4" title="4. Uom"            source="invoker"  value="'inventorytraceoperation'.uom.name"/>
+      <field id="transfield5" title="5. From Warehouse" source="invoker"  value="'fromlocation'.warehouse.name"/>
+      <field id="transfield6" title="6. From Location"  source="invoker"  value="'fromlocation'.name"/>
+      <field id="transfield7" title="7. To Warehouse"   source="invoker"  value="'tolocation'.warehouse.name"/>
+      <field id="transfield8" title="8. To Location"    source="invoker"  value="'tolocation'.name"/>
+    </output>
+  </outputmap>
+</uploadtransactionfactory>
