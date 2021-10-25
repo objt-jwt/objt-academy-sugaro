@@ -2,6 +2,6 @@
 
 <uimetamodel>
   <class name="objt.common.itemmgt.bo.Item">
-    <attribute path="usrTxt1" title="PRODUCT_TYPE" exporttitle="PRODUCT_TYPE" />
+    <attribute path="usrTxt1" title="product type" exporttitle="PRODUCT_TYPE" />
   </class>
 </uimetamodel>
