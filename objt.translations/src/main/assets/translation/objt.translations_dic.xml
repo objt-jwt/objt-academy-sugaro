@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <dictionary includeSources="false" useRelativePaths="true">
   <targets>
-    <target html="F" java="F" jrxml="T" path="../../../../../objt.configurator\src\main\resources" recursive="T" srt="T" xml="T"/>
-    <target html="F" java="T" jrxml="F" path="../../../../../objt.configurator\src\main\java" recursive="T" srt="F" xml="F"/>
-    <target html="F" java="F" jrxml="T" path="../../../../../objt.supervisor\src\main\resources" recursive="T" srt="T" xml="T"/>
-    <target html="F" java="T" jrxml="F" path="../../../../../objt.supervisor\src\main\java" recursive="T" srt="F" xml="F"/>
-    <target html="F" java="F" jrxml="T" path="../../../../../objt.wms.operatorclient\src\main\resources" recursive="T" srt="T" xml="T"/>
-    <target html="F" java="T" jrxml="F" path="../../../../../objt.wms.operatorclient\src\main\java" recursive="T" srt="F" xml="F"/>
-    <target html="F" java="F" jrxml="T" path="../../../../../objt.mes.operatorclient\src\main\resources" recursive="T" srt="T" xml="T"/>
-    <target html="F" java="T" jrxml="F" path="../../../../../objt.mes.operatorclient\src\main\java" recursive="T" srt="F" xml="F"/>
-    <target html="F" java="F" jrxml="T" path="../../../../../objt.swingclient\src\main\resources" recursive="T" srt="T" xml="T"/>
-    <target html="F" java="T" jrxml="F" path="../../../../../objt.swingclient\src\main\java" recursive="T" srt="F" xml="F"/>
-    <target html="F" java="F" jrxml="T" path="../../../../../objt.applicationserver\src\main\resources" recursive="T" srt="T" xml="T"/>
-    <target html="F" java="T" jrxml="F" path="../../../../../objt.applicationserver\src\main\java" recursive="T" srt="F" xml="F"/>
-    <target html="F" java="F" jrxml="T" path="../../../../../objt.meta.model\src\main\resources" recursive="T" srt="T" xml="T"/>
+    <target html="F" java="F" jrxml="T" path="..\..\..\..\..\objt.configurator\src\main\resources" recursive="T" srt="T" xml="T"/>
+    <target html="F" java="T" jrxml="F" path="..\..\..\..\..\objt.configurator\src\main\java" recursive="T" srt="F" xml="F"/>
+    <target html="F" java="F" jrxml="T" path="..\..\..\..\..\objt.supervisor\src\main\resources" recursive="T" srt="T" xml="T"/>
+    <target html="F" java="T" jrxml="F" path="..\..\..\..\..\objt.supervisor\src\main\java" recursive="T" srt="F" xml="F"/>
+    <target html="F" java="F" jrxml="T" path="..\..\..\..\..\objt.wms.operatorclient\src\main\resources" recursive="T" srt="T" xml="T"/>
+    <target html="F" java="T" jrxml="F" path="..\..\..\..\..\objt.wms.operatorclient\src\main\java" recursive="T" srt="F" xml="F"/>
+    <target html="F" java="F" jrxml="T" path="..\..\..\..\..\objt.mes.operatorclient\src\main\resources" recursive="T" srt="T" xml="T"/>
+    <target html="F" java="T" jrxml="F" path="..\..\..\..\..\objt.mes.operatorclient\src\main\java" recursive="T" srt="F" xml="F"/>
+    <target html="F" java="F" jrxml="T" path="..\..\..\..\..\objt.swingclient\src\main\resources" recursive="T" srt="T" xml="T"/>
+    <target html="F" java="T" jrxml="F" path="..\..\..\..\..\objt.swingclient\src\main\java" recursive="T" srt="F" xml="F"/>
+    <target html="F" java="F" jrxml="T" path="..\..\..\..\..\objt.applicationserver\src\main\resources" recursive="T" srt="T" xml="T"/>
+    <target html="F" java="T" jrxml="F" path="..\..\..\..\..\objt.applicationserver\src\main\java" recursive="T" srt="F" xml="F"/>
+    <target html="F" java="F" jrxml="T" path="..\..\..\..\..\objt.meta.model\src\main\resources" recursive="T" srt="T" xml="T"/>
   </targets>
   <languages>
     <language id="nl" native="Dutch"/>
@@ -21,19 +21,33 @@
     <language id="fr" native="French"/>
   </languages>
   <includes>
-    <include path="../../../../../assets/translation\dce_dic.xml"/>
-    <include path="../../../../../assets/translation\objt.common_dic.xml"/>
-    <include path="../../../../../assets/translation\objt.mes_dic.xml"/>
-    <include path="../../../../../assets/translation\objt.wms_dic.xml"/>
-    <include path="../../../../../assets/translation\objt.crp_dic.xml"/>
-    <include path="../../../../../assets/translation\objt.wfm_dic.xml"/>
-    <include path="../../../../../assets/translation\objt.discrete_dic.xml"/>
-    <include path="../../../../../assets/translation\objt.process_dic.xml"/>
-    <include path="../../../../../assets/translation\objt.vertical_dic.xml"/>
-    <include path="../../../../../assets/translation\objt.configurator-core_dic.xml"/>
-    <include path="../../../../../assets/translation\objt.supervisor-core_dic.xml"/>
-    <include path="../../../../../assets/translation\objt.operatorclient-core_dic.xml"/>
-    <include path="../../../../../assets/translation\objt.applicationserver-core_dic.xml"/>
+    <include path="..\..\..\..\..\assets\translation\dce_dic.xml"/>
+    <include path="..\..\..\..\..\assets\translation\objt.common_dic.xml"/>
+    <include path="..\..\..\..\..\assets\translation\objt.mes_dic.xml"/>
+    <include path="..\..\..\..\..\assets\translation\objt.wms_dic.xml"/>
+    <include path="..\..\..\..\..\assets\translation\objt.crp_dic.xml"/>
+    <include path="..\..\..\..\..\assets\translation\objt.wfm_dic.xml"/>
+    <include path="..\..\..\..\..\assets\translation\objt.discrete_dic.xml"/>
+    <include path="..\..\..\..\..\assets\translation\objt.process_dic.xml"/>
+    <include path="..\..\..\..\..\assets\translation\objt.vertical_dic.xml"/>
+    <include path="..\..\..\..\..\assets\translation\objt.configurator-core_dic.xml"/>
+    <include path="..\..\..\..\..\assets\translation\objt.supervisor-core_dic.xml"/>
+    <include path="..\..\..\..\..\assets\translation\objt.operatorclient-core_dic.xml"/>
+    <include path="..\..\..\..\..\assets\translation\objt.applicationserver-core_dic.xml"/>
   </includes>
+  <entries>
+    <entry nativestring="New_Item">
+      <translation language="nl" translatedstring="Nieuw Item"/>
+      <translation language="en" translatedstring="New Item"/>
+    </entry>
+    <entry nativestring="Product Type">
+      <translation language="nl" translatedstring="Product Type"/>
+      <translation language="en" translatedstring="Product Type"/>
+    </entry>
+    <entry nativestring="product type">
+      <translation language="nl" translatedstring="product type"/>
+      <translation language="en" translatedstring="product type"/>
+    </entry>
+  </entries>
   <xmlparserconfig path="objt.translations_config.xml"/>
 </dictionary>

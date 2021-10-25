@@ -7,4 +7,7 @@
   <include ref="objt/wfm/meta/uimeta.xml"/>
   <include ref="objt/crp/meta/uimeta.xml"/>
   <include ref="objt/vertical/meta/uimeta.xml"/>
+  <include ref="objt/custom/item/download/objt/custom/meta/uimeta.xml"/>
+
 </uimetamodel>
+
