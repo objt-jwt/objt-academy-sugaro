@@ -7,4 +7,10 @@
   <include ref="objt/wfm/meta/uimeta.xml"/>
   <include ref="objt/crp/meta/uimeta.xml"/>
   <include ref="objt/vertical/meta/uimeta.xml"/>
+
+
+
+  <class name="objt.common.itemmgt.bo.Item">
+    <attribute path="usrTxt1" title="PRODUCT_TYPE" exporttitle="PRODUCT_TYPE" />
+  </class>
 </uimetamodel>
