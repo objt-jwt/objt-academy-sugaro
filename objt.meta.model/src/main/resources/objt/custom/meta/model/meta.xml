@@ -5,4 +5,6 @@
   <include ref="objt/wfm/meta/meta.xml"/>
   <include ref="objt/crp/meta/meta.xml"/>
   <include ref="objt/vertical/meta/meta.xml"/>
+  <!-- Custom meta.xml for SugarO -->
+  <include ref="objt/custom/meta/meta.xml"/>
 </guimetamodel>
