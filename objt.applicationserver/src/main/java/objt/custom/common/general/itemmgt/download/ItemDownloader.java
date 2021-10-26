@@ -21,6 +21,7 @@ import dce.util.annotation.Nullable;
 
 import objt.common.itemmgt.bo.Item;
 import objt.common.itemmgt.bo.Packaging;
+import objt.mes.bo.itemmgt.Items;
 import objt.wms.transaction.ItemTransaction;
 
 import org.bouncycastle.util.Pack;
@@ -50,7 +51,10 @@ public class ItemDownloader extends objt.vertical.common.general.itemmgt.downloa
 
     if (pItem.getPackaging() != null)
     {
-      ItemTransaction.get().addPackaging(item, pItem.getPackaging());
+      if (Items.getPackaging(item, pItem.getPackaging()) == null)
+      {
+        ItemTransaction.get().addPackaging(item, pItem.getPackaging());
+      }
     }
 
     return item;
@@ -63,20 +67,21 @@ public class ItemDownloader extends objt.vertical.common.general.itemmgt.downloa
 
     DownloadItem item = (DownloadItem) pProcessDownloadItem;
 
-    IntegerField packconfig = item.getpackConfig();
+    IntegerField packconfig = item.getPackConfig();
 
-    if (packconfig == null) return false;
-
-    if (packconfig.getValue() == null) return false;
-
-    Integer packconfigValue = packconfig.getValue();
-
-    item.setPackaging(Factory.get().fetchUsingAttribute(Packaging.class, "name", packconfigValue));
-
-    if (item.getPackaging() == null)
+    if (packconfig != null)
     {
-      getDownloadResult().addDownloadWarning(pProcessDownloadItem, "Given packconfig is not a template packconfig"); //ivlm
-      return false;
+      if (packconfig.getValue() == null) return true;
+
+      Integer packconfigValue = packconfig.getValue();
+
+      item.setPackaging(Factory.get().fetchUsingAttribute(Packaging.class, "name", packconfigValue));
+
+      if (item.getPackaging() == null)
+      {
+        getDownloadResult().addDownloadWarning(pProcessDownloadItem, "Given packconfig is not a template packconfig"); //ivlm
+        return false;
+      }
     }
 
     return true;
@@ -103,12 +108,12 @@ public class ItemDownloader extends objt.vertical.common.general.itemmgt.downloa
     }
 
     @Nullable
-    public IntegerField getpackConfig()
+    public IntegerField getPackConfig()
     {
       return packConfig;
     }
 
-    public void setpackConfig(@Nullable Integer pPackConfig)
+    public void setPackConfig(@Nullable Integer pPackConfig)
     {
       if (packConfig == null) packConfig = new IntegerField(pPackConfig);
       else packConfig.setValue(pPackConfig);
