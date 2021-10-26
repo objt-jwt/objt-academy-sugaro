@@ -9,6 +9,7 @@
  *******************************************************************************/
 package objt.custom.transaction;
 
+import java.awt.event.ActionEvent;
 import java.util.List;
 import javax.transaction.Transactional;
 
@@ -66,19 +67,23 @@ public class UploadTransaction extends AbstractServerModule implements ITransact
   private void initListeners()
   {
     // actionlisteners
-    InventoryTraceOperationTransaction.get().addTransactionListener(this, InventoryTraceOperationTransaction.EVENTCOMMAND_INVENTORYTRACEOPERATION_STATUS_CHANGED);
+    InventoryTraceOperationTransaction.get().addActionListener(this, InventoryTraceOperationTransaction.EVENTCOMMAND_INVENTORYTRACEOPERATION_STATUS_CHANGED);
   }
 
-  @Transactional(Transactional.TxType.MANDATORY)
   @Override
-  public void actionPerformed(TransactionEvent pEvent)
+  public void actionPerformed(ActionEvent pEvent)
   {
     try
     {
-      // Get the event parameters
-      Object[] parameters = pEvent.getObjectParameters();
+      Object[] parameters = null;
 
-      if(InventoryTraceOperationTransaction.EVENTCOMMAND_INVENTORYTRACEOPERATION_STATUS_CHANGED.equals(pEvent.getActionCommand()))
+      if (pEvent instanceof TransactionEvent)
+      {
+        // Get the event parameters
+        parameters = ((TransactionEvent) pEvent).getObjectParameters();
+      }
+
+      if (InventoryTraceOperationTransaction.EVENTCOMMAND_INVENTORYTRACEOPERATION_STATUS_CHANGED.equals(pEvent.getActionCommand()))
       {
         InventoryTraceOperation inventoryTraceOperation = (InventoryTraceOperation) parameters[0];
         Integer toStatus = (Integer) parameters[1];
@@ -102,12 +107,19 @@ public class UploadTransaction extends AbstractServerModule implements ITransact
     Zone toZone = WarehouseLocations.getERPStorageZone(pInventoryTraceOperation.getToLocation());
 
     // Only moves from ERP zone to ERP zone
-    if (fromZone == null || toZone == null) return;
+    if ((fromZone == null) || (toZone == null)) return;
 
     if (!fromZone.equals(toZone))
     {
       List<IUploadTransaction> uploadTransactionList = dce.pd.frame.upload.UploadTransaction.get().createUploadTransactions(INVENTORY_MOVE, pInventoryTraceOperation);
       if (uploadTransactionList != null) dce.pd.frame.upload.UploadTransaction.get().postTransactions(uploadTransactionList, true);
     }
+  }
+
+  @Transactional(Transactional.TxType.MANDATORY)
+  @Override
+  public void actionPerformed(TransactionEvent pEvent)
+  {
+    
   }
 }
