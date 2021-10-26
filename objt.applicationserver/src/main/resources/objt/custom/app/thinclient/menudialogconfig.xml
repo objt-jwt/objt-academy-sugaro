@@ -1,0 +1,2479 @@
+<?xml version="1.0"?>
+<dialogconfig>
+
+  <!-- dialogInfoBuilder Config -->
+  <dialoginfo>
+    <include ref="objt/wms/dialog/logindialog.xml"/>
+    <include ref="objt/wms/dialog/messagedialog.xml"/>
+    <include ref="objt/wms/dialog/modifytaskprofiledialog.xml"/>
+    <include ref="objt/wms/dialog/taskselectdialog.xml"/>
+    <include ref="objt/wms/dialog/taskerrordialog.xml"/>
+    <include ref="objt/wms/dialog/taskresetdialog.xml"/>
+    <include ref="objt/wms/dialog/taskterminatedialog.xml"/>
+    <include ref="objt/wms/dialog/containertaskswapdialog.xml"/>
+    <include ref="objt/wms/dialog/anytaskdialog01.xml"/>
+    <include ref="objt/wms/dialog/containerprintdialog.xml"/>
+    <include ref="objt/wms/dialog/locationwildcardidentificationdialog.xml"/>
+    <include ref="objt/wms/dialog/serialidentificationdialog.xml"/>
+    <include ref="objt/wms/dialog/storageitemqtyselectiondialog.xml"/>
+    <include ref="objt/wms/dialog/indirecttaskdialog.xml"/>
+
+    <include ref="objt/wms/dialog/inbound/lpninbounddialog.xml"/>
+    <include ref="objt/wms/dialog/inbound/receiveonlocationdialog.xml"/>
+    <include ref="objt/wms/dialog/inbound/nestlpncreatedialog01.xml"/>
+    <include ref="objt/wms/dialog/inbound/nestlpnaddlpndialog01.xml"/>
+    <include ref="objt/wms/dialog/inbound/nestlpnremovelpndialog01.xml"/>
+    <include ref="objt/wms/dialog/inbound/nestlpnclosedialog01.xml"/>
+    <include ref="objt/wms/dialog/inbound/nestlpnopendialog.xml"/>
+    <include ref="objt/wms/dialog/inbound/inboundordercreatedialog.xml"/>
+    <include ref="objt/wms/dialog/inbound/inboundorderclosedialog.xml"/>
+    <include ref="objt/wms/dialog/inbound/lpnopenclosedialog.xml"/>
+    <include ref="objt/wms/dialog/inbound/lpnopendialog.xml"/>
+    <include ref="objt/wms/dialog/inbound/lpnclosedialog.xml"/>
+
+    <include ref="objt/wms/dialog/inspection/checkinspectiondialog.xml"/>
+    <include ref="objt/wms/dialog/inspection/createlpninspectiondialog.xml"/>
+    <include ref="objt/wms/dialog/inspection/createserialinspectiondialog.xml"/>
+    <include ref="objt/wms/dialog/inspection/inputinspectiondialog.xml"/>
+    <include ref="objt/wms/dialog/inspection/inspectionsheetdialog.xml"/>
+    <include ref="objt/wms/dialog/inspection/samplecreatedialog.xml"/>
+    <include ref="objt/wms/dialog/inspection/sampleinfodialog.xml"/>
+    <include ref="objt/wms/dialog/inspection/samplemovedialog.xml"/>
+    <include ref="objt/wms/dialog/inspection/sampleidentificationdialog.xml"/>
+    <include ref="objt/wms/dialog/inspection/sampleinstructiondialog.xml"/>
+    <include ref="objt/wms/dialog/inspection/sampleprintdialog.xml"/>
+
+    <include ref="objt/wms/dialog/put/containerputtaskdialog01.xml"/>
+    <include ref="objt/wms/dialog/put/distributedputawaytaskdialog.xml"/>
+    <include ref="objt/wms/dialog/put/startputlistdialog.xml"/>
+    <include ref="objt/wms/dialog/put/stopputlistdialog.xml"/>
+
+    <include ref="objt/vertical/wms/general/dialog/move/containermovetaskdialog01.xml"/>
+    <include ref="objt/wms/dialog/move/containermovedialog01.xml"/>
+    <include ref="objt/wms/dialog/move/containermovetriggerdialog01.xml"/>
+    <include ref="objt/wms/dialog/move/skumovedialog01.xml"/>
+    <include ref="objt/wms/dialog/move/skumovetaskdialog01.xml"/>
+
+    <include ref="objt/wms/dialog/replenish/bulkreplenishtaskdialog01.xml"/>
+    <include ref="objt/wms/dialog/replenish/containercontentreplenishtaskdialog01.xml"/>
+    <include ref="objt/wms/dialog/replenish/containerreplenishtaskdialog01.xml"/>
+    <include ref="objt/wms/dialog/replenish/locationreplenishtriggerdialog01.xml"/>
+    <include ref="objt/wms/dialog/replenish/locationreplenishtaskdialog01.xml"/>
+    <include ref="objt/wms/dialog/replenish/locationlpnreplenishtaskdialog01.xml"/>
+    <include ref="objt/wms/dialog/replenish/replenishliststartdialog.xml"/>
+    <include ref="objt/wms/dialog/replenish/replenishliststopdialog.xml"/>
+    <include ref="objt/wms/dialog/replenish/dropcontainerdialog.xml"/>
+
+    <include ref="objt/wms/dialog/pick/bulkpicktaskdialog01.xml"/>
+    <include ref="objt/wms/dialog/pick/bulkpicktaskdialog02.xml"/>
+    <include ref="objt/wms/dialog/pick/bulkpicktaskdialog03.xml"/>
+    <include ref="objt/wms/dialog/pick/containerpicktaskdialog01.xml"/>
+    <include ref="objt/wms/dialog/pick/containerpicktaskdialog03.xml"/>
+    <include ref="objt/process/wms/containercontentpickingbypackaging/dialog/containercontentpicktaskdialog01.xml"/>
+    <include ref="objt/wms/dialog/pick/containercontentpicktaskdialog02.xml"/>
+    <include ref="objt/process/wms/containercontentpickingbypackaging/dialog/containercontentpicktaskdialog03.xml"/>
+    <include ref="objt/wms/dialog/pick/locationpicktaskdialog01.xml"/>
+    <include ref="objt/wms/dialog/pick/locationpicktaskdialog02.xml"/>
+    <include ref="objt/wms/dialog/pick/locationpicktaskdialog03.xml"/>
+    <include ref="objt/wms/dialog/pick/locationlpnpicktaskdialog01.xml"/>
+    <include ref="objt/wms/dialog/pick/locationlpnpicktaskdialog02.xml"/>
+    <include ref="objt/wms/dialog/pick/locationlpnpicktaskdialog03.xml"/>
+    <include ref="objt/wms/dialog/pick/multiordercreatedialog01.xml"/>
+    <include ref="objt/wms/dialog/pick/multiordercreatedialog03.xml"/>
+    <include ref="objt/wms/dialog/pick/pickcartclosedialog01.xml"/>
+    <include ref="objt/wms/dialog/pick/pickcartopendialog01.xml"/>
+    <include ref="objt/wms/dialog/pick/pickcartlpnclosedialog01.xml"/>
+    <include ref="objt/wms/dialog/pick/pickcartlpnopendialog01.xml"/>
+    <include ref="objt/wms/dialog/pick/picklpnopendialog01.xml"/>
+    <include ref="objt/wms/dialog/pick/picklpnopendialog03.xml"/>
+    <include ref="objt/wms/dialog/pick/picklpnopenselectdialog.xml"/>
+    <include ref="objt/wms/dialog/pick/picklpnclosedialog01.xml"/>
+    <include ref="objt/wms/dialog/pick/picklpnclosedialog03.xml"/>
+    <include ref="objt/wms/dialog/pick/picklpncloseselectdialog.xml"/>
+    <include ref="objt/wms/dialog/pick/skupicklistdialog.xml"/>
+    <include ref="objt/wms/dialog/pick/startpicklistdialog.xml"/>
+    <include ref="objt/wms/dialog/pick/lpnpicklistdialog.xml"/>
+    <include ref="objt/wms/dialog/pick/stoppicklistdialog.xml"/>
+    <include ref="objt/wms/dialog/containerserialidentificationdialog.xml"/>
+    <include ref="objt/wms/dialog/storageitemqtyserialidentificationdialog.xml"/>
+
+    <include ref="objt/wms/dialog/transfer/containertransfertaskdialog01.xml"/>
+
+    <include ref="objt/wms/dialog/crossdock/containercrossdocktaskdialog01.xml"/>
+
+    <include ref="objt/wms/dialog/outbound/containeroutboundtaskdialog01.xml"/>
+
+    <include ref="objt/wms/dialog/ship/lpnloadtaskdialog01.xml"/>
+    <include ref="objt/wms/dialog/ship/lpnunloadtaskdialog01.xml"/>
+    <include ref="objt/wms/dialog/ship/lpnunloaddialog01.xml"/>
+    <include ref="objt/wms/dialog/ship/shipmentloaddialog01.xml"/>
+    <include ref="objt/wms/dialog/ship/shipmentunloaddialog01.xml"/>
+    <include ref="objt/wms/dialog/ship/shipmentclosedialog01.xml"/>
+
+    <include ref="objt/wms/dialog/inventory/count/lpnpicklocationcountdialog01.xml"/>
+    <include ref="objt/wms/dialog/inventory/count/picklocationcountdialog01.xml"/>
+    <include ref="objt/wms/dialog/inventory/count/lpnlocationcountdialog01.xml"/>
+    <include ref="objt/wms/dialog/inventory/count/locationcountdialog01.xml"/>
+    <include ref="objt/wms/dialog/inventory/count/lpnswaplocationcountdialog01.xml"/>
+    <include ref="objt/wms/dialog/inventory/count/nestlpncountdialog01.xml"/>
+    <include ref="objt/wms/dialog/inventory/count/serialcountdialog.xml"/>
+
+    <include ref="objt/wms/dialog/inventory/takeon/inventorytakeondialog01.xml"/>
+
+    <include ref="objt/wms/dialog/inventory/info/lpncontentinfodialog01.xml"/>
+    <include ref="objt/wms/dialog/inventory/info/lpnqcinfodialog01.xml"/>
+    <include ref="objt/wms/dialog/inventory/info/lpninventoryattributeinfodialog01.xml"/>
+    <include ref="objt/wms/dialog/inventory/info/lpnlockinfodialog01.xml"/>
+    <include ref="objt/wms/dialog/inventory/info/locationcontentinfodialog01.xml"/>
+    <include ref="objt/wms/dialog/inventory/info/locationlockinfodialog01.xml"/>
+    <include ref="objt/wms/dialog/inventory/info/iteminfodialog01.xml"/>
+
+    <include ref="objt/wms/dialog/inventory/adjust/lpnqtyadjustdialog01.xml"/>
+    <include ref="objt/wms/dialog/inventory/adjust/lpnqcadjustdialog01.xml"/>
+    <include ref="objt/wms/dialog/inventory/adjust/lpninventoryattributeadjustdialog01.xml"/>
+    <include ref="objt/wms/dialog/inventory/adjust/lpnlockdialog01.xml"/>
+    <include ref="objt/wms/dialog/inventory/adjust/lpnunlockdialog01.xml"/>
+    <include ref="objt/wms/dialog/inventory/adjust/lpnfounddialog01.xml"/>
+    <include ref="objt/wms/dialog/inventory/adjust/locationqtyadjustdialog01.xml"/>
+    <include ref="objt/wms/dialog/inventory/adjust/locationlockdialog01.xml"/>
+    <include ref="objt/wms/dialog/inventory/adjust/locationunlockdialog01.xml"/>
+    <include ref="objt/wms/dialog/inventory/adjust/locationfulldialog.xml"/>
+    <include ref="objt/wms/dialog/inventory/adjust/serialqcadjustdialog01.xml"/>
+
+    <include ref="objt/wms/dialog/inventory/nest/nestlpncreatedialog01.xml"/>
+    <include ref="objt/wms/dialog/inventory/nest/nestlpnaddlpndialog01.xml"/>
+    <include ref="objt/wms/dialog/inventory/nest/nestlpnremovelpndialog01.xml"/>
+    <include ref="objt/wms/dialog/inventory/nest/nestlpnclosedialog01.xml"/>
+    <include ref="objt/wms/dialog/inventory/nest/nestlpnopendialog.xml"/>
+
+    <include ref="objt/wms/dialog/repack/closelpndialog.xml"/>
+    <include ref="objt/wms/dialog/repack/closetoplpndialog.xml"/>
+    <include ref="objt/wms/dialog/repack/createemptylpndialog.xml"/>
+    <include ref="objt/wms/dialog/repack/createemptytoplpndialog.xml"/>
+    <include ref="objt/wms/dialog/repack/nestlpnaddlpndialog.xml"/>
+    <include ref="objt/wms/dialog/repack/nestlpnremovelpndialog.xml"/>
+    <include ref="objt/wms/dialog/repack/repackaddfulllpndialog.xml"/>
+    <include ref="objt/wms/dialog/repack/repackaddlpncontentdialog.xml"/>
+
+    <include ref="objt/wms/dialog/inventory/consume/kanbanconsumedialog.xml"/>
+  </dialoginfo>
+
+  <mainmenu title="MAIN MENU">
+    <dialog class="objt.wms.dialog.LoginDialog" requireslogin="NO" icon="menu_logoff.png">
+      <param name="PASSWORD.MODE" value="OPTIONAL"/>
+      <param name="PASSWORD.LOGONVALIDATOR.CLASS" value="dce.pd.frame.explorer.resourcemgt.EmployeeLogonValidator"/>
+      <param name="selectionTaskProfileAllowed" value="NO"/>
+      <param name="CONFIRMATION.DEFAULT" value="YES"/>
+      <param name="CONFIRMATION.AUTOENTER" value="NO"/>
+    </dialog>
+
+    <!-- TASK MENU-->
+    <menu title="TASK MENU" systemdirected="YES" icon="menu_task.png">
+      <dialog class="objt.wms.dialog.TaskSelectDialog" globalfkey="2" title="SELECT TASK"
+              roles="wmsdialog.selecttask" icon="menu_task_pin.png">
+        <param name="TASK.AUTOENTER" value="YES"/>
+        <param name="TASK.MAXTASKS" value="1"/>
+        <param name="CONFIRMATION.DEFAULT" value="YES"/>
+        <param name="CONFIRMATION.AUTOENTER" value="YES"/>
+        <param name="CREATEMULTITASKORDER.DEFAULT" value="YES"/>
+        <param name="CREATEMULTITASKORDER.AUTOENTER" value="NO"/>
+      </dialog>
+
+      <dialog class="objt.wms.dialog.AnyTaskDialog01" title="EXECUTE LPN TASK"
+              roles="wmsdialog.anytask" icon="menu_barcode.png">
+        <param name="CONFIRMATION.DEFAULT" value="YES"/>
+      </dialog>
+
+      <separator/>
+
+      <dialog class="objt.wms.dialog.ModifyTaskProfileDialog"
+              roles="wmsdialog.modifytaskprofile" icon="menu_edit.png">
+        <param name="CONFIRMATION.DEFAULT" value="YES"/>
+        <param name="CONFIRMATION.AUTOENTER" value="NO"/>
+      </dialog>
+
+      <dialog class="objt.wms.dialog.TaskTerminateDialog"
+              roles="wmsdialog.terminatetask"
+              globalfkey="3" icon="menu_close.png">
+        <param name="EMPLOYEE.ROLES" value="wmsdialog.terminatetask.execute"/>
+        <param name="PASSWORD.MODE" value="REQUIRED"/>
+        <param name="CONFIRMATION.DEFAULT" value="YES"/>
+        <param name="CONFIRMATION.AUTOENTER" value="NO"/>
+      </dialog>
+
+      <separator/>
+
+      <dialog class="objt.wms.dialog.pick.PickLPNOpenSelectDialog" id="PICKLPNOPENSELECT_SYSTEM_DIRECTED"
+              roles="wmsdialog.pick.picklpn.open" icon="menu_lpn_open.png">
+        <param name="SYSTEMDIRECTED" value="YES"/>
+      </dialog>
+
+      <dialog class="objt.wms.dialog.pick.PickLPNOpenDialog01" visible="NO">
+        <!--<param name="CONTAINER" value="EUR"/>-->
+        <param name="CONFIRMATION.DEFAULT" value="YES"/>
+        <param name="CONFIRMATION.AUTOENTER" value="NO"/>
+        <param name="LPN.AUTOGENERATE.ENABLED" value="YES"/>
+        <param name="LPN.AUTOGENERATE.INPUTMASK" value="x"/>
+        <!--<param name="LPN.AUTOGENERATE.NUMBERSEQUENCE" value="LPN_SSCC"/>-->
+      </dialog>
+
+      <dialog class="objt.wms.dialog.pick.PickLPNCloseSelectDialog" id="PICKLPNCLOSESELECT_SYSTEM_DIRECTED"
+              roles="wmsdialog.pick.picklpn.close" icon="menu_lpn_closed.png">
+        <param name="SYSTEMDIRECTED" value="YES"/>
+      </dialog>
+
+      <dialog class="objt.wms.dialog.pick.PickLPNCloseDialog01" visible="NO">
+        <param name="CLOSELPN.DEFAULT" value="YES"/>
+        <param name="CONFIRMATION.DEFAULT" value="YES"/>
+        <param name="CONFIRMATION.AUTOENTER" value="YES"/>
+      </dialog>
+
+      <dialog class="objt.wms.dialog.TaskErrorDialog" visible="NO"/>
+      <dialog class="objt.wms.dialog.TaskResetDialog" visible="NO"/>
+      <dialog class="objt.wms.dialog.ContainerTaskSwapDialog" visible="NO"/>
+
+      <!-- MOVE -->
+      <dialog class="objt.vertical.wms.general.dialog.move.ContainerMoveTaskDialog01" visible="NO">
+        <subdialog fkey="6" refid="objt.wms.dialog.inventory.info.ItemInfoDialog01" levels="0,2,3,4,6" >
+          <output>
+            <field id="ITEM_LIST" source="invoker" value="'TASK'.STATIC(objt.wms.bo.warehousemgt.Tasks;getItemList;BO)" object="true"/>
+          </output>
+        </subdialog>
+        <param name="MAX_STACK_SIZE" value="2"/>
+        <param name="CONFIRMATION.DEFAULT" value="YES"/>
+        <param name="CONFIRMATION.AUTOENTER" value="YES"/>
+      </dialog>
+
+      <dialog class="objt.wms.dialog.move.SKUMoveTaskDialog01" visible="NO">
+        <subdialog fkey="6" refid="objt.wms.dialog.inventory.info.ItemInfoDialog01" levels="0,1,2,3,4,5,6,7,8,9,10,11" >
+          <output>
+            <field id="ITEM" source="invoker" value="'TASK'.item" object="true"/>
+          </output>
+        </subdialog>
+        <param name="QUANTITY.SHOW_DEFAULT" value="YES"/>
+        <param name="REASON.SHORTAGE.CATEGORY" value="SKU.SHORTAGE"/>
+        <param name="LOT.ENABLED" value="NO"/>
+        <param name="SUBLOT.ENABLED" value="NO"/>
+        <param name="CONFIRMATION.DEFAULT" value="YES"/>
+        <param name="CONFIRMATION.AUTOENTER" value="YES"/>
+        <!--SERIAL SETTINGS-->
+        <param name="SERIAL.SCANMODES" value="SCAN WANTED,SCAN UNWANTED"/>
+      </dialog>
+
+      <!-- INVENTORY -->
+      <dialog class="objt.wms.dialog.inventory.count.LPNPickLocationCountDialog01" visible="NO">
+        <subdialog fkey="6" refid="objt.wms.dialog.inventory.info.ItemInfoDialog01" levels="0,1,2,3,4,5,6,7,8,10,11" >
+          <output>
+            <field id="ITEM" source="input" value="ITEM" object="true"/>
+          </output>
+        </subdialog>
+        <param name="LPN.BARCODE.REQUIRED" value="YES"/>
+        <param name="LOTCOUNT.ENABLED" value="YES"/>
+        <param name="SUBLOTCOUNT.ENABLED" value="YES"/>
+        <param name="QUANTITY.CONFIRM" value="YES"/>
+        <param name="CONFIRMATION.DEFAULT" value="YES"/>
+        <param name="CONFIRMATION.AUTOENTER" value="NO"/>
+      </dialog>
+
+      <dialog class="objt.wms.dialog.inventory.count.PickLocationCountDialog01" visible="NO">
+        <subdialog fkey="6" refid="objt.wms.dialog.inventory.info.ItemInfoDialog01" levels="0,1,2,3,4,5,6,8" >
+          <output>
+            <field id="ITEM" source="input" value="ITEM" object="true"/>
+          </output>
+        </subdialog>
+        <param name="LPN.BARCODE.REQUIRED" value="YES"/>
+        <param name="LOTCOUNT.ENABLED" value="YES"/>
+        <param name="SUBLOTCOUNT.ENABLED" value="YES"/>
+        <param name="QUANTITY.CONFIRM" value="YES"/>
+        <param name="CONFIRMATION.DEFAULT" value="YES"/>
+        <param name="CONFIRMATION.AUTOENTER" value="NO"/>
+      </dialog>
+
+      <dialog class="objt.wms.dialog.inventory.count.LPNLocationCountDialog01" visible="NO">
+        <subdialog fkey="6" refid="objt.wms.dialog.inventory.info.ItemInfoDialog01" levels="4,5,6,7,8,9,10,12" >
+          <output>
+            <field id="ITEM" source="input" value="ITEM" object="true"/>
+          </output>
+        </subdialog>
+        <param name="LPN.BARCODE.REQUIRED" value="YES"/>
+        <param name="LOTCOUNT.ENABLED" value="YES"/>
+        <param name="SUBLOTCOUNT.ENABLED" value="YES"/>
+        <param name="QUANTITY.CONFIRM" value="YES"/>
+        <param name="CONFIRMATION.DEFAULT" value="YES"/>
+        <param name="CONFIRMATION.AUTOENTER" value="NO"/>
+      </dialog>
+
+      <dialog class="objt.wms.dialog.inventory.count.LocationCountDialog01" visible="NO">
+        <subdialog fkey="6" refid="objt.wms.dialog.inventory.info.ItemInfoDialog01" levels="2,3,4,5,6,7,8,9" >
+          <output>
+            <field id="ITEM" source="input" value="ITEM" object="true"/>
+          </output>
+        </subdialog>
+        <param name="LPN.BARCODE.REQUIRED" value="YES"/>
+        <param name="LOTCOUNT.ENABLED" value="YES"/>
+        <param name="SUBLOTCOUNT.ENABLED" value="YES"/>
+        <param name="QUANTITY.CONFIRM" value="YES"/>
+        <param name="CONFIRMATION.DEFAULT" value="YES"/>
+        <param name="CONFIRMATION.AUTOENTER" value="NO"/>
+      </dialog>
+
+      <dialog class="objt.wms.dialog.inventory.count.NestLPNCountDialog01" visible="NO">
+        <subdialog fkey="6" refid="objt.wms.dialog.inventory.info.ItemInfoDialog01" levels="3,4,5,6,7,8,9,10,12" >
+          <output>
+            <field id="ITEM" source="input" value="ITEM" object="true"/>
+          </output>
+        </subdialog>
+        <param name="LPN.BARCODE.REQUIRED" value="YES"/>
+        <param name="LOTCOUNT.ENABLED" value="YES"/>
+        <param name="SUBLOTCOUNT.ENABLED" value="YES"/>
+        <param name="QUANTITY.CONFIRM" value="YES"/>
+        <param name="CONFIRMATION.DEFAULT" value="YES"/>
+        <param name="CONFIRMATION.AUTOENTER" value="NO"/>
+      </dialog>
+
+      <dialog class="objt.wms.dialog.inventory.count.LPNSwapLocationCountDialog01" visible="NO">
+        <param name="LPN.BARCODE.REQUIRED" value="YES"/>
+        <param name="QUANTITY.CONFIRM" value="YES"/>
+        <param name="CONFIRMATION.DEFAULT" value="YES"/>
+        <param name="CONFIRMATION.AUTOENTER" value="NO"/>
+      </dialog>
+
+      <!-- PUT -->
+      <dialog class="objt.wms.dialog.put.ContainerPutTaskDialog01" visible="NO">
+        <subdialog fkey="6" refid="objt.wms.dialog.inventory.info.ItemInfoDialog01" levels="0,1,2,3,4,5" >
+          <output>
+            <field id="ITEM_LIST" source="invoker" value="'TASK'.STATIC(objt.wms.bo.warehousemgt.Tasks;getItemList;BO)" object="true"/>
+          </output>
+        </subdialog>
+        <param name="MAX_STACK_SIZE" value="1"/>
+        <param name="CONFIRMATION.DEFAULT" value="YES"/>
+        <param name="CONFIRMATION.AUTOENTER" value="YES"/>
+      </dialog>
+
+      <dialog class="objt.wms.dialog.put.DistributedPutawayTaskDialog" visible="NO">
+        <param name="CONFIRMATION.DEFAULT" value="YES"/>
+        <param name="CONFIRMATION.AUTOENTER" value="YES"/>
+      </dialog>
+
+      <dialog class="objt.wms.dialog.put.StartPutListDialog" id="PUT_LIST_START_TASK" visible="NO">
+        <param name="CONFIRMATION.DEFAULT" value="YES"/>
+      </dialog>
+
+      <!-- PICK -->
+      <dialog class="objt.wms.dialog.pick.ContainerPickTaskDialog01" visible="NO">
+        <subdialog fkey="6" refid="objt.wms.dialog.inventory.info.ItemInfoDialog01" levels="0,1,2,3,4,5,6,7" >
+          <output>
+            <field id="ITEM_LIST" source="invoker" value="'TASK'.STATIC(objt.wms.bo.warehousemgt.Tasks;getItemList;BO)" object="true"/>
+          </output>
+        </subdialog>
+        <param name="MAX_STACK_SIZE" value="1"/>
+        <param name="CONFIRMATION.DEFAULT" value="YES"/>
+        <param name="CONFIRMATION.AUTOENTER" value="YES"/>
+        <!--SERIAL SETTINGS-->
+        <param name="SERIAL.SCANMODES" value="SCAN WANTED"/>
+      </dialog>
+
+      <dialog class="objt.process.wms.containercontentpickingbypackaging.dialog.ContainerContentPickTaskDialog01" visible="NO">
+        <subdialog fkey="6" refid="objt.wms.dialog.inventory.info.ItemInfoDialog01" levels="0,1,2,3,4,5" >
+          <output>
+            <field id="ITEM" source="invoker" value="'TASK'.item" object="true"/>
+          </output>
+        </subdialog>
+        <param name="REASON.SHORTAGE.CATEGORY" value="SKU.SHORTAGE,PICK.LPN"/>
+        <param name="CONFIRMATION.DEFAULT" value="YES"/>
+        <param name="CONFIRMATION.AUTOENTER" value="NO"/>
+        <!--SERIAL SETTINGS-->
+        <param name="SERIAL.SCANMODES" value="SCAN WANTED,SCAN UNWANTED"/>
+      </dialog>
+
+      <dialog class="objt.process.wms.containercontentpickingbypackaging.dialog.ContainerContentPickTaskDialog01" id="objt.wms.dialog.pick.MultiOrderContainerContentPickTaskDialog01" visible="NO">
+        <subdialog fkey="6" refid="objt.wms.dialog.inventory.info.ItemInfoDialog01" levels="0,1,2,3,4,5" >
+          <output>
+            <field id="ITEM" source="invoker" value="'TASK'.item" object="true"/>
+          </output>
+        </subdialog>
+        <param name="REASON.SHORTAGE.CATEGORY" value="SKU.SHORTAGE,PICK.LPN"/>
+        <param name="PICKCONTAINERCONFIRMATION.ENABLED" value="YES"/>
+        <param name="CONFIRMATION.DEFAULT" value="YES"/>
+        <param name="CONFIRMATION.AUTOENTER" value="NO"/>
+        <!--SERIAL SETTINGS-->
+        <param name="SERIAL.SCANMODES" value="SCAN WANTED,SCAN UNWANTED"/>
+      </dialog>
+
+      <dialog class="objt.wms.dialog.pick.ContainerContentPickTaskDialog02" visible="NO">
+        <subdialog fkey="6" refid="objt.wms.dialog.inventory.info.ItemInfoDialog01" levels="0,1,2,3,4,5,6,7" >
+          <output>
+            <field id="ITEM" source="invoker" value="'TASK'.item" object="true"/>
+          </output>
+        </subdialog>
+        <param name="QUANTITY.SHOW_DEFAULT" value="NO"/>
+        <param name="REASON.SHORTAGE.CATEGORY" value="SKU.SHORTAGE"/>
+        <param name="CONFIRMATION.DEFAULT" value="YES"/>
+        <param name="CONFIRMATION.AUTOENTER" value="YES"/>
+      </dialog>
+
+      <dialog class="objt.wms.dialog.pick.BulkPickTaskDialog01" visible="NO">
+        <subdialog fkey="6" refid="objt.wms.dialog.inventory.info.ItemInfoDialog01" levels="0,1,2,3,4,5" >
+          <output>
+            <field id="ITEM" source="invoker" value="'TASK'.item" object="true"/>
+          </output>
+        </subdialog>
+        <param name="REASON.SHORTAGE.CATEGORY" value="SKU.SHORTAGE,PICK.LPN"/>
+        <param name="CONFIRMATION.DEFAULT" value="YES"/>
+        <param name="CONFIRMATION.AUTOENTER" value="NO"/>
+        <param name="WAREHOUSELOCATION.RECONFIRM.ENABLED" value="NO"/>
+        <!--SERIAL SETTINGS-->
+        <param name="SERIAL.SCANMODES" value="SCAN WANTED,SCAN UNWANTED"/>
+      </dialog>
+
+      <dialog class="objt.wms.dialog.pick.BulkPickTaskDialog01" id="objt.wms.dialog.pick.MultiOrderBulkPickTaskDialog01" visible="NO">
+        <subdialog fkey="6" refid="objt.wms.dialog.inventory.info.ItemInfoDialog01" levels="0,1,2,3,4,5" >
+          <output>
+            <field id="ITEM" source="invoker" value="'TASK'.item" object="true"/>
+          </output>
+        </subdialog>
+        <param name="REASON.SHORTAGE.CATEGORY" value="SKU.SHORTAGE,PICK.LPN"/>
+        <param name="PICKCONTAINERCONFIRMATION.ENABLED" value="YES"/>
+        <param name="CONFIRMATION.DEFAULT" value="YES"/>
+        <param name="CONFIRMATION.AUTOENTER" value="NO"/>
+        <param name="WAREHOUSELOCATION.RECONFIRM.ENABLED" value="NO"/>
+        <!--SERIAL SETTINGS-->
+        <param name="SERIAL.SCANMODES" value="SCAN WANTED,SCAN UNWANTED"/>
+      </dialog>
+
+      <dialog class="objt.wms.dialog.pick.BulkPickTaskDialog02" visible="NO">
+        <subdialog fkey="6" refid="objt.wms.dialog.inventory.info.ItemInfoDialog01" levels="0,1,2,3,4,5,6,7" >
+          <output>
+            <field id="ITEM" source="invoker" value="'TASK'.item" object="true"/>
+          </output>
+        </subdialog>
+        <param name="QUANTITY.SHOW_DEFAULT" value="NO"/>
+        <param name="REASON.SHORTAGE.CATEGORY" value="SKU.SHORTAGE"/>
+        <param name="CONFIRMATION.DEFAULT" value="YES"/>
+        <param name="CONFIRMATION.AUTOENTER" value="YES"/>
+      </dialog>
+
+      <dialog class="objt.wms.dialog.pick.LocationPickTaskDialog01" visible="NO">
+        <subdialog fkey="6" refid="objt.wms.dialog.inventory.info.ItemInfoDialog01" levels="0,1,2,3,4,5,6" >
+          <output>
+            <field id="ITEM" source="invoker" value="'TASK'.item" object="true"/>
+          </output>
+        </subdialog>
+        <param name="REASON.SHORTAGE.CATEGORY" value="SKU.SHORTAGE,PICK.LPN"/>
+        <!--<param name="REASON.SHORTAGE.DEFAULT_ID" value="fullpicklpn"/>-->
+        <param name="SKIP.CONFIRMATION.AUTOENTER" value="YES"/>
+        <param name="CONFIRMATION.DEFAULT" value="YES"/>
+        <param name="CONFIRMATION.AUTOENTER" value="NO"/>
+        <param name="WAREHOUSELOCATION.RECONFIRM.ENABLED" value="NO"/>
+        <!--SERIAL SETTINGS-->
+        <param name="SERIAL.SCANMODES" value="SCAN WANTED,SCAN UNWANTED"/>
+      </dialog>
+
+      <dialog class="objt.wms.dialog.pick.LocationPickTaskDialog01" id="objt.wms.dialog.pick.MultiOrderLocationPickTaskDialog01" visible="NO">
+        <subdialog fkey="6" refid="objt.wms.dialog.inventory.info.ItemInfoDialog01" levels="0,1,2,3,4,5,6" >
+          <output>
+            <field id="ITEM" source="invoker" value="'TASK'.item" object="true"/>
+          </output>
+        </subdialog>
+        <param name="REASON.SHORTAGE.CATEGORY" value="SKU.SHORTAGE,PICK.LPN"/>
+        <!--<param name="REASON.SHORTAGE.DEFAULT_ID" value="fullpicklpn"/>-->
+        <param name="PICKCONTAINERCONFIRMATION.ENABLED" value="YES"/>
+        <param name="SKIP.CONFIRMATION.AUTOENTER" value="YES"/>
+        <param name="CONFIRMATION.DEFAULT" value="YES"/>
+        <param name="CONFIRMATION.AUTOENTER" value="NO"/>
+        <param name="WAREHOUSELOCATION.RECONFIRM.ENABLED" value="NO"/>
+        <!--SERIAL SETTINGS-->
+        <param name="SERIAL.SCANMODES" value="SCAN WANTED,SCAN UNWANTED"/>
+      </dialog>
+
+      <dialog class="objt.wms.dialog.pick.LocationPickTaskDialog02" visible="NO">
+        <subdialog fkey="6" refid="objt.wms.dialog.inventory.info.ItemInfoDialog01" levels="0,1,2,3,4,5,6,7" >
+          <output>
+            <field id="ITEM" source="invoker" value="'TASK'.item" object="true"/>
+          </output>
+        </subdialog>
+        <param name="QUANTITY.SHOW_DEFAULT" value="NO"/>
+        <param name="REASON.SHORTAGE.CATEGORY" value="SKU.SHORTAGE"/>
+        <param name="CONFIRMATION.DEFAULT" value="YES"/>
+        <param name="CONFIRMATION.AUTOENTER" value="YES"/>
+      </dialog>
+
+      <dialog class="objt.wms.dialog.pick.LocationLPNPickTaskDialog01" visible="NO">
+        <subdialog fkey="6" refid="objt.wms.dialog.inventory.info.ItemInfoDialog01" levels="0,1,2,3,4,5,6,7" >
+          <output>
+            <field id="ITEM" source="invoker" value="'TASK'.item" object="true"/>
+          </output>
+        </subdialog>
+        <param name="REASON.SHORTAGE.CATEGORY" value="SKU.SHORTAGE,PICK.LPN"/>
+        <param name="CONFIRMATION.DEFAULT" value="YES"/>
+        <param name="CONFIRMATION.AUTOENTER" value="NO"/>
+        <param name="WAREHOUSELOCATION.RECONFIRM.ENABLED" value="NO"/>
+        <!--SERIAL SETTINGS-->
+        <param name="SERIAL.SCANMODES" value="SCAN WANTED,SCAN UNWANTED"/>
+      </dialog>
+
+      <dialog class="objt.wms.dialog.pick.LocationLPNPickTaskDialog01" id="objt.wms.dialog.pick.MultiOrderLocationLPNPickTaskDialog01" visible="NO">
+        <subdialog fkey="6" refid="objt.wms.dialog.inventory.info.ItemInfoDialog01" levels="0,1,2,3,4,5,6,7" >
+          <output>
+            <field id="ITEM" source="invoker" value="'TASK'.item" object="true"/>
+          </output>
+        </subdialog>
+        <param name="REASON.SHORTAGE.CATEGORY" value="SKU.SHORTAGE,PICK.LPN"/>
+        <param name="PICKCONTAINERCONFIRMATION.ENABLED" value="YES"/>
+        <param name="CONFIRMATION.DEFAULT" value="YES"/>
+        <param name="CONFIRMATION.AUTOENTER" value="NO"/>
+        <param name="WAREHOUSELOCATION.RECONFIRM.ENABLED" value="NO"/>
+        <!--SERIAL SETTINGS-->
+        <param name="SERIAL.SCANMODES" value="SCAN WANTED,SCAN UNWANTED"/>
+      </dialog>
+
+      <dialog class="objt.wms.dialog.pick.LocationLPNPickTaskDialog02" visible="NO">
+        <subdialog fkey="6" refid="objt.wms.dialog.inventory.info.ItemInfoDialog01" levels="0,1,2,3,4,5,6,7,8" >
+          <output>
+            <field id="ITEM" source="invoker" value="'TASK'.item" object="true"/>
+          </output>
+        </subdialog>
+        <param name="QUANTITY.SHOW_DEFAULT" value="NO"/>
+        <param name="REASON.SHORTAGE.CATEGORY" value="SKU.SHORTAGE"/>
+        <param name="CONFIRMATION.DEFAULT" value="YES"/>
+        <param name="CONFIRMATION.AUTOENTER" value="YES"/>
+      </dialog>
+
+      <dialog class="objt.wms.dialog.pick.MultiOrderCreateDialog01" visible="NO"
+              roles="wmsdialog.pick.multiorder">
+        <param name="CONFIRMATION.DEFAULT" value="YES"/>
+        <param name="CONFIRMATION.AUTOENTER" value="YES"/>
+        <param name="PICKLISTCONFIRMATION.DEFAULT" value="YES"/>
+        <param name="MAX_RESERVABLE_PICK_LISTS" value="-1"/>
+        <param name="MAX_SELECTABLE_PICK_LISTS" value="-1"/>
+      </dialog>
+
+      <dialog class="objt.wms.dialog.pick.PickCartOpenDialog01" visible="NO"
+              roles="wmsdialog.pick.multiorder">
+        <param name="CONFIRMATION.DEFAULT" value="YES"/>
+        <param name="CONFIRMATION.AUTOENTER" value="YES"/>
+        <param name="LPN.AUTOGENERATE.ENABLED" value="YES"/>
+        <param name="LPN.AUTOGENERATE.INPUTMASK" value="x"/>
+        <!--<param name="LPN.AUTOGENERATE.NUMBERSEQUENCE" value="LPN_SSCC"/>-->
+      </dialog>
+
+      <dialog class="objt.wms.dialog.pick.PickCartLPNOpenDialog01" visible="NO"
+              roles="wmsdialog.pick.multiorder">
+        <param name="CONFIRMATION.DEFAULT" value="YES"/>
+        <param name="LPN.AUTOGENERATE.ENABLED" value="YES"/>
+        <param name="LPN.AUTOGENERATE.INPUTMASK" value="x"/>
+        <!--<param name="LPN.AUTOGENERATE.NUMBERSEQUENCE" value="LPN_SSCC"/>-->
+      </dialog>
+
+      <dialog class="objt.wms.dialog.pick.PickCartCloseDialog01" visible="NO"
+              roles="wmsdialog.pick.multiorder">
+        <param name="CONFIRMATION.DEFAULT" value="YES"/>
+        <param name="CLOSELPN.DEFAULT" value="DROP OFF PICK CART"/>
+      </dialog>
+
+      <dialog class="objt.wms.dialog.pick.PickCartLPNCloseDialog01" visible="NO"
+              roles="wmsdialog.pick.multiorder">
+        <param name="CLOSELPN.DEFAULT" value="YES"/>
+        <param name="CONFIRMATION.DEFAULT" value="YES"/>
+      </dialog>
+
+      <!-- CROSSDOCK -->
+      <dialog class="objt.wms.dialog.crossdock.ContainerCrossDockTaskDialog01" visible="NO">
+        <subdialog fkey="6" refid="objt.wms.dialog.inventory.info.ItemInfoDialog01" levels="0,1,2,3,4,5,6,7" >
+          <output>
+            <field id="ITEM_LIST" source="invoker" value="'TASK'.STATIC(objt.wms.bo.warehousemgt.Tasks;getItemList;BO)" object="true"/>
+          </output>
+        </subdialog>
+        <param name="MAX_STACK_SIZE" value="1"/>
+        <param name="CONFIRMATION.DEFAULT" value="YES"/>
+        <param name="CONFIRMATION.AUTOENTER" value="YES"/>
+      </dialog>
+
+      <!-- OUTBOUND -->
+      <dialog class="objt.wms.dialog.outbound.ContainerOutboundTaskDialog01" visible="NO">
+        <subdialog fkey="6" refid="objt.wms.dialog.inventory.info.ItemInfoDialog01" levels="0,1,2,3,4,5,6,7" >
+          <output>
+            <field id="ITEM_LIST" source="invoker" value="'TASK'.STATIC(objt.wms.bo.warehousemgt.Tasks;getItemList;BO)" object="true"/>
+          </output>
+        </subdialog>
+        <param name="MAX_STACK_SIZE" value="1"/>
+        <param name="CONFIRMATION.DEFAULT" value="YES"/>
+        <param name="CONFIRMATION.AUTOENTER" value="YES"/>
+      </dialog>
+
+      <!-- TRANSFER -->
+      <dialog class="objt.wms.dialog.transfer.ContainerTransferTaskDialog01" visible="NO">
+        <subdialog fkey="6" refid="objt.wms.dialog.inventory.info.ItemInfoDialog01" levels="0,1,2,3,4,5" >
+          <output>
+            <field id="ITEM_LIST" source="invoker" value="'TASK'.STATIC(objt.wms.bo.warehousemgt.Tasks;getItemList;BO)" object="true"/>
+          </output>
+        </subdialog>
+        <param name="MAX_STACK_SIZE" value="1"/>
+        <param name="CONFIRMATION.DEFAULT" value="YES"/>
+        <param name="CONFIRMATION.AUTOENTER" value="YES"/>
+      </dialog>
+
+      <!-- LOAD -->
+      <dialog class="objt.wms.dialog.ship.LPNLoadTaskDialog01" visible="NO">
+        <subdialog fkey="6" refid="objt.wms.dialog.inventory.info.ItemInfoDialog01" levels="0,1,2,3,4,5" >
+          <output>
+            <field id="ITEM_LIST" source="invoker" value="'TASK'.STATIC(objt.wms.bo.warehousemgt.Tasks;getItemList;BO)" object="true"/>
+          </output>
+        </subdialog>
+        <param name="MAX_STACK_SIZE" value="1"/>
+        <param name="CONFIRMATION.DEFAULT" value="YES"/>
+        <param name="CONFIRMATION.AUTOENTER" value="YES"/>
+      </dialog>
+
+      <!-- UNLOAD -->
+      <dialog class="objt.wms.dialog.ship.LPNUnloadTaskDialog01" visible="NO">
+        <subdialog fkey="6" refid="objt.wms.dialog.inventory.info.ItemInfoDialog01" levels="0,1,2,3" >
+          <output>
+            <field id="ITEM_LIST" source="invoker" value="'TASK'.STATIC(objt.wms.bo.warehousemgt.Tasks;getItemList;BO)" object="true"/>
+          </output>
+        </subdialog>
+        <param name="MAX_STACK_SIZE" value="1"/>
+        <param name="CONFIRMATION.DEFAULT" value="YES"/>
+        <param name="CONFIRMATION.AUTOENTER" value="YES"/>
+      </dialog>
+
+      <!-- REPLENISH -->
+      <dialog class="objt.wms.dialog.replenish.ContainerReplenishTaskDialog01" visible="NO">
+        <subdialog fkey="6" refid="objt.wms.dialog.inventory.info.ItemInfoDialog01" levels="0,1,2,3,4,5,6,7,8" >
+          <output>
+            <field id="ITEM_LIST" source="invoker" value="'TASK'.STATIC(objt.wms.bo.warehousemgt.Tasks;getItemList;BO)" object="true"/>
+          </output>
+        </subdialog>
+        <param name="MAX_STACK_SIZE" value="1"/>
+        <param name="CONFIRMATION.DEFAULT" value="YES"/>
+        <param name="CONFIRMATION.AUTOENTER" value="YES"/>
+        <param name="PICKCARTCONFIRMATION.ENABLED" value="NO"/>
+      </dialog>
+
+      <dialog class="objt.wms.dialog.replenish.ContainerContentReplenishTaskDialog01" visible="NO">
+        <subdialog fkey="6" refid="objt.wms.dialog.inventory.info.ItemInfoDialog01" levels="0,1,2,3,4,5,6,7,8,9" >
+          <output>
+            <field id="ITEM" source="invoker" value="'TASK'.item" object="true"/>
+          </output>
+        </subdialog>
+        <param name="REASON.SHORTAGE.CATEGORY" value="SKU.SHORTAGE"/>
+        <param name="CONFIRMATION.DEFAULT" value="YES"/>
+        <param name="CONFIRMATION.AUTOENTER" value="YES"/>
+      </dialog>
+
+      <dialog class="objt.wms.dialog.replenish.BulkReplenishTaskDialog01" visible="NO">
+        <subdialog fkey="6" refid="objt.wms.dialog.inventory.info.ItemInfoDialog01" levels="0,1,2,3,4,5,6,7,8,9" >
+          <output>
+            <field id="ITEM" source="invoker" value="'TASK'.item" object="true"/>
+          </output>
+        </subdialog>
+        <param name="REASON.SHORTAGE.CATEGORY" value="SKU.SHORTAGE"/>
+        <param name="CONFIRMATION.DEFAULT" value="YES"/>
+        <param name="CONFIRMATION.AUTOENTER" value="YES"/>
+      </dialog>
+
+      <dialog class="objt.wms.dialog.replenish.LocationReplenishTaskDialog01" visible="NO">
+        <subdialog fkey="6" refid="objt.wms.dialog.inventory.info.ItemInfoDialog01" levels="0,1,2,3,4,5,6,7,8" >
+          <output>
+            <field id="ITEM" source="invoker" value="'TASK'.item" object="true"/>
+          </output>
+        </subdialog>
+        <param name="REASON.SHORTAGE.CATEGORY" value="SKU.SHORTAGE"/>
+        <param name="CONFIRMATION.DEFAULT" value="YES"/>
+        <param name="CONFIRMATION.AUTOENTER" value="YES"/>
+      </dialog>
+
+      <dialog class="objt.wms.dialog.replenish.LocationLPNReplenishTaskDialog01" visible="NO">
+        <subdialog fkey="6" refid="objt.wms.dialog.inventory.info.ItemInfoDialog01" levels="0,1,2,3,4,5,6,7,8,9" >
+          <output>
+            <field id="ITEM" source="invoker" value="'TASK'.item" object="true"/>
+          </output>
+        </subdialog>
+        <param name="REASON.SHORTAGE.CATEGORY" value="SKU.SHORTAGE"/>
+        <param name="CONFIRMATION.DEFAULT" value="YES"/>
+        <param name="CONFIRMATION.AUTOENTER" value="YES"/>
+      </dialog>
+
+      <dialog class="objt.wms.dialog.replenish.ReplenishListStartDialog" visible="NO">
+        <param name="CONFIRMATION.DEFAULT" value="YES"/>
+        <param name="CONFIRMATION.AUTOENTER" value="NO"/>
+        <param name="LPN.AUTOGENERATE.ENABLED" value="YES"/>
+        <param name="LPN.AUTOGENERATE.INPUTMASK" value="x"/>
+        <!--<param name="LPN.AUTOGENERATE.NUMBERSEQUENCE" value="LPN_SSCC"/>-->
+      </dialog>
+
+      <dialog class="objt.wms.dialog.replenish.ReplenishListStopDialog" id="REPLENISH_LIST_STOP_TASK" visible="NO"
+              roles="wmsdialog.replenish.grouped">
+        <param name="CONFIRMATION.DEFAULT" value="YES"/>
+        <param name="CONFIRMATION.AUTOENTER" value="NO"/>
+        <param name="CONFIRMATION.ACTIVATIONDIALOG.CLASS" value="objt.wms.dialog.TaskSelectDialog"/>
+      </dialog>
+
+      <dialog class="objt.wms.dialog.replenish.DropContainerDialog" id="DROP_CONTAINER" visible="NO">
+        <param name="CONFIRMATION.DEFAULT" value="YES"/>
+        <param name="CONFIRMATION.AUTOENTER" value="NO"/>
+        <param name="CONFIRMATION.ACTIVATIONDIALOG.CLASS" value="objt.wms.dialog.TaskSelectDialog"/>
+      </dialog>
+
+      <!-- INDIRECT -->
+      <dialog class="objt.wms.dialog.IndirectTaskDialog" visible="NO">
+        <param name="CONFIRMATION.DEFAULT" value="YES"/>
+      </dialog>
+
+    </menu>
+
+
+
+    <!-- RECEIPT MENU-->
+    <menu title="RECEIPT MENU" systemdirected="NO" icon="menu_receipt.png">
+
+      <dialog class="objt.wms.dialog.inbound.LPNOpenDialog" visible="NO" title="OPEN LPN">
+        <!-- GENERAL SETTINGS -->
+        <param name="CONFIRMATION.DEFAULT" value="YES"/>
+        <param name="CONFIRMATION.AUTOENTER" value="NO"/>
+      </dialog>
+
+      <dialog class="objt.wms.dialog.inbound.LPNCloseDialog" visible="NO" title="CLOSE LPN">
+        <!-- GENERAL SETTINGS -->
+        <param name="CONFIRMATION.DEFAULT" value="YES"/>
+        <param name="CONFIRMATION.AUTOENTER" value="NO"/>
+        <!-- PRINT SETTINGS -->
+        <param name="PRINT.ONESTEP.ENABLED" value="YES"/>
+        <param name="PRINT.ONESTEP.DIALOGID" value="INLINE_INBOUND_LPN_PRINT"/>
+        <param name="PRINT.ONESTEP.DEFAULT" value="YES"/>
+        <param name="PRINT.ONESTEP.AUTOENTER" value="NO"/>
+        <param name="PRINT.TWOSTEP.ENABLED" value="YES"/>
+        <param name="PRINT.TWOSTEP.DIALOGID" value="INLINE_INBOUND_LPN_PRINT"/>
+        <param name="PRINT.TWOSTEP.DEFAULT" value="YES"/>
+        <param name="PRINT.TWOSTEP.AUTOENTER" value="NO"/>
+        <param name="PRINT.BLIND.ENABLED" value="YES"/>
+        <param name="PRINT.BLIND.DIALOGID" value="INLINE_INBOUND_LPN_PRINT"/>
+        <param name="PRINT.BLIND.DEFAULT" value="YES"/>
+        <param name="PRINT.BLIND.AUTOENTER" value="NO"/>
+      </dialog>
+
+      <menu title="RECEIPT" systemdirected="NO">
+
+        <dialog class="objt.wms.dialog.inbound.LPNInboundDialog" id="LPNINBOUNDRECEIPT" title="RECEIPT"
+                roles="wmsdialog.receipt.lpnreceipt" >
+          <!-- INBOUND ORDER SELECTION SETTINGS -->
+          <param name="INBOUND_TYPE" value="RECEIPT"/>
+          <param name="RECEIPT_TYPES" value="ONESTEP,TWOSTEP,BLIND"/>
+          <param name="SELECTINBOUNDORDER.RECEIPT.ATTRIBUTEPATH" value="id% %supplier.CONCAT(BO;%(%description%)%)"/>
+          <param name="SELECTINBOUNDORDER.RECEIPT.INFOATTRIBUTEPATH" value="description"/>
+          <param name="SELECTINBOUNDORDER.MAXRECORDS" value="0"/>
+          <param name="SELECTINBOUNDORDER.AUTOENTER" value="NO"/>
+          <param name="INBOUNDORDERCREATEDIALOG.ID" value="INBOUNDRECEIPTCREATE"/>
+          <!-- NESTED PUTAWAY SETTINGS -->
+          <param name="NESTED_PUTAWAY.ENABLED" value="NO"/>
+          <!-- TWOSTEP SETTINGS -->
+          <param name="QTY.ADJUST.TWOSTEP.ENABLED" value="YES"/>
+          <!-- BARCODE SETTINGS -->
+          <param name="SCAN_BARCODE.ENABLED" value="YES"/>
+          <param name="PRODUCTION_DATE.IDENTIFICATION.ENABLED" value="NO"/>
+          <param name="PURCHASE_ORDER.IDENTIFICATION.BLIND.ENABLED" value="YES"/>
+          <param name="PURCHASE_ORDER.IDENTIFICATION.BLIND.REQUIRED" value="NO"/>
+          <param name="PURCHASE_ORDER.IDENTIFICATION.ONESTEP.REQUIRED" value="NO"/>
+          <!-- LPN AUTO GENERATION SETTINGS -->
+          <param name="LPN.AUTOGENERATE.ENABLED" value="YES"/>
+          <param name="LPN.AUTOGENERATE.INPUTMASK" value="x"/>
+          <!--<param name="LPN.AUTOGENERATE.NUMBERSEQUENCE" value="LPN_SSCC"/>-->
+          <!--<param name="CONTAINER.TYPES" value="EUR"/>-->
+          <!-- INPUT & VISUALIZATION SETTINGS  -->
+          <param name="LPN.BARCODE.REQUIRED" value="YES"/>
+          <param name="LOTID.USE_RECEIPTID" value="NO"/>
+          <param name="DTSBESTBEFORE.INPUT.FORMAT" value="yyMMdd"/>
+          <param name="DTSBESTBEFORE.OUTPUT.FORMAT" value="dd/MM/yy"/>
+          <param name="PRODUCTIONDATE.INPUT.FORMAT" value="yyMMdd"/>
+          <param name="PRODUCTIONDATE.OUTPUT.FORMAT" value="dd/MM/yy"/>
+          <!--SERIAL SETTINGS-->
+          <param name="SERIAL.SCANMODES" value="SCAN WANTED"/>
+          <!-- PRINT SETTINGS -->
+          <param name="PRINT.ONESTEP.ENABLED" value="YES"/>
+          <param name="PRINT.ONESTEP.DIALOGID" value="INLINE_INBOUND_LPN_PRINT"/>
+          <param name="PRINT.ONESTEP.DEFAULT" value="AUTO"/>
+          <param name="PRINT.ONESTEP.AUTOENTER" value="NO"/>
+          <param name="PRINT.TWOSTEP.ENABLED" value="NO"/>
+          <param name="PRINT.BLIND.ENABLED" value="YES"/>
+          <param name="PRINT.BLIND.DIALOGID" value="INLINE_INBOUND_LPN_PRINT"/>
+          <param name="PRINT.BLIND.DEFAULT" value="AUTO"/>
+          <param name="PRINT.BLIND.AUTOENTER" value="NO"/>
+          <param name="PRINT.ASN.ENABLED" value="NO"/>
+          <param name="PRINT.ASN.DIALOGID" value="INLINE_INBOUND_LPN_PRINT"/>
+          <param name="PRINT.ASN.DEFAULT" value="AUTO"/>
+          <param name="PRINT.ASN.AUTOENTER" value="NO"/>
+          <!-- CONFIRMATION SETTINGS -->
+          <param name="CONFIRMATION.DEFAULT" value="YES"/>
+          <param name="CONFIRMATION.AUTOENTER" value="NO"/>
+          <!-- MIXED LPN SETTINGS -->
+          <param name="MIXED_LPN.ENABLED" value="YES"/>
+          <param name="NEXT_ITEM.AUTOENTER" value="NO"/>
+          <param name="NEXT_ITEM.DEFAULT" value="NEXT_ITEM"/>
+          <!-- ASN SETTINGS -->
+          <param name="ASN.ENABLED" value="YES"/>
+          <param name="ASN.AUTOENTER" value="NO"/>
+          <param name="ASN.QTY.ADJUST.ENABLED" value="USER"/>
+          <param name="ASN.QTY.ADJUST.DEFAULT" value="YES"/>
+          <param name="ASN.QTY.ADJUST.AUTOENTER" value="NO"/>
+        </dialog>
+
+
+        <dialog class="objt.wms.dialog.inbound.LPNInboundDialog" id="LPNINBOUNDRECEIPT_UNIFORM" title="RECEIPT_UNIFORM"
+                roles="wmsdialog.receipt.lpnreceipt.uniform" >
+          <!-- INBOUND ORDER SELECTION SETTINGS -->
+          <param name="INBOUND_TYPE" value="RECEIPT"/>
+          <param name="RECEIPT_TYPES" value="ONESTEP,TWOSTEP,BLIND"/>
+          <param name="SELECTINBOUNDORDER.RECEIPT.ATTRIBUTEPATH" value="id% %supplier.CONCAT(BO;%(%description%)%)"/>
+          <param name="SELECTINBOUNDORDER.RECEIPT.INFOATTRIBUTEPATH" value="description"/>
+          <param name="SELECTINBOUNDORDER.MAXRECORDS" value="0"/>
+          <param name="SELECTINBOUNDORDER.AUTOENTER" value="NO"/>
+          <param name="INBOUNDORDERCREATEDIALOG.ID" value="INBOUNDRECEIPTCREATE"/>
+          <!-- NESTED PUTAWAY SETTINGS -->
+          <param name="NESTED_PUTAWAY.ENABLED" value="NO"/>
+          <!-- TWOSTEP SETTINGS -->
+          <param name="QTY.ADJUST.TWOSTEP.ENABLED" value="YES"/>
+          <!-- BARCODE SETTINGS -->
+          <param name="SCAN_BARCODE.ENABLED" value="YES"/>
+          <param name="PRODUCTION_DATE.IDENTIFICATION.ENABLED" value="NO"/>
+          <param name="PURCHASE_ORDER.IDENTIFICATION.BLIND.ENABLED" value="YES"/>
+          <param name="PURCHASE_ORDER.IDENTIFICATION.BLIND.REQUIRED" value="NO"/>
+          <param name="PURCHASE_ORDER.IDENTIFICATION.ONESTEP.REQUIRED" value="NO"/>
+          <!-- LPN AUTO GENERATION SETTINGS -->
+          <param name="LPN.AUTOGENERATE.ENABLED" value="YES"/>
+          <param name="LPN.AUTOGENERATE.INPUTMASK" value="x"/>
+          <!--<param name="LPN.AUTOGENERATE.NUMBERSEQUENCE" value="LPN_SSCC"/>-->
+          <!--<param name="CONTAINER.TYPES" value="EUR"/>-->
+          <!-- INPUT & VISUALIZATION SETTINGS  -->
+          <param name="LPN.BARCODE.REQUIRED" value="YES"/>
+          <param name="LOTID.USE_RECEIPTID" value="NO"/>
+          <param name="DTSBESTBEFORE.INPUT.FORMAT" value="yyMMdd"/>
+          <param name="DTSBESTBEFORE.OUTPUT.FORMAT" value="dd/MM/yy"/>
+          <param name="PRODUCTIONDATE.INPUT.FORMAT" value="yyMMdd"/>
+          <param name="PRODUCTIONDATE.OUTPUT.FORMAT" value="dd/MM/yy"/>
+          <!--SERIAL SETTINGS-->
+          <param name="SERIAL.SCANMODES" value="SCAN WANTED"/>
+          <!-- PRINT SETTINGS -->
+          <param name="PRINT.ONESTEP.ENABLED" value="YES"/>
+          <param name="PRINT.ONESTEP.DIALOGID" value="INLINE_INBOUND_LPN_PRINT"/>
+          <param name="PRINT.ONESTEP.DEFAULT" value="AUTO"/>
+          <param name="PRINT.ONESTEP.AUTOENTER" value="NO"/>
+          <param name="PRINT.TWOSTEP.ENABLED" value="NO"/>
+          <param name="PRINT.BLIND.ENABLED" value="YES"/>
+          <param name="PRINT.BLIND.DIALOGID" value="INLINE_INBOUND_LPN_PRINT"/>
+          <param name="PRINT.BLIND.DEFAULT" value="AUTO"/>
+          <param name="PRINT.BLIND.AUTOENTER" value="NO"/>
+          <param name="PRINT.ASN.ENABLED" value="NO"/>
+          <param name="PRINT.ASN.DIALOGID" value="INLINE_INBOUND_LPN_PRINT"/>
+          <param name="PRINT.ASN.DEFAULT" value="AUTO"/>
+          <param name="PRINT.ASN.AUTOENTER" value="NO"/>
+          <!-- CONFIRMATION SETTINGS -->
+          <param name="CONFIRMATION.DEFAULT" value="YES"/>
+          <param name="CONFIRMATION.AUTOENTER" value="NO"/>
+          <!-- MIXED LPN SETTINGS -->
+          <param name="MIXED_LPN.ENABLED" value="NO"/>
+          <!-- ASN SETTINGS -->
+          <param name="ASN.ENABLED" value="YES"/>
+          <param name="ASN.AUTOENTER" value="NO"/>
+          <param name="ASN.QTY.ADJUST.ENABLED" value="USER"/>
+          <param name="ASN.QTY.ADJUST.DEFAULT" value="YES"/>
+          <param name="ASN.QTY.ADJUST.AUTOENTER" value="NO"/>
+        </dialog>
+
+        <dialog class="objt.wms.dialog.inbound.LPNOpenCloseDialog" title="OPEN LPN" id="LPNOPENCLOSE_OPEN_RECEIPT"
+                roles="wmsdialog.receipt.lpnreceipt,wmsdialog.receipt.lpnreceipt.uniform" icon="menu_lpn_open.png">
+          <!-- GENERAL SETTINGS -->
+          <param name="CONFIRMATION.DEFAULT" value="YES"/>
+          <param name="CONFIRMATION.AUTOENTER" value="NO"/>
+          <!-- OPEN/CLOSE SETTING -->
+          <param name="CONTEXT" value="OPEN_LPN"/>
+        </dialog>
+
+        <dialog class="objt.wms.dialog.inbound.LPNOpenCloseDialog" title="CLOSE LPN" id="LPNOPENCLOSE_CLOSE_RECEIPT"
+                roles="wmsdialog.receipt.lpnreceipt,wmsdialog.receipt.lpnreceipt.uniform" icon="menu_lpn_closed.png">
+          <!-- GENERAL SETTINGS -->
+          <param name="CONFIRMATION.DEFAULT" value="YES"/>
+          <param name="CONFIRMATION.AUTOENTER" value="NO"/>
+          <!-- OPEN/CLOSE SETTING -->
+          <param name="CONTEXT" value="CLOSE_LPN"/>
+          <param name="NESTLPNCLOSE.DIALOGID" value="NESTLPNCLOSE_RECEIPT"/>
+        </dialog>
+
+      </menu>
+
+      <dialog class="objt.wms.dialog.inbound.InboundOrderCreateDialog" id="INBOUNDRECEIPTCREATE"
+              title="CREATE BLIND RECEIPT" roles="wmsdialog.receipt.create" visible="NO">
+        <!-- INBOUND ORDER SELECTION SETTINGS -->
+        <param name="INBOUND_TYPE" value="RECEIPT"/>
+        <param name="INBOUNDORDERDESCRIPTION.ENABLED" value="YES"/>
+        <param name="SUPPLIERCUSTOMER.MAXRECORDS" value="10"/>
+        <param name="SUPPLIERCUSTOMER.SUPPLIER.ATTRIBUTEPATH" value="description"/>
+        <param name="SUPPLIERCUSTOMER.SUPPLIER.INFOATTRIBUTEPATH" value="name"/>
+        <param name="SUPPLIERCUSTOMER.SUPPLIER.NONE.WILDCARD" value="0"/>
+        <param name="SELECTOPENINBOUNDORDER.MAXRECORDS" value="10"/>
+        <param name="SELECTOPENINBOUNDORDER.ATTRIBUTEPATH" value="id% %supplier.CONCAT(BO;%(%description%)%)"/>
+        <param name="SELECTOPENINBOUNDORDER.INFOATTRIBUTEPATH" value="description"/>
+
+        <!-- CONFIRMATION SETTINGS -->
+        <param name="CONFIRMATION.DEFAULT" value="YES"/>
+        <param name="CONFIRMATION.AUTOENTER" value="NO"/>
+      </dialog>
+
+      <menu title="RECEIPT + NEST" systemdirected="NO">
+
+        <dialog class="objt.wms.dialog.inbound.LPNInboundDialog" id="LPNINBOUNDRECEIPTNEST" title="RECEIPT + NEST"
+                roles="wmsdialog.receiptnest.lpnreceipt" >
+          <!-- INBOUND ORDER SELECTION SETTINGS -->
+          <param name="INBOUND_TYPE" value="RECEIPT"/>
+          <param name="SELECTINBOUNDORDER.RECEIPT.ATTRIBUTEPATH" value="id% %supplier.CONCAT(BO;%(%description%)%)"/>
+          <param name="SELECTINBOUNDORDER.RECEIPT.INFOATTRIBUTEPATH" value="description"/>
+          <param name="SELECTINBOUNDORDER.MAXRECORDS" value="0"/>
+          <param name="SELECTINBOUNDORDER.AUTOENTER" value="NO"/>
+          <param name="INBOUNDORDERCREATEDIALOG.ID" value="INBOUNDRECEIPTCREATE"/>
+          <!-- NESTED PUTAWAY SETTINGS -->
+          <param name="NESTED_PUTAWAY.ENABLED" value="YES"/>
+          <param name="SCAN_TOP_LPN.ENABLED" value="YES"/>
+          <param name="INLINE_TOPLPN_CREATION.ENABLED" value="YES"/>
+          <param name="TOPLPN.AUTOGENERATE.ENABLED" value="YES"/>
+          <param name="TOPLPN.AUTOGENERATE.INPUTMASK" value="x"/>
+          <param name="CREATETOPLPN.DEFAULT" value="YES"/>
+          <param name="CREATETOPLPN.AUTOENTER" value="NO"/>
+          <param name="NESTLPNCREATEDIALOG.ID" value="NESTLPNCREATE_RECEIPT"/>
+          <!-- TWOSTEP SETTINGS -->
+          <param name="QTY.ADJUST.TWOSTEP.ENABLED" value="YES"/>
+          <!-- BARCODE SETTINGS -->
+          <param name="SCAN_BARCODE.ENABLED" value="YES"/>
+          <param name="LPN_IDENTIFIERS" value="00"/>
+          <param name="ITEM_IDENTIFIERS" value="02,01,P"/>
+          <param name="LOT_IDENTIFIERS" value="10,H"/>
+          <param name="PURCHASE_ORDER.IDENTIFICATION.BLIND.ENABLED" value="YES"/>
+          <param name="PURCHASE_ORDER.IDENTIFICATION.BLIND.REQUIRED" value="NO"/>
+          <param name="PURCHASE_ORDER.IDENTIFICATION.ONESTEP.REQUIRED" value="NO"/>
+          <!--<param name="PRODUCTION_DATE_IDENTIFIERS" value="11"/>-->
+          <param name="BEST_BEFORE_IDENTIFIERS" value="15"/>
+          <param name="QTY_IDENTIFIERS" value="37,30,Q"/>
+          <param name="DTSBESTBEFORE.BARCODE.FORMAT" value="yyMMdd"/>
+          <param name="PRODUCTIONDATE.BARCODE.FORMAT" value="yyMMdd"/>
+          <!-- LPN AUTO GENERATION SETTINGS -->
+          <param name="LPN.AUTOGENERATE.ENABLED" value="YES"/>
+          <param name="LPN.AUTOGENERATE.INPUTMASK" value="x"/>
+          <!--<param name="LPN.AUTOGENERATE.NUMBERSEQUENCE" value="LPN_SSCC"/>-->
+          <!--<param name="CONTAINER.TYPES" value="EUR"/>-->
+          <!-- INPUT & VISUALIZATION SETTINGS  -->
+          <param name="LPN.BARCODE.REQUIRED" value="YES"/>
+          <param name="LOTID.USE_RECEIPTID" value="NO"/>
+          <param name="DTSBESTBEFORE.INPUT.FORMAT" value="yyMMdd"/>
+          <param name="DTSBESTBEFORE.OUTPUT.FORMAT" value="dd/MM/yy"/>
+          <param name="PRODUCTIONDATE.INPUT.FORMAT" value="yyMMdd"/>
+          <param name="PRODUCTIONDATE.OUTPUT.FORMAT" value="dd/MM/yy"/>
+          <!--SERIAL SETTINGS-->
+          <param name="SERIAL.SCANMODES" value="SCAN WANTED"/>
+          <!-- PRINT SETTINGS -->
+          <param name="PRINT.ONESTEP.ENABLED" value="YES"/>
+          <param name="PRINT.ONESTEP.DIALOGID" value="INLINE_INBOUND_LPN_PRINT"/>
+          <param name="PRINT.ONESTEP.DEFAULT" value="AUTO"/>
+          <param name="PRINT.ONESTEP.AUTOENTER" value="NO"/>
+          <param name="PRINT.TWOSTEP.ENABLED" value="NO"/>
+          <param name="PRINT.BLIND.ENABLED" value="YES"/>
+          <param name="PRINT.BLIND.DIALOGID" value="INLINE_INBOUND_LPN_PRINT"/>
+          <param name="PRINT.BLIND.DEFAULT" value="AUTO"/>
+          <param name="PRINT.BLIND.AUTOENTER" value="NO"/>
+          <param name="PRINT.ASN.ENABLED" value="NO"/>
+          <param name="PRINT.ASN.DIALOGID" value="INLINE_INBOUND_LPN_PRINT"/>
+          <param name="PRINT.ASN.DEFAULT" value="AUTO"/>
+          <param name="PRINT.ASN.AUTOENTER" value="NO"/>
+          <!-- CONFIRMATION SETTINGS -->
+          <param name="CONFIRMATION.DEFAULT" value="YES"/>
+          <param name="CONFIRMATION.AUTOENTER" value="NO"/>
+          <!-- MIXED LPN SETTINGS -->
+          <param name="MIXED_LPN.ENABLED" value="YES"/>
+          <param name="NEXT_ITEM.AUTOENTER" value="NO"/>
+          <param name="NEXT_ITEM.DEFAULT" value="NEXT_ITEM"/>
+          <!-- ASN SETTINGS -->
+          <param name="ASN.ENABLED" value="YES"/>
+          <param name="ASN.AUTOENTER" value="NO"/>
+          <param name="ASN.QTY.ADJUST.ENABLED" value="USER"/>
+          <param name="ASN.QTY.ADJUST.DEFAULT" value="YES"/>
+          <param name="ASN.QTY.ADJUST.AUTOENTER" value="NO"/>
+        </dialog>
+
+
+        <dialog class="objt.wms.dialog.inbound.LPNInboundDialog" id="LPNINBOUNDRECEIPTNEST_UNIFORM" title="RECEIPT + NEST UNIFORM"
+                roles="wmsdialog.receiptnest.lpnreceipt.uniform" >
+          <!-- INBOUND ORDER SELECTION SETTINGS -->
+          <param name="INBOUND_TYPE" value="RECEIPT"/>
+          <param name="SELECTINBOUNDORDER.RECEIPT.ATTRIBUTEPATH" value="id% %supplier.CONCAT(BO;%(%description%)%)"/>
+          <param name="SELECTINBOUNDORDER.RECEIPT.INFOATTRIBUTEPATH" value="description"/>
+          <param name="SELECTINBOUNDORDER.MAXRECORDS" value="0"/>
+          <param name="SELECTINBOUNDORDER.AUTOENTER" value="NO"/>
+          <param name="INBOUNDORDERCREATEDIALOG.ID" value="INBOUNDRECEIPTCREATE"/>
+          <!-- NESTED PUTAWAY SETTINGS -->
+          <param name="NESTED_PUTAWAY.ENABLED" value="YES"/>
+          <param name="SCAN_TOP_LPN.ENABLED" value="YES"/>
+          <param name="INLINE_TOPLPN_CREATION.ENABLED" value="YES"/>
+          <param name="TOPLPN.AUTOGENERATE.ENABLED" value="YES"/>
+          <param name="TOPLPN.AUTOGENERATE.INPUTMASK" value="x"/>
+          <param name="CREATETOPLPN.DEFAULT" value="YES"/>
+          <param name="CREATETOPLPN.AUTOENTER" value="NO"/>
+          <param name="NESTLPNCREATEDIALOG.ID" value="NESTLPNCREATE_RECEIPT"/>
+          <!-- TWOSTEP SETTINGS -->
+          <param name="QTY.ADJUST.TWOSTEP.ENABLED" value="YES"/>
+          <!-- BARCODE SETTINGS -->
+          <param name="SCAN_BARCODE.ENABLED" value="YES"/>
+          <param name="LPN_IDENTIFIERS" value="00"/>
+          <param name="ITEM_IDENTIFIERS" value="02,01,P"/>
+          <param name="LOT_IDENTIFIERS" value="10,H"/>
+          <param name="PURCHASE_ORDER.IDENTIFICATION.BLIND.ENABLED" value="YES"/>
+          <param name="PURCHASE_ORDER.IDENTIFICATION.BLIND.REQUIRED" value="NO"/>
+          <param name="PURCHASE_ORDER.IDENTIFICATION.ONESTEP.REQUIRED" value="NO"/>
+          <!--<param name="PRODUCTION_DATE_IDENTIFIERS" value="11"/>-->
+          <param name="BEST_BEFORE_IDENTIFIERS" value="15"/>
+          <param name="QTY_IDENTIFIERS" value="37,30,Q"/>
+          <param name="DTSBESTBEFORE.BARCODE.FORMAT" value="yyMMdd"/>
+          <param name="PRODUCTIONDATE.BARCODE.FORMAT" value="yyMMdd"/>
+          <!-- LPN AUTO GENERATION SETTINGS -->
+          <param name="LPN.AUTOGENERATE.ENABLED" value="YES"/>
+          <param name="LPN.AUTOGENERATE.INPUTMASK" value="x"/>
+          <!--<param name="LPN.AUTOGENERATE.NUMBERSEQUENCE" value="LPN_SSCC"/>-->
+          <!--<param name="CONTAINER.TYPES" value="EUR"/>-->
+          <!-- INPUT & VISUALIZATION SETTINGS  -->
+          <param name="LPN.BARCODE.REQUIRED" value="YES"/>
+          <param name="LOTID.USE_RECEIPTID" value="NO"/>
+          <param name="DTSBESTBEFORE.INPUT.FORMAT" value="yyMMdd"/>
+          <param name="DTSBESTBEFORE.OUTPUT.FORMAT" value="dd/MM/yy"/>
+          <param name="PRODUCTIONDATE.INPUT.FORMAT" value="yyMMdd"/>
+          <param name="PRODUCTIONDATE.OUTPUT.FORMAT" value="dd/MM/yy"/>
+          <!--SERIAL SETTINGS-->
+          <param name="SERIAL.SCANMODES" value="SCAN WANTED"/>
+          <!-- PRINT SETTINGS -->
+          <param name="PRINT.ONESTEP.ENABLED" value="YES"/>
+          <param name="PRINT.ONESTEP.DIALOGID" value="INLINE_INBOUND_LPN_PRINT"/>
+          <param name="PRINT.ONESTEP.DEFAULT" value="AUTO"/>
+          <param name="PRINT.ONESTEP.AUTOENTER" value="NO"/>
+          <param name="PRINT.TWOSTEP.ENABLED" value="NO"/>
+          <param name="PRINT.BLIND.ENABLED" value="YES"/>
+          <param name="PRINT.BLIND.DIALOGID" value="INLINE_INBOUND_LPN_PRINT"/>
+          <param name="PRINT.BLIND.DEFAULT" value="AUTO"/>
+          <param name="PRINT.BLIND.AUTOENTER" value="NO"/>
+          <param name="PRINT.ASN.ENABLED" value="NO"/>
+          <param name="PRINT.ASN.DIALOGID" value="INLINE_INBOUND_LPN_PRINT"/>
+          <param name="PRINT.ASN.DEFAULT" value="AUTO"/>
+          <param name="PRINT.ASN.AUTOENTER" value="NO"/>
+          <!-- CONFIRMATION SETTINGS -->
+          <param name="CONFIRMATION.DEFAULT" value="YES"/>
+          <param name="CONFIRMATION.AUTOENTER" value="NO"/>
+          <!-- MIXED LPN SETTINGS -->
+          <param name="MIXED_LPN.ENABLED" value="NO"/>
+          <!-- ASN SETTINGS -->
+          <param name="ASN.ENABLED" value="YES"/>
+          <param name="ASN.AUTOENTER" value="NO"/>
+          <param name="ASN.QTY.ADJUST.ENABLED" value="USER"/>
+          <param name="ASN.QTY.ADJUST.DEFAULT" value="YES"/>
+          <param name="ASN.QTY.ADJUST.AUTOENTER" value="NO"/>
+        </dialog>
+        <dialog class="objt.wms.dialog.inbound.NestLPNCreateDialog01" id="NESTLPNCREATE_RECEIPT"
+                roles="wmsdialog.receiptnest.manage" visible="YES" >
+          <param name="TOPLPN.BARCODE.REQUIRED" value="YES"/>
+          <param name="LPN.AUTOGENERATE.ENABLED" value="YES"/>
+          <param name="LPN.AUTOGENERATE.INPUTMASK" value="x"/>
+          <!--<param name="LPN.AUTOGENERATE.NUMBERSEQUENCE" value="LPN_SSCC"/>-->
+          <!--<param name="CONTAINER.TYPES" value="EUR,CHEP"/>-->
+          <!-- CONFIRMATION SETTINGS -->
+          <param name="CONFIRMATION.DEFAULT" value="YES"/>
+          <param name="CONFIRMATION.AUTOENTER" value="NO"/>
+          <param name="PRINTLABEL.DIALOGID" value="INLINE_INBOUND_NESTLPN_CREATE_PRINT"/>
+          <param name="NESTLPNADD.DIALOGID" value="NESTLPNADDLPN_RECEIPT"/>
+        </dialog>
+
+        <dialog class="objt.wms.dialog.inbound.NestLPNAddLPNDialog01" id="NESTLPNADDLPN_RECEIPT"
+                roles="wmsdialog.receiptnest.manage" icon="menu_lpn_add.png">
+          <param name="TOPLPN.BARCODE.REQUIRED" value="NO"/>
+          <param name="LPN.BARCODE.REQUIRED" value="NO"/>
+          <param name="STOP.DEFAULT" value="YES CLOSE TOP LPN"/>
+          <param name="STOP.AUTOENTER" value="NO"/>
+          <!--<param name="TOPLPN.AUTO_OPEN_TOP_LPN" value="YES"/>-->
+        </dialog>
+
+        <dialog class="objt.wms.dialog.inbound.NestLPNRemoveLPNDialog01" id="NESTLPNREMOVELPN_RECEIPT"
+                roles="wmsdialog.receiptnest.manage" icon="menu_lpn_remove.png">
+          <param name="TOPLPN.BARCODE.REQUIRED" value="NO"/>
+          <param name="LPN.BARCODE.REQUIRED" value="NO"/>
+          <param name="STOP.DEFAULT" value="YES CLOSE TOP LPN"/>
+          <param name="STOP.AUTOENTER" value="NO"/>
+          <!--<param name="TOPLPN.AUTO_OPEN_TOP_LPN" value="YES"/>-->
+          <param name="NESTLPNADD.DIALOGID" value="NESTLPNADDLPN_RECEIPT"/>
+        </dialog>
+
+        <dialog class="objt.wms.dialog.inbound.NestLPNCloseDialog01" id="NESTLPNCLOSE_RETURN" visible="NO"
+                roles="wmsdialog.receiptnest.manage">
+          <param name="TOPLPN.BARCODE.REQUIRED" value="NO"/>
+          <param name="HEIGHT.ENABLED" value="YES"/>
+          <param name="OVERHANG.DEFAULT" value="NO"/>
+          <param name="OVERHANG.AUTOENTER" value="NO"/>
+          <param name="DEPTH.ENABLED" value="YES"/>
+          <param name="WIDTH.ENABLED" value="YES"/>
+          <param name="WEIGHT.ENABLED" value="NO"/>
+          <param name="CONFIRMATION.DEFAULT" value="YES"/>
+          <param name="CONFIRMATION.AUTOENTER" value="NO"/>
+          <param name="PRINTLABEL.DIALOGID" value="INLINE_INBOUND_NESTLPN_CLOSE_PRINT"/>
+        </dialog>
+
+        <dialog class="objt.wms.dialog.inbound.NestLPNOpenDialog" visible="NO"
+                roles="wmsdialog.receiptnest.manage">
+          <param name="TOPLPN.BARCODE.REQUIRED" value="NO"/>
+          <param name="CONFIRMATION.DEFAULT" value="YES"/>
+          <param name="CONFIRMATION.AUTOENTER" value="NO"/>
+        </dialog>
+
+        <dialog class="objt.wms.dialog.inbound.LPNOpenCloseDialog" title="OPEN LPN" id="NESTLPNOPENCLOSE_OPEN_RECEIPT"
+                roles="wmsdialog.receiptnest.lpnreceipt,wmsdialog.receiptnest.lpnreceipt.uniform" icon="menu_lpn_open.png">
+          <!-- GENERAL SETTINGS -->
+          <param name="CONFIRMATION.DEFAULT" value="YES"/>
+          <param name="CONFIRMATION.AUTOENTER" value="NO"/>
+          <!-- OPEN/CLOSE SETTING -->
+          <param name="CONTEXT" value="OPEN_LPN"/>
+        </dialog>
+
+        <dialog class="objt.wms.dialog.inbound.LPNOpenCloseDialog" title="CLOSE LPN" id="NESTLPNOPENCLOSE_CLOSE_RECEIPT"
+                roles="wmsdialog.receiptnest.lpnreceipt,wmsdialog.receiptnest.lpnreceipt.uniform" icon="menu_lpn_closed.png">
+          <!-- GENERAL SETTINGS -->
+          <param name="CONFIRMATION.DEFAULT" value="YES"/>
+          <param name="CONFIRMATION.AUTOENTER" value="NO"/>
+          <!-- OPEN/CLOSE SETTING -->
+          <param name="CONTEXT" value="CLOSE_LPN"/>
+          <param name="NESTLPNCLOSE.DIALOGID" value="NESTLPNCLOSE_RECEIPT"/>
+        </dialog>
+      </menu>
+
+      <dialog class="objt.wms.dialog.inbound.ReceiveOnLocationDialog" title="RECEIVE ON LOCATION" id="RECEIVEONLOCATION_RECEIPT"
+              roles="wmsdialog.receipt.locationreceipt">
+        <!-- INBOUND ORDER SELECTION SETTINGS -->
+        <param name="INBOUND_TYPE" value="RECEIPT"/>
+        <param name="SELECTINBOUNDORDER.RECEIPT.ATTRIBUTEPATH" value="id% %supplier.CONCAT(BO;%(%description%)%)"/>
+        <param name="SELECTINBOUNDORDER.RECEIPT.INFOATTRIBUTEPATH" value="description"/>
+        <param name="SELECTINBOUNDORDER.MAXRECORDS" value="0"/>
+        <param name="SELECTINBOUNDORDER.AUTOENTER" value="NO"/>
+        <param name="INBOUNDORDERCREATEDIALOG.ID" value="INBOUNDRECEIPTCREATE"/>
+        <!-- BARCODE SETTINGS -->
+        <param name="SCAN_BARCODE.ENABLED" value="YES"/>
+        <param name="PRODUCTION_DATE.IDENTIFICATION.ENABLED" value="NO"/>
+        <param name="PURCHASE_ORDER.IDENTIFICATION.BLIND.ENABLED" value="YES"/>
+        <param name="PURCHASE_ORDER.IDENTIFICATION.BLIND.REQUIRED" value="NO"/>
+        <param name="PURCHASE_ORDER.IDENTIFICATION.ONESTEP.REQUIRED" value="NO"/>
+        <!-- LPN AUTO GENERATION SETTINGS -->
+        <param name="LPN.AUTOGENERATE.ENABLED" value="YES"/>
+        <param name="LPN.AUTOGENERATE.INPUTMASK" value="x"/>
+        <!--<param name="LPN.AUTOGENERATE.NUMBERSEQUENCE" value="LPN_SSCC"/>-->
+        <!--<param name="CONTAINER.TYPES" value="EUR"/>-->
+        <!-- INPUT & VISUALIZATION SETTINGS  -->
+        <param name="LPN.BARCODE.REQUIRED" value="YES"/>
+        <param name="LOTID.USE_RECEIPTID" value="NO"/>
+        <param name="DTSBESTBEFORE.INPUT.FORMAT" value="yyMMdd"/>
+        <param name="DTSBESTBEFORE.OUTPUT.FORMAT" value="dd/MM/yy"/>
+        <param name="PRODUCTIONDATE.INPUT.FORMAT" value="yyMMdd"/>
+        <param name="PRODUCTIONDATE.OUTPUT.FORMAT" value="dd/MM/yy"/>
+        <!--INVENTORY SETTINGS-->
+        <param name="LPN.SINGLE_ITEM" value="YES"/>
+        <param name="LPN.SINGLE_LOT" value="YES"/>
+        <param name="LPN.SINGLE_SUBLOT" value="YES"/>
+        <param name="LPN.SINGLE_BESTBEFORE" value="YES"/>
+        <param name="LPN.SINGLE_INVENTORYCODES" value="YES"/>
+        <!-- TWOSTEP SETTINGS -->
+        <param name="QTY.ADJUST.TWOSTEP.ENABLED" value="YES"/>
+        <!--SERIAL SETTINGS-->
+        <param name="SERIAL.SCANMODES" value="SCAN WANTED"/>
+        <!-- PRINT SETTINGS -->
+        <param name="PRINT.ONESTEP.ENABLED" value="YES"/>
+        <param name="PRINT.ONESTEP.DIALOGID" value="INLINE_INBOUND_LPN_PRINT"/>
+        <param name="PRINT.ONESTEP.DEFAULT" value="AUTO"/>
+        <param name="PRINT.ONESTEP.AUTOENTER" value="NO"/>
+        <param name="PRINT.BLIND.ENABLED" value="YES"/>
+        <param name="PRINT.BLIND.DIALOGID" value="INLINE_INBOUND_LPN_PRINT"/>
+        <param name="PRINT.BLIND.DEFAULT" value="AUTO"/>
+        <param name="PRINT.BLIND.AUTOENTER" value="NO"/>
+        <param name="PRINT.ASN.ENABLED" value="NO"/>
+        <param name="PRINT.ASN.DIALOGID" value="INLINE_INBOUND_LPN_PRINT"/>
+        <param name="PRINT.ASN.DEFAULT" value="AUTO"/>
+        <param name="PRINT.ASN.AUTOENTER" value="NO"/>
+        <!-- CONFIRMATION SETTINGS -->
+        <param name="CONFIRMATION.DEFAULT" value="YES"/>
+        <param name="CONFIRMATION.AUTOENTER" value="NO"/>
+        <!-- MIXED LPN SETTINGS -->
+        <param name="MIXED_LPN.ENABLED" value="YES"/>
+        <param name="NEXT_ITEM.AUTOENTER" value="NO"/>
+        <param name="NEXT_ITEM.DEFAULT" value="NEXT_ITEM"/>
+        <!-- LPN LEVEL SETTINGS -->
+        <param name="FROM_LPN_ENABLED" value="YES"/>
+        <param name="FROM_LPN_REQUIRED" value="NO"/>
+        <!-- ASN SETTINGS -->
+        <param name="ASN.ENABLED" value="YES"/>
+        <param name="ASN.AUTOENTER" value="NO"/>
+        <param name="ASN.QTY.ADJUST.ENABLED" value="USER"/>
+        <param name="ASN.QTY.ADJUST.DEFAULT" value="YES"/>
+        <param name="ASN.QTY.ADJUST.AUTOENTER" value="NO"/>
+      </dialog>
+
+      <dialog class="objt.wms.dialog.inbound.ReceiveOnLocationDialog" title="RECEIVE ON LOCATION UNIFORM" id="RECEIVEONLOCATION_RECEIPT_UNIFORM"
+              roles="wmsdialog.receipt.locationreceipt.uniform">
+        <!-- INBOUND ORDER SELECTION SETTINGS -->
+        <param name="INBOUND_TYPE" value="RECEIPT"/>
+        <param name="SELECTINBOUNDORDER.RECEIPT.ATTRIBUTEPATH" value="id% %supplier.CONCAT(BO;%(%description%)%)"/>
+        <param name="SELECTINBOUNDORDER.RECEIPT.INFOATTRIBUTEPATH" value="description"/>
+        <param name="SELECTINBOUNDORDER.MAXRECORDS" value="0"/>
+        <param name="SELECTINBOUNDORDER.AUTOENTER" value="NO"/>
+        <param name="INBOUNDORDERCREATEDIALOG.ID" value="INBOUNDRECEIPTCREATE"/>
+        <!-- BARCODE SETTINGS -->
+        <param name="SCAN_BARCODE.ENABLED" value="YES"/>
+        <param name="PRODUCTION_DATE.IDENTIFICATION.ENABLED" value="NO"/>
+        <param name="PURCHASE_ORDER.IDENTIFICATION.BLIND.ENABLED" value="YES"/>
+        <param name="PURCHASE_ORDER.IDENTIFICATION.BLIND.REQUIRED" value="NO"/>
+        <param name="PURCHASE_ORDER.IDENTIFICATION.ONESTEP.REQUIRED" value="NO"/>
+        <!-- LPN AUTO GENERATION SETTINGS -->
+        <param name="LPN.AUTOGENERATE.ENABLED" value="YES"/>
+        <param name="LPN.AUTOGENERATE.INPUTMASK" value="x"/>
+        <!--<param name="LPN.AUTOGENERATE.NUMBERSEQUENCE" value="LPN_SSCC"/>-->
+        <!--<param name="CONTAINER.TYPES" value="EUR"/>-->
+        <!-- INPUT & VISUALIZATION SETTINGS  -->
+        <param name="LPN.BARCODE.REQUIRED" value="YES"/>
+        <param name="LOTID.USE_RECEIPTID" value="NO"/>
+        <param name="DTSBESTBEFORE.INPUT.FORMAT" value="yyMMdd"/>
+        <param name="DTSBESTBEFORE.OUTPUT.FORMAT" value="dd/MM/yy"/>
+        <param name="PRODUCTIONDATE.INPUT.FORMAT" value="yyMMdd"/>
+        <param name="PRODUCTIONDATE.OUTPUT.FORMAT" value="dd/MM/yy"/>
+        <!--INVENTORY SETTINGS-->
+        <param name="LPN.SINGLE_ITEM" value="YES"/>
+        <param name="LPN.SINGLE_LOT" value="YES"/>
+        <param name="LPN.SINGLE_SUBLOT" value="YES"/>
+        <param name="LPN.SINGLE_BESTBEFORE" value="YES"/>
+        <param name="LPN.SINGLE_INVENTORYCODES" value="YES"/>
+        <!-- TWOSTEP SETTINGS -->
+        <param name="QTY.ADJUST.TWOSTEP.ENABLED" value="YES"/>
+        <!--SERIAL SETTINGS-->
+        <param name="SERIAL.SCANMODES" value="SCAN WANTED"/>
+        <!-- PRINT SETTINGS -->
+        <param name="PRINT.ONESTEP.ENABLED" value="YES"/>
+        <param name="PRINT.ONESTEP.DIALOGID" value="INLINE_INBOUND_LPN_PRINT"/>
+        <param name="PRINT.ONESTEP.DEFAULT" value="AUTO"/>
+        <param name="PRINT.ONESTEP.AUTOENTER" value="NO"/>
+        <param name="PRINT.BLIND.ENABLED" value="YES"/>
+        <param name="PRINT.BLIND.DIALOGID" value="INLINE_INBOUND_LPN_PRINT"/>
+        <param name="PRINT.BLIND.DEFAULT" value="AUTO"/>
+        <param name="PRINT.BLIND.AUTOENTER" value="NO"/>
+        <param name="PRINT.ASN.ENABLED" value="NO"/>
+        <param name="PRINT.ASN.DIALOGID" value="INLINE_INBOUND_LPN_PRINT"/>
+        <param name="PRINT.ASN.DEFAULT" value="AUTO"/>
+        <param name="PRINT.ASN.AUTOENTER" value="NO"/>
+        <!-- CONFIRMATION SETTINGS -->
+        <param name="CONFIRMATION.DEFAULT" value="YES"/>
+        <param name="CONFIRMATION.AUTOENTER" value="NO"/>
+        <!-- MIXED LPN SETTINGS -->
+        <param name="MIXED_LPN.ENABLED" value="NO"/>
+        <!-- LPN LEVEL SETTINGS -->
+        <param name="FROM_LPN_ENABLED" value="YES"/>
+        <param name="FROM_LPN_REQUIRED" value="NO"/>
+        <!-- ASN SETTINGS -->
+        <param name="ASN.ENABLED" value="YES"/>
+        <param name="ASN.AUTOENTER" value="NO"/>
+        <param name="ASN.QTY.ADJUST.ENABLED" value="USER"/>
+        <param name="ASN.QTY.ADJUST.DEFAULT" value="YES"/>
+        <param name="ASN.QTY.ADJUST.AUTOENTER" value="NO"/>
+      </dialog>
+
+      <dialog class="objt.wms.dialog.inbound.InboundOrderCloseDialog" title="CLOSE RECEIPT" id="INBOUNDORDERCLOSE_RECEIPT"
+              roles="wmsdialog.receipt.closeinbound">
+        <param name="SELECTINBOUNDORDER.MAXRECORDS" value="0"/>
+        <!-- GENERAL SETTINGS -->
+        <param name="CONFIRMATION.DEFAULT" value="YES"/>
+        <param name="CONFIRMATION.AUTOENTER" value="NO"/>
+        <!-- OPEN/CLOSE SETTING -->
+        <param name="INBOUND_TYPE" value="RECEIPT"/>
+      </dialog>
+
+      <dialog class="objt.wms.dialog.ContainerPrintDialog" id="INLINE_INBOUND_NESTLPN_CREATE_PRINT" visible="NO"
+              roles="wmsdialog.print.printcontainer">
+        <param name="NUMCOPIES.ENABLED" value="NO"/>
+        <param name="NUMCOPIES.DEFAULT" value="1"/>
+        <param name="NUMCOPIES.MAXIMUM" value="2"/>
+        <param name="DOCUMENTTEMPLATE.IDS" value="LPN,GS1_LPN"/>
+        <param name="DOCUMENTTEMPLATE.AUTOENTER" value="YES"/>
+        <param name="DOCUMENTTEMPLATECONFIGURATION.CONTEXT" value="INBOUND"/>
+        <param name="PRINTERDEVICE.SELECTIONMODE" value="SELECT"/>
+        <param name="PRINTERDEVICE.CHECKLPNLOCATION" value="YES"/>
+        <param name="PRINTERDEVICE.AUTOENTER" value="YES"/>
+        <param name="NUMCOPIES.AUTOENTER" value="YES"/>
+        <param name="PRINTCONFIRMATION.AUTOENTER" value="YES"/>
+        <param name="PRINTCONFIRMATION.DEFAULT" value="YES"/>
+      </dialog>
+
+      <dialog class="objt.wms.dialog.ContainerPrintDialog" id="INLINE_INBOUND_NESTLPN_CLOSE_PRINT" visible="NO"
+              roles="wmsdialog.print.printcontainer">
+        <param name="NUMCOPIES.ENABLED" value="NO"/>
+        <param name="NUMCOPIES.DEFAULT" value="1"/>
+        <param name="NUMCOPIES.MAXIMUM" value="2"/>
+        <param name="DOCUMENTTEMPLATE.IDS" value="LPN,LPN_CONTENT,GS1_LPN,GS1_LPN_CONTENT,ODETTE_LPN_CONTENT"/>
+        <param name="DOCUMENTTEMPLATE.AUTOENTER" value="YES"/>
+        <param name="DOCUMENTTEMPLATECONFIGURATION.CONTEXT" value="INBOUND"/>
+        <param name="PRINTERDEVICE.SELECTIONMODE" value="SELECT"/>
+        <param name="PRINTERDEVICE.CHECKLPNLOCATION" value="YES"/>
+        <param name="PRINTERDEVICE.AUTOENTER" value="YES"/>
+        <param name="NUMCOPIES.AUTOENTER" value="YES"/>
+        <param name="PRINTCONFIRMATION.AUTOENTER" value="YES"/>
+        <param name="PRINTCONFIRMATION.DEFAULT" value="YES"/>
+      </dialog>
+
+      <menu title="QC" systemdirected="NO" >
+        <dialog class="objt.wms.dialog.inventory.adjust.LPNQCAdjustDialog01" id="LPNQCADJUST_RECEIPT"
+                roles="wmsdialog.qc.lpnadjust">
+          <param name="CONFIRMATION.DEFAULT" value="YES"/>
+          <param name="CONFIRMATION.AUTOENTER" value="NO"/>
+          <param name="CONTEXT" value="INBOUND"/>
+        </dialog>
+
+        <dialog class="objt.wms.dialog.inventory.adjust.SerialQCAdjustDialog01" id="SERIALQCADJUST_RECEIPT"
+                roles="wmsdialog.qc.serialadjust">
+          <param name="CONFIRMATION.DEFAULT" value="YES"/>
+          <param name="CONFIRMATION.AUTOENTER" value="NO"/>
+        </dialog>
+
+        <dialog class="objt.wms.dialog.inspection.InspectionSheetDialog" id="INBOUND_INSPECTIONSHEET_RECEIPT"
+                roles="wmsdialog.inspection.process">
+          <param name="INSPECTIONSHEETINFO.DEFAULT" value="OVERVIEW"/>
+          <param name="SUMMARY.DEFAULT" value="CLOSE"/>
+          <param name="SELECTINSPECTION.AUTOENTER" value="YES"/>
+          <!-- CONFIRMATION SETTINGS -->
+          <param name="CONFIRMATION.DEFAULT" value="YES"/>
+          <param name="COMPLETEINSPECTION.CONFIRMATION.AUTOENTER" value="YES"/>
+        </dialog>
+      </menu>
+
+      <menu title="PRINT" systemdirected="NO" >
+        <dialog class="objt.wms.dialog.ContainerPrintDialog" id="INBOUND_RECEIPT_LPN_PRINT"
+                roles="wmsdialog.print.printcontainer" icon="menu_printer.png">
+          <param name="NUMCOPIES.ENABLED" value="YES"/>
+          <param name="NUMCOPIES.DEFAULT" value="1"/>
+          <param name="NUMCOPIES.MAXIMUM" value="2"/>
+          <param name="DOCUMENTTEMPLATE.IDS" value="LPN_CONTENT,GS1_LPN_CONTENT,ODETTE_LPN_CONTENT"/>
+          <param name="DOCUMENTTEMPLATE.AUTOENTER" value="YES"/>
+          <param name="DOCUMENTTEMPLATECONFIGURATION.CONTEXT" value="INBOUND"/>
+          <param name="PRINTCONFIRMATION.DEFAULT" value="YES"/>
+        </dialog>
+
+        <dialog class="objt.wms.dialog.ContainerPrintDialog" id="INLINE_INBOUND_LPN_PRINT" visible="NO"
+                roles="wmsdialog.print.printcontainer">
+          <param name="NUMCOPIES.ENABLED" value="NO"/>
+          <param name="NUMCOPIES.DEFAULT" value="2"/>
+          <param name="NUMCOPIES.MAXIMUM" value="2"/>
+          <param name="DOCUMENTTEMPLATE.IDS" value="LPN_CONTENT,GS1_LPN_CONTENT,ODETTE_LPN_CONTENT"/>
+          <param name="DOCUMENTTEMPLATE.AUTOENTER" value="YES"/>
+          <param name="DOCUMENTTEMPLATECONFIGURATION.CONTEXT" value="INBOUND"/>
+          <param name="PRINTERDEVICE.SELECTIONMODE" value="SELECT"/>
+          <param name="PRINTERDEVICE.CHECKLPNLOCATION" value="YES"/>
+          <param name="PRINTERDEVICE.AUTOENTER" value="YES"/>
+          <param name="NUMCOPIES.AUTOENTER" value="YES"/>
+          <param name="PRINTCONFIRMATION.AUTOENTER" value="YES"/>
+          <param name="PRINTCONFIRMATION.DEFAULT" value="YES"/>
+        </dialog>
+      </menu>
+    </menu>
+
+    <!-- RETURN MENU-->
+    <menu title="RETURN MENU" systemdirected="NO" icon="menu_retour.png">
+
+      <menu title="RETURN" systemdirected="NO" >
+
+        <dialog class="objt.wms.dialog.inbound.LPNInboundDialog" id="LPNINBOUNDRETURN" title="RETURN"
+                roles="wmsdialog.return.lpnreturn">
+          <!-- INBOUND ORDER SELECTION SETTINGS -->
+          <param name="INBOUND_TYPE" value="RETURN"/>
+          <param name="INBOUNDORDERCREATEDIALOG.ID" value="INBOUNDRETURNCREATE"/>
+          <param name="SELECTINBOUNDORDER.RETURN.ATTRIBUTEPATH" value="id% %customer.CONCAT(BO;%(%description%)%)"/>
+          <param name="SELECTINBOUNDORDER.RETURN.INFOATTRIBUTEPATH" value="description"/>
+          <param name="SELECTINBOUNDORDER.MAXRECORDS" value="0"/>
+          <param name="SELECTINBOUNDORDER.AUTOENTER" value="NO"/>
+          <param name="INBOUNDORDERCREATEDIALOG.ID" value="INBOUNDRETURNCREATE"/>
+          <!-- NESTED PUTAWAY SETTINGS -->
+          <param name="NESTED_PUTAWAY.ENABLED" value="NO"/>
+          <!-- TWOSTEP SETTINGS -->
+          <param name="QTY.ADJUST.TWOSTEP.ENABLED" value="YES"/>
+          <!-- BARCODE SETTINGS -->
+          <param name="SCAN_BARCODE.ENABLED" value="YES"/>
+          <param name="LPN_IDENTIFIERS" value="00"/>
+          <param name="ITEM_IDENTIFIERS" value="02,01,P"/>
+          <param name="LOT_IDENTIFIERS" value="10,H"/>
+          <!--<param name="PRODUCTION_DATE_IDENTIFIERS" value="11"/>-->
+          <param name="BEST_BEFORE_IDENTIFIERS" value="15"/>
+          <param name="QTY_IDENTIFIERS" value="37,30,Q"/>
+          <param name="DTSBESTBEFORE.BARCODE.FORMAT" value="yyMMdd"/>
+          <param name="PRODUCTIONDATE.BARCODE.FORMAT" value="yyMMdd"/>
+          <!-- LPN AUTO GENERATION SETTINGS -->
+          <param name="LPN.AUTOGENERATE.ENABLED" value="YES"/>
+          <param name="LPN.AUTOGENERATE.INPUTMASK" value="x"/>
+          <!--<param name="LPN.AUTOGENERATE.NUMBERSEQUENCE" value="LPN_SSCC"/>-->
+          <!--<param name="CONTAINER.TYPES" value="EUR"/>-->
+          <!-- INPUT & VISUALIZATION SETTINGS  -->
+          <param name="LPN.BARCODE.REQUIRED" value="YES"/>
+          <param name="LOTID.USE_RECEIPTID" value="NO"/>
+          <param name="DTSBESTBEFORE.INPUT.FORMAT" value="yyMMdd"/>
+          <param name="DTSBESTBEFORE.OUTPUT.FORMAT" value="dd/MM/yy"/>
+          <param name="PRODUCTIONDATE.INPUT.FORMAT" value="yyMMdd"/>
+          <param name="PRODUCTIONDATE.OUTPUT.FORMAT" value="dd/MM/yy"/>
+          <!--SERIAL SETTINGS-->
+          <param name="SERIAL.SCANMODES" value="SCAN WANTED"/>
+          <!-- PRINT SETTINGS -->
+          <param name="PRINT.ONESTEP.ENABLED" value="YES"/>
+          <param name="PRINT.ONESTEP.DIALOGID" value="INLINE_INBOUND_LPN_PRINT"/>
+          <param name="PRINT.ONESTEP.DEFAULT" value="AUTO"/>
+          <param name="PRINT.ONESTEP.AUTOENTER" value="NO"/>
+          <param name="PRINT.TWOSTEP.ENABLED" value="NO"/>
+          <param name="PRINT.BLIND.ENABLED" value="YES"/>
+          <param name="PRINT.BLIND.DIALOGID" value="INLINE_INBOUND_LPN_PRINT"/>
+          <param name="PRINT.BLIND.DEFAULT" value="AUTO"/>
+          <param name="PRINT.BLIND.AUTOENTER" value="NO"/>
+          <!-- CONFIRMATION SETTINGS -->
+          <param name="CONFIRMATION.DEFAULT" value="YES"/>
+          <param name="CONFIRMATION.AUTOENTER" value="NO"/>
+          <!-- MIXED LPN SETTINGS -->
+          <param name="MIXED_LPN.ENABLED" value="YES"/>
+          <param name="NEXT_ITEM.AUTOENTER" value="NO"/>
+          <param name="NEXT_ITEM.DEFAULT" value="NEXT_ITEM"/>
+        </dialog>
+
+        <dialog class="objt.wms.dialog.inbound.LPNOpenCloseDialog" title="OPEN LPN" id="LPNOPENCLOSE_OPEN_RETURN"
+                roles="wmsdialog.return.lpnreturn" icon="menu_lpn_open.png">
+          <!-- GENERAL SETTINGS -->
+          <param name="CONFIRMATION.DEFAULT" value="YES"/>
+          <param name="CONFIRMATION.AUTOENTER" value="NO"/>
+          <!-- OPEN/CLOSE SETTING -->
+          <param name="CONTEXT" value="OPEN_LPN"/>
+        </dialog>
+
+        <dialog class="objt.wms.dialog.inbound.LPNOpenCloseDialog" title="CLOSE LPN" id="LPNOPENCLOSE_CLOSE_RETURN"
+                roles="wmsdialog.return.lpnreturn" icon="menu_lpn_closed.png">
+          <!-- GENERAL SETTINGS -->
+          <param name="CONFIRMATION.DEFAULT" value="YES"/>
+          <param name="CONFIRMATION.AUTOENTER" value="NO"/>
+          <!-- OPEN/CLOSE SETTING -->
+          <param name="CONTEXT" value="CLOSE_LPN"/>
+          <param name="NESTLPNCLOSE.DIALOGID" value="NESTLPNCLOSE_RETURN"/>
+        </dialog>
+
+      </menu>
+
+      <dialog class="objt.wms.dialog.inbound.InboundOrderCreateDialog" id="INBOUNDRETURNCREATE"
+              title="CREATE BLIND RETURN" roles="wmsdialog.return.create" visible="NO">
+        <!-- INBOUND ORDER SELECTION SETTINGS -->
+        <param name="INBOUND_TYPE" value="RETURN"/>
+        <param name="INBOUNDORDERDESCRIPTION.ENABLED" value="YES"/>
+        <param name="SUPPLIERCUSTOMER.MAXRECORDS" value="10"/>
+        <param name="SUPPLIERCUSTOMER.CUSTOMER.ATTRIBUTEPATH" value="description"/>
+        <param name="SUPPLIERCUSTOMER.CUSTOMER.INFOATTRIBUTEPATH" value="name"/>
+        <param name="SUPPLIERCUSTOMER.CUSTOMER.NONE.WILDCARD" value="0"/>
+        <param name="SELECTOPENINBOUNDORDER.MAXRECORDS" value="10"/>
+        <param name="SELECTOPENINBOUNDORDER.ATTRIBUTEPATH" value="id% %customer.CONCAT(BO;%(%description%)%)"/>
+        <param name="SELECTOPENINBOUNDORDER.INFOATTRIBUTEPATH" value="description"/>
+
+        <!-- CONFIRMATION SETTINGS -->
+        <param name="CONFIRMATION.DEFAULT" value="YES"/>
+        <param name="CONFIRMATION.AUTOENTER" value="NO"/>
+      </dialog>
+
+      <menu title="RETURN + NEST" systemdirected="NO" >
+
+        <dialog class="objt.wms.dialog.inbound.LPNInboundDialog" id="LPNINBOUNDRETURNNEST" title="RETURN + NEST"
+                roles="wmsdialog.return.lpnreturn">
+          <!-- INBOUND ORDER SELECTION SETTINGS -->
+          <param name="INBOUND_TYPE" value="RETURN"/>
+          <param name="SELECTINBOUNDORDER.RETURN.ATTRIBUTEPATH" value="id% %customer.CONCAT(BO;%(%description%)%)"/>
+          <param name="SELECTINBOUNDORDER.RETURN.INFOATTRIBUTEPATH" value="description"/>
+          <param name="SELECTINBOUNDORDER.MAXRECORDS" value="0"/>
+          <param name="SELECTINBOUNDORDER.AUTOENTER" value="NO"/>
+          <param name="INBOUNDORDERCREATEDIALOG.ID" value="INBOUNDRETURNCREATE"/>
+          <!-- NESTED PUTAWAY SETTINGS -->
+          <param name="NESTED_PUTAWAY.ENABLED" value="YES"/>
+          <param name="SCAN_TOP_LPN.ENABLED" value="YES"/>
+          <param name="INLINE_TOPLPN_CREATION.ENABLED" value="YES"/>
+          <param name="TOPLPN.AUTOGENERATE.ENABLED" value="YES"/>
+          <param name="TOPLPN.AUTOGENERATE.INPUTMASK" value="x"/>
+          <param name="CREATETOPLPN.DEFAULT" value="YES"/>
+          <param name="CREATETOPLPN.AUTOENTER" value="NO"/>
+          <param name="NESTLPNCREATEDIALOG.ID" value="NESTLPNCREATE_RETURN"/>
+          <!-- TWOSTEP SETTINGS -->
+          <param name="QTY.ADJUST.TWOSTEP.ENABLED" value="YES"/>
+          <!-- BARCODE SETTINGS -->
+          <param name="SCAN_BARCODE.ENABLED" value="YES"/>
+          <param name="LPN_IDENTIFIERS" value="00"/>
+          <param name="ITEM_IDENTIFIERS" value="02,01,P"/>
+          <param name="LOT_IDENTIFIERS" value="10,H"/>
+          <!--<param name="PRODUCTION_DATE_IDENTIFIERS" value="11"/>-->
+          <param name="BEST_BEFORE_IDENTIFIERS" value="15"/>
+          <param name="QTY_IDENTIFIERS" value="37,30,Q"/>
+          <param name="DTSBESTBEFORE.BARCODE.FORMAT" value="yyMMdd"/>
+          <param name="PRODUCTIONDATE.BARCODE.FORMAT" value="yyMMdd"/>
+          <!-- LPN AUTO GENERATION SETTINGS -->
+          <param name="LPN.AUTOGENERATE.ENABLED" value="YES"/>
+          <param name="LPN.AUTOGENERATE.INPUTMASK" value="x"/>
+          <!--<param name="LPN.AUTOGENERATE.NUMBERSEQUENCE" value="LPN_SSCC"/>-->
+          <!--<param name="CONTAINER.TYPES" value="EUR"/>-->
+          <!-- INPUT & VISUALIZATION SETTINGS  -->
+          <param name="LPN.BARCODE.REQUIRED" value="YES"/>
+          <param name="LOTID.USE_RECEIPTID" value="NO"/>
+          <param name="DTSBESTBEFORE.INPUT.FORMAT" value="yyMMdd"/>
+          <param name="DTSBESTBEFORE.OUTPUT.FORMAT" value="dd/MM/yy"/>
+          <param name="PRODUCTIONDATE.INPUT.FORMAT" value="yyMMdd"/>
+          <param name="PRODUCTIONDATE.OUTPUT.FORMAT" value="dd/MM/yy"/>
+          <!--SERIAL SETTINGS-->
+          <param name="SERIAL.SCANMODES" value="SCAN WANTED"/>
+          <!-- PRINT SETTINGS -->
+          <param name="PRINT.ONESTEP.ENABLED" value="YES"/>
+          <param name="PRINT.ONESTEP.DIALOGID" value="INLINE_INBOUND_LPN_PRINT"/>
+          <param name="PRINT.ONESTEP.DEFAULT" value="AUTO"/>
+          <param name="PRINT.ONESTEP.AUTOENTER" value="NO"/>
+          <param name="PRINT.TWOSTEP.ENABLED" value="NO"/>
+          <param name="PRINT.BLIND.ENABLED" value="YES"/>
+          <param name="PRINT.BLIND.DIALOGID" value="INLINE_INBOUND_LPN_PRINT"/>
+          <param name="PRINT.BLIND.DEFAULT" value="AUTO"/>
+          <param name="PRINT.BLIND.AUTOENTER" value="NO"/>
+          <!-- CONFIRMATION SETTINGS -->
+          <param name="CONFIRMATION.DEFAULT" value="YES"/>
+          <param name="CONFIRMATION.AUTOENTER" value="NO"/>
+          <!-- MIXED LPN SETTINGS -->
+          <param name="MIXED_LPN.ENABLED" value="YES"/>
+          <param name="NEXT_ITEM.AUTOENTER" value="NO"/>
+          <param name="NEXT_ITEM.DEFAULT" value="NEXT_ITEM"/>
+        </dialog>
+
+        <dialog class="objt.wms.dialog.inbound.NestLPNCreateDialog01" id="NESTLPNCREATE_RETURN"
+                roles="wmsdialog.returnnest.manage" visible="YES">
+          <param name="TOPLPN.BARCODE.REQUIRED" value="YES"/>
+          <param name="LPN.AUTOGENERATE.ENABLED" value="YES"/>
+          <param name="LPN.AUTOGENERATE.INPUTMASK" value="x"/>
+          <!--<param name="LPN.AUTOGENERATE.NUMBERSEQUENCE" value="LPN_SSCC"/>-->
+          <!--<param name="CONTAINER.TYPES" value="EUR,CHEP"/>-->
+          <!-- CONFIRMATION SETTINGS -->
+          <param name="CONFIRMATION.DEFAULT" value="YES"/>
+          <param name="CONFIRMATION.AUTOENTER" value="NO"/>
+          <param name="PRINTLABEL.DIALOGID" value="INLINE_INBOUND_NESTLPN_CREATE_PRINT"/>
+          <param name="NESTLPNADD.DIALOGID" value="NESTLPNADDLPN_RETURN"/>
+        </dialog>
+
+        <dialog class="objt.wms.dialog.inbound.NestLPNAddLPNDialog01" id="NESTLPNADDLPN_RETURN"
+                roles="wmsdialog.returnnest.manage" icon="menu_lpn_add.png">
+          <param name="TOPLPN.BARCODE.REQUIRED" value="NO"/>
+          <param name="LPN.BARCODE.REQUIRED" value="NO"/>
+          <param name="STOP.DEFAULT" value="YES CLOSE TOP LPN"/>
+          <param name="STOP.AUTOENTER" value="NO"/>
+        </dialog>
+
+        <dialog class="objt.wms.dialog.inbound.NestLPNRemoveLPNDialog01" id="NESTLPNREMOVELPN_RETURN"
+                roles="wmsdialog.returnnest.manage" icon="menu_lpn_remove.png">
+          <param name="TOPLPN.BARCODE.REQUIRED" value="NO"/>
+          <param name="LPN.BARCODE.REQUIRED" value="NO"/>
+          <param name="STOP.DEFAULT" value="YES CLOSE TOP LPN"/>
+          <param name="STOP.AUTOENTER" value="NO"/>
+          <param name="NESTLPNADD.DIALOGID" value="NESTLPNADDLPN_RETURN"/>
+        </dialog>
+
+        <dialog class="objt.wms.dialog.inbound.NestLPNCloseDialog01" id="NESTLPNCLOSE_RETURN" visible="NO"
+                roles="wmsdialog.returnnest.manage">
+          <param name="TOPLPN.BARCODE.REQUIRED" value="NO"/>
+          <param name="HEIGHT.ENABLED" value="YES"/>
+          <param name="OVERHANG.DEFAULT" value="NO"/>
+          <param name="OVERHANG.AUTOENTER" value="NO"/>
+          <param name="DEPTH.ENABLED" value="YES"/>
+          <param name="WIDTH.ENABLED" value="YES"/>
+          <param name="WEIGHT.ENABLED" value="NO"/>
+          <param name="CONFIRMATION.DEFAULT" value="YES"/>
+          <param name="CONFIRMATION.AUTOENTER" value="NO"/>
+          <param name="PRINTLABEL.DIALOGID" value="INLINE_INBOUND_NESTLPN_CLOSE_PRINT"/>
+        </dialog>
+
+        <dialog class="objt.wms.dialog.inbound.LPNOpenCloseDialog" title="OPEN LPN" id="NESTLPNOPENCLOSE_OPEN_RETURN"
+                roles="wmsdialog.return.lpnreturn" icon="menu_lpn_open.png">
+          <!-- GENERAL SETTINGS -->
+          <param name="CONFIRMATION.DEFAULT" value="YES"/>
+          <param name="CONFIRMATION.AUTOENTER" value="NO"/>
+          <!-- OPEN/CLOSE SETTING -->
+          <param name="CONTEXT" value="OPEN_LPN"/>
+        </dialog>
+
+        <dialog class="objt.wms.dialog.inbound.LPNOpenCloseDialog" title="CLOSE LPN" id="NESTLPNOPENCLOSE_CLOSE_RETURN"
+                roles="wmsdialog.return.lpnreturn" icon="menu_lpn_closed.png">
+          <!-- GENERAL SETTINGS -->
+          <param name="CONFIRMATION.DEFAULT" value="YES"/>
+          <param name="CONFIRMATION.AUTOENTER" value="NO"/>
+          <!-- OPEN/CLOSE SETTING -->
+          <param name="CONTEXT" value="CLOSE_LPN"/>
+          <param name="NESTLPNCLOSE.DIALOGID" value="NESTLPNCLOSE_RETURN"/>
+        </dialog>
+      </menu>
+
+      <dialog class="objt.wms.dialog.inbound.ReceiveOnLocationDialog" title="RETURN ON LOCATION" id="RECEIVEONLOCATION_RETURN"
+              roles="wmsdialog.return.locationreceipt">
+        <!-- INBOUND ORDER SELECTION SETTINGS -->
+        <param name="INBOUND_TYPE" value="RETURN"/>
+        <param name="SELECTINBOUNDORDER.RETURN.ATTRIBUTEPATH" value="id% %customer.CONCAT(BO;%(%description%)%)"/>
+        <param name="SELECTINBOUNDORDER.RETURN.INFOATTRIBUTEPATH" value="description"/>
+        <param name="SELECTINBOUNDORDER.MAXRECORDS" value="0"/>
+        <param name="SELECTINBOUNDORDER.AUTOENTER" value="NO"/>
+        <param name="INBOUNDORDERCREATEDIALOG.ID" value="INBOUNDRETURNCREATE"/>
+        <!-- BARCODE SETTINGS -->
+        <param name="SCAN_BARCODE.ENABLED" value="YES"/>
+        <param name="LPN_IDENTIFIERS" value="00"/>
+        <param name="ITEM_IDENTIFIERS" value="02,01,P"/>
+        <param name="LOT_IDENTIFIERS" value="10,H"/>
+        <!--<param name="PRODUCTION_DATE_IDENTIFIERS" value="11"/>-->
+        <param name="BEST_BEFORE_IDENTIFIERS" value="15"/>
+        <param name="QTY_IDENTIFIERS" value="37,30,Q"/>
+        <param name="DTSBESTBEFORE.BARCODE.FORMAT" value="yyMMdd"/>
+        <param name="PRODUCTIONDATE.BARCODE.FORMAT" value="yyMMdd"/>
+        <!-- LPN AUTO GENERATION SETTINGS -->
+        <param name="LPN.AUTOGENERATE.ENABLED" value="YES"/>
+        <param name="LPN.AUTOGENERATE.INPUTMASK" value="x"/>
+        <!--<param name="LPN.AUTOGENERATE.NUMBERSEQUENCE" value="LPN_SSCC"/>-->
+        <!--<param name="CONTAINER.TYPES" value="EUR"/>-->
+        <!-- INPUT & VISUALIZATION SETTINGS  -->
+        <param name="LPN.BARCODE.REQUIRED" value="YES"/>
+        <param name="LOTID.USE_RECEIPTID" value="NO"/>
+        <param name="DTSBESTBEFORE.INPUT.FORMAT" value="yyMMdd"/>
+        <param name="DTSBESTBEFORE.OUTPUT.FORMAT" value="dd/MM/yy"/>
+        <param name="PRODUCTIONDATE.INPUT.FORMAT" value="yyMMdd"/>
+        <param name="PRODUCTIONDATE.OUTPUT.FORMAT" value="dd/MM/yy"/>
+        <!--INVENTORY SETTINGS-->
+        <param name="LPN.SINGLE_ITEM" value="YES"/>
+        <param name="LPN.SINGLE_LOT" value="YES"/>
+        <param name="LPN.SINGLE_SUBLOT" value="YES"/>
+        <param name="LPN.SINGLE_BESTBEFORE" value="YES"/>
+        <param name="LPN.SINGLE_INVENTORYCODES" value="YES"/>
+        <!-- TWOSTEP SETTINGS -->
+        <param name="QTY.ADJUST.TWOSTEP.ENABLED" value="YES"/>
+        <!--SERIAL SETTINGS-->
+        <param name="SERIAL.SCANMODES" value="SCAN WANTED"/>
+        <!-- PRINT SETTINGS -->
+        <param name="PRINT.ONESTEP.ENABLED" value="YES"/>
+        <param name="PRINT.ONESTEP.DIALOGID" value="INLINE_INBOUND_LPN_PRINT"/>
+        <param name="PRINT.ONESTEP.DEFAULT" value="AUTO"/>
+        <param name="PRINT.ONESTEP.AUTOENTER" value="NO"/>
+        <param name="PRINT.BLIND.ENABLED" value="YES"/>
+        <param name="PRINT.BLIND.DIALOGID" value="INLINE_INBOUND_LPN_PRINT"/>
+        <param name="PRINT.BLIND.DEFAULT" value="AUTO"/>
+        <param name="PRINT.BLIND.AUTOENTER" value="NO"/>
+        <!-- CONFIRMATION SETTINGS -->
+        <param name="CONFIRMATION.DEFAULT" value="YES"/>
+        <param name="CONFIRMATION.AUTOENTER" value="NO"/>
+        <!-- MIXED LPN SETTINGS -->
+        <param name="MIXED_LPN.ENABLED" value="YES"/>
+        <param name="NEXT_ITEM.AUTOENTER" value="NO"/>
+        <param name="NEXT_ITEM.DEFAULT" value="NEXT_ITEM"/>
+        <!-- LPN LEVEL SETTINGS -->
+        <param name="FROM_LPN_ENABLED" value="YES"/>
+        <param name="FROM_LPN_REQUIRED" value="NO"/>
+      </dialog>
+
+      <dialog class="objt.wms.dialog.inbound.InboundOrderCloseDialog" title="CLOSE RETURN" id="INBOUNDORDERCLOSE_RETURN"
+              roles="wmsdialog.return.closeinbound">
+        <param name="SELECTINBOUNDORDER.MAXRECORDS" value="0"/>
+        <!-- GENERAL SETTINGS -->
+        <param name="CONFIRMATION.DEFAULT" value="YES"/>
+        <param name="CONFIRMATION.AUTOENTER" value="NO"/>
+        <!-- OPEN/CLOSE SETTING -->
+        <param name="INBOUND_TYPE" value="RETURN"/>
+      </dialog>
+
+      <menu title="QC" systemdirected="NO" >
+        <dialog class="objt.wms.dialog.inventory.adjust.LPNQCAdjustDialog01" id="LPNQCADJUST_RETURN"
+                roles="wmsdialog.qc.lpnadjust">
+          <param name="CONFIRMATION.DEFAULT" value="YES"/>
+          <param name="CONFIRMATION.AUTOENTER" value="NO"/>
+          <param name="CONTEXT" value="INBOUND"/>
+        </dialog>
+
+        <dialog class="objt.wms.dialog.inventory.adjust.SerialQCAdjustDialog01" id="SERIALQCADJUST_RETURN"
+                roles="wmsdialog.qc.serialadjust">
+          <param name="CONFIRMATION.DEFAULT" value="YES"/>
+          <param name="CONFIRMATION.AUTOENTER" value="NO"/>
+        </dialog>
+
+        <dialog class="objt.wms.dialog.inspection.InspectionSheetDialog" id="INBOUND_INSPECTIONSHEET_RETURN"
+                roles="wmsdialog.inspection.process">
+          <param name="INSPECTIONSHEETINFO.DEFAULT" value="OVERVIEW"/>
+          <param name="SUMMARY.DEFAULT" value="CLOSE"/>
+          <param name="SELECTINSPECTION.AUTOENTER" value="YES"/>
+          <!-- CONFIRMATION SETTINGS -->
+          <param name="CONFIRMATION.DEFAULT" value="YES"/>
+          <param name="COMPLETEINSPECTION.CONFIRMATION.AUTOENTER" value="YES"/>
+        </dialog>
+      </menu>
+
+      <menu title="PRINT" systemdirected="NO" >
+        <dialog class="objt.wms.dialog.ContainerPrintDialog" id="INBOUND_RETURN_LPN_PRINT"
+                roles="wmsdialog.print.printcontainer" icon="menu_printer.png">
+          <param name="NUMCOPIES.ENABLED" value="YES"/>
+          <param name="NUMCOPIES.DEFAULT" value="1"/>
+          <param name="NUMCOPIES.MAXIMUM" value="2"/>
+          <param name="DOCUMENTTEMPLATE.IDS" value="LPN_CONTENT,GS1_LPN_CONTENT,ODETTE_LPN_CONTENT"/>
+          <param name="DOCUMENTTEMPLATE.AUTOENTER" value="YES"/>
+          <param name="DOCUMENTTEMPLATECONFIGURATION.CONTEXT" value="INBOUND"/>
+          <param name="PRINTCONFIRMATION.DEFAULT" value="YES"/>
+        </dialog>
+      </menu>
+    </menu>
+
+    <!-- INVENTORY MENU-->
+    <menu title="INVENTORY MENU" systemdirected="YES" icon="menu_inventory.png">
+      <!-- STOCK INFO -->
+      <menu title="STOCK INFO" systemdirected="YES" >
+        <!-- LPN INFO -->
+        <menu title="LPN INFO" systemdirected="YES" >
+          <dialog class="objt.wms.dialog.inventory.info.LPNContentInfoDialog01"
+                  roles="wmsdialog.stockinfo.lpninfo" >
+            <subdialog fkey="6" refid="objt.wms.dialog.inventory.info.ItemInfoDialog01" levels="3,4,5" >
+              <output>
+                <field id="ITEM" source="input" value="ITEM" object="true"/>
+                <field if-output="ITEM" if-value="!" id="ITEM_LIST" source="invoker" value="'CSITQ'.STATIC(objt.common.inventorymgt.bo.AbstractContainerStorageItemQties;getItemList;BO)" object="true"/>
+              </output>
+            </subdialog>
+          </dialog>
+          <dialog class="objt.wms.dialog.inventory.info.LPNQCInfoDialog01"
+                  roles="wmsdialog.stockinfo.lpninfo"/>
+          <dialog class="objt.wms.dialog.inventory.info.LPNInventoryAttributeInfoDialog01"
+                  roles="wmsdialog.stockinfo.lpninfo"/>
+          <dialog class="objt.wms.dialog.inventory.info.LPNLockInfoDialog01"
+                  roles="wmsdialog.stockinfo.lpninfo"/>
+        </menu>
+
+        <!-- LOCATION INFO -->
+        <menu title="LOCATION INFO" systemdirected="YES" >
+          <dialog class="objt.wms.dialog.inventory.info.LocationContentInfoDialog01"
+                  roles="wmsdialog.stockinfo.locationinfo" >
+            <subdialog fkey="6" refid="objt.wms.dialog.inventory.info.ItemInfoDialog01" levels="1,2,3" >
+              <output>
+                <field id="ITEM" source="input" value="ITEM" object="true"/>
+                <composedfield if-input="ITEM" if-value="!" id="ITEM_LIST_GETTER">
+                  <field if-input="CSITQ" id="-" source="constant" value="CSITQ" />
+                  <field if-input="CSITQ" if-value="!" id="-" source="constant"  value="LOCATION" />
+                </composedfield>
+                <field if-output="ITEM_LIST_GETTER" if-value="CSITQ" id="ITEM_LIST" source="invoker" value="'CSITQ'.STATIC(objt.common.inventorymgt.bo.AbstractContainerStorageItemQties;getItemList;BO)" object="true"/>
+                <field if-output="ITEM_LIST_GETTER" if-value="LOCATION" id="ITEM_LIST" source="invoker" value="'LOCATION'.STATIC(objt.common.inventorymgt.bo.WarehouseLocations;getFullItemList;BO)" object="true"/>
+              </output>
+            </subdialog>
+          </dialog>
+          <dialog class="objt.wms.dialog.inventory.info.LocationLockInfoDialog01"
+                  roles="wmsdialog.stockinfo.locationinfo"/>
+        </menu>
+
+        <!-- toenhance: add a 'scan SKU' level to this dialog and it can be made visible -->
+        <dialog class="objt.wms.dialog.inventory.info.ItemInfoDialog01" visible="NO" />
+      </menu>
+
+      <!-- STOCK ADJUST -->
+      <menu title="STOCK ADJUST" systemdirected="YES" >
+        <dialog class="objt.wms.dialog.inventory.adjust.LPNQtyAdjustDialog01"
+                roles="wmsdialog.stockadjust.lpnqty">
+          <param name="LOTADJUST.ENABLED" value="YES"/>
+          <param name="REASON.DEFAULT_ID" value="unknown"/>
+          <param name="CONFIRMATION.DEFAULT" value="YES"/>
+          <param name="CONFIRMATION.AUTOENTER" value="NO"/>
+          <!--SERIAL SETTINGS-->
+          <param name="SERIAL.SCANMODES" value="SCAN WANTED,SCAN UNWANTED"/>
+        </dialog>
+        <dialog class="objt.wms.dialog.inventory.adjust.LPNInventoryAttributeAdjustDialog01"
+                roles="wmsdialog.stockadjust.lpninvattrib">
+          <param name="REASON.DEFAULT_ID" value="unknown"/>
+          <param name="CONFIRMATION.DEFAULT" value="YES"/>
+          <param name="CONFIRMATION.AUTOENTER" value="NO"/>
+        </dialog>
+        <dialog class="objt.wms.dialog.inventory.adjust.LPNFoundDialog01"
+                roles="wmsdialog.stockadjust.lpnfound">
+          <param name="CONFIRMATION.DEFAULT" value="YES"/>
+          <param name="CONFIRMATION.AUTOENTER" value="NO"/>
+        </dialog>
+        <dialog class="objt.wms.dialog.ContainerSerialIdentificationDialog"
+                roles="wmsdialog.identify.serials">
+          <param name="CONFIRMATION.DEFAULT" value="YES"/>
+          <param name="CONFIRMATION.AUTOENTER" value="NO"/>
+          <!--SERIAL SETTINGS-->
+          <param name="SERIAL.SCANMODES" value="SCAN WANTED"/>
+        </dialog>
+        <dialog class="objt.wms.dialog.inventory.adjust.LocationQtyAdjustDialog01"
+                roles="wmsdialog.stockadjust.locationqty">
+          <param name="LOTADJUST.ENABLED" value="YES"/>
+          <param name="REASON.DEFAULT_ID" value="unknown"/>
+          <param name="CONFIRMATION.DEFAULT" value="YES"/>
+          <param name="CONFIRMATION.AUTOENTER" value="NO"/>
+          <!--SERIAL SETTINGS-->
+          <param name="SERIAL.SCANMODES" value="SCAN WANTED,SCAN UNWANTED"/>
+        </dialog>
+        <dialog class="objt.wms.dialog.inventory.adjust.LocationFullDialog"
+                roles="wmsdialog.stockadjust.locationfull">
+          <param name="CONFIRMATION.DEFAULT" value="YES"/>
+          <param name="CONFIRMATION.AUTOENTER" value="YES"/>
+        </dialog>
+      </menu>
+
+      <!-- RELOCATE INVENTORY-->
+      <menu title="RELOCATE INVENTORY" systemdirected="YES" >
+        <dialog class="objt.wms.dialog.move.ContainerMoveDialog01" globalfkey="7"
+                roles="wmsdialog.relocate.lpn">
+          <param name="CONFIRMATION.DEFAULT" value="YES"/>
+          <param name="CONFIRMATION.AUTOENTER" value="NO"/>
+        </dialog>
+
+        <dialog class="objt.wms.dialog.move.ContainerMoveTriggerDialog01"
+                roles="wmsdialog.relocate.lpntask">
+          <param name="CONFIRMATION.DEFAULT" value="YES"/>
+          <param name="CONFIRMATION.AUTOENTER" value="NO"/>
+        </dialog>
+
+        <dialog class="objt.wms.dialog.move.SKUMoveDialog01"
+                roles="wmsdialog.relocate.sku">
+          <param name="CONFIRMATION.DEFAULT" value="YES"/>
+          <param name="CONFIRMATION.AUTOENTER" value="NO"/>
+          <param name="LPN.AUTOGENERATE.ENABLED" value="YES"/>
+          <param name="LPN.AUTOGENERATE.INPUTMASK" value="x"/>
+          <!--<param name="LPN.AUTOGENERATE.NUMBERSEQUENCE" value="LPN_SSCC"/>-->
+          <!--SERIAL SETTINGS-->
+          <param name="SERIAL.SCANMODES" value="SCAN WANTED,SCAN UNWANTED"/>
+        </dialog>
+      </menu>
+
+      <!-- QC -->
+      <menu title="QC" systemdirected="YES" >
+        <dialog class="objt.wms.dialog.inventory.adjust.LPNQCAdjustDialog01" id="LPNQCADJUST_INVENTORY"
+                roles="wmsdialog.qc.lpnadjust">
+          <param name="CONFIRMATION.DEFAULT" value="YES"/>
+          <param name="CONFIRMATION.AUTOENTER" value="NO"/>
+          <param name="CONTEXT" value="INVENTORY"/>
+        </dialog>
+
+        <dialog class="objt.wms.dialog.inventory.adjust.SerialQCAdjustDialog01"
+                roles="wmsdialog.qc.serialadjust" id="SERIALQCADJUST_INVENTORY">
+          <param name="CONFIRMATION.DEFAULT" value="YES"/>
+          <param name="CONFIRMATION.AUTOENTER" value="NO"/>
+        </dialog>
+
+        <dialog class="objt.wms.dialog.inspection.InspectionSheetDialog" id="INVENTORY_INSPECTIONSHEET"
+                roles="wmsdialog.inspection.process">
+          <param name="INSPECTIONSHEETINFO.DEFAULT" value="OVERVIEW"/>
+          <param name="SUMMARY.DEFAULT" value="CLOSE"/>
+          <param name="SELECTINSPECTION.AUTOENTER" value="YES"/>
+          <!-- CONFIRMATION SETTINGS -->
+          <param name="CONFIRMATION.DEFAULT" value="YES"/>
+          <param name="COMPLETEINSPECTION.CONFIRMATION.AUTOENTER" value="YES"/>
+        </dialog>
+      </menu>
+
+      <!-- KANBAN MENU-->
+      <menu title="KANBAN MENU" >
+        <dialog class="objt.wms.dialog.inventory.consume.KanbanConsumeDialog"
+                roles="wmsdialog.kanban.consume">
+          <param name="LPN.BARCODE.REQUIRED" value="NO"/>
+          <param name="FROM.LOCATION.LPN.OPTION" value="ALL"/>  <!-- ALL/LOCATION/LPN -->
+          <param name="CONFIRMATION.DEFAULT" value="YES"/>
+          <param name="CONFIRMATION.AUTOENTER" value="NO"/>
+        </dialog>
+      </menu>
+
+      <!-- LOGISTIC LOCK -->
+      <menu title="LOGISTIC LOCK" systemdirected="YES" >
+        <dialog class="objt.wms.dialog.inventory.adjust.LPNLockDialog01"
+                roles="wmsdialog.lock.lpnlock">
+          <!--<param name="REASON.DEFAULT_ID" value="unknown"/>-->
+          <param name="CONFIRMATION.DEFAULT" value="YES"/>
+          <param name="CONFIRMATION.AUTOENTER" value="NO"/>
+        </dialog>
+        <dialog class="objt.wms.dialog.inventory.adjust.LPNUnlockDialog01"
+                roles="wmsdialog.lock.lpnlock">
+          <param name="CONFIRMATION.DEFAULT" value="YES"/>
+          <param name="CONFIRMATION.AUTOENTER" value="NO"/>
+        </dialog>
+        <dialog class="objt.wms.dialog.inventory.adjust.LocationLockDialog01"
+                roles="wmsdialog.lock.locationlock">
+          <!--<param name="REASON.DEFAULT_ID" value="unknown"/>-->
+          <param name="CONFIRMATION.DEFAULT" value="YES"/>
+          <param name="CONFIRMATION.AUTOENTER" value="NO"/>
+        </dialog>
+        <dialog class="objt.wms.dialog.inventory.adjust.LocationUnlockDialog01"
+                roles="wmsdialog.lock.locationlock">
+          <param name="CONFIRMATION.DEFAULT" value="YES"/>
+          <param name="CONFIRMATION.AUTOENTER" value="NO"/>
+        </dialog>
+      </menu>
+
+      <!-- NEST -->
+      <menu title="NEST" systemdirected="YES" >
+        <dialog class="objt.wms.dialog.inventory.nest.NestLPNCreateDialog01"
+                roles="wmsdialog.nest.manage">
+          <param name="TOPLPN.BARCODE.REQUIRED" value="NO"/>
+          <param name="LPN.AUTOGENERATE.ENABLED" value="YES"/>
+          <param name="LPN.AUTOGENERATE.INPUTMASK" value="x"/>
+          <param name="PRINTLABEL.DIALOGID" value="INLINE_INVENTORY_NESTLPN_CREATE_PRINT"/>
+          <!--<param name="LPN.AUTOGENERATE.NUMBERSEQUENCE" value="LPN_SSCC"/>-->
+          <!--<param name="CONTAINER.TYPES" value="EUR,CHEP"/>-->
+        </dialog>
+
+        <dialog class="objt.wms.dialog.ContainerPrintDialog" id="INLINE_INVENTORY_NESTLPN_CREATE_PRINT" visible="NO"
+                roles="wmsdialog.print.printcontainer">
+          <param name="NUMCOPIES.ENABLED" value="NO"/>
+          <param name="NUMCOPIES.DEFAULT" value="1"/>
+          <param name="NUMCOPIES.MAXIMUM" value="2"/>
+          <param name="DOCUMENTTEMPLATE.IDS" value="LPN,GS1_LPN"/>
+          <param name="DOCUMENTTEMPLATE.AUTOENTER" value="YES"/>
+          <param name="DOCUMENTTEMPLATECONFIGURATION.CONTEXT" value="NONE"/>
+          <param name="PRINTERDEVICE.SELECTIONMODE" value="SELECT"/>
+          <param name="PRINTERDEVICE.CHECKLPNLOCATION" value="YES"/>
+          <param name="PRINTERDEVICE.AUTOENTER" value="YES"/>
+          <param name="NUMCOPIES.AUTOENTER" value="YES"/>
+          <param name="PRINTCONFIRMATION.AUTOENTER" value="YES"/>
+          <param name="PRINTCONFIRMATION.DEFAULT" value="YES"/>
+        </dialog>
+
+        <dialog class="objt.wms.dialog.inventory.nest.NestLPNAddLPNDialog01"
+                roles="wmsdialog.nest.manage" icon="menu_lpn_add.png">
+          <param name="TOPLPN.BARCODE.REQUIRED" value="NO"/>
+          <param name="LPN.BARCODE.REQUIRED" value="NO"/>
+          <param name="STOP.DEFAULT" value="YES CLOSE TOP LPN"/>
+          <param name="STOP.AUTOENTER" value="NO"/>
+          <!--<param name="TOPLPN.AUTO_OPEN_TOP_LPN" value="YES"/>-->
+        </dialog>
+
+        <dialog class="objt.wms.dialog.inventory.nest.NestLPNRemoveLPNDialog01"
+                roles="wmsdialog.nest.manage" icon="menu_lpn_remove.png">
+          <param name="TOPLPN.BARCODE.REQUIRED" value="NO"/>
+          <param name="LPN.BARCODE.REQUIRED" value="NO"/>
+          <param name="STOP.DEFAULT" value="YES CLOSE TOP LPN"/>
+          <param name="STOP.AUTOENTER" value="NO"/>
+          <!--<param name="TOPLPN.AUTO_OPEN_TOP_LPN" value="YES"/>-->
+        </dialog>
+
+        <dialog class="objt.wms.dialog.inventory.nest.NestLPNOpenDialog"
+                roles="wmsdialog.nest.manage" icon="menu_lpn_open.png">
+          <param name="TOPLPN.BARCODE.REQUIRED" value="NO"/>
+          <param name="CONFIRMATION.DEFAULT" value="YES"/>
+          <param name="CONFIRMATION.AUTOENTER" value="NO"/>
+        </dialog>
+
+        <dialog class="objt.wms.dialog.inventory.nest.NestLPNCloseDialog01"
+                roles="wmsdialog.nest.manage" icon="menu_lpn_closed.png">
+          <param name="TOPLPN.BARCODE.REQUIRED" value="NO"/>
+          <param name="HEIGHT.ENABLED" value="YES"/>
+          <param name="OVERHANG.DEFAULT" value="NO"/>
+          <param name="OVERHANG.AUTOENTER" value="NO"/>
+          <param name="DEPTH.ENABLED" value="YES"/>
+          <param name="WIDTH.ENABLED" value="YES"/>
+          <param name="WEIGHT.ENABLED" value="NO"/>
+          <param name="CONFIRMATION.DEFAULT" value="YES"/>
+          <param name="CONFIRMATION.AUTOENTER" value="NO"/>
+          <param name="PRINTLABEL.DIALOGID" value="INLINE_INVENTORY_NESTLPN_CLOSE_PRINT"/>
+        </dialog>
+
+        <dialog class="objt.wms.dialog.ContainerPrintDialog" id="INLINE_INVENTORY_NESTLPN_CLOSE_PRINT" visible="NO"
+                roles="wmsdialog.print.printcontainer">
+          <param name="NUMCOPIES.ENABLED" value="NO"/>
+          <param name="NUMCOPIES.DEFAULT" value="1"/>
+          <param name="NUMCOPIES.MAXIMUM" value="2"/>
+          <param name="DOCUMENTTEMPLATE.IDS" value="LPN,LPN_CONTENT,GS1_LPN,GS1_LPN_CONTENT,ODETTE_LPN_CONTENT"/>
+          <param name="DOCUMENTTEMPLATE.AUTOENTER" value="YES"/>
+          <param name="DOCUMENTTEMPLATECONFIGURATION.CONTEXT" value="NONE"/>
+          <param name="PRINTERDEVICE.SELECTIONMODE" value="SELECT"/>
+          <param name="PRINTERDEVICE.CHECKLPNLOCATION" value="YES"/>
+          <param name="PRINTERDEVICE.AUTOENTER" value="YES"/>
+          <param name="NUMCOPIES.AUTOENTER" value="YES"/>
+          <param name="PRINTCONFIRMATION.AUTOENTER" value="YES"/>
+          <param name="PRINTCONFIRMATION.DEFAULT" value="YES"/>
+        </dialog>
+      </menu>
+
+      <dialog class="objt.wms.dialog.inventory.takeon.InventoryTakeOnDialog01"
+              roles="wmsdialog.inventorytakeon">
+        <param name="SCAN_BARCODE.ENABLED" value="YES"/>
+        <param name="LPN.BARCODE.REQUIRED" value="NO"/>
+        <param name="CONFIRMATION.DEFAULT" value="YES"/>
+        <param name="CONFIRMATION.AUTOENTER" value="NO"/>
+        <param name="LPN.AUTOGENERATE.ENABLED" value="YES"/>
+        <param name="LPN.AUTOGENERATE.INPUTMASK" value="x"/>
+        <param name="MIXED_LPN.ENABLED" value="YES"/>
+        <param name="NEXT_ITEM.DEFAULT" value="YES"/>
+        <param name="PRODUCTION_DATE.IDENTIFICATION.ENABLED" value="YES"/>
+        <param name="DTSBESTBEFORE.INPUT.FORMAT" value="yyMMdd"/>
+        <param name="DTSBESTBEFORE.OUTPUT.FORMAT" value="dd/MM/yy"/>
+        <param name="PRODUCTIONDATE.INPUT.FORMAT" value="yyMMdd"/>
+        <param name="PRODUCTIONDATE.OUTPUT.FORMAT" value="dd/MM/yy"/>
+        <param name="PRINTLABEL.ENABLED" value="YES"/>
+        <param name="PRINTLABEL.DIALOGID" value="INLINE_INVENTORY_TAKE_ON_PRINT"/>
+      </dialog>
+
+      <dialog class="objt.wms.dialog.ContainerPrintDialog" id="INLINE_INVENTORY_TAKE_ON_PRINT" visible="NO"
+              roles="wmsdialog.print.printcontainer">
+        <param name="NUMCOPIES.ENABLED" value="NO"/>
+        <param name="NUMCOPIES.DEFAULT" value="2"/>
+        <param name="NUMCOPIES.MAXIMUM" value="2"/>
+        <param name="DOCUMENTTEMPLATE.IDS" value="LPN_CONTENT,GS1_LPN_CONTENT,ODETTE_LPN_CONTENT"/>
+        <param name="DOCUMENTTEMPLATE.AUTOENTER" value="YES"/>
+        <param name="DOCUMENTTEMPLATECONFIGURATION.CONTEXT" value="NONE"/>
+        <param name="PRINTERDEVICE.SELECTIONMODE" value="SELECT"/>
+        <param name="PRINTERDEVICE.CHECKLPNLOCATION" value="YES"/>
+        <param name="PRINTERDEVICE.AUTOENTER" value="YES"/>
+        <param name="NUMCOPIES.AUTOENTER" value="YES"/>
+        <param name="PRINTCONFIRMATION.AUTOENTER" value="YES"/>
+        <param name="PRINTCONFIRMATION.DEFAULT" value="YES"/>
+      </dialog>
+    </menu>
+
+    <!-- REPLENISH MENU-->
+    <menu title="REPLENISH MENU" icon="menu_replenish.png">
+      <dialog class="objt.wms.dialog.replenish.LocationReplenishTriggerDialog01"
+              roles="wmsdialog.replenish.trigger">
+        <param name="CONFIRMATION.DEFAULT" value="YES"/>
+        <param name="CONFIRMATION.AUTOENTER" value="NO"/>
+      </dialog>
+
+      <dialog class="objt.wms.dialog.replenish.ReplenishListStartDialog" visible="YES"
+              title="RESUME REPLENISH LIST"
+              roles="wmsdialog.replenish.grouped">
+        <param name="CONFIRMATION.DEFAULT" value="YES"/>
+        <param name="CONFIRMATION.AUTOENTER" value="NO"/>
+        <param name="LPN.AUTOGENERATE.ENABLED" value="YES"/>
+        <param name="LPN.AUTOGENERATE.INPUTMASK" value="x"/>
+        <!--<param name="LPN.AUTOGENERATE.NUMBERSEQUENCE" value="LPN_SSCC"/>-->
+      </dialog>
+
+      <dialog class="objt.wms.dialog.replenish.ReplenishListStopDialog" id="REPLENISH_LIST_STOP_MENU"
+              roles="wmsdialog.replenish.grouped">
+        <param name="CONFIRMATION.DEFAULT" value="YES"/>
+        <param name="CONFIRMATION.AUTOENTER" value="NO"/>
+        <param name="CONFIRMATION.ACTIVATIONDIALOG.CLASS" value="objt.wms.dialog.TaskLoginMenuDialog"/>
+      </dialog>
+    </menu>
+
+    <!-- PICKING MENU-->
+    <menu title="PICKING MENU" systemdirected="NO" icon="menu_pick.png">
+      <dialog class="objt.wms.dialog.pick.SKUPickListDialog"
+              roles="wmsdialog.pick.sku">
+        <param name="CONFIRMATION.DEFAULT" value="YES"/>
+        <param name="CONFIRMATION.AUTOENTER" value="NO"/>
+      </dialog>
+
+      <dialog class="objt.wms.dialog.pick.LPNPickListDialog"
+              roles="wmsdialog.pick.lpn">
+        <param name="MAX_STACK_SIZE" value="1"/>
+        <param name="CONFIRMATION.DEFAULT" value="YES"/>
+        <param name="CONFIRMATION.AUTOENTER" value="NO"/>
+      </dialog>
+
+      <dialog class="objt.wms.dialog.pick.PickLPNOpenSelectDialog" id="PICKLPNOPENSELECT"
+              roles="wmsdialog.pick.picklpn.open" icon="menu_lpn_open.png">
+        <param name="SYSTEMDIRECTED" value="NO"/>
+      </dialog>
+
+      <dialog class="objt.wms.dialog.pick.PickLPNOpenDialog03" visible="NO"
+              roles="wmsdialog.pick.picklpn.open">
+        <param name="CONFIRMATION.DEFAULT" value="YES"/>
+        <param name="CONFIRMATION.AUTOENTER" value="NO"/>
+        <param name="LPN.AUTOGENERATE.ENABLED" value="YES"/>
+        <param name="LPN.AUTOGENERATE.INPUTMASK" value="x"/>
+        <!--<param name="LPN.AUTOGENERATE.NUMBERSEQUENCE" value="LPN_SSCC"/>-->
+      </dialog>
+
+      <dialog class="objt.wms.dialog.pick.PickLPNCloseSelectDialog" id="PICKLPNCLOSESELECT"
+              roles="wmsdialog.pick.picklpn.close" icon="menu_lpn_closed.png">
+        <param name="SYSTEMDIRECTED" value="NO"/>
+      </dialog>
+
+      <dialog class="objt.wms.dialog.pick.PickLPNCloseDialog03" visible="NO"
+              roles="wmsdialog.pick.picklpn.close">
+        <param name="CLOSELPN.DEFAULT" value="YES"/>
+        <param name="CONFIRMATION.DEFAULT" value="YES"/>
+        <param name="CONFIRMATION.AUTOENTER" value="YES"/>
+      </dialog>
+
+      <dialog class="objt.wms.dialog.pick.MultiOrderCreateDialog03"
+              roles="wmsdialog.pick.multiorder">
+        <param name="CONFIRMATION.DEFAULT" value="YES"/>
+        <param name="CONFIRMATION.AUTOENTER" value="YES"/>
+        <param name="PICKLISTCONFIRMATION.DEFAULT" value="YES"/>
+        <param name="MAX_SELECTABLE_PICK_LISTS" value="-1"/>
+        <param name="MAX_RESERVABLE_PICK_LISTS" value="-1"/>
+      </dialog>
+
+      <dialog class="objt.wms.dialog.pick.PickCartOpenDialog01" visible="NO"
+              roles="wmsdialog.pick.multiorder">
+        <param name="CREATEPICKCART.AUTOENTER" value="YES"/>
+        <param name="CREATEPICKCART.DEFAULT" value="NO"/>
+        <param name="CONFIRMATION.DEFAULT" value="YES"/>
+        <param name="CONFIRMATION.AUTOENTER" value="YES"/>
+        <param name="LPN.AUTOGENERATE.ENABLED" value="YES"/>
+        <param name="LPN.AUTOGENERATE.INPUTMASK" value="x"/>
+        <!--<param name="LPN.AUTOGENERATE.NUMBERSEQUENCE" value="LPN_SSCC"/>-->
+      </dialog>
+
+      <dialog class="objt.wms.dialog.pick.PickCartLPNOpenDialog01" visible="NO"
+              roles="wmsdialog.pick.multiorder">
+        <param name="CONFIRMATION.DEFAULT" value="YES"/>
+        <param name="LPN.AUTOGENERATE.ENABLED" value="YES"/>
+        <param name="LPN.AUTOGENERATE.INPUTMASK" value="x"/>
+        <!--<param name="LPN.AUTOGENERATE.NUMBERSEQUENCE" value="LPN_SSCC"/>-->
+      </dialog>
+
+      <dialog class="objt.wms.dialog.pick.BulkPickTaskDialog03" visible="NO">
+        <param name="QUANTITY.SHOW_DEFAULT" value="NO"/>
+        <param name="REASON.SHORTAGE.CATEGORY" value="SKU.SHORTAGE"/>
+        <param name="CONFIRMATION.DEFAULT" value="YES"/>
+        <param name="CONFIRMATION.AUTOENTER" value="YES"/>
+        <!--SERIAL SETTINGS-->
+        <param name="SERIAL.SCANMODES" value="SCAN WANTED,SCAN UNWANTED"/>
+      </dialog>
+
+      <dialog class="objt.wms.dialog.pick.ContainerPickTaskDialog03" visible="NO">
+        <param name="MAX_STACK_SIZE" value="1"/>
+        <param name="CONFIRMATION.DEFAULT" value="YES"/>
+        <param name="CONFIRMATION.AUTOENTER" value="YES"/>
+      </dialog>
+
+      <dialog class="objt.process.wms.containercontentpickingbypackaging.dialog.ContainerContentPickTaskDialog03" visible="NO">
+        <param name="QUANTITY.SHOW_DEFAULT" value="NO"/>
+        <param name="REASON.SHORTAGE.CATEGORY" value="SKU.SHORTAGE"/>
+        <param name="CONFIRMATION.DEFAULT" value="YES"/>
+        <param name="CONFIRMATION.AUTOENTER" value="YES"/>
+        <!--SERIAL SETTINGS-->
+        <param name="SERIAL.SCANMODES" value="SCAN WANTED,SCAN UNWANTED"/>
+      </dialog>
+
+      <dialog class="objt.wms.dialog.pick.LocationPickTaskDialog03" visible="NO">
+        <param name="QUANTITY.SHOW_DEFAULT" value="NO"/>
+        <param name="REASON.SHORTAGE.CATEGORY" value="SKU.SHORTAGE"/>
+        <param name="CONFIRMATION.DEFAULT" value="YES"/>
+        <param name="CONFIRMATION.AUTOENTER" value="YES"/>
+        <!--SERIAL SETTINGS-->
+        <param name="SERIAL.SCANMODES" value="SCAN WANTED,SCAN UNWANTED"/>
+      </dialog>
+
+      <dialog class="objt.wms.dialog.pick.LocationLPNPickTaskDialog03" visible="NO">
+        <param name="QUANTITY.SHOW_DEFAULT" value="NO"/>
+        <param name="REASON.SHORTAGE.CATEGORY" value="SKU.SHORTAGE"/>
+        <param name="CONFIRMATION.DEFAULT" value="YES"/>
+        <param name="CONFIRMATION.AUTOENTER" value="YES"/>
+        <!--SERIAL SETTINGS-->
+        <param name="SERIAL.SCANMODES" value="SCAN WANTED,SCAN UNWANTED"/>
+      </dialog>
+
+      <dialog class="objt.wms.dialog.pick.StartPickListDialog"
+              roles="wmsdialog.pick.resume">
+        <param name="CONFIRMATION.DEFAULT" value="YES"/>
+        <param name="CONFIRMATION.AUTOENTER" value="NO"/>
+      </dialog>
+
+      <dialog class="objt.wms.dialog.pick.StopPickListDialog"
+              roles="wmsdialog.pick.stop">
+        <param name="CONFIRMATION.DEFAULT" value="YES"/>
+        <param name="CONFIRMATION.AUTOENTER" value="NO"/>
+        <param name="CONFIRMATION.ACTIVATIONDIALOG.CLASS" value="objt.wms.dialog.TaskLoginMenuDialog"/>
+      </dialog>
+    </menu>
+
+    <!-- PUTAWAY MENU-->
+    <menu title="PUTAWAY MENU" systemdirected="NO" icon="menu_putaway.png">
+      <dialog class="objt.wms.dialog.put.StartPutListDialog"
+              roles="wmsdialog.putaway.distributed">
+        <param name="CONFIRMATION.DEFAULT" value="YES"/>
+      </dialog>
+
+      <dialog class="objt.wms.dialog.put.StopPutListDialog"
+              roles="wmsdialog.putaway.distributed">
+        <param name="CONFIRMATION.DEFAULT" value="YES"/>
+        <param name="CONFIRMATION.AUTOENTER" value="YES"/>
+      </dialog>
+    </menu>
+
+    <!-- REPACK MENU-->
+    <menu title="REPACK MENU" icon="menu_repack.png">
+      <menu title="LPN REPACK" >
+        <dialog class="objt.wms.dialog.repack.CreateEmptyLPNDialog"
+                roles="wmsdialog.repack.manage">
+          <param name="LPN.BARCODE.REQUIRED" value="YES"/>
+          <param name="CONFIRMATION.DEFAULT" value="YES"/>
+          <param name="CONFIRMATION.AUTOENTER" value="YES"/>
+          <param name="SELECTACTION.DEFAULT" value="ADD FULL LPN"/>
+          <param name="LPN.AUTOGENERATE.ENABLED" value="YES"/>
+          <param name="LPN.AUTOGENERATE.INPUTMASK" value="x"/>
+          <!--<param name="LPN.AUTOGENERATE.NUMBERSEQUENCE" value="LPN_SSCC"/>-->
+          <!--<param name="CONTAINER.TYPES" value="EUR,CHEP"/>-->
+        </dialog>
+
+        <dialog class="objt.wms.dialog.repack.RepackAddLPNContentDialog"
+                roles="wmsdialog.repack.manage">
+          <param name="LPN.BARCODE.REQUIRED" value="YES"/>
+          <param name="STOP.DEFAULT" value="YES CLOSE TO LPN"/>
+          <param name="STOPEMPTY.DEFAULT" value="NO ADD OTHER CONTNT"/>
+          <param name="CONFIRMATION.DEFAULT" value="YES"/>
+          <param name="CONFIRMATION.AUTOENTER" value="NO"/>
+          <!--SERIAL SETTINGS-->
+          <param name="SERIAL.SCANMODES" value="SCAN WANTED,SCAN UNWANTED"/>
+        </dialog>
+
+        <dialog class="objt.wms.dialog.repack.RepackAddFullLPNDialog"
+                roles="wmsdialog.repack.manage">
+          <param name="LPN.BARCODE.REQUIRED" value="YES"/>
+          <param name="STOP.DEFAULT" value="YES CLOSE TO LPN"/>
+          <param name="STOPEMPTY.DEFAULT" value="NO ADD ANOTHER LPN"/>
+          <param name="CONFIRMATION.DEFAULT" value="YES"/>
+          <param name="CONFIRMATION.AUTOENTER" value="NO"/>
+        </dialog>
+
+        <dialog class="objt.wms.dialog.repack.CloseLPNDialog"
+                roles="wmsdialog.repack.manage">
+          <param name="LPN.BARCODE.REQUIRED" value="YES"/>
+          <param name="DELETEEMPTYLPN.DEFAULT" value="YES"/>
+          <param name="OVERHANG.DEFAULT" value="NO"/>
+          <param name="OVERHANG.AUTOENTER" value="NO"/>
+          <param name="HEIGHT.ENABLED" value="YES"/>
+          <param name="WEIGHT.ENABLED" value="YES"/>
+          <param name="PRINTLABEL.ENABLED" value="YES"/>
+          <param name="PRINTLABEL.DIALOGID" value="INLINE_REPACK_LPN_PRINT"/>
+          <param name="PRINTLABEL.DEFAULT" value="YES"/>
+          <param name="PRINTLABEL.AUTOENTER" value="NO"/>
+          <param name="CONFIRMATION.DEFAULT" value="YES"/>
+          <param name="CONFIRMATION.AUTOENTER" value="NO"/>
+        </dialog>
+      </menu>
+
+      <menu title="NESTED REPACK" >
+        <dialog class="objt.wms.dialog.repack.CreateEmptyTopLPNDialog"
+                roles="wmsdialog.repack.nest.manage">
+          <param name="LPN.BARCODE.REQUIRED" value="YES"/>
+          <param name="CONFIRMATION.DEFAULT" value="YES"/>
+          <param name="CONFIRMATION.AUTOENTER" value="YES"/>
+          <param name="SELECTACTION.DEFAULT" value="ADD SUB LPN"/>
+          <param name="LPN.AUTOGENERATE.ENABLED" value="YES"/>
+          <param name="LPN.AUTOGENERATE.INPUTMASK" value="x"/>
+          <!--<param name="LPN.AUTOGENERATE.NUMBERSEQUENCE" value="LPN_SSCC"/>-->
+          <!--<param name="CONTAINER.TYPES" value="EUR,CHEP"/>-->
+        </dialog>
+
+        <dialog class="objt.wms.dialog.repack.NestLPNAddLPNDialog"
+                roles="wmsdialog.repack.nest.manage" icon="menu_lpn_add.png">
+          <param name="TOPLPN.BARCODE.REQUIRED" value="YES"/>
+          <param name="LPN.BARCODE.REQUIRED" value="YES"/>
+          <param name="STOP.DEFAULT" value="CLOSE TOP LPN"/>
+          <param name="STOPEMPTY.DEFAULT" value="ADD ANOTHER LPN"/>
+          <param name="CONFIRMATION.DEFAULT" value="YES"/>
+          <param name="CONFIRMATION.AUTOENTER" value="NO"/>
+        </dialog>
+
+        <dialog class="objt.wms.dialog.repack.NestLPNRemoveLPNDialog"
+                roles="wmsdialog.repack.nest.manage" icon="menu_lpn_remove.png">
+          <param name="TOPLPN.BARCODE.REQUIRED" value="YES"/>
+          <param name="LPN.BARCODE.REQUIRED" value="YES"/>
+          <param name="STOP.DEFAULT" value="CLOSE TOP LPN"/>
+          <param name="STOPEMPTY.DEFAULT" value="DELETE TOP LPN"/>
+          <param name="CONFIRMATION.DEFAULT" value="YES"/>
+          <param name="CONFIRMATION.AUTOENTER" value="NO"/>
+        </dialog>
+
+        <dialog class="objt.wms.dialog.repack.CloseTopLPNDialog"
+                roles="wmsdialog.repack.nest.manage" icon="menu_lpn_closed.png">
+          <param name="LPN.BARCODE.REQUIRED" value="YES"/>
+          <param name="OVERHANG.DEFAULT" value="NO"/>
+          <param name="OVERHANG.AUTOENTER" value="NO"/>
+          <param name="HEIGHT.ENABLED" value="YES"/>
+          <param name="WEIGHT.ENABLED" value="YES"/>
+          <param name="PRINTLABEL.ENABLED" value="YES"/>
+          <param name="PRINTLABEL.DIALOGID" value="INLINE_REPACK_LPN_PRINT"/>
+          <param name="PRINTLABEL.DEFAULT" value="YES"/>
+          <param name="PRINTLABEL.AUTOENTER" value="NO"/>
+          <param name="CONFIRMATION.DEFAULT" value="YES"/>
+          <param name="CONFIRMATION.AUTOENTER" value="NO"/>
+        </dialog>
+      </menu>
+
+      <dialog class="objt.wms.dialog.ContainerPrintDialog"
+              id="INLINE_REPACK_LPN_PRINT" visible="NO"
+              roles="wmsdialog.print.printcontainer">
+        <param name="NUMCOPIES.ENABLED" value="NO"/>
+        <param name="NUMCOPIES.DEFAULT" value="2"/>
+        <param name="NUMCOPIES.MAXIMUM" value="2"/>
+        <param name="DOCUMENTTEMPLATE.IDS" value="LPN_CONTENT,LPN_SHIPPING,GS1_LPN_CONTENT,GS1_LPN_SHIPPING,ODETTE_LPN_CONTENT"/>
+        <param name="DOCUMENTTEMPLATE.AUTOENTER" value="YES"/>
+        <param name="DOCUMENTTEMPLATECONFIGURATION.CONTEXT" value="REPACK"/>
+        <param name="PRINTERDEVICE.SELECTIONMODE" value="SELECT"/>
+        <param name="PRINTERDEVICE.CHECKLPNLOCATION" value="YES"/>
+        <param name="PRINTERDEVICE.AUTOENTER" value="YES"/>
+        <param name="NUMCOPIES.AUTOENTER" value="YES"/>
+        <param name="PRINTCONFIRMATION.AUTOENTER" value="YES"/>
+        <param name="PRINTCONFIRMATION.DEFAULT" value="YES"/>
+      </dialog>
+    </menu>
+
+    <!-- LOAD MENU-->
+    <menu title="LOAD MENU" icon="menu_load.png">
+      <dialog class="objt.wms.dialog.ship.ShipmentLoadDialog01"
+              roles="wmsdialog.ship.loadshipment">
+        <param name="MAX_STACK_SIZE" value="1"/>
+        <param name="SHIPMENTINFO.AUTOENTER" value="NO"/>
+      </dialog>
+
+      <dialog class="objt.wms.dialog.ship.ShipmentUnloadDialog01"
+              roles="wmsdialog.ship.unloadshipment">
+        <param name="MAX_STACK_SIZE" value="1"/>
+      </dialog>
+
+      <dialog class="objt.wms.dialog.ship.LPNUnloadDialog01"
+              roles="wmsdialog.ship.unloadlpn">
+        <param name="CONFIRMATION.DEFAULT" value="YES"/>
+        <param name="CONFIRMATION.AUTOENTER" value="NO"/>
+      </dialog>
+
+      <dialog class="objt.wms.dialog.ship.ShipmentCloseDialog01"
+              roles="wmsdialog.ship.closeshipment">
+        <param name="CONFIRMATION.DEFAULT" value="YES"/>
+        <param name="CONFIRMATION.AUTOENTER" value="NO"/>
+      </dialog>
+    </menu>
+
+    <!-- INSPECTION MENU-->
+    <menu title="INSPECTION MENU" icon="menu_inspection.png">
+      <dialog class="objt.wms.dialog.inspection.CreateLPNInspectionDialog"
+              roles="wmsdialog.inspection.create">
+        <param name="INSPECTIONSHEET.AUTOENTER" value="YES"/>
+        <!-- CONFIRMATION SETTINGS -->
+        <param name="CONFIRMATION.DEFAULT" value="YES"/>
+      </dialog>
+
+      <dialog class="objt.wms.dialog.inspection.CreateSerialInspectionDialog" title="CREATE LPN INSPECTION/SN INSPECTION"
+              roles="wmsdialog.inspection.create">
+        <param name="INSPECTIONSHEET.AUTOENTER" value="YES"/>
+        <!-- CONFIRMATION SETTINGS -->
+        <param name="CONFIRMATION.DEFAULT" value="YES"/>
+      </dialog>
+
+      <dialog class="objt.wms.dialog.inspection.InspectionSheetDialog" id="INSPECTION_INSPECTIONSHEET"
+              roles="wmsdialog.inspection.process">
+        <param name="INSPECTIONSHEETINFO.DEFAULT" value="OVERVIEW"/>
+        <param name="SUMMARY.DEFAULT" value="CLOSE"/>
+        <param name="SELECTINSPECTION.AUTOENTER" value="YES"/>
+        <!-- CONFIRMATION SETTINGS -->
+        <param name="CONFIRMATION.DEFAULT" value="YES"/>
+        <param name="COMPLETEINSPECTION.CONFIRMATION.AUTOENTER" value="YES"/>
+      </dialog>
+
+      <dialog class="objt.wms.dialog.inspection.InputInspectionDialog" visible="NO">
+        <!-- CONFIRMATION SETTINGS -->
+        <param name="CONFIRMATION.DEFAULT" value="YES"/>
+      </dialog>
+
+      <dialog class="objt.wms.dialog.inspection.CheckInspectionDialog" visible="NO">
+        <!-- CONFIRMATION SETTINGS -->
+        <param name="CONFIRMATION.DEFAULT" value="YES"/>
+      </dialog>
+
+      <dialog class="objt.wms.dialog.inspection.SampleCreateDialog"
+              roles="wmsdialog.sample.create">
+        <!-- CONFIRMATION SETTINGS -->
+        <param name="CONFIRMATION.DEFAULT" value="YES"/>
+      </dialog>
+
+      <dialog class="objt.wms.dialog.inspection.SampleInfoDialog"
+              roles="wmsdialog.sample.info">
+        <!-- CONFIRMATION SETTINGS -->
+        <param name="CONFIRMATION.DEFAULT" value="YES"/>
+      </dialog>
+
+      <dialog class="objt.wms.dialog.inspection.SampleMoveDialog"
+              roles="wmsdialog.sample.move">
+        <!-- CONFIRMATION SETTINGS -->
+        <param name="CONFIRMATION.DEFAULT" value="YES"/>
+      </dialog>
+
+      <dialog class="objt.wms.dialog.inspection.SampleIdentificationDialog" visible="NO">
+        <!-- CONFIRMATION SETTINGS -->
+        <param name="CONFIRMATION.DEFAULT" value="YES"/>
+      </dialog>
+
+      <dialog class="objt.wms.dialog.inspection.SampleInstructionDialog" visible="NO">
+        <param name="STOP.DEFAULT" value="YES"/>
+        <!-- CONFIRMATION SETTINGS -->
+        <param name="CONFIRMATION.DEFAULT" value="YES"/>
+      </dialog>
+
+      <dialog class="objt.wms.dialog.inspection.SamplePrintDialog"
+              roles="wmsdialog.sample.print">
+        <param name="DOCUMENTTEMPLATE.CATEGORIES" value="SAMPLE"/>
+        <param name="PRINTCONFIRMATION.DEFAULT" value="YES"/>
+      </dialog>
+    </menu>
+
+    <!-- GENERAL MENU-->
+    <menu title="GENERAL MENU" icon="menu_general.png">
+      <dialog class="objt.wms.dialog.ContainerPrintDialog" id="DEFAULT_PRINT"
+              icon="menu_printer.png" roles="wmsdialog.print.printcontainer">
+        <param name="NUMCOPIES.ENABLED" value="YES"/>
+        <param name="NUMCOPIES.DEFAULT" value="1"/>
+        <param name="NUMCOPIES.MAXIMUM" value="2"/>
+        <param name="DOCUMENTTEMPLATE.CATEGORIES" value="LPN"/>
+        <param name="DOCUMENTTEMPLATE.AUTOENTER" value="YES"/>
+        <param name="DOCUMENTTEMPLATECONFIGURATION.CONTEXT" value="NONE"/>
+        <param name="PRINTCONFIRMATION.DEFAULT" value="YES"/>
+      </dialog>
+
+      <dialog class="objt.wms.dialog.MessageDialog" id="UNREADMESSAGES"
+              globalfkey="5" title="UNREAD MESSAGES" icon="menu_mail_new.png">
+        <param name="SELECTMESSAGE.MAX_RECORDS" value="10"/>
+        <param name="SELECTMESSAGE.ONLY_UNREAD_MESSAGES" value="YES"/>
+        <param name="SELECTMESSAGE.DATE_PATTERN" value="dd/MM/yy HH:mm"/>
+        <param name="MESSAGE.DEFAULT" value="OK"/>
+        <param name="CONFIRMATION.DEFAULT" value="YES"/>
+        <param name="CONFIRMATION.AUTOENTER" value="YES"/>
+      </dialog>
+
+      <dialog class="objt.wms.dialog.MessageDialog" id="LASTMESSAGES"
+              title="LAST MESSAGES" icon="menu_mail.png">
+        <param name="SELECTMESSAGE.MAX_RECORDS" value="10"/>
+        <param name="SELECTMESSAGE.ONLY_UNREAD_MESSAGES" value="NO"/>
+        <param name="SELECTMESSAGE.DATE_PATTERN" value="dd/MM/yy HH:mm"/>
+        <param name="MESSAGE.DEFAULT" value="OK"/>
+        <param name="CONFIRMATION.DEFAULT" value="YES"/>
+        <param name="CONFIRMATION.AUTOENTER" value="YES"/>
+      </dialog>
+
+      <dialog class="objt.wms.dialog.StorageItemQtySerialIdentificationDialog" id="STORAGEITEMQTYSERIALIDENTIFICATION" title="STORAGEITEMQTYSERIALIDENTIFICATION" visible="NO">
+        <param name="CONFIRMATION.DEFAULT" value="YES"/>
+        <param name="CONFIRMATION.AUTOENTER" value="YES"/>
+      </dialog>
+
+      <dialog class="objt.wms.dialog.SerialIdentificationDialog" id="SERIALIDENTIFICATION" title="SERIALS" visible="NO">
+        <!-- CONFIRMATION SETTINGS -->
+        <param name="CONFIRMATION.DEFAULT" value="YES"/>
+        <param name="CONFIRMATION.AUTOENTER" value="YES"/>
+      </dialog>
+
+      <dialog class="objt.wms.dialog.inventory.count.SerialCountDialog" id="SERIALCOUNT" title="SERIALS" visible="NO">
+        <!-- CONFIRMATION SETTINGS -->
+        <param name="CONFIRMATION.DEFAULT" value="YES"/>
+        <param name="CONFIRMATION.AUTOENTER" value="YES"/>
+      </dialog>
+
+
+      <dialog class="objt.wms.dialog.StorageItemQtySelectionDialog" id="STORAGEITEMQTYSELECTION" title="STORAGEITEMQTYSELECTION" visible="NO">
+        <!-- ITEM SETTINGS -->
+        <param name="ITEM_IDENTIFICATION_ENABLED" value="MULTIPLE"/>
+        <param name="ITEM_IDENTIFICATION_MODE" value="INPUT_OR_SELECT"/>
+        <!-- LOT SETTINGS -->
+        <param name="LOT_IDENTIFICATION_ENABLED" value="MULTIPLE"/>
+        <param name="LOT_IDENTIFICATION_MODE" value="INPUT_OR_SELECT"/>
+        <!-- SUBLOT SETTINGS -->
+        <param name="SUBLOT_IDENTIFICATION_ENABLED" value="MULTIPLE"/>
+        <param name="SUBLOT_IDENTIFICATION_MODE" value="INPUT_OR_SELECT"/>
+        <!-- single SITQ required -->
+        <param name="SINGLE_SITQ_REQUIRED" value="YES"/>
+        <!-- CONFIRMATION SETTINGS -->
+        <param name="CONFIRMATION.DEFAULT" value="YES"/>
+        <param name="CONFIRMATION.AUTOENTER" value="YES"/>
+      </dialog>
+
+      <dialog class="objt.wms.dialog.LocationWildCardIdentificationDialog" visible="NO">
+        <!-- CONFIRMATION SETTINGS -->
+        <param name="CONFIRMATION.DEFAULT" value="YES"/>
+        <param name="CONFIRMATION.AUTOENTER" value="YES"/>
+      </dialog>
+    </menu>
+
+  </mainmenu>
+</dialogconfig>
