@@ -36,6 +36,9 @@
     <include path="..\..\..\..\..\assets\translation\objt.applicationserver-core_dic.xml"/>
   </includes>
   <entries>
+    <entry nativestring="product type">
+      <translation language="nl" translatedstring="product type"/>
+      <translation language="en" translatedstring="product type"/>
     <entry nativestring="ZONE.CATEGORY.ERP">
       <translation language="nl" translatedstring="ERP zone"/>
       <translation language="en" translatedstring="ERP zone"/>
