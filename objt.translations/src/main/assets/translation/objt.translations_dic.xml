@@ -39,6 +39,7 @@
     <entry nativestring="product type">
       <translation language="nl" translatedstring="product type"/>
       <translation language="en" translatedstring="product type"/>
+    </entry>
     <entry nativestring="ZONE.CATEGORY.ERP">
       <translation language="nl" translatedstring="ERP zone"/>
       <translation language="en" translatedstring="ERP zone"/>
