@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+
+<guimetamodel>
+  <include ref="objt/wms/meta/meta.xml" />
+
+  <editors>
+  </editors>
+
+  <formatters>
+  </formatters>
+
+  <renderers>
+  </renderers>
+
+  <validators>
+    <validator id="zone.category" name="zone.category" type="FIXED_LIST">
+      <listitem text="ZONE.CATEGORY.NORMAL" value="ZONE"/>
+      <listitem text="ZONE.CATEGORY.ERP" value="ERP"/>
+    </validator>
+  </validators>
+
+  <metaclasses>
+    <metaclass name="objt.wms.bo.inventorymgt.Zone" recursive="YES">
+      <attribute name="category">
+        <validator refid="zone.category"/>
+      </attribute>
+    </metaclass>
+  </metaclasses>
+
+</guimetamodel>

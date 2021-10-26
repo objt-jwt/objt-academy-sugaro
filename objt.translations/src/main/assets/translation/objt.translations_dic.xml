@@ -39,6 +39,13 @@
     <entry nativestring="product type">
       <translation language="nl" translatedstring="product type"/>
       <translation language="en" translatedstring="product type"/>
+    <entry nativestring="ZONE.CATEGORY.ERP">
+      <translation language="nl" translatedstring="ERP zone"/>
+      <translation language="en" translatedstring="ERP zone"/>
+    </entry>
+    <entry nativestring="ZONE.CATEGORY.NORMAL">
+      <translation language="nl" translatedstring="Normale zone"/>
+      <translation language="en" translatedstring="Normal zone"/>
     </entry>
   </entries>
   <xmlparserconfig path="objt.translations_config.xml"/>
