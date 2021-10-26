@@ -4,7 +4,7 @@
     <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
     <option name="MAIN_CLASS_NAME" value="dce.pd.frame.configurator.Configurator" />
     <module name="objt.configurator_main" />
-    <option name="PROGRAM_PARAMETERS" value="configurator.properties objt/app/configurator/configurator.xml REMOTE objtdev/Objt!9260" />
+    <option name="PROGRAM_PARAMETERS" value="configurator.properties objt/custom/app/configurator/configurator.xml REMOTE objtdev/Objt!9260" />
     <option name="VM_PARAMETERS" value="-Xms64M -Xmx256M -Dsun.java2d.d3d=false -XX:+UseG1GC -javaagent:&quot;C:\javalib\aspectj\1.9.6\aspectjweaver.jar&quot;" />
     <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/objt.configurator" />
     <RunnerSettings RunnerId="Debug">

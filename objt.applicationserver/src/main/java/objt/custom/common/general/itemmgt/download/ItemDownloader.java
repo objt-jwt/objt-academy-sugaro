@@ -13,7 +13,7 @@ import javax.transaction.Transactional;
 
 import objt.common.itemmgt.bo.Item;
 
-public class ItemDownloader extends objt.common.download.ItemDownloader
+public class ItemDownloader extends objt.vertical.common.general.itemmgt.download.ItemDownloader
 {
 
   public ItemDownloader()
@@ -28,9 +28,9 @@ public class ItemDownloader extends objt.common.download.ItemDownloader
 
   @Transactional(Transactional.TxType.MANDATORY)
   @Override
-  public Item syncBO(objt.common.download.ItemDownloader.DownloadItem pDownloadItem) throws Exception
+  public Item syncBO(objt.vertical.common.general.itemmgt.download.ItemDownloader.DownloadItem pDownloadItem) throws Exception
   {
-    Item item = super.syncBO(pDownloadItem);
+    Item item = super.syncBO((DownloadItem) pDownloadItem);
 
     if (item.isCreated()) item.setUsrFlg1(Boolean.TRUE);
 
