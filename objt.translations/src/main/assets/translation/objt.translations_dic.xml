@@ -36,6 +36,14 @@
     <include path="..\..\..\..\..\assets\translation\objt.applicationserver-core_dic.xml"/>
   </includes>
   <entries>
+    <entry nativestring="New_Item">
+      <translation language="nl" translatedstring="Nieuw Item"/>
+      <translation language="en" translatedstring="New Item"/>
+    </entry>
+    <entry nativestring="Product Type">
+      <translation language="nl" translatedstring="Product Type"/>
+      <translation language="en" translatedstring="Product Type"/>
+    </entry>
     <entry nativestring="product type">
       <translation language="nl" translatedstring="product type"/>
       <translation language="en" translatedstring="product type"/>

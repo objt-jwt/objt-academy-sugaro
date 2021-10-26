@@ -73,7 +73,7 @@
     <module name="UPLOADTRANSACTION" class="dce.pd.frame.upload.UploadTransaction"
             instantiation="SINGLETON">
       <property name="UPLOADTRANSACTION.NRFIELDS" value="16"/>
-      <property name="UPLOADTRANSACTION.UPLOADTRANSACTIONFACTORY.CONFIGFILE" value="objt/app/applicationserver/uploadtransactionconfig.xml"/>
+      <property name="UPLOADTRANSACTION.UPLOADTRANSACTIONFACTORY.CONFIGFILE" value="objt/custom/app/applicationserver/uploadtransactionconfig.xml"/>
       <property name="UPLOADTRANSACTION.HISTORY.ONLINEPERIOD" value="31"/>
     </module>
 
@@ -1189,7 +1189,6 @@
       <property name="THIN.LICENSEID" value="objt.wms.rfclient"/>
       <property name="THIN.PROTOCOL" value="BINARY"/>
       <property name="THIN.DIALOGINFOBUILDER.CONFIGFILE" value="objt/custom/app/thinclient/dialogconfig.xml"/>
-
       <postinit module="AUTOLOGOUTTRANSACTION" method="addDialogEventListener"/>
     </module>
 
@@ -1446,6 +1445,8 @@
     <!--                                    ADDITIONAL SERVER MODULES PROJECT                                          -->
     <!-- *********************************************************************************************************** -->
 
+    <module name="CUSTOM_UPLOADTRANSACTION" class="objt.custom.transaction.UploadTransaction" instantiation="SINGLETON">
+    </module>
 
     <!-- *********************************************************************************************************** -->
     <!--                                   SCHEDULE MONITOR                                                          -->

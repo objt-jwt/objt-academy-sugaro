@@ -20,15 +20,15 @@
   <licenseid type="MODULE" id="OBJT.TA.WEB" />
 
   <!-- client license section -->
-  <licenseid type="APPLICATION" id="objt.server" maxinstances="1" />
+  <licenseid type="APPLICATION" id="objt.server" maxinstances="0" />
   <licenseid type="APPLICATION" id="objt.deviceserver" maxinstances="0" />
   <licenseid type="APPLICATION" id="objt.printserver" maxinstances="0" />
   <licenseid type="APPLICATION" id="objt.webserver" maxinstances="0" />
   <licenseid type="APPLICATION" id="objt.configurator" maxinstances="0" />
-  <licenseid type="APPLICATION" id="objt.supervisor" maxinstances="1" />
-  <licenseid type="APPLICATION" id="objt.supervisor.readonly" maxinstances="1" />
-  <licenseid type="APPLICATION" id="objt.mes.operatorclient" maxinstances="1" hostbased="YES" />
-  <licenseid type="APPLICATION" id="objt.wms.operatorclient" maxinstances="1" hostbased="YES" />
-  <licenseid type="APPLICATION" id="objt.wms.rfclient" maxinstances="1" />
-  <licenseid type="APPLICATION" id="objt.gateway" maxinstances="1" />
+  <licenseid type="APPLICATION" id="objt.supervisor" maxinstances="0" />
+  <licenseid type="APPLICATION" id="objt.supervisor.readonly" maxinstances="0" />
+  <licenseid type="APPLICATION" id="objt.mes.operatorclient" maxinstances="0" hostbased="YES" />
+  <licenseid type="APPLICATION" id="objt.wms.operatorclient" maxinstances="0" hostbased="YES" />
+  <licenseid type="APPLICATION" id="objt.wms.rfclient" maxinstances="0" />
+  <licenseid type="APPLICATION" id="objt.gateway" maxinstances="0" />
 </license>
