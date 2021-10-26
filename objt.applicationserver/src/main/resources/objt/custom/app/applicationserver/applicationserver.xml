@@ -1,0 +1,1461 @@
+<server>
+  <properties>
+    <property name="APPLICATIONSERVER.LICENSEID" value="objt.server"/>
+  </properties>
+
+  <!-- SERVER MODULES -->
+  <modules>
+
+    <!-- *********************************************************************************************************** -->
+    <!--                                       GENERAL SERVER MODULES                                                -->
+    <!-- *********************************************************************************************************** -->
+    <module name="UIMETACONFIGURATIONHANDLER" class="objt.common.appmgt.server.modules.UIMetaConfigurationHandler" instantiation="SINGLETON" />
+
+    <module name="OBJTSTARTDIGESTMODULE" class="objt.common.server.ObjtStartDigestModule" instantiation="CONSTRUCTOR" >
+    </module>
+
+    <module name="COMMON.CONFIGURATION" class="objt.common.resourcemgt.transaction.ConfigurationTransaction"
+            instantiation="SINGLETON" register="NO">
+    </module>
+
+    <module name="USERDATATRANSACTION" class="dce.pd.transaction.UserDataTransaction" instantiation="SINGLETON" >
+      <property name="USERDATATRANSACTION.USERPATH" value="%INSTALLATION_PATH%/data/user" />
+    </module>
+
+    <module name="AUTHENTICATION.CONFIGURATION" class="objt.common.resourcemgt.transaction.AuthenticationConfigurationTransaction"
+            instantiation="SINGLETON" register="NO"/>
+
+    <module name="COMMON_METACONFIGURATIONHANDLER" class="objt.common.server.MetaConfigurationHandler" instantiation="SINGLETON" />
+    <module name="LES_METACONFIGURATIONHANDLER" class="objt.wms.server.module.MetaConfigurationHandler" instantiation="SINGLETON" />
+    <module name="TA_METACONFIGURATIONHANDLER" class="objt.wfm.server.modules.MetaConfigurationHandler" instantiation="SINGLETON" />
+
+    <module name="BOCACHEHANDLER" class="objt.common.server.BOCacheHandler" enabled="true"
+            instantiation="CONSTRUCTOR">
+      <servlet path="/servlet/BOCacheHandler" class="objt.common.server.BOCacheHandler$BOCacheHandlerServlet"/>
+      <webpage path="/servlet/BOCacheHandler"/>
+    </module>
+
+    <module name="BOASSOCIATIONCLEANER" class="objt.common.server.BOAssociationCleaner" instantiation="CONSTRUCTOR"
+            timeout="1d" interval="1h" full="true">
+    </module>
+
+    <module name="ATTRIBUTEVALIDATIONHANDLER" class="dce.pd.frame.validation.AttributeValidationHandler"
+            instantiation="CONSTRUCTOR">
+    </module>
+
+    <module name="DELEGATEHANDLER" class="dce.pd.frame.delegation.DelegateHandler"
+            instantiation="SINGLETON">
+      <property name="DELEGATEHANDLER.CONFIGFILE" value="objt/app/applicationserver/delegatehandlerconfig.xml" />
+    </module>
+
+    <module name="MAILHANDLER" class="dce.util.net.mail.MailHandler" enabled="false"
+            instantiation="SINGLETON">
+    </module>
+
+    <module name="RESOURCEVIEWTRANSACTION" class="dce.pd.frame.resourceview.transaction.ResourceViewTransaction"
+            instantiation="SINGLETON">
+      <property name="RESOURCEVIEWTRANSACTION.RESOURCEVIEW.PATH" value="%INSTALLATION_PATH%/data/resourceviews" />
+      <property name="RESOURCEVIEWTRANSACTION.RESOURCEVIEW.TEMPLATEPATH" value="%INSTALLATION_PATH%/data/resourceviews/templates" />
+    </module>
+
+    <module name="DOWNLOADTRANSACTION" class="dce.pd.frame.download.DownloadTransaction"
+            instantiation="SINGLETON">
+      <property name="DOWNLOADTRANSACTION.DATAFILEPATH" value="%INSTALLATION_PATH%/download/datafiles"/>
+      <property name="DOWNLOADTRANSACTION.LOGFILEPATH" value="%INSTALLATION_PATH%/download/logfiles"/>
+      <property name="DOWNLOADTRANSACTION.DOWNLOADEVENTS.LOGZERORECORDSPROCESSED" value="YES"/>
+      <property name="DOWNLOADTRANSACTION.DOWNLOADEVENTS.ONLINEPERIOD" value="31"/>
+      <property name="DOWNLOADTRANSACTION.MAIL.SUBJECT" value="[%INSTALLATION%] %m %t : %c"/>
+      <property name="DOWNLOADTRANSACTION.MAIL.MAILCHANNEL.ERROR" value="DOWNLOAD"/>
+      <property name="DOWNLOADTRANSACTION.MAIL.MAILCHANNEL.WARNING" value="DOWNLOAD"/>
+      <property name="DOWNLOADTRANSACTION.MAIL.MAILCHANNEL.INFORMATION" value="-"/>
+    </module>
+
+    <module name="UPLOADTRANSACTION" class="dce.pd.frame.upload.UploadTransaction"
+            instantiation="SINGLETON">
+      <property name="UPLOADTRANSACTION.NRFIELDS" value="16"/>
+      <property name="UPLOADTRANSACTION.UPLOADTRANSACTIONFACTORY.CONFIGFILE" value="objt/custom/app/applicationserver/uploadtransactionconfig.xml"/>
+      <property name="UPLOADTRANSACTION.HISTORY.ONLINEPERIOD" value="31"/>
+    </module>
+
+    <module name="ROLESERVERMODULE" class="objt.common.appmgt.server.modules.RoleServerModule"
+            instantiation="CONSTRUCTOR"
+            register="NO">
+      <property name="ROLESERVERMODULE.CONFIGFILE" value="objt/app/applicationserver/roleservermodule_config.xml"/>
+    </module>
+
+    <module name="UOMSERVERMODULE" class="objt.common.uommgt.server.module.UomServerModule"
+            instantiation="CONSTRUCTOR">
+      <dimension name="TIME"/>
+      <dimension name="UNIT"/>
+      <dimension name="RATIO"/>
+      <dimension name="NONE"/>
+      <dimension name="LENGTH"/>
+      <dimension name="MASS"/>
+      <dimension name="VOLUME"/>
+    </module>
+
+    <module name="LANGUAGESERVERMODULE" class="objt.common.languagemgt.server.module.LanguageServerModule"
+            instantiation="CONSTRUCTOR" register="YES">
+      <property name="LANGUAGESERVERMODULE.CONFIGFILE" value="objt/common/configurator/languagemgt/language_config.xml"/>
+      <language isocode="nl" />
+      <language isocode="fr" />
+      <language isocode="en" />
+      <language isocode="de" />
+      <language isocode="bg" />
+      <language isocode="hr" />
+      <language isocode="cs" />
+      <language isocode="da" />
+      <language isocode="et" />
+      <language isocode="fi" />
+      <language isocode="el" />
+      <language isocode="hu" />
+      <language isocode="ga" />
+      <language isocode="it" />
+      <language isocode="lv" />
+      <language isocode="lt" />
+      <language isocode="mt" />
+      <language isocode="pl" />
+      <language isocode="pt" />
+      <language isocode="ro" />
+      <language isocode="sk" />
+      <language isocode="sl" />
+      <language isocode="es" />
+      <language isocode="sv" />
+    </module>
+
+    <module name="SQLFILTERSERVERMODULE" class="objt.common.appmgt.server.modules.SQLFilterServerModule"
+            instantiation="CONSTRUCTOR">
+      <property name="SQLFILTERSERVERMODULE.CONFIGFILE" value="objt/app/applicationserver/sqlfilterconfig.xml"/>
+    </module>
+
+    <module name="REMOTEPRINTHANDLER" class="objt.driver.print.RemotePrintHandler" enabled="false"
+            instantiation="SINGLETON">
+      <property name="REMOTEPRINTHANDLER.PRINTSERVER1.MODE" value="SERVER"/>
+      <servlet path="/servlet/PrinterInfo" class="objt.driver.print.RemotePrintHandlerServlet"/>
+      <webpage path="/servlet/PrinterInfo"/>
+    </module>
+
+    <module name="PRINTTRANSACTION" class="objt.common.resourcemgt.transaction.PrintTransaction"
+            instantiation="SINGLETON">
+      <property name="PRINTTRANSACTION.OUTPUTMAP.CONFIGFILE" value="objt/app/applicationserver/printoutputmapconfig.xml"/>
+      <!--<property name="PRINTTRANSACTION.OUTPUTMAP.FNC1" value="{FNC1}"/> &lt;!&ndash; to be used with codesoft print handler &ndash;&gt;-->
+      <property name="PRINTTRANSACTION.OUTPUTMAP.FNC1" value="&#188;"/>
+    </module>
+
+    <module name="LABELTRANSACTION" class="objt.common.resourcemgt.transaction.LabelTransaction"
+            instantiation="SINGLETON">
+    </module>
+
+    <module name="DOCUMENTTEMPLATECONFIGURATIONTRANSACTION" class="objt.common.resourcemgt.transaction.DocumentTemplateConfigurationTransaction"
+            instantiation="SINGLETON">
+    </module>
+
+    <module name="REPORTTRANSACTION" class="dce.pd.transaction.ReportTransaction" instantiation="SINGLETON">
+      <property name="REPORTTRANSACTION.REPORTFACTORY.CONFIGFILE" value="objt/app/applicationserver/reportconfig.xml"/>
+    </module>
+
+    <module name="COMMON_REPORTTRANSACTION" class="objt.common.appmgt.transaction.ReportTransaction" instantiation="SINGLETON">
+      <property name="COMMON_REPORTTRANSACTION.REPORTS.FILEPATH" value="%INSTALLATION_PATH%/data/reports"/>
+      <property name="COMMON_REPORTTRANSACTION.DATABASE.MAXRECORDS" value="5000"/>
+      <property name="COMMON_REPORTTRANSACTION.DATABASE.1.NAME" value="DEFAULT"/>
+      <property name="COMMON_REPORTTRANSACTION.DATABASE.1.NRCONNECTIONS" value="3"/>
+      <!--
+      <property name="COMMON_REPORTTRANSACTION.DATABASE.2.NAME" value="Data Warehouse"/>
+      <property name="COMMON_REPORTTRANSACTION.DATABASE.2.VENDOR" value="SQLSERVER"/>
+      <property name="COMMON_REPORTTRANSACTION.DATABASE.2.DRIVER" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
+      <property name="COMMON_REPORTTRANSACTION.DATABASE.2.URL" value="jdbc:sqlserver://localhost:1433;database=objtdemodw;SelectMethod=cursor"/>
+      <property name="COMMON_REPORTTRANSACTION.DATABASE.2.USER" value="objtdemodw"/>
+      <property name="COMMON_REPORTTRANSACTION.DATABASE.2.PASSWORD" value="objtdemodw"/>
+      <property name="COMMON_REPORTTRANSACTION.DATABASE.2.NRCONNECTIONS" value="3"/>
+      <property name="COMMON_REPORTTRANSACTION.DATABASE.2.TRANSACTIONISOLATIONLEVEL" value="1"/>  &lt;!&ndash; ONLY FOR SQLSERVER!!! &ndash;&gt;
+      -->
+    </module>
+
+    <module name="EVENTTRANSACTION" class="dce.pd.transaction.EventTransaction"
+            instantiation="SINGLETON">
+    </module>
+
+    <module name="EVENTMAILNOTIFIER" class="dce.pd.transaction.EventMailNotifier"
+            instantiation="CONSTRUCTOR">
+    </module>
+
+    <module name="EMPLOYEEIMAGETRANSACTION" class="objt.common.resourcemgt.transaction.EmployeeImageTransaction" instantiation="SINGLETON">
+      <property name="EMPLOYEEIMAGETRANSACTION.IMAGES.PATH" value="%INSTALLATION_PATH%/data/images/employees"/>
+    </module>
+
+    <module name="DOCUMENTFILETRANSACTION" class="objt.common.appmgt.transaction.DocumentFileTransaction"
+            instantiation="SINGLETON">
+      <property name="DOCUMENTFILETRANSACTION.DOCUMENTS.FILEPATH" value="%INSTALLATION_PATH%/data/documents"/>
+    </module>
+
+    <module name="LICENSEINFOSERVERMODULE" class="dce.util.lic.LicenseInfoServerModule"
+            instantiation="SINGLETON">
+      <property name="LICENSEINFOSERVERMODULE.NRBUCKETS" value="31"/>
+      <property name="LICENSEINFOSERVERMODULE.DATAFILE" value="%INSTALLATION_PATH%/data/licenseinfo.ser"/>
+
+      <!-- Create a new bucket every.. -->
+      <property name="LICENSEINFOSERVERMODULE.CREATEBUCKET.SCHEDULE.ENABLED" value="YES"/>
+      <property name="LICENSEINFOSERVERMODULE.CREATEBUCKET.SCHEDULE.SUBSCHEDULES" value="1"/>
+      <property name="LICENSEINFOSERVERMODULE.CREATEBUCKET.SCHEDULE.1.RUN" value="DAILY"/>
+      <property name="LICENSEINFOSERVERMODULE.CREATEBUCKET.SCHEDULE.1.DAILY.HOUR" value="0"/>
+
+      <servlet path="/servlet/LicenseInfo" class="dce.util.lic.LicenseInfoServerModule$LicenseInfoServlet"/>
+      <webpage path="/servlet/LicenseInfo"/>
+    </module>
+
+    <module name="COMMON_DATACLEANER" class="dce.pd.frame.archiver.GenericArchiverImpl"
+            instantiation="CONSTRUCTOR" instantiationparam="objt/common/server/cleanup.xml">
+    </module>
+
+    <module name="COMMON_AUDITTRAILTRANSACTION" class="objt.common.appmgt.transaction.AuditTrailTransaction"
+            instantiation="SINGLETON">
+      <property name="COMMON_AUDITTRAILTRANSACTION.CONFIGFILE" value="objt/app/applicationserver/audittrailconfig.xml" />
+    </module>
+
+    <module name="DRIVEMAPPER" class="objt.process.common.goodies.server.module.DriveMapperModule" enabled="false"
+            instantiation="SINGLETON">
+    </module>
+
+    <module name="FILEDISPATCHHANDLER" class="objt.process.server.module.FileDispatchHandler" instantiation="SINGLETON" enabled="false"
+            instantiationparam="FILEDISPATCHHANDLER">
+    </module>
+
+    <!-- *********************************************************************************************************** -->
+    <!--                                         MES SERVER MODULES                                                  -->
+    <!-- *********************************************************************************************************** -->
+
+    <module name="ALARMTRANSACTION" class="objt.mes.transaction.AlarmTransaction" instantiation="SINGLETON">
+    </module>
+
+    <module name="BASEPARAMETERTRANSACTION" class="objt.mes.transaction.BaseParameterTransaction" instantiation="SINGLETON">
+    </module>
+
+    <module name="RESOURCEPLANNINGTRANSACTION" class="objt.mes.pd.planning.ResourcePlanningTransaction"
+            instantiation="SINGLETON">
+      <property name="objt.mes.pd.planning.ResourcePlanningTransaction.class" value="objt.mes.transaction.ResourcePlanningTransaction"/>
+    </module>
+
+    <!-- the user cost paths are specified for demo purposes only -->
+    <module name="PRODUCTIONSCHEDULETRANSACTION" class="objt.mes.pd.planning.ProductionScheduleTransaction"
+            instantiation="SINGLETON">
+      <!--<property name="PRODUCTIONSCHEDULETRANSACTION.PRODUCTIONSCHEDULE.USR_COST1_PATH" value="'PROCESSUNIT'.usrNum1"/>-->
+      <!--<property name="PRODUCTIONSCHEDULETRANSACTION.PRODUCTIONSCHEDULE.USR_COST2_PATH" value="'RESOURCEOPERATIONPLANNING'.STATIC(objt.mes.pd.planning.bo.ResourceOperationPlannings;getProductionOperation;BO).STATIC(objtdemo.bo.operationmgt.ProductionOperations;getManufacturingOperation;BO;'PROCESSUNIT').usrNum1"/>-->
+      <!--<property name="PRODUCTIONSCHEDULETRANSACTION.PRODUCTIONSCHEDULE.USR_COST3_PATH" value=""/>-->
+    </module>
+
+    <module name="REMOTESCHEDULINGHANDLER" class="objt.mes.pd.scheduling.RemoteSchedulingHandler" enabled="false"
+            instantiation="SINGLETON">
+      <property name="REMOTESCHEDULINGHANDLER.SCHEDULINGHANDLER" value="SENCOMSCHEDULINGHANDLER"/>
+    </module>
+
+    <module name="DOWNTIMETRANSACTION" class="objt.mes.transaction.DowntimeTransaction"
+            instantiation="SINGLETON">
+    </module>
+
+    <module name="MES_EVENTTRANSACTION" class="objt.mes.transaction.EventTransaction"
+            instantiation="SINGLETON">
+    </module>
+
+    <module name="INSTRUCTIONEVENTTRANSACTION" class="objt.mes.transaction.InstructionEventTransaction"
+            instantiation="SINGLETON">
+    </module>
+
+    <module name="INTERRUPTTRANSACTION" class="objt.mes.transaction.InterruptTransaction"
+            instantiation="SINGLETON">
+      <property name="INTERRUPT.MICROSTOP.DURATION" value="120000"/>
+      <property name="INTERRUPT.AUTOCOMPLETEPERIOD" value="3"/>
+    </module>
+
+    <module name="INTERRUPTOPERATIONTRANSACTION" class="objt.mes.transaction.InterruptOperationTransaction"
+            instantiation="SINGLETON">
+    </module>
+
+    <module name="PROCESSPARAMETERTRANSACTION" class="objt.mes.transaction.ProcessParameterTransaction"
+            instantiation="SINGLETON">
+    </module>
+
+    <module name="MEASUREMENTTRANSACTION" class="objt.mes.transaction.MeasurementTransaction"
+            instantiation="SINGLETON">
+    </module>
+
+    <module name="RECIPETRANSACTION" class="objt.mes.transaction.RecipeTransaction"
+            instantiation="SINGLETON">
+    </module>
+
+    <module name="MES_PRODUCTIONTRANSACTION" class="objt.mes.transaction.ProductionTransaction"
+            instantiation="SINGLETON">
+      <property name="PRODUCTIONTRANSACTION.OPERATIONLINKSENABLED" value="NO"/>
+    </module>
+
+    <module name="PRODUCTIONORDERTRANSACTION" class="objt.mes.transaction.ProductionOrderTransaction"
+            instantiation="SINGLETON">
+    </module>
+
+    <module name="PRODUCTIONOPERATIONTRANSACTION" class="objt.mes.transaction.ProductionOperationTransaction"
+            instantiation="SINGLETON">
+      <postinit module="LOCALTAGSERVER" method="addActionListener" commands="PRODUCTIONOPERATION_QTYPRODUCED_UPDATED,PRODUCTIONOPERATION_QTYSCRAP_UPDATED,PRODUCTIONOPERATION_QTYREWORK_UPDATED"/>
+    </module>
+
+    <module name="PLANNINGOPERATIONTRANSACTION" class="objt.mes.transaction.PlanningOperationTransaction"
+            instantiation="SINGLETON">
+    </module>
+
+    <module name="PROCESSRESOURCETRANSACTION" class="objt.mes.transaction.ProcessResourceTransaction"
+            instantiation="SINGLETON">
+      <property name="PROCESSRESOURCETRANSACTION.SHIFTLOG.MAIL.SUBJECT.PATH" value="%[%INSTALLATION%] Shift log entry on '%owner.calendarDay.resource.name%' during shift '%owner.name%'%"/>
+      <property name="PROCESSRESOURCETRANSACTION.SHIFTLOG.MAIL.MESSAGE.PATH" value="%SHIFT LOG ENTRY
+                                                                                    \n-------------------------------------------------
+                                                                                    \nUSER: %employee.fullName%
+                                                                                    \nRESOURCE: %CONCAT(owner.calendarDay.resource;name% - %description)%
+                                                                                    \nSHIFT: %owner.name%
+                                                                                    \nDATE: %dts%
+                                                                                    \nCOMMENT: %comments%
+                                                                                    \n-------------------------------------------------%"/>
+      <property name="PROCESSRESOURCETRANSACTION.SHIFTLOG.MAIL.CHANNEL" value="PRODUCTION_SHIFTLOG"/>
+    </module>
+
+    <module name="MACHINETRANSACTION" class="objt.mes.transaction.MachineTransaction"
+            instantiation="SINGLETON"/>
+
+    <module name="WORKCENTERTRANSACTION" class="objt.mes.transaction.WorkCenterTransaction"
+            instantiation="SINGLETON"/>
+
+    <module name="LABOURTRANSACTION" class="objt.mes.transaction.LabourTransaction"
+            instantiation="SINGLETON">
+    </module>
+
+    <module name="MAINTENANCETRANSACTION" class="objt.mes.transaction.MaintenanceTransaction"
+            instantiation="SINGLETON">
+    </module>
+
+    <!-- a file-based trendfacctory implementation for the processtrends -->
+    <module name="FILETRENDFACTORYIMPL" class="objt.common.productionmgt.server.module.FileTrendFactoryImpl"
+            instantiation="CONSTRUCTOR">
+      <property name="FILETRENDFACTORYIMPL.PATH" value="%INSTALLATION_PATH%/data/trends"/>
+      <property name="FILETRENDFACTORYIMPL.SERIALIZER.1.CLASS" value="objt.mes.server.module.ProcessTrendFileSerializer"/>
+      <property name="FILETRENDFACTORYIMPL.FETCH.BUFFER" value="250"/>
+      <property name="FILETRENDFACTORYIMPL.FETCH.MAXDAYS" value="5"/>
+      <property name="FILETRENDFACTORYIMPL.CLEANUPPERIOD" value="365"/>
+    </module>
+
+    <!-- a db-based trendfactory implementation for the xrdatapoints -->
+    <module name="SQLTRENDFACTORYIMPL" class="objt.common.productionmgt.server.module.SQLTrendFactoryImpl"
+            instantiation="CONSTRUCTOR">
+      <property name="SQLTRENDFACTORYIMPL.CLEANUPPERIOD" value="365"/>
+      <property name="SQLTRENDFACTORYIMPL.SERIALIZER.1.CLASS" value="objt.common.qualitymgt.server.module.XRDataPointSQLSerializer"/>
+    </module>
+
+    <!-- the trendfactory to perform the necessary dispatching -->
+    <module name="TRENDFACTORY" class="objt.common.productionmgt.server.module.TrendFactory"
+            instantiation="CONSTRUCTOR">
+      <property name="TRENDFACTORY.TRENDFACTORYIMPL.1.NAME" value="FILETRENDFACTORYIMPL"/>
+      <property name="TRENDFACTORY.TRENDFACTORYIMPL.2.NAME" value="SQLTRENDFACTORYIMPL"/>
+    </module>
+
+    <module name="TRENDHANDLER" class="objt.mes.server.module.TrendHandler"
+            instantiation="CONSTRUCTOR">
+      <property name="TRENDHANDLER.PROCESSTRENDCACHESIZE" value="500"/>
+    </module>
+
+    <module name="PROCESSAGGREGATIONHANDLER" class="objt.mes.server.module.ProcessAggregationHandler"
+            instantiation="CONSTRUCTOR">
+      <property name="PROCESSAGGREGATIONHANDLER.AGGREGATIONUPDATEINTERVAL" value="60"/>
+    </module>
+
+    <module name="INSTRUCTIONTRIGGERHANDLER" class="objt.mes.server.module.InstructionTriggerHandler"
+            instantiation="CONSTRUCTOR">
+      <servlet path="/servlet/InstructionTriggerInfo"
+               class="objt.mes.server.servlet.InstructionTriggerServlet"/>
+      <webpage path="/servlet/InstructionTriggerInfo"/>
+    </module>
+
+    <module name="INPUTTRANSACTION" class="objt.mes.transaction.InputTransaction"
+            instantiation="SINGLETON">
+      <property name="INPUTTRANSACTION.EMPTYCONTAINER.REMOVE" value="YES"/>
+      <property name="INPUTTRANSACTION.EMPTYNESTCONTAINER.REMOVE" value="YES"/>
+    </module>
+
+    <module name="MES_LOTGENEALOGYTRANSACTION" class="objt.mes.transaction.LotGenealogyTransaction"
+            instantiation="SINGLETON">
+    </module>
+
+    <module name="MES_OUTPUTTRANSACTION" class="objt.mes.transaction.OutputTransaction"
+            instantiation="SINGLETON">
+    </module>
+
+    <module name="INPUTOPERATIONTRANSACTION" class="objt.mes.transaction.InputOperationTransaction"
+            instantiation="SINGLETON">
+    </module>
+
+    <module name="INSTRUCTIONTASKTRANSACTION" class="objt.mes.transaction.InstructionTaskTransaction"
+            instantiation="SINGLETON">
+    </module>
+
+    <module name="INSTRUCTIONTRANSACTION" class="objt.mes.transaction.InstructionTransaction"
+            instantiation="SINGLETON">
+      <property name="INSTRUCTIONTRANSACTION.QUALITYSHEET.NAME.SEPARATOR" value="-"/>
+      <property name="INSTRUCTIONTRANSACTION.DOCUMENT_READ_REQUIRED.MODE" value="EVERY_RUN"/>
+      <!--<property name="INSTRUCTIONTRANSACTION.DOCUMENT_READ_REQUIRED.TIMEFRAME" value="31"/>-->
+      <property name="INSTRUCTIONTRANSACTION.DOCUMENTEDINSTRUCTION.MAIL.OUTPUTMAPCONFIG"   value="objt/mes/server/mailtemplates/documentedinstructionresult.xml"/>
+      <property name="INSTRUCTIONTRANSACTION.INSTRUCTIONSHEET.MAIL.OUTPUTMAPCONFIG"   value="objt/mes/server/mailtemplates/instructionsheetresult.xml"/>
+    </module>
+
+    <module name="PROCESSMONITOR" class="objt.mes.server.module.ProcessMonitor"
+            instantiation="CONSTRUCTOR">
+      <servlet path="/servlet/ProcessMonitorInfo" class="objt.mes.server.servlet.ProcessServlet"/>
+      <webpage path="/servlet/ProcessMonitorInfo"/>
+    </module>
+
+    <module name="MACHINEOPERATIONTRANSACTION" class="objt.mes.transaction.MachineOperationTransaction"
+            instantiation="SINGLETON">
+      <postinit module="LOCALTAGSERVER" method="addActionListener" commands="MACHINEOPERATION_QTYPRODUCED_UPDATED,MACHINEOPERATION_QTYSCRAP_UPDATED,MACHINEOPERATION_QTYREWORK_UPDATED"/>
+    </module>
+
+    <module name="MANOPERATIONTRANSACTION" class="objt.mes.transaction.ManOperationTransaction"
+            instantiation="SINGLETON">
+    </module>
+
+    <module name="SCRAPTRANSACTION" class="objt.mes.transaction.ScrapTransaction"
+            instantiation="SINGLETON">
+    </module>
+
+    <module name="OUTPUTOPERATIONTRANSACTION" class="objt.mes.transaction.OutputOperationTransaction"
+            instantiation="SINGLETON">
+    </module>
+
+    <module name="LES_STORAGERESOURCETRANSACTION" class="objt.common.resourcemgt.transaction.StorageResourceTransaction"
+            instantiation="SINGLETON">
+      <property name="objt.common.resourcemgt.transaction.StorageResourceTransaction.class"
+                value="objt.wms.transaction.StorageResourceTransaction"/>
+    </module>
+
+    <module name="MES_STORAGERESOURCETRANSACTION" class="objt.mes.transaction.StorageResourceTransaction"
+            instantiation="SINGLETON">
+    </module>
+
+    <module name="WAREHOUSELOCATIONTRANSACTION" class="objt.common.resourcemgt.transaction.WarehouseLocationTransaction"
+            instantiation="SINGLETON">
+      <property name="objt.common.resourcemgt.transaction.WarehouseLocationTransaction.class" value="objt.wms.transaction.WarehouseLocationTransaction"/>
+    </module>
+
+    <module name="ISPRESENTTRANSACTION" class="dce.pd.transaction.IsPresentTransaction"
+            instantiation="SINGLETON">
+      <property name="IsPresentTransaction.employee.multiresourcelogin" value="dce.pd.sfc.bo.resourcemgt.Machine,dce.pd.sfc.bo.resourcemgt.WorkCenter"/>
+      <property name="IsPresentTransaction.resource.multiemployeelogin" value="dce.pd.sfc.bo.resourcemgt.Machine,dce.pd.sfc.bo.resourcemgt.WorkCenter"/>
+      <property name="IsPresentTransaction.traceorder.create" value="NO"/>
+      <!-- make sure the MES IsPresentTransaction is instantiated -->
+      <property name="dce.pd.transaction.IsPresentTransaction.class" value="objt.mes.transaction.IsPresentTransaction"/>
+    </module>
+
+    <module name="AUTOLOGOUTTRANSACTION" class="dce.pd.transaction.AutoLogoutTransaction"
+            instantiation="SINGLETON">
+      <property name="AUTOLOGOUTTRANSACTION.DEVICE.REMOVE.TIMEOUT" value="10000"/>
+    </module>
+
+    <module name="OEEREPORTHANDLER" class="objt.mes.server.module.OEEReportHandler"
+            instantiation="CONSTRUCTOR"/>
+
+    <module name="CALENDARAGENT" class="dce.pd.frame.explorer.time.CalendarAgent"
+            instantiation="CONSTRUCTOR">
+      <servlet path="/servlet/CalendarAgentServlet" class="dce.pd.frame.explorer.time.CalendarAgentServlet"/>
+      <webpage path="/servlet/CalendarAgentServlet"/>
+
+      <resourceclass class="dce.pd.sfc.bo.resourcemgt.Machine"/>
+      <resourceclass class="dce.pd.sfc.bo.resourcemgt.WorkCenter"/>
+      <resourceclass class="objt.wms.bo.inventorymgt.Zone"/>
+      <property name="CALENDARAGENT.EVENTTHREADPOOL.SIZE.MAX" value="10"/>
+      <property name="CALENDARAGENT.SYSTEMSHIFT.NAME" value="NONE"/>
+    </module>
+
+    <!-- Vertical PlanningHandler required for LockRelations feature -->
+    <module name="PLANNINGHANDLER" class="objt.vertical.mes.general.pd.planning.PlanningHandler"
+            instantiation="CONSTRUCTOR">
+      <property name="PLANNINGHANDLER.RESOURCEOPERATIONPLANNINGLINKS.CONSTRAINTSENABLED" value="YES"/>
+      <property name="PLANNINGHANDLER.RESOURCEOPERATIONPLANNING.MOVE_FROZEN_SELECTION_ENABLED" value="YES"/>
+      <property name="PLANNINGHANDLER.RESOURCEOPERATIONPLANNING.RETAIN_SEQUENCE_ON_ACTUALIZE" value="NO"/>
+      <property name="PLANNINGHANDLER.RESOURCEOPERATIONPLANNING.AUTO_SKIP_FROZEN_SEQUENTIAL_ENTRIES" value="YES"/>
+      <property name="PLANNINGHANDLER.RESOURCEOPERATIONPLANNING.MOVE_OPTION" value="MOVE"/>
+      <property name="PLANNINGHANDLER.RESOURCEOPERATIONPLANNING.INSERT_OPTION" value="INSERT"/>
+      <property name="PLANNINGHANDLER.TIMEUNIT" value="MIN"/>
+    </module>
+
+    <module name="MES_PICKTRANSACTION" class="objt.mes.transaction.PickTransaction"
+            instantiation="SINGLETON">
+    </module>
+
+    <module name="MES_BACKORDERTRANSACTION" class="objt.mes.transaction.BackorderTransaction"
+            instantiation="SINGLETON">
+    </module>
+
+    <module name="MES_PUTTRANSACTION" class="objt.mes.transaction.PutTransaction"
+            instantiation="SINGLETON">
+      <property name="PUTORDER.SPACEALLOCATION.OPTION" value="AT_TASK_EXECUTION"/>
+    </module>
+
+    <module name="MES_MOVETRANSACTION" class="objt.mes.transaction.MoveTransaction"
+            instantiation="SINGLETON">
+    </module>
+
+    <module name="TAGTRANSACTION" class="objt.mes.transaction.TagTransaction"
+            instantiation="SINGLETON">
+      <!-- run the remotetagreader in 'server' mode to allow the tagserver to connect to the server -->
+      <property name="REMOTETAGREADER.MODE" value="SERVER"/>
+      <!-- tag handling properties -->
+      <property name="TAGTRANSACTION.TAGREADER.ISENABLED" value="YES"/>
+      <property name="TAGTRANSACTION.THREADPOOL.ISENABLED" value="YES"/>
+      <property name="TAGTRANSACTION.THREADPOOL.MINTHREADS" value="1"/>
+      <property name="TAGTRANSACTION.THREADPOOL.MAXTHREADS" value="5"/>
+      <property name="TAGTRANSACTION.SCRAPEVENT.ISENABLED" value="NO"/>
+    </module>
+
+    <module name="MES_UPLOADTRANSACTION" class="objt.mes.transaction.UploadTransaction"
+            instantiation="SINGLETON">
+    </module>
+
+    <module name="MES_DATACLEANER" class="dce.pd.frame.archiver.GenericArchiverImpl"
+            instantiation="CONSTRUCTOR" instantiationparam="objt/vertical/mes/general/server/cleanup.xml">
+    </module>
+
+    <module name="TRENDTRANSACTION" class="objt.mes.transaction.TrendTransaction"
+            instantiation="SINGLETON">
+    </module>
+
+    <!-- A local tagserver running inside the ApplicationServer -->
+    <module name="LOCALTAGSERVER" class="dce.pd.sfc.frame.tagmgt.local.LocalTagServer" enabled="true"
+            instantiation="CONSTRUCTOR">
+      <servlet path="/servlet/LocalTagServerServlet" class="dce.pd.sfc.frame.tagmgt.local.LocalTagServerServlet"/>
+      <webpage path="/servlet/LocalTagServerServlet"/>
+    </module>
+
+    <module name="REMOTEDEVICEHANDLER" class="objt.driver.devicehandler.RemoteDeviceHandler" enabled="false"
+            instantiation="SINGLETON">
+      <property name="REMOTEDEVICEHANDLER.DEVICESERVER1.MODE" value="SERVER"/>
+      <property name="REMOTEDEVICEHANDLER.DEVICESERVER1.DEVICELISTENER.PRIMARY" value="YES"/>
+    </module>
+
+    <!-- *********************************************************************************************************** -->
+    <!--                                         WMS SERVER MODULES                                                  -->
+    <!-- *********************************************************************************************************** -->
+
+    <!-- RuleHandler to run the LES allocation rules -->
+    <module name="WMSRULEHANDLER" class="objt.wms.server.module.RuleHandler" instantiation="SINGLETON">
+      <!-- use an EventLog based logger for the default server-side logging -->
+      <property name="WMSRULEHANDLER.RULELOGGER.1.ID" value="WMSRULEHANDLER.RULEEVENTLOGLOGGER"/>
+      <property name="WMSRULEHANDLER.RULELOGGER.1.CLASS" value="objt.common.rulemgt.util.RuleEventLogLogger"/>
+      <!-- use an HTML logger for the client-side diagnostics logging -->
+      <property name="WMSRULEHANDLER.CLIENTRULELOGGER.1.ID" value="WMSRULEHANDLER.RULEHTMLLOGGER"/>
+      <property name="WMSRULEHANDLER.CLIENTRULELOGGER.1.CLASS" value="objt.wms.transaction.util.RuleHTMLLogger"/>
+      <!-- Configuration of the WMSRULEHANDLER.RULEEVENTLOGLOGGER -->
+      <property name="WMSRULEHANDLER.RULEEVENTLOGLOGGER.LOGLEVEL" value="INFO"/>
+      <property name="WMSRULEHANDLER.RULEEVENTLOGLOGGER.EVENTLOG.FILENAME" value="warehouseRuleLog%g.txt"/>
+      <property name="WMSRULEHANDLER.RULEEVENTLOGLOGGER.EVENTLOG.FILEPATH" value="%INSTALLATION_PATH%/logs/rules"/>
+      <property name="WMSRULEHANDLER.RULEEVENTLOGLOGGER.EVENTLOG.FILESIZE" value="5M"/>
+      <property name="WMSRULEHANDLER.RULEEVENTLOGLOGGER.EVENTLOG.BACKUPCOUNT" value="5"/>
+      <!-- Configuration of the WMSRULEHANDLER.RULEHTMLLOGGER -->
+      <property name="WMSRULEHANDLER.RULEHTMLLOGGER.LOGLEVEL" value="INFO"/>
+      <property name="WMSRULEHANDLER.RULEHTMLLOGGER.EVENTLOG.FILENAME" value="warehouseHtmlRuleLog%g.txt"/>
+      <property name="WMSRULEHANDLER.RULEHTMLLOGGER.EVENTLOG.FILEPATH" value="%INSTALLATION_PATH%/logs/rules"/>
+      <property name="WMSRULEHANDLER.RULEHTMLLOGGER.EVENTLOG.FILESIZE" value="5M"/>
+      <property name="WMSRULEHANDLER.RULEHTMLLOGGER.EVENTLOG.BACKUPCOUNT" value="0"/>
+    </module>
+
+    <!-- RuleHandler to run the WMS inspection rules -->
+    <module name="INSPECTIONRULEHANDLER" class="objt.wms.server.module.InspectionRuleHandler" instantiation="SINGLETON">
+      <!-- use an EventLog based logger for the default server-side logging -->
+      <property name="INSPECTIONRULEHANDLER.RULELOGGER.1.ID" value="INSPECTIONRULEHANDLER.RULEEVENTLOGLOGGER"/>
+      <property name="INSPECTIONRULEHANDLER.RULELOGGER.1.CLASS" value="objt.common.rulemgt.util.RuleEventLogLogger"/>
+      <!-- use an HTML logger for the client-side diagnostics logging -->
+      <property name="INSPECTIONRULEHANDLER.CLIENTRULELOGGER.1.ID" value="INSPECTIONRULEHANDLER.RULEHTMLLOGGER"/>
+      <property name="INSPECTIONRULEHANDLER.CLIENTRULELOGGER.1.CLASS" value="objt.wms.transaction.util.RuleHTMLLogger"/>
+      <!-- Configuration of the INSPECTIONRULEHANDLER.RULEEVENTLOGLOGGER-->
+      <property name="INSPECTIONRULEHANDLER.RULEEVENTLOGLOGGER.LOGLEVEL" value="INFO"/>
+      <property name="INSPECTIONRULEHANDLER.RULEEVENTLOGLOGGER.EVENTLOG.FILENAME" value="inspectionRuleLog%g.txt"/>
+      <property name="INSPECTIONRULEHANDLER.RULEEVENTLOGLOGGER.EVENTLOG.FILEPATH" value="%INSTALLATION_PATH%/logs/rules"/>
+      <property name="INSPECTIONRULEHANDLER.RULEEVENTLOGLOGGER.EVENTLOG.FILESIZE" value="5M"/>
+      <property name="INSPECTIONRULEHANDLER.RULEEVENTLOGLOGGER.EVENTLOG.BACKUPCOUNT" value="5"/>
+      <!-- Configuration of the INSPECTIONRULEHANDLER.RULEHTMLLOGGER -->
+      <property name="INSPECTIONRULEHANDLER.RULEHTMLLOGGER.LOGLEVEL" value="INFO"/>
+      <property name="INSPECTIONRULEHANDLER.RULEHTMLLOGGER.EVENTLOG.FILENAME" value="inspectionHtmlRuleLog%g.txt"/>
+      <property name="INSPECTIONRULEHANDLER.RULEHTMLLOGGER.EVENTLOG.FILEPATH" value="%INSTALLATION_PATH%/logs/rules"/>
+      <property name="INSPECTIONRULEHANDLER.RULEHTMLLOGGER.EVENTLOG.FILESIZE" value="5M"/>
+      <property name="INSPECTIONRULEHANDLER.RULEHTMLLOGGER.EVENTLOG.BACKUPCOUNT" value="0"/>
+    </module>
+
+    <module name="INVENTORYHANDLER" class="objt.wms.inventorymgt.InventoryHandler"
+            instantiation="SINGLETON">
+    </module>
+
+    <module name="ALLOCATIONHANDLER" class="objt.wms.inventorymgt.AllocationHandler"
+            instantiation="SINGLETON">
+    </module>
+
+    <module name="SPACEALLOCATIONHANDLER" class="objt.wms.inventorymgt.SpaceAllocationHandler"
+            instantiation="SINGLETON">
+    </module>
+
+    <module name="INVENTORYLOCKHANDLER" class="objt.wms.inventorymgt.InventoryLockHandler" instantiation="CONSTRUCTOR">
+    </module>
+
+    <module name="INVENTORYBALANCEHANDLER" class="objt.wms.inventorymgt.InventoryBalanceHandler"
+            instantiation="CONSTRUCTOR">
+    </module>
+
+    <module name="LES_EVENTTRANSACTION" class="objt.wms.transaction.EventTransaction"
+            instantiation="SINGLETON">
+    </module>
+
+    <module name="LES_INSTRUCTIONEVENTTRANSACTION" class="objt.wms.transaction.InstructionEventTransaction"
+            instantiation="SINGLETON">
+    </module>
+
+    <module name="INVENTORYTRANSACTION" class="objt.common.inventorymgt.transaction.InventoryTransaction"
+            instantiation="SINGLETON">
+      <property name="objt.common.inventorymgt.transaction.InventoryTransaction.class"
+                value="objt.wms.transaction.InventoryTransaction"/>
+      <property name="INVENTORYTRANSACTION.EMPTYCONTAINER.REMOVE" value="YES"/>
+      <property name="INVENTORYTRANSACTION.SSCCNUMBERSEQUENCE.EXTENSIONDIGIT" value="0"/>
+      <property name="INVENTORYTRANSACTION.SSCCNUMBERSEQUENCE.COMPANYCODE" value="0000000"/>
+    </module>
+
+    <module name="INVENTORYADJUSTMENTTRANSACTION" class="objt.common.inventorymgt.transaction.InventoryAdjustmentTransaction"
+            instantiation="SINGLETON">
+      <property name="objt.common.inventorymgt.transaction.InventoryAdjustmentTransaction.class"
+                value="objt.wms.transaction.InventoryAdjustmentTransaction"/>
+    </module>
+
+    <module name="LOTTRANSACTION" class="objt.common.inventorymgt.transaction.LotTransaction"
+            instantiation="SINGLETON">
+      <property name="LOTTRANSACTION.OUTPUTMAP.CONFIGFILE" value="objt/app/applicationserver/lotoutputmapconfig.xml"/>
+    </module>
+
+    <module name="SERIALTRANSACTION" class="objt.common.inventorymgt.transaction.SerialTransaction" instantiation="SINGLETON">
+      <property name="objt.common.inventorymgt.transaction.SerialTransaction.class" value="objt.wms.transaction.SerialTransaction"/>
+      <property name="SERIALTRANSACTION.OUTPUTMAP.CONFIGFILE" value="objt/app/applicationserver/serialoutputmapconfig.xml"/>
+    </module>
+
+    <module name="SERIALINVENTORYTRACETRANSACTION" class="objt.common.inventorymgt.transaction.SerialInventoryTraceTransaction"
+            instantiation="SINGLETON">
+      <property name="objt.common.inventorymgt.transaction.SerialInventoryTraceTransaction.class"
+                value="objt.wms.transaction.SerialInventoryTraceTransaction"/>
+    </module>
+
+    <module name="SERIALIDENTIFICATIONCONFIGURATIONTRANSACTION" class="objt.common.itemmgt.transaction.SerialIdentificationConfigurationTransaction"
+            instantiation="SINGLETON">
+      <property name="objt.common.itemmgt.transaction.SerialIdentificationConfigurationTransaction.class"
+                value="objt.wms.transaction.SerialIdentificationConfigurationTransaction"/>
+    </module>
+
+    <module name="STORAGEITEMQTYTRANSACTION" class="objt.common.inventorymgt.transaction.StorageItemQtyTransaction"
+            instantiation="SINGLETON">
+      <property name="objt.common.inventorymgt.transaction.StorageItemQtyTransaction.class" value="objt.wms.transaction.StorageItemQtyTransaction"/>
+    </module>
+
+    <module name="CONTAINERSTORAGEITEMQTYTRANSACTION" class="objt.common.inventorymgt.transaction.ContainerStorageItemQtyTransaction"
+            instantiation="SINGLETON">
+      <property name="objt.common.inventorymgt.transaction.ContainerStorageItemQtyTransaction.class" value="objt.wms.transaction.ContainerStorageItemQtyTransaction"/>
+    </module>
+
+    <module name="NESTCONTAINERSTORAGEITEMQTYTRANSACTION" class="objt.common.inventorymgt.transaction.NestContainerStorageItemQtyTransaction"
+            instantiation="SINGLETON">
+      <property name="objt.common.inventorymgt.transaction.NestContainerStorageItemQtyTransaction.class" value="objt.wms.transaction.NestContainerStorageItemQtyTransaction"/>
+    </module>
+
+    <module name="PHYSICALINVENTORYTRANSACTION" class="objt.wms.transaction.PhysicalInventoryTransaction"
+            instantiation="SINGLETON">
+      <!--<property name="PHYSICALINVENTORYTRANSACTION.EMPTYCONTAINER.REMOVE" value="YES"/> -->
+      <property name="PHYSICALINVENTORYTRANSACTION.INVENTORYLPN.NAME.VALIDATE" value="YES"/>
+      <property name="PHYSICALINVENTORYTRANSACTION.MULTI.EMPLOYEE.STOCKCHECKING" value="YES"/>
+    </module>
+
+    <module name="INVENTORYORDERTRANSACTION" class="objt.wms.transaction.InventoryOrderTransaction"
+            instantiation="SINGLETON">
+    </module>
+
+    <module name="INVENTORYOPERATIONTRANSACTION" class="objt.wms.transaction.InventoryOperationTransaction"
+            instantiation="SINGLETON">
+    </module>
+
+    <module name="TASKMGT_TASKTRANSACTION" class="objt.wms.taskmgt.TaskTransaction"
+            instantiation="SINGLETON">
+    </module>
+
+    <module name="TASKTRANSACTION" class="objt.wms.transaction.TaskTransaction"
+            instantiation="SINGLETON">
+    </module>
+
+    <module name="TASKHANDLER" class="objt.wms.taskmgt.TaskHandler"
+            instantiation="CONSTRUCTOR">
+    </module>
+
+    <module name="TASKMGT_TASKORDERTRANSACTION" class="objt.wms.taskmgt.TaskOrderTransaction"
+            instantiation="SINGLETON">
+    </module>
+
+    <module name="TASKORDERTRANSACTION" class="objt.wms.transaction.TaskOrderTransaction"
+            instantiation="SINGLETON">
+    </module>
+
+    <module name="TASKMGT_MULTITASKORDERTRANSACTION" class="objt.wms.taskmgt.MultiTaskOrderTransaction"
+            instantiation="SINGLETON">
+    </module>
+
+    <module name="MULTITASKORDERTRANSACTION" class="objt.wms.transaction.MultiTaskOrderTransaction"
+            instantiation="SINGLETON">
+    </module>
+
+    <module name="PICKMULTITASKORDERTRANSACTION" class="objt.wms.transaction.PickMultiTaskOrderTransaction" instantiation="SINGLETON" />
+
+    <module name="INBOUNDTRANSACTION" class="objt.wms.transaction.InboundTransaction"
+            instantiation="SINGLETON" >
+      <property name="INBOUNDTRANSACTION.EMPTYCONTAINER.REMOVE" value="YES"/>
+      <property name="INBOUNDTRANSACTION.INBOUNDLPN.NAME.VALIDATE" value="YES"/>
+      <property name="INBOUNDTRANSACTION.RECEIVE_ON_LOCATION.RECEIVE_ON_CLOSED_CONTAINER.ENABLED" value="YES"/>
+      <property name="INBOUNDTRANSACTION.RECEIVE_ON_LOCATION.RECEIVE_ON_CLOSED_NESTCONTAINER.ENABLED" value="YES"/>
+    </module>
+
+    <module name="INBOUNDORDERTRANSACTION" class="objt.wms.transaction.InboundOrderTransaction"
+            instantiation="SINGLETON">
+    </module>
+
+    <module name="INBOUNDOPERATIONTRANSACTION" class="objt.wms.transaction.InboundOperationTransaction"
+            instantiation="SINGLETON">
+    </module>
+
+    <module name="PRERECEIPTTRANSACTION" class="objt.wms.transaction.PreReceiptTransaction"
+            instantiation="SINGLETON">
+    </module>
+
+    <module name="PRERECEIPTOPERATIONTRANSACTION" class="objt.wms.transaction.PreReceiptOperationTransaction"
+            instantiation="SINGLETON">
+    </module>
+
+    <module name="PUTTRANSACTION" class="objt.wms.transaction.PutTransaction"
+            instantiation="SINGLETON">
+      <property name="PUTTRANSACTION.EMPTYNESTCONTAINER.REMOVE" value="YES"/>
+    </module>
+
+    <module name="PUTORDERTRANSACTION" class="objt.wms.transaction.PutOrderTransaction"
+            instantiation="SINGLETON">
+    </module>
+
+    <module name="PUTOPERATIONTRANSACTION" class="objt.wms.transaction.PutOperationTransaction"
+            instantiation="SINGLETON">
+    </module>
+
+    <module name="MOVETRANSACTION" class="objt.wms.transaction.MoveTransaction"
+            instantiation="SINGLETON">
+      <property name="MOVETRANSACTION.EMPTYCONTAINER.REMOVE" value="YES"/>
+      <property name="MOVETRANSACTION.EMPTYNESTCONTAINER.REMOVE" value="YES"/>
+    </module>
+
+    <module name="MOVEORDERTRANSACTION" class="objt.wms.transaction.MoveOrderTransaction"
+            instantiation="SINGLETON">
+    </module>
+
+    <module name="MOVEOPERATIONTRANSACTION" class="objt.wms.transaction.MoveOperationTransaction"
+            instantiation="SINGLETON">
+    </module>
+
+    <module name="NESTTRANSACTION" class="objt.wms.transaction.NestTransaction"
+            instantiation="SINGLETON" >
+      <property name="NESTTRANSACTION.NESTLPN.NAME.VALIDATE" value="YES"/>
+    </module>
+
+    <module name="OUTBOUNDTRANSACTION" class="objt.wms.transaction.OutboundTransaction"
+            instantiation="SINGLETON">
+      <property name="OUTBOUNDTRANSACTION.AUTO.CLOSE.CONTAINER" value="NO"/>
+      <property name="OUTBOUNDTRANSACTION.EMPTYNESTCONTAINER.REMOVE" value="YES"/>
+    </module>
+
+    <module name="OUTBOUNDORDERTRANSACTION" class="objt.wms.transaction.OutboundOrderTransaction"
+            instantiation="SINGLETON">
+    </module>
+
+    <module name="OUTBOUNDOPERATIONTRANSACTION" class="objt.wms.transaction.OutboundOperationTransaction"
+            instantiation="SINGLETON">
+    </module>
+
+    <module name="WMS_LOTGENEALOGYTRANSACTION" class="objt.wms.transaction.LotGenealogyTransaction"
+            instantiation="SINGLETON">
+    </module>
+
+    <module name="WMS_OUTPUTTRANSACTION" class="objt.wms.transaction.OutputTransaction"
+            instantiation="SINGLETON">
+      <property name="WMS_OUTPUTTRANSACTION.OUTPUTLPN.NAME.VALIDATE" value="YES"/>
+    </module>
+
+    <module name="PICKZONETRANSACTION" class="objt.wms.transaction.PickZoneTransaction" instantiation="SINGLETON">
+    </module>
+
+    <module name="PICKTRANSACTION" class="objt.wms.transaction.PickTransaction"
+            instantiation="SINGLETON">
+      <property name="PICKTRANSACTION.EMPTYCONTAINER.REMOVE" value="YES"/>
+      <property name="PICKTRANSACTION.EMPTYNESTCONTAINER.REMOVE" value="YES"/>
+      <property name="PICKTRANSACTION.PRODUCTION.PICKLPN.REQUIRED" value="YES"/>
+      <property name="PICKTRANSACTION.PICKLPN.NAME.VALIDATE" value="YES"/>
+    </module>
+
+    <module name="PRODUCTIONINVENTORYFORECASTTRANSACTION" class="objt.wms.transaction.ProductionInventoryForecastTransaction" instantiation="SINGLETON">
+      <property name="PRODUCTIONINVENTORYFORECASTTRANSACTION.INTERVAL" value="300"/>
+    </module>
+
+    <module name="PICKGROUPINGTRANSACTION" class="objt.wms.transaction.PickGroupingTransaction"
+            instantiation="SINGLETON">
+      <property name="PICKGROUPINGTRANSACTION.INVENTORYTRACEOPERATION_GROUP_REFERENCE.ENABLED" value="NO"/>
+    </module>
+
+    <module name="PICKALLOCATIONTRANSACTION" class="objt.wms.transaction.PickAllocationTransaction"
+            instantiation="SINGLETON">
+    </module>
+
+    <module name="PICKTASKTRANSACTION" class="objt.wms.transaction.PickTaskTransaction"
+            instantiation="SINGLETON">
+    </module>
+
+    <module name="PICKORDERTRANSACTION" class="objt.wms.transaction.PickOrderTransaction"
+            instantiation="SINGLETON">
+    </module>
+
+    <module name="PICKOPERATIONTRANSACTION" class="objt.wms.transaction.PickOperationTransaction"
+            instantiation="SINGLETON">
+    </module>
+
+    <module name="LPNBUFFERTRANSACTION" class="objt.wms.transaction.LPNBufferTransaction" instantiation="SINGLETON">
+    </module>
+
+    <module name="BACKORDERTRANSACTION" class="objt.wms.transaction.BackorderTransaction"
+            instantiation="SINGLETON">
+    </module>
+
+    <module name="BACKORDERORDERTRANSACTION" class="objt.wms.transaction.BackorderOrderTransaction"
+            instantiation="SINGLETON">
+    </module>
+
+    <module name="BACKORDEROPERATIONTRANSACTION" class="objt.wms.transaction.BackorderOperationTransaction"
+            instantiation="SINGLETON">
+    </module>
+
+    <module name="PLETRANSACTION" class="objt.wms.transaction.PLETransaction"
+            instantiation="SINGLETON">
+    </module>
+
+    <module name="PLEHANDLER" class="objt.wms.server.module.PLEHandler"
+            instantiation="SINGLETON">
+      <property name="DEALLOCATE_ENABLED" value="true" />
+      <property name="UNRELEASE_ENABLED" value="true" />
+      <property name="CACHE_SANITIZE_ALARMTIME" value="00:25" />
+    </module>
+
+    <module name="CROSSDOCKTRANSACTION" class="objt.wms.transaction.CrossDockTransaction"
+            instantiation="SINGLETON">
+      <property name="CROSSDOCKTRANSACTION.ALLOCATABLE.BACKORDERS.ADVISABLE" value="YES"/>
+    </module>
+
+    <module name="MAKETRANSACTION" class="objt.wms.transaction.MakeTransaction"
+            instantiation="SINGLETON">
+      <property name="MAKETRANSACTION.MAKEORDER.AUTOCOMPLETE" value="YES"/>
+    </module>
+
+    <module name="MAKEORDERTRANSACTION" class="objt.wms.transaction.MakeOrderTransaction"
+            instantiation="SINGLETON">
+    </module>
+
+    <module name="MAKEOPERATIONTRANSACTION" class="objt.wms.transaction.MakeOperationTransaction"
+            instantiation="SINGLETON">
+    </module>
+
+    <module name="CROSSDOCKOPERATIONTRANSACTION" class="objt.wms.transaction.CrossDockOperationTransaction"
+            instantiation="SINGLETON">
+    </module>
+
+    <module name="BACKORDERHANDLER" class="objt.wms.server.module.BackorderHandler" instantiation="SINGLETON"/>
+
+    <module name="PACKTRANSACTION" class="objt.wms.transaction.PackTransaction" instantiation="SINGLETON">
+      <property name="PACKTRANSACTION.PACKORDER.AUTOCOMPLETE" value="NO"/>
+      <property name="PACKTRANSACTION.EMPTYCONTAINER.REMOVE" value="NO"/>
+      <property name="PACKTRANSACTION.EMPTYNESTCONTAINER.REMOVE" value="NO"/>
+      <property name="PACKTRANSACTION.PACKLPN.NAME.VALIDATE" value="YES"/>
+    </module>
+
+    <module name="PACKORDERTRANSACTION" class="objt.wms.transaction.PackOrderTransaction"
+            instantiation="SINGLETON">
+    </module>
+
+    <module name="PACKOPERATIONTRANSACTION" class="objt.wms.transaction.PackOperationTransaction"
+            instantiation="SINGLETON">
+    </module>
+
+    <module name="REPLENISHTRANSACTION" class="objt.wms.transaction.ReplenishTransaction"
+            instantiation="SINGLETON">
+      <property name="REPLENISHTRANSACTION.EMPTYCONTAINER.REMOVE" value="YES"/>
+      <property name="REPLENISHTRANSACTION.EMPTYNESTCONTAINER.REMOVE" value="YES"/>
+      <property name="REPLENISHTRANSACTION.PICKCART.NAME.VALIDATE" value="YES"/>
+      <property name="REPLENISHTRANSACTION.GROUPED.REPLENISHMENT.SIZE.MAX" value="0"/> <!-- 0 = no limitation-->
+      <property name="REPLENISHTRANSACTION.GROUPED.REPLENISHMENT.SIZE.MIN" value="0"/>
+    </module>
+
+    <module name="REPLENISHOPERATIONTRANSACTION" class="objt.wms.transaction.ReplenishOperationTransaction"
+            instantiation="SINGLETON">
+    </module>
+
+    <module name="REPLENISHHANDLER" class="objt.wms.server.module.ReplenishHandler"
+            instantiation="CONSTRUCTOR">
+    </module>
+
+    <module name="CONSIGNMENTORDERTRANSACTION" class="objt.wms.transaction.ConsignmentOrderTransaction"
+            instantiation="SINGLETON">
+    </module>
+
+    <module name="CONSIGNMENTTRANSACTION" class="objt.wms.transaction.ConsignmentTransaction"
+            instantiation="SINGLETON">
+    </module>
+
+    <module name="WORKGROUPORDERTRANSACTION" class="objt.wms.transaction.WorkGroupOrderTransaction"
+            instantiation="SINGLETON">
+    </module>
+
+    <module name="WORKGROUPTRANSACTION" class="objt.wms.transaction.WorkGroupTransaction"
+            instantiation="SINGLETON">
+      <property name="WORKGROUPTRANSACTION.WORKGROUPORDER.AUTOCOMPLETE" value="NO"/>
+    </module>
+
+    <module name="TRANSFERTRANSACTION" class="objt.wms.transaction.TransferTransaction"
+            instantiation="SINGLETON">
+      <property name="TRANSFERTRANSACTION.EMPTYNESTCONTAINER.REMOVE" value="YES"/>
+    </module>
+
+    <module name="ZONETRANSACTION" class="objt.wms.transaction.ZoneTransaction"
+            instantiation="SINGLETON">
+    </module>
+
+    <module name="AISLEGROUPTRANSACTION" class="objt.wms.transaction.AisleGroupTransaction"
+            instantiation="SINGLETON">
+    </module>
+
+    <module name="AISLETRANSACTION" class="objt.wms.transaction.AisleTransaction"
+            instantiation="SINGLETON">
+    </module>
+
+    <module name="ASSETTRANSACTION" class="objt.wms.transaction.AssetTransaction"
+            instantiation="SINGLETON">
+    </module>
+
+    <module name="SHIPTRANSACTION" class="objt.wms.transaction.ShipTransaction"
+            instantiation="SINGLETON">
+      <property name="SHIPTRANSACTION.MULTI.EMPLOYEE.LOADING" value="YES"/>
+      <property name="SHIPTRANSACTION.TASK.BASED" value="YES"/>
+      <property name="SHIPTRANSACTION.LOADING.SEQUENCED" value="NO"/>
+    </module>
+
+    <module name="SHIPORDERTRANSACTION" class="objt.wms.transaction.ShipOrderTransaction"
+            instantiation="SINGLETON">
+    </module>
+
+    <module name="SHIPOPERATIONTRANSACTION" class="objt.wms.transaction.ShipOperationTransaction"
+            instantiation="SINGLETON">
+    </module>
+
+    <module name="DELIVERYTRANSACTION" class="objt.wms.transaction.DeliveryTransaction"
+            instantiation="SINGLETON">
+      <property name="DELIVERYTRANSACTION.DELIVERYORDER.AUTOCOMPLETE" value="YES"/>
+    </module>
+
+    <module name="DELIVERYORDERTRANSACTION" class="objt.wms.transaction.DeliveryOrderTransaction"
+            instantiation="SINGLETON">
+    </module>
+
+    <module name="WMS_UPLOADTRANSACTION" class="objt.wms.transaction.UploadTransaction"
+            instantiation="SINGLETON">
+      <property name="WMS_UPLOADTRANSACTION.INVENTORY.ADJUST.ITEMLEVEL" value="ITEM"/>
+      <property name="WMS_UPLOADTRANSACTION.INVENTORY.ADJUST.RESOURCELEVEL" value="ALL"/>
+      <property name="WMS_UPLOADTRANSACTION.INVENTORY.COUNT.ITEMLEVEL" value="ITEM"/>
+      <property name="WMS_UPLOADTRANSACTION.INVENTORY.COUNT.RESOURCELEVEL" value="ALL"/>
+      <property name="WMS_UPLOADTRANSACTION.INVENTORY.IMAGE.ITEMLEVEL" value="ITEM"/>
+      <property name="WMS_UPLOADTRANSACTION.INVENTORY.IMAGE.RESOURCELEVEL" value="ALL"/>
+      <property name="WMS_UPLOADTRANSACTION.INVENTORY.CONSUME.ITEMLEVEL" value="ITEM"/>
+      <property name="WMS_UPLOADTRANSACTION.INVENTORY.CONSUME.RESOURCELEVEL" value="ALL"/>
+    </module>
+
+    <module name="LES_DATACLEANER" class="dce.pd.frame.archiver.GenericArchiverImpl"
+            instantiation="CONSTRUCTOR" instantiationparam="objt/wms/server/cleanup.xml" >
+    </module>
+
+    <module name="WMS_REPORTTRANSACTION" class="objt.wms.transaction.ReportTransaction"
+            instantiation="SINGLETON">
+      <property name="WMS_REPORTTRANSACTION.CMR.PRINTBACKGROUND" value="YES"/>
+      <property name="WMS_REPORTTRANSACTION.PICKLIST.PRINT_ENABLED" value="true"/>
+      <property name="WMS_REPORTTRANSACTION.PICKLIST.PRINTER" value="PDFCreator"/>
+      <property name="WMS_REPORTTRANSACTION.SHIPORDER.PRINT_ENABLED" value="true"/>
+      <property name="WMS_REPORTTRANSACTION.SHIPORDER.PRINTER" value="PDFCreator"/>
+      <property name="WMS_REPORTTRANSACTION.SHIPORDER.CMR.PRINTER" value="PDFCreator"/>
+      <property name="WMS_REPORTTRANSACTION.SHIPORDER.CMR.PRINTER.CATEGORY" value="CMR"/>
+      <property name="WMS_REPORTTRANSACTION.SHIPORDER.PACKINGSLIP.PRINTER" value="PDFCreator"/>
+      <property name="WMS_REPORTTRANSACTION.SHIPORDER.PACKINGSLIP.PRINTER.CATEGORY" value="GENERAL"/>
+    </module>
+
+    <module name="LES_WORKCENTERTRANSACTION" class="objt.wms.transaction.WorkCenterTransaction"
+            instantiation="SINGLETON"/>
+
+    <module name="LES_PRODUCTIONTRANSACTION" class="objt.wms.transaction.ProductionTransaction"
+            instantiation="SINGLETON"/>
+
+    <module name="INSPECTIONTRANSACTION" class="objt.wms.transaction.InspectionTransaction"
+            instantiation="SINGLETON">
+      <property name="INSPECTIONTRANSACTION.INBOUNDORDERINSPECTIONRESULT.MAIL.OUTPUTMAPCONFIG"   value="objt/wms/server/mailtemplates/inboundorderinspectionresult.xml"/>
+      <property name="INSPECTIONTRANSACTION.INBOUNDCONTAINERINSPECTIONRESULT.MAIL.OUTPUTMAPCONFIG"   value="objt/wms/server/mailtemplates/inboundcontainerinspectionresult.xml"/>
+      <property name="INSPECTIONTRANSACTION.PRODUCTIONCONTAINERINSPECTIONRESULT.MAIL.OUTPUTMAPCONFIG"   value="objt/wms/server/mailtemplates/productioncontainerinspectionresult.xml"/>
+      <property name="INSPECTIONTRANSACTION.MANUALCONTAINERINSPECTIONRESULT.MAIL.OUTPUTMAPCONFIG"   value="objt/wms/server/mailtemplates/manualcontainerinspectionresult.xml"/>
+    </module>
+
+    <module name="INSPECTIONSHEETTRANSACTION" class="objt.wms.transaction.InspectionSheetTransaction"
+            instantiation="singleton">
+    </module>
+
+    <module name="AQLTRANSACTION" class="objt.wms.transaction.AQLTransaction"
+            instantiation="singleton">
+    </module>
+
+    <module name="SAMPLETRANSACTION" class="objt.wms.transaction.SampleTransaction"
+            instantiation="SINGLETON" />
+
+    <module name="INVENTORYTRACEOPERATIONTRANSACTION" class="objt.common.inventorymgt.transaction.InventoryTraceOperationTransaction"
+            instantiation="SINGLETON">
+    </module>
+
+    <module name="PURCHASETRANSACTION" class="objt.wms.transaction.PurchaseTransaction" instantiation="SINGLETON" >
+    </module>
+
+    <module name="PURCHASEORDERTRANSACTION" class="objt.wms.transaction.PurchaseOrderTransaction" instantiation="SINGLETON">
+    </module>
+
+    <module name="PURCHASEOPERATIONTRANSACTION" class="objt.wms.transaction.PurchaseOperationTransaction" instantiation="SINGLETON">
+    </module>
+
+    <module name="ASNTRANSACTION" class="objt.wms.transaction.ASNTransaction" instantiation="SINGLETON"/>
+
+    <module name="ASNRECORDTRANSACTION" class="objt.wms.transaction.ASNRecordTransaction" instantiation="SINGLETON"/>
+
+    <module name="INDIRECTTASKTRANSACTION" class="objt.wms.transaction.IndirectTaskTransaction" instantiation="SINGLETON"/>
+
+    <module name="INVENTORYFORECASTTRANSACTION" class="objt.wms.transaction.InventoryForecastTransaction" instantiation="SINGLETON"/>
+
+    <!-- *********************************************************************************************************** -->
+    <!--                                          TA SERVER MODULES                                                  -->
+    <!-- *********************************************************************************************************** -->
+
+    <!-- RuleHandler to run the TA rules -->
+    <module name="TA_RULEHANDLER" class="objt.wfm.server.modules.RuleHandler" instantiation="SINGLETON">
+      <property name="TA_RULEHANDLER.MAX_THREADS" value="10"/>
+    </module>
+
+    <module name="ATTENDANCETRANSACTION" class="objt.wfm.transaction.AttendanceTransaction"
+            instantiation="SINGLETON">
+      <property name="ATTENDANCETRANSACTION.REGISTRATIONDELAY" value="10"/>
+    </module>
+
+    <module name="COSTCENTERTRANSACTION" class="objt.wfm.transaction.CostCenterTransaction"
+            instantiation="SINGLETON"/>
+
+    <module name="HOLIDAYREQUESTFLOWTRANSACTION" class="objt.wfm.transaction.HolidayRequestFlowTransaction" instantiation="SINGLETON">
+      <property name="HOLIDAYREQUESTFLOWTRANSACTION.CONFIGFILE" value="objt/wfm/server/holidayrequestflowconfig.xml"/>
+    </module>
+
+    <module name="HOLIDAYREQUESTTRANSACTION" class="objt.wfm.transaction.HolidayRequestTransaction" instantiation="SINGLETON">
+    </module>
+
+    <module name="HOLIDAYREQUESTOPERATIONTRANSACTION" class="objt.wfm.transaction.HolidayRequestOperationTransaction" instantiation="SINGLETON">
+    </module>
+
+    <module name="HOLIDAYCANCELLATIONREQUESTOPERATIONTRANSACTION" class="objt.wfm.transaction.HolidayCancellationRequestOperationTransaction" instantiation="SINGLETON">
+    </module>
+
+    <module name="TA_EVENTTRANSACTION" class="objt.wfm.transaction.EventTransaction"
+            instantiation="SINGLETON">
+    </module>
+
+    <module name="ATTENDANCEDAYTRANSACTION" class="objt.wfm.transaction.AttendanceDayTransaction"
+            instantiation="SINGLETON">
+    </module>
+
+    <module name="PERIODATTENDANCECOUNTERTRANSACTION" class="objt.wfm.transaction.PeriodAttendanceCounterTransaction"
+            instantiation="SINGLETON">
+    </module>
+
+    <module name="ATTENDANCEAGENT" class="objt.wfm.server.modules.AttendanceAgent"
+            instantiation="CONSTRUCTOR">
+      <!--<property name="ATTENDANCEAGENT.NUMBER_OF_DAYS_IN_SCOPE" value="365"/>-->
+      <!--<property name="ATTENDANCEAGENT.ATTENDANCEDAY_PROXIMITY" value="7200"/>-->
+    </module>
+
+    <module name="ANOMALYREASONTRANSACTION" class="objt.wfm.transaction.AnomalyReasonTransaction"
+            instantiation="SINGLETON">
+    </module>
+
+    <module name="DEVICETIMEOUTMONITOR" class="objt.wfm.server.modules.DeviceTimeoutMonitor"
+            instantiation="SINGLETON">
+    </module>
+
+    <module name="ACCESSTRANSACTION" class="objt.wfm.transaction.AccessTransaction"
+            instantiation="SINGLETON">
+    </module>
+
+    <module name="ACCESSBADGETRANSACTION" class="objt.wfm.transaction.AccessBadgeTransaction"
+            instantiation="SINGLETON">
+    </module>
+
+    <module name="VISITORENTRYTRANSACTION" class="objt.wfm.transaction.VisitorEntryTransaction"
+            instantiation="SINGLETON">
+    </module>
+
+    <module name="DEVICEUPLOADTRANSACTION" class="objt.wfm.ei.DeviceUploadTransaction" instantiation="SINGLETON">
+    </module>
+
+    <module name="CLOCKINGTRANSACTION" class="objt.wfm.ei.ClockingTransaction" instantiation="SINGLETON">
+    </module>
+
+    <module name="CMASHANDLER" class="objt.wfm.ei.kronos.CMASHandler" enabled="false"
+            instantiation="CONSTRUCTOR">
+      <property name="CMASHANDLER.CONFIGFILE" value="objt/wfm/server/cmashandler.xml"/>
+      <property name="CMASHANDLER.READER.CONFIG_FILE" value="objt/wfm/server/kronos_readerconfig.xml"/>
+      <property name="CMASHANDLER.TESTMODE" value="NO"/>
+      <!--if you change the badge length; don't forget to change it in the readerconfig too-->
+      <property name="CMASHANDLER.BADGE.LENGTH" value="10"/>
+    </module>
+
+    <module name="TA_REPORTTRANSACTION" class="objt.wfm.transaction.ReportTransaction"
+            instantiation="SINGLETON">
+      <property name="TA_REPORTTRANSACTION.EMPLOYEEPERFORMANCEREPORT.NUMBER_OF_CODES" value="4"/>
+      <property name="TA_REPORTTRANSACTION.VISITORREPORT.PRINTER" value="PDFCreator"/>
+    </module>
+
+    <module name="ATTENDANCEPATTERNTRANSACTION" class="objt.wfm.transaction.AttendancePatternTransaction"
+            instantiation="SINGLETON"/>
+
+    <module name="TA_WebClient" class="objt.wfm.operatorclient.web.WebClientServerModule"
+            instantiation="CONSTRUCTOR" instantiationparam="TA_HTTP">
+    </module>
+
+    <module name="TA_DATACLEANER" class="dce.pd.frame.archiver.GenericArchiverImpl"
+            instantiation="CONSTRUCTOR" instantiationparam="objt/wfm/server/cleanup.xml" >
+    </module>
+
+    <!-- *********************************************************************************************************** -->
+    <!--                                            CRP MODULES                                                      -->
+    <!-- *********************************************************************************************************** -->
+
+    <!-- RuleHandler to run the CRP rules -->
+    <module name="CRP_RULEHANDLER" class="objt.crp.server.modules.RuleHandler" instantiation="SINGLETON">
+      <property name="CRP_RULEHANDLER.MAX_THREADS" value="10"/>
+    </module>
+
+    <module name="ABSENCECONFIGURATIONTRANSACTION" class="objt.crp.transaction.AbsenceConfigurationTransaction" instantiation="SINGLETON"/>
+
+    <module name="LEVELEDSKILLTRANSACTION" class="objt.crp.transaction.LeveledSkillTransaction" instantiation="SINGLETON"/>
+
+    <module name="BASICSKILLREQUIREMENTLOADERFACTORY" class="objt.crp.transaction.loader.BasicSkillRequirementLoaderFactory"
+            instantiation="CONSTRUCTOR">
+    </module>
+
+    <module name="RESOURCEOPERATIONPLANNINGSKILLREQUIREMENTLOADERFACTORY" class="objt.crp.transaction.loader.ResourceOperationPlanningSkillRequirementLoaderFactory"
+            instantiation="CONSTRUCTOR">
+    </module>
+
+    <module name="EMPLOYEEATTENDANCEDAYCAPACITYLOADERFACTORY" class="objt.crp.transaction.loader.EmployeeAttendanceDayCapacityLoaderFactory"
+            instantiation="CONSTRUCTOR"/>
+
+    <module name="CRPHANDLER" class="objt.crp.server.modules.CRPHandler"
+            instantiation="SINGLETON">
+      <postinit method="addCapacityRequirementLoaderFactory" module="BASICSKILLREQUIREMENTLOADERFACTORY"/>
+      <postinit method="addCapacityRequirementLoaderFactory" module="RESOURCEOPERATIONPLANNINGSKILLREQUIREMENTLOADERFACTORY"/>
+      <postinit method="addCapacityLoaderFactory" module="EMPLOYEEATTENDANCEDAYCAPACITYLOADERFACTORY"/>
+    </module>
+
+    <module name="CRP_DATACLEANER" class="dce.pd.frame.archiver.GenericArchiverImpl"
+            instantiation="CONSTRUCTOR" instantiationparam="objt/crp/server/cleanup.xml">
+    </module>
+
+    <!-- *********************************************************************************************************** -->
+    <!--                                       PROJECT SERVER MODULES                                                -->
+    <!-- *********************************************************************************************************** -->
+
+    <!-- THE HANDLERS ARE PLACED LAST TO ALLOW OTHER MODULES TO CREATE/INITIALIZE BEFORE CLIENTS START CONNECTING-->
+
+    <module name="THINPROXYHANDLER" class="dce.pd.dialogmgr.frame.proxyhandler.ThinProxyHandler" enabled="true"
+            description="Thin Device proxy handler"
+            instantiation="CONSTRUCTOR">
+      <servlet path="/servlet/ThinInfo" class="dce.util.net.http.servlet.DialogManagerInfo"/>
+      <webpage path="/servlet/ThinInfo"/>
+      <property name="THIN.PROPERTIES" value="objt/app/thinclient/thinclient.properties" />
+      <property name="THIN.LICENSEID" value="objt.wms.rfclient"/>
+      <property name="THIN.PROTOCOL" value="BINARY"/>
+      <property name="THIN.DIALOGINFOBUILDER.CONFIGFILE" value="objt/app/thinclient/dialogconfig.xml"/>
+
+      <postinit module="AUTOLOGOUTTRANSACTION" method="addDialogEventListener"/>
+    </module>
+
+    <!-- OBJTDEMO: CSV Upload for WMS -->
+    <module name="CSVUPLOADHANDLER" class="dce.pd.frame.upload.csv.CSVUploadHandler" enabled="false"
+            instantiation="CONSTRUCTOR" instantiationparam="CSVUPLOADHANDLER">
+      <property name="CSVUPLOADHANDLER.MESSAGEQUEUECLIENT.CLASS" value="objt.driver.messagequeue.file.MessageQueueClient"/>
+      <property name="CSVUPLOADHANDLER.send.overwrite" value="YES"/>
+    </module>
+
+    <!-- OBJTDEMO: XSLT Upload for MES -->
+    <module name="XSLTUPLOADHANDLER" class="dce.pd.frame.upload.xml.XSLTUploadHandler" enabled="false"
+            instantiation="CONSTRUCTOR" instantiationparam="XSLTUPLOADHANDLER">
+      <property name="XSLTUPLOADHANDLER.MESSAGEQUEUECLIENT.CLASS" value="objt.driver.messagequeue.file.MessageQueueClient"/>
+      <property name="XSLTUPLOADHANDLER.send.overwrite" value="YES"/>
+    </module>
+
+    <module name="TEMPLATEUPLOADHANDLER" class="objt.process.common.templateupload.server.module.TemplateUploadHandler" enabled="false"
+            instantiation="CONSTRUCTOR" instantiationparam="TEMPLATEUPLOADHANDLER">
+      <property name="TEMPLATEUPLOADHANDLER.MESSAGEQUEUECLIENT.CLASS" value="objt.driver.messagequeue.file.MessageQueueClient"/>
+      <property name="TEMPLATEUPLOADHANDLER.send.overwrite" value="YES"/>
+      <property name="TEMPLATEUPLOADHANDLER.send.charset" value="UTF-8"/>
+      <property name="TEMPLATEUPLOADHANDLER.HISTORY.CHARSET" value="UTF-8"/>
+    </module>
+
+    <!-- @objt.process.common.webservices.annotation.Webservices -->
+    <module name="WEBSERVICEUPLOADHANDLER" class="objt.process.common.webservices.upload.WebserviceUploadHandler" enabled="false"
+            instantiation="SINGLETON">
+    </module>
+
+    <!-- @objt.process.common.jaxbxmlupload.annotation.JaxbXmlUpload -->
+    <module name="JAXBXMLUPLOADHANDLER" class="objt.process.common.jaxbxmlupload.server.module.JaxbXmlUploadHandler" enabled="false"
+            instantiation="CONSTRUCTOR" instantiationparam="JAXBXMLUPLOADHANDLER">
+      <property name="JAXBXMLUPLOADHANDLER.MESSAGEQUEUECLIENT.CLASS" value="dce.ei.messagequeue.file.MessageQueueClient"/>
+      <property name="JAXBXMLUPLOADHANDLER.send.overwrite" value="YES"/>
+    </module>
+
+    <!-- UploadHandlerPool with CSV,XSLT,TEMPLATE, WEBSERVICE -->
+    <module name="UPLOADHANDLERPOOL" class="dce.pd.frame.upload.UploadHandlerPool" instantiation="CONSTRUCTOR" >
+      <property name="UPLOADHANDLERPOOL.UPLOADHANDLER.1.NAME" value="XSLTUPLOADHANDLER" />
+      <property name="UPLOADHANDLERPOOL.UPLOADHANDLER.2.NAME" value="CSVUPLOADHANDLER" />
+      <property name="UPLOADHANDLERPOOL.UPLOADHANDLER.3.NAME" value="TEMPLATEUPLOADHANDLER" />
+      <property name="UPLOADHANDLERPOOL.UPLOADHANDLER.4.NAME" value="WEBSERVICEUPLOADHANDLER" />
+      <property name="UPLOADHANDLERPOOL.UPLOADHANDLER.5.NAME" value="JAXBXMLUPLOADHANDLER" />
+    </module>
+
+    <!-- *********************************************************************************************************** -->
+    <!--                                    ADDITIONAL SERVER MODULES                                                -->
+    <!-- *********************************************************************************************************** -->
+
+    <module name="XSLTDOWNLOADHANDLER" class="dce.pd.frame.download.XSLTDownloadHandler" enabled="false"
+            instantiation="CONSTRUCTOR" instantiationparam="XSLTDOWNLOADHANDLER">
+      <property name="XSLTDOWNLOADHANDLER.MESSAGEQUEUECLIENT.CLASS" value="objt.driver.messagequeue.file.MessageQueueClient"/>
+      <property name="XSLTDOWNLOADHANDLER.MESSAGEQUEUECLIENT.receive.usewatchservice" value="YES"/>
+      <property name="XSLTDOWNLOADHANDLER.MESSAGEQUEUECLIENT.receive.content" value="NO"/>
+      <property name="XSLTDOWNLOADHANDLER.MESSAGEQUEUECLIENT.receive.preservefilename" value="YES"/>
+    </module>
+
+    <module name="CSVDOWNLOADHANDLER" class="dce.pd.frame.download.CSVDownloadHandler" enabled="false"
+            instantiation="CONSTRUCTOR" instantiationparam="CSVDOWNLOADHANDLER">
+      <property name="CSVDOWNLOADHANDLER.MESSAGEQUEUECLIENT.CLASS" value="objt.driver.messagequeue.file.MessageQueueClient"/>
+      <property name="CSVDOWNLOADHANDLER.MESSAGEQUEUECLIENT.receive.usewatchservice" value="YES"/>
+      <property name="CSVDOWNLOADHANDLER.MESSAGEQUEUECLIENT.receive.content" value="NO"/>
+      <property name="CSVDOWNLOADHANDLER.MESSAGEQUEUECLIENT.receive.preservefilename" value="YES"/>
+    </module>
+
+    <module name="WEBSERVICEDOWNLOADHANDLER" class="objt.process.common.webservices.download.WebserviceDownloadHandler" enabled="false"
+            instantiation="SINGLETON">
+    </module>
+
+    <!-- cleanup Objtdemo files -->
+    <module name="FILECLEANUPHANDLER" class="dce.util.io.FileCleanupServerModule" enabled="false" instantiation="CONSTRUCTOR">
+    </module>
+
+    <!-- *********************************************************************************************************** -->
+    <!--                                    ADDITIONAL SERVER MODULES VERTICAL                                          -->
+    <!-- *********************************************************************************************************** -->
+
+    <!-- @objt.process.mes.moldmanagement.annotation.MoldManagement-->
+    <!-- the module is not defined by standard -->
+    <module name="SERIALCOMPONENTTRANSACTION" class="objt.mes.transaction.SerialComponentTransaction" instantiation="SINGLETON">
+    </module>
+
+    <!-- @objt.process.common.hotwiredwipinlocation.annotation.HotWiredWipInLocation -->
+    <module name="HOTWIREDWIPINTRANSACTION" class="objt.process.mes.hotwiredwipinlocation.transaction.HotWiredWipInTransaction" instantiation="SINGLETON" />
+
+    <!-- @objt.process.mes.dynamicwipin.annotation.DynamicWipIn -->
+    <module name="DYNAMICWIPINTRANSACTION" class="objt.process.mes.dynamicwipin.transaction.DynamicWipInTransaction" instantiation="SINGLETON">
+    </module>
+
+    <!-- @objt.process.common.customconfiguration.annotation.CustomConfiguration -->
+    <module name="BU_PROJECT.CONFIGURATION" class="objt.process.common.customconfiguration.transaction.ConfigurationTransaction" instantiation="SINGLETON">
+      <property name="BU_PROJECT.CONFIGURATION.NAME" value="Vertical System Settings"/>
+      <!--<property name="BU_PROJECT.CONFIGURATION.ID" value="CAN_BE_CUSTOMISED"/>-->
+    </module>
+
+    <!-- @objt.process.mes.equipmenttemplates.annotation.EquipmentTemplates -->
+    <module name="EQUIPMENTMODULETRANSACTION" class="objt.process.mes.equipmenttemplates.transaction.EquipmentModuleTransaction" instantiation="SINGLETON">
+      <property name="EQUIPMENTMODULETRANSACTION.CONFIGFILE" value="objt/process/mes/equipmenttemplates/server/equipmentmoduleconfig.xml"/>
+      <!--<property name="EQUIPMENTMODULETRANSACTION.OPCTagReader.HOST" value="192.168.1.1:49202"/>-->
+    </module>
+
+    <!-- @objt.process.mes.instructiontemplates.annotation.InstructionTemplates -->
+    <module name="DOCUMENTEDINSTRUCTIONTRANSACTION" class="objt.process.mes.instructiontemplates.transaction.DocumentedInstructionTransaction" instantiation="SINGLETON">
+      <property name="DOCUMENTEDINSTRUCTIONTRANSACTION.CONFIGFILE" value="objt/process/mes/instructiontemplates/server/documentedinstructionconfig.xml"/>
+    </module>
+
+    <!-- @objt.process.mes.photoinstructions.annotation.PhotoInstructions -->
+    <module name="RUNTIMEPHOTOINSTRUCTIONTRANSACTION" class="objt.process.mes.photoinstructions.transaction.RuntimePhotoInstructionTransaction" instantiation="SINGLETON">
+      <property name="RUNTIMEPHOTOINSTRUCTIONTRANSACTION.PHOTOS.STORE.IN.DB" value="YES"/>
+      <property name="RUNTIMEPHOTOINSTRUCTIONTRANSACTION.PHOTOS.PATH" value="%INSTALLATION_PATH%/data/photos"/>
+      <property name="RUNTIMEPHOTOINSTRUCTIONTRANSACTION.PHOTOS.NAME" value="STATIC(objt.mes.bo.qualitymgt.RuntimeOperationInstructions;getName;BO)% - %STATIC(objt.mes.bo.qualitymgt.RuntimeOperationInstructions;getDescription;BO)"/>
+    </module>
+
+    <!-- @objt.process.mes.productionroutes.annotation.ProductionRoutes -->
+    <module name="PRODUCTIONROUTETRANSACTION" class="objt.process.mes.productionroutes.transaction.ProductionRouteTransaction" instantiation="SINGLETON">
+      <property name="PRODUCTIONROUTETRANSACTION.COMBINEDEQUIPMENTSEPERATOR" value="+"/>
+    </module>
+
+    <!-- @objt.process.mes.wipinputpreparation.annotation.WipInputPreparation -->
+    <module name="WIPINPUTPREP_PRODUCTIONTRANSACTION" class="objt.process.mes.wipinputpreparation.transaction.ProductionTransaction" instantiation="SINGLETON"/>
+
+    <!-- @objt.process.mes.wipinputpreparation.annotation.WipInputPreparation -->
+    <module name="WIPINPUTPREP_PICKZONETRANSACTION" class="objt.process.mes.wipinputpreparation.transaction.PickZoneTransaction" instantiation="SINGLETON"/>
+
+    <!-- @objt.process.mes.phases.annotation.Phases -->
+    <module name="RUNTIMEPHASEOPERATIONTRANSACTION" class="objt.process.mes.phases.transaction.RuntimePhaseOperationTransaction" instantiation="SINGLETON"/>
+
+    <!-- @objt.process.mes.instructionparametereditor.annotation.InstructionParameterEditor -->
+    <module name="INSTRUCTIONPARAMETEREDITOR_DOCUMENTEDINSTRUCTIONTRANSACTION" class="objt.process.mes.instructionparametereditor.transaction.DocumentedInstructionTransaction" instantiation="SINGLETON">
+      <!-- possible values: PROPERTIES,SETUP_PROCESS_INITIALIZATION,DC_REGISTRATION,DC_TRENDING,DC_ALARMS,MEAS_REGISTRATION,MEAS_VALUES,MEAS_ALARMS,INPUT_REGISTRATION,INFO,DOCUMENTS,TASK_TRIGGERS,TASK_SETTINGS,SECURITY,RESULT -->
+      <!-- if a value is configured as auto keep in sync with parent, the changed value of the parent will always be copied to the overruling instructions (recursively to the bottom)-->
+      <!-- if keeping this property empty, everything behaves like frame -->
+      <property name="INSTRUCTIONPARAMETEREDITOR_DOCUMENTEDINSTRUCTIONTRANSACTION.AUTO_KEEP_IN_SYNC_PROPERTIES_WITH_PARENT" value=""/>
+    </module>
+
+    <!-- @objt.process.mes.deviceevents.annotation.DeviceEvents -->
+    <module name="DEVICEDRIVERTRANSACTION" class="objt.process.mes.deviceevents.transaction.DeviceDriverTransaction" instantiation="SINGLETON">
+      <property name="DEVICEDRIVERTRANSACTION.THREADPOOL.ISENABLED" value="YES"/>
+      <property name="DEVICEDRIVERTRANSACTION.THREADPOOL.MINTHREADS" value="1"/>
+      <property name="DEVICEDRIVERTRANSACTION.THREADPOOL.MAXTHREADS" value="10"/>
+      <!-- property for extra devices to listen to, which are not configured as an equipmentmodules with a deviceId (comma separated)-->
+      <!--<property name="DEVICEDRIVERTRANSACTION.EXTRA.LISTEN.DEVICES" value=""/>-->
+      <postinit action="invoke" method="SINGLETON(objt.process.mes.deviceevents.transaction.DeviceDriverTransaction;postInit)" async="YES"/>
+    </module>
+
+    <!-- @objt.process.common.devicelogging.annotation.DeviceLogging -->
+    <module name="DEVICELOGGINGTRANSACTION" class="objt.process.common.devicelogging.transaction.DeviceLoggingTransaction" instantiation="SINGLETON"/>
+
+    <!-- @objt.process.mes.segmentswitchoninspectionsheetresult.annotation.SegmentSwitchOnInspectionSheetResult -->
+    <module name="INSTRUCTIONSEGMENTSWITCHHANDLER" class="objt.process.mes.segmentswitchoninspectionsheetresult.transaction.SegmentSwitchTransaction" enabled="false"
+            instantiation="SINGLETON">
+    </module>
+
+    <!-- @objt.process.mes.productionorderconsolidation.annotation.ProductionOrderConsolidation -->
+    <module name="PRODUCTIONORDERCONSOLIDATIONTRANSACTION" class="objt.process.mes.productionorderconsolidation.transaction.ProductionOrderConsolidationTransaction" instantiation="SINGLETON"/>
+
+    <!-- @objt.process.mes.multilevelbom.annotation.MultiLevelBom -->
+    <module name="MULTILEVELBOMPRODUCTIONOPERATIONTRANSACTION" class="objt.process.mes.multilevelbom.transaction.ProductionOperationTransaction" instantiation="SINGLETON"/>
+
+    <!-- @objt.process.mes.massbalance.annotation.MassBalance -->
+    <module name="MASSBALANCETRANSACTION" class="objt.process.mes.massbalance.transaction.MassBalanceTransaction" instantiation="SINGLETON"/>
+
+    <!-- @objt.process.common.webservices.annotation.Webservices-->
+    <module name="WEBSERVICEREGISTRYHANDLER" class="objt.process.common.webservices.transaction.WebserviceRegistry" instantiation="SINGLETON" enabled="false">
+    </module>
+
+    <!-- @objt.process.mes.lockrelation.annotation.LockRelation -->
+    <module name="LOCKRELATIONTRANSACTION" class="objt.process.mes.lockrelation.transaction.LockRelationTransaction" instantiation="SINGLETON">
+      <property name="LOCKRELATIONTRANSACTION.SEAL_LOCKED_RELATIONS_TO_SAME_DTSSTART" value="NO"/>
+    </module>
+
+    <!-- @objt.process.mes.lockrelation.annotation.LockRelation -->
+    <module name="LOCKRELATION_LOTGENEALOGYTRANSACTION" class="objt.process.mes.lockrelation.transaction.LotGenealogyTransaction" instantiation="SINGLETON"/>
+
+    <!-- @objt.process.mes.moldmanagement.annotation.MoldManagement-->
+    <module name="MOLD_SERIALCOMPONENTTRANSACTION" class="objt.process.mes.moldmanagement.transaction.SerialComponentTransaction" instantiation="SINGLETON"/>
+
+    <!-- @objt.process.mes.moldmanagement.annotation.MoldManagement-->
+    <module name="STROKEFOLLOWUPTRANSACTION" class="objt.process.mes.moldmanagement.transaction.StrokeFollowUpTransaction" instantiation="SINGLETON"/>
+
+    <!-- @objt.process.mes.silomanagement.annotation.SiloManagement -->
+    <module name="SILOMANAGEMENTHANDLER" class="objt.process.mes.silomanagement.server.module.SiloManagementHandler" instantiation="CONSTRUCTOR" />
+
+    <!-- @objt.process.mes.autoremoveoldproducedinventory.annotation.AutoRemoveOldProducedInventory -->
+    <module name="AUTOREMOVEOLDPRODUCEDINVENTORYMODULE" class="objt.process.mes.autoremoveoldproducedinventory.server.module.AutoRemoveOldProducedInventoryModule" instantiation="CONSTRUCTOR"/>
+
+    <!-- @objt.process.common.templateengine.annotation.TemplateEngine -->
+    <module name="TEMPLATEENGINETRANSACTION" class="objt.process.common.templateengine.transaction.TemplateEngineTransaction" instantiation="SINGLETON"/>
+
+    <!--@objt.process.wms.lotaging.annotations.Lotaging -->
+    <module name="LOTAGINGTRANSACTION" class="objt.process.wms.lotaging.LotAgingTransaction" instantiation="SINGLETON"/>
+
+    <module name="BUMODULE" class="objt.process.common.goodies.server.module.BUModule"
+            instantiation="SINGLETON">
+      <servlet path="/servlet/BUModuleServlet" class="objt.process.common.goodies.methodservlet.MethodServlet"/>
+      <webpage path="/servlet/BUModuleServlet"/>
+    </module>
+
+    <module name="MAINTENANCEHANDLER" class="objt.process.common.maintenance.module.MaintenanceModule" enabled="false"
+            instantiation="SINGLETON">
+      <servlet path="/servlet/MaintenanceServlet" class="objt.process.common.goodies.methodservlet.MethodServlet"/>
+      <webpage path="/servlet/MaintenanceServlet"/>
+    </module>
+
+    <!-- @objt.discrete.wfm.useraccountability.annotation.UserAccountability -->
+    <module name="WFM_UA_EVENTTRANSACTION" class="objt.discrete.wfm.useraccountability.transaction.EventTransaction"
+            instantiation="SINGLETON">
+    </module>
+
+    <!-- @objt.discrete.mes.balancing.annotation.Balancing -->
+    <module name="MES_BALANCING_EVENTTRANSACTION" class="objt.discrete.mes.balancing.transaction.EventTransaction"
+            instantiation="SINGLETON">
+    </module>
+
+    <!-- @objt.discrete.mes.consolidation.annotation.Consolidation -->
+    <module name="MES_CONSOLIDATION_EVENTTRANSACTION" class="objt.discrete.mes.consolidation.transaction.EventTransaction"
+            instantiation="SINGLETON">
+    </module>
+
+    <!-- @objt.discrete.mes.nonconformities.annotation.NonConformity -->
+    <module name="MES_NONCONFORMITIES_EVENTTRANSACTION" class="objt.discrete.mes.nonconformities.transaction.EventTransaction"
+            instantiation="SINGLETON">
+    </module>
+
+    <!-- @objt.discrete.mes.bomcorrections.annotation.BOMCorrections -->
+    <module name="MES_BOMCORRECTIONS_EVENTTRANSACTION" class="objt.discrete.mes.bomcorrections.transaction.EventTransaction"
+            instantiation="SINGLETON">
+    </module>
+
+    <!-- @objt.discrete.mes.consolidation.annotation.Consolidation -->
+    <module name="MES_CONSOLIDATIONTRANSACTION" class="objt.discrete.mes.consolidation.transaction.ConsolidationTransaction" instantiation="SINGLETON">
+    </module>
+
+    <!-- @objt.discrete.wfm.useraccountability.annotation.UserAccountability -->
+    <module name="USERACCOUNTABILITYHANDLER" class="objt.discrete.wfm.useraccountability.server.module.UserAccountabilityHandler"
+            instantiation="CONSTRUCTOR"/>
+
+    <!-- @objt.discrete.wms.tracing.annotation.Tracing -->
+    <module name="TASKDETAILTRANSACTION" class="objt.discrete.wms.tracing.transaction.TaskDetailTransaction"
+            instantiation="SINGLETON">
+    </module>
+
+    <!-- @objt.discrete.mes.nonconformities.annotation.NonConformity -->
+    <module name="NONCONFORMITYTRANSACTION" class="objt.discrete.mes.nonconformities.transaction.NonConformityTransaction" instantiation="SINGLETON"/>
+
+    <module name="KAFKATRANSACTIONEVENTPUBLISHER" class="com.objt.extensions.transactioneventpublisher.KafkaTransactionEventPublisher" enabled="false"
+            instantiation="SINGLETON">
+      <property name="KAFKATRANSACTIONEVENTPUBLISHER.KAFKA.CLIENTID" value="com.objt.transactionserver"/>
+      <property name="KAFKATRANSACTIONEVENTPUBLISHER.KAFKA.TRANSACTIONEVENTS_TOPIC" value="com.objt.transactionserver.transactionevents"/>
+    </module>
+
+    <!-- *********************************************************************************************************** -->
+    <!--                                    ADDITIONAL SERVER MODULES PROJECT                                          -->
+    <!-- *********************************************************************************************************** -->
+
+    <module name="CUSTOM_UPLOADTRANSACTION" class="objt.custom.transaction.UploadTransaction" instantiation="SINGLETON">
+    </module>
+
+    <!-- *********************************************************************************************************** -->
+    <!--                                   SCHEDULE MONITOR                                                          -->
+    <!-- *********************************************************************************************************** -->
+    <!-- the SCHEDULEMONITOR IS PLACED LAST TO ALLOW OTHER MODULES TO CREATE/INITIALIZE THEIR SCHEDULES BEFORE THE SCHEDULEMONITOR FETCHES THEM-->
+    <module name="SCHEDULEMONITOR" class="dce.pd.frame.explorer.time.ScheduleMonitor"
+            instantiation="CONSTRUCTOR">
+      <postinit module="this" method="addAlarmActionListener"/>
+    </module>
+  </modules>
+</server>
