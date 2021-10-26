@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+
+<application>
+
+  <include ref="objt/vertical/common/general/itemmgt/configurator/items.xml"/>
+
+  <explorer>
+    <actions>
+
+  <action replaceid="items.download">
+    <param name="csvReaderConfigFile" value="objt/custom/item/download/objt/custom/meta/itemdownloader_csvreaderconfig.xml"/>
+    <param name="xmlReaderConfigFile" value="objt/custom/item/download/objt/custom/meta/itemdownloader_xmlreaderconfig.xml"/>
+    <param name="readerConfigID" value="objt.custom.common.general.itemmgt.download.ItemDownloader"/>
+    <param name="downloaderClass" value="objt.custom.common.general.itemmgt.download.ItemDownloader"/>
+  </action>
+
+    </actions>
+  </explorer>
+</application>
