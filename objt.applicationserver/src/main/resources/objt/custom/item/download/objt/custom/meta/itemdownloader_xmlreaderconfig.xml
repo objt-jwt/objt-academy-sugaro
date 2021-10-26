@@ -1,7 +1,0 @@
-<?xml version="1.0"?>
-<readerconfigs>
-  <readerconfig id="objt.custom.common.general.itemmgt.download.ItemDownloader" class="dce.ei.reader.XMLReaderConfig"
-                downloadobjectclass="objt.vertical.common.general.itemmgt.download.ItemDownloader$DownloadItem"
-                rootnode="items" downloadobjectnode="item">
-  </readerconfig>
-</readerconfigs>

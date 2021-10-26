@@ -36,6 +36,10 @@
     <include path="..\..\..\..\..\assets\translation\objt.applicationserver-core_dic.xml"/>
   </includes>
   <entries>
+    <entry nativestring="Given packconfig is not a template packconfig">
+      <translation language="nl" translatedstring="Given packconfig is geen template packconfig"/>
+      <translation language="fr" translatedstring="Étant donné que packconfig n’est pas un modèle packconfig"/>
+    </entry>
     <entry nativestring="New_Item">
       <translation language="nl" translatedstring="Nieuw Item"/>
       <translation language="en" translatedstring="New Item"/>
