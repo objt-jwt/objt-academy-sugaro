@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:objt="http://objt.com/types" elementFormDefault="qualified">
+  <xs:import schemaLocation="objt/common/download/objt.xsd" namespace="http://objt.com/types"/>
+  <xs:element name="items">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="item" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:all>
+              <xs:element name="name" type="objt:string64"/>
+              <xs:element name="delete" type="objt:booleanorempty" minOccurs="0"/>
+              <xs:element name="description" type="objt:string255" minOccurs="0"/>
+              <xs:element name="id" type="objt:string32" minOccurs="0"/>
+              <xs:element name="eancode" type="objt:string16" minOccurs="0"/>
+              <xs:element name="itemgroupname" type="objt:string64" minOccurs="0"/>
+              <xs:element name="putawayrulegroupname" type="objt:string64" minOccurs="0"/>
+              <xs:element name="relocationrulegroupname" type="objt:string64" minOccurs="0"/>
+              <xs:element name="crossdockrulegroupname" type="objt:string64" minOccurs="0"/>
+              <xs:element name="pickrulegroupname" type="objt:string64" minOccurs="0"/>
+              <xs:element name="replenishrulegroupname" type="objt:string64" minOccurs="0"/>
+              <xs:element name="inspectiongroupname" type="objt:string64" minOccurs="0"/>
+              <xs:element name="uomname" type="objt:string32"/> <!-- required field-->
+              <xs:element name="weight" type="objt:doubleorempty"  minOccurs="0"/>
+              <xs:element name="weightuomname" type="xs:string" minOccurs="0"/>
+              <xs:element name="width" type="objt:doubleorempty" minOccurs="0"/>
+              <xs:element name="widthuomname" type="xs:string" minOccurs="0"/>
+              <xs:element name="depth" type="objt:doubleorempty" minOccurs="0"/>
+              <xs:element name="depthuomname" type="xs:string" minOccurs="0"/>
+              <xs:element name="height" type="objt:doubleorempty" minOccurs="0"/>
+              <xs:element name="heightuomname" type="xs:string" minOccurs="0"/>
+              <xs:element name="volume" type="objt:doubleorempty" minOccurs="0"/>
+              <xs:element name="volumeuomname" type="xs:string" minOccurs="0"/>
+              <xs:element name="cubics" type="objt:doubleorempty" minOccurs="0"/>
+              <xs:element name="type" type="objt:integerorempty" minOccurs="0"/>
+              <xs:element name="category" type="objt:string64" minOccurs="0"/>
+              <xs:element name="lotcontrol" type="objt:integerorempty" minOccurs="0"/>
+              <xs:element name="islotcontrolled" type="objt:booleanorempty" minOccurs="0"/>
+              <xs:element name="issublotcontrolled" type="objt:booleanorempty" minOccurs="0"/>
+              <xs:element name="lotformat" type="xs:string" minOccurs="0"/>
+              <xs:element name="shelflife" type="objt:integerorempty" minOccurs="0"/>
+              <xs:element name="shelflifeunit" type="objt:integerorempty" minOccurs="0"/>
+              <xs:element name="shelflifeprecision" type="objt:integerorempty" minOccurs="0"/>
+              <xs:element name="isinventoryforecastenabled" type="objt:booleanorempty" minOccurs="0"/>
+              <xs:element name="stockchecklevel" type="objt:doubleorempty" minOccurs="0"/>
+              <xs:element name="qualitycontrolstatusid" type="objt:string32" minOccurs="0"/>
+              <xs:element name="usrtxt1" type="objt:string255" minOccurs="0"/>
+              <xs:element name="usrtxt2" type="objt:string255" minOccurs="0"/>
+              <xs:element name="usrtxt3" type="objt:string255" minOccurs="0"/>
+              <xs:element name="usrtxt4" type="objt:string255" minOccurs="0"/>
+              <xs:element name="usrtxt5" type="objt:string255" minOccurs="0"/>
+              <xs:element name="usrdts1" type="objt:dateordatetimeorempty" minOccurs="0"/>
+              <xs:element name="usrdts2" type="objt:dateordatetimeorempty" minOccurs="0"/>
+              <xs:element name="usrdts3" type="objt:dateordatetimeorempty" minOccurs="0"/>
+              <xs:element name="usrdts4" type="objt:dateordatetimeorempty" minOccurs="0"/>
+              <xs:element name="usrdts5" type="objt:dateordatetimeorempty" minOccurs="0"/>
+              <xs:element name="usrflg1" type="objt:booleanorempty" minOccurs="0"/>
+              <xs:element name="usrflg2" type="objt:booleanorempty" minOccurs="0"/>
+              <xs:element name="usrflg3" type="objt:booleanorempty" minOccurs="0"/>
+              <xs:element name="usrflg4" type="objt:booleanorempty" minOccurs="0"/>
+              <xs:element name="usrflg5" type="objt:booleanorempty" minOccurs="0"/>
+              <xs:element name="usrnum2" type="objt:doubleorempty" minOccurs="0"/>
+              <xs:element name="usrnum3" type="objt:doubleorempty" minOccurs="0"/>
+              <xs:element name="usrnum1" type="objt:doubleorempty" minOccurs="0"/>
+              <xs:element name="usrnum4" type="objt:doubleorempty" minOccurs="0"/>
+              <xs:element name="usrnum5" type="objt:doubleorempty" minOccurs="0"/>
+              <xs:element name="abclpn"  type="objt:string3" minOccurs="0"/>
+              <xs:element name="abcsku"  type="objt:string3" minOccurs="0"/>
+              <xs:element name="serialcontrol"  type="objt:integerorempty" minOccurs="0"/>
+              <xs:element name="serialtracing"  type="objt:integerorempty" minOccurs="0"/>
+              <xs:element name="serialformat"   type="objt:string64" minOccurs="0"/>
+              <xs:element name="serialpattern"  type="objt:string64" minOccurs="0"/>
+              <xs:element name="packconfig" type="objt:integerorempty" minOccurs="0"/>
+            </xs:all>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
