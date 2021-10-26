@@ -15,6 +15,8 @@
              autosaveinterval="10">
 
 
+  <include ref="objt/custom/configurator/itemmgt/items.xml"/>
+  
   <!-- bu xmls -->
   <include ref="objt/vertical/common/general/resourcemgt/configurator/configurations.xml"/>
 <!--  <include ref="objt/vertical/common/general/itemmgt/configurator/items.xml"/>-->
@@ -61,7 +63,6 @@
   <include ref="objt/common/configurator/appmgt/reports.xml"/>
   <include ref="objt/common/configurator/generic/actions.xml"/>
   <include ref="objt/common/configurator/languagemgt/languages.xml"/>
-  <include ref="objt/custom/meta/items.xml"/>
   <include ref="objt/common/configurator/itemmgt/phantomitems.xml"/>
   <include ref="objt/common/configurator/itemmgt/itemgroups.xml"/>
   <include ref="objt/common/configurator/itemmgt/serialidentificationconfigurations.xml"/>

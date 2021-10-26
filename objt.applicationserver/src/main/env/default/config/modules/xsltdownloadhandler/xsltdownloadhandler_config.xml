@@ -1,6 +1,6 @@
 <xsltdownloadhandler>
 
-  <include ref="objt/custom/item/download/objt/custom/meta/itemdownloader_xmlreaderconfig.xml"/>
+  <include ref="objt/custom/item/download/itemdownloader_xmlreaderconfig.xml"/>
   <include ref="objt/common/download/itemcontainerdownloader_xmlreaderconfig.xml"/>
   <!--<include ref="objt/common/download/itemdownloader_xmlreaderconfig.xml"/>-->
   <include ref="objt/common/download/lotdownloader_xmlreaderconfig.xml"/>
@@ -35,7 +35,7 @@
   <!-- Process all 'ITC.....' files using the ItemContainerDownloader -->
   <download readerconfig="objt.common.download.ItemContainerDownloader" downloaderclass="objt.common.download.ItemContainerDownloader" commitevery="10" mode="INCREMENTAL" matchpattern="^ITC" schema="objt/common/download/itemcontainerdownloader.xsd"/>
   <!-- Process all 'ITM.....' files using the ItemDownloader -->
-  <download readerconfig="objt.custom.common.general.itemmgt.download.ItemDownloader" downloaderclass="objt.custom.common.general.itemmgt.download.ItemDownloader" commitevery="10" mode="INCREMENTAL" matchpattern="^ITM" schema="objt/custom/item/download/objt/custom/meta/itemdownloader.xsd"/>
+  <download readerconfig="objt.custom.common.general.itemmgt.download.ItemDownloader" downloaderclass="objt.custom.common.general.itemmgt.download.ItemDownloader" commitevery="10" mode="INCREMENTAL" matchpattern="^ITM" schema="objt/custom/item/download/itemdownloader.xsd"/>
   <!-- Process all 'LOT.....' files using the LotDownloader -->
   <download readerconfig="objt.common.download.LotDownloader" downloaderclass="objt.common.download.LotDownloader" commitevery="10" mode="INCREMENTAL" matchpattern="^LOT" schema="objt/common/download/lotdownloader.xsd"/>
   <!-- Process all 'CAR.....' files using the CarrierDownloader -->
