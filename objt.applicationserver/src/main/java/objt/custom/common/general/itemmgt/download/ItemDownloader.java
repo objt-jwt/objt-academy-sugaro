@@ -48,7 +48,7 @@ public class ItemDownloader extends objt.vertical.common.general.itemmgt.downloa
 
     if (item.isCreated()) item.setUsrFlg1(Boolean.TRUE);
 
-    if (pItem.getPackaging() == null)
+    if (pItem.getPackaging() != null)
     {
       ItemTransaction.get().addPackaging(item, pItem.getPackaging());
     }
