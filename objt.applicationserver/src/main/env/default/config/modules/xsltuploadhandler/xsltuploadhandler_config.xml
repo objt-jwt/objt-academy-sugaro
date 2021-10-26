@@ -1,0 +1,194 @@
+<xsltuploadhandler>
+
+  <!--    **************************************************************************************************        -->
+  <!--    *  XSLT UPLOAD HANDLER                                                                                    -->
+  <!--    **************************************************************************************************        -->
+  <!-- default config -->
+  <xsltupload_defaults
+          filenameprefix="INVOKE(%UP%transKey.STATIC(dce.util.text.DecimalFormat;format;BO;0000000000)%_%transType)"
+          filenamesuffix=".xml">
+  </xsltupload_defaults>
+
+  <!-- ********************************************* -->
+  <!-- 11xx - 12xx INBOUND/KIT/VAL/INVENTORY UPLOADS -->
+  <!-- ********************************************* -->
+
+  <!-- WMS.RECEIPT.RELEASE 1110 -->
+  <xsltupload id="1110"
+              xsl="objt/wms/upload/receipt_status.xsl"
+              xsd="objt/wms/upload/receipt_status.xsd">
+  </xsltupload>
+
+  <!-- WMS.RECEIPT.UNRELEASE 1120 -->
+  <xsltupload id="1120"
+              xsl="objt/wms/upload/receipt_status.xsl"
+              xsd="objt/wms/upload/receipt_status.xsd">
+  </xsltupload>
+
+  <!-- WMS.RECEIPT.CONFIRMATION 1130, 1131 -->
+  <xsltupload id="1130"
+              xsl="objt/wms/upload/receipt_confirmation.xsl"
+              xsd="objt/wms/upload/receipt_confirmation.xsd" >
+  </xsltupload>
+
+  <!-- WMS.RETURN.RELEASE 1140 -->
+  <xsltupload id="1140"
+              xsl="objt/wms/upload/return_status.xsl"
+              xsd="objt/wms/upload/return_status.xsd">
+  </xsltupload>
+
+  <!-- WMS.RETURN.UNRELEASE 1150 -->
+  <xsltupload id="1150"
+              xsl="objt/wms/upload/return_status.xsl"
+              xsd="objt/wms/upload/return_status.xsd">
+  </xsltupload>
+
+  <!-- WMS.RETURN.CONFIRMATION 1160,1161 -->
+  <xsltupload id="1160"
+              xsl="objt/wms/upload/return_confirmation.xsl"
+              xsd="objt/wms/upload/return_confirmation.xsd" >
+  </xsltupload>
+
+
+  <!-- WMS.MTOKITORDER.INPUT 1170,1171 -->
+  <xsltupload id="1170"
+              xsl="objt/wms/upload/kitorder_input.xsl"
+              xsd="objt/wms/upload/kitorder_input.xsd" >
+  </xsltupload>
+
+  <!-- WMS.MTSKITORDER.INPUT 1180,1181 -->
+  <xsltupload id="1180"
+              xsl="objt/wms/upload/kitorder_input.xsl"
+              xsd="objt/wms/upload/kitorder_input.xsd" >
+  </xsltupload>
+
+  <!-- WMS.MTOKITORDER.OUTPUT 1190,1191 -->
+  <xsltupload id="1190"
+              xsl="objt/wms/upload/kitorder_output.xsl"
+              xsd="objt/wms/upload/kitorder_output.xsd" >
+  </xsltupload>
+
+  <!-- WMS.MTSKITORDER.OUTPUT 1200,1201 -->
+  <xsltupload id="1200"
+              xsl="objt/wms/upload/kitorder_output.xsl"
+              xsd="objt/wms/upload/kitorder_output.xsd" >
+  </xsltupload>
+
+  <!-- WMS.INVENTORY.ADJUST 1210,1211 -->
+  <xsltupload id="1210"
+              xsl="objt/wms/upload/inventory_adjust.xsl"
+              xsd="objt/wms/upload/inventory_adjust.xsd">
+  </xsltupload>
+
+  <!-- WMS.INVENTORY.COUNT 1220,1221 -->
+  <xsltupload id="1220"
+              xsl="objt/wms/upload/inventory_count.xsl"
+              xsd="objt/wms/upload/inventory_count.xsd" >
+  </xsltupload>
+
+  <!-- WMS.INVENTORY.IMAGE 1230,1231 -->
+  <xsltupload id="1230"
+              xsl="objt/wms/upload/inventory_image.xsl"
+              xsd="objt/wms/upload/inventory_image.xsd" >
+  </xsltupload>
+
+  <!-- WMS.LOT.QC  1240 -->
+  <xsltupload id="1240"
+              xsl="objt/wms/upload/qcstatus.xsl"
+              xsd="objt/wms/upload/qcstatus.xsd" >
+  </xsltupload>
+
+  <!-- WMS.INVENTORY.QC 1250 -->
+  <xsltupload id="1250"
+              xsl="objt/wms/upload/qcstatus.xsl"
+              xsd="objt/wms/upload/qcstatus.xsd" >
+  </xsltupload>
+
+  <!-- WMS.INVENTORY.CONSUME 1260,1261 -->
+  <xsltupload id="1260"
+              xsl="objt/wms/upload/inventory_consume.xsl"
+              xsd="objt/wms/upload/inventory_consume.xsd" >
+  </xsltupload>
+
+  <!-- ********************* -->
+  <!-- 13xx OUTBOUND UPLOADS -->
+  <!-- ********************* -->
+
+  <!-- WMS.ORDER.RELEASE 1310 -->
+  <xsltupload id="1310"
+              xsl="objt/wms/upload/order_status.xsl"
+              xsd="objt/wms/upload/order_status.xsd" >
+  </xsltupload>
+
+  <!-- WMS.ORDER.UNRELEASE 1320 -->
+  <xsltupload id="1320"
+              xsl="objt/wms/upload/order_status.xsl"
+              xsd="objt/wms/upload/order_status.xsd" >
+  </xsltupload>
+
+  <!-- WMS.ORDER.CONFIRMATION 1330,1331 -->
+  <xsltupload id="1330"
+              xsl="objt/wms/upload/order_confirmation.xsl"
+              xsd="objt/wms/upload/order_confirmation.xsd" >
+  </xsltupload>
+
+  <!-- ********************* -->
+  <!-- 14xx SHIPMENT UPLOADS -->
+  <!-- ********************* -->
+
+  <!-- WMS.SHIPMENT.CONFIRMATION 1400,1401 -->
+  <xsltupload id="1400"
+              xsl="objt/wms/upload/shipment_confirmation.xsl"
+              xsd="objt/wms/upload/shipment_confirmation.xsd" >
+  </xsltupload>
+
+  <!-- ************************** -->
+  <!-- 15xx PURCHASEORDER UPLOADS -->
+  <!-- ************************** -->
+
+  <!-- WMS.RECEIPT.PURCHASEORDER.CONFIRMATION 1500,1501 -->
+  <xsltupload id="1500"
+              xsl="objt/wms/upload/purchaseorder_confirmation.xsl"
+              xsd="objt/wms/upload/purchaseorder_confirmation.xsd">
+  </xsltupload>
+
+  <!-- **************************** -->
+  <!-- 21xx PRODUCTIONORDER UPLOADS -->
+  <!-- **************************** -->
+
+  <!-- MES.PRODUCTIONORDER.RELEASE 2110 -->
+  <xsltupload id="2110"
+              xsl="objt/mes/upload/productionorder_status.xsl"
+              xsd="objt/mes/upload/productionorder_status.xsd" >
+  </xsltupload>
+
+  <!-- MES.PRODUCTIONORDER.UNRELEASE 2120 -->
+  <xsltupload id="2120"
+              xsl="objt/mes/upload/productionorder_status.xsl"
+              xsd="objt/mes/upload/productionorder_status.xsd" >
+  </xsltupload>
+
+  <!-- MES.PRODUCTIONORDER.CONFIRMATION 2130,2131 -->
+  <xsltupload id="2130"
+              xsl="objt/mes/upload/productionorder_confirmation.xsl"
+              xsd="objt/mes/upload/productionorder_confirmation.xsd" >
+  </xsltupload>
+
+  <!-- MES.PRODUCTIONORDER.INPUT 2140,2141 -->
+  <xsltupload id="2140"
+              xsl="objt/mes/upload/productionorder_input.xsl"
+              xsd="objt/mes/upload/productionorder_input.xsd" >
+  </xsltupload>
+
+  <!-- MES.PRODUCTIONORDER.OUTPUT 2150,2151 -->
+  <xsltupload id="2150"
+              xsl="objt/mes/upload/productionorder_output.xsl"
+              xsd="objt/mes/upload/productionorder_output.xsd" >
+  </xsltupload>
+
+  <!-- INVENTORY.MOVE 9001 -->
+  <xsltupload id="9001"
+              xsl="objt/custom/upload/inventory_move.xsl">
+  </xsltupload>
+
+</xsltuploadhandler>
