@@ -14,10 +14,10 @@
              actionlistener="dce.pd.frame.configurator.ConfiguratorUpdater"
              autosaveinterval="10">
 
+  <include ref="objt/custom/item/download/objt/custom/meta/items.xml"/>
 
   <!-- bu xmls -->
   <include ref="objt/vertical/common/general/resourcemgt/configurator/configurations.xml"/>
-<!--  <include ref="objt/vertical/common/general/itemmgt/configurator/items.xml"/>-->
   <include ref="objt/vertical/wms/general/configurator/rulemgt/rules.xml"/>
 
   <include ref="objt/vertical/mes/general/configurator/itemmgt/items.xml"/>
@@ -62,8 +62,6 @@
   <include ref="objt/common/configurator/generic/actions.xml"/>
   <include ref="objt/common/configurator/languagemgt/languages.xml"/>
 
-
-  <include ref="objt/custom/item/download/objt/custom/meta/items.xml"/>
   <include ref="objt/common/configurator/itemmgt/phantomitems.xml"/>
   <include ref="objt/common/configurator/itemmgt/itemgroups.xml"/>
   <include ref="objt/common/configurator/itemmgt/serialidentificationconfigurations.xml"/>
