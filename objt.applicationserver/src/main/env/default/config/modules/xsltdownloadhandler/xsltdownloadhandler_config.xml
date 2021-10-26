@@ -1,0 +1,102 @@
+<xsltdownloadhandler>
+
+  <include ref="objt/custom/item/download/objt/custom/meta/itemdownloader_xmlreaderconfig.xml"/>
+  <include ref="objt/common/download/itemcontainerdownloader_xmlreaderconfig.xml"/>
+  <!--<include ref="objt/common/download/itemdownloader_xmlreaderconfig.xml"/>-->
+  <include ref="objt/common/download/lotdownloader_xmlreaderconfig.xml"/>
+  <include ref="objt/common/download/employeedownloader_xmlreaderconfig.xml"/>
+  <include ref="objt/common/download/carrierdownloader_xmlreaderconfig.xml"/>
+  <include ref="objt/common/download/customerdownloader_xmlreaderconfig.xml"/>
+  <include ref="objt/common/download/supplierdownloader_xmlreaderconfig.xml"/>
+
+  <include ref="objt/wms/download/inboundorderdownloader_xmlreaderconfig.xml"/>
+  <include ref="objt/wms/download/inventorydownloader_xmlreaderconfig.xml"/>
+  <include ref="objt/wms/download/outboundorderdownloader_xmlreaderconfig.xml"/>
+  <include ref="objt/wms/download/prereceiptdownloader_xmlreaderconfig.xml"/>
+  <include ref="objt/wms/download/asndownloader_xmlreaderconfig.xml"/>
+  <include ref="objt/wms/download/purchaseorderdownloader_xmlreaderconfig.xml"/>
+
+  <!--<include ref="objt/mes/download/productionorderdownloader_xmlreaderconfig.xml"/>-->
+  <include ref="objt/mes/download/recipedownloader_xmlreaderconfig.xml"/>
+
+  <include ref="objt/wfm/download/accessbadgedownloader_xmlreaderconfig.xml"/>
+
+<!--  <include ref="objt/vertical/common/general/itemmgt/download/itemdownloader_xmlreaderconfig.xml"/>-->
+  <!-- @objt.process.mes.productionorderautoplandownload.annotation.ProductionOrderAutoPlanDownloader -->
+  <include ref="objt/vertical/mes/general/download/productionorderdownloader_xmlreaderconfig.xml"/>
+  <!-- @objt.process.common.packagingdownload.annotation.PackagingDownload-->
+  <include ref="objt/process/common/packagingdownload/packagingdownloader_xmlreaderconfig.xml"/>
+  <!-- @objt.process.common.phantomdownload.annotation.PhantomDownload -->
+  <include ref="objt/process/common/phantomdownload/phantomitemdownloader_xmlreaderconfig.xml"/>
+  
+  <!-- **************************************************************************************************  -->
+  <!-- *  DOWNLOAD NODES WITH STANDARD TEMPLATE                                                            -->
+  <!-- **************************************************************************************************  -->
+  <!-- Process all 'ITC.....' files using the ItemContainerDownloader -->
+  <download readerconfig="objt.common.download.ItemContainerDownloader" downloaderclass="objt.common.download.ItemContainerDownloader" commitevery="10" mode="INCREMENTAL" matchpattern="^ITC" schema="objt/common/download/itemcontainerdownloader.xsd"/>
+  <!-- Process all 'ITM.....' files using the ItemDownloader -->
+  <download readerconfig="objt.custom.common.general.itemmgt.download.ItemDownloader" downloaderclass="objt.custom.common.general.itemmgt.download.ItemDownloader" commitevery="10" mode="INCREMENTAL" matchpattern="^ITM" schema="objt/vertical/common/general/itemmgt/download/itemdownloader.xsd"/>
+  <!-- Process all 'LOT.....' files using the LotDownloader -->
+  <download readerconfig="objt.common.download.LotDownloader" downloaderclass="objt.common.download.LotDownloader" commitevery="10" mode="INCREMENTAL" matchpattern="^LOT" schema="objt/common/download/lotdownloader.xsd"/>
+  <!-- Process all 'CAR.....' files using the CarrierDownloader -->
+  <download readerconfig="objt.common.download.CarrierDownloader" downloaderclass="objt.common.download.CarrierDownloader" commitevery="10" mode="INCREMENTAL" matchpattern="^CAR" schema="objt/common/download/carrierdownloader.xsd"/>
+  <!-- Process all 'CUS.....' files using the CustomerDownloader -->
+  <download readerconfig="objt.common.download.CustomerDownloader" downloaderclass="objt.common.download.CustomerDownloader" commitevery="10" mode="INCREMENTAL" matchpattern="^CUS" schema="objt/common/download/customerdownloader.xsd"/>
+  <!-- Process all 'EMP.....' files using the EmployeeDownloader -->
+  <download readerconfig="objt.common.download.EmployeeDownloader" downloaderclass="objt.common.download.EmployeeDownloader" commitevery="10" mode="INCREMENTAL" matchpattern="^EMP" schema="objt/common/download/employeedownloader.xsd"/>
+  <!-- Process all 'SUP.....' files using the SupplierDownloader -->
+  <download readerconfig="objt.common.download.SupplierDownloader" downloaderclass="objt.common.download.SupplierDownloader" commitevery="10" mode="INCREMENTAL" matchpattern="^SUP" schema="objt/common/download/supplierdownloader.xsd"/>
+  <!-- Process all 'REC.....' files using the InboundOrderDownloader -->
+  <download readerconfig="objt.wms.download.InboundOrderDownloader" downloaderclass="objt.wms.download.InboundOrderDownloader" commitevery="1" mode="INCREMENTAL" matchpattern="^REC" schema="objt/wms/download/inboundorderdownloader.xsd"/>
+  <!-- Process all 'INV.....' files using the InventoryDownloader -->
+  <download readerconfig="objt.wms.download.InventoryDownloader" downloaderclass="objt.wms.download.InventoryDownloader" commitevery="10" mode="INCREMENTAL" matchpattern="^INV" schema="objt/wms/download/inventorydownloader.xsd"/>
+  <!-- Process all 'ORD.....' files using the OutboundOrderDownloader -->
+  <download readerconfig="objt.wms.download.OutboundOrderDownloader" downloaderclass="objt.wms.download.OutboundOrderDownloader" commitevery="1" mode="INCREMENTAL" matchpattern="^ORD" schema="objt/wms/download/outboundorderdownloader.xsd"/>
+  <!-- Process all 'PRE.....' files using the PreReceiptDownloader -->
+  <download readerconfig="objt.wms.download.PreReceiptDownloader" downloaderclass="objt.wms.download.PreReceiptDownloader" commitevery="1" mode="INCREMENTAL" matchpattern="^PRE" schema="objt/wms/download/prereceiptdownloader.xsd"/>
+  <!-- Process all 'PUR.....' files using the PurchaseOrderDownloader -->
+  <download readerconfig="objt.wms.download.PurchaseOrderDownloader" downloaderclass="objt.wms.download.PurchaseOrderDownloader" commitevery="1" mode="INCREMENTAL" matchpattern="^PUR" schema="objt/wms/download/purchaseorderdownloader.xsd"/>
+  <!-- Process all 'ASN.....' files using the ASNDownloader -->
+  <download readerconfig="objt.wms.download.ASNDownloader" downloaderclass="objt.wms.download.ASNDownloader" commitevery="1" mode="INCREMENTAL" matchpattern="^ASN" schema="objt/wms/download/asndownloader.xsd"/>
+
+  <!-- Process all 'PRD.....' files using the ProductionOrderDownloader -->
+  <!-- @objt.process.mes.productionorderautoplandownload.annotation.ProductionOrderAutoPlanDownloader -->
+  <!-- @objt.process.mes.templaterecipe.annotation.TemplateRecipe -->
+  <download readerconfig="objt.vertical.mes.general.download.ProductionOrderDownloader" downloaderclass="objt.vertical.mes.general.download.ProductionOrderDownloader" commitevery="1" mode="INCREMENTAL" matchpattern="^PRD" schema="objt/vertical/mes/general/download/productionorderdownloader.xsd"/>
+  <!-- Process all 'RCP.....' files using the RecipeDownloader -->
+  <download readerconfig="objt.mes.download.RecipeDownloader" downloaderclass="objt.mes.download.RecipeDownloader" commitevery="1" mode="INCREMENTAL" matchpattern="^RCP" schema="objt/mes/download/recipedownloader.xsd" />
+  <!-- Process all 'PACK.....' files using the PackagingDownloader -->
+  <download readerconfig="objt.process.common.packagingdownload.download.PackagingDownloader" downloaderclass="objt.process.common.packagingdownload.download.PackagingDownloader" commitevery="10" mode="INCREMENTAL" matchpattern="^PACK" schema="objt/process/common/packagingdownload/packagingdownloader.xsd"/>
+  <!-- Process all 'PHTM.....' files using the PhantomItemDownloader -->
+  <download readerconfig="objt.process.common.phantomdownload.PhantomItemDownloader" downloaderclass="objt.process.common.phantomdownload.PhantomItemDownloader" commitevery="10" mode="INCREMENTAL" matchpattern="^PHTM" schema="objt/process/common/phantomdownload/phantomitemdownloader.xsd"/>
+
+  <!-- Process all 'ACB.....' files using the AccessBadgeDownloader -->
+  <download readerconfig="objt.wfm.download.AccessBadgeDownloader" downloaderclass="objt.wfm.download.AccessBadgeDownloader" commitevery="10" mode="INCREMENTAL" matchpattern="^ACB"/>
+
+  <!-- **************************************************************************************************  -->
+  <!-- *  ADDITIONAL DOWNLOAD EXAMPLES                                                                     -->
+  <!-- **************************************************************************************************  -->
+  <!-- DEFAULT ITEM DOWNLOADER WITH ADDITIONAL XSD VALIDATION OF THE RECEIVED XML FILE -->
+  <!--
+  <download readerconfig="objt.common.itemmgt.download.ItemDownloader"
+            downloaderclass="objt.common.itemmgt.download.ItemDownloader"
+            commitevery="10"
+            mode="INCREMENTAL"
+            xsl="objt/common/itemmgt/download/itemdownloader.xsl"
+            schema="download/itemdownloader.xsd"
+            matchpattern="^ITM"/>
+  -->
+  <!-- DEFAULT OUTBOUNDORDER DOWNLOADER WITH ADDITIONAL XSD VALIDATION OF THE RECEIVED XML FILE -->
+  <!--
+    <download readerconfig="objt.wms.download.OutboundOrderDownloader"
+              downloaderclass="objt.wms.download.OutboundOrderDownloader"
+              commitevery="1"
+              mode="INCREMENTAL"
+              xsl="objt/wms/download/outboundorderdownloader.xsl"
+              schema="download/outboundorderdownloader.xsd"
+              matchpattern="^ORD"/>
+  -->
+  <!-- CONFIGURATION WHERE BOTH AN ITEM DOWNLOAD AND AN INBOUNDORDER DOWNLOAD IS TRIGGERED WHEN RECEIVING AN XML FILE THAT CONTAINS BOTH ITEM & RECEIPT DATA-->
+  <!--<download readerconfig="objt.common.itemmgt.download.ItemDownloader" downloaderclass="objt.common.itemmgt.download.ItemDownloader" commitevery="10" mode="INCREMENTAL" xsl="download/inboundorder_itemdownloader.xsl" matchpattern="^COMBINEDITEMREC"/>-->
+  <!--<download readerconfig="objt.wms.download.InboundOrderDownloader" downloaderclass="objt.wms.download.InboundOrderDownloader" commitevery="1" mode="INCREMENTAL" xsl="download/inboundorderdownloader.xsl" matchpattern="^COMBINEDITEMREC"/>-->
+</xsltdownloadhandler>

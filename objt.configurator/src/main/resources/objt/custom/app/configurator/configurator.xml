@@ -1,0 +1,914 @@
+<?xml version="1.0"?>
+
+<!-- ===================================================================
+  Resource Management Configuration
+=================================================================== -->
+
+<application title="Objective Configurator (%INSTALLATION%)"
+             productname="Configurator"
+             productinfo="Meerbos 2&#x000D;&#x000A;B-9260 WICHELEN&#x000D;&#x000A;+32 (0)52 43 20 80&#x000D;&#x000A;www.objt.com"
+             logonrole="configurator.reviewer,configurator.editor,developer"
+             logonvalidator="objt.common.resourcemgt.LDAPEmployeeLogonValidator"
+             settingspath="%h/.Objective/%INSTALLATION%/configurator"
+             framesettingspath="-"
+             actionlistener="dce.pd.frame.configurator.ConfiguratorUpdater"
+             autosaveinterval="10">
+
+  <include ref="objt/custom/item/download/objt/custom/meta/items.xml"/>
+
+  <!-- bu xmls -->
+  <include ref="objt/vertical/common/general/resourcemgt/configurator/configurations.xml"/>
+  <include ref="objt/vertical/wms/general/configurator/rulemgt/rules.xml"/>
+
+  <include ref="objt/vertical/mes/general/configurator/itemmgt/items.xml"/>
+  <include ref="objt/vertical/mes/general/configurator/operationmgt/manufacturingoperations.xml"/>
+  <include ref="objt/vertical/mes/general/configurator/operationmgt/documentedinstructions.xml"/>
+  <include ref="objt/vertical/mes/general/configurator/operationmgt/interruptreasons.xml"/>
+  <include ref="objt/vertical/mes/general/configurator/resourcemgt/configurations.xml"/>
+  <include ref="objt/vertical/mes/general/configurator/resourcemgt/resourceview.xml"/>
+  <include ref="objt/vertical/mes/general/configurator/resourcemgt/equipmentmodules.xml"/>
+  <include ref="objt/vertical/mes/general/configurator/resourcemgt/machines.xml"/>
+  <include ref="objt/vertical/mes/general/configurator/resourcemgt/workcenters.xml"/>
+  <include ref="objt/vertical/mes/general/configurator/tagmgt/tags.xml"/>
+  <include ref="objt/vertical/mes/general/configurator/time/calendars.xml"/>
+  <include ref="objt/vertical/mes/general/configurator/resourcemgt/resourcegroups.xml"/>
+  <include ref="objt/vertical/mes/general/configurator/resourcemgt/resourcetrains.xml"/>
+  <include ref="objt/vertical/mes/general/configurator/ordermgt/recipes.xml"/>
+
+  <include ref="objt/process/mes/sharedequipment/configurator/sharedequipmentmodules.xml"/>
+  <include ref="objt/process/mes/productionroutes/configurator/productionroutes.xml"/>
+  <include ref="objt/process/mes/productionroutes/configurator/templateproductionroutes.xml"/>
+
+  <include ref="objt/process/mes/recipevariantversionsnode/configurator/recipevariantversions.xml"/>
+  <include ref="objt/process/mes/templaterecipe/configurator/recipes.xml"/>
+
+
+  <include ref="objt/vertical/wms/general/configurator/inspectionmgt/inspectioninstructions.xml"/>
+  <include ref="objt/vertical/wms/general/configurator/warehousemgt/warehouselocations.xml"/>
+  <include ref="objt/vertical/wms/general/configurator/warehousemgt/warehouses.xml"/>
+
+  <include ref="objt/vertical/mes/general/configurator/resourcemgt/devices.xml"/>
+
+  <include ref="objt/discrete/wms/picklocationdownload/configurator/downloadpicklocations.xml"/>
+
+  <include ref="objt/common/configurator/appmgt/booleanparameters.xml"/>
+  <include ref="objt/common/configurator/appmgt/constraints.xml"/>
+  <include ref="objt/common/configurator/appmgt/dimensionedparameters.xml"/>
+  <include ref="objt/common/configurator/appmgt/properties.xml"/>
+  <include ref="objt/common/configurator/appmgt/roles.xml"/>
+  <include ref="objt/common/configurator/appmgt/audittrails.xml"/>
+  <include ref="objt/common/configurator/appmgt/numbersequences.xml"/>
+  <include ref="objt/common/configurator/appmgt/reports.xml"/>
+  <include ref="objt/common/configurator/generic/actions.xml"/>
+  <include ref="objt/common/configurator/languagemgt/languages.xml"/>
+
+  <include ref="objt/common/configurator/itemmgt/phantomitems.xml"/>
+  <include ref="objt/common/configurator/itemmgt/itemgroups.xml"/>
+  <include ref="objt/common/configurator/itemmgt/serialidentificationconfigurations.xml"/>
+  <include ref="objt/common/configurator/resourcemgt/carriers.xml"/>
+  <include ref="objt/common/configurator/resourcemgt/configurations.xml"/>
+  <include ref="objt/common/configurator/resourcemgt/customers.xml" />
+  <include ref="objt/common/configurator/resourcemgt/documenttemplates.xml"/>
+  <include ref="objt/common/configurator/resourcemgt/documenttemplateconfigurations.xml"/>
+  <include ref="objt/common/configurator/resourcemgt/employees.xml"/>
+  <include ref="objt/common/configurator/resourcemgt/printerdevices.xml"/>
+  <include ref="objt/common/configurator/resourcemgt/suppliers.xml" />
+  <include ref="objt/common/configurator/time/schedules.xml"/>
+  <include ref="objt/common/configurator/time/shifts.xml"/>
+  <include ref="objt/common/configurator/time/days.xml"/>
+  <include ref="objt/common/configurator/uommgt/uoms.xml"/>
+
+  <include ref="objt/mes/configurator/appmgt/processparameters.xml"/>
+  <include ref="objt/mes/configurator/appmgt/oeereporttargets.xml"/>
+  <include ref="objt/mes/configurator/itemmgt/itemgroups.xml"/>
+  <include ref="objt/mes/configurator/itemmgt/tools.xml"/>
+  <include ref="objt/mes/configurator/operationmgt/interruptreasons.xml"/>
+  <include ref="objt/mes/configurator/operationmgt/manualoperations.xml"/>
+  <include ref="objt/mes/configurator/operationmgt/scrapreasons.xml"/>
+  <include ref="objt/mes/configurator/ordermgt/recipes.xml"/>
+  <include ref="objt/mes/configurator/resourcemgt/externalworkcenters.xml"/>
+  <include ref="objt/mes/configurator/resourcemgt/resourceview.xml"/>
+  <include ref="objt/mes/configurator/resourcemgt/departments.xml"/>
+  <include ref="objt/mes/configurator/resourcemgt/devices.xml"/>
+  <include ref="objt/mes/configurator/resourcemgt/employees.xml"/>
+  <include ref="objt/mes/configurator/resourcemgt/processunits.xml"/>
+  <include ref="objt/mes/configurator/resourcemgt/resourcegroups.xml"/>
+  <include ref="objt/mes/configurator/resourcemgt/resourcetrains.xml"/>
+  <include ref="objt/mes/configurator/resourcemgt/planningcells.xml"/>
+  <include ref="objt/mes/configurator/resourcemgt/configurations.xml"/>
+  <include ref="objt/mes/configurator/tagmgt/tags.xml"/>
+  <include ref="objt/mes/configurator/time/calendars.xml"/>
+  <include ref="objt/mes/configurator/time/processaggregations.xml"/>
+  <include ref="objt/mes/configurator/productionmgt/baseparameters.xml"/>
+  <include ref="objt/mes/configurator/productionmgt/baseparameterconfigurations.xml"/>
+
+  <include ref="objt/wms/configurator/itemmgt/containers.xml"/>
+  <include ref="objt/wms/configurator/itemmgt/items.xml"/>
+  <include ref="objt/wms/configurator/itemmgt/itemgroups.xml"/>
+  <include ref="objt/wms/configurator/itemmgt/packagings.xml"/>
+  <include ref="objt/wms/configurator/itemmgt/qualitycontrolstatuses.xml"/>
+  <include ref="objt/wms/configurator/itemmgt/qualitycontrolstatustransitions.xml"/>
+  <include ref="objt/wms/configurator/itemmgt/containerstorageitemqties.xml"/>
+  <include ref="objt/wms/configurator/itemmgt/samples.xml"/>
+  <include ref="objt/wms/configurator/taskmgt/tasktypes.xml"/>
+  <include ref="objt/wms/configurator/taskmgt/taskprofiles.xml"/>
+  <include ref="objt/wms/configurator/operationmgt/reasons.xml"/>
+  <include ref="objt/wms/configurator/operationmgt/taskreasons.xml"/>
+  <include ref="objt/wms/configurator/operationmgt/manufacturingoperations.xml"/>
+  <include ref="objt/wms/configurator/resourcemgt/devices.xml"/>
+  <include ref="objt/wms/configurator/resourcemgt/machines.xml"/>
+  <include ref="objt/wms/configurator/resourcemgt/workcenters.xml"/>
+  <include ref="objt/wms/configurator/resourcemgt/departments.xml"/>
+  <include ref="objt/wms/configurator/resourcemgt/employees.xml"/>
+  <include ref="objt/wms/configurator/resourcemgt/customers.xml"/>
+  <include ref="objt/wms/configurator/resourcemgt/suppliers.xml"/>
+  <include ref="objt/wms/configurator/resourcemgt/carriers.xml"/>
+  <include ref="objt/wms/configurator/resourcemgt/configurations.xml"/>
+  <include ref="objt/wms/configurator/warehousemgt/warehouselocations.xml"/>
+  <include ref="objt/wms/configurator/warehousemgt/warehouses.xml"/>
+  <include ref="objt/wms/configurator/warehousemgt/storagezones.xml"/>
+  <include ref="objt/wms/configurator/warehousemgt/pickzones.xml"/>
+  <include ref="objt/wms/configurator/warehousemgt/lpnbuffers.xml"/>
+  <include ref="objt/wms/configurator/warehousemgt/workzones.xml"/>
+  <include ref="objt/wms/configurator/warehousemgt/mobileracks.xml"/>
+  <include ref="objt/wms/configurator/warehousemgt/ple.xml"/>
+  <include ref="objt/wms/configurator/rulemgt/rules.xml"/>
+  <include ref="objt/wms/configurator/warehousemgt/storageresourcegroups.xml" />
+  <include ref="objt/wms/configurator/inspectionmgt/inspectioninstructions.xml"/>
+  <include ref="objt/wms/configurator/inspectionmgt/inspectionsets.xml"/>
+  <include ref="objt/wms/configurator/inspectionmgt/inspectionsheets.xml"/>
+  <include ref="objt/wms/configurator/inspectionmgt/inspectiongroups.xml"/>
+  <include ref="objt/wms/configurator/inspectionmgt/sampletypes.xml"/>
+  <include ref="objt/wms/configurator/rulemgt/inspectionrules.xml"/>
+  <include ref="objt/wms/configurator/time/calendars.xml"/>
+
+  <include ref="objt/crp/configurator/resourcemgt/configurations.xml"/>
+  <include ref="objt/crp/configurator/resourcemgt/planningcells.xml"/>
+  <include ref="objt/crp/configurator/operationmgt/anomalyreasons.xml"/>
+  <include ref="objt/crp/configurator/resourcemgt/employees.xml"/>
+  <include ref="objt/crp/configurator/rulemgt/rules.xml"/>
+  <include ref="objt/crp/configurator/appmgt/roles.xml"/>
+
+  <include ref="objt/wfm/configurator/resourcemgt/attendancereaderdevices.xml"/>
+  <include ref="objt/wfm/configurator/resourcemgt/configurations.xml"/>
+  <include ref="objt/wfm/configurator/resourcemgt/costcenters.xml"/>
+  <include ref="objt/wfm/configurator/resourcemgt/devices.xml"/>
+  <include ref="objt/wfm/configurator/resourcemgt/employees.xml"/>
+  <include ref="objt/wfm/configurator/resourcemgt/employeegroups.xml"/>
+  <include ref="objt/wfm/configurator/resourcemgt/employeeattendancegroups.xml"/>
+  <include ref="objt/wfm/configurator/resourcemgt/visitors.xml"/>
+  <include ref="objt/wfm/configurator/operationmgt/anomalyreasons.xml"/>
+  <include ref="objt/wfm/configurator/rulemgt/rules.xml"/>
+  <include ref="objt/wfm/configurator/time/attendancecodes.xml"/>
+  <include ref="objt/wfm/configurator/time/attendancecodegroups.xml"/>
+  <include ref="objt/wfm/configurator/time/attendancepatterns.xml"/>
+  <include ref="objt/wfm/configurator/time/attendancedays.xml"/>
+  <include ref="objt/wfm/configurator/time/costprofiles.xml"/>
+
+  <include ref="objt/wfm/configurator/accessmgt/accessmgt.xml"/>
+  <include ref="objt/wfm/configurator/accessmgt/accessbadges.xml"/>
+  <include ref="objt/wfm/configurator/accessmgt/accessgates.xml"/>
+  <include ref="objt/wfm/configurator/accessmgt/accessprofiles.xml"/>
+  <include ref="objt/wfm/configurator/accessmgt/accesspatterns.xml"/>
+  <include ref="objt/wfm/configurator/accessmgt/accessdays.xml"/>
+  <include ref="objt/wfm/configurator/accessmgt/accessreaderdevices.xml"/>
+  <include ref="objt/wfm/configurator/accessmgt/accessareas.xml"/>
+  <include ref="objt/wfm/configurator/accessmgt/accessexceptions.xml"/>
+  <include ref="objt/wfm/configurator/accessmgt/visitorprofiles.xml"/>
+  <include ref="objt/wfm/configurator/accessmgt/accessupload.xml"/>
+
+  <!-- UPDATE HANDLER -->
+  <updatehandler class="objt.common.appmgt.ui.AuditTrailUpdateHandler"/>
+
+  <updatehandler class="objt.wms.configurator.qualitymgt.updatehandler.DocumentedInstructionUpdateHandler"/>
+
+  <updatehandler class="objt.mes.configurator.qualitymgt.updatehandler.DocumentedInstructionUpdateHandler"/>
+  <updatehandler class="objt.mes.configurator.productionmgt.updatehandler.RecipeVariantVersionUpdateHandler"/>
+  <updatehandler class="objt.mes.configurator.productionmgt.updatehandler.BaseParameterConfigurationUpdateHandler"/>
+
+  <updatehandler class="objt.wfm.configurator.ui.CostCenterUpdateHandler"/>
+  <updatehandler class="objt.wfm.configurator.ui.CostProfileUpdateHandler"/>
+  <updatehandler class="objt.wfm.configurator.ui.EmployeeAttendanceConfigurationUpdateHandler"/>
+
+  <!-- @objt.discrete.mes.operationsteps.annotation.OperationSteps -->
+  <updatehandler class="objt.vertical.mes.general.configurator.qualitymgt.updatehandler.DocumentedInstructionUpdateHandler"/>
+
+  <!-- @objt.discrete.mes.operationsteps.annotation.OperationSteps -->
+  <updatehandler class="objt.discrete.mes.operationsteps.configurator.updatehandler.OperationStepUpdateHandler"/>
+
+  <!-- @objt.discrete.mes.balancing.annotation.Balancing -->
+  <updatehandler class="objt.discrete.mes.balancing.configurator.updatehandler.BalancingSchemaUpdateHandler"/>
+
+
+  <!-- The Menu Configuration -->
+  <menubar>
+    <menu id="report" title="Reports" insertafter="tools" />
+
+    <action id="menu" name="developer.tools">
+      <!-- @objt.vertical.common.goodies.defaultnavigationpanel.annotation.DefaultNavigationPanel -->
+      <action id="selectedPanel.save" name="selectedPanel.save" tooltip="selectedPanel.save.tooltip" icon="images/save.16.png" class="objt.vertical.common.goodies.defaultnavigationpanel.configurator.action.SaveSelectedPanelAction" visibleroles="developer" />
+      <action id="selectedPanel.load" name="selectedPanel.load" tooltip="selectedPanel.load.tooltip" icon="images/lpn.load.16.png" class="objt.vertical.common.goodies.defaultnavigationpanel.configurator.action.LoadSelectedPanelAction" visibleroles="developer" />
+      <action id="selectedPanel.reset" name="selectedPanel.reset" tooltip="selectedPanel.reset.tooltip" icon="images/reset.16.png" class="objt.vertical.common.goodies.defaultnavigationpanel.configurator.action.ResetSelectedPanelAction" visibleroles="developer" />
+    </action>
+
+    <action id="menu" name="server.updates">
+      <action refid="properties.update"/>
+      <action refid="calendar.update"/>
+      <action refid="schedules.update"/>
+      <action refid="processmonitors.update"/>
+      <action copyid="attendancepattern.menu.apply"/>
+      <action id="menu" name="accessserver.upload" icon="images/upload.16.png">
+        <action refid="accessserver.upload.masterdata" />
+        <action refid="accessserver.upload.syncdata" />
+      </action>
+    </action>
+
+    <action refid="-"/>
+    <action id="menu" name="audittrails">
+      <action refid="audittrail.display"/>
+    </action>
+
+    <action refid="-"/>
+    <action id="menu" name="recipemgt.title" icon="images/recipe.16.png">
+      <action refid="recipevariantversions.update"/>
+      <action refid="objt.process.mes.templaterecipe.apply.template.recipe.to.items"/>
+    </action>
+
+    <action refid="-"/>
+    <action id="menu" name="downloads">
+      <action refid="employees.download" />
+      <action refid="employees.skills.download" />
+      <action refid="accessbadges.download" />
+      <action refid="items.download" />
+      <action refid="itemcontainers.download" />
+      <action refid="customers.download" />
+      <action refid="suppliers.download" />
+      <action refid="carriers.download" />
+      <action refid="warehouselocation.attributes.download" />
+      <action refid="picklocations.download" />
+    </action>
+    <action refid="-" />
+    <action id="menu" name="label.menu" icon="images/documenttemplate.16.png">
+      <action refid="labellist.manage"/>
+      <action refid="labelimagelist.manage"/>
+      <action refid="-"/>
+      <action refid="warehouselocations.print"/>
+      <action refid="printerdevices.print"/>
+      <action refid="blanklpn.print"/>
+      <action refid="blanksample.print"/>
+    </action>
+
+    <action refid="reports.manage" menuid="report"/>
+    <action refid="-" />
+    <action refid="user.properties" />
+    <action refid="-" />
+    <action id="menu" name="lock.admin" icon="images/locked.16.png">
+      <action refid="lock.user"/>
+      <action refid="lock.admin"/>
+    </action>
+  </menubar>
+
+  <modules>
+    <module class="dce.pd.frame.validation.AttributeValidationHandler" instantiation="CONSTRUCTOR" />
+    <module class="objt.common.resourcemgt.transaction.ConfigurationTransaction" instantiation="SINGLETON" />
+    <module class="objt.common.server.MetaConfigurationHandler" instantiation="SINGLETON" />
+    <module class="objt.wms.server.module.MetaConfigurationHandler" instantiation="SINGLETON" />
+    <module class="objt.wfm.server.modules.MetaConfigurationHandler" instantiation="SINGLETON" />
+    <module class="dce.pd.frame.explorer.time.CalendarTransaction" instantiation="SINGLETON"/>
+    <module class="dce.pd.frame.explorer.meta.UIMetaModel" instantiation="SINGLETON"/>
+    <module class="objt.common.appmgt.ui.UIMetaConfigurationHandler" instantiation="CONSTRUCTOR" />
+    <module class="objt.mes.server.module.UIMetaConfigurationHandler" instantiation="SINGLETON"/>
+    <module class="objt.common.resourcemgt.ui.EmployeeImageModule" instantiation="SINGLETON"/>
+    <module class="objt.common.appmgt.ui.util.ReportConfigModule" instantiation="SINGLETON"/>
+    <module class="objt.wfm.ui.accessmgt.module.AccessConfigurationHandler" instantiation="INGLETON"/>
+    <module class="objt.common.resourcemgt.ui.module.PrinterDeviceConfigurationHandler" instantiation="SINGLETON"/>
+
+    <module class="objt.common.appmgt.ui.module.AuditTrailHandler" instantiation="CONSTRUCTOR" configurationfile="objt/app/configurator/audittrailconfig.xml"/>
+  </modules>
+
+  <!-- Save Actions Configuration -->
+  <saveactions>
+    <!-- pre-save -->
+    <action refid="storageresourcegroup.validate"/>
+
+    <!-- post-save -->
+    <action refid="calendar.update"/>
+    <action refid="planninghandler.update"/>
+    <action refid="processaggregations.update"/>
+    <action refid="storageresourcegroup.postsave"/>
+    <action refid="ruleperiod.postsave"/>
+    <action refid="schedules.update"/>
+    <action refid="documents.postsave"/>
+    <action refid="serialidentificationconfiguration.postsave"/>
+    <action refid="item.inventoryforecast.postsave"/>
+    <action refid="objt.process.mes.instructionparametereditor.documentedinstructions.presave"/>
+    <action refid="metattributes.postsave"/>
+
+    <!-- pre/post-save -->
+    <action refid="planningcell.update"/>
+  </saveactions>
+
+  <!-- Stop Actions Configuration -->
+  <stopactions>
+    <action refid="lock.user"/>
+  </stopactions>
+
+  <explorer>
+    <treelayout>
+
+      <!-- ************* -->
+      <!--     TREES     -->
+      <!-- ************* -->
+
+      <tree id="resourcemgt" title="resourcemgt.title" icon="images/resourcemgt.20.png"/>
+      <tree id="itemmgt" title="itemmgt.title" icon="images/itemmgt.20.png"/>
+      <tree id="productionmgt" title="productionmgt.title" icon="images/productionmgt.20.png"/>
+      <tree id="recipemgt" title="recipemgt.title" icon="images/recipemgt.20.png"/>
+      <tree id="logisticmgt" title="logisticmgt.title" icon="images/logisticmgt.20.png"/>
+      <tree id="warehousemgt" title="warehousemgt.title" icon="images/warehousemgt.20.png"/>
+      <tree id="valkitpackmgt" title="valkitpackmgt.title" icon="images/valkitpackmgt.20.png"/>
+      <tree id="inspectionmgt" title="inspectionmgt.title" icon="images/inspectionmgt.20.png"/>
+      <tree id="attendancemgt" title="attendancemgt.title" icon="images/attendancemgt.20.png"/>
+      <tree id="capacitymgt" title="capacitymgt.title" icon="images/capacitymgt.20.png"/>
+      <tree id="accessmgt" title="accessmgt.title" icon="images/accessmgt.20.png"/>
+      <tree id="systemmgt" title="systemmgt.title" icon="images/systemmgt.20.png"/>
+
+      <rootnode class="dce.pd.frame.configurator.uibo.DispRootBO">
+
+        <!-- ************** -->
+        <!--  RESOURCE MGT  -->
+        <!-- ************** -->
+
+        <!-- MY EMPLOYEES -->
+        <basenode refid="objt.common.configurator.employeesqlfilters" treeid="resourcemgt"
+                  visibleroles="configurator.resourcemgt.employees"
+                  filterroles="filter.administrator,filter.editor,configurator.resourcemgt.employees.filter.editor"
+                  editroles="configurator.editor"/>
+
+        <!-- ROLES -->
+        <basenode refid="objt.common.abstractroles" treeid="resourcemgt"
+                  visibleroles="configurator.resourcemgt.roles"
+                  editroles="configurator.editor"/>
+
+        <!-- DEVICES -->
+        <basenode refid="objt.common.devices" treeid="resourcemgt"
+                  visibleroles="configurator.resourcemgt.devices"
+                  editroles="configurator.editor"/>
+
+        <!-- DEPARTMENTS -->
+        <basenode refid="objt.common.configurator.departmentsqlfilters" treeid="resourcemgt"
+                  visibleroles="configurator.resourcemgt.departments"
+                  filterroles="filter.administrator,filter.editor,configurator.resourcemgt.departments.filter.editor"
+                  editroles="configurator.editor"/>
+
+        <!-- CALENDAR -->
+        <basenode refid="objt.common.calendars" treeid="resourcemgt"
+                  visibleroles="configurator.productionmgt.calendars,configurator.warehousemgt.calendars"
+                  editroles="configurator.editor"/>
+
+        <!-- DAY -->
+        <basenode refid="objt.common.days" treeid="resourcemgt"
+                  visibleroles="configurator.productionmgt.calendars,configurator.warehousemgt.calendars"
+                  editroles="configurator.editor"/>
+
+        <!-- PrinterDevice -->
+        <basenode refid="objt.common.printerdevicegroups" treeid="resourcemgt"
+                  visibleroles="configurator.resourcemgt.printerdevicegroups"
+                  editroles="configurator.editor"/>
+
+        <!-- DocumentTemplateGroups -->
+        <basenode refid="objt.common.documenttemplategroups" treeid="resourcemgt"
+                  visibleroles="configurator.resourcemgt.documenttemplategroups"
+                  editroles="configurator.editor"/>
+
+        <!-- Advanced DocumentTemplate Config -->
+        <basenode refid="objt.common.configurator.documenttemplateconfigurationsqlfilters" treeid="resourcemgt"
+                  visibleroles="configurator.resourcemgt.documenttemplateconfigurations"
+                  filterroles="filter.administrator,filter.editor,configurator.resourcemgt.documenttemplateconfigurations.filter.editor"
+                  editroles="configurator.editor"/>
+
+        <!-- ************** -->
+        <!--    ITEM MGT    -->
+        <!-- ************** -->
+
+        <!-- UOMS_DIMENSIONS -->
+        <basenode refid="objt.common.uoms.and.dimensions" treeid="itemmgt"
+                  visibleroles="configurator.itemmgt.uoms"
+                  editroles="configurator.editor"/>
+
+        <!-- CONTAINERS-->
+        <basenode refid="objt.common.configurator.containersqlfilters" treeid="itemmgt"
+                  visibleroles="configurator.itemmgt.containers"
+                  filterroles="filter.administrator,filter.editor,configurator.itemmgt.containers.filter.editor"
+                  editroles="configurator.editor"/>
+
+        <!-- COMPONENTS -->
+        <basenode refid="objt.common.configurator.itemsqlfilters" treeid="itemmgt"
+                  visibleroles="configurator.itemmgt.items"
+                  filterroles="filter.administrator,filter.editor,configurator.itemmgt.items.filter.editor"
+                  editroles="configurator.editor"/>
+
+        <basenode refid="objt.common.itemmgt.configurator#phantomitemsqlfilters" treeid="itemmgt"
+                  visibleroles="configurator.itemmgt.items"
+                  filterroles="filter.administrator,filter.editor,configurator.itemmgt.items.filter.editor"
+                  editroles="configurator.editor"/>
+
+        <basenode refid="objt.common.configurator.itemgroupsqlfilters" treeid="itemmgt"
+                  visibleroles="configurator.itemmgt.itemgroups"
+                  filterroles="filter.administrator,filter.editor,configurator.itemmgt.itemgroups.filter.editor"
+                  editroles="configurator.editor"/>
+
+        <basenode refid="objt.les.configurator.packagingsqlfilters" treeid="itemmgt"
+                  visibleroles="configurator.itemmgt.packagings"
+                  filterroles="filter.administrator,filter.editor,configurator.itemmgt.packagings.filter.editor"
+                  editroles="configurator.editor"/>
+
+        <!-- QUALITYCONTROLSTATUSES -->
+        <basenode refid="objt.les.qualitycontrolstatuses" treeid="itemmgt"
+                  visibleroles="configurator.itemmgt.qualitycontrolstatuses"
+                  editroles="configurator.editor"/>
+
+        <!-- QUALITYCONTROLMATRIX -->
+        <basenode refid="objt.wms.configurator.itemmgt#qualitycontrolstatustransitions" treeid="itemmgt"
+                  visibleroles="configurator.itemmgt.qualitycontrolstatuses"
+                  editroles="configurator.editor"/>
+
+        <!-- SERIALIDENTIFICATIONCONFIG -->
+        <basenode refid="objt.common.configurator.serialidentificationconfigurationsqlfilters" treeid="itemmgt"
+                  visibleroles="configurator.itemmgt.serialidentificationconfigurations"
+                  filterroles="filter.administrator,filter.editor,configurator.itemmgt.serialidentificationconfigurations.filter.editor"
+                  editroles="configurator.editor"/>
+
+        <!-- ***************** -->
+        <!--   PRODUCTION MGT   -->
+        <!-- ***************** -->
+
+        <!-- RESOURCEGROUPS -->
+        <basenode refid="objt.mes.configurator.resourcegroups" treeid="productionmgt"
+                  visibleroles="configurator.productionmgt.resourcegroups"
+                  editroles="configurator.editor"/>
+
+        <!-- SHARED EQUIPMENTMODULES -->
+        <basenode refid="objt.process.configurator.sharedequipmentmodulesqlfilters" treeid="productionmgt"
+                  visibleroles="objt.process.mes.configurator.sharedequipmentmodules"
+                  editroles="configurator.editor"/>
+
+        <!-- RESOURCE TRAINS -->
+        <basenode refid="objt.mes.configurator.resourcetrainsqlfilters" treeid="productionmgt"
+                  visibleroles="configurator.productionmgt.resourcetrains"
+                  filterroles="filter.administrator,filter.editor,configurator.productionmgt.resourcetrains.filter.editor"
+                  editroles="configurator.editor"/>
+
+        <!-- EXTERNAL WORKCENTERS -->
+        <basenode refid="objt.mes.configurator.externalworkcentersqlfilters" treeid="productionmgt"
+                  visibleroles="configurator.productionmgt.externalworkcenters"
+                  filterroles="filter.administrator,filter.editor,configurator.productionmgt.externalworkcenters.filter.editor"
+                  editroles="configurator.editor"/>
+
+        <!-- PLANNING CELLS -->
+        <basenode refid="objt.mes.configurator.planningcellsqlfilters" treeid="productionmgt"
+                  visibleroles="configurator.productionmgt.planningcells,configurator.capacitymgt.planningcells"
+                  filterroles="filter.administrator,filter.editor,configurator.productionmgt.planningcells.filter.editor"
+                  editroles="configurator.editor"/>
+
+        <!-- BALANCING SCHEMAS -->
+        <basenode refid="objt.mes.configurator.balancingschemasqlfilters" treeid="productionmgt"
+                  visibleroles="configurator.balancingschemas"
+                  filterroles="filter.administrator,filter.editor,configurator.balancingschemas.filter.editor"
+                  editroles="configurator.editor"/>
+
+        <!-- INTERRUPT REASON -->
+        <basenode refid="objt.mes.interruptreasongroups" treeid="productionmgt"
+                  visibleroles="configurator.productionmgt.interruptreasongroups"
+                  editroles="configurator.editor"/>
+
+        <!-- SCRAPREASONGROUPS -->
+        <basenode refid="objt.mes.scrapreasongroups" treeid="productionmgt"
+                  visibleroles="configurator.productionmgt.scrapreasongroups"
+                  editroles="configurator.editor"/>
+
+        <!-- NONCONFORMITY REASONGROUPS -->
+        <basenode refid="objt.discrete.mes.nonconformities.nonconformityreasongroups" treeid="productionmgt"
+                  visibleroles="configurator.productionmgt.nonconformityreasongroups"
+                  editroles="configurator.editor"/>
+
+        <!-- DIRECT MANUAL OPERATIONS -->
+        <basenode refid="objt.mes.manualoperations.direct" treeid="productionmgt"
+                  visibleroles="configurator.productionmgt.directmanualoperations"
+                  editroles="configurator.editor"/>
+
+        <!-- INDIRECT MANUAL OPERATIONS -->
+        <basenode refid="objt.mes.manualoperationgroups" treeid="productionmgt"
+                  visibleroles="configurator.productionmgt.indirectmanualoperations"
+                  editroles="configurator.editor"/>
+
+        <!-- TOOLS -->
+        <basenode refid="objt.mes.configurator.toolsqlfilters" treeid="productionmgt"
+                  visibleroles="configurator.productionmgt.tools"
+                  filterroles="filter.administrator,filter.editor,configurator.productionmgt.tools.filter.editor"
+                  editroles="configurator.editor"/>
+
+        <!-- OEE REPORT TARGETS -->
+        <basenode refid="objt.mes.oeereporttargets" treeid="productionmgt"
+                  visibleroles="configurator.productionmgt.oeereporttargets"
+                  editroles="configurator.editor"/>
+
+        <!-- BASE PARAMETERS -->
+        <basenode refid="objt.mes.configurator.productionmgt#baseparametersqlfilters" treeid="productionmgt"
+                  visibleroles="configurator.productionmgt.baseparameters"
+                  filterroles="filter.administrator,filter.editor,configurator.productionmgt.baseparameters.filter.editor"
+                  editroles="configurator.editor"/>
+
+        <!-- BASE PARAMETER CONFIGURATIONS -->
+        <basenode refid="objt.mes.configurator.productionmgt#baseparameterconfigurationsqlfilters" treeid="productionmgt"
+                  visibleroles="configurator.productionmgt.baseparameters"
+                  filterroles="filter.administrator,filter.editor,configurator.productionmgt.baseparameters.filter.editor"
+                  editroles="configurator.editor"/>
+
+        <!-- ************** -->
+        <!--   RECIPE MGT   -->
+        <!-- ************** -->
+
+        <!-- Recipes -->
+        <basenode refid="objt.mes.configurator.recipesqlfilters" treeid="recipemgt"
+                  visibleroles="configurator.recipemgt.recipes"
+                  filterroles="filter.administrator,filter.editor,configurator.recipemgt.recipes.filter.editor"
+                  editroles="configurator.editor"/>
+
+        <!-- RECIPE VARIANT VERSIONS -->
+        <basenode refid="objt.process.mes.configurator.recipevariantversionsqlfilters" treeid="recipemgt"
+                  visibleroles="configurator.recipemgt.recipes"
+                  filterroles="filter.administrator,filter.editor,configurator.recipemgt.recipes.filter.editor"
+                  editroles="configurator.editor"/>
+
+        <!-- TEMPLATE PRODUCTION ROUTES -->
+        <basenode refid="objt.process.mes.productionroutes.templateproductionroutesqlfilters" treeid="recipemgt"
+                  visibleroles="objt.process.mes.configurator.templateproductionroutes"
+                  editroles="configurator.editor"/>
+
+        <!-- PRODUCTION ROUTES -->
+        <basenode refid="objt.process.mes.productionroutes.productionroutesqlfilters" treeid="recipemgt"
+                  visibleroles="objt.process.mes.configurator.productionroutes"
+                  editroles="configurator.editor"/>
+
+        <!-- ***************** -->
+        <!--   LOGISTIC MGT   -->
+        <!-- ***************** -->
+
+        <basenode refid="objt.common.configurator.customersqlfilters" treeid="logisticmgt"
+                  visibleroles="configurator.logisticsmgt.customers"
+                  filterroles="filter.administrator,filter.editor,configurator.logisticsmgt.customers.filter.editor"
+                  editroles="configurator.editor"/>
+
+        <basenode refid="objt.common.configurator.suppliersqlfilters" treeid="logisticmgt"
+                  visibleroles="configurator.logisticsmgt.suppliers"
+                  filterroles="filter.administrator,filter.editor,configurator.logisticsmgt.suppliers.filter.editor"
+                  editroles="configurator.editor"/>
+
+        <basenode refid="objt.common.configurator.carriersqlfilters" treeid="logisticmgt"
+                  visibleroles="configurator.logisticsmgt.carriers"
+                  filterroles="filter.administrator,filter.editor,configurator.logisticsmgt.carriers.filter.editor"
+                  editroles="configurator.editor"/>
+
+        <!-- ************** -->
+        <!--   WAREHOUSE MGT   -->
+        <!-- ************** -->
+
+        <!-- WAREHOUSES AND LOCATIONS -->
+        <basenode refid="objt.les.configurator.warehouses" treeid="warehousemgt"
+                  visibleroles="configurator.warehousemgt.warehouses"
+                  editroles="configurator.editor"/>
+
+        <!-- LOCATIONS -->
+        <basenode refid="objt.les.configurator.warehouselocationsqlfilters" treeid="warehousemgt"
+                  visibleroles="configurator.warehousemgt.warehouselocations"
+                  filterroles="filter.administrator,filter.editor,configurator.warehousemgt.warehouselocations.filter.editor"
+                  editroles="configurator.editor"/>
+
+        <!-- MOBILE RACKS -->
+        <basenode refid="objt.les.configurator.mobileracksqlfilters" treeid="warehousemgt"
+                  visibleroles="configurator.warehousemgt.mobileracks"
+                  filterroles="filter.administrator,filter.editor,configurator.warehousemgt.mobileracks.filter.editor"
+                  editroles="configurator.editor"/>
+
+        <!-- INBOUND STORAGERESOURCEGROUPS -->
+        <basenode refid="objt.les.configurator.inboundstorageresourcegroupsqlfilters" treeid="warehousemgt"
+                  visibleroles="configurator.warehousemgt.inboundstorageresourcegroups"
+                  filterroles="filter.administrator,filter.editor,configurator.warehousemgt.inboundstorageresourcegroups.filter.editor"
+                  editroles="configurator.editor"/>
+
+        <!-- PICKZONES -->
+        <basenode refid="objt.les.configurator.pickzonesqlfilters" treeid="warehousemgt"
+                  filterroles="filter.administrator,filter.editor,configurator.warehousemgt.pickzones.filter.editor"
+                  visibleroles="configurator.warehousemgt.pickzones"
+                  editroles="configurator.editor"/>
+
+        <!-- LPNBUFFERS -->
+        <basenode refid="objt.wms.configurator.lpnbuffersqlfilters" treeid="warehousemgt"
+                  filterroles="filter.administrator,filter.editor,configurator.warehousemgt.lpnbuffers.filter.editor"
+                  visibleroles="configurator.warehousemgt.lpnbuffers"
+                  editroles="configurator.editor"/>
+
+        <!-- DROP OFF STORAGERESOURCEGROUPS -->
+        <basenode refid="objt.les.configurator.dropoffstorageresourcegroupsqlfilters" treeid="warehousemgt"
+                  visibleroles="configurator.warehousemgt.dropoffstorageresourcegroups"
+                  filterroles="filter.administrator,filter.editor,configurator.warehousemgt.dropoffstorageresourcegroups.filter.editor"
+                  editroles="configurator.editor"/>
+
+        <!-- OUTBOUND STORAGERESOURCEGROUPS -->
+        <basenode refid="objt.les.configurator.outboundstorageresourcegroupsqlfilters" treeid="warehousemgt"
+                  visibleroles="configurator.warehousemgt.outboundstorageresourcegroups"
+                  filterroles="filter.administrator,filter.editor,configurator.warehousemgt.outboundstorageresourcegroups.filter.editor"
+                  editroles="configurator.editor"/>
+
+        <!-- SHIP STORAGERESOURCEGROUPS -->
+        <basenode refid="objt.les.configurator.shipstorageresourcegroupsqlfilters" treeid="warehousemgt"
+                  visibleroles="configurator.warehousemgt.shipstorageresourcegroups"
+                  filterroles="filter.administrator,filter.editor,configurator.warehousemgt.shipstorageresourcegroups.filter.editor"
+                  editroles="configurator.editor"/>
+
+        <!-- STAGE STORAGERESOURCEGROUPS -->
+        <basenode refid="objt.les.stagestorageresourcegroups" treeid="warehousemgt"
+                  visibleroles="configurator.warehousemgt.stagestorageresourcegroups"
+                  editroles="configurator.editor"/>
+
+        <!-- ZONES -->
+        <basenode refid="objt.les.configurator.storagezonesqlfilters" treeid="warehousemgt"
+                  visibleroles="configurator.warehousemgt.storagezones"
+                  editroles="configurator.editor"
+                  filterroles="filter.administrator,filter.editor,configurator.warehousemgt.storagezones.filter.editor" />
+
+        <!-- WORKZONES -->
+        <basenode refid="objt.les.configurator.workzonesqlfilters" treeid="warehousemgt"
+                  visibleroles="configurator.warehousemgt.workzones"
+                  filterroles="filter.administrator,filter.editor,configurator.warehousemgt.workzones.filter.editor"
+                  editroles="configurator.editor"/>
+
+        <!-- WORKCENTERS -->
+        <basenode refid="objt.les.configurator.workcentersqlfilters" treeid="warehousemgt"
+                  visibleroles="configurator.warehousemgt.workcenters"
+                  filterroles="filter.administrator,filter.editor,configurator.warehousemgt.workcenters.filter.editor"
+                  editroles="configurator.editor"/>
+
+        <!-- TASK TYPES -->
+        <basenode refid="objt.wms.configurator.tasktypes" treeid="warehousemgt"
+                  visibleroles="configurator.warehousemgt.tasktypes"
+                  editroles="configurator.editor"/>
+
+        <!-- TASK PROFILES -->
+        <basenode refid="objt.les.taskprofiles" treeid="warehousemgt"
+                  visibleroles="configurator.warehousemgt.taskprofiles"
+                  editroles="configurator.editor"/>
+
+        <!-- TASK REASONS -->
+        <basenode refid="objt.les.taskreasons" treeid="warehousemgt"
+                  visibleroles="configurator.warehousemgt.taskreasons"
+                  editroles="configurator.editor"/>
+
+        <!-- REASON GROUPS -->
+        <basenode refid="objt.les.reasongroups" treeid="warehousemgt"
+                  visibleroles="configurator.warehousemgt.reasongroups"
+                  editroles="configurator.editor"/>
+
+        <!-- RULES -->
+        <basenode refid="objt.les.rules" treeid="warehousemgt"
+                  visibleroles="configurator.warehousemgt.rules"
+                  editroles="configurator.editor"/>
+
+        <!-- RULE GROUPS -->
+        <basenode refid="objt.les.ruleitemgroups" treeid="warehousemgt"
+                  visibleroles="configurator.warehousemgt.ruleitemgroups"
+                  editroles="configurator.editor"/>
+
+        <!-- PLE -->
+        <basenode refid="objt.wms.configurator.warehousemgt#ple" treeid="warehousemgt"
+                  visibleroles="configurator.warehousemgt.ple"
+                  editroles="configurator.editor"/>
+
+        <!-- *********************** -->
+        <!--   VAL, Kit & Pack MGT   -->
+        <!-- *********************** -->
+
+        <!-- VAL OPERATIONS -->
+        <basenode refid="objt.les.val.manufacturingoperations" treeid="valkitpackmgt"
+                  visibleroles="configurator.valkitpackmgt.val.manufacturingoperations"
+                  editroles="configurator.editor"/>
+
+
+        <!-- KIT OPERATIONS -->
+        <basenode refid="objt.les.kit.manufacturingoperations" treeid="valkitpackmgt"
+                  visibleroles="configurator.valkitpackmgt.kit.manufacturingoperations"
+                  editroles="configurator.editor"/>
+
+        <!-- PACK OPERATIONS -->
+        <basenode refid="objt.les.pack.manufacturingoperations" treeid="valkitpackmgt"
+                  visibleroles="configurator.valkitpackmgt.pack.manufacturingoperations"
+                  editroles="configurator.editor"/>
+
+        <!-- ****************** -->
+        <!--   INSPECTION MGT   -->
+        <!-- ****************** -->
+
+        <!-- INSPECTIONINSTRUCTIONS -->
+        <basenode refid="objt.les.configurator.inspectioninstructionsqlfilters" treeid="inspectionmgt"
+                  visibleroles="configurator.inspectionmgt.inspectioninstructions"
+                  filterroles="filter.administrator,filter.editor,configurator.inspectionmgt.inspectioninstructions.filter.editor"
+                  editroles="configurator.editor"/>
+
+        <!-- INSPECTIONSETS -->
+        <basenode refid="objt.wms.configurator.inspectionmgt#inspectionset.inspectionsetsqlfilters" treeid="inspectionmgt"
+                  visibleroles="configurator.inspectionmgt.inspectionsets"
+                  filterroles="filter.administrator,filter.editor,configurator.inspectionmgt.inspectionsets.filter.editor"
+                  editroles="configurator.editor"/>
+
+        <!-- INSPECTIONSHEETS -->
+        <basenode refid="objt.les.configurator.inspectionsheetsqlfilters" treeid="inspectionmgt"
+                  visibleroles="configurator.inspectionmgt.inspectionsheets"
+                  filterroles="filter.administrator,filter.editor,configurator.inspectionmgt.inspectionsheets.filter.editor"
+                  editroles="configurator.editor"/>
+
+        <!-- INSPECTIONRULES -->
+        <basenode refid="objt.les.configurator.inspectiongroupsqlfilters" treeid="inspectionmgt"
+                  visibleroles="configurator.inspectionmgt.inspectiongroups"
+                  filterroles="filter.administrator,filter.editor,configurator.inspectionmgt.inspectiongroups.filter.editor"
+                  editroles="configurator.editor"/>
+
+        <!-- INSPECTIONRULES -->
+        <basenode refid="objt.les.inspectionrules" treeid="inspectionmgt"
+                  visibleroles="configurator.inspectionmgt.inspectionrules"
+                  editroles="configurator.editor"/>
+
+        <!-- SAMPLE TYPES-->
+        <basenode refid="objt.les.configurator.sampletypesqlfilters" treeid="inspectionmgt"
+                  visibleroles="configurator.inspectionmgt.sampletypes"
+                  filterroles="filter.administrator,filter.editor,configurator.inspectionmgt.sampletypes.filter.editor"
+                  editroles="configurator.editor"/>
+
+        <!-- ****************** -->
+        <!--   ATTENDANCE MGT   -->
+        <!-- ****************** -->
+
+        <!-- ATTENDANCE READER DEVICES -->
+        <basenode refid="objt.ta.attendancereaderdevices" treeid="attendancemgt"
+                  visibleroles="configurator.attendancemgt.attendancereaderdevices"
+                  editroles="configurator.editor"/>
+
+        <!-- EMPLOYEE ATTENDANCE GROUPS-->
+        <basenode refid="objt.ta.configurator.employeeattendancegroupsqlfilters" treeid="attendancemgt"
+                  visibleroles="configurator.attendancemgt.employeeattendancegroups"
+                  filterroles="filter.administrator,filter.editor,configurator.attendancemgt.employeeattendancegroups.filter.editor"
+                  editroles="configurator.editor"/>
+
+        <!-- EMPLOYEE GROUPS -->
+        <basenode refid="objt.common.configurator.employeegroupsqlfilters" treeid="attendancemgt"
+                  filterroles="filter.administrator,filter.editor,configurator.attendancemgt.employeegroups.filter.editor"
+                  visibleroles="configurator.attendancemgt.employeegroups"
+                  editroles="configurator.editor"/>
+
+        <!-- ATTENDANCE PATTERNS -->
+        <basenode refid="objt.ta.configurator.attendancepatternsqlfilters" treeid="attendancemgt"
+                  visibleroles="configurator.attendancemgt.attendancepatterns"
+                  filterroles="filter.administrator,filter.editor,configurator.attendancemgt.attendancepatterns.filter.editor"
+                  editroles="configurator.editor"/>
+
+        <!-- TEMPLATE ATTENDANCE DAYS -->
+        <basenode refid="objt.ta.attendancedays" treeid="attendancemgt"
+                  visibleroles="configurator.attendancemgt.attendancedays"
+                  editroles="configurator.editor"/>
+
+        <!-- EXCEPTIONS -->
+        <basenode refid="objt.ta.attendancedayexceptions" treeid="attendancemgt"
+                  visibleroles="configurator.attendancemgt.attendancedayexceptions"
+                  editroles="configurator.editor"/>
+
+        <!-- COST CENTERS -->
+        <basenode refid="objt.ta.configurator.costcentersqlfilters" treeid="attendancemgt"
+                  visibleroles="configurator.attendancemgt.costcenters"
+                  filterroles="filter.administrator,filter.editor,configurator.attendancemgt.costcenters.filter.editor"
+                  editroles="configurator.editor"/>
+
+        <!-- COST PROFILES -->
+        <basenode refid="objt.ta.configurator.costprofilesqlfilters" treeid="attendancemgt"
+                  visibleroles="configurator.attendancemgt.costprofiles"
+                  filterroles="filter.administrator,filter.editor,configurator.attendancemgt.costprofiles.filter.editor"
+                  editroles="configurator.editor"/>
+
+        <!-- ATTENDANCEDAYCODES -->
+        <basenode refid="objt.ta.attendancedaycodes" treeid="attendancemgt"
+                  visibleroles="configurator.attendancemgt.attendancedaycodes"
+                  editroles="configurator.editor"/>
+
+        <!-- ATTENDANCECOUNTERCODES -->
+        <basenode refid="objt.ta.attendancecountercodes" treeid="attendancemgt"
+                  visibleroles="configurator.attendancemgt.attendancecountercodes"
+                  editroles="configurator.editor"/>
+
+        <!-- ATTENDANCECODE GROUPS -->
+        <basenode refid="objt.ta.attendancecodegroups" treeid="attendancemgt"
+                  visibleroles="configurator.attendancemgt.attendancecodegroups"
+                  editroles="configurator.editor"/>
+
+        <!-- ANOMALYREASONS -->
+        <basenode refid="objt.ta.anomalyreasons" treeid="attendancemgt"
+                  visibleroles="configurator.attendancemgt.anomalyreasons"
+                  editroles="configurator.editor"/>
+
+        <!-- RULES -->
+        <basenode refid="objt.ta.rules" treeid="attendancemgt"
+                  visibleroles="configurator.attendancemgt.rules"
+                  editroles="configurator.editor"/>
+
+        <!-- ****************** -->
+        <!--    CAPACITY MGT    -->
+        <!-- ****************** -->
+
+        <!-- ANOMALYREASONS -->
+        <basenode refid="objt.crp.anomalyreasons" treeid="capacitymgt"
+                  visibleroles="configurator.capacitymgt.anomalyreasons"
+                  editroles="configurator.editor"/>
+
+        <!-- RULES -->
+        <basenode refid="objt.crp.rules" treeid="capacitymgt"
+                  visibleroles="configurator.capacitymgt.rules"
+                  editroles="configurator.editor"/>
+
+        <!-- ****************** -->
+        <!--   ACCESS MGT   -->
+        <!-- ****************** -->
+        <basenode refid="objt.ta.configurator.accessmgt.accessbadgesqlfilters" treeid="accessmgt"
+                  visibleroles="configurator.accessmgt.accessbadges"
+                  filterroles="filter.administrator,filter.editor,configurator.accessmgt.accessbadges.filter.editor"
+                  editroles="configurator.editor"/>
+
+        <basenode refid="objt.ta.configurator.accessmgt.accessprofilesqlfilters" treeid="accessmgt"
+                  visibleroles="configurator.accessmgt.accessprofiles"
+                  filterroles="filter.administrator,filter.editor,configurator.accessmgt.accessprofiles.filter.editor"
+                  editroles="configurator.editor"/>
+
+        <basenode refid="objt.ta.accessmgt.accesspatterns" treeid="accessmgt"
+                  visibleroles="configurator.accessmgt.accesspatterns"
+                  editroles="configurator.editor"/>
+
+        <basenode refid="objt.ta.accessmgt.accessdays" treeid="accessmgt"
+                  visibleroles="configurator.accessmgt.accessdays"
+                  editroles="configurator.editor"/>
+
+        <basenode refid="objt.ta.configurator.accessmgt.accessreaderdevices" treeid="accessmgt"
+                  visibleroles="configurator.accessmgt.accessreaderdevices"
+                  editroles="configurator.editor"/>
+
+        <basenode refid="objt.ta.configurator.accessmgt.accessareasqlfilters" treeid="accessmgt"
+                  visibleroles="configurator.accessmgt.accessareas"
+                  filterroles="filter.administrator,filter.editor,configurator.accessmgt.accessareas.filter.editor"
+                  editroles="configurator.editor"/>
+
+        <basenode refid="objt.ta.accessmgt.accessdayexceptions" treeid="accessmgt"
+                  visibleroles="configurator.accessmgt.accessdayexceptions"
+                  editroles="configurator.editor"/>
+
+        <basenode refid="objt.ta.configurator.accessmgt.visitorprofilesqlfilters" treeid="accessmgt"
+                  visibleroles="configurator.accessmgt.visitorprofiles"
+                  filterroles="filter.administrator,filter.editor,configurator.accessmgt.visitorprofiles.filter.editor"
+                  editroles="configurator.editor"/>
+
+        <basenode refid="objt.ta.configurator.accessmgt.visitorsqlfilters" treeid="accessmgt"
+                  visibleroles="configurator.accessmgt.visitors"
+                  filterroles="filter.administrator,filter.editor,configurator.accessmgt.visitors.filter.editor"
+                  editroles="configurator.editor"/>
+
+        <!-- ****************** -->
+        <!--   SYSTEM MGT   -->
+        <!-- ****************** -->
+        <!-- SCHEDULES -->
+        <basenode refid="objt.common.schedules" treeid="systemmgt"
+                  visibleroles="configurator.systemmgt.schedules"
+                  editroles="configurator.editor"/>
+
+        <basenode refid="objt.common.numbersequences" treeid="systemmgt"
+                  visibleroles="configurator.systemmgt.numbersequences"
+                  editroles="configurator.editor"/>
+
+        <basenode refid="objt.common.configurations" treeid="systemmgt"
+                  visibleroles="configurator.systemmgt.common.configurations"
+                  editroles="configurator.editor"/>
+
+        <basenode refid="objt.mes.configurations" treeid="systemmgt"
+                  visibleroles="configurator.systemmgt.mes.configurations"
+                  editroles="configurator.editor"/>
+
+        <basenode refid="objt.les.configurations" treeid="systemmgt"
+                  visibleroles="configurator.systemmgt.les.configurations"
+                  editroles="configurator.editor"/>
+
+        <basenode refid="objt.ta.configurations" treeid="systemmgt"
+                  visibleroles="configurator.systemmgt.ta.configurations"
+                  editroles="configurator.editor"/>
+
+        <basenode refid="objt.crp.configurations" treeid="systemmgt"
+                  visibleroles="configurator.systemmgt.crp.configurations"
+                  editroles="configurator.editor"/>
+
+      </rootnode>
+    </treelayout>
+  </explorer>
+</application>
