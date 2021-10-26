@@ -41,6 +41,7 @@
     <field id="stockCheckLevel"             columnname="ITEM_STOCKCHECKLEVEL"            type="double"  trim="YES"/>
     <field id="abcLpn"                      columnname="ITEM_ABC_LPN"                    type="string"  trim="YES"/>
     <field id="abcSku"                      columnname="ITEM_ABC_SKU"                    type="string"  trim="YES"/>
+    <field id="packConfig"                  columnname="ITEM_PACKCONFIG"                 type="integer" trim="YES"/>
 
     <!-- the following fields are optional, but can also be specified empty to force removal of a previously assigned value. -->
     <field id="qualityControlStatusID" columnname="QUALITYCONTROLSTATUS_ID" type="string"  trim="YES" />
