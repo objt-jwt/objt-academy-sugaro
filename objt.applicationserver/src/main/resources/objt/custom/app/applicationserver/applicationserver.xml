@@ -1185,11 +1185,10 @@
             instantiation="CONSTRUCTOR">
       <servlet path="/servlet/ThinInfo" class="dce.util.net.http.servlet.DialogManagerInfo"/>
       <webpage path="/servlet/ThinInfo"/>
-      <property name="THIN.PROPERTIES" value="objt/app/thinclient/thinclient.properties" />
+      <property name="THIN.PROPERTIES" value="objt/custom/app/thinclient/thinclient.properties" />
       <property name="THIN.LICENSEID" value="objt.wms.rfclient"/>
       <property name="THIN.PROTOCOL" value="BINARY"/>
-      <property name="THIN.DIALOGINFOBUILDER.CONFIGFILE" value="objt/app/thinclient/dialogconfig.xml"/>
-
+      <property name="THIN.DIALOGINFOBUILDER.CONFIGFILE" value="objt/custom/app/thinclient/dialogconfig.xml"/>
       <postinit module="AUTOLOGOUTTRANSACTION" method="addDialogEventListener"/>
     </module>
 
